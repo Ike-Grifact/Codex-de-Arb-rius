@@ -16,7 +16,7 @@ const requiredSymbols = [
   "pontodesaude.svg",
   "d6.svg",
   "d10.svg",
-  "d12.svg",
+  "d12.svg"
 ];
 
 for (const symbol of requiredSymbols) {
@@ -78,7 +78,7 @@ for (const file of contentFiles) {
 
 const lucker = await readFile(
   resolve(root, "src/content/guias/guia-lucker.md"),
-  "utf8",
+  "utf8"
 );
 
 if (
@@ -86,7 +86,7 @@ if (
   !/^status:\s*["']rascunho["']/m.test(lucker)
 ) {
   throw new Error(
-    "O Guia Lucker deve permanecer reservado e em rascunho.",
+    "O Guia Lucker deve permanecer reservado e em rascunho."
   );
 }
 
@@ -97,16 +97,16 @@ const forbiddenNames =
   /(?:03_SRD|SRD_Assimilacao|balanceamento|notas[_-]?internas)/i;
 
 const leaked = publicFiles.filter((file) =>
-  forbiddenNames.test(file),
+  forbiddenNames.test(file)
 );
 
 if (leaked.length) {
   throw new Error(
-    `Arquivo reservado encontrado em public: ${leaked.join(", ")}`,
+    `Arquivo reservado encontrado em public: ${leaked.join(", ")}`
   );
 }
 
 console.log(
   `Conteúdo válido: ${contentFiles.length} fontes, ` +
-    `${publicSlugs.size} slugs públicos e nenhum reservado em public.`,
+    `${publicSlugs.size} slugs públicos e nenhum reservado em public.`
 );
