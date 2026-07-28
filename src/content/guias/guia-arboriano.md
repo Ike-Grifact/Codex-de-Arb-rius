@@ -118,7 +118,7 @@ O Campeiro não concede um segundo turno, uma segunda reserva de Determinação 
 | **Troca Ressonante** | Troca limitada de cartas atuais do mesmo naipe entre portador e Campeiro. |
 | **Assimilação Feral** | Estado em que o Campeiro atinge o limite de Pressões Inoportunas e passa ao controle do Assimilador. |
 
-A notação `1d10`, `1d12` ou `3d6` continua sendo usada apenas para indicar dados.
+A notação {{d10:1}}, {{d12:1}} ou {{d6:3}} continua sendo usada apenas para indicar dados.
 
 ## 8. Criação do Arboriano
 
