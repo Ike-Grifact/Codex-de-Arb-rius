@@ -1,0 +1,53 @@
+---
+import { withBase } from "../lib/paths";
+
+interface Props {
+  title: string;
+  slug: string;
+  description: string;
+  tags?: string[];
+  status?: string;
+  updated?: Date;
+  exports?: { pdf?: boolean; markdown?: boolean; html?: boolean };
+  index?: number;
+}
+
+const {
+  title,
+  slug,
+  description,
+  tags = [],
+  status = "publicado",
+  updated,
+  exports = {},
+  index = 0
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<article class="guide-card">
+  <div class="guide-card__marker" aria-hidden="true">
+    <span>{String(index + 1).padStart(2, "0")}</span>
+    <i></i>
+  </div>
+  <div class="guide-card__body">
+    <div class="card-eyebrow">
+      <span>{status}</span>
+      {updated && <time datetime={updated.toISOString()}>{updated.toLocaleDateString("pt-BR")}</time>}
+    </div>
+    <h2>{title}</h2>
+    <p>{description}</p>
+    <div class="tag-list">
+      {tags.map((tag) => <span>{tag}</span>)}
+    </div>
+    <div class="card-actions">
+      <a class="button button--primary" href={withBase(`biblioteca/${slug}/`, base)}>Ler guia</a>
+      {exports.markdown && (
+        <a class="text-link" download href={withBase(`downloads/markdown/${slug}.md`, base)}>
+          Markdown
+        </a>
+      )}
+      {exports.pdf && <span class="availability">PDF por impressão</span>}
+    </div>
+  </div>
+</article>

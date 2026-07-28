@@ -1,0 +1,26 @@
+---
+import { withBase } from "../lib/paths";
+interface Props {
+  title: string;
+  slug: string;
+  description: string;
+  category: string;
+  space?: string;
+  embedded?: boolean;
+}
+const { title, slug, description, category, space, embedded = false } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<article class:list={["entry-card", "item-card", { "entry-card--embedded": embedded }]} id={embedded ? slug : undefined}>
+  <header>
+    <div>
+      <p class="card-eyebrow">{category}</p>
+      <h3>{title}</h3>
+    </div>
+    {space && <span class="space-pill">{space}</span>}
+  </header>
+  <p class="entry-card__summary">{description}</p>
+  <div class="entry-card__content"><slot /></div>
+  {embedded && <a class="text-link no-print" href={withBase(`compendio/${slug}/`, base)}>Abrir verbete →</a>}
+</article>

@@ -1,0 +1,28 @@
+---
+import GameSymbol from "./GameSymbol.astro";
+
+interface Die {
+  aptitude: string;
+  die: "d6" | "d10" | "d12";
+  count?: number | string;
+}
+
+interface Props {
+  dice: Die[];
+  label?: string;
+}
+
+const { dice, label } = Astro.props;
+---
+
+<div class="dice-pool" aria-label={label}>
+  {
+    dice.map((entry, index) => (
+      <>
+        {index > 0 && <span class="dice-pool__plus">+</span>}
+        <span>{entry.aptitude}</span>
+        <GameSymbol type={entry.die} count={entry.count} />
+      </>
+    ))
+  }
+</div>

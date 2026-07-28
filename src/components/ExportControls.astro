@@ -1,0 +1,25 @@
+---
+import { withBase } from "../lib/paths";
+interface Props {
+  slug: string;
+  markdown?: boolean;
+  pdf?: boolean;
+  html?: boolean;
+}
+const { slug, markdown = true, pdf = true, html = false } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<div class="export-controls no-print" aria-label="Exportações">
+  {pdf && <button type="button" onclick="window.print()">Exportar / PDF</button>}
+  {markdown && (
+    <a download href={withBase(`downloads/markdown/${slug}.md`, base)}>
+      Baixar Markdown
+    </a>
+  )}
+  {html ? (
+    <a download href={withBase(`downloads/html/${slug}.html`, base)}>HTML offline</a>
+  ) : (
+    <span title="Planejado para uma entrega futura">HTML offline · planejado</span>
+  )}
+</div>

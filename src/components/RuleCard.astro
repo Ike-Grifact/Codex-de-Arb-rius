@@ -1,0 +1,14 @@
+---
+interface Props {
+  title: string;
+  eyebrow?: string;
+  tone?: "default" | "note" | "warning";
+}
+const { title, eyebrow, tone = "default" } = Astro.props;
+---
+
+<article class:list={["rule-card", `rule-card--${tone}`]}>
+  {eyebrow && <p class="card-eyebrow">{eyebrow}</p>}
+  <h3>{title}</h3>
+  <div class="rule-card__content"><slot /></div>
+</article>

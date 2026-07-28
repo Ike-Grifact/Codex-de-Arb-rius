@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  number: number;
+  date: Date;
+  description: string;
+  example?: boolean;
+}
+const { title, number, date, description, example = false } = Astro.props;
+---
+
+<article class="timeline-card">
+  <div class="card-eyebrow">
+    <span>Sessão {number}</span>
+    <time datetime={date.toISOString()}>{date.toLocaleDateString("pt-BR")}</time>
+    {example && <span class="example-label">Exemplo</span>}
+  </div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+</article>

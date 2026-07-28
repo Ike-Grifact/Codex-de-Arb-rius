@@ -1,0 +1,60 @@
+---
+import { withBase } from "../lib/paths";
+
+interface Props {
+  type:
+    | "sucesso"
+    | "adaptacao"
+    | "pressao"
+    | "niveldeterminacao"
+    | "pontodedeterminacao"
+    | "niveldeassimilacao"
+    | "pontodeassimilacao"
+    | "niveldesaude"
+    | "pontodesaude"
+    | "d6"
+    | "d10"
+    | "d12";
+  count?: number | string;
+  label?: boolean | string;
+  size?: "small" | "normal" | "large";
+}
+
+const {
+  type,
+  count,
+  label = false,
+  size = "normal"
+} = Astro.props;
+
+const labels: Record<Props["type"], string> = {
+  sucesso: "Sucesso",
+  adaptacao: "Adaptação",
+  pressao: "Pressão",
+  niveldeterminacao: "Nível de Determinação",
+  pontodedeterminacao: "Ponto de Determinação",
+  niveldeassimilacao: "Nível de Assimilação",
+  pontodeassimilacao: "Ponto de Assimilação",
+  niveldesaude: "Nível de Saúde",
+  pontodesaude: "Ponto de Saúde",
+  d6: "d6",
+  d10: "d10",
+  d12: "d12"
+};
+
+const readableLabel = typeof label === "string" ? label : labels[type];
+const ariaLabel = [count, labels[type]].filter(Boolean).join(" ");
+---
+
+<span class:list={["game-symbol", `game-symbol--${size}`]} aria-label={ariaLabel}>
+  {count !== undefined && <strong>{count}</strong>}
+  <img
+    src={withBase(`symbols/${type}.svg`, import.meta.env.BASE_URL)}
+    alt=""
+    title={labels[type]}
+    width="22"
+    height="22"
+    loading="lazy"
+  />
+  {label && <span>{readableLabel}</span>}
+</span>

@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  state: string;
+  description: string;
+  example?: boolean;
+}
+const { title, state, description, example = false } = Astro.props;
+---
+
+<article class="timeline-card">
+  <div class="card-eyebrow">
+    <span>Quest · {state}</span>
+    {example && <span class="example-label">Exemplo</span>}
+  </div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+</article>

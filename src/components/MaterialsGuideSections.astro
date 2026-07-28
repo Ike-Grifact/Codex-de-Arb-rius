@@ -1,0 +1,88 @@
+---
+import { getCollection, render } from "astro:content";
+import MaterialCard from "./MaterialCard.astro";
+import ItemCard from "./ItemCard.astro";
+import DicePool from "./DicePool.astro";
+import GameSymbol from "./GameSymbol.astro";
+
+const materials = (await getCollection("materiais"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+  .sort((a, b) => a.data.category - b.data.category || a.data.title.localeCompare(b.data.title, "pt-BR"));
+
+const items = (await getCollection("itens"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, "pt-BR"));
+
+const materialBodies = await Promise.all(
+  materials.map(async (entry) => ({ entry, Content: (await render(entry)).Content }))
+);
+const itemBodies = await Promise.all(
+  items.map(async (entry) => ({ entry, Content: (await render(entry)).Content }))
+);
+---
+
+<section aria-labelledby="materiais-iniciais">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Fonte única do compêndio</p>
+      <h2 id="materiais-iniciais">Os cinco Materiais Assimilados iniciais</h2>
+    </div>
+    <div class="symbol-legend" aria-label="Símbolos mecânicos">
+      <GameSymbol type="sucesso" label />
+      <GameSymbol type="adaptacao" label />
+      <GameSymbol type="pressao" label />
+    </div>
+  </div>
+  <div class="embedded-grid">
+    {
+      materialBodies.map(({ entry, Content }) => (
+        <MaterialCard
+          title={entry.data.title}
+          slug={entry.data.slug}
+          description={entry.data.description}
+          category={entry.data.category}
+          embedded
+        >
+          <Content />
+        </MaterialCard>
+      ))
+    }
+  </div>
+</section>
+
+<section aria-labelledby="equipamentos-iniciais">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Inventário da expedição</p>
+      <h2 id="equipamentos-iniciais">Equipamentos de partida</h2>
+    </div>
+  </div>
+  <div class="embedded-grid embedded-grid--items">
+    {
+      itemBodies.map(({ entry, Content }) => (
+        <ItemCard
+          title={entry.data.title}
+          slug={entry.data.slug}
+          description={entry.data.description}
+          category={entry.data.category}
+          space={entry.data.space}
+          embedded
+        >
+          <Content />
+        </ItemCard>
+      ))
+    }
+  </div>
+</section>
+
+<section class="mechanic-callout" aria-labelledby="cozinha-opcional">
+  <p class="eyebrow">Preparo culinário opcional</p>
+  <h2 id="cozinha-opcional">Rolagem sugerida para a Lagarta Nutritiva I</h2>
+  <DicePool
+    label="Sagacidade em dados de seis lados mais Sobrevivência em dados de dez lados"
+    dice={[
+      { aptitude: "Sagacidade", die: "d6" },
+      { aptitude: "Sobrevivência", die: "d10" }
+    ]}
+  />
+</section>

@@ -1,0 +1,50 @@
+---
+import { withBase } from "../lib/paths";
+
+interface Props {
+  title: string;
+  slug: string;
+  description: string;
+  type: "material" | "item" | string;
+  category?: string | number;
+  availability?: string;
+  tags?: string[];
+}
+
+const {
+  title,
+  slug,
+  description,
+  type,
+  category,
+  availability,
+  tags = []
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<article
+  class="compendium-card"
+  data-filter-entry
+  data-type={type}
+  data-category={String(category ?? "")}
+  data-availability={availability}
+  data-tags={tags.join(" ")}
+>
+  <div class="compendium-card__head">
+    <span class:list={["type-mark", `type-mark--${type}`]} aria-hidden="true">
+      {type === "material" ? "M" : "I"}
+    </span>
+    <div>
+      <p>{type} {category !== undefined && `· categoria ${category}`}</p>
+      <h3>{title}</h3>
+    </div>
+  </div>
+  <p>{description}</p>
+  <div class="tag-list">
+    {tags.slice(0, 3).map((tag) => <span>{tag}</span>)}
+  </div>
+  <a class="card-link" href={withBase(`compendio/${slug}/`, base)}>
+    Abrir verbete <span aria-hidden="true">→</span>
+  </a>
+</article>
