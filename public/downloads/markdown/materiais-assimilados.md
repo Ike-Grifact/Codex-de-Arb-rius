@@ -1,4 +1,14 @@
-# Materiais Assimilados e Equipamentos de Partida
+---
+title: "Materiais Assimilados e Equipamentos de Partida"
+slug: "materiais-assimilados"
+type: "Guia"
+tags:
+  - "Campeiros"
+  - "Equipamentos"
+  - "Materiais"
+updated: "2026-07-28"
+source: "Materiais Assimilados e Equipamentos de Partida"
+---
 
 # Materiais Assimilados e Equipamentos de Partida
 
@@ -43,7 +53,6 @@ A rolagem padrão utiliza **Sagacidade + Manufaturas**. Use os valores normais d
 
 > **Exemplo:** um Desafortunado monta uma lança de Lenho Regenerativo. Com nenhum Sucesso, ela começa com a Durabilidade normal do modelo, já modificada pela limitação do material. Com um ou mais Sucessos, recebe +1 de Durabilidade máxima e atual.
 
-
 ## Distribuição sugerida da carga
 
 O patrimônio coletivo deve ser dividido entre os Campeiros. A distribuição abaixo é um exemplo para cinco duplas.
@@ -62,7 +71,7 @@ O patrimônio coletivo deve ser dividido entre os Campeiros. A distribuição ab
 - Escolha item-base, Material Assimilado e Características.
 - Role Sagacidade + Manufaturas.
 - Sem Sucessos: Durabilidade normal.
-- Com 1+ Sucesso: +1 de Durabilidade máxima e atual.
+- Com 1 Sucesso ou mais: +1 de Durabilidade máxima e atual.
 - Provisões comuns: três dias por viajante.
 - Reserva adicional: dez Lagartas Nutritivas I.
 
@@ -104,8 +113,8 @@ Se uma **Pressão** for mantida num disparo que utilizou Tração Potente, a Fib
 
 1. O arco normalmente usaria Reação, mas o Explorador escolhe Potência.
 2. A distância imporia uma penalidade ao resultado.
-3. O jogador investe uma Adaptação para cancelar essa penalidade.
-4. Uma Pressão mantida deixaria a Fibra em Sobretensão depois do disparo.
+3. O jogador investe 1 Adaptação para cancelar essa penalidade.
+4. 1 Pressão mantida deixaria a Fibra em Sobretensão depois do disparo.
 
 ---
 
@@ -142,7 +151,7 @@ Rolagem sugerida: **Sagacidade + Sobrevivência**.
 | --- | --- |
 | Nenhum Sucesso | A refeição alimenta, mas cada pessoa que optar por consumi-la perde 1 Ponto de Determinação. |
 | 1 Sucesso | A refeição alimenta sem consequência adicional. |
-| 2 ou mais Sucessos | Escolha um benefício narrativo: menos fumaça, menos cheiro, economia de temperos, conservação melhor ou combinação eficiente com alimento coletado. |
+| 2 Sucessos ou mais | Escolha um benefício narrativo: menos fumaça, menos cheiro, economia de temperos, conservação melhor ou combinação eficiente com alimento coletado. |
 | Pressões | Podem produzir fumaça, cheiro, fogo descontrolado, perda de temperos, desperdício de uma unidade ou atração de animais. |
 
 > A perda de Determinação só existe quando o grupo escolhe preparar e consumir uma refeição malfeita. Comer a Lagarta diretamente permanece uma alternativa segura.
@@ -173,7 +182,7 @@ Uma vez por cena, depois de manter os dados de um ataque cortante ou perfurante,
 
 ## Ruptura Escamosa
 
-Se ao menos uma **Pressão** tiver sido mantida, o portador pode converter **qualquer quantidade de Adaptações** em Sucessos.
+Se ao menos **1 Pressão** tiver sido mantida, o portador pode converter **qualquer quantidade de Adaptações** em Sucessos.
 
 - Cada Pressão mantida reduz a Durabilidade em 1.
 - O portador perde **1 Ponto de Saúde** no total.
@@ -192,7 +201,7 @@ Uma vez por cena, evita **1 Ponto de Saúde** causado por impacto, queda, esmaga
 
 ## Fratura Concentrada
 
-Se a mesma resolução contiver uma Pressão, o item perde 1 Durabilidade.
+Se a mesma resolução contiver 1 Pressão, o item perde 1 Durabilidade.
 
 **Aplicações:** escudos, placas de armadura, elmos, estojos, caixas e proteção de sela.
 
@@ -202,7 +211,7 @@ Se a mesma resolução contiver uma Pressão, o item perde 1 Durabilidade.
 
 Item criado durante o treinamento: arma, ferramenta, vestimenta ou lote de preparados.
 
-As peças já chegam pré-fabricadas. A montagem final utiliza **Sagacidade + Manufaturas**. Sem Sucessos, o item recebe a Durabilidade normal; com 1 ou mais Sucessos, recebe **+1 de Durabilidade máxima e atual**.
+As peças já chegam pré-fabricadas. A montagem final utiliza **Sagacidade + Manufaturas**. Sem Sucessos, o item recebe a Durabilidade normal; com 1 Sucesso ou mais, recebe **+1 de Durabilidade máxima e atual**.
 
 ---
 
@@ -244,7 +253,7 @@ Enquanto o usuário permanecer imóvel ou se mover lentamente no ambiente calibr
 
 ## Dessincronização
 
-Uma Pressão mantida durante o uso encerra o benefício até nova calibração. A Seda não remove sons, odores ou volume.
+1 Pressão mantida durante o uso encerra o benefício até nova calibração. A Seda não remove sons, odores ou volume.
 
 **Aplicações:** mantos, capuzes, coberturas, redes, capas de mochila e tendas aprimoradas.
 

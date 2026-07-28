@@ -1,5 +1,7 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
+import remarkGameSymbols from "./src/plugins/remark-game-symbols.mjs";
+import remarkLoreIncludes from "./src/plugins/remark-lore-includes.mjs";
 
 const repository = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
 const isUserSite = repository.endsWith(".github.io");
@@ -26,6 +28,10 @@ export default defineConfig({
   integrations: [mdx()],
 
   markdown: {
+    remarkPlugins: [
+      remarkLoreIncludes,
+      [remarkGameSymbols, { base }]
+    ],
     shikiConfig: {
       theme: "github-dark",
     },

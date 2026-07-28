@@ -1,3 +1,15 @@
+---
+title: "Provisões convencionais"
+slug: "provisoes-convencionais"
+type: "Item"
+tags:
+  - "Alimento"
+  - "Coletivo"
+  - "Provisões"
+updated: "2026-07-28"
+source: "Materiais Assimilados e Equipamentos de Partida"
+---
+
 # Provisões convencionais
 
 Três rações por viajante. Para cinco viajantes: 15 rações. A cada cinco rações adicionais, acrescente aproximadamente 1 espaço coletivo.

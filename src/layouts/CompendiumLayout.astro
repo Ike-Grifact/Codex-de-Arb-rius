@@ -3,6 +3,15 @@ import BaseLayout from "./BaseLayout.astro";
 import AppHeader from "../components/AppHeader.astro";
 import MobileNavigation from "../components/MobileNavigation.astro";
 import ExportControls from "../components/ExportControls.astro";
+import CategoryIcon from "../components/CategoryIcon.astro";
+import { withBase } from "../lib/paths";
+import {
+  availabilityLabel,
+  categoryLabel,
+  originLabel,
+  ptBrCollator,
+  tagLabel
+} from "../data/taxonomy";
 import "../styles/compendium.css";
 import "../styles/print.css";
 
@@ -12,39 +21,69 @@ interface Props {
   slug: string;
   type: string;
   category?: string | number;
+  availability: string;
   origin: string;
   tags?: string[];
+  space?: string;
+  updated: Date;
 }
 
-const { title, description, slug, type, category, origin, tags = [] } = Astro.props;
+const {
+  title,
+  description,
+  slug,
+  type,
+  category,
+  availability,
+  origin,
+  tags = [],
+  space,
+  updated
+} = Astro.props;
+const base = import.meta.env.BASE_URL;
+const categoryId = type === "material" ? "material" : String(category ?? "item");
+const sortedTags = [...tags].sort((left, right) =>
+  ptBrCollator.compare(tagLabel(left), tagLabel(right))
+);
 ---
 
 <BaseLayout title={title} description={description} bodyClass="entry-shell">
   <AppHeader />
   <main id="conteudo" class="entry-main">
     <nav class="breadcrumbs no-print" aria-label="Navegação estrutural">
-      <a href="../../">Início</a><span>›</span><a href="../">Compêndio</a><span>›</span><span>{title}</span>
+      <a href={withBase("", base)}>Início</a><span>›</span>
+      <a href={withBase("compendio/", base)}>Compêndio</a><span>›</span>
+      <span>{title}</span>
     </nav>
     <article class="entry-document">
       <div class="print-meta">
-        <p>Codex de Árborius · Compêndio público</p>
-        <p>Fonte: {origin}</p>
+        <p>Codex de Árborius · Compêndio · {categoryLabel(categoryId)}</p>
+        <p>Atualizado em <time datetime={updated.toISOString()}>{updated.toLocaleDateString("pt-BR")}</time></p>
       </div>
       <header class="entry-hero">
-        <span class:list={["type-mark", `type-mark--${type}`]} aria-hidden="true">
-          {type === "material" ? "M" : "I"}
+        <span class="type-mark" aria-hidden="true">
+          <CategoryIcon name={categoryId} size="large" />
         </span>
         <div>
-          <p class="eyebrow">{type}{category !== undefined && ` · ${category}`}</p>
+          <p class="eyebrow">
+            {categoryLabel(categoryId)}
+            {type === "material" && category !== undefined && ` · Categoria ${category}`}
+          </p>
           <h1>{title}</h1>
           <p>{description}</p>
-          <div class="tag-list">{tags.map((tag) => <span>{tag}</span>)}</div>
+          <div class="tag-list">{sortedTags.map((tag) => <span>{tagLabel(tag)}</span>)}</div>
         </div>
       </header>
-      <ExportControls slug={slug} markdown pdf />
+      <dl class="entry-metadata">
+        <div><dt>Disponibilidade</dt><dd>{availabilityLabel(availability)}</dd></div>
+        {space && <div><dt>Espaços ocupados</dt><dd>{space}</dd></div>}
+        <div><dt>Origem</dt><dd>{originLabel(origin)}</dd></div>
+      </dl>
+      <ExportControls slug={slug} title={title} markdown pdf />
       <div class="entry-prose">
         <slot />
       </div>
+      <footer class="print-footer">Codex de Árborius · {title}</footer>
     </article>
   </main>
   <MobileNavigation />

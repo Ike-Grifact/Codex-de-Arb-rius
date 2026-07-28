@@ -1,3 +1,15 @@
+---
+title: "Lenho Regenerativo"
+slug: "lenho-regenerativo"
+type: "Material Assimilado"
+tags:
+  - "Fabricação"
+  - "Madeira"
+  - "Regeneração"
+updated: "2026-07-28"
+source: "Materiais Assimilados e Equipamentos de Partida"
+---
+
 # Lenho Regenerativo
 
 ## Regenerativo

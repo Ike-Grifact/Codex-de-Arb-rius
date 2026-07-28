@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import PortalLayout from "../../layouts/PortalLayout.astro";
 import SessionCard from "../../components/SessionCard.astro";
+import NavigationIcon from "../../components/NavigationIcon.astro";
 
 const sessions = (await getCollection("sessoes"))
   .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
@@ -25,7 +26,7 @@ const fields = [
     <header class="page-intro">
       <div>
         <p class="eyebrow">Memória da campanha</p>
-        <h1>Crônicas</h1>
+        <h1 class="area-title"><NavigationIcon name="cronicas" /> Crônicas</h1>
         <p>Uma estrutura editorial para registrar sessões públicas sem expor notas internas.</p>
       </div>
     </header>

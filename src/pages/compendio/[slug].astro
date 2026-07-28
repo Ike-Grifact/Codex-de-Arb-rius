@@ -23,8 +23,11 @@ const { Content } = await render(entry);
   slug={entry.data.slug}
   type={entry.data.type}
   category={entry.data.category}
+  availability={entry.data.availability}
   origin={entry.data.origin}
   tags={entry.data.tags}
+  space={"space" in entry.data ? entry.data.space : undefined}
+  updated={entry.data.updated}
 >
   <Content />
 </CompendiumLayout>

@@ -1,0 +1,26 @@
+---
+import { navigationIconPaths } from "../data/navigation-icons";
+
+interface Props {
+  name: keyof typeof navigationIconPaths;
+  label?: string;
+  size?: "small" | "normal" | "large";
+}
+
+const { name, label, size = "normal" } = Astro.props;
+---
+
+<svg
+  class:list={["navigation-icon", `navigation-icon--${size}`]}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  focusable="false"
+  role={label ? "img" : undefined}
+  aria-label={label}
+  aria-hidden={label ? undefined : "true"}
+  set:html={navigationIconPaths[name]}
+/>

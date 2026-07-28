@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import PortalLayout from "../../layouts/PortalLayout.astro";
 import QuestCard from "../../components/QuestCard.astro";
+import NavigationIcon from "../../components/NavigationIcon.astro";
 
 const quests = (await getCollection("quests"))
   .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
@@ -13,7 +14,7 @@ const states = ["disponível", "ativa", "concluída", "fracassada", "abandonada"
     <header class="page-intro">
       <div>
         <p class="eyebrow">Registro de objetivos</p>
-        <h1>Quests</h1>
+        <h1 class="area-title"><NavigationIcon name="quests" /> Quests</h1>
         <p>Estados e modelos estão prontos; nenhuma quest real foi criada nesta migração.</p>
       </div>
     </header>

@@ -550,3 +550,121 @@ svg {
     font-size: clamp(2.4rem, 13vw, 3.8rem);
   }
 }
+
+.navigation-icon,
+.category-icon {
+  width: 1.25em;
+  height: 1.25em;
+  display: inline-block;
+  flex: 0 0 auto;
+  overflow: visible;
+  vertical-align: -0.18em;
+}
+
+.navigation-icon--small,
+.category-icon--small {
+  width: 1em;
+  height: 1em;
+}
+
+.navigation-icon--large,
+.category-icon--large {
+  width: 1.65em;
+  height: 1.65em;
+}
+
+.brand__mark .navigation-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.area-title {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.area-title > .navigation-icon {
+  width: 0.82em;
+  height: 0.82em;
+  color: var(--forest-600);
+}
+
+.export-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+}
+
+.export-controls > button {
+  white-space: nowrap;
+}
+
+.export-controls .export-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: 0 0 auto;
+}
+
+.export-controls .export-icon--markdown {
+  width: 1.55rem;
+  height: 1.55rem;
+  color: #4e338e;
+}
+
+.export-label-mobile {
+  display: none;
+}
+
+.export-controls .export-planned {
+  padding: 0.55rem 0.3rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.export-dialog {
+  width: min(440px, calc(100vw - 2rem));
+  padding: 0;
+  border: 1px solid var(--sage-300);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 24px 70px rgba(14, 31, 24, 0.3);
+}
+
+.export-dialog::backdrop {
+  background: rgba(10, 24, 18, 0.62);
+  backdrop-filter: blur(3px);
+}
+
+.export-dialog form {
+  padding: 1.5rem;
+}
+
+.export-dialog form > .export-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.export-dialog h2 {
+  margin: 0.8rem 0 0.55rem;
+  color: var(--forest-950);
+  font: 500 1.65rem/1.1 Georgia, serif;
+}
+
+.export-dialog p {
+  color: var(--muted);
+}
+
+.export-dialog .dialog-help {
+  font-size: 0.78rem;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}

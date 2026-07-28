@@ -9,7 +9,7 @@ visibility: "publico"
 status: "publicado"
 tags:
   - fibra
-  - tração
+  - tracao
   - armas
 related:
   - projeto-de-partida
@@ -22,18 +22,18 @@ updated: 2026-07-28
 
 Em ataques feitos com arcos ou outras armas de tração compatíveis, o usuário pode usar **Potência no lugar de Reação**. A escolha é feita antes da rolagem.
 
-Quando usar Potência, o jogador também pode investir **1 Adaptação** para escolher um dos benefícios:
+Quando usar Potência, o jogador também pode investir **{{adaptacao:1}}** para escolher um dos benefícios:
 
-- cancelar uma penalidade de Sucesso causada exclusivamente pela distância; ou
+- cancelar uma penalidade de {{sucesso}} causada exclusivamente pela distância; ou
 - tornar possível um disparo além do alcance comum da arma, desde que exista uma trajetória viável.
 
 **Limite:** flechas maiores ou mais pesadas não concedem dano, Sucessos ou Letal automaticamente. Esses efeitos exigem outra Característica do item ou da munição.
 
 ## Sobretensão
 
-Se uma **Pressão** for mantida num disparo que utilizou Tração Potente, a Fibra permanece contraída. O benefício não pode ser usado novamente até que o personagem:
+Se uma **{{pressao}}** for mantida num disparo que utilizou Tração Potente, a Fibra permanece contraída. O benefício não pode ser usado novamente até que o personagem:
 
-- invista **1 Adaptação** numa ação posterior para reajustar a tensão; ou
+- invista **{{adaptacao:1}}** numa ação posterior para reajustar a tensão; ou
 - gaste uma ação completa para relaxar e preparar novamente a arma.
 
 **Aplicações:** cordas e lâminas de arcos, bestas, lançadores elásticos, arpões de tração, armadilhas tensionadas e mecanismos de içamento.
@@ -42,5 +42,5 @@ Se uma **Pressão** for mantida num disparo que utilizou Tração Potente, a Fib
 
 1. O arco normalmente usaria Reação, mas o Explorador escolhe Potência.
 2. A distância imporia uma penalidade ao resultado.
-3. O jogador investe uma Adaptação para cancelar essa penalidade.
-4. Uma Pressão mantida deixaria a Fibra em Sobretensão depois do disparo.
+3. O jogador investe {{adaptacao:1}} para cancelar essa penalidade.
+4. {{pressao:1}} mantida deixaria a Fibra em Sobretensão depois do disparo.

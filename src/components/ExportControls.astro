@@ -1,25 +1,123 @@
 ---
 import { withBase } from "../lib/paths";
+import MarkdownExportIcon from "./MarkdownExportIcon.astro";
+import PdfExportIcon from "./PdfExportIcon.astro";
+
 interface Props {
   slug: string;
+  title: string;
   markdown?: boolean;
   pdf?: boolean;
   html?: boolean;
 }
-const { slug, markdown = true, pdf = true, html = false } = Astro.props;
+
+const {
+  slug,
+  title,
+  markdown = true,
+  pdf = true,
+  html = false
+} = Astro.props;
 const base = import.meta.env.BASE_URL;
+const filename = `${slug}.md`;
+const markdownDialogId = `markdown-dialog-${slug}`;
+const pdfDialogId = `pdf-dialog-${slug}`;
 ---
 
-<div class="export-controls no-print" aria-label="Exportações">
-  {pdf && <button type="button" onclick="window.print()">Exportar / PDF</button>}
+<div
+  class="export-controls no-print"
+  aria-label="Exportações"
+  data-export-control
+  data-markdown-message={`Deseja baixar “${filename}”?`}
+  data-pdf-message="O navegador abrirá a janela de impressão. Escolha “Salvar como PDF”."
+>
+  {pdf && (
+    <>
+      <button type="button" data-open-export={pdfDialogId}>
+        <PdfExportIcon />
+        <span>Exportar PDF</span>
+      </button>
+      <dialog class="export-dialog no-print" id={pdfDialogId} aria-labelledby={`${pdfDialogId}-title`}>
+        <form method="dialog">
+          <PdfExportIcon />
+          <h2 id={`${pdfDialogId}-title`}>Exportar PDF</h2>
+          <p>O navegador abrirá a janela de impressão. Escolha <strong>“Salvar como PDF”</strong>.</p>
+          <div class="dialog-actions">
+            <button value="cancel">Cancelar</button>
+            <button class="button--primary" value="confirm" data-confirm-pdf>Continuar</button>
+          </div>
+        </form>
+      </dialog>
+    </>
+  )}
   {markdown && (
-    <a download href={withBase(`downloads/markdown/${slug}.md`, base)}>
-      Baixar Markdown
-    </a>
+    <>
+      <button type="button" class="export-markdown-button" data-open-export={markdownDialogId}>
+        <MarkdownExportIcon />
+        <span class="export-label-desktop">Exportar Markdown</span>
+        <span class="export-label-mobile">MD</span>
+      </button>
+      <a
+        hidden
+        download={filename}
+        href={withBase(`downloads/markdown/${filename}`, base)}
+        data-markdown-download
+      >
+        Baixar {title}
+      </a>
+      <dialog class="export-dialog no-print" id={markdownDialogId} aria-labelledby={`${markdownDialogId}-title`}>
+        <form method="dialog">
+          <MarkdownExportIcon />
+          <h2 id={`${markdownDialogId}-title`}>Exportar Markdown</h2>
+          <p>Deseja baixar <strong>“{filename}”</strong>?</p>
+          <p class="dialog-help">O arquivo pode ser aberto no Obsidian, VS Code ou qualquer editor compatível com Markdown.</p>
+          <div class="dialog-actions">
+            <button value="cancel">Cancelar</button>
+            <button class="button--primary" value="confirm" data-confirm-markdown>Baixar .md</button>
+          </div>
+        </form>
+      </dialog>
+    </>
   )}
   {html ? (
     <a download href={withBase(`downloads/html/${slug}.html`, base)}>HTML offline</a>
   ) : (
-    <span title="Planejado para uma entrega futura">HTML offline · planejado</span>
+    <span class="export-planned" title="Planejado para uma entrega futura">HTML offline · planejado</span>
   )}
 </div>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-export-control]").forEach((root) => {
+    if (root.dataset.exportReady) return;
+    root.dataset.exportReady = "true";
+
+    const download = root.querySelector<HTMLAnchorElement>("[data-markdown-download]");
+    const runExport = (kind: "markdown" | "pdf") => {
+      if (kind === "markdown") download?.click();
+      else window.print();
+    };
+
+    root.querySelectorAll<HTMLButtonElement>("[data-open-export]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const dialog = document.getElementById(button.dataset.openExport || "") as HTMLDialogElement | null;
+        const kind = dialog?.querySelector("[data-confirm-markdown]") ? "markdown" : "pdf";
+        if (dialog && typeof dialog.showModal === "function") {
+          dialog.showModal();
+          return;
+        }
+
+        const message = kind === "markdown"
+          ? root.dataset.markdownMessage || "Deseja baixar o arquivo Markdown?"
+          : root.dataset.pdfMessage || "Deseja abrir a impressão?";
+        if (window.confirm(message)) runExport(kind);
+      });
+    });
+
+    root.querySelector<HTMLButtonElement>("[data-confirm-markdown]")?.addEventListener("click", () => {
+      runExport("markdown");
+    });
+    root.querySelector<HTMLButtonElement>("[data-confirm-pdf]")?.addEventListener("click", () => {
+      window.setTimeout(() => runExport("pdf"), 0);
+    });
+  });
+</script>

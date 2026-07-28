@@ -81,7 +81,12 @@ const publicEntry = z.object({
 
 const lore = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/lore" }),
-  schema: publicEntry
+  schema: publicEntry.extend({
+    category: z.string(),
+    related: z.array(z.string()).default([]),
+    sourceGuide: z.string(),
+    order: z.number().default(99)
+  })
 });
 
 const quests = defineCollection({

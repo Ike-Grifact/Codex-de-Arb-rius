@@ -1,3 +1,15 @@
+---
+title: "Lagarta Nutritiva I"
+slug: "lagarta-nutritiva-i"
+type: "Item"
+tags:
+  - "Alimento"
+  - "Coletivo"
+  - "Sobrevivência"
+updated: "2026-07-28"
+source: "Materiais Assimilados e Equipamentos de Partida"
+---
+
 # Lagarta Nutritiva I
 
 - Cada unidade alimenta uma pessoa por um dia.
@@ -17,7 +29,7 @@ Rolagem sugerida: **Sagacidade + Sobrevivência**.
 | --- | --- |
 | Nenhum Sucesso | A refeição alimenta, mas cada pessoa que optar por consumi-la perde 1 Ponto de Determinação. |
 | 1 Sucesso | A refeição alimenta sem consequência adicional. |
-| 2 ou mais Sucessos | Escolha um benefício narrativo: menos fumaça, menos cheiro, economia de temperos, conservação melhor ou combinação eficiente com alimento coletado. |
+| 2 Sucessos ou mais | Escolha um benefício narrativo: menos fumaça, menos cheiro, economia de temperos, conservação melhor ou combinação eficiente com alimento coletado. |
 | Pressões | Podem produzir fumaça, cheiro, fogo descontrolado, perda de temperos, desperdício de uma unidade ou atração de animais. |
 
 > A perda de Determinação só existe quando o grupo escolhe preparar e consumir uma refeição malfeita. Comer a Lagarta diretamente permanece uma alternativa segura.

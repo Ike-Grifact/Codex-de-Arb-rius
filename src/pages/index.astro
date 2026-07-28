@@ -5,6 +5,7 @@ import GuideCard from "../components/GuideCard.astro";
 import QuestCard from "../components/QuestCard.astro";
 import SessionCard from "../components/SessionCard.astro";
 import { withBase } from "../lib/paths";
+import NavigationIcon from "../components/NavigationIcon.astro";
 
 const base = import.meta.env.BASE_URL;
 const guides = (await getCollection("guias"))
@@ -16,14 +17,14 @@ const sessions = (await getCollection("sessoes"))
   .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
 
 const sections = [
-  ["biblioteca/", "Biblioteca", "Guias completos para leitura e exportação.", "01"],
-  ["compendio/", "Compêndio", "Materiais, itens e referências rápidas.", "02"],
-  ["mundo/", "Mundo", "Lugares, povos e cronologia pública.", "03"],
-  ["quests/", "Quests", "Objetivos e estados acompanhados pela campanha.", "04"],
-  ["cronicas/", "Crônicas", "Memória organizada das sessões.", "05"],
-  ["laboratorio/", "Laboratório", "Protótipos locais e recursos beta.", "06"],
-  ["assimilador/", "Área do Assimilador", "Ponto de acesso para o acervo privado.", "07"]
-];
+  ["biblioteca/", "Biblioteca", "Guias completos para leitura e exportação.", "biblioteca"],
+  ["compendio/", "Compêndio", "Materiais, itens e referências rápidas.", "compendio"],
+  ["mundo/", "Mundo", "Lugares, povos e cronologia pública.", "mundo"],
+  ["quests/", "Quests", "Objetivos e estados acompanhados pela campanha.", "quests"],
+  ["cronicas/", "Crônicas", "Memória organizada das sessões.", "cronicas"],
+  ["laboratorio/", "Laboratório", "Protótipos locais e recursos beta.", "laboratorio"],
+  ["assimilador/", "Área do Assimilador", "Ponto de acesso para o acervo privado.", "assimilador"]
+] as const;
 ---
 
 <PortalLayout
@@ -82,14 +83,16 @@ const sections = [
             example={quests[0].data.example}
           />
         ) : (
-          <article class="timeline-card"><p class="card-eyebrow">Quest ativa</p><h3>Nenhuma quest publicada</h3></article>
+          <article class="timeline-card"><NavigationIcon name="quests" size="large" /><p class="card-eyebrow">Quest ativa</p><h3>Nenhuma quest publicada</h3></article>
         )}
         <article class="timeline-card timeline-card--empty">
+          <NavigationIcon name="mundo" size="large" />
           <div class="card-eyebrow"><span>Última descoberta</span><span class="example-label">Estado vazio</span></div>
           <h3>Aguardando catalogação</h3>
           <p>Descobertas públicas aparecerão aqui sem antecipar lore da campanha.</p>
         </article>
         <article class="timeline-card timeline-card--empty">
+          <NavigationIcon name="compendio" size="large" />
           <div class="card-eyebrow"><span>Item recente</span><span class="example-label">Estado vazio</span></div>
           <h3>Nenhum registro recente</h3>
           <p>Novos itens do compêndio serão destacados quando publicados.</p>
@@ -132,9 +135,9 @@ const sections = [
       </div>
       <div class="directory-grid">
         {
-          sections.map(([path, title, description, index]) => (
+          sections.map(([path, title, description, icon]) => (
             <a class="directory-card" href={withBase(path, base)}>
-              <span>{index}</span>
+              <span><NavigationIcon name={icon} /></span>
               <h3>{title}</h3>
               <p>{description}</p>
               <i aria-hidden="true">↗</i>

@@ -1,3 +1,15 @@
+---
+title: "Fibra Tendínea"
+slug: "fibra-tendinea"
+type: "Material Assimilado"
+tags:
+  - "Armas"
+  - "Fibra"
+  - "Tração"
+updated: "2026-07-28"
+source: "Materiais Assimilados e Equipamentos de Partida"
+---
+
 # Fibra Tendínea
 
 ## Tração Potente
@@ -24,5 +36,5 @@ Se uma **Pressão** for mantida num disparo que utilizou Tração Potente, a Fib
 
 1. O arco normalmente usaria Reação, mas o Explorador escolhe Potência.
 2. A distância imporia uma penalidade ao resultado.
-3. O jogador investe uma Adaptação para cancelar essa penalidade.
-4. Uma Pressão mantida deixaria a Fibra em Sobretensão depois do disparo.
+3. O jogador investe 1 Adaptação para cancelar essa penalidade.
+4. 1 Pressão mantida deixaria a Fibra em Sobretensão depois do disparo.

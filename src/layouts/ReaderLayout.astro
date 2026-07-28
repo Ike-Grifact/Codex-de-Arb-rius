@@ -20,6 +20,7 @@ interface Props {
   headings: Heading[];
   origin: string;
   version?: string;
+  updated: Date;
   exports?: { pdf?: boolean; markdown?: boolean; html?: boolean };
 }
 
@@ -30,6 +31,7 @@ const {
   headings,
   origin,
   version,
+  updated,
   exports = {}
 } = Astro.props;
 const toc = headings.filter((heading) => heading.depth === 2 || heading.depth === 3);
@@ -50,8 +52,11 @@ const toc = headings.filter((heading) => heading.depth === 2 || heading.depth ==
     </aside>
     <main id="conteudo" class="reader-main">
       <div class="print-meta">
-        <p>Codex de Árborius · Portal público</p>
-        <p>{version && `${version} · `}Fonte: {origin}</p>
+        <p>Codex de Árborius · Biblioteca · Guia do jogador</p>
+        <p>
+          {version && `${version} · `}
+          Atualizado em <time datetime={updated.toISOString()}>{updated.toLocaleDateString("pt-BR")}</time>
+        </p>
       </div>
       <header class="reader-hero">
         <p class="eyebrow">Biblioteca · guia do jogador</p>
@@ -59,6 +64,7 @@ const toc = headings.filter((heading) => heading.depth === 2 || heading.depth ==
         <p>{description}</p>
         <ExportControls
           slug={slug}
+          title={title}
           markdown={exports.markdown}
           pdf={exports.pdf}
           html={exports.html}
@@ -79,6 +85,7 @@ const toc = headings.filter((heading) => heading.depth === 2 || heading.depth ==
         <a href="../">← Voltar à Biblioteca</a>
         <a href="#conteudo">Voltar ao início ↑</a>
       </footer>
+      <footer class="print-footer">Codex de Árborius · {title}</footer>
     </main>
   </div>
   <MobileNavigation />

@@ -2,6 +2,7 @@
 import PortalLayout from "../../layouts/PortalLayout.astro";
 import BetaBadge from "../../components/BetaBadge.astro";
 import { withBase } from "../../lib/paths";
+import NavigationIcon from "../../components/NavigationIcon.astro";
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -10,20 +11,20 @@ const base = import.meta.env.BASE_URL;
     <header class="page-intro">
       <div>
         <p class="eyebrow">Recursos experimentais</p>
-        <h1>Laboratório</h1>
+        <h1 class="area-title"><NavigationIcon name="laboratorio" /> Laboratório</h1>
         <p>Protótipos isolados do portal principal. Não há conta, servidor, VTT ou sincronização.</p>
       </div>
     </header>
     <div class="lab-grid">
       <article class="lab-card">
-        <div class="lab-card__top"><span aria-hidden="true">✎</span><BetaBadge /></div>
+        <div class="lab-card__top"><NavigationIcon name="cronicas" /><BetaBadge /></div>
         <h2>Criação de fichas</h2>
         <p>Estrutura inicial para um protótipo local. A ficha completa não foi migrada nesta fase.</p>
         <p class="local-warning">Recurso experimental. Os dados permanecem apenas neste navegador.</p>
         <a class="button" href={withBase("laboratorio/fichas/", base)}>Abrir protótipo</a>
       </article>
       <article class="lab-card">
-        <div class="lab-card__top"><span aria-hidden="true">⬡</span><BetaBadge /></div>
+        <div class="lab-card__top"><NavigationIcon name="laboratorio" /><BetaBadge /></div>
         <h2>Rolador de dados</h2>
         <p>Espaço reservado para o rolador local, sem integração com Foundry ou VTT.</p>
         <p class="local-warning">Recurso experimental. Os dados permanecem apenas neste navegador.</p>

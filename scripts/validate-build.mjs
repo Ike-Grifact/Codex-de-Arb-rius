@@ -1,6 +1,7 @@
 import { access, readFile, readdir } from "node:fs/promises";
 import { dirname, extname, join, posix, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { symbols } from "../src/data/game-symbols.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dist = resolve(root, "dist");
@@ -64,6 +65,17 @@ for (const file of htmlFiles) {
   if (/C:\\|F:\\|file:\/\//i.test(html)) {
     errors.push(`${file}: caminho local absoluto encontrado`);
   }
+  if (/\{\{[^}]+\}\}/.test(html)) {
+    errors.push(`${file}: marcação semântica não compilada`);
+  }
+
+  const symbolSources = [...html.matchAll(/<img[^>]+src=["']([^"']*\/symbols\/[^"']+)["'][^>]*>/g)]
+    .map((match) => match[1]);
+  for (const source of symbolSources) {
+    if (!source.startsWith(`${configuredBase}symbols/`)) {
+      errors.push(`${relative(dist, file)}: símbolo sem base configurada ${source}`);
+    }
+  }
 
   const links = [...html.matchAll(/\s(?:href|src)=["']([^"']+)["']/g)].map((match) => match[1]);
   for (const link of links) {
@@ -100,11 +112,31 @@ for (const forbidden of [
   }
 }
 
+for (const symbol of Object.values(symbols)) {
+  if (!relativeFiles.has(`symbols/${symbol.file}`)) {
+    errors.push(`Símbolo mapeado ausente no build: ${symbol.file}`);
+  }
+}
+
+const markdownFiles = files.filter((file) => extname(file) === ".md");
+for (const file of markdownFiles) {
+  const markdown = await readFile(file, "utf8");
+  if (!/^---\r?\n[\s\S]+?\r?\n---\r?\n/.test(markdown)) {
+    errors.push(`${relative(dist, file)}: frontmatter Markdown ausente ou inválido`);
+  }
+  if (/\{\{[^}]+\}\}/.test(markdown)) {
+    errors.push(`${relative(dist, file)}: token de símbolo não convertido`);
+  }
+  if (/^import\s|<[A-Z][A-Za-z0-9]*\b/m.test(markdown)) {
+    errors.push(`${relative(dist, file)}: componente de interface na exportação Markdown`);
+  }
+}
+
 if (relativeFiles.has("biblioteca/guia-lucker/index.html")) {
   errors.push("O Guia Lucker gerou uma rota pública.");
 }
 
 if (errors.length) throw new Error(errors.join("\n"));
 console.log(
-  `Build validado: ${htmlFiles.length} páginas, links internos íntegros, sem IDs duplicados, caminhos locais ou conteúdo reservado.`
+  `Build validado: ${htmlFiles.length} páginas, ${markdownFiles.length} Markdown e símbolos com BASE_URL íntegros.`
 );

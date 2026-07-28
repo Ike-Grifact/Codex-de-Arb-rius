@@ -1,14 +1,15 @@
 ---
 import PortalLayout from "../../layouts/PortalLayout.astro";
+import NavigationIcon from "../../components/NavigationIcon.astro";
 const privateRepository = import.meta.env.PUBLIC_SRD_REPOSITORY_URL;
 ---
 
 <PortalLayout title="Área do Assimilador" description="Orientação para o acervo privado do Assimilador.">
   <div class="page-container narrow-page">
     <section class="reserved-panel">
-      <span class="reserved-panel__mark" aria-hidden="true">◆</span>
+      <span class="reserved-panel__mark"><NavigationIcon name="assimilador" size="large" /></span>
       <p class="eyebrow">Separação de segurança</p>
-      <h1>Área reservada ao Assimilador.</h1>
+      <h1 class="area-title">Área reservada ao Assimilador.</h1>
       <p>O SRD e os materiais internos são mantidos em um repositório privado.</p>
       {
         privateRepository ? (

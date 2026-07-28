@@ -1,3 +1,15 @@
+---
+title: "Vestimenta Acolchoada do Explorador"
+slug: "vestimenta-acolchoada-do-explorador"
+type: "Item"
+tags:
+  - "Durável"
+  - "Exploração"
+  - "Vestimenta"
+updated: "2026-07-28"
+source: "Materiais Assimilados e Equipamentos de Partida"
+---
+
 # Vestimenta Acolchoada do Explorador
 
 Colete **Durável** e leve. O peitoral pode ser removido e reorganizado como manta, colchonete e isolamento térmico.

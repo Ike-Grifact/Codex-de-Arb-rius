@@ -1,19 +1,20 @@
 ---
 import { withBase } from "../lib/paths";
+import NavigationIcon from "./NavigationIcon.astro";
 const base = import.meta.env.BASE_URL;
 const links = [
-  ["", "Início", "⌂"],
-  ["biblioteca/", "Biblioteca", "▤"],
-  ["compendio/", "Compêndio", "◇"],
-  ["buscar/", "Buscar", "⌕"]
-];
+  ["", "Início", "inicio"],
+  ["biblioteca/", "Biblioteca", "biblioteca"],
+  ["compendio/", "Compêndio", "compendio"],
+  ["buscar/", "Buscar", "busca"]
+] as const;
 ---
 
 <nav class="mobile-navigation no-print" aria-label="Navegação móvel">
   {
     links.map(([path, label, icon]) => (
       <a href={withBase(path, base)}>
-        <span aria-hidden="true">{icon}</span>
+        <NavigationIcon name={icon} />
         <small>{label}</small>
       </a>
     ))

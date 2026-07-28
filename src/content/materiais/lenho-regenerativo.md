@@ -9,7 +9,7 @@ visibility: "publico"
 status: "publicado"
 tags:
   - madeira
-  - regeneração
+  - regeneracao
   - craft
 related:
   - durabilidade

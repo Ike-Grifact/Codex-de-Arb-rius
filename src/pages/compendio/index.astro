@@ -2,14 +2,51 @@
 import { getCollection } from "astro:content";
 import PortalLayout from "../../layouts/PortalLayout.astro";
 import CompendiumCard from "../../components/CompendiumCard.astro";
+import CategoryIcon from "../../components/CategoryIcon.astro";
+import NavigationIcon from "../../components/NavigationIcon.astro";
+import {
+  availabilityLabel,
+  availabilityLabels,
+  categoryLabel,
+  categoryLabels,
+  originLabel,
+  originLabels,
+  ptBrCollator,
+  tagLabel,
+  tagLabels,
+  typeLabel
+} from "../../data/taxonomy";
 
 const materials = (await getCollection("materiais"))
-  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+  .map((entry) => ({
+    ...entry.data,
+    categoryId: "material",
+    space: undefined
+  }));
 const items = (await getCollection("itens"))
-  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
-const entries = [...materials, ...items].sort((a, b) =>
-  a.data.title.localeCompare(b.data.title, "pt-BR")
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+  .map((entry) => ({
+    ...entry.data,
+    categoryId: entry.data.category
+  }));
+const entries = [...materials, ...items].sort((left, right) =>
+  ptBrCollator.compare(left.title, right.title)
 );
+
+const unique = (values: string[]) => [...new Set(values)];
+const categoryIds = unique(entries.map((entry) => entry.categoryId))
+  .sort((left, right) => ptBrCollator.compare(categoryLabel(left), categoryLabel(right)));
+const tagIds = unique(entries.flatMap((entry) => entry.tags))
+  .sort((left, right) => ptBrCollator.compare(tagLabel(left), tagLabel(right)));
+const availabilityIds = unique(entries.map((entry) => entry.availability))
+  .sort((left, right) => ptBrCollator.compare(availabilityLabel(left), availabilityLabel(right)));
+const originIds = unique(entries.map((entry) => entry.origin))
+  .sort((left, right) => ptBrCollator.compare(originLabel(left), originLabel(right)));
+const referenceCategories = [
+  "material", "arma", "armadura", "ferramenta", "consumivel", "provisao",
+  "abrigo", "montaria", "kit", "municao", "projeto", "item"
+];
 ---
 
 <PortalLayout title="Compêndio" description="Materiais e equipamentos públicos do Codex de Árborius.">
@@ -17,7 +54,7 @@ const entries = [...materials, ...items].sort((a, b) =>
     <header class="page-intro">
       <div>
         <p class="eyebrow">Referência estruturada</p>
-        <h1>Compêndio</h1>
+        <h1 class="area-title"><NavigationIcon name="compendio" /> Compêndio</h1>
         <p>Cada verbete alimenta esta listagem, o guia, a busca e sua própria exportação.</p>
       </div>
       <div class="library-counter">
@@ -26,90 +63,114 @@ const entries = [...materials, ...items].sort((a, b) =>
       </div>
     </header>
 
-    <div class="filter-bar no-print" aria-label="Filtros do compêndio">
-      <label>
-        <span>Tipo</span>
-        <select data-filter="type">
-          <option value="">Todos</option>
-          <option value="material">Materiais</option>
-          <option value="item">Itens</option>
-        </select>
-      </label>
-      <label>
-        <span>Categoria</span>
-        <select data-filter="category">
-          <option value="">Todas</option>
-          <option value="1">Categoria 1</option>
-          <option value="2">Categoria 2</option>
-          <option value="armadura">Armadura</option>
-          <option value="ferramenta">Ferramenta</option>
-          <option value="consumivel">Consumível</option>
-          <option value="projeto">Projeto</option>
-        </select>
-      </label>
-      <label>
-        <span>Disponibilidade</span>
-        <select data-filter="availability">
-          <option value="">Todas</option>
-          <option value="inicial">Inicial</option>
-        </select>
-      </label>
-      <label class="filter-search">
-        <span>Tags ou nome</span>
-        <input type="search" data-filter="text" placeholder="Ex.: madeira, água…" />
-      </label>
-      <button type="button" data-clear-filters>Limpar</button>
-    </div>
+    <details class="filter-panel no-print" open>
+      <summary><CategoryIcon name="item" /> Filtros do Compêndio</summary>
+      <div class="filter-bar" aria-label="Filtros do compêndio">
+        <label>
+          <span>Tipo</span>
+          <select data-filter="type">
+            <option value="">Todos</option>
+            <option value="material">{typeLabel("material")}</option>
+            <option value="item">{typeLabel("item")}</option>
+          </select>
+        </label>
+        <label>
+          <span><CategoryIcon name="item" size="small" /> Categoria</span>
+          <select data-filter="category">
+            <option value="">Todas</option>
+            {categoryIds.map((id) => <option value={id}>{categoryLabel(id)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>Tag</span>
+          <select data-filter="tag">
+            <option value="">Todas</option>
+            {tagIds.map((id) => <option value={id}>{tagLabel(id)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>Disponibilidade</span>
+          <select data-filter="availability">
+            <option value="">Todas</option>
+            {availabilityIds.map((id) => <option value={id}>{availabilityLabel(id)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>Origem</span>
+          <select data-filter="origin">
+            <option value="">Todas</option>
+            {originIds.map((id) => <option value={id}>{originLabel(id)}</option>)}
+          </select>
+        </label>
+        <label class="filter-search">
+          <span>Nome</span>
+          <input type="search" data-filter="text" placeholder="Ex.: água, seda…" />
+        </label>
+        <button type="button" data-clear-filters>Limpar</button>
+      </div>
+    </details>
 
     <p class="filter-count" aria-live="polite"><span data-visible-count>{entries.length}</span> verbetes exibidos</p>
 
     <div class="compendium-grid">
-      {
-        entries.map((entry) => (
-          <CompendiumCard
-            title={entry.data.title}
-            slug={entry.data.slug}
-            description={entry.data.description}
-            type={entry.data.type}
-            category={entry.data.category}
-            availability={entry.data.availability}
-            tags={entry.data.tags}
-          />
-        ))
-      }
+      {entries.map((entry) => (
+        <CompendiumCard
+          title={entry.title}
+          slug={entry.slug}
+          description={entry.description}
+          type={entry.type}
+          category={entry.type === "material" ? entry.category : entry.categoryId}
+          availability={entry.availability}
+          tags={entry.tags}
+          origin={entry.origin}
+          space={entry.space}
+        />
+      ))}
     </div>
     <div class="empty-state" data-filter-empty hidden>
+      <NavigationIcon name="compendio" size="large" />
       <h3>Nenhum verbete encontrado</h3>
       <p>Ajuste ou limpe os filtros para ver o acervo público.</p>
     </div>
 
-    <section class="future-categories">
-      <p class="eyebrow">Estrutura preparada</p>
-      <h2>Próximas categorias</h2>
-      <div class="tag-list">
-        {["Armas", "Armaduras", "Ferramentas", "Consumíveis", "Criaturas", "NPCs", "Características", "Condições"].map((name) => <span>{name}</span>)}
+    <section class="category-reference">
+      <p class="eyebrow">Referência rápida</p>
+      <h2>Categorias do Compêndio</h2>
+      <div class="category-reference__grid">
+        {referenceCategories.map((id) => (
+          <span>
+            <CategoryIcon name={id} />
+            {categoryLabel(id)}
+          </span>
+        ))}
       </div>
-      <p>As categorias permanecem vazias até haver conteúdo público validado. Nenhum verbete foi inventado.</p>
+      <p>Categorias sem verbetes permanecem como estrutura visual até receberem conteúdo público validado.</p>
     </section>
   </div>
 </PortalLayout>
 
 <script>
+  const panel = document.querySelector<HTMLDetailsElement>(".filter-panel");
+  if (panel && window.matchMedia("(max-width: 760px)").matches) panel.open = false;
+
   const controls = [...document.querySelectorAll<HTMLInputElement | HTMLSelectElement>("[data-filter]")];
   const entries = [...document.querySelectorAll<HTMLElement>("[data-filter-entry]")];
   const counter = document.querySelector<HTMLElement>("[data-visible-count]");
   const empty = document.querySelector<HTMLElement>("[data-filter-empty]");
 
   const applyFilters = () => {
-    const values = Object.fromEntries(controls.map((control) => [control.dataset.filter, control.value.toLocaleLowerCase("pt-BR").trim()]));
+    const values = Object.fromEntries(
+      controls.map((control) => [control.dataset.filter, control.value.toLocaleLowerCase("pt-BR").trim()])
+    );
     let visible = 0;
     entries.forEach((entry) => {
-      const haystack = `${entry.textContent} ${entry.dataset.tags}`.toLocaleLowerCase("pt-BR");
       const matches =
         (!values.type || entry.dataset.type === values.type) &&
         (!values.category || entry.dataset.category === values.category) &&
+        (!values.tag || entry.dataset.tags?.includes(`|${values.tag}|`)) &&
         (!values.availability || entry.dataset.availability === values.availability) &&
-        (!values.text || haystack.includes(values.text));
+        (!values.origin || entry.dataset.origin === values.origin) &&
+        (!values.text || entry.dataset.title?.includes(values.text));
       entry.hidden = !matches;
       if (matches) visible += 1;
     });

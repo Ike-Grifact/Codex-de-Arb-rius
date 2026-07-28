@@ -1,51 +1,105 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import PortalLayout from "../../layouts/PortalLayout.astro";
+import NavigationIcon from "../../components/NavigationIcon.astro";
+import CategoryIcon from "../../components/CategoryIcon.astro";
+import ExportControls from "../../components/ExportControls.astro";
+import { withBase } from "../../lib/paths";
+import {
+  categoryLabel,
+  originLabel,
+  ptBrCollator,
+  tagLabel
+} from "../../data/taxonomy";
 
-const lore = (await getCollection("lore"))
-  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
-const categories = ["Locais", "Guildas", "Culturas", "Povos", "Personagens", "Eventos", "Cronologia"];
+const entries = (await getCollection("lore"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+  .sort((left, right) => left.data.order - right.data.order);
+const rendered = await Promise.all(
+  entries.map(async (entry) => ({ entry, Content: (await render(entry)).Content }))
+);
+const entryBySlug = new Map(entries.map((entry) => [entry.data.slug, entry]));
+const base = import.meta.env.BASE_URL;
 ---
 
-<PortalLayout title="Mundo" description="Infraestrutura pública de lore e cronologia do Codex de Árborius.">
-  <div class="page-container">
+<PortalLayout title="Mundo" description="Lore conhecida e pública do Codex de Árborius.">
+  <div class="page-container world-page">
     <header class="page-intro">
       <div>
         <p class="eyebrow">Atlas público</p>
-        <h1>Mundo</h1>
-        <p>Estrutura pronta para lore confirmada. Nenhum segredo ou detalhe definitivo foi acrescentado.</p>
+        <h1 class="area-title"><NavigationIcon name="mundo" /> Mundo</h1>
+        <p>Lore conhecida pelos personagens, reunida a partir do Guia Arboriano sem expor material reservado.</p>
+      </div>
+      <div class="library-counter">
+        <strong>{String(entries.length).padStart(2, "0")}</strong>
+        <span>verbetes<br />públicos</span>
       </div>
     </header>
-    <div class="directory-grid directory-grid--compact">
-      {
-        categories.map((category, index) => (
-          <article class="directory-card directory-card--static">
-            <span>{String(index + 1).padStart(2, "0")}</span>
-            <h3>{category}</h3>
-            <p>Nenhum verbete público nesta categoria.</p>
-          </article>
-        ))
-      }
-    </div>
-    <section class="infrastructure-preview">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Modelo editorial</p>
-          <h2>Entrada demonstrativa</h2>
-        </div>
-      </div>
-      {
-        lore.map((entry) => (
-          <article class="timeline-card" id={entry.data.slug}>
-            <div class="card-eyebrow">
-              <span>{entry.data.type}</span>
-              {entry.data.example && <span class="example-label">Exemplo</span>}
+
+    <div class="lore-grid">
+      {rendered.map(({ entry, Content }) => {
+        const sortedTags = [...entry.data.tags].sort((left, right) =>
+          ptBrCollator.compare(tagLabel(left), tagLabel(right))
+        );
+        return (
+          <article class="lore-card" id={entry.data.slug}>
+            <header class="lore-card__header">
+              <span class="type-mark" aria-hidden="true"><CategoryIcon name="item" /></span>
+              <div>
+                <p class="card-eyebrow">{categoryLabel(entry.data.category)}</p>
+                <h2>{entry.data.title}</h2>
+                <p>{entry.data.description}</p>
+              </div>
+            </header>
+            <div class="tag-list">{sortedTags.map((tag) => <span>{tagLabel(tag)}</span>)}</div>
+            <dl class="lore-card__meta">
+              <div>
+                <dt>Guia de origem</dt>
+                <dd><a href={withBase("biblioteca/guia-arboriano/", base)}>{originLabel(entry.data.sourceGuide)}</a></dd>
+              </div>
+              <div>
+                <dt>Conteúdos relacionados</dt>
+                <dd>
+                  {entry.data.related.length
+                    ? entry.data.related.map((slug, index) => {
+                        const related = entryBySlug.get(slug);
+                        return related && (
+                          <><a href={`#${slug}`}>{related.data.title}</a>{index < entry.data.related.length - 1 && ", "}</>
+                        );
+                      })
+                    : "Nenhum"}
+                </dd>
+              </div>
+            </dl>
+            <div class="lore-card__actions no-print">
+              <a class="button button--primary" href={`#ler-${entry.data.slug}`}>Ler verbete</a>
+              <ExportControls slug={entry.data.slug} title={entry.data.title} markdown pdf />
             </div>
-            <h3>{entry.data.title}</h3>
-            <p>{entry.data.description}</p>
+            <details class="lore-content" id={`ler-${entry.data.slug}`}>
+              <summary>Ler conteúdo completo</summary>
+              <div class="lore-content__body"><Content /></div>
+            </details>
+            <footer class="print-footer">Codex de Árborius · {entry.data.title}</footer>
           </article>
-        ))
-      }
-    </section>
+        );
+      })}
+    </div>
+
+    {!entries.length && (
+      <div class="empty-state">
+        <NavigationIcon name="mundo" size="large" />
+        <h2>Nenhum verbete público</h2>
+        <p>A lore aparecerá aqui quando houver conteúdo conhecido e validado.</p>
+      </div>
+    )}
   </div>
 </PortalLayout>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>(".lore-card__actions > a[href^='#ler-']").forEach((link) => {
+    link.addEventListener("click", () => {
+      const details = document.querySelector<HTMLDetailsElement>(link.hash);
+      if (details) details.open = true;
+    });
+  });
+</script>

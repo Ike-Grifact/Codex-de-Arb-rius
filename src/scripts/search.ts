@@ -1,6 +1,10 @@
+import { categoryIconSvg } from "../data/category-icons";
+
 interface SearchEntry {
   title: string;
   type: string;
+  category: string;
+  categoryLabel: string;
   excerpt: string;
   tags: string[];
   link: string;
@@ -61,8 +65,13 @@ if (root) {
           .map(
             ({ entry }) => `
               <article class="search-result">
-                <p class="card-eyebrow">${escapeHtml(entry.type)}</p>
-                <h2><a href="${escapeHtml(href(entry.link))}">${escapeHtml(entry.title)}</a></h2>
+                <div class="search-result__head">
+                  <span class="type-mark" aria-hidden="true">${categoryIconSvg(entry.category)}</span>
+                  <div>
+                    <p class="card-eyebrow">${escapeHtml(entry.categoryLabel)} · ${escapeHtml(entry.type)}</p>
+                    <h2><a href="${escapeHtml(href(entry.link))}">${escapeHtml(entry.title)}</a></h2>
+                  </div>
+                </div>
                 <p>${escapeHtml(entry.excerpt)}</p>
                 <div class="tag-list">${entry.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
               </article>`

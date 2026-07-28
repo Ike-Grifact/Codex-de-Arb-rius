@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import PortalLayout from "../../layouts/PortalLayout.astro";
 import GuideCard from "../../components/GuideCard.astro";
+import NavigationIcon from "../../components/NavigationIcon.astro";
 
 const guides = (await getCollection("guias"))
   .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
@@ -13,7 +14,7 @@ const guides = (await getCollection("guias"))
     <header class="page-intro">
       <div>
         <p class="eyebrow">Acervo de guias</p>
-        <h1>Biblioteca</h1>
+        <h1 class="area-title"><NavigationIcon name="biblioteca" /> Biblioteca</h1>
         <p>Leia no portal, imprima em PDF ou baixe uma cópia Markdown limpa.</p>
       </div>
       <div class="library-counter">

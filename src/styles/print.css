@@ -32,6 +32,7 @@
   }
 
   .no-print,
+  .skip-link,
   .app-header,
   .app-sidebar,
   .mobile-navigation,
@@ -139,5 +140,81 @@
   .game-symbol img {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+  }
+}
+
+@media print {
+  .print-footer {
+    display: block !important;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 1.5mm;
+    background: #fff;
+    color: #666;
+    font: 7.5pt/1.2 Inter, sans-serif;
+    text-align: center;
+  }
+
+  dialog,
+  dialog[open],
+  .export-dialog,
+  .filter-panel,
+  .lore-card__actions {
+    display: none !important;
+  }
+
+  .entry-document,
+  .lore-card,
+  .compendium-card,
+  .entry-metadata,
+  .entry-prose {
+    box-shadow: none !important;
+  }
+
+  .entry-metadata,
+  .entry-card,
+  .compendium-card,
+  .rule-card,
+  .example-box,
+  .cost,
+  .mechanic-callout,
+  .game-symbol,
+  .item-panel,
+  .lore-card,
+  blockquote,
+  figure,
+  table:not(.reader-content > table) {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .reader-content h1 + p,
+  .reader-content h2 + p,
+  .reader-content h3 + p,
+  .entry-prose h1 + p,
+  .entry-prose h2 + p,
+  .entry-prose h3 + p {
+    break-before: avoid;
+  }
+
+  .entry-prose table,
+  .reader-content table {
+    display: table !important;
+    max-width: 100%;
+    table-layout: auto;
+  }
+
+  .lore-content > summary {
+    display: none !important;
+  }
+
+  .lore-content:not([open]) > :not(summary) {
+    display: block !important;
+  }
+
+  .lore-grid {
+    display: block !important;
   }
 }

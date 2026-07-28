@@ -1,3 +1,15 @@
+---
+title: "Seda Camaleônica"
+slug: "seda-camaleonica"
+type: "Material Assimilado"
+tags:
+  - "Camuflagem"
+  - "Fabricação"
+  - "Tecido"
+updated: "2026-07-28"
+source: "Materiais Assimilados e Equipamentos de Partida"
+---
+
 # Seda Camaleônica
 
 ## Camuflagem Receptiva
@@ -8,6 +20,6 @@ Enquanto o usuário permanecer imóvel ou se mover lentamente no ambiente calibr
 
 ## Dessincronização
 
-Uma Pressão mantida durante o uso encerra o benefício até nova calibração. A Seda não remove sons, odores ou volume.
+1 Pressão mantida durante o uso encerra o benefício até nova calibração. A Seda não remove sons, odores ou volume.
 
 **Aplicações:** mantos, capuzes, coberturas, redes, capas de mochila e tendas aprimoradas.

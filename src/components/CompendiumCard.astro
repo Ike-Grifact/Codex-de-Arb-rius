@@ -1,5 +1,13 @@
 ---
 import { withBase } from "../lib/paths";
+import CategoryIcon from "./CategoryIcon.astro";
+import {
+  availabilityLabel,
+  categoryLabel,
+  originLabel,
+  ptBrCollator,
+  tagLabel
+} from "../data/taxonomy";
 
 interface Props {
   title: string;
@@ -9,6 +17,8 @@ interface Props {
   category?: string | number;
   availability?: string;
   tags?: string[];
+  origin: string;
+  space?: string;
 }
 
 const {
@@ -18,31 +28,48 @@ const {
   type,
   category,
   availability,
-  tags = []
+  tags = [],
+  origin,
+  space
 } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const categoryId = type === "material" ? "material" : String(category ?? "item");
+const visibleCategory = categoryLabel(categoryId);
+const sortedTags = [...tags].sort((left, right) =>
+  ptBrCollator.compare(tagLabel(left), tagLabel(right))
+);
 ---
 
 <article
   class="compendium-card"
   data-filter-entry
   data-type={type}
-  data-category={String(category ?? "")}
+  data-category={categoryId}
   data-availability={availability}
-  data-tags={tags.join(" ")}
+  data-origin={origin}
+  data-tags={tags.map((tag) => `|${tag}|`).join("")}
+  data-title={title.toLocaleLowerCase("pt-BR")}
 >
   <div class="compendium-card__head">
-    <span class:list={["type-mark", `type-mark--${type}`]} aria-hidden="true">
-      {type === "material" ? "M" : "I"}
+    <span class="type-mark" aria-hidden="true">
+      <CategoryIcon name={categoryId} />
     </span>
     <div>
-      <p>{type} {category !== undefined && `· categoria ${category}`}</p>
+      <p>
+        {visibleCategory}
+        {type === "material" && category !== undefined && ` · Categoria ${category}`}
+      </p>
       <h3>{title}</h3>
     </div>
   </div>
   <p>{description}</p>
+  <dl class="compendium-card__meta">
+    {availability && <><dt>Disponibilidade</dt><dd>{availabilityLabel(availability)}</dd></>}
+    {space && <><dt>Espaços</dt><dd>{space}</dd></>}
+    <dt>Origem</dt><dd>{originLabel(origin)}</dd>
+  </dl>
   <div class="tag-list">
-    {tags.slice(0, 3).map((tag) => <span>{tag}</span>)}
+    {sortedTags.map((tag) => <span>{tagLabel(tag)}</span>)}
   </div>
   <a class="card-link" href={withBase(`compendio/${slug}/`, base)}>
     Abrir verbete <span aria-hidden="true">→</span>

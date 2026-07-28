@@ -1,12 +1,13 @@
 ---
 import { withBase } from "../lib/paths";
+import { gameSymbolText, symbols } from "../data/game-symbols.mjs";
 
 interface Props {
   type:
     | "sucesso"
     | "adaptacao"
     | "pressao"
-    | "niveldeterminacao"
+    | "niveldedeterminacao"
     | "pontodedeterminacao"
     | "niveldeassimilacao"
     | "pontodeassimilacao"
@@ -27,34 +28,26 @@ const {
   size = "normal"
 } = Astro.props;
 
-const labels: Record<Props["type"], string> = {
-  sucesso: "Sucesso",
-  adaptacao: "Adaptação",
-  pressao: "Pressão",
-  niveldeterminacao: "Nível de Determinação",
-  pontodedeterminacao: "Ponto de Determinação",
-  niveldeassimilacao: "Nível de Assimilação",
-  pontodeassimilacao: "Ponto de Assimilação",
-  niveldesaude: "Nível de Saúde",
-  pontodesaude: "Ponto de Saúde",
-  d6: "d6",
-  d10: "d10",
-  d12: "d12"
-};
-
-const readableLabel = typeof label === "string" ? label : labels[type];
-const ariaLabel = [count, labels[type]].filter(Boolean).join(" ");
+const symbol = symbols[type];
+const numericCount = count === undefined ? undefined : Number(count);
+const ariaLabel = gameSymbolText(type, numericCount);
+const readableLabel = typeof label === "string" ? label : symbol.label;
 ---
 
-<span class:list={["game-symbol", `game-symbol--${size}`]} aria-label={ariaLabel}>
+<span
+  class:list={["game-symbol", `game-symbol--${size}`]}
+  role="img"
+  aria-label={ariaLabel}
+  title={ariaLabel}
+>
   {count !== undefined && <strong>{count}</strong>}
   <img
-    src={withBase(`symbols/${type}.svg`, import.meta.env.BASE_URL)}
+    src={withBase(`symbols/${symbol.file}`, import.meta.env.BASE_URL)}
     alt=""
-    title={labels[type]}
+    title={ariaLabel}
     width="22"
     height="22"
-    loading="lazy"
+    decoding="async"
   />
   {label && <span>{readableLabel}</span>}
 </span>
