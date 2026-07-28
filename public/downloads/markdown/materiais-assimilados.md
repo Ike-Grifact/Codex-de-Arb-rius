@@ -43,6 +43,7 @@ A rolagem padrão utiliza **Sagacidade + Manufaturas**. Use os valores normais d
 
 > **Exemplo:** um Desafortunado monta uma lança de Lenho Regenerativo. Com nenhum Sucesso, ela começa com a Durabilidade normal do modelo, já modificada pela limitação do material. Com um ou mais Sucessos, recebe +1 de Durabilidade máxima e atual.
 
+
 ## Distribuição sugerida da carga
 
 O patrimônio coletivo deve ser dividido entre os Campeiros. A distribuição abaixo é um exemplo para cinco duplas.

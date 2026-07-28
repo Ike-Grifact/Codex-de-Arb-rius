@@ -1,0 +1,22 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import AppHeader from "../components/AppHeader.astro";
+import AppSidebar from "../components/AppSidebar.astro";
+import MobileNavigation from "../components/MobileNavigation.astro";
+import "../styles/portal.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} bodyClass="portal-shell">
+  <AppHeader />
+  <AppSidebar />
+  <main id="conteudo" class="portal-main">
+    <slot />
+  </main>
+  <MobileNavigation />
+</BaseLayout>

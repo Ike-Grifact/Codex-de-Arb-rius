@@ -1,0 +1,147 @@
+---
+import { getCollection } from "astro:content";
+import PortalLayout from "../layouts/PortalLayout.astro";
+import GuideCard from "../components/GuideCard.astro";
+import QuestCard from "../components/QuestCard.astro";
+import SessionCard from "../components/SessionCard.astro";
+import { withBase } from "../lib/paths";
+
+const base = import.meta.env.BASE_URL;
+const guides = (await getCollection("guias"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+  .sort((a, b) => a.data.order - b.data.order);
+const quests = (await getCollection("quests"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
+const sessions = (await getCollection("sessoes"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
+
+const sections = [
+  ["biblioteca/", "Biblioteca", "Guias completos para leitura e exportação.", "01"],
+  ["compendio/", "Compêndio", "Materiais, itens e referências rápidas.", "02"],
+  ["mundo/", "Mundo", "Lugares, povos e cronologia pública.", "03"],
+  ["quests/", "Quests", "Objetivos e estados acompanhados pela campanha.", "04"],
+  ["cronicas/", "Crônicas", "Memória organizada das sessões.", "05"],
+  ["laboratorio/", "Laboratório", "Protótipos locais e recursos beta.", "06"],
+  ["assimilador/", "Área do Assimilador", "Ponto de acesso para o acervo privado.", "07"]
+];
+---
+
+<PortalLayout
+  title="Codex de Árborius"
+  description="Portal público para leitura, consulta e memória da campanha de Árborius."
+>
+  <div class="page-container home-page">
+    <section class="hero-panel">
+      <div class="hero-panel__copy">
+        <p class="eyebrow">Portal público · primeira edição</p>
+        <h1>Codex de<br /><em>Árborius</em></h1>
+        <p>
+          Um arquivo vivo para consultar regras, atravessar os guias e preservar
+          a memória pública da campanha.
+        </p>
+        <div class="hero-actions">
+          <a class="button button--primary" href={withBase("biblioteca/guia-arboriano/", base)}>
+            Continuar leitura <span aria-hidden="true">→</span>
+          </a>
+          <a class="button" href={withBase("compendio/", base)}>Explorar compêndio</a>
+        </div>
+      </div>
+      <div class="hero-panel__folio" aria-label="Resumo da biblioteca">
+        <span>Arquivo 01</span>
+        <strong>{guides.length}</strong>
+        <p>guias públicos<br />nesta edição</p>
+        <div class="folio-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+    </section>
+
+    <section class="campaign-strip" aria-labelledby="agora-na-campanha">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Painel narrativo</p>
+          <h2 id="agora-na-campanha">Agora na campanha</h2>
+        </div>
+        <p class="demo-note">Entradas demonstrativas, claramente marcadas.</p>
+      </div>
+      <div class="campaign-grid">
+        {sessions[0] ? (
+          <SessionCard
+            title={sessions[0].data.title}
+            number={sessions[0].data.number}
+            date={sessions[0].data.date}
+            description={sessions[0].data.description}
+            example={sessions[0].data.example}
+          />
+        ) : (
+          <article class="timeline-card"><p class="card-eyebrow">Última sessão</p><h3>Nenhuma crônica publicada</h3></article>
+        )}
+        {quests[0] ? (
+          <QuestCard
+            title={quests[0].data.title}
+            state={quests[0].data.state}
+            description={quests[0].data.description}
+            example={quests[0].data.example}
+          />
+        ) : (
+          <article class="timeline-card"><p class="card-eyebrow">Quest ativa</p><h3>Nenhuma quest publicada</h3></article>
+        )}
+        <article class="timeline-card timeline-card--empty">
+          <div class="card-eyebrow"><span>Última descoberta</span><span class="example-label">Estado vazio</span></div>
+          <h3>Aguardando catalogação</h3>
+          <p>Descobertas públicas aparecerão aqui sem antecipar lore da campanha.</p>
+        </article>
+        <article class="timeline-card timeline-card--empty">
+          <div class="card-eyebrow"><span>Item recente</span><span class="example-label">Estado vazio</span></div>
+          <h3>Nenhum registro recente</h3>
+          <p>Novos itens do compêndio serão destacados quando publicados.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-library" aria-labelledby="leitura-destacada">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Biblioteca</p>
+          <h2 id="leitura-destacada">Leitura destacada</h2>
+        </div>
+        <a class="text-link" href={withBase("biblioteca/", base)}>Ver todos os guias →</a>
+      </div>
+      <div class="guide-list">
+        {
+          guides.slice(0, 2).map((guide, index) => (
+            <GuideCard
+              title={guide.data.title}
+              slug={guide.data.slug}
+              description={guide.data.description}
+              tags={guide.data.tags}
+              status={guide.data.status}
+              updated={guide.data.updated}
+              exports={guide.data.exports}
+              index={index}
+            />
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section-directory" aria-labelledby="diretorio">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Diretório</p>
+          <h2 id="diretorio">Explore o Codex</h2>
+        </div>
+      </div>
+      <div class="directory-grid">
+        {
+          sections.map(([path, title, description, index]) => (
+            <a class="directory-card" href={withBase(path, base)}>
+              <span>{index}</span>
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <i aria-hidden="true">↗</i>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</PortalLayout>

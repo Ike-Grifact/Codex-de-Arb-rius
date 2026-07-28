@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import PortalLayout from "../../layouts/PortalLayout.astro";
+import QuestCard from "../../components/QuestCard.astro";
+
+const quests = (await getCollection("quests"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
+const states = ["disponível", "ativa", "concluída", "fracassada", "abandonada", "oculta"];
+---
+
+<PortalLayout title="Quests" description="Infraestrutura pública de quests do Codex de Árborius.">
+  <div class="page-container">
+    <header class="page-intro">
+      <div>
+        <p class="eyebrow">Registro de objetivos</p>
+        <h1>Quests</h1>
+        <p>Estados e modelos estão prontos; nenhuma quest real foi criada nesta migração.</p>
+      </div>
+    </header>
+    <div class="state-key" aria-label="Estados disponíveis">
+      {states.map((state) => <span>{state}</span>)}
+    </div>
+    <div class="campaign-grid campaign-grid--wide">
+      {
+        quests.map((entry) => (
+          <div id={entry.data.slug}>
+            <QuestCard
+              title={entry.data.title}
+              state={entry.data.state}
+              description={entry.data.description}
+              example={entry.data.example}
+            />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</PortalLayout>

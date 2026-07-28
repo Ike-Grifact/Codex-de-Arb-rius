@@ -1,0 +1,51 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import AppHeader from "../components/AppHeader.astro";
+import MobileNavigation from "../components/MobileNavigation.astro";
+import ExportControls from "../components/ExportControls.astro";
+import "../styles/compendium.css";
+import "../styles/print.css";
+
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  type: string;
+  category?: string | number;
+  origin: string;
+  tags?: string[];
+}
+
+const { title, description, slug, type, category, origin, tags = [] } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} bodyClass="entry-shell">
+  <AppHeader />
+  <main id="conteudo" class="entry-main">
+    <nav class="breadcrumbs no-print" aria-label="Navegação estrutural">
+      <a href="../../">Início</a><span>›</span><a href="../">Compêndio</a><span>›</span><span>{title}</span>
+    </nav>
+    <article class="entry-document">
+      <div class="print-meta">
+        <p>Codex de Árborius · Compêndio público</p>
+        <p>Fonte: {origin}</p>
+      </div>
+      <header class="entry-hero">
+        <span class:list={["type-mark", `type-mark--${type}`]} aria-hidden="true">
+          {type === "material" ? "M" : "I"}
+        </span>
+        <div>
+          <p class="eyebrow">{type}{category !== undefined && ` · ${category}`}</p>
+          <h1>{title}</h1>
+          <p>{description}</p>
+          <div class="tag-list">{tags.map((tag) => <span>{tag}</span>)}</div>
+        </div>
+      </header>
+      <ExportControls slug={slug} markdown pdf />
+      <div class="entry-prose">
+        <slot />
+      </div>
+    </article>
+  </main>
+  <MobileNavigation />
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+import PortalLayout from "../../layouts/PortalLayout.astro";
+---
+
+<PortalLayout title="Busca" description="Busca local no conteúdo público do Codex de Árborius.">
+  <div class="page-container search-page" data-search-root data-base={import.meta.env.BASE_URL}>
+    <header class="page-intro">
+      <div>
+        <p class="eyebrow">Índice local</p>
+        <h1>Buscar no Codex</h1>
+        <p>Guias, materiais, itens e registros públicos. Nenhuma consulta sai deste site.</p>
+      </div>
+    </header>
+    <form class="search-form" data-search-form>
+      <label for="site-search">Termo de busca</label>
+      <div>
+        <input id="site-search" type="search" autocomplete="off" placeholder="Ex.: Durabilidade, Campeiro, água…" data-search-input />
+        <button class="button button--primary" type="submit">Buscar</button>
+      </div>
+    </form>
+    <div class="search-summary" aria-live="polite" data-search-summary>
+      Digite ao menos dois caracteres.
+    </div>
+    <div class="search-results" data-search-results></div>
+  </div>
+</PortalLayout>
+
+<script>
+  import "../../scripts/search";
+</script>

@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import PortalLayout from "../../layouts/PortalLayout.astro";
+import SessionCard from "../../components/SessionCard.astro";
+
+const sessions = (await getCollection("sessoes"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+  .sort((a, b) => b.data.number - a.data.number);
+const fields = [
+  "número e data",
+  "participantes",
+  "resumo",
+  "decisões",
+  "NPCs encontrados",
+  "locais visitados",
+  "itens encontrados",
+  "quests alteradas",
+  "consequências",
+  "imagens"
+];
+---
+
+<PortalLayout title="Crônicas" description="Memória pública das sessões da campanha.">
+  <div class="page-container">
+    <header class="page-intro">
+      <div>
+        <p class="eyebrow">Memória da campanha</p>
+        <h1>Crônicas</h1>
+        <p>Uma estrutura editorial para registrar sessões públicas sem expor notas internas.</p>
+      </div>
+    </header>
+    <div class="chronicle-layout">
+      <section>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Registros</p>
+            <h2>Histórico público</h2>
+          </div>
+        </div>
+        <div class="campaign-grid campaign-grid--single">
+          {
+            sessions.map((entry) => (
+              <div id={entry.data.slug}>
+                <SessionCard
+                  title={entry.data.title}
+                  number={entry.data.number}
+                  date={entry.data.date}
+                  description={entry.data.description}
+                  example={entry.data.example}
+                />
+              </div>
+            ))
+          }
+        </div>
+      </section>
+      <aside class="record-template">
+        <p class="eyebrow">Campos preparados</p>
+        <h2>Modelo de sessão</h2>
+        <ul>{fields.map((field) => <li>{field}</li>)}</ul>
+      </aside>
+    </div>
+  </div>
+</PortalLayout>

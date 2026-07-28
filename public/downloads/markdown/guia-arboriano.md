@@ -11,6 +11,8 @@
 
 Este documento reúne somente a lore conhecida pelos personagens, as regras da Linhagem Arboriana e orientações para o jogador. O foco desta temporada são os Desafortunados enviados ao serviço exterior e os respectivos Campeiros Exploradores que os acompanham.
 
+
+
 # SUMÁRIO
 
 ## Parte I - Lore conhecida
@@ -49,6 +51,8 @@ Este documento reúne somente a lore conhecida pelos personagens, as regras da L
 26. Erros comuns
 27. Exemplos completos
 28. Referência rápida
+
+
 
 # PARTE I - LORE CONHECIDA
 
@@ -117,6 +121,8 @@ No começo da temporada, um Arboriano não deve presumir familiaridade automáti
 O desconhecimento não deve impedir o jogo. Ele cria espaço para observação, erro, negociação e aprendizado.
 
 A primeira temporada acompanha a transformação dessa condição. Culturas encontradas durante a campanha podem deixar de ser desconhecidas conforme os personagens convivem, investigam e constroem relações reais.
+
+
 
 # PARTE II - REGRAS
 
@@ -386,6 +392,8 @@ Referências:
 | Proteção de cabeça | 1 |
 | Proteção de peito | 1 |
 
+
+
 ## 14. Ação Conjunta Montada
 
 Quando portador e Campeiro estão montados e atuam sobre o mesmo Objetivo, realizam uma única Ação Conjunta.
@@ -609,6 +617,8 @@ Regra adaptada para o Campeiro:
 Níveis 4 e 5 exigem uso relevante, treinamento, tempo de desenvolvimento e aprovação do Assimilador.
 
 Mesmo no nível 5, o Campeiro continua fornecendo somente um dado equino e não recebe segundo turno, Objetivo próprio gratuito ou reserva mental independente.
+
+
 
 # PARTE III - GUIA DE GAMEPLAY
 
@@ -882,6 +892,8 @@ Depois disso:
 - o Campeiro paga as cartas dele com os próprios resultados;
 - nenhum Sucesso, Adaptação ou Pressão atravessa de um corpo para o outro;
 - cada mutação fica permanentemente no corpo que a adquiriu.
+
+
 
 ## 28. Referência rápida
 

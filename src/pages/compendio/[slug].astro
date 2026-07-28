@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from "astro:content";
+import CompendiumLayout from "../../layouts/CompendiumLayout.astro";
+
+export async function getStaticPaths() {
+  const materials = await getCollection("materiais");
+  const items = await getCollection("itens");
+  return [...materials, ...items]
+    .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+    .map((entry) => ({
+      params: { slug: entry.data.slug },
+      props: { entry }
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<CompendiumLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  slug={entry.data.slug}
+  type={entry.data.type}
+  category={entry.data.category}
+  origin={entry.data.origin}
+  tags={entry.data.tags}
+>
+  <Content />
+</CompendiumLayout>

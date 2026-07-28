@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+import "../styles/symbols.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const {
+  title = "Codex de Árborius",
+  description = "Portal público da campanha de Árborius.",
+  bodyClass = ""
+} = Astro.props;
+const fullTitle = title === "Codex de Árborius" ? title : `${title} · Codex de Árborius`;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#1f3b31" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <title>{fullTitle}</title>
+  </head>
+  <body class={bodyClass}>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <slot />
+  </body>
+</html>

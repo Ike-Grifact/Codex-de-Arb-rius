@@ -1,0 +1,13 @@
+---
+import PortalLayout from "../layouts/PortalLayout.astro";
+import { withBase } from "../lib/paths";
+---
+
+<PortalLayout title="Página não encontrada" description="Esta página não existe no Codex público.">
+  <div class="page-container narrow-page">
+    <p class="eyebrow">Erro 404</p>
+    <h1>Página não encontrada</h1>
+    <p>O verbete pode não existir ou estar marcado como reservado.</p>
+    <a class="button button--primary" href={withBase("", import.meta.env.BASE_URL)}>Voltar ao portal</a>
+  </div>
+</PortalLayout>

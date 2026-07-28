@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import PortalLayout from "../../layouts/PortalLayout.astro";
+
+const lore = (await getCollection("lore"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
+const categories = ["Locais", "Guildas", "Culturas", "Povos", "Personagens", "Eventos", "Cronologia"];
+---
+
+<PortalLayout title="Mundo" description="Infraestrutura pública de lore e cronologia do Codex de Árborius.">
+  <div class="page-container">
+    <header class="page-intro">
+      <div>
+        <p class="eyebrow">Atlas público</p>
+        <h1>Mundo</h1>
+        <p>Estrutura pronta para lore confirmada. Nenhum segredo ou detalhe definitivo foi acrescentado.</p>
+      </div>
+    </header>
+    <div class="directory-grid directory-grid--compact">
+      {
+        categories.map((category, index) => (
+          <article class="directory-card directory-card--static">
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <h3>{category}</h3>
+            <p>Nenhum verbete público nesta categoria.</p>
+          </article>
+        ))
+      }
+    </div>
+    <section class="infrastructure-preview">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Modelo editorial</p>
+          <h2>Entrada demonstrativa</h2>
+        </div>
+      </div>
+      {
+        lore.map((entry) => (
+          <article class="timeline-card" id={entry.data.slug}>
+            <div class="card-eyebrow">
+              <span>{entry.data.type}</span>
+              {entry.data.example && <span class="example-label">Exemplo</span>}
+            </div>
+            <h3>{entry.data.title}</h3>
+            <p>{entry.data.description}</p>
+          </article>
+        ))
+      }
+    </section>
+  </div>
+</PortalLayout>

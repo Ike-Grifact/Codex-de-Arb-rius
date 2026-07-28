@@ -1,0 +1,85 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import AppHeader from "../components/AppHeader.astro";
+import MobileNavigation from "../components/MobileNavigation.astro";
+import ReaderControls from "../components/ReaderControls.astro";
+import ExportControls from "../components/ExportControls.astro";
+import "../styles/reader.css";
+import "../styles/print.css";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  headings: Heading[];
+  origin: string;
+  version?: string;
+  exports?: { pdf?: boolean; markdown?: boolean; html?: boolean };
+}
+
+const {
+  title,
+  description,
+  slug,
+  headings,
+  origin,
+  version,
+  exports = {}
+} = Astro.props;
+const toc = headings.filter((heading) => heading.depth === 2 || heading.depth === 3);
+---
+
+<BaseLayout title={title} description={description} bodyClass="reader-shell">
+  <AppHeader />
+  <ReaderControls />
+  <div class="reader-layout">
+    <aside class="reader-toc no-print" aria-label="Índice do guia">
+      <a class="reader-toc__back" href="../">← Biblioteca</a>
+      <p class="sidebar-label">Neste guia</p>
+      <nav>
+        {toc.map((heading) => (
+          <a class:list={[`depth-${heading.depth}`]} href={`#${heading.slug}`}>{heading.text}</a>
+        ))}
+      </nav>
+    </aside>
+    <main id="conteudo" class="reader-main">
+      <div class="print-meta">
+        <p>Codex de Árborius · Portal público</p>
+        <p>{version && `${version} · `}Fonte: {origin}</p>
+      </div>
+      <header class="reader-hero">
+        <p class="eyebrow">Biblioteca · guia do jogador</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
+        <ExportControls
+          slug={slug}
+          markdown={exports.markdown}
+          pdf={exports.pdf}
+          html={exports.html}
+        />
+      </header>
+      <details class="reader-toc-mobile no-print">
+        <summary>Índice do guia</summary>
+        <nav>
+          {toc.map((heading) => (
+            <a class:list={[`depth-${heading.depth}`]} href={`#${heading.slug}`}>{heading.text}</a>
+          ))}
+        </nav>
+      </details>
+      <article class="reader-content">
+        <slot />
+      </article>
+      <footer class="reader-footer no-print">
+        <a href="../">← Voltar à Biblioteca</a>
+        <a href="#conteudo">Voltar ao início ↑</a>
+      </footer>
+    </main>
+  </div>
+  <MobileNavigation />
+</BaseLayout>

@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import PortalLayout from "../../layouts/PortalLayout.astro";
+import GuideCard from "../../components/GuideCard.astro";
+
+const guides = (await getCollection("guias"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<PortalLayout title="Biblioteca" description="Guias públicos completos do Codex de Árborius.">
+  <div class="page-container">
+    <header class="page-intro">
+      <div>
+        <p class="eyebrow">Acervo de guias</p>
+        <h1>Biblioteca</h1>
+        <p>Leia no portal, imprima em PDF ou baixe uma cópia Markdown limpa.</p>
+      </div>
+      <div class="library-counter">
+        <strong>{String(guides.length).padStart(2, "0")}</strong>
+        <span>guias<br />públicos</span>
+      </div>
+    </header>
+    <div class="privacy-note">
+      <span class="status-dot" aria-hidden="true"></span>
+      <p>Guias marcados como reservados ou rascunho não aparecem nesta biblioteca, na busca ou no site gerado.</p>
+    </div>
+    <div class="guide-list">
+      {
+        guides.map((guide, index) => (
+          <GuideCard
+            title={guide.data.title}
+            slug={guide.data.slug}
+            description={guide.data.description}
+            tags={guide.data.tags}
+            status={guide.data.status}
+            updated={guide.data.updated}
+            exports={guide.data.exports}
+            index={index}
+          />
+        ))
+      }
+    </div>
+  </div>
+</PortalLayout>

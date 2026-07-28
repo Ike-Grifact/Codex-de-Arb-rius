@@ -1,0 +1,125 @@
+---
+import { getCollection } from "astro:content";
+import PortalLayout from "../../layouts/PortalLayout.astro";
+import CompendiumCard from "../../components/CompendiumCard.astro";
+
+const materials = (await getCollection("materiais"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
+const items = (await getCollection("itens"))
+  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado");
+const entries = [...materials, ...items].sort((a, b) =>
+  a.data.title.localeCompare(b.data.title, "pt-BR")
+);
+---
+
+<PortalLayout title="Compêndio" description="Materiais e equipamentos públicos do Codex de Árborius.">
+  <div class="page-container">
+    <header class="page-intro">
+      <div>
+        <p class="eyebrow">Referência estruturada</p>
+        <h1>Compêndio</h1>
+        <p>Cada verbete alimenta esta listagem, o guia, a busca e sua própria exportação.</p>
+      </div>
+      <div class="library-counter">
+        <strong>{String(entries.length).padStart(2, "0")}</strong>
+        <span>verbetes<br />públicos</span>
+      </div>
+    </header>
+
+    <div class="filter-bar no-print" aria-label="Filtros do compêndio">
+      <label>
+        <span>Tipo</span>
+        <select data-filter="type">
+          <option value="">Todos</option>
+          <option value="material">Materiais</option>
+          <option value="item">Itens</option>
+        </select>
+      </label>
+      <label>
+        <span>Categoria</span>
+        <select data-filter="category">
+          <option value="">Todas</option>
+          <option value="1">Categoria 1</option>
+          <option value="2">Categoria 2</option>
+          <option value="armadura">Armadura</option>
+          <option value="ferramenta">Ferramenta</option>
+          <option value="consumivel">Consumível</option>
+          <option value="projeto">Projeto</option>
+        </select>
+      </label>
+      <label>
+        <span>Disponibilidade</span>
+        <select data-filter="availability">
+          <option value="">Todas</option>
+          <option value="inicial">Inicial</option>
+        </select>
+      </label>
+      <label class="filter-search">
+        <span>Tags ou nome</span>
+        <input type="search" data-filter="text" placeholder="Ex.: madeira, água…" />
+      </label>
+      <button type="button" data-clear-filters>Limpar</button>
+    </div>
+
+    <p class="filter-count" aria-live="polite"><span data-visible-count>{entries.length}</span> verbetes exibidos</p>
+
+    <div class="compendium-grid">
+      {
+        entries.map((entry) => (
+          <CompendiumCard
+            title={entry.data.title}
+            slug={entry.data.slug}
+            description={entry.data.description}
+            type={entry.data.type}
+            category={entry.data.category}
+            availability={entry.data.availability}
+            tags={entry.data.tags}
+          />
+        ))
+      }
+    </div>
+    <div class="empty-state" data-filter-empty hidden>
+      <h3>Nenhum verbete encontrado</h3>
+      <p>Ajuste ou limpe os filtros para ver o acervo público.</p>
+    </div>
+
+    <section class="future-categories">
+      <p class="eyebrow">Estrutura preparada</p>
+      <h2>Próximas categorias</h2>
+      <div class="tag-list">
+        {["Armas", "Armaduras", "Ferramentas", "Consumíveis", "Criaturas", "NPCs", "Características", "Condições"].map((name) => <span>{name}</span>)}
+      </div>
+      <p>As categorias permanecem vazias até haver conteúdo público validado. Nenhum verbete foi inventado.</p>
+    </section>
+  </div>
+</PortalLayout>
+
+<script>
+  const controls = [...document.querySelectorAll<HTMLInputElement | HTMLSelectElement>("[data-filter]")];
+  const entries = [...document.querySelectorAll<HTMLElement>("[data-filter-entry]")];
+  const counter = document.querySelector<HTMLElement>("[data-visible-count]");
+  const empty = document.querySelector<HTMLElement>("[data-filter-empty]");
+
+  const applyFilters = () => {
+    const values = Object.fromEntries(controls.map((control) => [control.dataset.filter, control.value.toLocaleLowerCase("pt-BR").trim()]));
+    let visible = 0;
+    entries.forEach((entry) => {
+      const haystack = `${entry.textContent} ${entry.dataset.tags}`.toLocaleLowerCase("pt-BR");
+      const matches =
+        (!values.type || entry.dataset.type === values.type) &&
+        (!values.category || entry.dataset.category === values.category) &&
+        (!values.availability || entry.dataset.availability === values.availability) &&
+        (!values.text || haystack.includes(values.text));
+      entry.hidden = !matches;
+      if (matches) visible += 1;
+    });
+    if (counter) counter.textContent = String(visible);
+    if (empty) empty.hidden = visible !== 0;
+  };
+
+  controls.forEach((control) => control.addEventListener("input", applyFilters));
+  document.querySelector("[data-clear-filters]")?.addEventListener("click", () => {
+    controls.forEach((control) => (control.value = ""));
+    applyFilters();
+  });
+</script>
