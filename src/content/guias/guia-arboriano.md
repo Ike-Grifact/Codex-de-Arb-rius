@@ -154,7 +154,7 @@ O personagem é criado normalmente pelas regras de Assimilação RPG.
 
 O Arboriano utiliza o Cabo de Guerra definido para a campanha.
 
-Caso comece com {{niveldedeterminacao:10}} e {{niveldeassimilacao:0}}, o Campeiro ainda é Ressonante, mas não realiza manifestação inicial.
+Caso comece com {{niveldedeterminacao:10}} e {{niveldeassimilacao}} **0**, o Campeiro ainda é Ressonante, mas não realiza manifestação inicial.
 
 Caso o portador adquira **Estágio Avançado** e comece com {{niveldedeterminacao:9}} e {{niveldeassimilacao:1}}, o Campeiro precisa gastar um de seus dois pontos iniciais de Características para participar da manifestação inicial.
 
