@@ -1,7 +1,7 @@
 ---
 title: "Guia do Jogador — Linhagem Arboriana"
 slug: "guia-arboriano"
-description: "Criação do Desafortunado e do Campeiro, manifestação inicial opcional, regras e gameplay."
+description: "Criação do Explorador Arboriano e do Campeiro, manifestação inicial opcional, regras e gameplay."
 type: "guia"
 status: "publicado"
 visibility: "publico"
@@ -10,7 +10,7 @@ tags:
   - arborius
   - desafortunados
   - campeiros
-updated: 2026-07-27
+updated: 2026-07-28
 version: "Temporada 1"
 origin: "02_Guia_Jogador_Arboriano.html"
 exports:
@@ -19,18 +19,18 @@ exports:
   html: false
 ---
 
-<!-- Migração verificada contra 02_Guia_Jogador_Arboriano.html. O HTML permanece como fonte de conferência e o Markdown correspondente preserva o texto editável. -->
+<!-- Guia unificado com os trechos exclusivos do documento-base dos Campeiros Exploradores. Conteúdo de balanceamento do Assimilador e modelo de ficha permanecem fora desta versão pública. -->
 
 # LINHAGEM ARBORIANA
 ## Guia do Jogador
 
-**Temporada 1 - Desafortunados e Campeiros Ressonantes**
+**Temporada 1 - Exploradores e Campeiros Ressonantes**
 
 **Codex de Árborius - Edição de Campanha**
 
 *Material privado e não oficial. Requer o livro-base de Assimilação RPG.*
 
-Este documento reúne somente a lore conhecida pelos personagens, as regras da Linhagem Arboriana e orientações para o jogador. O foco desta temporada são os Desafortunados enviados ao serviço exterior e os respectivos Campeiros Exploradores que os acompanham.
+Este documento reúne somente a lore conhecida pelos personagens, as regras da Linhagem Arboriana e orientações para o jogador. O foco desta temporada são Arborianos oriundos da condição dos Desafortunados que aceitaram o serviço exterior e passam a ser reconhecidos principalmente como **Exploradores**, acompanhados por seus Campeiros Ressonantes.
 
 <!-- PAGEBREAK -->
 
@@ -40,7 +40,7 @@ Este documento reúne somente a lore conhecida pelos personagens, as regras da L
 
 1. Árborius e o isolamento
 2. Os Desafortunados
-3. Os respectivos cavalos
+3. Os respectivos Campeiros
 4. O que um Arboriano conhece
 5. O que o exterior representa
 
@@ -52,7 +52,7 @@ Este documento reúne somente a lore conhecida pelos personagens, as regras da L
 9. Exclusão Social
 10. Criação do Campeiro Explorador
 11. Saúde, Características e responsabilidade
-12. Cuidados, Esforço e Alarme
+12. Cuidados, manejo, Esforço e Alarme
 13. Carga e equipamentos
 14. Ação Conjunta Montada
 15. Campeiro desmontado
@@ -63,9 +63,9 @@ Este documento reúne somente a lore conhecida pelos personagens, as regras da L
 ## Parte III - Guia de gameplay
 
 19. O papel do Arboriano no grupo
-20. Interpretando um Desafortunado
+20. Interpretando um Explorador de origem Desafortunada
 21. Lidando com culturas externas
-22. Construindo o vínculo com o Campeiro
+22. Personalidade, vínculo e confiança
 23. Viagem e logística
 24. Decisões em Conflito
 25. Ressonância e mutações
@@ -77,32 +77,11 @@ Este documento reúne somente a lore conhecida pelos personagens, as regras da L
 
 # PARTE I - LORE CONHECIDA
 
-## 1. Árborius e o isolamento
+{{lore:arborius}}
 
-Árborius desenvolveu seus próprios costumes, rotinas, instituições e formas de sobrevivência longe da convivência constante com outras culturas. Para seus habitantes, muitas práticas locais parecem naturais porque foram aprendidas desde a infância e raramente precisaram ser explicadas a estrangeiros.
+{{lore:desafortunados}}
 
-Esse isolamento também produz limites. Um Arboriano pode conhecer profundamente as regras de sua comunidade e, ao mesmo tempo, não compreender gestos, negociações, crenças, hierarquias ou formas de hospitalidade consideradas comuns em outros lugares.
-
-Na primeira temporada, os personagens Arborianos começam a campanha com pouca experiência direta fora desse ambiente. O exterior não é apenas um território desconhecido. É um conjunto de pessoas que organiza a vida de maneiras que os personagens nunca precisaram considerar.
-
-## 2. Os Desafortunados
-
-Os personagens Arborianos desta temporada são conhecidos como **Desafortunados**.
-
-O termo acompanha pessoas submetidas à exclusão social dentro de uma comunidade já isolada. Cada Desafortunado possui sua própria história, mas todos compartilham uma posição desconfortável: pertencem a Árborius sem serem plenamente acolhidos por ela.
-
-A exclusão pode ter deixado marcas diferentes:
-
-- dificuldade em confiar nas instituições;
-- hábito de observar antes de falar;
-- defesa constante da própria utilidade;
-- apego excessivo às poucas relações consideradas seguras;
-- pouca prática de convivência com pessoas de valores diferentes;
-- tendência a interpretar rejeição, dúvida ou silêncio como ameaça.
-
-Ser Desafortunado não significa ser incapaz, ignorante ou hostil. Significa ter aprendido a sobreviver sem contar com aceitação ampla. A Partida coloca essas pessoas diante de culturas externas quando elas ainda estão aprendendo a conviver até mesmo com a própria cidade.
-
-## 3. Os respectivos cavalos
+## 3. Os respectivos Campeiros
 
 Cada Desafortunado destinado ao serviço exterior recebe um **Campeiro Explorador**.
 
@@ -114,34 +93,10 @@ O Campeiro possui ficha, Saúde, Aptidões, Características, comportamento, nec
 
 O jogador recebe uma dupla, não um veículo. A história do Arboriano inclui o modo como ele trata o animal, reconhece seus limites e aprende a agir com outro ser que também foi preparado para deixar Árborius.
 
-## 4. O que um Arboriano conhece
 
-Um personagem Arboriano pode começar a campanha familiarizado com:
+{{lore:conhecimento-arboriano}}
 
-- costumes internos de Árborius;
-- rotinas das Guildas relacionadas à sua Origem;
-- sinais, ferramentas e equipamentos usados na cidade;
-- cuidados básicos com cavalos, quando isso fizer parte de sua formação;
-- estradas, trilhas e regiões próximas que tenham sido ensinadas;
-- hierarquias e conflitos conhecidos dentro de sua própria comunidade.
-
-Essa familiaridade não concede conhecimento automático sobre toda Árborius. Origem, Aptidões e história pessoal continuam definindo o que cada personagem realmente sabe.
-
-## 5. O que o exterior representa
-
-No começo da temporada, um Arboriano não deve presumir familiaridade automática com:
-
-- etiqueta de outras comunidades;
-- crenças estrangeiras;
-- leis e autoridades externas;
-- dialetos, gírias e sinais locais;
-- valor social de objetos e alimentos fora de Árborius;
-- formas de comércio, hospitalidade ou ameaça;
-- relações históricas entre culturas que nunca conheceu diretamente.
-
-O desconhecimento não deve impedir o jogo. Ele cria espaço para observação, erro, negociação e aprendizado.
-
-A primeira temporada acompanha a transformação dessa condição. Culturas encontradas durante a campanha podem deixar de ser desconhecidas conforme os personagens convivem, investigam e constroem relações reais.
+{{lore:o-exterior}}
 
 <!-- PAGEBREAK -->
 
@@ -151,11 +106,12 @@ A primeira temporada acompanha a transformação dessa condição. Culturas enco
 
 O Arboriano segue as regras normais de um Infectado, exceto pelas alterações deste guia.
 
-Nesta temporada, a Linhagem Arboriana é formada por três elementos:
+Nesta temporada, a Linhagem Arboriana é formada por quatro elementos:
 
-1. o personagem é um Desafortunado;
-2. registra a Característica de Campanha **Exclusão Social**;
-3. recebe um Campeiro Explorador Ressonante para o serviço exterior.
+1. o personagem nasceu ou cresceu sob a condição social dos **Desafortunados**;
+2. aceitou o serviço exterior e passa a ser tratado principalmente como **Explorador**;
+3. registra a Característica de Campanha **Exclusão Social**;
+4. recebe um Campeiro Explorador Ressonante para a Partida.
 
 O Campeiro não concede um segundo turno, uma segunda reserva de Determinação ou uma ação completa gratuita. Montado, ele amplia uma ação compartilhada. Desmontado, pode agir autonomamente ou ser dirigido pelo personagem dentro da economia normal de ações.
 
@@ -164,7 +120,8 @@ O Campeiro não concede um segundo turno, uma segunda reserva de Determinação 
 | Termo | Significado |
 |---|---|
 | **Arboriano** | Infectado originário de Árborius e pertencente ao escopo desta Linhagem. |
-| **Desafortunado** | Personagem Arboriano da primeira temporada, marcado por exclusão social. |
+| **Desafortunado** | Arboriano considerado abaixo das expectativas intelectuais, formativas ou de contribuição da cidade. A alcunha permanece com maior força sobre quem aceita apenas o mínimo para viver e não busca ofício, aprendizado ou serviço. |
+| **Explorador** | Arboriano de origem Desafortunada que aceitou a Partida e continua buscando conhecimento, utilidade ou transformação. É o título normalmente usado para os personagens desta temporada. |
 | **Campeiro Explorador** | Cavalo Ressonante com ficha própria, entregue para o serviço exterior. |
 | **Ação Conjunta Montada** | Uma única ação na qual portador e Campeiro atuam sobre o mesmo Objetivo. |
 | **Dado equino** | Dado rolado pela Aptidão do Campeiro e mantido na resolução compartilhada. |
@@ -172,9 +129,9 @@ O Campeiro não concede um segundo turno, uma segunda reserva de Determinação 
 | **Alarme** | Trilha de medo e instabilidade do Campeiro, de 0 a 3. |
 | **Manifestação Ressonante** | Processo em que portador e Campeiro realizam Testes de Assimilação separados com a mesma pilha. |
 | **Troca Ressonante** | Troca limitada de cartas atuais do mesmo naipe entre portador e Campeiro. |
-| **Assimilação Feral** | Estado em que o Campeiro atinge o limite de Pressões Inoportunas e passa ao controle do Assimilador. |
+| **Assimilação Feral** | Estado em que o Campeiro atinge o limite de {{pressao}} Pressões Inoportunas e passa ao controle do Assimilador. |
 
-A notação `1d10`, `1d12` ou `3d6` continua sendo usada apenas para indicar dados.
+A notação {{d10:1}}, {{d12:1}} ou {{d6:3}} continua sendo usada apenas para indicar dados.
 
 ## 8. Criação do Arboriano
 
@@ -185,52 +142,94 @@ O personagem é criado normalmente pelas regras de Assimilação RPG.
 | Elemento | Regra |
 |---|---|
 | Origem | definida normalmente pelo jogador |
+| Condição social de origem | Desafortunado |
+| Função atual | Explorador destinado ao serviço exterior |
 | Característica de Campanha | Exclusão Social, sem custo de Experiência |
 | Companheiro | Campeiro Explorador Ressonante |
-| Recuperação de Determinação | normal, conforme o livro-base |
-| Limite de Pressões Inoportunas | normal para o portador |
+| Recuperação de {{pontodedeterminacao}} Pontos de Determinação | normal, conforme o livro-base |
+| Limite de {{pressao}} Pressões Inoportunas | normal para o portador |
 | Controle do Campeiro | compartilhado entre jogador e Assimilador conforme comportamento e estado |
 
 ### 8.2. Nível de Assimilação inicial
 
 O Arboriano utiliza o Cabo de Guerra definido para a campanha.
 
-Caso comece com Nível de Determinação 10 e Nível de Assimilação 0, o Campeiro ainda é Ressonante, mas não realiza manifestação inicial.
+Caso comece com {{niveldedeterminacao:10}} e {{niveldeassimilacao:0}}, o Campeiro ainda é Ressonante, mas não realiza manifestação inicial.
 
-Caso o portador adquira **Estágio Avançado** e comece com Nível de Determinação 9 e Nível de Assimilação 1, o Campeiro precisa gastar um de seus dois pontos iniciais de Características para participar da manifestação inicial.
+Caso o portador adquira **Estágio Avançado** e comece com {{niveldedeterminacao:9}} e {{niveldeassimilacao:1}}, o Campeiro precisa gastar um de seus dois pontos iniciais de Características para participar da manifestação inicial.
 
 ## 9. Exclusão Social
 
-**Exclusão Social** é uma Característica de Campanha obrigatória e sem custo de Experiência para os Arborianos desta temporada.
+**Exclusão Social** é uma Característica de Campanha obrigatória e sem custo de Experiência para os personagens desta temporada.
 
-Ela representa:
+Árborius valoriza estudo, disciplina, aperfeiçoamento, especialização e contribuição coletiva. Dentro dessa cultura, pessoas que demonstram pouca capacidade intelectual, dificuldade persistente de aprendizagem ou ausência de interesse em desenvolver um ofício podem ser colocadas entre os **Desafortunados**.
 
+A cidade costuma reunir sob a mesma alcunha situações diferentes:
+
+- pessoas com limitações intelectuais reais;
+- pessoas que não acompanharam a formação esperada;
+- pessoas que fracassaram em sucessivas tentativas de inserção;
+- pessoas que perderam interesse por estudo, ofício ou participação coletiva;
+- pessoas que passaram a viver apenas pelo mínimo necessário.
+
+Os mais excluídos são aqueles que se contentam com comida, abrigo e sobrevivência básica, sem buscar aprendizado, responsabilidade ou serviço. Para a mentalidade Arboriana, essa resignação não é vista como simplicidade: ela se aproxima de uma ofensa ao esforço coletivo e de uma desonra.
+
+Entretanto, aquele que aceita a Partida demonstra que ainda busca algo além do mínimo. Por isso, os personagens desta temporada são chamados normalmente de **Exploradores**, não de Desafortunados. A alcunha antiga continua existindo como origem social, memória e possível insulto, mas o serviço exterior concede uma posição distinta.
+
+A Característica representa:
+
+- formação desigual dentro de Árborius;
+- pouco acesso a círculos intelectuais ou institucionais;
+- memória de julgamento e rejeição;
+- necessidade frequente de provar utilidade;
+- hábitos defensivos desenvolvidos antes da Partida;
 - pouca convivência com culturas externas;
-- dificuldade em interpretar costumes estrangeiros;
-- histórico de rejeição dentro de Árborius;
-- hábitos defensivos formados pelo isolamento;
-- ausência de uma rede social ampla fora da cidade.
+- dificuldade inicial para interpretar costumes estrangeiros.
 
-### 9.1. Aplicação
+Ela não obriga o personagem a possuir Sagacidade baixa. Um Explorador pode ser competente, inventivo ou brilhante em uma área específica. O elemento central é a posição que ocupava, o modo como foi julgado e a decisão de continuar buscando.
+
+### 9.1. Reconhecimento como Explorador
+
+Em contextos ligados à Guilda dos Exploradores, à Partida ou ao serviço oficial, o personagem deve ser tratado principalmente como **Explorador**.
+
+Isso não apaga completamente seu passado. Algumas pessoas podem:
+
+- respeitar o título atual;
+- considerar a Partida uma oportunidade de redenção;
+- desconfiar de sua formação;
+- usar “Desafortunado” de maneira depreciativa;
+- exigir resultados antes de reconhecer sua posição.
+
+O título de Explorador reduz a exclusão automática dentro de seu campo de serviço, mas não elimina a memória social da origem.
+
+### 9.2. Aplicação
 
 Exclusão Social não remove dados automaticamente e não deve punir toda conversa.
 
-Ela se aplica quando a compreensão de uma cultura externa é central para a ação e o personagem não possui Origem, Conhecimento ou experiência que justifique familiaridade.
+Ela se aplica quando:
+
+- a formação intelectual ou institucional do personagem é questionada;
+- alguém reconhece ou expõe sua origem Desafortunada;
+- o personagem entra em ambientes Arborianos que exigem prestígio, erudição ou pertencimento;
+- a compreensão de uma cultura externa é central para a ação;
+- o personagem não possui Origem, Conhecimento ou experiência que justifique familiaridade.
 
 Nessas situações, o Assimilador pode:
 
-- exigir um teste que seria desnecessário para um nativo;
+- exigir um teste que seria desnecessário para alguém já reconhecido naquele meio;
 - transformar um costume desconhecido em Objetivo Secundário;
-- usar Pressões para criar mal-entendidos, ofensa ou exposição;
-- impedir que o personagem presuma informações culturais que nunca aprendeu.
+- usar {{pressao}} Pressões para criar mal-entendidos, ofensa ou exposição;
+- exigir demonstração concreta de competência;
+- impedir que o personagem presuma informações que nunca aprendeu.
 
-A Característica não impede cooperação, amizade ou aprendizado.
+A Característica não impede cooperação, amizade, estudo ou evolução.
 
-### 9.2. Culturas aprendidas
+### 9.3. Culturas e espaços aprendidos
 
-Quando o Arboriano conviver de modo significativo com uma comunidade, o jogador pode registrar aquela cultura como **Aprendida**, com aprovação do Assimilador.
+Quando o Explorador conviver de modo significativo com uma comunidade, instituição ou grupo, o jogador pode registrar aquele contexto como **Aprendido**, com aprovação do Assimilador.
 
-Exclusão Social deixa de criar incerteza automática naquele contexto específico. A Característica permanece, mas passa a representar memória de isolamento e dificuldade de pertencimento, não ignorância permanente.
+Exclusão Social deixa de criar incerteza automática naquele contexto específico. A Característica permanece como memória da antiga posição e como dificuldade de pertencimento em outros espaços, não como ignorância permanente.
+
 
 ## 10. Criação do Campeiro Explorador
 
@@ -255,6 +254,19 @@ Todos começam no nível 1. Distribua mais:
 
 Nenhum Instinto pode começar acima do nível 3.
 
+#### Interpretação dos Instintos
+
+| Instinto | No Campeiro representa |
+|---|---|
+| Influência | dominância, comunicação corporal, relação com a manada e vínculo social |
+| Percepção | audição, olfato, visão, vibrações e reconhecimento de ameaças |
+| Potência | força, tração, impacto, carga e resistência corporal |
+| Reação | arrancada, esquiva, equilíbrio e mudança de direção |
+| Resolução | estabilidade, tolerância ao medo, dor e esforço prolongado |
+| Sagacidade | aprendizado, memória, interpretação de comandos e reconhecimento de padrões |
+
+A distribuição ajuda a formar a personalidade do animal. Reação elevada pode produzir um Campeiro rápido e explosivo; Resolução elevada pode indicar firmeza; Percepção elevada pode antecipar perigos, mas também intensificar respostas a estímulos.
+
 ### 10.2. Conhecimentos e Práticas
 
 Conhecimentos Equinos:
@@ -275,25 +287,52 @@ Todos começam no nível 0. Distribua:
 
 Nenhum deles pode começar acima do nível 2.
 
+#### Conhecimentos Equinos
+
+- **Geografia:** memória de rotas, orientação, terreno, travessias e retorno a locais conhecidos.
+- **Comandos:** compreensão de voz, assobios, rédeas, gestos, postura e sinais ensinados.
+- **Segurança:** ameaças, emboscadas, formações, zonas protegidas, rotas de fuga e comportamento hostil.
+
+#### Práticas Equinas
+
+- **Atletismo:** corrida, salto, tração, equilíbrio, natação e controle corporal.
+- **Sobrevivência:** procura por água, reconhecimento de pastagem, clima, abrigo e predadores.
+- **Militar:** cargas, coices, atropelamentos, formação, proteção do portador e tolerância ao ambiente de Conflito.
+
+Uma rolagem bem-sucedida não substitui treinamento anterior. Comandos e tarefas desconhecidos precisam ser ensinados por convivência, repetição e cenas de preparação.
+
 ### 10.3. Dados das Aptidões
 
 | Aptidão | Dado rolado por nível |
 |---|---:|
-| Instinto | d6 |
-| Conhecimento Equino | d10 |
-| Prática Equina | d10 |
+| Instinto | {{d6}} |
+| Conhecimento Equino | {{d10}} |
+| Prática Equina | {{d10}} |
 
 ## 11. Saúde, Características e responsabilidade
 
 ### 11.1. Saúde
 
-O Campeiro possui seis Níveis de Saúde.
+O Campeiro possui {{niveldesaude:6}}.
 
-Os Pontos de Saúde de cada nível são calculados por:
+Os {{pontodesaude}} Pontos de Saúde de cada nível são calculados por:
 
 > **1 + Potência + Resolução**
 
 Cavalo e cavaleiro são corpos separados. Dano, ferimentos, condições e quedas são aplicados separadamente.
+
+#### Alvos separados
+
+A ficção determina quem é atingido:
+
+- armadilhas no solo atingem principalmente o Campeiro;
+- golpes altos podem atingir o portador;
+- ataques de área podem atingir os dois;
+- uma queda pode ferir ambos;
+- criaturas rasteiras podem atingir patas e cascos;
+- ataques direcionados podem escolher a montaria.
+
+Ferimentos em patas, tendões ou cascos podem limitar corrida, carga ou combate montado mesmo antes de o Campeiro esgotar um Nível de Saúde. Considere a natureza do ferimento, não apenas os pontos perdidos.
 
 Aumento posterior de Potência ou Resolução recalcula o máximo, mas não cura dano já sofrido.
 
@@ -311,6 +350,10 @@ Pode adquirir Características de Infectados quando:
 - o Assimilador aprovar.
 
 Opções que dependam de fala humana, mãos, ferramentas ou Propósito exigem adaptação explícita.
+
+A Característica **Combate** pode representar treinamento para cargas, coices, atropelamentos, proteção e permanência sob ameaça. Ela continua integrada à economia normal da dupla e não concede um segundo turno.
+
+Quando o portador começa com **Estágio Avançado**, o Campeiro precisa gastar um de seus dois pontos iniciais de Características para participar da manifestação inicial. Esse gasto não cria Determinação nem reserva própria de Assimilação.
 
 ### 11.3. Responsabilidade compartilhada
 
@@ -336,11 +379,26 @@ O Assimilador decide reações involuntárias ligadas a:
 - maus-tratos;
 - mutações fora de controle.
 
+O jogador controla decisões habituais e instruções coerentes. Ele não controla completamente a biologia, a dor, o pânico ou os reflexos instintivos do Campeiro.
+
 ## 12. Cuidados, Esforço e Alarme
 
 O Campeiro precisa de água, alimento, repouso, abrigo, cuidado dos cascos e inspeção de sela, manta, cilha, rédeas, arreios e distribuição de peso.
 
 Recusa ou mudança de comportamento pode indicar dor, fadiga, medo ou equipamento inadequado.
+
+#### Inspeção de manejo
+
+Durante viagens e acampamentos, observe:
+
+- cascos e ferraduras ou proteções;
+- sela, manta e cilha;
+- rédeas, arreios e alforjes;
+- feridas por atrito;
+- distribuição de peso;
+- hidratação, alimento e sinais de exaustão.
+
+Comportamentos interpretados como teimosia podem ser sinais de dor, lesão, fadiga, medo ou equipamento mal ajustado.
 
 ### 12.1. Esforço
 
@@ -366,11 +424,11 @@ Recuperação recomendada:
 | 2 | Alarmado |
 | 3 | Pânico |
 
-Quando o medo exigir teste, role a Resolução do Campeiro em d6 e mantenha um resultado obrigatório.
+Quando o medo exigir teste, role a Resolução do Campeiro em {{d6}} e mantenha um resultado obrigatório.
 
-- Sucesso pode reduzir Alarme;
-- Adaptação produz resposta controlada imediata;
-- Pressão aumenta Alarme;
+- {{sucesso}} Sucesso pode reduzir Alarme;
+- {{adaptacao}} Adaptação produz resposta controlada imediata;
+- {{pressao}} Pressão aumenta Alarme;
 - em Pânico, o Assimilador controla a fuga ou reação instintiva.
 
 ## 13. Carga e equipamentos
@@ -428,8 +486,8 @@ Quando portador e Campeiro estão montados e atuam sobre o mesmo Objetivo, reali
 5. Escolha um dado do Campeiro.
 6. Esse dado precisa ser mantido na resolução.
 7. O dado equino conta no limite normal de dados mantidos.
-8. Sucessos e Adaptações do dado equino integram a ação compartilhada.
-9. Pressões do dado equino atingem primeiro o Campeiro, sua posição, equipamento ou carga.
+8. {{sucesso}} Sucessos e {{adaptacao}} Adaptações do dado equino integram a ação compartilhada.
+9. {{pressao}} Pressões do dado equino atingem primeiro o Campeiro, sua posição, equipamento ou carga.
 
 O Campeiro não realiza uma segunda ação ou uma segunda rolagem independente enquanto estiver montado.
 
@@ -467,20 +525,28 @@ Comandos simples, conhecidos e seguros normalmente não consomem uma ação ríg
 
 Use Influência + Sobrevivência quando houver incerteza real por medo, distância, perigo, tarefa complexa, comunicação ruim ou ambiente desconhecido.
 
+#### Comandos conhecidos e desconhecidos
+
+Um Campeiro pode responder a voz, assobios, rédeas, pressão das pernas, gestos e postura, desde que esses sinais tenham sido ensinados.
+
+Uma boa rolagem não permite que o animal execute uma tarefa que nunca aprendeu. Novos comandos precisam ser treinados durante descanso, convivência, repetição e períodos de segurança.
+
+Sob pressão, o teste representa fazer o Campeiro reconhecer e cumprir um comando já conhecido apesar do medo, dor, distância ou ambiente.
+
 ### 15.2. Conflito
 
 Em Conflito, para determinar uma ação específica do Campeiro desmontado, o Arboriano usa sua própria ação e testa:
 
 > **Influência + Sobrevivência**
 
-Com pelo menos um Sucesso:
+Com pelo menos {{sucesso:1}}:
 
 1. o Campeiro compreende o comando;
 2. realiza imediatamente uma rolagem própria com a Aptidão adequada;
 3. somente a rolagem do Campeiro investe no Objetivo;
 4. o Arboriano não realiza outra ação ou rolagem naquela rodada.
 
-Os Sucessos do teste de comando representam compreensão e não são investidos no Objetivo principal.
+{{sucesso}} Sucessos do teste de comando representam compreensão e não são investidos no Objetivo principal.
 
 Um comando contínuo pode permanecer válido. Mudar o Objetivo, a direção ou a conduta específica exige nova ação e novo teste.
 
@@ -501,7 +567,7 @@ O Assimilador decide a resposta conforme personalidade, treinamento, dor, Alarme
 
 ## 16. Pressões, instabilidade e queda
 
-Pressões provenientes do dado equino ou da rolagem própria do Campeiro afetam primeiro:
+{{pressao}} Pressões provenientes do dado equino ou da rolagem própria do Campeiro afetam primeiro:
 
 - corpo;
 - estado;
@@ -513,11 +579,11 @@ Pressões provenientes do dado equino ou da rolagem própria do Campeiro afetam 
 
 ### 16.1. Risco de queda
 
-Quando uma Ação Conjunta Montada acumular pelo menos duas Pressões relacionadas a velocidade, impacto, terreno ou obstáculo, o Assimilador pode convertê-las em instabilidade ou queda.
+Quando uma Ação Conjunta Montada acumular pelo menos {{pressao:2}} relacionadas a velocidade, impacto, terreno ou obstáculo, o Assimilador pode convertê-las em instabilidade ou queda.
 
-Em uma Rolagem Assimilada montada, uma Pressão mantida também pode abrir risco de queda quando a manifestação alterar bruscamente postura, velocidade, equilíbrio ou controle.
+Em uma Rolagem Assimilada montada, {{pressao:1}} mantida também pode abrir risco de queda quando a manifestação alterar bruscamente postura, velocidade, equilíbrio ou controle.
 
-A queda não é automática em toda Pressão. Consequências menores incluem:
+A queda não é automática em toda {{pressao}} Pressão. Consequências menores incluem:
 
 - perda de velocidade;
 - sela deslocada;
@@ -541,12 +607,12 @@ Dano sugerido quando a cena não definir outro valor:
 
 | Queda | Dano sugerido |
 |---|---:|
-| Controlada ou em baixa velocidade | 1d10 |
-| Alta velocidade, altura ou colisão | 2d10 |
+| Controlada ou em baixa velocidade | {{d10}} |
+| Alta velocidade, altura ou colisão | {{d10:2}} |
 
 Role o dano separadamente para cavalo e cavaleiro.
 
-As Pressões usadas para causar a queda não produzem simultaneamente todas as consequências menores. Somente Pressões excedentes geram efeitos adicionais.
+As {{pressao}} Pressões usadas para causar a queda não produzem simultaneamente todas as consequências menores. Somente Pressões excedentes geram efeitos adicionais.
 
 ## 17. Manifestação Ressonante
 
@@ -555,8 +621,8 @@ Quando o portador entra em Estado Suscetível e realiza um Teste de Assimilaçã
 ### 17.1. Rolagens
 
 1. Portador e Campeiro rolam separadamente a mesma pilha completa.
-2. A pilha é `1d10 + um d12 para cada ponto do Nível de Assimilação atual`.
-3. Cada corpo recebe seus próprios Sucessos, Adaptações e Pressões.
+2. A pilha é {{d10}} + um {{d12}} para cada ponto do {{niveldeassimilacao}} atual.
+3. Cada corpo recebe seus próprios {{sucesso}} Sucessos, {{adaptacao}} Adaptações e {{pressao}} Pressões.
 4. Cada corpo recebe suas próprias cartas.
 5. Nenhum resultado é compartilhado ou somado.
 
@@ -575,7 +641,7 @@ Regras:
 - Singular troca com Singular, mediante aprovação do Assimilador;
 - cada carta pode ser trocada uma única vez;
 - a troca é recíproca;
-- o limite de trocas é igual ao Nível de Assimilação atual.
+- o limite de trocas é igual ao {{niveldeassimilacao}} atual.
 
 Depois da troca:
 
@@ -586,11 +652,11 @@ Depois da troca:
 
 ### 17.3. Recursos e estado Feral
 
-O Campeiro não possui Pontos de Assimilação próprios. Ativações de suas mutações usam a reserva do portador, salvo regra expressa.
+O Campeiro não possui {{pontodeassimilacao}} próprio. Ativações de suas mutações usam a reserva do portador, salvo regra expressa.
 
-Portador e Campeiro acumulam Pressões Inoportunas separadamente.
+Portador e Campeiro acumulam {{pressao}} Pressões Inoportunas separadamente.
 
-Ao alcançar 10 Pressões Inoportunas ativas, o Campeiro entra em **Assimilação Feral**, deixa de ser controlado pelo jogador e passa ao Assimilador.
+Ao alcançar {{pressao:10}} Inoportunas ativas, o Campeiro entra em **Assimilação Feral**, deixa de ser controlado pelo jogador e passa ao Assimilador.
 
 ## 18. Progressão do Campeiro
 
@@ -659,30 +725,45 @@ O Arboriano é especialmente eficiente em:
 
 Sua principal força é recorrente, não explosiva. O Campeiro pode contribuir em várias ações compatíveis ao longo da aventura, desde que esteja presente, saudável, treinado e em terreno adequado.
 
-O principal custo é administrar dois corpos e uma posição social difícil.
+O principal custo é administrar dois corpos e carregar a memória de uma posição social difícil, mesmo sendo reconhecido atualmente como Explorador.
 
-## 20. Interpretando um Desafortunado
+## 20. Interpretando um Explorador de origem Desafortunada
 
-Exclusão Social deve produzir comportamento reconhecível sem transformar o personagem em obstáculo constante.
+O personagem não representa o Desafortunado que desistiu de buscar. Ao aceitar a Partida, ele já se separou dessa resignação e conquistou o direito de ser chamado de **Explorador**.
+
+Sua história ainda pode conter:
+
+- dificuldades de aprendizagem;
+- formação incompleta;
+- humilhações;
+- fracassos anteriores;
+- desconfiança de instituições;
+- necessidade de provar utilidade;
+- medo de ser devolvido à antiga posição;
+- raiva diante de pessoas que o tratam pela alcunha anterior.
 
 Boas formas de interpretação incluem:
 
-- perguntar antes de presumir um costume;
-- desconfiar de instituições sem atacar todo representante delas;
-- valorizar quem demonstra confiança de maneira concreta;
+- demonstrar curiosidade mesmo quando falta formação;
+- pedir explicações sem fingir conhecimento;
+- observar antes de repetir um costume;
+- registrar o que aprendeu;
+- valorizar habilidade prática e conhecimento conquistado;
+- reagir à complacência porque ela lembra a desonra atribuída aos Desafortunados resignados;
 - proteger o próprio espaço e o do Campeiro;
-- reagir com desconforto a cerimônias, multidões ou intimidade social inesperada;
-- cometer erros e depois registrar o aprendizado.
+- construir orgulho pelo serviço realizado, não apenas pelo reconhecimento recebido.
 
 Evite usar a Característica para:
 
-- recusar toda cooperação;
-- insultar qualquer estrangeiro sem motivo;
+- interpretar todo Explorador como incapaz;
+- reduzir o personagem a pouca inteligência;
+- recusar toda aprendizagem;
 - impedir decisões do grupo;
 - justificar violência automática;
-- declarar que o personagem é incapaz de aprender.
+- agir como alguém satisfeito apenas com o mínimo, salvo quando isso fizer parte de um conflito consciente do personagem.
 
-O arco do Desafortunado pode começar na defesa e avançar para discernimento. Confiar não exige esquecer o que a exclusão ensinou.
+O arco do Explorador pode começar na necessidade de provar que merece estar na Partida e avançar para uma compreensão mais profunda: buscar algo maior não significa apenas conquistar aprovação de Árborius, mas descobrir por que vale a pena aprender, servir e transformar-se.
+
 
 ## 21. Lidando com culturas externas
 
@@ -705,7 +786,7 @@ Ações úteis:
 
 Culturas Aprendidas devem aparecer na ficha ou no diário do personagem. Isso transforma a primeira temporada em progresso visível, e não em uma penalidade repetida sem mudança.
 
-## 22. Construindo o vínculo com o Campeiro
+## 22. Personalidade, vínculo e confiança
 
 O vínculo não é uma barra obrigatória. Ele aparece nas decisões.
 
@@ -719,6 +800,39 @@ Observe:
 - como as mutações mudam seu comportamento.
 
 Uma relação forte não significa obediência absoluta. Significa que portador e Campeiro conhecem melhor os limites um do outro.
+
+#### Personalidade do Campeiro
+
+Registre pelo menos:
+
+- um temperamento;
+- um medo principal;
+- uma preferência;
+- uma história ou função anterior;
+- um sinal de confiança;
+- um sinal de estresse;
+- um comando mais treinado;
+- um comando problemático.
+
+Temperamentos possíveis incluem curioso, desconfiado, calmo, impaciente, protetor, gregário, independente, sensível, competitivo, resistente ou inquieto.
+
+A personalidade não serve apenas para dificultar ações. Ela determina como o Campeiro percebe, aprende, confia e reage.
+
+#### Ruptura do vínculo
+
+Maus-tratos repetidos, privação, exposição deliberada a riscos desnecessários ou quebra profunda de confiança podem fazer o Campeiro resistir ou abandonar o portador.
+
+Antes disso, devem aparecer sinais como:
+
+- recusa em aproximar-se;
+- resistência à sela;
+- afastamento durante o descanso;
+- agressividade defensiva;
+- procura por outro cavalo;
+- tentativa de fuga;
+- redução da resposta aos comandos.
+
+O abandono não deve ocorrer arbitrariamente. O vínculo pode ser reconstruído por cuidado, convivência e mudança de comportamento.
 
 Antes de exigir uma ação arriscada, considere:
 
@@ -806,7 +920,7 @@ Perguntas úteis:
 
 - a anatomia do cavalo sustenta essa mutação?
 - a mutação será útil quando o animal estiver fora da cena?
-- o custo de ativação disputará Pontos de Assimilação essenciais do portador?
+- o custo de ativação disputará {{pontodeassimilacao}} Pontos de Assimilação essenciais do portador?
 - a mudança aumentará Alarme, dor ou dificuldade de equipamento?
 - a carta resolveria uma fraqueza real da dupla?
 - uma Troca Ressonante melhora ambos ou apenas transfere um problema?
@@ -863,10 +977,10 @@ O Arboriano tenta atravessar uma linha inimiga para alcançar uma saída.
 
 1. Declara o Campeiro antes da rolagem.
 2. O portador monta sua pilha.
-3. O Campeiro rola Atletismo 2, portanto dois d10.
+3. O Campeiro rola Atletismo 2, portanto {{d10:2}}.
 4. O jogador escolhe um dos dados equinos e precisa mantê-lo.
-5. Os Sucessos ajudam a abrir caminho.
-6. Uma Pressão equina desloca parte da carga e aumenta o Alarme.
+5. {{sucesso}} Sucessos ajudam a abrir caminho.
+6. {{pressao:1}} equina desloca parte da carga e aumenta o Alarme.
 
 Não existe uma segunda ação de ataque do cavalo.
 
@@ -879,7 +993,7 @@ Em Conflito, não pode fazer as duas ações completas na mesma rodada.
 Ele escolhe comandar:
 
 1. testa Influência + Sobrevivência;
-2. obtém um Sucesso;
+2. obtém {{sucesso:1}};
 3. o Campeiro compreende;
 4. rola Potência ou prática adequada;
 5. somente a rolagem do Campeiro investe na retirada;
@@ -887,7 +1001,7 @@ Ele escolhe comandar:
 
 ### 27.4. Queda
 
-Durante uma fuga em terreno irregular, a Ação Conjunta mantém duas Pressões relacionadas a velocidade e obstáculo.
+Durante uma fuga em terreno irregular, a Ação Conjunta mantém {{pressao:2}} relacionadas a velocidade e obstáculo.
 
 O Assimilador converte as duas em queda.
 
@@ -895,15 +1009,15 @@ O Assimilador converte as duas em queda.
 - cavalo e cavaleiro perdem posição;
 - cada corpo recebe uma rolagem de dano separada;
 - um alforje fica Danificado;
-- como as duas Pressões foram usadas para causar a queda, elas não geram simultaneamente Esforço, Alarme e todas as demais consequências.
+- como as {{pressao:2}} foram usadas para causar a queda, elas não geram simultaneamente Esforço, Alarme e todas as demais consequências.
 
 ### 27.5. Manifestação Ressonante
 
-Portador e Campeiro estão no Nível de Assimilação 2.
+Portador e Campeiro estão no {{niveldeassimilacao:2}}.
 
 Cada um rola separadamente:
 
-> **1d10 + 2d12**
+> **{{d10}} + {{d12:2}}**
 
 As cartas são reveladas para cada corpo. Antes de gastar os resultados, a dupla realiza até duas Trocas Ressonantes entre cartas atuais do mesmo naipe.
 
@@ -911,7 +1025,7 @@ Depois disso:
 
 - o portador paga suas cartas com os próprios resultados;
 - o Campeiro paga as cartas dele com os próprios resultados;
-- nenhum Sucesso, Adaptação ou Pressão atravessa de um corpo para o outro;
+- nenhum {{sucesso}} Sucesso, {{adaptacao}} Adaptação ou {{pressao}} Pressão atravessa de um corpo para o outro;
 - cada mutação fica permanentemente no corpo que a adquiriu.
 
 <!-- PAGEBREAK -->
@@ -927,8 +1041,10 @@ Depois disso:
 | Características | 2 pontos |
 | Saúde por nível | 1 + Potência + Resolução |
 | Determinação própria | não possui |
-| Pontos de Assimilação próprios | não possui |
+| {{pontodeassimilacao}} próprio | não possui |
 | Experiência | até 1 XP por sessão relevante |
+| Personalidade | temperamento, medo, preferência, confiança e estresse |
+| Treinamento | comandos desconhecidos precisam ser ensinados |
 
 ### 28.2. Ação montada
 
@@ -944,7 +1060,7 @@ Depois disso:
 
 1. Use a ação do Arboriano.
 2. Teste Influência + Sobrevivência.
-3. Com um Sucesso, o Campeiro rola a Aptidão adequada.
+3. Com {{sucesso:1}}, o Campeiro rola a Aptidão adequada.
 4. Apenas a rolagem do Campeiro investe no Objetivo.
 5. Mudar o comando exige nova ação.
 
