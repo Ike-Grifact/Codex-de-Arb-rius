@@ -27,6 +27,7 @@ export const tagLabels = {
   exclusao: "Exclusão",
   "exclusao-social": "Exclusão Social",
   exploracao: "Exploração",
+  exploradores: "Exploradores",
   exterior: "Exterior",
   ferramentas: "Ferramentas",
   fibra: "Fibra",
