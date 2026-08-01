@@ -79,14 +79,14 @@
 }
 
 .reader-main {
-  width: min(930px, calc(100% - 278px - 3rem));
+  width: min(930px, calc(100% - 278px - clamp(1.5rem, 5vw, 5rem)));
   margin-left: calc(278px + clamp(1.5rem, 5vw, 5rem));
   padding: clamp(2rem, 5vw, 4.5rem) 0 5rem;
   transition: width 180ms ease;
 }
 
 .reader-wide .reader-main {
-  width: min(1180px, calc(100% - 278px - 3rem));
+  width: min(1180px, calc(100% - 278px - clamp(1.5rem, 5vw, 5rem)));
 }
 
 .reader-hero {

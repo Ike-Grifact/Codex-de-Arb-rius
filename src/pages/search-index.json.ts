@@ -10,6 +10,7 @@ export const prerender = true;
 const excerpt = (body: string, fallback: string) => {
   const clean = body
     .replace(/^---[\s\S]*?---/m, "")
+    .replace(/^import\s+.+?;\s*$/gm, "")
     .replace(/\{\{(?:lore:)?[^}]+\}\}/g, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/[#*_`>|[\]()]/g, " ")

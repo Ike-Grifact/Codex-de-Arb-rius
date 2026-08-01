@@ -399,6 +399,19 @@ svg {
   white-space: nowrap;
 }
 
+.tag-list .tag--homebrew {
+  border-color: var(--sage-400);
+  background: var(--sage-100);
+  color: var(--forest-900);
+}
+
+.tag-list .tag--playtest {
+  border-color: #a96c28;
+  background: #fff1d7;
+  color: #7a4311;
+  font-weight: 850;
+}
+
 .example-label {
   border-color: #d7bd8e;
   background: #f7eedc;

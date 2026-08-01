@@ -4,6 +4,7 @@ import AppHeader from "../components/AppHeader.astro";
 import MobileNavigation from "../components/MobileNavigation.astro";
 import ReaderControls from "../components/ReaderControls.astro";
 import ExportControls from "../components/ExportControls.astro";
+import { tagLabel } from "../data/taxonomy";
 import "../styles/reader.css";
 import "../styles/print.css";
 
@@ -21,6 +22,7 @@ interface Props {
   origin: string;
   version?: string;
   updated: Date;
+  tags?: string[];
   exports?: { pdf?: boolean; markdown?: boolean; html?: boolean };
 }
 
@@ -32,6 +34,7 @@ const {
   origin,
   version,
   updated,
+  tags = [],
   exports = {}
 } = Astro.props;
 const toc = headings.filter((heading) => heading.depth === 2 || heading.depth === 3);
@@ -60,6 +63,15 @@ const toc = headings.filter((heading) => heading.depth === 2 || heading.depth ==
       </div>
       <header class="reader-hero">
         <p class="eyebrow">Biblioteca · guia do jogador</p>
+        {tags.length > 0 && (
+          <div class="tag-list reader-hero__tags" aria-label="Classificação editorial">
+            {tags.map((tag) => (
+              <span class:list={{ "tag--homebrew": tag === "homebrew", "tag--playtest": tag === "playtest" }}>
+                {tagLabel(tag)}
+              </span>
+            ))}
+          </div>
+        )}
         <h1>{title}</h1>
         <p>{description}</p>
         <ExportControls
