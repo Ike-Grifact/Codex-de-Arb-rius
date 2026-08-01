@@ -70,6 +70,7 @@ const parseFrontmatter = (source, file) => {
 const cleanBody = (body) =>
   body
     .replace(/^import\s+.+?;\s*$/gm, "")
+    .replace(/\]\(guide:([a-z0-9-]+)\)/g, "]($1.md)")
     .replace(/^<[A-Z][A-Za-z0-9]*\b[^>]*\/>\s*$/gm, "")
     .replace(/<!--(?:.|\r?\n)*?-->/g, "")
     .replace(/\n{3,}/g, "\n\n")

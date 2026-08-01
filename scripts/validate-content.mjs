@@ -56,6 +56,7 @@ const contentFiles = (await walk(resolve(root, "src/content")))
 const publicSlugs = new Set();
 const loreSlugs = new Set();
 const loreIncludes = [];
+const guideLinks = [];
 
 for (const file of contentFiles) {
   const source = await readFile(file, "utf8");
@@ -101,11 +102,21 @@ for (const file of contentFiles) {
       throw new Error(`Quantidade inválida em {{${type}:${value}}} em ${file}`);
     }
   }
+
+  for (const link of source.matchAll(/\]\(guide:([a-z0-9-]+)\)/g)) {
+    guideLinks.push({ slug: link[1], file });
+  }
 }
 
 for (const include of loreIncludes) {
   if (!loreSlugs.has(include.slug)) {
     throw new Error(`Include de lore desconhecido: ${include.slug} em ${include.file}`);
+  }
+}
+
+for (const link of guideLinks) {
+  if (!publicSlugs.has(link.slug)) {
+    throw new Error(`Link para guia público desconhecido: ${link.slug} em ${link.file}`);
   }
 }
 

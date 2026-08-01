@@ -39,7 +39,11 @@ const base = import.meta.env.BASE_URL;
     <h2>{title}</h2>
     <p>{description}</p>
     <div class="tag-list">
-      {tags.map((tag) => <span>{tagLabel(tag)}</span>)}
+      {tags.map((tag) => (
+        <span class:list={{ "tag--homebrew": tag === "homebrew", "tag--playtest": tag === "playtest" }}>
+          {tagLabel(tag)}
+        </span>
+      ))}
     </div>
     <div class="card-actions">
       <a class="button button--primary" href={withBase(`biblioteca/${slug}/`, base)}>Ler guia</a>

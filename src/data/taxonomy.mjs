@@ -1,5 +1,7 @@
 export const tagLabels = {
   acampamento: "Acampamento",
+  animais: "Animais",
+  assimilacao: "Assimilação",
   agua: "Água",
   alimentacao: "Alimentação",
   alimento: "Alimento",
@@ -13,6 +15,7 @@ export const tagLabels = {
   carga: "Carga",
   cidade: "Cidade",
   coletivo: "Coletivo",
+  "codigo-genetico": "Código Genético",
   conhecimento: "Conhecimento",
   cozinha: "Cozinha",
   craft: "Fabricação",
@@ -22,6 +25,7 @@ export const tagLabels = {
   durabilidade: "Durabilidade",
   duravel: "Durável",
   emergencia: "Emergência",
+  encarnacao: "Encarnação",
   equipamentos: "Equipamentos",
   exemplo: "Exemplo",
   exclusao: "Exclusão",
@@ -30,9 +34,12 @@ export const tagLabels = {
   exploradores: "Exploradores",
   exterior: "Exterior",
   ferramentas: "Ferramentas",
+  fauna: "Fauna",
+  ficha: "Ficha",
   fibra: "Fibra",
   furtividade: "Furtividade",
   guildas: "Guildas",
+  homebrew: "Homebrew",
   impacto: "Impacto",
   isolamento: "Isolamento",
   linhagem: "Linhagem",
@@ -41,9 +48,11 @@ export const tagLabels = {
   materiais: "Materiais",
   metal: "Metal",
   montaria: "Montaria",
+  mutacoes: "Mutações",
   origens: "Origens",
   osso: "Osso",
   pessoal: "Pessoal",
+  playtest: "Playtest",
   projeto: "Projeto",
   protecao: "Proteção",
   provisoes: "Provisões",
@@ -88,7 +97,8 @@ export const originLabels = {
   "02_Guia_Jogador_Arboriano.html": "Guia do Jogador — Linhagem Arboriana",
   "04_Guia_Materiais_Assimilados_Equipamentos_Partida.html":
     "Materiais Assimilados e Equipamentos de Partida",
-  "guia-arboriano": "Guia do Jogador — Linhagem Arboriana"
+  "guia-arboriano": "Guia do Jogador — Linhagem Arboriana",
+  "homebrew-arborius": "Homebrew — Codex de Árborius"
 };
 
 export const typeLabels = {
