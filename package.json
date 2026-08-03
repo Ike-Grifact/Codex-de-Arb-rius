@@ -13,11 +13,15 @@
     "build": "astro build",
     "postbuild": "node scripts/validate-build.mjs",
     "preview": "astro preview",
-    "migrate": "node scripts/migrate-guides.mjs"
+    "migrate": "node scripts/migrate-guides.mjs",
+    "content:import": "node scripts/content-import.mjs",
+    "content:doctor": "node scripts/content-doctor.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "7.0.3",
     "astro": "7.1.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "js-yaml": "4.3.0"
+  }
 }
