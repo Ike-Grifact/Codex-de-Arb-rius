@@ -3,19 +3,20 @@ title: "Guia do Jogador — Necessidades de Sobrevivência"
 slug: "guia-necessidades-sobrevivencia"
 description: "Regras de Fome, Sede e Fadiga ligadas ao relógio da campanha, à Saúde e à Recuperação."
 type: "guia"
-status: "playtest"
+status: "publicado"
 visibility: "publico"
 order: 2
 tags:
   - sobrevivencia
-  - tempo
-  - fome
-  - sede
-  - fadiga
-  - saude
+  - alimentacao
+  - agua
+  - playtest
+  - regeneracao
+  - campeiros
+  - animais
 updated: 2026-08-04
 version: "Playtest 0.1"
-origin: "homebrew-necessidades-sobrevivencia.md"
+origin: "homebrew-arborius"
 exports:
   pdf: true
   markdown: true
