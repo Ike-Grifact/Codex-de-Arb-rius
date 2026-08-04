@@ -20,7 +20,7 @@ origin: "homebrew-arborius"
 exports:
   pdf: true
   markdown: true
-  html: true
+  html: false
 ---
 
 # NECESSIDADES DE SOBREVIVÊNCIA
