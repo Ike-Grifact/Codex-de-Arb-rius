@@ -1,4 +1,6 @@
 ---
+import { existsSync } from "node:fs";
+import { resolve } from "node:path";
 import { withBase } from "../lib/paths";
 import MarkdownExportIcon from "./MarkdownExportIcon.astro";
 import PdfExportIcon from "./PdfExportIcon.astro";
@@ -22,6 +24,8 @@ const base = import.meta.env.BASE_URL;
 const filename = `${slug}.md`;
 const markdownDialogId = `markdown-dialog-${slug}`;
 const pdfDialogId = `pdf-dialog-${slug}`;
+const htmlPath = `downloads/html/${slug}.html`;
+const htmlAvailable = html && existsSync(resolve(process.cwd(), "public", htmlPath));
 ---
 
 <div
@@ -79,8 +83,8 @@ const pdfDialogId = `pdf-dialog-${slug}`;
       </dialog>
     </>
   )}
-  {html ? (
-    <a download href={withBase(`downloads/html/${slug}.html`, base)}>HTML offline</a>
+  {htmlAvailable ? (
+    <a download href={withBase(htmlPath, base)}>HTML offline</a>
   ) : (
     <span class="export-planned" title="Planejado para uma entrega futura">HTML offline · planejado</span>
   )}
