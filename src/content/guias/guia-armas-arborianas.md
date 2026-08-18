@@ -13,7 +13,7 @@ tags:
   - assimilacao
   - craft
 updated: 2026-08-18
-version: "Consolidação de Lore 1.0 — Mecânicas Playtest 0.1"
+version: "Consolidação de Lore 1.1 — Mecânicas Playtest 0.1"
 origin: "homebrew-arborius"
 exports:
   pdf: true
@@ -24,13 +24,13 @@ exports:
 # ARSENAL ARBORIANO
 ## Rifle Arboriano e Carabina Arboriana de Choque
 
-**Consolidação de Lore 1.0 — Mecânicas em Playtest 0.1**
+**Consolidação de Lore 1.1 — Mecânicas em Playtest 0.1**
 
 **Codex de Árborius — Assimilação RPG**
 
 *Material privado e não oficial. Requer o livro-base de Assimilação RPG.*
 
-Este guia consolida a história, a lógica tecnológica, as munições e as regras de duas armas ligadas às guerras contra os Luckers: a antiga **Carabina Arboriana de Choque** e o posterior **Rifle Arboriano**.
+Este guia consolida a história, a lógica tecnológica, as munições e as regras de duas armas desenvolvidas para lidar com **Luckers e outras criaturas Assimiladas** encontradas nos arredores de Árborius: a antiga **Carabina Arboriana de Choque** e o posterior **Rifle Arboriano**.
 
 > **Procedência:** a estrutura de Artefatos, Qualidade, Escassez, Características, Saúde, Pressões e Conflitos segue *Assimilação RPG* e o SRD Interno v1.6. A história das armas, seus mecanismos próprios e as Características **Duplo**, **Bicalibre**, **Biobalístico**, **Perfurante** e **Rupturante** são homebrews do Codex de Árborius.
 
@@ -40,31 +40,29 @@ Este guia consolida a história, a lógica tecnológica, as munições e as regr
 
 # PARTE I — HISTÓRIA
 
-## 1. Armas antes dos Luckers
+## 1. Ocorrências nos arredores
 
-Nos primeiros anos de Árborius, armas de fogo do Velho Mundo ainda eram recuperadas, reparadas e mantidas em serviço sempre que munição e peças podiam ser encontradas.
+Luckers e outras criaturas Assimiladas surgem de forma localizada nos arredores de Árborius. Quando uma ocorrência representa risco para rotas, povoados, cavaleiros ou áreas próximas à cidade, cabe aos **Cavaleiros Ocultos** rastrear, caçar e eliminar essas criaturas.
 
-Essas armas continuavam perigosas contra seres humanos, animais e muitos Infectados. O problema apareceu quando os cavaleiros começaram a enfrentar criaturas cuja Assimilação produzia tecidos densos, placas mineralizadas, carapaças, estruturas ósseas anormais ou outras formas de resistência capazes de transformar um disparo convencional em uma aposta.
+Armas de fogo recuperadas do Velho Mundo continuavam perigosas contra seres humanos, animais e muitos Infectados. O problema aparecia diante de organismos cuja Assimilação produzia tecidos densos, placas mineralizadas, carapaças, estruturas ósseas anormais ou outras formas de resistência capazes de transformar um disparo convencional em uma aposta.
 
-Os Luckers tornaram esse problema impossível de ignorar.
+Para os Cavaleiros Ocultos, portanto, não bastava possuir uma arma de fogo. Era necessário desenvolver uma arma especializada cuja finalidade fosse **ferir e neutralizar criaturas Assimiladas extremamente resistentes**.
 
-Não bastava possuir uma arma de fogo. Era necessário criar uma arma cuja finalidade já fosse, desde o início, **ferir e neutralizar organismos assimilados extremamente resistentes**.
+## 2. As primeiras caçadas
 
-## 2. As primeiras guerras
+As primeiras caçadas contra Luckers revelaram duas necessidades diferentes.
 
-Os primeiros enfrentamentos organizados contra Luckers ensinaram duas lições contraditórias.
+A primeira era aumentar a capacidade de ruptura do disparo contra corpos Assimilados resistentes.
 
-A primeira era óbvia: era necessário aumentar a capacidade de ruptura dos disparos.
+A segunda surgia quando a criatura atravessava a distância de segurança e alcançava cavalo e cavaleiro. Nessas situações, uma arma longa demais se tornava um obstáculo entre garras, mordidas, coices, lâminas e mudanças bruscas de direção.
 
-A segunda foi aprendida por cavaleiros que sobreviveram ao contato direto: uma arma longa demais se tornava um obstáculo quando um Lucker atravessava a distância da lança, alcançava o Campeiro ou obrigava o cavaleiro a lutar entre mordidas, garras, coices, lâminas e mudanças bruscas de direção.
-
-Os primeiros Arborianos responderam com excesso de material, mecanismos simples, dois disparos preparados e uma arma construída para continuar inteira mesmo quando o combate já havia se tornado corporal.
+A resposta inicial foi uma arma curta, de construção reforçada, com dois disparos preparados e capaz de continuar funcional mesmo depois de choques violentos em combate próximo.
 
 Foi assim que surgiu a **Carabina Arboriana de Choque**.
 
 ## 3. A Carabina Arboriana de Choque
 
-A Carabina de Choque é considerada a primeira plataforma arboriana criada especificamente para enfrentar Luckers.
+A Carabina de Choque é considerada a primeira plataforma arboriana criada especificamente para as caçadas dos Cavaleiros Ocultos contra Luckers e outras criaturas Assimiladas de grande resistência.
 
 Era uma arma compacta de dois canos paralelos, com câmaras independentes e dois gatilhos. Cada cano podia permanecer carregado separadamente. O objetivo não era criar alta cadência, mas garantir ao cavaleiro **dois disparos prontos antes que precisasse encontrar tempo e espaço para recarregar**.
 
@@ -83,11 +81,11 @@ Ela foi concebida para situações em que o cavaleiro pudesse:
 
 A carabina **não é um escudo**. Usá-la repetidamente para aparar golpes pode danificar alinhamento, culatra, coronha ou canos. Sua construção apenas permite que sobreviva a choques que arruinariam armas mais delicadas.
 
-Entre soldados antigos surgiram apelidos como **Quebra-Lucker**, **Dupla** e **Carabina Velha**.
+Entre antigos Cavaleiros Ocultos surgiram apelidos como **Quebra-Lucker**, **Dupla** e **Carabina Velha**.
 
 ## 4. O nascimento da biobalística
 
-A Carabina de Choque também serviu como banco de testes para a tecnologia que mais tarde definiria o arsenal de Árborius.
+A Carabina de Choque também serviu como banco de testes para a tecnologia que mais tarde definiria o arsenal especializado dos Cavaleiros Ocultos.
 
 Os Criadores e Alquimistas começaram a desenvolver organismos capazes de formar projéteis rígidos, estáveis e especializados. O princípio fundamental permanece até o presente:
 
@@ -101,9 +99,9 @@ Com o tempo, a cidade aprendeu a cultivar Casulos mais estreitos, consistentes e
 
 ## 5. Da Carabina ao Rifle
 
-A Carabina de Choque salvou vidas, mas revelou seus limites. Dois canos significavam massa adicional. O alcance útil era inferior ao desejado. O recuo era severo. A arma resolvia o momento em que o Lucker já havia chegado perto demais, mas não impedia que esse momento acontecesse.
+A Carabina de Choque cumpria sua função, mas revelou limites durante as caçadas. Dois canos significavam massa adicional. O alcance útil era inferior ao desejado. O recuo era severo. A arma resolvia o momento em que a criatura já havia chegado perto demais, mas oferecia pouco para impedir que esse contato acontecesse.
 
-A experiência de campo levou as guildas a uma nova conclusão:
+A experiência dos Cavaleiros Ocultos levou as guildas a uma nova conclusão:
 
 > se o primeiro disparo pudesse ser colocado no ponto correto, dois canos deixariam de ser necessários.
 
@@ -111,11 +109,13 @@ Os Artesãos passaram a buscar um corpo mais esbelto e preciso. Os Alquimistas m
 
 O resultado desse refinamento foi o **Rifle Arboriano**.
 
-A Carabina representava a primeira resposta ao choque físico dos Luckers. O Rifle representava o conhecimento acumulado depois de sobreviver a eles.
+A Carabina representava a resposta ao contato próximo. O Rifle representava uma arma de caça especializada, criada para neutralizar Luckers e outras criaturas Assimiladas antes que alcançassem o cavaleiro.
 
 ## 6. O Rifle Arboriano moderno
 
-O Rifle Arboriano é uma arma longa monotiro, de elevada potência e construída para caçar Luckers, Assimilados resistentes e outros alvos contra os quais um disparo convencional pode ser insuficiente.
+O Rifle Arboriano é uma arma longa monotiro, de elevada potência e construída para caçar Luckers, Assimilados resistentes e outros organismos contra os quais um disparo convencional pode ser insuficiente.
+
+Seu uso especializado está associado aos **Cavaleiros Ocultos**, responsáveis por rastrear e eliminar essas ocorrências nos arredores de Árborius e em áreas onde sua presença represente ameaça.
 
 Sua silhueta é longa e esbelta, mas o modelo expedicionário é equilibrado para transporte em sela e uso frequente por cavaleiros.
 
@@ -134,7 +134,7 @@ O Rifle não busca alta cadência. Sua lógica é outra: **um disparo preparado,
 
 ## 7. A Rosácea de Calibre
 
-Expedições longas criaram um problema logístico. A munição arboriana era superior contra Luckers, mas sua produção dependia de Árborius. Ao mesmo tempo, depósitos, ruínas e instalações do Velho Mundo ainda podiam conter cartuchos convencionais utilizáveis.
+Caçadas prolongadas e deslocamentos para além das áreas mais próximas da cidade criaram um problema logístico. A munição arboriana era superior contra Luckers e outras criaturas Assimiladas, mas sua produção dependia de Árborius. Ao mesmo tempo, depósitos, ruínas e instalações do Velho Mundo ainda podiam conter cartuchos convencionais utilizáveis.
 
 A solução foi a **Rosácea de Calibre**.
 
@@ -152,7 +152,7 @@ Recebe uma família específica de cartuchos convencionais definida na fabricaç
 
 A Rosácea não é um adaptador universal. Ela não faz qualquer munição caber ou funcionar. Cada Rifle é preparado para uma família compatível de cartuchos antigos.
 
-Assim, o Explorador passa a trabalhar com duas economias de munição: **munição arboriana**, rara e especializada; e **munição do Velho Mundo**, encontrada em expedições e utilizada para conservar a reserva biobalística.
+Assim, o Cavaleiro Oculto pode trabalhar com duas economias de munição: **munição arboriana**, rara e especializada; e **munição do Velho Mundo**, encontrada durante deslocamentos e utilizada para conservar a reserva biobalística.
 
 <!-- PAGEBREAK -->
 
@@ -408,7 +408,7 @@ O Rifle e a Carabina podem participar normalmente de uma Ação Conjunta Montada
 
 ## 18. Exemplar restaurado da campanha
 
-Existe na campanha um exemplar sobrevivente da Carabina Arboriana de Choque herdado de um antigo soldado e posteriormente recuperado por seu descendente.
+Existe na campanha um exemplar sobrevivente da Carabina Arboriana de Choque herdado de um antigo **Cavaleiro Oculto** e posteriormente recuperado por seu descendente.
 
 A arma chegou ao presente danificada, com parte do conjunto do cano e mecanismo inutilizados. O novo portador reuniu partes aproveitáveis, refez componentes do mecanismo, recuperou o alinhamento funcional, soldou novamente partes do conjunto do cano e devolveu a arma ao serviço.
 
