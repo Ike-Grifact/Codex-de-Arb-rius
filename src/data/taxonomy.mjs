@@ -37,6 +37,7 @@ export const tagLabels = {
   fauna: "Fauna",
   ficha: "Ficha",
   fibra: "Fibra",
+  fome: "Fome",
   furtividade: "Furtividade",
   guildas: "Guildas",
   homebrew: "Homebrew",
@@ -61,6 +62,7 @@ export const tagLabels = {
   seda: "Seda",
   sobrevivencia: "Sobrevivência",
   tecido: "Tecido",
+  "teto-predatorio": "Teto Predatório",
   tracao: "Tração",
   vestimenta: "Vestimenta",
   viagem: "Viagem",
@@ -97,6 +99,8 @@ export const originLabels = {
   "02_Guia_Jogador_Arboriano.html": "Guia do Jogador — Linhagem Arboriana",
   "04_Guia_Materiais_Assimilados_Equipamentos_Partida.html":
     "Materiais Assimilados e Equipamentos de Partida",
+  "Guia_do_Jogador_Lucker_Edicao_Final_v3.pdf":
+    "Guia do Jogador — Linhagem Lucker, Edição Final Consolidada v3",
   "guia-arboriano": "Guia do Jogador — Linhagem Arboriana",
   "homebrew-arborius": "Homebrew — Codex de Árborius"
 };

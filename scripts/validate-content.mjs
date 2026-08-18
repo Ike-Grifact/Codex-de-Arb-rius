@@ -120,14 +120,6 @@ for (const link of guideLinks) {
   }
 }
 
-const lucker = await readFile(resolve(root, "src/content/guias/guia-lucker.md"), "utf8");
-if (
-  !/^visibility:\s*["']reservado["']/m.test(lucker) ||
-  !/^status:\s*["']rascunho["']/m.test(lucker)
-) {
-  throw new Error("O Guia Lucker deve permanecer reservado e em rascunho.");
-}
-
 const sourceFiles = (await walk(resolve(root, "src")))
   .filter((file) => [".astro", ".ts", ".mjs", ".md", ".mdx"].includes(extname(file)));
 for (const file of sourceFiles) {
