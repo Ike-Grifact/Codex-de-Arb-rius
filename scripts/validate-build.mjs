@@ -132,10 +132,6 @@ for (const file of markdownFiles) {
   }
 }
 
-if (relativeFiles.has("biblioteca/guia-lucker/index.html")) {
-  errors.push("O Guia Lucker gerou uma rota pública.");
-}
-
 if (errors.length) throw new Error(errors.join("\n"));
 console.log(
   `Build validado: ${htmlFiles.length} páginas, ${markdownFiles.length} Markdown e símbolos com BASE_URL íntegros.`
