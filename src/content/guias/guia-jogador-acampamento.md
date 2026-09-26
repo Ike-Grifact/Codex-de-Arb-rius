@@ -35,8 +35,6 @@ O mapa faz parte da regra. Tendas, Fogueira, Campeiros e outros elementos podem 
 
 Para Fome, Sede e Fadiga, consulte também o [Guia do Jogador — Necessidades de Sobrevivência](/biblioteca/guia-necessidades-sobrevivencia/). Este guia não substitui aquelas trilhas.
 
-Para a arquitetura completa do módulo, consulte [Regra de Campanha — Acampamento](/biblioteca/regra-acampamento/).
-
 ---
 
 # 1. Criando o Acampamento
