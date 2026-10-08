@@ -1,0 +1,79 @@
+---
+import { getCollection, render } from "astro:content";
+import PortalLayout from "../../layouts/PortalLayout.astro";
+import NavigationIcon from "../../components/NavigationIcon.astro";
+import { withBase } from "../../lib/paths";
+import "../../styles/atlas.css";
+const published = (entry) => entry.data.visibility === "publico" && entry.data.status === "publicado";
+const entries=(await getCollection("atlas")).filter(published).sort((a,b)=>a.data.title.localeCompare(b.data.title,"pt-BR"));
+const events=(await getCollection("eventos")).filter(published);
+const sessions=(await getCollection("sessoes")).filter(published);
+const sessionByNumber=new Map(sessions.map(session=>[session.data.number,session]));
+const labels={personagem:"Personagem",localidade:"Localidade",faccao:"Facção",mapa:"Mapa"};
+const bySlug=new Map(entries.map(entry=>[entry.data.slug,entry]));
+const rendered=await Promise.all(entries.map(async entry=>({
+ entry, Content:(await render(entry)).Content,
+ history:events.flatMap(event=>event.data.impacts.filter(impact=>impact.target===entry.data.slug).map(impact=>({event,impact})))
+   .sort((a,b)=>a.event.data.session-b.event.data.session||a.event.data.order-b.event.data.order)
+})));
+const base=import.meta.env.BASE_URL;
+---
+
+<PortalLayout title="Atlas Vivo" description="Fichas públicas de personagens, locais, facções e mapas, com histórico por sessão.">
+  <div class="page-container">
+    <header class="page-intro atlas-heading">
+      <div>
+        <p class="eyebrow">Enciclopédia vinculada</p>
+        <h1 class="area-title"><NavigationIcon name="mundo" /> Atlas Vivo</h1>
+        <p>Personagens, lugares, facções e mapas que os jogadores conhecem, com o registro das mudanças ocorridas a cada sessão.</p>
+      </div>
+      <a class="button button--primary" href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/atlas" target="_blank" rel="noopener noreferrer">Nova ficha no GitHub</a>
+    </header>
+    <section class="atlas-explain">
+      <p>O mesmo registro pode ser editado no navegador pelo GitHub e em Markdown no Obsidian. Apenas conteúdo público e publicado aparece aqui.</p>
+      <a href={withBase("cronicas/",base)}>Consultar Crônicas →</a>
+    </section>
+    <div class="atlas-card-grid">
+      {rendered.map(({entry,Content,history})=>(
+        <article class="atlas-entry" id={entry.data.slug}>
+          <header class="atlas-entry__header">
+            <div>
+              <p class="eyebrow">{labels[entry.data.kind]}{entry.data.example?" · Exemplo":""}</p>
+              <h2>{entry.data.title}</h2>
+              <p>{entry.data.description}</p>
+            </div>
+            {entry.data.image&&<img src={entry.data.image} loading="lazy" decoding="async" alt={`Ilustração: ${entry.data.title}`} />}
+          </header>
+          <div class="atlas-entry__body"><Content /></div>
+          {entry.data.currentState&&(
+            <section class="atlas-current"><strong>Situação atual</strong><p>{entry.data.currentState}</p></section>
+          )}
+          {entry.data.relations.length>0&&(
+            <section class="atlas-relations">
+              <strong>Vínculos</strong>
+              <ul>{entry.data.relations.filter(slug=>bySlug.has(slug)).map(slug=><li><a href={`#${slug}`}>{bySlug.get(slug)?.data.title}</a></li>)}</ul>
+            </section>
+          )}
+          <section class="atlas-timeline">
+            <h3>Histórico por sessão</h3>
+            {history.length>0?(
+              <ol>{history.map(({event,impact})=>{
+                const session=sessionByNumber.get(event.data.session);
+                return <li>
+                  <a href={withBase(`cronicas/#evento-${event.data.slug}`,base)}>
+                    <span>Sessão {event.data.session}</span> · {session?.data.title??event.data.title}
+                  </a>
+                  <p>{impact.description}</p>
+                </li>;
+              })}</ol>
+            ):<p>Nenhuma mudança pública registrada até agora.</p>}
+          </section>
+          <footer class="atlas-entry__footer">
+            <a href={`https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/atlas/${entry.data.slug}.md`} target="_blank" rel="noopener noreferrer">Editar ficha no GitHub ↗</a>
+          </footer>
+        </article>
+      ))}
+      {entries.length===0&&<div class="empty-state">Nenhuma ficha pública foi cadastrada no Atlas.</div>}
+    </div>
+  </div>
+</PortalLayout>
