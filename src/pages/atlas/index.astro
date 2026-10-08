@@ -1,79 +1,237 @@
 ---
 import { getCollection, render } from "astro:content";
 import PortalLayout from "../../layouts/PortalLayout.astro";
-import NavigationIcon from "../../components/NavigationIcon.astro";
 import { withBase } from "../../lib/paths";
 import "../../styles/atlas.css";
+
 const published = (entry) => entry.data.visibility === "publico" && entry.data.status === "publicado";
-const entries=(await getCollection("atlas")).filter(published).sort((a,b)=>a.data.title.localeCompare(b.data.title,"pt-BR"));
-const events=(await getCollection("eventos")).filter(published);
-const sessions=(await getCollection("sessoes")).filter(published);
-const sessionByNumber=new Map(sessions.map(session=>[session.data.number,session]));
-const labels={personagem:"Personagem",localidade:"Localidade",faccao:"Facção",mapa:"Mapa"};
-const bySlug=new Map(entries.map(entry=>[entry.data.slug,entry]));
-const rendered=await Promise.all(entries.map(async entry=>({
- entry, Content:(await render(entry)).Content,
- history:events.flatMap(event=>event.data.impacts.filter(impact=>impact.target===entry.data.slug).map(impact=>({event,impact})))
-   .sort((a,b)=>a.event.data.session-b.event.data.session||a.event.data.order-b.event.data.order)
+const entries = (await getCollection("atlas"))
+  .filter(published)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, "pt-BR"));
+const events = (await getCollection("eventos")).filter(published);
+const sessions = (await getCollection("sessoes")).filter(published);
+const sessionByNumber = new Map(sessions.map(session => [session.data.number, session]));
+const labels = { personagem: "Personagem", localidade: "Localidade", faccao: "Facção", mapa: "Mapa" };
+const bySlug = new Map(entries.map(entry => [entry.data.slug, entry]));
+const rendered = await Promise.all(entries.map(async entry => ({
+  entry,
+  Content: (await render(entry)).Content,
+  history: events
+    .flatMap(event =>
+      event.data.impacts
+        .filter(impact => impact.target === entry.data.slug)
+        .map(impact => ({ event, impact }))
+    )
+    .sort((a, b) =>
+      a.event.data.session - b.event.data.session ||
+      a.event.data.order - b.event.data.order
+    )
 })));
-const base=import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL;
 ---
 
-<PortalLayout title="Atlas Vivo" description="Fichas públicas de personagens, locais, facções e mapas, com histórico por sessão.">
-  <div class="page-container">
-    <header class="page-intro atlas-heading">
-      <div>
-        <p class="eyebrow">Enciclopédia vinculada</p>
-        <h1 class="area-title"><NavigationIcon name="mundo" /> Atlas Vivo</h1>
-        <p>Personagens, lugares, facções e mapas que os jogadores conhecem, com o registro das mudanças ocorridas a cada sessão.</p>
+<PortalLayout title="Atlas Vivo" description="Arquivo público de personagens, lugares, facções, mapas e seus acontecimentos." workspace>
+  <div class="world-workspace" data-atlas-workspace data-workspace>
+    <aside class="world-explorer" aria-label="Navegador do Atlas">
+      <div class="world-explorer__heading">
+        <span class="world-label">ARQUIVO / ÁRBORIUS</span>
+        <h1>Atlas Vivo</h1>
+        <p>Uma ficha para cada elemento do mundo.</p>
       </div>
-      <a class="button button--primary" href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/atlas" target="_blank" rel="noopener noreferrer">Nova ficha no GitHub</a>
-    </header>
-    <section class="atlas-explain">
-      <p>O mesmo registro pode ser editado no navegador pelo GitHub e em Markdown no Obsidian. Apenas conteúdo público e publicado aparece aqui.</p>
-      <a href={withBase("cronicas/",base)}>Consultar Crônicas →</a>
-    </section>
-    <div class="atlas-card-grid">
-      {rendered.map(({entry,Content,history})=>(
-        <article class="atlas-entry" id={entry.data.slug}>
-          <header class="atlas-entry__header">
-            <div>
-              <p class="eyebrow">{labels[entry.data.kind]}{entry.data.example?" · Exemplo":""}</p>
-              <h2>{entry.data.title}</h2>
-              <p>{entry.data.description}</p>
+      <div class="world-explorer__search">
+        <label for="atlas-search">Procurar nas fichas</label>
+        <input id="atlas-search" data-record-search type="search" placeholder="Pesquisar personagem, lugar..." autocomplete="off" />
+      </div>
+      <nav class="world-explorer__filters" aria-label="Tipos de ficha">
+        <button type="button" data-record-filter="todos" aria-pressed="true">Tudo</button>
+        <button type="button" data-record-filter="personagem" aria-pressed="false">Pessoas</button>
+        <button type="button" data-record-filter="localidade" aria-pressed="false">Lugares</button>
+        <button type="button" data-record-filter="faccao" aria-pressed="false">Facções</button>
+        <button type="button" data-record-filter="mapa" aria-pressed="false">Mapas</button>
+      </nav>
+      <div class="world-explorer__count"><span data-record-count>{entries.length} fichas</span><span>Nome <span aria-hidden="true">↕</span></span></div>
+      <div class="world-explorer__list" role="group" aria-label="Fichas disponíveis">
+        {entries.map(({data}) => (
+          <button
+            type="button"
+            class="world-record-item"
+            data-open-record={data.slug}
+            data-record-kind={data.kind}
+            data-record-title={data.title.toLocaleLowerCase("pt-BR")}
+            aria-pressed="false"
+          >
+            <span class="world-record-item__avatar" aria-hidden="true">
+              {data.image
+                ? <img src={data.image} loading="lazy" decoding="async" alt="" />
+                : <span>{data.title.slice(0, 1).toUpperCase()}</span>}
+            </span>
+            <span class="world-record-item__meta">
+              <strong>{data.title}</strong>
+              <small>{labels[data.kind]}{data.example ? " · Exemplo" : ""}</small>
+            </span>
+            <span class="world-record-item__chevron" aria-hidden="true">›</span>
+          </button>
+        ))}
+        <p class="world-empty" data-record-empty hidden>Nenhuma ficha corresponde à pesquisa.</p>
+      </div>
+      <div class="world-explorer__bottom">
+        <a href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/atlas" target="_blank" rel="noopener noreferrer">＋ Nova ficha <span aria-hidden="true">↗</span></a>
+        <a href={withBase("mundo/", base)}>Ver enciclopédia de lore <span aria-hidden="true">→</span></a>
+      </div>
+    </aside>
+
+    <div class="world-record-stage">
+      <header class="world-stage-toolbar">
+        <div class="world-crumbs"><span>Árborius</span><span>/</span><span>Atlas</span><span>/</span><strong data-selected-label>Ficha</strong></div>
+        <div class="world-stage-toolbar__links">
+          <a href={withBase("cronicas/", base)}>Crônicas</a>
+          <a href={withBase("compendio/", base)}>Compêndio</a>
+        </div>
+      </header>
+      {rendered.map(({entry,Content,history},i) => (
+        <article
+          class="world-record-detail"
+          id={entry.data.slug}
+          data-record-detail={entry.data.slug}
+          data-detail-title={entry.data.title}
+          hidden={i !== 0}
+        >
+          <div class="world-record-body">
+            <div class="world-record-cover">
+              {entry.data.image ? (
+                <img src={entry.data.image} alt={"Ilustração de " + entry.data.title} loading="lazy" decoding="async" />
+              ) : (
+                <div class="world-record-cover__empty" aria-label="Nenhuma imagem cadastrada">
+                  <span>{entry.data.title.slice(0, 1).toUpperCase()}</span>
+                  <small>Imagem não cadastrada</small>
+                </div>
+              )}
             </div>
-            {entry.data.image&&<img src={entry.data.image} loading="lazy" decoding="async" alt={`Ilustração: ${entry.data.title}`} />}
-          </header>
-          <div class="atlas-entry__body"><Content /></div>
-          {entry.data.currentState&&(
-            <section class="atlas-current"><strong>Situação atual</strong><p>{entry.data.currentState}</p></section>
-          )}
-          {entry.data.relations.length>0&&(
-            <section class="atlas-relations">
-              <strong>Vínculos</strong>
-              <ul>{entry.data.relations.filter(slug=>bySlug.has(slug)).map(slug=><li><a href={`#${slug}`}>{bySlug.get(slug)?.data.title}</a></li>)}</ul>
-            </section>
-          )}
-          <section class="atlas-timeline">
-            <h3>Histórico por sessão</h3>
-            {history.length>0?(
-              <ol>{history.map(({event,impact})=>{
-                const session=sessionByNumber.get(event.data.session);
-                return <li>
-                  <a href={withBase(`cronicas/#evento-${event.data.slug}`,base)}>
-                    <span>Sessão {event.data.session}</span> · {session?.data.title??event.data.title}
-                  </a>
-                  <p>{impact.description}</p>
-                </li>;
-              })}</ol>
-            ):<p>Nenhuma mudança pública registrada até agora.</p>}
-          </section>
-          <footer class="atlas-entry__footer">
-            <a href={`https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/atlas/${entry.data.slug}.md`} target="_blank" rel="noopener noreferrer">Editar ficha no GitHub ↗</a>
-          </footer>
+            <div class="world-record-content">
+              <div class="world-record-kicker">
+                <span class="world-type-tag">{labels[entry.data.kind]}</span>
+                {entry.data.example && <span class="world-type-tag world-type-tag--muted">Modelo, não canônico</span>}
+              </div>
+              <h2>{entry.data.title}</h2>
+              <p class="world-record-lead">{entry.data.description}</p>
+              <div class="world-record-actions">
+                <a class="world-primary-action" href={"https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/atlas/" + entry.data.slug + ".md"} target="_blank" rel="noopener noreferrer">Editar ficha no GitHub ↗</a>
+                <a href={withBase("cronicas/",base)}>Consultar Crônicas →</a>
+              </div>
+              <section class="world-description">
+                <div class="world-section-caption"><span>01</span><h3>Descrição e história</h3></div>
+                <div class="world-markdown"><Content /></div>
+              </section>
+              <section class="world-description">
+                <div class="world-section-caption"><span>02</span><h3>Estado atual conhecido</h3></div>
+                <p>{entry.data.currentState || "Nenhuma atualização pública cadastrada."}</p>
+              </section>
+              <section class="world-description">
+                <div class="world-section-caption"><span>03</span><h3>Relações</h3></div>
+                {entry.data.relations.filter(slug=>bySlug.has(slug)).length ? (
+                  <div class="world-relation-chips">
+                    {entry.data.relations.filter(slug=>bySlug.has(slug)).map(slug => (
+                      <a href={"#" + slug}>{bySlug.get(slug)?.data.title} <span aria-hidden="true">↗</span></a>
+                    ))}
+                  </div>
+                ) : <p>Não há relações públicas registradas nesta ficha.</p>}
+              </section>
+            </div>
+          </div>
+          <aside class="world-record-rail" aria-label="Contexto histórico da ficha">
+            <div class="world-rail-heading"><span class="world-label">CONTEXTO</span><h3>Histórico</h3><p>Registros vinculados às sessões.</p></div>
+            {history.length ? (
+              <ol class="world-timeline">
+                {history.map(({event,impact}) => (
+                  <li>
+                    <a href={withBase("cronicas/#evento-" + event.data.slug,base)}>
+                      <span class="world-timeline__number">Sessão {event.data.session}</span>
+                      <strong>{event.data.title}</strong>
+                    </a>
+                    <p>{impact.description}</p>
+                  </li>
+                ))}
+              </ol>
+            ) : <p class="world-rail-empty">Nenhum acontecimento registrado para esta ficha.</p>}
+            <div class="world-rail-divider"></div>
+            <span class="world-label">REGISTROS</span>
+            <p class="world-rail-foot">{history.length} acontecimentos relacionados</p>
+            <p class="world-rail-foot">As alterações são registradas nas Crônicas e aparecem aqui sem duplicação.</p>
+          </aside>
         </article>
       ))}
-      {entries.length===0&&<div class="empty-state">Nenhuma ficha pública foi cadastrada no Atlas.</div>}
+      {!entries.length && (
+        <div class="world-no-record">
+          <h2>O Atlas ainda está vazio</h2>
+          <p>Cadastre a primeira ficha pública no GitHub. Nenhum documento reservado do Obsidian é publicado.</p>
+          <a class="world-primary-action" href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/atlas" target="_blank" rel="noopener noreferrer">Criar primeira ficha ↗</a>
+        </div>
+      )}
     </div>
   </div>
 </PortalLayout>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-atlas-workspace]");
+  if (root) {
+    const buttons = [...root.querySelectorAll<HTMLButtonElement>("[data-open-record]")];
+    const details = [...root.querySelectorAll<HTMLElement>("[data-record-detail]")];
+    const filters = [...root.querySelectorAll<HTMLButtonElement>("[data-record-filter]")];
+    const search = root.querySelector<HTMLInputElement>("[data-record-search]");
+    const count = root.querySelector<HTMLElement>("[data-record-count]");
+    const empty = root.querySelector<HTMLElement>("[data-record-empty]");
+    const selectedLabel = root.querySelector<HTMLElement>("[data-selected-label]");
+    let category = "todos";
+
+    function select(slug: string, updateHash = false) {
+      const detail = details.find(el => el.dataset.recordDetail === slug);
+      if (!detail) return;
+      for (const node of details) node.hidden = node !== detail;
+      for (const button of buttons) button.setAttribute("aria-pressed", String(button.dataset.openRecord === slug));
+      if (selectedLabel) selectedLabel.textContent = detail.dataset.detailTitle || "Ficha";
+      if (updateHash) history.replaceState(null, "", "#" + encodeURIComponent(slug));
+    }
+
+    function applyFilter() {
+      const query = (search?.value || "").trim().toLocaleLowerCase("pt-BR");
+      let visible = 0;
+      for (const button of buttons) {
+        const match = (category === "todos" || button.dataset.recordKind === category) &&
+          (button.dataset.recordTitle || "").includes(query);
+        button.hidden = !match;
+        if (match) visible++;
+      }
+      if (count) count.textContent = visible + (visible === 1 ? " ficha" : " fichas");
+      if (empty) empty.hidden = visible !== 0;
+      const active = buttons.find(button => button.getAttribute("aria-pressed") === "true");
+      if (visible && (!active || active.hidden)) {
+        const first = buttons.find(button => !button.hidden);
+        if (first) select(first.dataset.openRecord || "");
+      }
+      for (const filter of filters) filter.setAttribute("aria-pressed", String(filter.dataset.recordFilter === category));
+    }
+
+    for (const button of buttons) {
+      button.addEventListener("click", () => select(button.dataset.openRecord || "", true));
+    }
+    for (const filter of filters) {
+      filter.addEventListener("click", () => {
+        category = filter.dataset.recordFilter || "todos";
+        applyFilter();
+      });
+    }
+    search?.addEventListener("input", applyFilter);
+    window.addEventListener("hashchange", () => {
+      const id = decodeURIComponent(location.hash.slice(1));
+      if (details.some(detail => detail.dataset.recordDetail === id)) {
+        category = "todos";
+        if (search) search.value = "";
+        applyFilter();
+        select(id);
+      }
+    });
+    const initial = decodeURIComponent(location.hash.slice(1));
+    select(details.some(detail => detail.dataset.recordDetail === initial) ? initial : (details[0]?.dataset.recordDetail || ""));
+    applyFilter();
+  }
+</script>

@@ -1,8 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
 import PortalLayout from "../../layouts/PortalLayout.astro";
-import SessionCard from "../../components/SessionCard.astro";
-import NavigationIcon from "../../components/NavigationIcon.astro";
 import { withBase } from "../../lib/paths";
 import "../../styles/atlas.css";
 
@@ -11,66 +9,143 @@ const sessions = (await getCollection("sessoes")).filter(published).sort((a,b)=>
 const events = (await getCollection("eventos")).filter(published).sort((a,b)=>a.data.order-b.data.order);
 const atlas = (await getCollection("atlas")).filter(published);
 const atlasBySlug = new Map(atlas.map(entry=>[entry.data.slug,entry]));
-const rendered = await Promise.all(events.map(async entry=>({entry,Content:(await render(entry)).Content})));
+const rendered = await Promise.all(sessions.map(async session => ({
+  session,
+  Content: (await render(session)).Content,
+  events: await Promise.all(events.filter(event => event.data.session === session.data.number).map(async event => ({
+    event,
+    Content: (await render(event)).Content
+  })))
+})));
 const base = import.meta.env.BASE_URL;
 ---
 
-<PortalLayout title="Crônicas" description="Registro público das sessões e acontecimentos vinculados ao Atlas.">
-  <div class="page-container">
-    <header class="page-intro atlas-heading">
-      <div>
-        <p class="eyebrow">Memória pública da campanha</p>
-        <h1 class="area-title"><NavigationIcon name="cronicas" /> Crônicas</h1>
-        <p>Registros das sessões, encontros e mudanças do mundo. Os acontecimentos aparecem também nas fichas do <a href={withBase("atlas/",base)}>Atlas Vivo</a>.</p>
+<PortalLayout title="Crônicas" description="Memória pública das sessões e acontecimentos de Árborius." workspace>
+  <div class="world-workspace chronicle-workspace" data-chronicle-workspace data-workspace>
+    <aside class="world-explorer" aria-label="Sessões da campanha">
+      <div class="world-explorer__heading">
+        <span class="world-label">CRÔNICAS / CAMPANHA</span>
+        <h1>Registros</h1>
+        <p>O que os personagens viveram.</p>
       </div>
-      <a class="button button--primary" href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/sessoes" target="_blank" rel="noopener noreferrer">Nova sessão no GitHub</a>
-    </header>
-    <section class="atlas-explain">
-      <p>Os dados aqui são destinados aos jogadores. As notas do Assimilador e os segredos não pertencem a este repositório.</p>
-      <a href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/eventos" target="_blank" rel="noopener noreferrer">Registrar acontecimento no GitHub ↗</a>
-    </section>
-    <div class="atlas-session-list">
-      {sessions.map(session=>{
-        const belongs = rendered.filter(({entry})=>entry.data.session===session.data.number);
-        return (
-          <section class="atlas-session" id={session.data.slug}>
-            <div class="atlas-session__head">
-              <SessionCard title={session.data.title} number={session.data.number} date={session.data.date} description={session.data.description} example={session.data.example}/>
-              <a class="atlas-edit-link" href={`https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/sessoes/${session.data.slug}.md`} target="_blank" rel="noopener noreferrer">Editar sessão ↗</a>
-            </div>
-            {belongs.length>0 ? (
-              <div class="atlas-event-list">
-                <h2>Acontecimentos registrados</h2>
-                {belongs.map(({entry,Content})=>(
-                  <article class="atlas-event" id={`evento-${entry.data.slug}`}>
-                    <div class="atlas-event__header">
-                      <div>
-                        <p class="eyebrow">{entry.data.example?"Demonstração · ":""}Sessão {entry.data.session}</p>
-                        <h3>{entry.data.title}</h3>
-                        <p>{entry.data.description}</p>
-                      </div>
-                      <a href={`https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/eventos/${entry.data.slug}.md`} target="_blank" rel="noopener noreferrer">Editar ↗</a>
-                    </div>
-                    <div class="atlas-event__body"><Content /></div>
-                    {entry.data.impacts.length>0 && (
-                      <div class="atlas-impacts">
-                        <strong>Alterações por ficha</strong>
-                        <ul>{entry.data.impacts.map(impact=>{
-                          const target=atlasBySlug.get(impact.target);
-                          return (
-                            <li><a href={withBase(`atlas/#${impact.target}`,base)}>{target?.data.title??impact.target}</a>: {impact.description}</li>
-                          );
-                        })}</ul>
-                      </div>
-                    )}
-                  </article>
-                ))}
+      <div class="world-explorer__count"><span>{sessions.length} sessões</span><span>Mais recentes</span></div>
+      <div class="world-explorer__list" role="group" aria-label="Lista de sessões">
+        {rendered.map(({session}) => (
+          <button
+            type="button"
+            class="world-record-item"
+            data-open-session={session.data.slug}
+            aria-pressed="false"
+          >
+            <span class="world-record-item__avatar world-record-item__avatar--number" aria-hidden="true">{session.data.number}</span>
+            <span class="world-record-item__meta">
+              <strong>{session.data.title}</strong>
+              <small>{new Intl.DateTimeFormat("pt-BR", {timeZone:"UTC",day:"2-digit",month:"short",year:"numeric"}).format(session.data.date)}{session.data.example ? " · Exemplo" : ""}</small>
+            </span>
+            <span class="world-record-item__chevron" aria-hidden="true">›</span>
+          </button>
+        ))}
+      </div>
+      <div class="world-explorer__bottom">
+        <a href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/sessoes" target="_blank" rel="noopener noreferrer">＋ Nova sessão ↗</a>
+        <a href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/eventos" target="_blank" rel="noopener noreferrer">＋ Novo acontecimento ↗</a>
+      </div>
+    </aside>
+    <div class="world-record-stage">
+      <header class="world-stage-toolbar">
+        <div class="world-crumbs"><span>Árborius</span><span>/</span><span>Crônicas</span><span>/</span><strong data-selected-session>Sessão</strong></div>
+        <div class="world-stage-toolbar__links">
+          <a href={withBase("atlas/",base)}>Atlas Vivo</a>
+          <a href={withBase("mundo/",base)}>Mundo</a>
+        </div>
+      </header>
+      {rendered.map(({session,Content,events},i)=>(
+        <article class="world-record-detail" data-session-panel={session.data.slug} data-session-title={session.data.title} id={session.data.slug} hidden={i!==0}>
+          <div class="world-record-body">
+            <div class="world-record-content chronicle-detail">
+              <div class="world-record-kicker">
+                <span class="world-type-tag">Sessão {session.data.number}</span>
+                {session.data.example&&<span class="world-type-tag world-type-tag--muted">Exemplo, não canônico</span>}
               </div>
-            ):<p class="atlas-empty">Nenhum acontecimento público vinculado a esta sessão.</p>}
-          </section>
-        );
-      })}
-      {sessions.length===0&&<div class="empty-state">Ainda não há sessões públicas registradas.</div>}
+              <h2>{session.data.title}</h2>
+              <p class="world-record-lead">{session.data.description}</p>
+              <p class="chronicle-date">{new Intl.DateTimeFormat("pt-BR", {timeZone:"UTC",day:"2-digit",month:"long",year:"numeric"}).format(session.data.date)}</p>
+              <div class="world-record-actions">
+                <a class="world-primary-action" href={"https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/sessoes/" + session.data.slug + ".md"} target="_blank" rel="noopener noreferrer">Editar sessão no GitHub ↗</a>
+              </div>
+              <section class="world-description">
+                <div class="world-section-caption"><span>01</span><h3>Resumo da sessão</h3></div>
+                <div class="world-markdown"><Content /></div>
+              </section>
+              <section class="world-description">
+                <div class="world-section-caption"><span>02</span><h3>Acontecimentos registrados</h3></div>
+                {events.length ? events.map(({event,Content:EventContent})=>(
+                  <div class="chronicle-event" id={"evento-"+event.data.slug}>
+                    <p class="world-label">{event.data.example ? "EXEMPLO · " : ""}SESSÃO {event.data.session}</p>
+                    <h4>{event.data.title}</h4>
+                    <p>{event.data.description}</p>
+                    <div class="world-markdown"><EventContent /></div>
+                    {event.data.impacts.length>0&&(
+                      <ul class="chronicle-impact-list">{event.data.impacts.map(impact=>(
+                        <li><a href={withBase("atlas/#"+impact.target,base)}>{atlasBySlug.get(impact.target)?.data.title??impact.target}</a> — {impact.description}</li>
+                      ))}</ul>
+                    )}
+                    <a class="chronicle-event__edit" href={"https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/eventos/"+event.data.slug+".md"} target="_blank" rel="noopener noreferrer">Editar acontecimento ↗</a>
+                  </div>
+                )) : <p class="world-rail-empty">Nenhum acontecimento público vinculado a esta sessão.</p>}
+              </section>
+            </div>
+          </div>
+          <aside class="world-record-rail">
+            <div class="world-rail-heading">
+              <span class="world-label">LINHA DO TEMPO</span>
+              <h3>Sessão {session.data.number}</h3>
+              <p>{events.length} acontecimentos relacionados.</p>
+            </div>
+            <ol class="world-timeline">
+              {events.map(({event})=>(
+                <li><a href={"#evento-"+event.data.slug}><span class="world-timeline__number">Acontecimento</span><strong>{event.data.title}</strong></a></li>
+              ))}
+            </ol>
+            <div class="world-rail-divider"></div>
+            <span class="world-label">PARTICIPANTES</span>
+            <p class="world-rail-foot">{session.data.participants.join(", ") || "Nenhum participante informado."}</p>
+            <span class="world-label">OUTRAS SEÇÕES</span>
+            <p class="world-rail-foot"><a href={withBase("atlas/",base)}>Consultar fichas relacionadas →</a></p>
+          </aside>
+        </article>
+      ))}
+      {!sessions.length&&<div class="world-no-record"><h2>Nenhuma Crônica publicada</h2><p>Registre a primeira sessão pública no GitHub.</p></div>}
     </div>
   </div>
 </PortalLayout>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-chronicle-workspace]");
+  if (root) {
+    const buttons = [...root.querySelectorAll<HTMLButtonElement>("[data-open-session]")];
+    const panels = [...root.querySelectorAll<HTMLElement>("[data-session-panel]")];
+    const label = root.querySelector<HTMLElement>("[data-selected-session]");
+    function show(slug: string, updateHash = false) {
+      const panel = panels.find(item => item.dataset.sessionPanel === slug);
+      if (!panel) return;
+      for (const item of panels) item.hidden = item !== panel;
+      for (const button of buttons) button.setAttribute("aria-pressed", String(button.dataset.openSession === slug));
+      if (label) label.textContent = panel.dataset.sessionTitle || "Sessão";
+      if (updateHash) history.replaceState(null, "", "#" + encodeURIComponent(slug));
+    }
+    for (const button of buttons) {
+      button.addEventListener("click", () => show(button.dataset.openSession || "", true));
+    }
+    function followHash() {
+      const id = decodeURIComponent(location.hash.slice(1));
+      const panel = panels.find(item => item.id === id || item.querySelector("[id]")?.id === id ||
+        !![...item.querySelectorAll<HTMLElement>("[id]")].find(child => child.id === id));
+      if (panel) show(panel.dataset.sessionPanel || "");
+      else if (panels.length) show(panels[0].dataset.sessionPanel || "");
+      if (panel && id.startsWith("evento-")) requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({block:"start"}));
+    }
+    window.addEventListener("hashchange", followHash);
+    followHash();
+  }
+</script>
