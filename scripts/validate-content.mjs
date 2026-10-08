@@ -34,7 +34,10 @@ const parseMetadata = (source) => {
     const pair = line.match(/^([A-Za-z][\w-]*):\s*["']?([^"'\r\n]*)/);
     if (pair) {
       const [, key, value] = pair;
-      if (value.trim()) {
+      if (value.trim() === "[]") {
+        metadata[key] = [];
+        activeList = undefined;
+      } else if (value.trim()) {
         metadata[key] = value.trim();
         activeList = undefined;
       } else {
