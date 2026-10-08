@@ -1,64 +1,76 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import PortalLayout from "../../layouts/PortalLayout.astro";
 import SessionCard from "../../components/SessionCard.astro";
 import NavigationIcon from "../../components/NavigationIcon.astro";
+import { withBase } from "../../lib/paths";
+import "../../styles/atlas.css";
 
-const sessions = (await getCollection("sessoes"))
-  .filter((entry) => entry.data.visibility === "publico" && entry.data.status === "publicado")
-  .sort((a, b) => b.data.number - a.data.number);
-const fields = [
-  "número e data",
-  "participantes",
-  "resumo",
-  "decisões",
-  "NPCs encontrados",
-  "locais visitados",
-  "itens encontrados",
-  "quests alteradas",
-  "consequências",
-  "imagens"
-];
+const published = (entry) => entry.data.visibility === "publico" && entry.data.status === "publicado";
+const sessions = (await getCollection("sessoes")).filter(published).sort((a,b)=>b.data.number-a.data.number);
+const events = (await getCollection("eventos")).filter(published).sort((a,b)=>a.data.order-b.data.order);
+const atlas = (await getCollection("atlas")).filter(published);
+const atlasBySlug = new Map(atlas.map(entry=>[entry.data.slug,entry]));
+const rendered = await Promise.all(events.map(async entry=>({entry,Content:(await render(entry)).Content})));
+const base = import.meta.env.BASE_URL;
 ---
 
-<PortalLayout title="Crônicas" description="Memória pública das sessões da campanha.">
+<PortalLayout title="Crônicas" description="Registro público das sessões e acontecimentos vinculados ao Atlas.">
   <div class="page-container">
-    <header class="page-intro">
+    <header class="page-intro atlas-heading">
       <div>
-        <p class="eyebrow">Memória da campanha</p>
+        <p class="eyebrow">Memória pública da campanha</p>
         <h1 class="area-title"><NavigationIcon name="cronicas" /> Crônicas</h1>
-        <p>Uma estrutura editorial para registrar sessões públicas sem expor notas internas.</p>
+        <p>Registros das sessões, encontros e mudanças do mundo. Os acontecimentos aparecem também nas fichas do <a href={withBase("atlas/",base)}>Atlas Vivo</a>.</p>
       </div>
+      <a class="button button--primary" href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/sessoes" target="_blank" rel="noopener noreferrer">Nova sessão no GitHub</a>
     </header>
-    <div class="chronicle-layout">
-      <section>
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Registros</p>
-            <h2>Histórico público</h2>
-          </div>
-        </div>
-        <div class="campaign-grid campaign-grid--single">
-          {
-            sessions.map((entry) => (
-              <div id={entry.data.slug}>
-                <SessionCard
-                  title={entry.data.title}
-                  number={entry.data.number}
-                  date={entry.data.date}
-                  description={entry.data.description}
-                  example={entry.data.example}
-                />
+    <section class="atlas-explain">
+      <p>Os dados aqui são destinados aos jogadores. As notas do Assimilador e os segredos não pertencem a este repositório.</p>
+      <a href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/eventos" target="_blank" rel="noopener noreferrer">Registrar acontecimento no GitHub ↗</a>
+    </section>
+    <div class="atlas-session-list">
+      {sessions.map(session=>{
+        const belongs = rendered.filter(({entry})=>entry.data.session===session.data.number);
+        return (
+          <section class="atlas-session" id={session.data.slug}>
+            <div class="atlas-session__head">
+              <SessionCard title={session.data.title} number={session.data.number} date={session.data.date} description={session.data.description} example={session.data.example}/>
+              <a class="atlas-edit-link" href={`https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/sessoes/${session.data.slug}.md`} target="_blank" rel="noopener noreferrer">Editar sessão ↗</a>
+            </div>
+            {belongs.length>0 ? (
+              <div class="atlas-event-list">
+                <h2>Acontecimentos registrados</h2>
+                {belongs.map(({entry,Content})=>(
+                  <article class="atlas-event" id={`evento-${entry.data.slug}`}>
+                    <div class="atlas-event__header">
+                      <div>
+                        <p class="eyebrow">{entry.data.example?"Demonstração · ":""}Sessão {entry.data.session}</p>
+                        <h3>{entry.data.title}</h3>
+                        <p>{entry.data.description}</p>
+                      </div>
+                      <a href={`https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/eventos/${entry.data.slug}.md`} target="_blank" rel="noopener noreferrer">Editar ↗</a>
+                    </div>
+                    <div class="atlas-event__body"><Content /></div>
+                    {entry.data.impacts.length>0 && (
+                      <div class="atlas-impacts">
+                        <strong>Alterações por ficha</strong>
+                        <ul>{entry.data.impacts.map(impact=>{
+                          const target=atlasBySlug.get(impact.target);
+                          return (
+                            <li><a href={withBase(`atlas/#${impact.target}`,base)}>{target?.data.title??impact.target}</a>: {impact.description}</li>
+                          );
+                        })}</ul>
+                      </div>
+                    )}
+                  </article>
+                ))}
               </div>
-            ))
-          }
-        </div>
-      </section>
-      <aside class="record-template">
-        <p class="eyebrow">Campos preparados</p>
-        <h2>Modelo de sessão</h2>
-        <ul>{fields.map((field) => <li>{field}</li>)}</ul>
-      </aside>
+            ):<p class="atlas-empty">Nenhum acontecimento público vinculado a esta sessão.</p>}
+          </section>
+        );
+      })}
+      {sessions.length===0&&<div class="empty-state">Ainda não há sessões públicas registradas.</div>}
     </div>
   </div>
 </PortalLayout>

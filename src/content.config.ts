@@ -117,7 +117,32 @@ const bestiario = defineCollection({
   schema: publicEntry
 });
 
+
+const atlas = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/atlas" }),
+  schema: publicEntry.extend({
+    kind: z.enum(["personagem", "localidade", "faccao", "mapa"]),
+    currentState: z.string().default(""),
+    relations: z.array(z.string()).default([]),
+    image: z.string().optional()
+  })
+});
+
+const eventos = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/eventos" }),
+  schema: publicEntry.extend({
+    session: z.number().int().nonnegative(),
+    order: z.number().int().nonnegative().default(0),
+    impacts: z.array(z.object({
+      target: z.string(),
+      description: z.string()
+    })).default([])
+  })
+});
+
 export const collections = {
+  atlas,
+  eventos,
   guias,
   materiais,
   itens,
