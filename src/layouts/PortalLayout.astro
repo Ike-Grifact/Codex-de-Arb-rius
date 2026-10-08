@@ -5,15 +5,21 @@ import AppSidebar from "../components/AppSidebar.astro";
 import MobileNavigation from "../components/MobileNavigation.astro";
 import "../styles/portal.css";
 import "../styles/enhancements.css";
+import "../styles/workspace.css";
 
 interface Props {
   title?: string;
   description?: string;
+  workspace?: boolean;
 }
-const { title, description } = Astro.props;
+const { title, description, workspace = false } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} bodyClass="portal-shell">
+<BaseLayout
+  title={title}
+  description={description}
+  bodyClass={workspace ? "portal-shell workspace-shell" : "portal-shell"}
+>
   <AppHeader />
   <AppSidebar />
   <main id="conteudo" class="portal-main">
