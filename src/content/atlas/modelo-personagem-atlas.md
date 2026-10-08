@@ -8,7 +8,8 @@ visibility: "publico"
 status: "publicado"
 example: true
 updated: 2026-10-08
-tags: []
+tags:
+  - exemplo
 currentState: "Exemplo de preenchimento. Substituir por informações publicamente conhecidas."
 relations: []
 ---
