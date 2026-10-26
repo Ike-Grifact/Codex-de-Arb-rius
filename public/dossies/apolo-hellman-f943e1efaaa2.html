@@ -358,6 +358,12 @@ body:before{background-image:repeating-linear-gradient(90deg,#94753b08 0 1px,tra
  .ability-section .apolo-editorial-figure.apolo-editorial-panorama{height:200px!important;min-height:200px!important}
  .ability-section .technique,.ability-section .technique.featured{display:flow-root;border-color:#c5b9a2!important;background:none!important}
 }
+
+/* apolo-editorial-art-clear-v1: impede dois painéis flutuantes de estreitarem a leitura */
+@media(min-width:876px){
+ .ability-section .apolo-editorial-figure.apolo-float-left:not(.apolo-editorial-primary),
+ .ability-section .apolo-editorial-figure.apolo-float-right:not(.apolo-editorial-primary){clear:both}
+}
 </style></head><body>
 <div class="layout">
 <aside class="sidebar" aria-label="Índice do dossiê"><div class="identity"><div class="sigil" aria-hidden="true">A</div><div><b>ÁRBORIUS</b><small>CODEX / DOSSIÊ DO JOGADOR</small></div></div>
