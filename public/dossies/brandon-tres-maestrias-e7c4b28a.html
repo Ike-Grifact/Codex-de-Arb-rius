@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive,nosnippet"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#0c1014"><title>Brandon — Os Três Caminhos | Codex de Árborius</title><style>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive,nosnippet"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#e4d6b9"><title>Brandon — Os Três Caminhos | Codex de Árborius</title><style>
 :root{color-scheme:dark;--bg:#0c1014;--ink:#efebe2;--muted:#b8bec4;--line:#37444e;--gold:#dfba76;--green:#a7cbd0;--red:#d69b9f;--forest:#b5c9a3;scroll-behavior:smooth}
 *{box-sizing:border-box}html{scroll-padding-top:20px}body{margin:0;background:radial-gradient(ellipse 1100px 680px at 76% -300px,#53605b3d,transparent 75%),linear-gradient(115deg,#0b1114,#0d151a 64%,#101316);color:var(--ink);font:14px/1.72 system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:inherit}.layout{max-width:1580px;margin:auto;display:grid;grid-template-columns:295px minmax(0,1fr)}
@@ -34,7 +34,135 @@ main{min-width:0;width:100%;padding:0 clamp(18px,5vw,85px) 75px}.toolbar{display
 
 /* Ajustes para custos das cartas oficiais e legibilidade das revisões v1.15.2 */
 .symbol-strip{display:inline-flex;align-items:center;gap:2px}.mech-cost img{filter:brightness(0) invert(1);width:15px;height:15px;object-fit:contain}.mech-cost{gap:6px;vertical-align:-.2em}.source-bullets{padding-left:23px;color:#d2d6ce;line-height:1.75}.source-bullets li{padding:3px 0}.doc-table-paragraph{background:#182529;border:1px solid #40555a;border-radius:10px;padding:12px 17px;line-height:1.9}.folio .prose p{overflow-wrap:anywhere}@media(max-width:700px){.symbol-strip{flex-wrap:wrap;max-width:150px}.doc-table-paragraph{padding:10px}}@media print{.mech-cost img{filter:none}.doc-table-paragraph{background:#f1f3f0;color:#29342e}}
-.doc-table-scroll{margin:16px 0 22px;border:1px solid #47555a;border-radius:12px;overflow-x:auto}.doc-table{border-collapse:collapse;width:100%;min-width:510px;font-size:12px;line-height:1.65}.doc-table th{text-align:left;padding:12px 14px;background:#29383b;color:#e5d5ac;font-weight:750;border-bottom:1px solid #4e6364}.doc-table td{padding:11px 14px;vertical-align:top;border-bottom:1px solid #34494d;color:#d8e0db}.doc-table tr:last-child td{border-bottom:0}.doc-table tr:nth-child(even) td{background:#ffffff06}.doc-table td:first-child{font-weight:700;color:#e5d4b7}.doc-table .mechanic{white-space:nowrap}.doc-table .symbol-strip img{filter:brightness(0) invert(1)}@media print{.doc-table th{background:#e2e8e3;color:#293b34}.doc-table td{color:#34413a}.doc-table .symbol-strip img{filter:none}}</style></head><body><div class="layout">
+.doc-table-scroll{margin:16px 0 22px;border:1px solid #47555a;border-radius:12px;overflow-x:auto}.doc-table{border-collapse:collapse;width:100%;min-width:510px;font-size:12px;line-height:1.65}.doc-table th{text-align:left;padding:12px 14px;background:#29383b;color:#e5d5ac;font-weight:750;border-bottom:1px solid #4e6364}.doc-table td{padding:11px 14px;vertical-align:top;border-bottom:1px solid #34494d;color:#d8e0db}.doc-table tr:last-child td{border-bottom:0}.doc-table tr:nth-child(even) td{background:#ffffff06}.doc-table td:first-child{font-weight:700;color:#e5d4b7}.doc-table .mechanic{white-space:nowrap}.doc-table .symbol-strip img{filter:brightness(0) invert(1)}@media print{.doc-table th{background:#e2e8e3;color:#293b34}.doc-table td{color:#34413a}.doc-table .symbol-strip img{filter:none}}
+/* brandon-pergaminho-editorial-v1 — padrão editorial do Codex, sem imagens */
+:root{
+ color-scheme:light;
+ --bg:#e4d6b9;--ink:#302c25;--muted:#554d40;--line:#bba883;
+ --gold:#967036;--green:#446b7d;--red:#95463f;--forest:#42624b
+}
+html{scroll-padding-top:60px}
+body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:
+ radial-gradient(ellipse at 13% 2%,#f3e9d6,transparent 46%),
+ radial-gradient(ellipse at 83% 85%,#b4976747,transparent 55%),#ddceb1;
+ line-height:1.7}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+ background:repeating-linear-gradient(90deg,#99804b07 0 1px,transparent 1px 9px),
+ repeating-linear-gradient(0deg,#876b4608 0 1px,transparent 1px 18px)}
+.layout{background:#f2e8d2;box-shadow:0 6px 34px #3d2b1936}
+aside{background:linear-gradient(155deg,#253536,#1c302e 60%,#1b2930);border-right:3px solid #a68b59;
+ color:#eee2c9;box-shadow:inset -1px 0 #dbbd8138;font-family:system-ui,-apple-system,Arial,sans-serif}
+.brand{border-color:#8f8c6f72}.brand strong{color:#efdfb7}
+.brand small{color:#c4bda8}.seal{background:#33443e;border-color:#baa16b;color:#ebd19f}
+.label{color:#c5b7a0}.main-nav a{background:#304441;border-color:#687c6e;border-radius:5px;color:#f2e6cf}
+.main-nav a:hover,.main-nav a:focus-visible{background:#455b51;border-color:#c3ac77}
+.main-nav b{color:#e7cb91}.main-nav span{color:#f6ecda}
+.main-nav a:nth-child(1){border-left:3px solid #9dc9db}
+.main-nav a:nth-child(2){border-left:3px solid #dba39a}
+.main-nav a:nth-child(3){border-left:3px solid #e4c48c}
+.page-nav a{color:#e1d6bd;border-color:#64706177}
+.page-nav a b{color:#e5c98e}.page-nav a:hover,.page-nav a:focus-visible{background:#40534a}
+.legend div,.side-bottom{color:#eee2cc}.legend img{filter:brightness(0) invert(1)}
+.side-bottom{border-color:#9b99726e}
+main{min-width:0;background:radial-gradient(ellipse at right top,#c6ad7910,transparent 39%),#f2e8d2}
+.toolbar{border-bottom:1px solid #b8a47f;color:#706048;font-family:system-ui,Arial,sans-serif}
+.print{background:#345648;color:#fbefda;border:1px solid #9b8054;border-radius:5px}
+.print:hover{background:#496858}
+.hero{border-bottom:2px solid #ac915e;padding-top:59px}
+.hero-label{color:#896830;font-family:system-ui,Arial,sans-serif}
+.hero h1{color:#2c4036;letter-spacing:-.04em}
+.hero h1 em{color:#855e31}
+.hero p{color:#5f5341;font:16px/1.68 Georgia,serif}
+.hero-icon{color:#76845b;opacity:.23}
+.trio{gap:12px}
+.trio a{background:#e9dec5;border:1px solid #bba47b;border-radius:5px;
+ box-shadow:0 1px 4px #765f3d18;transition:border-color .2s,background .2s}
+.trio a:nth-child(1){border-top:3px solid #4c7285}
+.trio a:nth-child(2){border-top:3px solid #a04e47}
+.trio a:nth-child(3){border-top:3px solid #997034}
+.trio a:hover,.trio a:focus-visible{background:#f3e8ce;border-color:#95754a;outline:none}
+.trio h3{color:#334f46}.trio a:nth-child(2) h3{color:#914c42}.trio a:nth-child(3) h3{color:#836027}
+.trio p{color:#615441;font:12px/1.64 Georgia,serif}
+.intro-note{background:#e6d8b9;border-left:3px solid #9b7b49;border-radius:0 5px 5px 0;color:#524737}
+.folio{--tone:#426a80;--shade:#dce4e2;position:relative;display:flow-root;margin-bottom:49px;padding-top:24px;scroll-margin-top:65px}
+.folio.echo{--tone:#426b82;--shade:#dbe6e7}
+.folio.blade{--tone:#9c4b45;--shade:#eddbd3}
+.folio.dragon{--tone:#997238;--shade:#e8dec1}
+.folio.cover{--tone:#627653;--shade:#e2e3ca}
+.folio.summary{--tone:#997038;--shade:#e8dcc0}
+.folio.chapter-start{border-top:2px solid #b5a076;margin-top:63px;padding-top:40px}
+.folio-top{color:#7b6950;font-family:system-ui,Arial,sans-serif}
+.folio-heading{gap:16px;margin-bottom:22px}
+.crest{background:linear-gradient(145deg,var(--shade),#f2e6ce);color:var(--tone);border:1px solid var(--tone);border-radius:7px}
+.folio h2{color:#304338;font-size:clamp(29px,3.8vw,43px)}
+.folio h2 small{color:var(--tone)}
+.prose{border-left:2px solid #bba989;padding-left:18px}
+.prose p,.folio .prose p{color:#443c31;font:15px/1.8 Georgia,serif;overflow-wrap:break-word;word-break:normal}
+.prose strong,.folio strong{color:#304c3b}
+.subsection-title{color:var(--tone);border-color:#c1ad88;font-size:clamp(22px,3vw,27px)}
+.epigraph{background:#eadfc8;color:#5c4b36;border-left:3px solid var(--tone)}
+.rule-matrix{background:linear-gradient(120deg,var(--shade),#efe5d0 78%);border:1px solid #b5a17b;border-radius:5px;padding-bottom:12px}
+.matrix-title{color:var(--tone);border-bottom:1px solid #b8a77f}
+.rule-matrix pre{color:#3d3930;font-size:12px}
+.note{background:#e6dbc4;border-left:3px solid var(--tone);color:#483d2e;border-radius:0 5px 5px 0}
+.doc-bullets li,.source-bullets,.source-bullets li{color:#423b31}
+.mechanic{color:#384d40;border:1px solid #bbae8b;background:#e9ddc8}
+.mechanic img,.mech-cost img,.rule-matrix .mechanic img,.doc-table .symbol-strip img{filter:brightness(0) saturate(100%) invert(26%) sepia(22%) saturate(783%) hue-rotate(95deg) brightness(88%)!important}
+.folio.echo .mechanic img,.folio.echo .mech-cost img{filter:brightness(0) saturate(100%) invert(31%) sepia(26%) saturate(950%) hue-rotate(157deg) brightness(85%)!important}
+.folio.blade .mechanic img,.folio.blade .mech-cost img{filter:brightness(0) saturate(100%) invert(34%) sepia(30%) saturate(925%) hue-rotate(322deg) brightness(90%)!important}
+.folio.dragon .mechanic img,.folio.dragon .mech-cost img{filter:brightness(0) saturate(100%) invert(42%) sepia(33%) saturate(797%) hue-rotate(10deg) brightness(89%)!important}
+.legend img{filter:brightness(0) invert(1)!important}
+.table-fact{background:#ede1c8;border:1px solid #bba681;border-radius:5px;color:#4e4435}
+.table-fact b{color:#896733}
+.doc-table-paragraph{background:#e8ddc5;border:1px solid #bba783;color:#443b2e;border-radius:5px}
+.doc-table-scroll{border-color:#b4a07c;border-radius:5px}
+.doc-table{font-family:Georgia,"Times New Roman",serif}
+.doc-table th{background:#405e54;color:#f5ebd5;border-color:#a59473}
+.doc-table td{color:#403a2e;border-color:#c1af8a}
+.doc-table td:first-child{color:#654c2d}
+.doc-table tr:nth-child(even) td{background:#e5d7b958}
+.doc-table .mechanic{color:#375b4b}
+footer{color:#665941;border-color:#b6a17c}
+@media(max-width:1150px){
+ main{padding-left:30px;padding-right:30px}
+ .trio{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .trio a{padding:13px}
+ .folio h2{font-size:clamp(28px,3.7vw,40px)}
+}
+@media(max-width:850px){
+ .trio{grid-template-columns:1fr;gap:8px}
+ .trio a{padding:12px}
+}
+@media(max-width:730px){
+ html{scroll-padding-top:86px}
+ aside{background:#243a35;border-bottom:3px solid #b29b6e}
+ .main-nav a{background:#324940;border-color:#6e846f}
+ .main-nav a span{color:#f4e6ca}
+ .main-nav a b{color:#ebce95}
+ main{padding:0 15px 46px}
+ .hero{padding:38px 0 27px}
+ .hero h1{font-size:clamp(38px,9vw,59px)}
+ .hero p{font-size:14px}
+ .folio{scroll-margin-top:92px;margin-bottom:34px}
+ .folio.chapter-start{margin-top:45px;padding-top:28px}
+ .folio-heading{gap:11px}
+ .prose{padding-left:11px}
+ .prose p,.folio .prose p{font-size:14px;line-height:1.72}
+ .subsection-title{font-size:24px}
+ .doc-table td,.doc-table th{padding:10px 11px}
+ .rule-matrix pre{font-size:11px}
+}
+@media(max-width:390px){main{padding-left:10px;padding-right:10px}.main-nav a{padding:7px 4px}.folio h2{font-size:28px}}
+@media print{
+ html,body,main{background:#fff!important;color:#25372b!important}
+ .trio a,.doc-table-paragraph,.table-fact,.rule-matrix,.note,.intro-note{background:#fff!important;border-color:#a7a699!important}
+ .doc-table th{background:#e4e9e2!important;color:#283c30!important}
+ .doc-table td,.table-fact,.prose p,.folio .prose p,.note,.intro-note{color:#293a2e!important}
+ .rule-matrix pre{color:#253731!important}
+ .mechanic img,.mech-cost img,.doc-table .symbol-strip img{filter:brightness(0)!important}
+ .folio.chapter-start{border-color:#b8a47f}
+}
+</style></head><body><div class="layout">
 <aside aria-label="Navegação do dossiê"><div class="brand"><div class="seal">B</div><div><strong>ÁRBORIUS</strong><small>CODEX / DOSSIÊ DO JOGADOR</small></div></div><div class="label">Os três caminhos</div><nav class="main-nav"><a href="#maestria-1"><b>I</b><span>Ressonância Empática</span></a><a href="#maestria-2"><b>II</b><span>Lâmina Hemática</span></a><a href="#maestria-3"><b>III</b><span>Dragoaria Arboriana</span></a></nav><div class="label">Índice completo • 20 folhas</div><nav class="page-nav"><a href="#pagina-1"><b>01</b><span>Capa • Os Três Caminhos</span></a><a href="#pagina-2"><b>02</b><span>Ressonância Empática • Despertar</span></a><a href="#pagina-3"><b>03</b><span>Ressonância • Voz de Ebrion</span></a><a href="#pagina-4"><b>04</b><span>Ressonância • Encarnação</span></a><a href="#pagina-5"><b>05</b><span>Concordia entre os Povos</span></a><a href="#pagina-6"><b>06</b><span>Ressonância • Limites</span></a><a href="#pagina-7"><b>07</b><span>Lâmina Hemática • Despertar</span></a><a href="#pagina-8"><b>08</b><span>Lâmina • Nutrição e Transfusão</span></a><a href="#pagina-9"><b>09</b><span>Lâmina • Praga de Sangue</span></a><a href="#pagina-10"><b>10</b><span>Lâmina • Execução Impecável</span></a><a href="#pagina-11"><b>11</b><span>Lâmina • Dança dos Estribos</span></a><a href="#pagina-12"><b>12</b><span>Lâmina • Referência</span></a><a href="#pagina-13"><b>13</b><span>Dragoaria Arboriana • Despertar</span></a><a href="#pagina-14"><b>14</b><span>Dragoaria • Marcos e Protocartas</span></a><a href="#pagina-15"><b>15</b><span>Dracogênese</span></a><a href="#pagina-16"><b>16</b><span>Predador Alado • Fogo e Rugido</span></a><a href="#pagina-17"><b>17</b><span>Protodraco • Instintos e Carga</span></a><a href="#pagina-18"><b>18</b><span>Protodraco • Voo Montado</span></a><a href="#pagina-19"><b>19</b><span>Herança Dracônica</span></a><a href="#pagina-20"><b>20</b><span>Resumo de Mesa</span></a></nav><div class="label">Símbolos de Assimilação</div><div class="legend"><div><img src="/Codex-de-Arb-rius/symbols/sucesso.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Sucesso"><span>Sucesso • A</span></div><div><img src="/Codex-de-Arb-rius/symbols/adaptacao.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Adaptação"><span>Adaptação • B</span></div><div><img src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Pressão"><span>Pressão • C</span></div><div><img src="/Codex-de-Arb-rius/symbols/pontodeassimilacao.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Ponto de Assimilação"><span>Ponto de Assimilação</span></div><div><img src="/Codex-de-Arb-rius/symbols/pontodedeterminacao.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Ponto de Determinação"><span>Ponto de Determinação</span></div><div><img src="/Codex-de-Arb-rius/symbols/pontodesaude.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Ponto de Saúde"><span>Ponto de Saúde</span></div></div><div class="side-bottom">Documento do jogador • Homebrew em playtest. O endereço é não listado no portal, mas não constitui controle de acesso.</div></aside>
 <main id="inicio"><div class="toolbar"><span>Codex de Árborius / Brandon</span><button class="print" onclick="window.print()" type="button">Imprimir / salvar PDF</button></div><header class="hero"><div class="hero-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40c5-4 7-10 9-19 9 6 15 0 17-14 11 10 6 19 2 25 4 0 7 2 10 6-10-2-16 0-21 5-4-9-10-10-17-3Z"/><path d="M24 18c1 7-1 13-5 19M33 18l6 3"/></svg></div><p class="hero-label">ASSIMILAÇÃO RPG / DOSSIÊ PESSOAL DO JOGADOR</p><h1>BRANDON<br><em>OS TRÊS CAMINHOS</em></h1><p>As três Maestrias de um cavaleiro, seu vínculo com Ebrion e o nascimento da Dragoaria Arboriana.</p></header>
 <div class="trio"><a href="#maestria-1"><h3>I • RESSONÂNCIA EMPÁTICA</h3><p>Telepatia recíproca, mediação e Sonho de Brandon.</p></a><a href="#maestria-2"><h3>II • LÂMINA HEMÁTICA</h3><p>A Lâmina Viva, suas técnicas sanguíneas e marciais.</p></a><a href="#maestria-3"><h3>III • DRAGOARIA ARBORIANA</h3><p>Quatro marcos, mutações oficiais e a evolução de Ebrion.</p></a></div><div class="intro-note">Referência do documento: SRD Codex de Árborius v1.15.2. Os efeitos combinados da Dragoaria e as exceções descritas são <b>[HOMEBREW] [TESTE]</b>. O texto mecânico foi mantido conforme o dossiê fornecido, sem substituição de regras.</div>
