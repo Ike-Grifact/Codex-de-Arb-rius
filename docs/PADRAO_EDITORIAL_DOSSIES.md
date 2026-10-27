@@ -64,3 +64,13 @@ Para custos longos de cartas, apresentar **um símbolo por tipo com sua contagem
 Na tabela de marcos, separar requisitos de Aptidões dos nomes das mutações. Manter nome da carta e seu custo **no mesmo grupo** (com `inline-flex` e `white-space:nowrap`). Em tela estreita, preferir rolagem horizontal da tabela à quebra no meio do custo de uma carta. Não partir símbolos mecânicos, contagens de dados ou as abreviaturas oficiais entre linhas.
 
 Usar negritos com parcimônia para identificar **requisitos, gatilhos, custos, testes, efeitos, limites e exceções decisivas**. Não destacar parágrafos inteiros nem mudar a natureza mecânica do que está descrito.
+
+## 7. Revisão textual e iconografia contextual
+
+- Cada regra deve separar **gatilho, custo, efeito, duração e limite**, sem repetir a mesma explicação no mesmo capítulo.
+- Evitar títulos seguidos de parágrafo colado (por exemplo, "Infectados Infectados") e cabeçalhos que em cópia de texto apareçam sem espaço. No HTML, separar `</small>` do título principal e os dois metadados de cada folha.
+- **Não dividir uma frase ou uma tabela entre folhas**. Reunir custos das cartas oficiais numa única tabela, incluindo cartas já adquiridas, com anotação clara do estado de aquisição.
+- As tabelas de consulta rápida não substituem as descrições mecânicas completas; devem preservar recursos, limites, requisitos e condições de uso.
+- Ilustrações devem ficar junto à técnica representada: abertura, mutação, ativação ofensiva, consequência ou marco narrativo. Cada imagem recebe descrição acessível, legenda e crédito da URL de origem.
+- Imagens hospedadas fora do Codex podem bloquear incorporação. O visualizador deve manter alternativa para abrir o endereço original se a imagem falhar. Não afirmar que um recurso remoto foi carregado sem verificar no navegador.
+- Distinguir sempre **texto oficial**, **homebrew de campanha** e **resumo editorial**. Melhorar a concisão não autoriza alterar cálculos ou custos.
