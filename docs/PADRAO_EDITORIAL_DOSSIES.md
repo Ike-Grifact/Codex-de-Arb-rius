@@ -53,3 +53,14 @@ Não inserir regras inteiras dentro de títulos. Requisitos, custos e efeitos pr
 ## 5. Aplicação
 
 Correção introduzida inicialmente no dossiê de Brandon em 27 de outubro de 2026, inspirada no modelo editorial de Apolo e Aruana. Reutilizar este padrão na criação de todos os próximos dossiês dos jogadores.
+
+
+## 6. Ícones, custos simbólicos e quebras de linha
+
+O ícone de cada Maestria deve utilizar a mesma espessura de linha, escala e forma de apresentação dos demais personagens. Em Brandon: vínculo (Ressonância), espada longa (Lâmina Hemática) e silhueta dracônica (Dragoaria). O desenho nunca substitui os símbolos oficiais.
+
+Para custos longos de cartas, apresentar **um símbolo por tipo com sua contagem**, sem fileiras ilegíveis: `BBBBB` pode aparecer como **5B**, `BBBBAA` como **4B + 2A** e `BBC` como **2B + 1C**. Preservar a notação original em `title` e disponibilizar uma descrição acessível em `aria-label`. É apenas abreviação visual: custo e ordem dos símbolos continuam os mesmos.
+
+Na tabela de marcos, separar requisitos de Aptidões dos nomes das mutações. Manter nome da carta e seu custo **no mesmo grupo** (com `inline-flex` e `white-space:nowrap`). Em tela estreita, preferir rolagem horizontal da tabela à quebra no meio do custo de uma carta. Não partir símbolos mecânicos, contagens de dados ou as abreviaturas oficiais entre linhas.
+
+Usar negritos com parcimônia para identificar **requisitos, gatilhos, custos, testes, efeitos, limites e exceções decisivas**. Não destacar parágrafos inteiros nem mudar a natureza mecânica do que está descrito.
