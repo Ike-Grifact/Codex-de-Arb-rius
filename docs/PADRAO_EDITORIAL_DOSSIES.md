@@ -74,3 +74,11 @@ Usar negritos com parcimônia para identificar **requisitos, gatilhos, custos, t
 - Ilustrações devem ficar junto à técnica representada: abertura, mutação, ativação ofensiva, consequência ou marco narrativo. Cada imagem recebe descrição acessível, legenda e crédito da URL de origem.
 - Imagens hospedadas fora do Codex podem bloquear incorporação. O visualizador deve manter alternativa para abrir o endereço original se a imagem falhar. Não afirmar que um recurso remoto foi carregado sem verificar no navegador.
 - Distinguir sempre **texto oficial**, **homebrew de campanha** e **resumo editorial**. Melhorar a concisão não autoriza alterar cálculos ou custos.
+
+## 8. Aplicação a Vespasiano Varotto (27/10/2026)
+
+A página de Vespasiano segue o mesmo fundo de pergaminho e contraste alto dos dossiês de Apolo, Aruana e Brandon. A navegação conserva o verde-escuro; cada Maestria usa uma cor de destaque, sem fundo escuro atrás dos textos: **Engenharia Biológica** (verde-petróleo), **Visão Horrenda** (vinho) e **Gênese Assimilada** (oliva).
+
+As seis ilustrações fornecidas pelo Assimilador estão distribuídas em técnicas/contextos relacionados. Cada uma tem moldura, legenda, link de origem, alternativa de imagem indisponível e ampliação ao clique quando carregada. Nunca usar `object-fit:cover` para cortar o conteúdo; preferir `object-fit:contain` e altura máxima.
+
+A revisão é editorial. O conteúdo mecânico (15 tabelas, símbolos, custos e regras do SRD) não foi alterado. Referências externas podem bloquear incorporação; conferi-las visualmente após a publicação.
