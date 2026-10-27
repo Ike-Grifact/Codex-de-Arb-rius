@@ -149,6 +149,32 @@ main .vespa-art-link:focus-visible{outline:3px solid #3f7990;outline-offset:3px}
  main .rules-table td{color:#313a32!important}
  main .body-copy,main .rule-line{color:#2f382e!important}
 }
+
+/* Prévia em hover (mouse/trackpad) conforme os dossiês de Apolo e Aruana. */
+.vespa-hover-layer{
+ position:fixed;inset:0;z-index:9900;
+ display:none;align-items:center;justify-content:center;
+ padding:18px;background:#101711d9;backdrop-filter:blur(4px);
+ pointer-events:none;
+}
+.vespa-hover-layer.is-visible{display:flex}
+.vespa-hover-frame{
+ display:grid;gap:9px;justify-items:center;max-width:92vw;max-height:94vh;
+ padding:10px;background:#eee1c8;border:2px solid #9e835a;
+ border-radius:5px;box-shadow:0 20px 76px #0009
+}
+.vespa-hover-frame img{
+ display:block;width:auto;height:auto;max-width:min(800px,86vw);
+ max-height:min(77vh,850px);object-fit:contain
+}
+.vespa-hover-frame p{
+ max-width:75ch;margin:0;text-align:center;
+ color:#30483a;font:700 14px/1.4 Georgia,serif
+}
+@media(hover:none),(pointer:coarse){
+ .vespa-hover-layer{display:none!important}
+}
+@media print{.vespa-hover-layer{display:none!important}}
 </style></head><body><div class="layout"><aside aria-label="Navegação do dossiê"><div class="identity"><div class="seal">V</div><div><strong>ÁRBORIUS</strong><small>CODEX / DOSSIÊ INDIVIDUAL</small></div></div><div class="side-tag">Os três caminhos</div><nav class="main-nav"><a href="#pagina-2"><b>I</b>Engenharia Biológica</a><a href="#pagina-8"><b>II</b>Visão Horrenda</a><a href="#pagina-12"><b>III</b>Gênese Assimilada</a></nav><div class="side-tag">Índice completo</div><nav class="page-nav"><a href="#pagina-1"><b>01</b><span>Três leis de continuidade</span></a><a href="#pagina-2"><b>02</b><span>Engenharia Biológica</span></a><a href="#pagina-3"><b>03</b><span>Sutura Assimilada e Núcleo I.A.</span></a><a href="#pagina-4"><b>04</b><span>Apêndice Neural e Cisão Orgânica</span></a><a href="#pagina-5"><b>05</b><span>Homúnculo e partitura</span></a><a href="#pagina-6"><b>06</b><span>Riscos e compatibilidade</span></a><a href="#pagina-7"><b>07</b><span>Registro de playtest</span></a><a href="#pagina-8"><b>08</b><span>Visão Horrenda</span></a><a href="#pagina-9"><b>09</b><span>Biomimetismo e intrusão neural</span></a><a href="#pagina-10"><b>10</b><span>Âncora de Identidade</span></a><a href="#pagina-11"><b>11</b><span>Combate Perturbador</span></a><a href="#pagina-12"><b>12</b><span>Gênese Assimilada</span></a><a href="#pagina-13"><b>13</b><span>Colmeia e Homeostase</span></a><a href="#pagina-14"><b>14</b><span>Zangão e Coro Interior</span></a><a href="#pagina-15"><b>15</b><span>Homúnculo de Vigília</span></a><a href="#pagina-16"><b>16</b><span>Casulo Primordial</span></a><a href="#pagina-17"><b>17</b><span>Protocolo de Continuidade</span></a></nav><div class="side-tag">Símbolos do Assimilação</div><div class="legend"><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/sucesso.svg" alt="" width="19" height="19" loading="lazy"><span>Sucesso • A</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/adaptacao.svg" alt="" width="19" height="19" loading="lazy"><span>Adaptação • B</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" width="19" height="19" loading="lazy"><span>Pressão • C</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pontodeassimilacao.svg" alt="" width="19" height="19" loading="lazy"><span>Pontos de Assimilação • e</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pontodedeterminacao.svg" alt="" width="19" height="19" loading="lazy"><span>Pontos de Determinação • d</span></div></div><div class="side-footer"><small>Conteúdo pessoal • Homebrew em teste • Endereço não listado</small></div></aside><main><div class="toolbar"><span>Codex de Árborius / Dossiê de Vespasiano Varotto</span><button class="print" type="button" onclick="window.print()">Imprimir / salvar PDF</button></div><header class="hero"><p class="eyebrow">ASSIMILAÇÃO RPG · LUCKER · MAESTRIAS PESSOAIS</p><h1>VESPASIANO<br><span>VAROTTO</span></h1><p>“Construir a vida. Ouvir as vidas. E enfim escolher o que ainda deseja ser.”</p><p>Compêndio consolidado das três Maestrias • Engenharia Biológica, Visão Horrenda e Gênese Assimilada</p></header><div class="path-grid"><a href="#pagina-2"><b>I — Engenharia Biológica</b><small>Inteligência Assimilada, aparelhos do Velho Mundo, Núcleos I.A. e Homúnculos</small></a><a href="#pagina-8"><b>II — Visão Horrenda</b><small>Biomimetismo, memórias, comando distribuído, Âncora e Combate Perturbador</small></a><a href="#pagina-12"><b>III — Gênese Assimilada</b><small>Colmeia viva, Zangão, Coro Interior e Casulo Primordial</small></a></div><div class="intro-note"><b>Estado:</b> Regras pessoais [HOMEBREW] [TESTE]. Compêndio v2 alinhado ao Codex de Árborius v1.18: Lucker Primordial e Homúnculo de Vigília, com Maestrias pessoais em playtest.</div><section class="folio cover" id="pagina-1"><header class="page-head"><span>TRÊS MAESTRIAS</span><span>FOLHA 01 / 17</span></header><div class="page-title"><h2>Três leis de continuidade</h2></div><div class="page-copy"><h4 class="subheading">ÁRBORIUS / ASSIMILAÇÃO RPG</h4>
 <h4 class="subheading">VESPASIANO VAROTTO DOSSIÊ CONSOLIDADO DAS TRÊS MAESTRIAS</h4>
 <blockquote class="quote">“Construir a vida. Ouvir as vidas. E enfim escolher o que ainda deseja ser.”</blockquote>
@@ -241,20 +267,42 @@ main .vespa-art-link:focus-visible{outline:3px solid #3f7990;outline-offset:3px}
 <h3 class="section-heading">DESTINO DAS MUTAÇÕES</h3><div class="rules-scroll" role="region" aria-label="Tabela de regras"><table class="rules-table"><thead><tr><th scope="col">TIPO</th><th scope="col">PODE SAIR DO CORPO?</th><th scope="col">QUEM PODE USAR?</th></tr></thead><tbody><tr><td class="row-label">Evolutiva (A)</td><td>Não. Vinculada à alma/identidade.</td><td>Somente seu portador original; a Âncora não entrega Evolutivas ao Homúnculo.</td></tr><tr><td class="row-label">Adaptativa (<span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/adaptacao.svg" alt="" aria-hidden="true" width="18" height="18" loading="lazy"><span>B</span></span>)</td><td>Sim, pela Cisão Orgânica (I) ou Colmeia (III).</td><td>Um único corpo/receptor por vez, carregando benefício e desvantagem.</td></tr><tr><td class="row-label">Inoportuna (<span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" aria-hidden="true" width="18" height="18" loading="lazy"><span>C</span></span>)</td><td>Somente pela gestão da Gênese (III).</td><td>Pode manifestar-se no cultivo/receptor; <span class="mechanic" aria-label="C"><img class="glyph" src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" aria-hidden="true" loading="lazy" width="18" height="18"><span>C</span></span> estruturais ainda contam para Vespasiano até Clareza.</td></tr></tbody></table></div><h3 class="section-heading">HOMÚNCULO DE VIGÍLIA E PROPÓSITOS</h3><p class="body-copy">A Gênese permite acolher uma alma absorvida no único Homúnculo criado pela Engenharia Biológica, com agência real de NPC e riscos de proteção. Usa a ficha, ação e Grandeza existentes, sem transferir Evolutivas. O Propósito compartilhado ocupa um espaço normal de Vespasiano e pode produzir somente a Clareza habitual, nunca duas. Âncora de Identidade e Tomada de Corpo são incompatíveis com a Vigília enquanto a voz estiver alojada.</p><h3 class="section-heading">ÂNCORA E CONTINUIDADE</h3><p class="body-copy">Em caso de falência do corpo original, a Âncora permite a reemergência de uma única continuidade consciente em um Homúnculo preparado. A identidade/alma de Vespasiano não se multiplica. Suas Evolutivas não são transferidas como cartas ao Homúnculo; apenas poderão voltar a expressar-se após reconstrução orgânica adequada. Zangão não serve de Âncora por esta Maestria.</p>
 <h3 class="section-heading">ECONOMIA LUCKER E CORO INTERIOR</h3><p class="body-copy">Antes de <span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldedeterminacao.svg" alt="" width="19" height="19" loading="lazy"><span>D0</span></span>/<span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldeassimilacao.svg" alt="" width="19" height="19" loading="lazy"><span>E10</span></span>, permanecem as mecânicas Lucker normais de Fome, Teto e recuperação predatória. Em <span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldedeterminacao.svg" alt="" width="19" height="19" loading="lazy"><span>D0</span></span>/<span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldeassimilacao.svg" alt="" width="19" height="19" loading="lazy"><span>E10</span></span>, por regra permanente da campanha, Assimilação substitui Determinação e essa economia antiga deixa de existir. A reemergência e o choque neural da Visão Horrenda devem respeitar o estágio real do personagem. Clareza de Propósito é necessária para neutralizar cada <span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" aria-hidden="true" width="18" height="18" loading="lazy"><span>C</span></span> Inoportuna. Expor a mutação fora do corpo, colocá-la em Zangão ou manifestar Combate Perturbador não apaga suas <span class="mechanic" aria-label="C"><img class="glyph" src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" aria-hidden="true" loading="lazy" width="18" height="18"><span>C</span></span> estruturais. O Lucker continua sujeito ao limite definitivo de <span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" width="19" height="19" loading="lazy"><span>20C</span></span> Inoportunas ativas.</p>
 <h3 class="section-heading">AÇÕES E CRIATURAS</h3><p class="body-copy">O Homúnculo (I) possui uma ação própria e conta +1 Infectado na Grandeza quando participa de Conflito. Na Vigília (III), a voz usa essa mesma ação e esse mesmo corpo como NPC; não nasce outra unidade. A Tomada de Corpo (II) permite apenas uma ação consciente de Vespasiano, e NÃO pode suprimir uma voz acolhida. Zangão (III) conserva o perfil de montaria não Ressonante e a referência de 0,5 Infectado quando funcional na Ação Conjunta Montada, sem turno adicional ou Evolutivas automáticas.</p>
-<h3 class="section-heading">REFERÊNCIAS E PENDÊNCIAS DE CAMPANHA</h3><p class="body-copy">Base consolidada: Codex de Árborius v1.18 (Homúnculo de Vigília), com continuidade das Maestrias de Vespasiano e regras da campanha. Inclui Evolutivas ligadas à alma; Lucker Primordial <span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldedeterminacao.svg" alt="" aria-hidden="true" loading="lazy" width="17" height="17"><span>D0</span></span>/<span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldeassimilacao.svg" alt="" aria-hidden="true" loading="lazy" width="17" height="17"><span>E10</span></span> sem Fome/Teto e com Assimilação como Determinação; Clarividência efetivamente adquirida como requisito da Gênese; Vigília em um único Homúnculo, sem segundo turno ou Clareza adicional. [HOMEBREW] [TESTE].</p></div></section><footer>ASSIMILAÇÃO RPG · CODEX DE ÁRBORIUS · DOSSIÊ DE VESPASIANO VAROTTO<br>Compêndio das 17 páginas • Documentação de campanha em playtest. Símbolos carregados da biblioteca gráfica existente do Codex. Não listado na navegação principal.</footer></main></div><dialog id="vespa-art-modal" class="vespa-art-modal" aria-label="Imagem ampliada do dossiê"><button type="button" aria-label="Fechar imagem">Fechar</button><img id="vespa-art-modal-img" alt=""><p><a id="vespa-art-modal-src" target="_blank" rel="noopener noreferrer" href="#">Abrir imagem original</a></p></dialog>
+<h3 class="section-heading">REFERÊNCIAS E PENDÊNCIAS DE CAMPANHA</h3><p class="body-copy">Base consolidada: Codex de Árborius v1.18 (Homúnculo de Vigília), com continuidade das Maestrias de Vespasiano e regras da campanha. Inclui Evolutivas ligadas à alma; Lucker Primordial <span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldedeterminacao.svg" alt="" aria-hidden="true" loading="lazy" width="17" height="17"><span>D0</span></span>/<span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldeassimilacao.svg" alt="" aria-hidden="true" loading="lazy" width="17" height="17"><span>E10</span></span> sem Fome/Teto e com Assimilação como Determinação; Clarividência efetivamente adquirida como requisito da Gênese; Vigília em um único Homúnculo, sem segundo turno ou Clareza adicional. [HOMEBREW] [TESTE].</p></div></section><footer>ASSIMILAÇÃO RPG · CODEX DE ÁRBORIUS · DOSSIÊ DE VESPASIANO VAROTTO<br>Compêndio das 17 páginas • Documentação de campanha em playtest. Símbolos carregados da biblioteca gráfica existente do Codex. Não listado na navegação principal.</footer></main></div><div id="vespa-hover-layer" class="vespa-hover-layer" aria-hidden="true"><div class="vespa-hover-frame"><img id="vespa-hover-image" alt=""><p id="vespa-hover-caption"></p></div></div>
+<dialog id="vespa-art-modal" class="vespa-art-modal" aria-label="Imagem ampliada do dossiê"><button type="button" aria-label="Fechar imagem">Fechar</button><img id="vespa-art-modal-img" alt=""><p><a id="vespa-art-modal-src" target="_blank" rel="noopener noreferrer" href="#">Abrir imagem original</a></p></dialog>
 <script>(function(){"use strict";
 const dlg=document.getElementById("vespa-art-modal"),large=document.getElementById("vespa-art-modal-img"),url=document.getElementById("vespa-art-modal-src");
+const hover=document.getElementById("vespa-hover-layer"),hoverImg=document.getElementById("vespa-hover-image"),hoverCap=document.getElementById("vespa-hover-caption");
+const fine=window.matchMedia("(hover: hover) and (pointer: fine)");
+let current=null;
+function hideHover(){
+ current=null;hover.classList.remove("is-visible");hover.setAttribute("aria-hidden","true");
+}
+function showHover(fig){
+ if(!fine.matches||dlg.open||fig.classList.contains("failed"))return;
+ const img=fig.querySelector(".vespa-art-link img");
+ if(!img.complete||img.naturalWidth===0)return;
+ current=fig;hoverImg.src=img.currentSrc||img.src;hoverImg.alt=img.alt;
+ hoverCap.textContent=fig.querySelector("figcaption strong")?.textContent||"";
+ hover.classList.add("is-visible");hover.setAttribute("aria-hidden","false");
+}
 for(const fig of document.querySelectorAll(".vespa-art")){
  const a=fig.querySelector(".vespa-art-link"),im=fig.querySelector("img");
- const failure=()=>fig.classList.add("failed");
+ const failure=()=>{fig.classList.add("failed");if(current===fig)hideHover();};
  im.addEventListener("error",failure);
- im.addEventListener("load",()=>fig.classList.remove("failed"));
+ im.addEventListener("load",()=>{fig.classList.remove("failed");if(a.matches(":hover"))showHover(fig);});
  if(im.complete&&im.naturalWidth===0)failure();
+ a.addEventListener("pointerenter",()=>showHover(fig));
+ a.addEventListener("pointerleave",()=>{if(current===fig)hideHover();});
+ a.addEventListener("focusout",hideHover);
  a.addEventListener("click",e=>{
- if(!dlg.showModal||!im.complete||!im.naturalWidth)return;
- e.preventDefault();large.src=im.currentSrc||im.src;large.alt=im.alt;url.href=a.href;dlg.showModal();
+  hideHover();
+  if(!dlg.showModal||!im.complete||!im.naturalWidth)return;
+  e.preventDefault();large.src=im.currentSrc||im.src;large.alt=im.alt;url.href=a.href;dlg.showModal();
  });
 }
+fine.addEventListener?.("change",hideHover);
 dlg.querySelector("button").addEventListener("click",()=>dlg.close());
 dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+dlg.addEventListener("close",hideHover);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")hideHover();});
 })();</script></body></html>
