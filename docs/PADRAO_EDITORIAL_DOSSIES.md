@@ -82,3 +82,18 @@ A página de Vespasiano segue o mesmo fundo de pergaminho e contraste alto dos d
 As seis ilustrações fornecidas pelo Assimilador estão distribuídas em técnicas/contextos relacionados. Cada uma tem moldura, legenda, link de origem, alternativa de imagem indisponível e ampliação ao clique quando carregada. Nunca usar `object-fit:cover` para cortar o conteúdo; preferir `object-fit:contain` e altura máxima.
 
 A revisão é editorial. O conteúdo mecânico (15 tabelas, símbolos, custos e regras do SRD) não foi alterado. Referências externas podem bloquear incorporação; conferi-las visualmente após a publicação.
+
+## 9. Vespasiano — arte lateral e identidade de cada cena
+
+A revisão de 27/10/2026 posiciona ilustrações de Vespasiano ao lado de um trecho narrativo/mecânico claramente delimitado, sem quebrar tabelas ou parágrafos de regras. A proporção original é preservada (`object-fit:contain`), com coluna de texto mais larga e empilhamento vertical no celular.
+
+O mapeamento editorial das imagens inclui:
+- **Engenharia Biológica**: arte de Dariusz Zawadzki (antes usada na Vigília); arte complementar de tecnologia orgânica na página da Sutura
+- **Visão Horrenda**: imagem indicada de Max Ernst; referências complementares para biomimetismo e combate perturbador
+- **Coro Interior**: arte de vozes e identidade já utilizada
+- **Homúnculo de Vigília**: figura *Stranger*, anteriormente alocada ao Casulo
+- **Casulo Primordial**: paisagem orgânica Zerg de ArtistMonkeys
+
+Não sobrepor o botão decorativo **Ampliar** à arte. Manter interação por mouse (prévia), clique (visualização integral), teclado e link de origem, além de mensagem de fallback se houver bloqueio da imagem externa. Os títulos e créditos devem refletir a imagem atual, não sua antiga posição.
+
+Uma mudança meramente editorial não pode alterar textos mecânicos, custos, ações, dados ou tabelas.
