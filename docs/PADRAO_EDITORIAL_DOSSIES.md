@@ -79,7 +79,7 @@ Usar negritos com parcimônia para identificar **requisitos, gatilhos, custos, t
 
 A página de Vespasiano segue o mesmo fundo de pergaminho e contraste alto dos dossiês de Apolo, Aruana e Brandon. A navegação conserva o verde-escuro; cada Maestria usa uma cor de destaque, sem fundo escuro atrás dos textos: **Engenharia Biológica** (verde-petróleo), **Visão Horrenda** (vinho) e **Gênese Assimilada** (oliva).
 
-As seis ilustrações fornecidas pelo Assimilador estão distribuídas em técnicas/contextos relacionados. Cada uma tem moldura, legenda, link de origem, alternativa de imagem indisponível e ampliação ao clique quando carregada. Nunca usar `object-fit:cover` para cortar o conteúdo; preferir `object-fit:contain` e altura máxima.
+As ilustrações fornecidas pelo Assimilador ficam junto às técnicas correspondentes, conforme o mapeamento mais recente da seção 9. Cada uma tem moldura, legenda, link de origem, alternativa de imagem indisponível e ampliação ao clique quando carregada. Nunca usar `object-fit:cover` para cortar o conteúdo; preferir `object-fit:contain` e altura máxima.
 
 A revisão é editorial. O conteúdo mecânico (15 tabelas, símbolos, custos e regras do SRD) não foi alterado. Referências externas podem bloquear incorporação; conferi-las visualmente após a publicação.
 
@@ -87,12 +87,20 @@ A revisão é editorial. O conteúdo mecânico (15 tabelas, símbolos, custos e 
 
 A revisão de 27/10/2026 posiciona ilustrações de Vespasiano ao lado de um trecho narrativo/mecânico claramente delimitado, sem quebrar tabelas ou parágrafos de regras. A proporção original é preservada (`object-fit:contain`), com coluna de texto mais larga e empilhamento vertical no celular.
 
-O mapeamento editorial das imagens inclui:
-- **Engenharia Biológica**: arte de Dariusz Zawadzki (antes usada na Vigília); arte complementar de tecnologia orgânica na página da Sutura
-- **Visão Horrenda**: imagem indicada de Max Ernst; referências complementares para biomimetismo e combate perturbador
-- **Coro Interior**: arte de vozes e identidade já utilizada
-- **Homúnculo de Vigília**: figura *Stranger*, anteriormente alocada ao Casulo
-- **Casulo Primordial**: paisagem orgânica Zerg de ArtistMonkeys
+O mapeamento editorial atualizado das **dez ilustrações** inclui:
+
+- **Engenharia Biológica** (folha 2): Dariusz Zawadzki
+- **Sutura Assimilada** (folha 3): equipamento orgânico com fios da Stegi Radio, anteriormente em Coro Interior
+- **Núcleo I.A.** (folha 3): imagem indicada do Pinterest
+- **Visão Horrenda** (folha 8): Max Ernst
+- **Rosto Emprestado** (folha 9): Doppelganger de Arkane Atlas
+- **Olhos de Dentro / Intrusão Mental** (folha 9): imagem indicada do TCGplayer
+- **Combate Perturbador** (folha 11): imagem indicada do Reddit
+- **Zangão** (folha 14): criatura verde anteriormente ilustrando Combate Perturbador (TMDB)
+- **Homúnculo de Vigília** (folha 15): *Stranger*
+- **Casulo Primordial** (folha 16): paisagem orgânica Zerg de ArtistMonkeys
+
+As antigas imagens da Sutura (Pikabu) e de Rosto Emprestado (st-note) foram substituídas nesta versão, para evitar figuras redundantes. A seção Coro Interior permanece com texto e sem ilustração própria, pois a imagem foi transferida para Sutura.
 
 Não sobrepor o botão decorativo **Ampliar** à arte. Manter interação por mouse (prévia), clique (visualização integral), teclado e link de origem, além de mensagem de fallback se houver bloqueio da imagem externa. Os títulos e créditos devem refletir a imagem atual, não sua antiga posição.
 
