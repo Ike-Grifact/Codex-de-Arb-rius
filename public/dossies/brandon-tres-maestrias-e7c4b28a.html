@@ -162,6 +162,30 @@ footer{color:#665941;border-color:#b6a17c}
  .mechanic img,.mech-cost img,.doc-table .symbol-strip img{filter:brightness(0)!important}
  .folio.chapter-start{border-color:#b8a47f}
 }
+
+/* brandon-pergaminho-fundo-v2 — mesmo padrão de papel dos dossiês do Codex */
+:root{--bg:#daccad;--paper:#f2e8d2}
+body{
+ background:
+  radial-gradient(ellipse at 17% 5%,#e9dfc8 0,transparent 40%),
+  radial-gradient(ellipse at 94% 70%,#c8b28b70 0,transparent 54%),
+  repeating-linear-gradient(90deg,#a07d3509 0px,#a07d3509 1px,transparent 1px,transparent 7px),
+  #daccad;
+}
+body:before{display:none}
+.layout{
+ background:#f1e7d2;
+ box-shadow:0 0 0 1px #765b383f,0 9px 45px #4a351a30;
+}
+main{
+ background:
+  radial-gradient(ellipse 60% 40% at 100% 0%,#b18c4a10,transparent),
+  repeating-linear-gradient(0deg,transparent 0px,transparent 30px,#754a1908 31px),
+  #f2e8d2;
+}
+@media print{
+ html,body,main,.layout{background:#fff!important}
+}
 </style></head><body><div class="layout">
 <aside aria-label="Navegação do dossiê"><div class="brand"><div class="seal">B</div><div><strong>ÁRBORIUS</strong><small>CODEX / DOSSIÊ DO JOGADOR</small></div></div><div class="label">Os três caminhos</div><nav class="main-nav"><a href="#maestria-1"><b>I</b><span>Ressonância Empática</span></a><a href="#maestria-2"><b>II</b><span>Lâmina Hemática</span></a><a href="#maestria-3"><b>III</b><span>Dragoaria Arboriana</span></a></nav><div class="label">Índice completo • 20 folhas</div><nav class="page-nav"><a href="#pagina-1"><b>01</b><span>Capa • Os Três Caminhos</span></a><a href="#pagina-2"><b>02</b><span>Ressonância Empática • Despertar</span></a><a href="#pagina-3"><b>03</b><span>Ressonância • Voz de Ebrion</span></a><a href="#pagina-4"><b>04</b><span>Ressonância • Encarnação</span></a><a href="#pagina-5"><b>05</b><span>Concordia entre os Povos</span></a><a href="#pagina-6"><b>06</b><span>Ressonância • Limites</span></a><a href="#pagina-7"><b>07</b><span>Lâmina Hemática • Despertar</span></a><a href="#pagina-8"><b>08</b><span>Lâmina • Nutrição e Transfusão</span></a><a href="#pagina-9"><b>09</b><span>Lâmina • Praga de Sangue</span></a><a href="#pagina-10"><b>10</b><span>Lâmina • Execução Impecável</span></a><a href="#pagina-11"><b>11</b><span>Lâmina • Dança dos Estribos</span></a><a href="#pagina-12"><b>12</b><span>Lâmina • Referência</span></a><a href="#pagina-13"><b>13</b><span>Dragoaria Arboriana • Despertar</span></a><a href="#pagina-14"><b>14</b><span>Dragoaria • Marcos e Protocartas</span></a><a href="#pagina-15"><b>15</b><span>Dracogênese</span></a><a href="#pagina-16"><b>16</b><span>Predador Alado • Fogo e Rugido</span></a><a href="#pagina-17"><b>17</b><span>Protodraco • Instintos e Carga</span></a><a href="#pagina-18"><b>18</b><span>Protodraco • Voo Montado</span></a><a href="#pagina-19"><b>19</b><span>Herança Dracônica</span></a><a href="#pagina-20"><b>20</b><span>Resumo de Mesa</span></a></nav><div class="label">Símbolos de Assimilação</div><div class="legend"><div><img src="/Codex-de-Arb-rius/symbols/sucesso.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Sucesso"><span>Sucesso • A</span></div><div><img src="/Codex-de-Arb-rius/symbols/adaptacao.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Adaptação"><span>Adaptação • B</span></div><div><img src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Pressão"><span>Pressão • C</span></div><div><img src="/Codex-de-Arb-rius/symbols/pontodeassimilacao.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Ponto de Assimilação"><span>Ponto de Assimilação</span></div><div><img src="/Codex-de-Arb-rius/symbols/pontodedeterminacao.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Ponto de Determinação"><span>Ponto de Determinação</span></div><div><img src="/Codex-de-Arb-rius/symbols/pontodesaude.svg" alt="" aria-hidden="true" loading="lazy" width="20" height="20" title="Ponto de Saúde"><span>Ponto de Saúde</span></div></div><div class="side-bottom">Documento do jogador • Homebrew em playtest. O endereço é não listado no portal, mas não constitui controle de acesso.</div></aside>
 <main id="inicio"><div class="toolbar"><span>Codex de Árborius / Brandon</span><button class="print" onclick="window.print()" type="button">Imprimir / salvar PDF</button></div><header class="hero"><div class="hero-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40c5-4 7-10 9-19 9 6 15 0 17-14 11 10 6 19 2 25 4 0 7 2 10 6-10-2-16 0-21 5-4-9-10-10-17-3Z"/><path d="M24 18c1 7-1 13-5 19M33 18l6 3"/></svg></div><p class="hero-label">ASSIMILAÇÃO RPG / DOSSIÊ PESSOAL DO JOGADOR</p><h1>BRANDON<br><em>OS TRÊS CAMINHOS</em></h1><p>As três Maestrias de um cavaleiro, seu vínculo com Ebrion e o nascimento da Dragoaria Arboriana.</p></header>
