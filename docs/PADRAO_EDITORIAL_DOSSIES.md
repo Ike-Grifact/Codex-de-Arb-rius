@@ -145,3 +145,15 @@ Atualização exclusivamente visual sobre a trilogia v1.25. As três vinhetas SV
 Cada cartão contém legenda descritiva e link à página de origem, mantendo proporção da obra, layout lateral em telas largas e empilhamento em telas pequenas. O clique abre o lightbox existente, e o hover mostra uma ampliação quando disponível. Não sobrepor o botão "Ampliar". Se o servidor da obra externa bloquear o arquivo, exibir a vinheta local correspondente; não remover o link para a publicação original.
 
 Não redistribuir as imagens externas como arquivos próprios do repositório sem autorização/licença aplicável. A disponibilidade remota, a compatibilidade com hotlink e os direitos sobre as obras permanecem sob responsabilidade das respectivas fontes. Nenhuma mecânica, custo, requisito ou texto normativo foi alterado.
+
+## 13. Ludmila — ilustrações distribuídas por técnica
+
+A trilogia de Ludmila não deve exibir ilustrações **somente nas aberturas**. A revisão de 29/10/2026 mantém as quatro imagens anteriores (aberturas das três Maestrias e Segunda Anatomia) e acrescenta **15 painéis de referência visual**, diretamente relacionados ao primeiro trecho explicativo de cada técnica:
+
+- **Maestria I:** Oficina da Folha (artífice no trabalho), Engenhos da Araucária (mecanismos), Ciclo Arboriano (instrumentos médicos), Projétil Aplicador (modelo fictício de instrumento), Socorro de Emergência (socorro com preparados).
+- **Maestria II:** Engenharia de Simbiose (estufa e cultivo), Companheiros de Oficina (fiação e fibras), Farmácia de Campo Equina (preparações), Treinamento de Campeiros (cuidados), Cirurgia de Reconstrução (atendimento veterinário) e Excisão Equina (exame especializado).
+- **Maestria III:** Pontaria de Galope (atiradora a cavalo), Interdição Cirúrgica (tiro preciso), Tocaia Perfeita (cobertura e mira) e Caçada Sem Rastros (camuflagem).
+
+São **19 figuras** no total, sem transformar as imagens em regras. Novos painéis usam `lud-tech-visual`, com **introdução ao lado da imagem** e **tabelas mecânicas fora do layout de colunas**, garantindo leitura do custo integral. Em celulares, imagem e explicação empilham. Proporção original: `object-fit:contain`. Sem botão visual sobreposto de ampliar; permanecem hover, modal, descrição acessível, crédito e URL da origem. Fontes externas não são copiadas para o repositório; mantêm fallback para as vinhetas vetoriais locais em caso de bloqueio de hotlink.
+
+Todas as 27 seções e 20 tabelas foram conservadas, bem como os 130 marcadores mecânicos preexistentes.
