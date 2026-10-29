@@ -187,3 +187,17 @@ Na revisão de 29/10/2026, o dossiê deixa de usar indiscriminadamente a mesma c
 - **Impressão:** altura de imagem limitada e texto legível; manter proporções.
 
 A auditoria compara integralmente o conteúdo das 27 folhas e confirma **27/27 textos idênticos**, as **19 figuras** com suas referências e SVGs alternativos, **20 tabelas**, **130 marcadores mecânicos**, HTML e CSS estruturais balanceados. A verificação final de carregamento e aparência das obras remotas exige navegação real: o código foi preparado para se adaptar a suas dimensões efetivas.
+
+## 16. Ekhyos — trilogia consolidada no padrão editorial (29/10/2026)
+
+Fonte primária: `Ekhyos_Trilogia_de_Maestrias_Consolidada_v1.0.docx`, versão de 29 de outubro de 2026, e **SRD Interno v1.26** (§214 e Parte XXVIII, §§232–239). Mantém três Maestrias distintas em **[HOMEBREW] [TESTE]**:
+
+1. **I — Bardo de Batalha v3.2:** preserva integralmente as 11 seções que já estavam publicadas; o mesmo URL do dossiê permanece para não quebrar marcadores e histórico.
+2. **II — Einherjar v1.0:** sete novas seções: identidade/requisitos, Despertar, Instinto Heroico e Ímpeto, Juramento da Vanguarda, O Último a Cair e Glória dos Feitos, economia e exemplo. A Característica oficial **Sacrifício Heroico** é requisito, não concessão gratuita.
+3. **III — Saga dos Vivos v1.0:** seis novas seções com requisitos, Crônica da Jornada, Juramento do Presente, Fogo da Vigília, exemplos e limites/consulta. Não cria missões paralelas, personagens auxiliares, novos Objetivos nem bônus permanentes.
+
+**Padrão de apresentação:** três capítulos de pergaminho, navegação lateral integral com 24 âncoras, ícones de habilidades, tabelas de consulta e exemplos; 12 referências visuais da internet, cada uma com legenda, crédito e link de origem. Artes remotas são vinculadas, sem arquivar conteúdo de terceiros; três vinhetas locais SVG funcionam como fallback. O layout identifica proporção da imagem por `naturalWidth/naturalHeight`, limita a altura de retratos breves, usa área ampla para paisagens e alterna empilhamento conforme largura real da folha. Nunca inserir uma figura dentro da própria tabela de custos.
+
+**Convenção de recursos:** `A` = Sucesso, `B` = Adaptação e `C` = Pressão, com símbolos oficiais do site. `d` = Ponto de Determinação **real**, também com o símbolo oficial. `a` = Ponto **Ancestral** do Einherjar, representado por selo próprio e legenda independente; não é Sucesso A, não altera D nem financia Cadência ou usos gerais de Determinação. Conservar o teto de quatro dados mantidos, o limite de uma ação comum por turno e a exclusividade entre o canto do Bardo e o estado Einherjar.
+
+A trilogia publicada não concede automaticamente novos recursos, alterações no Cabo de Guerra, mutações, capacidades ou itens; nenhuma alteração no Foundry. A página deve ser testada visualmente no GitHub Pages após o deploy; fontes externas podem bloquear hotlinks.
