@@ -157,3 +157,19 @@ A trilogia de Ludmila não deve exibir ilustrações **somente nas aberturas**. 
 São **19 figuras** no total, sem transformar as imagens em regras. Novos painéis usam `lud-tech-visual`, com **introdução ao lado da imagem** e **tabelas mecânicas fora do layout de colunas**, garantindo leitura do custo integral. Em celulares, imagem e explicação empilham. Proporção original: `object-fit:contain`. Sem botão visual sobreposto de ampliar; permanecem hover, modal, descrição acessível, crédito e URL da origem. Fontes externas não são copiadas para o repositório; mantêm fallback para as vinhetas vetoriais locais em caso de bloqueio de hotlink.
 
 Todas as 27 seções e 20 tabelas foram conservadas, bem como os 130 marcadores mecânicos preexistentes.
+
+## 14. Ludmila — correção da estrutura editorial (29/10/2026)
+
+O dossiê consolidado da personagem deixa de apresentar 27 folhas como unidades visuais desconectadas. **Três capítulos editoriais de Maestria** envolvem, respectivamente, as folhas 1–8, 9–19 e 20–27. A paginação antiga e todos os links individuais continuam válidos.
+
+Padrão adotado, em consonância com os dossiês de Apolo, Aruana e José:
+
+- **Abertura do conjunto:** nome da personagem, resumo de três caminhos, navegação direta e nota de precedência com versões consolidadas e marca de homebrew em teste.
+- **Abertura de cada Maestria:** título de capítulo, emblema, identidade narrativa e três capacidades em cartões de navegação. Não duplicar uma segunda lista de links para as mesmas três técnicas.
+- **Capacidades:** ficha de técnica em papel claro, com cor de Maestria no filete lateral, títulos hierarquizados e rótulos Capacidade, Desdobramento e Consulta quando pertinente.
+- **Mecânica:** custos e condições com negritos e símbolos mantidos; os 22 parágrafos com chave mecânica explícita na Maestria II foram reorganizados em linhas de *chave / descrição*, sem alterar o conteúdo. Tabelas ficam em largura integral, com cabeçalhos escuros e rolagem horizontal apenas quando necessária.
+- **Ilustração:** 19 referências em moldura e ao lado do primeiro parágrafo de cada técnica ilustrada, com alternativa de empilhamento em telas estreitas. Não cortar imagens ou fragmentar uma tabela entre colunas.
+- **Índice:** os três grupos aparecem também na navegação lateral, respeitando a ordem I→II→III. No celular o menu principal permanece simples, com navegação pelo resumo.
+- **Impressão:** o capítulo começa em nova página, mas folhas internas não devem forçar quebra de página a cada pequena capacidade.
+
+**Auditoria comparativa:** as 27 seções continuam contendo exatamente o mesmo texto de regras no corpo `page-copy` antes e depois da reorganização (27/27 comparações textuais idênticas, 7.569 palavras). Preservam-se 20 tabelas, 19 figuras, 130 marcações mecânicas e todos os 27 IDs de âncora. A apresentação em navegador precisa de conferência visual após o deploy.
