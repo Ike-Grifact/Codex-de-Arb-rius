@@ -788,6 +788,81 @@ main .lud-book #engenhos .rules-scroll{
  }
 }
 
+
+/* EKHYOS · publicação consolidada, SRD 1.26 · 29/10/2026
+   Padrão dos demais jogadores: pergaminho, três capítulos, leitura mecânica.
+   Separa d (determinação real), a (ancestral), A/B/C (símbolos da rolagem). */
+main .ek-ancestral{display:inline-flex;align-items:center;white-space:nowrap;gap:4px;color:#5e4932;font:800 12px/1.35 system-ui,Arial,sans-serif}
+main .ek-ancestral-symbol,
+aside .ek-ancestral-mini{display:inline-grid;place-items:center;vertical-align:middle;flex:none;width:18px;height:18px;
+ border:1px solid #98734d;border-radius:50%;font:700 14px Georgia,serif;color:#785536;background:#e8d7ae}
+aside .ek-ancestral-mini{width:20px;height:20px;background:#4b614f;color:#f4d5a1;border-color:#b39b75}
+main .lud-book-forest{--chapter-tone:#496b62;--chapter-soft:#e5ebe7;--chapter-rule:#a9b7ae}
+main .lud-book-olive{--chapter-tone:#796246;--chapter-soft:#eee7da;--chapter-rule:#c2ad93}
+main .lud-book-bronze{--chapter-tone:#82664a;--chapter-soft:#ede3d3;--chapter-rule:#b4a187}
+main .lud-book .lud-entry-feature .page-title h3{font-size:clamp(23px,3.2vw,34px)}
+main .lud-book .ek-table .rules-table{min-width:600px}
+main .lud-book .ek-table th:nth-child(2){min-width:160px}
+main .lud-book .ek-list{margin:15px 0 20px;padding-left:25px;color:#463b31;font:14px/1.72 Georgia,serif}
+main .lud-book .ek-list li{padding-left:3px;margin:8px 0}
+main .lud-book .ek-list li::marker{color:var(--chapter-tone)}
+main .lud-book .ek-capabilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:19px 0 23px}
+main .lud-book .ek-capabilities a{display:flex;gap:10px;align-items:start;min-width:0;padding:14px;
+ border:1px solid #cbb89a;background:#eee0c8;border-radius:5px;text-decoration:none;color:#394a3c}
+main .lud-book .ek-capabilities a:hover,main .lud-book .ek-capabilities a:focus-visible{background:#e6d2b3;border-color:#997c57}
+main .lud-book .ek-capabilities b{display:grid;place-items:center;flex:0 0 29px;width:29px;height:29px;
+ border:1px solid var(--chapter-tone);border-radius:50%;font:18px Georgia,serif;color:var(--chapter-tone)}
+main .lud-book .ek-capabilities span{min-width:0;font:12px/1.5 system-ui,Arial,sans-serif}
+main .lud-book .ek-capabilities strong{display:block;font:normal 18px/1.25 Georgia,serif;color:#344e3b;margin-bottom:7px}
+main .lud-book .ek-image-spread{margin:12px 0 17px}
+main .lud-book .ek-image-spread :is(.lud-tech-visual-copy,.lud-lead-copy){font-size:14px}
+main .lud-book .ek-image-spread>.lud-illustration{max-width:280px;justify-self:end}
+main .lud-book .ek-image-spread>.lud-illustration img{max-height:225px;object-fit:contain;object-position:top center}
+main .lud-book .ek-image-spread.lud-media-portrait>.lud-illustration{max-width:230px}
+main .lud-book .ek-image-spread.lud-media-portrait>.lud-illustration img{max-height:260px}
+main .lud-book .ek-image-spread.lud-media-brief>.lud-illustration img{max-height:185px}
+main .lud-book .ek-image-spread.lud-media-wide>.lud-illustration{max-width:690px}
+main .lud-book .ek-image-spread.lud-media-wide>.lud-illustration img{max-height:260px}
+main .lud-book .ek-image-spread.lud-media-wide.lud-media-brief>.lud-illustration{max-width:650px}
+main .lud-book .ek-image-spread.lud-media-wide.lud-media-brief>.lud-illustration img{max-height:225px}
+main .lud-book .ek-image-spread .lud-illustration figcaption{padding:7px 7px 5px;gap:3px}
+main .lud-book .ek-image-spread .lud-illustration figcaption strong{font-size:16px;line-height:1.25}
+main .lud-book .ek-image-spread .lud-illustration figcaption small{font-size:10px;line-height:1.4}
+main .lud-book .ek-editorial-lead{color:#514537!important;font-style:italic}
+main .lud-book .page-head{white-space:normal}
+main .lud-book .page-copy{overflow-wrap:normal}
+main .lud-book .rule-note{background:var(--chapter-soft)!important;color:#423a32!important}
+main .lud-book .rule-note strong{color:#315344}
+main .lud-book .rule-note .body-copy{color:#41392f!important}
+main .lud-book .lud-entry-support .section-heading{font-size:20px}
+main .lud-book .lud-entry-reference{break-inside:auto}
+main .lud-book .mechanic{white-space:nowrap;vertical-align:baseline}
+main .lud-book .mechanic img{width:16px;height:16px;filter:none}
+main .lud-book .rules-table td .mechanic{margin:1px 2px}
+main .lud-book .rules-scroll{max-width:100%;overflow-x:auto;overflow-y:hidden}
+main .lud-book .rules-table td{overflow-wrap:break-word}
+main .lud-book .lud-entry-feature .page-title{margin-bottom:16px}
+aside .page-nav a span{overflow-wrap:anywhere}
+main .ek-illustration .lud-art-link{cursor:zoom-in}
+main .ek-illustration .lud-art-fail{color:#483e2f;font-weight:700}
+@container(max-width:560px){
+ main .lud-book .ek-image-spread>.lud-illustration{
+  order:-1;width:min(100%,440px);max-width:none;margin:0 auto;justify-self:center
+ }
+ main .lud-book .ek-image-spread.lud-media-portrait>.lud-illustration{max-width:290px}
+ main .lud-book .ek-image-spread.lud-media-wide>.lud-illustration{max-width:100%}
+ main .lud-book .ek-capabilities{grid-template-columns:1fr}
+}
+@media(max-width:980px){
+ main .lud-book .ek-capabilities{grid-template-columns:1fr}
+}
+@media print{
+ main .lud-book .ek-image-spread{break-inside:avoid}
+ main .lud-book .ek-image-spread>.lud-illustration{max-width:none}
+ main .lud-book .ek-image-spread>.lud-illustration img{max-height:160px}
+ main .lud-book .ek-capabilities{grid-template-columns:repeat(3,minmax(0,1fr))}
+ main .lud-book .ek-capabilities strong{font-size:13px}
+}
 </style></head><body><div class="layout"><aside aria-label="Navegação do dossiê"><div class="identity"><div class="seal">ᚨ</div><div><strong>ÁRBORIUS</strong><small>CODEX / DOSSIÊ DO JOGADOR</small></div></div><div class="side-tag">Trilogia de Maestrias · SRD 1.26</div><nav class="main-nav" aria-label="Maestrias"><a href="#ek-maestria-i-title"><b>I</b><span>Bardo de Batalha</span></a><a href="#ek-maestria-ii-title"><b>II</b><span>Einherjar</span></a><a href="#ek-maestria-iii-title"><b>III</b><span>Saga dos Vivos</span></a></nav><div class="side-tag">Índice de regras</div><nav class="page-nav" aria-label="Índice das 24 seções"><div class="lud-sidebar-group"><div class="lud-sidebar-group-head"><span>I</span><strong>Bardo de Batalha</strong></div><a href="#identidade"><b>01</b><span>Identidade</span></a><a href="#requisitos"><b>02</b><span>Requisitos para desbloqueio</span></a><a href="#pilares"><b>03</b><span>Quatro pilares</span></a><a href="#cadencia"><b>04</b><span>Cadência dos Três Ritmos</span></a><a href="#ritmos"><b>05</b><span>Os três ritmos</span></a><a href="#descompasso"><b>06</b><span>Descompasso e interrupções</span></a><a href="#eco"><b>07</b><span>Eco da Vontade</span></a><a href="#pintura"><b>08</b><span>Pintura de Guerra — Juramentos da Véspera</span></a><a href="#exemplo"><b>09</b><span>Exemplo de rodada decisiva</span></a><a href="#einherjar"><b>10</b><span>Interação com a Maestria II — Einherjar</span></a><a href="#consulta"><b>11</b><span>Consulta rápida</span></a></div><div class="lud-sidebar-group"><div class="lud-sidebar-group-head"><span>II</span><strong>Einherjar</strong></div><a href="#einherjar-intro"><b>12</b><span>Einherjar · identidade e desbloqueio</span></a><a href="#despertar-einherjar"><b>13</b><span>I — Despertar do Einherjar</span></a><a href="#instinto-heroico"><b>14</b><span>Instinto Heroico e Ímpeto Ancestral</span></a><a href="#juramento-vanguarda"><b>15</b><span>II — Juramento da Vanguarda</span></a><a href="#ultimo-cair"><b>16</b><span>III — O Último a Cair</span></a><a href="#einherjar-economia"><b>17</b><span>Economia e incompatibilidades</span></a><a href="#einherjar-exemplo"><b>18</b><span>Exemplo fechado de economia</span></a></div><div class="lud-sidebar-group"><div class="lud-sidebar-group-head"><span>III</span><strong>Saga dos Vivos</strong></div><a href="#saga-intro"><b>19</b><span>Saga dos Vivos · identidade e desbloqueio</span></a><a href="#cronica-jornada"><b>20</b><span>I — Crônica da Jornada</span></a><a href="#juramento-presente"><b>21</b><span>II — Juramento do Presente</span></a><a href="#fogo-vigilia"><b>22</b><span>III — Fogo da Vigília</span></a><a href="#saga-exemplos"><b>23</b><span>Dois exemplos na campanha principal</span></a><a href="#saga-consulta"><b>24</b><span>Limites, compatibilidade e playtest</span></a></div></nav><div class="side-tag">Símbolos de Assimilação</div><div class="legend"><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/sucesso.svg" alt="" aria-hidden="true" width="18" height="18"><span>A · Sucesso</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/adaptacao.svg" alt="" aria-hidden="true" width="18" height="18"><span>B · Adaptação</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" aria-hidden="true" width="18" height="18"><span>C · Pressão</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pontodedeterminacao.svg" alt="" aria-hidden="true" width="18" height="18"><span>d · Determinação real</span></div><div><span class="ek-ancestral-mini">ᚨ</span><span>a · Pontos Ancestrais (reserva separada)</span></div></div><div class="side-footer"><small>Conteúdo [HOMEBREW] [TESTE] · sem concessão automática de Maestrias nem alterações em Foundry.</small></div></aside><main><div class="toolbar"><span>Codex de Árborius / Ekhyos · Trilogia consolidada</span><button class="print" type="button" onclick="window.print()">Imprimir / salvar PDF</button></div><header class="hero"><p class="eyebrow">ASSIMILAÇÃO RPG · DOSSIÊ CONSOLIDADO · SRD INTERNO V1.26</p><h1>Ekhyos<span>Trilogia de Maestrias</span></h1><p>Três maneiras de permanecer humano quando o mundo exige violência: dar voz aos vivos, lutar por eles e lembrar por que lutaram.</p></header><nav class="lud-quick-tabs" aria-label="Navegação pelos três caminhos"><a href="#ek-maestria-i-title">I · Bardo de Batalha</a><a href="#ek-maestria-ii-title">II · Einherjar</a><a href="#ek-maestria-iii-title">III · Saga dos Vivos</a></nav><div class="lud-overview"><a class="lud-overview-card lud-overview-forest" href="#ek-maestria-i-title"><span class="lud-overview-number">I</span><span class="lud-overview-text"><strong>Bardo de Batalha</strong><small>Canto · coordenação · coragem · sobrevivência</small></span></a><a class="lud-overview-card lud-overview-olive" href="#ek-maestria-ii-title"><span class="lud-overview-number">II</span><span class="lud-overview-text"><strong>Einherjar</strong><small>Coragem · sacrifício · instinto heroico</small></span></a><a class="lud-overview-card lud-overview-bronze" href="#ek-maestria-iii-title"><span class="lud-overview-number">III</span><span class="lud-overview-text"><strong>Saga dos Vivos</strong><small>Feitos reais · palavra · memória coletiva</small></span></a></div><p class="lud-publication-note"><strong>Trilogia de campanha · [HOMEBREW] [TESTE]</strong> · Bardo de Batalha v3.2, Einherjar v1.0 e Saga dos Vivos v1.0 · 29/10/2026 · SRD Interno v1.26. As três Maestrias exigem desbloqueio efetivo; não concedem Pontos de Assimilação, mutações, itens, Ações extras nem alterações automáticas no Foundry.</p><section class="lud-book lud-book-forest" aria-labelledby="ek-maestria-i-title"><header class="lud-book-heading"><div class="lud-book-crest"><svg xmlns="http://www.w3.org/2000/svg" class="lud-emblem-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M9 19V5l11-2v14M9 10l11-2"/><ellipse cx="6" cy="20" rx="3" ry="2"/><ellipse cx="17" cy="18" rx="3" ry="2"/></svg></div><div class="lud-book-heading-body"><p class="lud-book-overline">MAESTRIA I · v3.2 · Canto · coordenação · coragem · sobrevivência</p><h2 id="ek-maestria-i-title">Bardo de Batalha</h2><p class="lud-book-subtitle">“Quando tudo começa a ceder, é o compasso que nos lembra como continuar.”</p></div></header><div class="lud-book-entries"><section class="folio engineering lud-entry lud-entry-intro" id="identidade"><header class="page-head"><span>MAESTRIA I · BARDO DE BATALHA · V3.2</span><span>01 / 24</span></header><div class="page-title"><span class="chapter-emblem"><svg xmlns="http://www.w3.org/2000/svg" class="lud-emblem-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M8 18V8a3 3 0 0 1 6 0v8a3 3 0 0 1-6 0Z"/><path d="M5 12a6 6 0 0 0 12 0M11 18v4M7 22h8"/></svg></span><h3>Identidade</h3></div><div class="page-copy"><div class="lud-tech-visual ek-image-spread"><div class="lud-tech-visual-copy"><p class="body-copy">Ekhyos transforma seus cânticos ancestrais em coordenação, coragem e sobrevivência. Em cada rodada de Conflito, investe sua Determinação para transmitir o resultado do próprio toque a aliados que consigam ouvi-lo. Quanto maior o coro, maior o gasto. Sua música pode decidir uma retirada, manter uma formação de escudos ou sustentar uma ofensiva — mas qualquer interrupção tem consequências.</p></div><figure class="lud-illustration lud-internet-art ek-illustration" data-ek-art="identidade"><a class="lud-art-link" href="https://i.pinimg.com/originals/b5/e4/fb/b5e4fbc5328260c63429b7eddd0bc852.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir arte de referência — O canto dos skalds"><img src="https://i.pinimg.com/originals/b5/e4/fb/b5e4fbc5328260c63429b7eddd0bc852.jpg" data-fallback="/Codex-de-Arb-rius/dossies/assets/ekhyos/bardo.svg" alt="Skald nórdico com instrumento de cordas, evocando a voz ancestral de Ekhyos." decoding="async" loading="lazy" referrerpolicy="no-referrer"><span class="lud-art-fail">Ilustração indisponível; abrir a fonte.</span></a><figcaption><strong>O canto dos skalds</strong><span>Skald nórdico com instrumento de cordas, evocando a voz ancestral de Ekhyos.</span><small>Referência visual · <a href="https://www.pinterest.com/pin/439030663676785773/" target="_blank" rel="noopener noreferrer">Arte de skald · referência publicada no Pinterest</a></small></figcaption></figure></div>
 <h4 class="section-heading">NÚCLEO DA MAESTRIA</h4>
 <p class="body-copy">Uma Ação e uma rolagem de Resolução + Erudição por toque. O custo é 1 <span class="mechanic" aria-label="Ponto de Determinação"><img class="glyph" src="/Codex-de-Arb-rius/symbols/pontodedeterminacao.svg" alt="" width="17" height="17" loading="lazy"><span>Ponto de Determinação</span></span> por aliado beneficiado. Até <span class="mechanic" aria-label="2A"><img class="glyph" src="/Codex-de-Arb-rius/symbols/sucesso.svg" alt="" width="17" height="17" loading="lazy"><span>2A</span></span> aproveitáveis por aliado; <span class="mechanic" aria-label="B"><img class="glyph" src="/Codex-de-Arb-rius/symbols/adaptacao.svg" alt="" width="17" height="17" loading="lazy"><span>B</span></span> não são multiplicadas. A música não é Rolagem Assimilada.</p></div></section>
