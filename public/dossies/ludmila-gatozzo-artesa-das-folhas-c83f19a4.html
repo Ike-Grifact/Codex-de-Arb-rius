@@ -273,6 +273,244 @@ main .lud-tech-illustration figcaption a{color:#365f73;overflow-wrap:anywhere}
  main .lud-tech-visual.is-reversed .lud-tech-visual-copy{grid-column:1}
  main .lud-tech-illustration img{max-height:180px}
 }
+
+/* ==========================================================
+   LUDMILA · EDIÇÃO EDITORIAL CONSOLIDADA
+   Três Maestrias, capítulos e técnicas, no padrão Aruana/Apolo/José.
+   Uma camada de sistema visual unificada; nenhuma regra alterada.
+   ========================================================== */
+main{min-width:0}
+main .hero{border-bottom:1px solid #b8a383;padding:44px 0 30px}
+main .hero h1{font:normal clamp(42px,5.6vw,72px)/1.06 Georgia,serif;letter-spacing:-.035em;color:#304a39}
+main .hero h1 span{display:block;font:normal clamp(24px,2.8vw,34px)/1.25 Georgia,serif;letter-spacing:-.01em;color:#64785b;margin-top:13px}
+main .hero p:last-child{font-size:15px;line-height:1.72;max-width:770px}
+main .lud-quick-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0 18px}
+main .lud-quick-tabs a{flex:1 1 195px;padding:11px 13px;background:#e5d6ba;color:#355443;border:1px solid #bda481;border-radius:6px;text-align:center;font:700 12px/1.5 system-ui,Arial,sans-serif;text-decoration:none;transition:background .15s}
+main .lud-quick-tabs a:hover,main .lud-quick-tabs a:focus-visible{background:#d4c4a6;border-color:#8e7353}
+main .lud-overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:17px 0 0}
+main .lud-overview-card{display:flex;align-items:flex-start;gap:14px;min-width:0;padding:18px 13px;border:1px solid #b7a384;background:#f2e5cc;text-decoration:none;border-radius:5px;color:#384a3c;box-shadow:0 3px 8px #68522b12}
+main .lud-overview-card:hover,main .lud-overview-card:focus-visible{background:#eadeca;border-color:#867858}
+main .lud-overview-number{font:normal 30px/1 Georgia,serif;color:#3e6b4a}
+main .lud-overview-olive .lud-overview-number{color:#637846}
+main .lud-overview-bronze .lud-overview-number{color:#85623e}
+main .lud-overview-text{display:grid;gap:8px;min-width:0}
+main .lud-overview-card strong{font:normal 21px/1.2 Georgia,serif;color:#354b3a}
+main .lud-overview-card small{color:#605744;font:12px/1.5 system-ui,Arial,sans-serif}
+main .lud-publication-note{font:12px/1.75 system-ui,Arial,sans-serif;background:#ecdfc6;border-left:3px solid #8a754f;color:#4d4539;padding:12px 15px;margin:20px 0 33px}
+main .lud-publication-note strong{color:#3c543e}
+/* Capítulos — agrupamento real da folha, não vinte e sete telas desconectadas. */
+main .lud-book{--chapter-tone:#456e53;--chapter-soft:#e3e9de;--chapter-rule:#aeae91;
+ margin:42px 0 58px;padding:0 26px 30px;background:#f6edde;
+ border:1px solid #bea88a;border-radius:6px;box-shadow:0 8px 32px #5d472327;
+ min-width:0;scroll-margin-top:24px
+}
+main .lud-book-olive{--chapter-tone:#5c7246;--chapter-soft:#e9ebdb;--chapter-rule:#b3b99a}
+main .lud-book-bronze{--chapter-tone:#8a654c;--chapter-soft:#eee3d6;--chapter-rule:#bea18b}
+main .lud-book-heading{display:flex;align-items:flex-start;gap:18px;
+ margin:0 -26px;padding:25px 27px 21px;
+ background:linear-gradient(100deg,var(--chapter-soft),#f5ead7);
+ border-bottom:1px solid var(--chapter-rule)
+}
+main .lud-book-crest{display:grid;place-items:center;flex:0 0 70px;width:70px;height:70px;
+ border:1px solid var(--chapter-tone);border-radius:12px;color:var(--chapter-tone);background:#f7eddf
+}
+main .lud-book-crest svg{width:43px;height:43px}
+main .lud-book-heading-body{min-width:0}
+main .lud-book-overline{font:800 11px/1.45 system-ui,Arial,sans-serif;color:var(--chapter-tone);letter-spacing:.1em;text-transform:uppercase;margin:2px 0 6px}
+main .lud-book-heading h2{font:normal clamp(31px,4.3vw,49px)/1.07 Georgia,serif;color:#2b4435;margin:0;letter-spacing:-.032em}
+main .lud-book-subtitle{font:14px/1.72 Georgia,serif;color:#574d3e;max-width:750px;margin:11px 0 0}
+main .lud-book-abilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;
+ padding:16px 0 19px;border-bottom:1px solid #cfbaa0
+}
+main .lud-chapter-ability{display:flex;align-items:center;gap:10px;min-width:0;
+ padding:10px 11px;background:#ebdfca;border:1px solid #cab597;border-radius:5px;
+ font:700 12px/1.35 system-ui,Arial,sans-serif;color:#365140;text-decoration:none
+}
+main .lud-chapter-ability:hover,main .lud-chapter-ability:focus-visible{background:#dfd1b8;border-color:var(--chapter-tone)}
+main .lud-ability-number{display:grid;place-items:center;flex:0 0 24px;width:24px;height:24px;
+ border:1px solid var(--chapter-tone);border-radius:50%;color:var(--chapter-tone);
+ font:700 13px Georgia,serif
+}
+main .lud-book .folio{--tone:var(--chapter-tone);--tone-bg:var(--chapter-soft);
+ border:0;border-top:1px solid #d2c2a9;background:transparent;
+ margin:0;padding:23px 1px 24px;scroll-margin-top:32px
+}
+main .lud-book .folio:first-child{border-top:0}
+main .lud-book .folio.lud-entry-feature{margin:14px 0 19px;padding:22px 20px 23px;
+ border:1px solid #cbb89c;border-left:4px solid var(--chapter-tone);
+ border-radius:0 6px 6px 0;background:linear-gradient(125deg,#f8f0e2,#f1e5d0);
+ box-shadow:0 2px 10px #5b48231a
+}
+main .lud-book .folio.lud-entry-support{padding-left:13px;border-left:2px solid #c9b694}
+main .lud-book .folio.lud-entry-reference{background:#f1e5d1;padding:21px 16px;margin:12px 0;border:1px solid #c4ae8e;border-radius:5px}
+main .lud-book .folio.lud-entry-requirements{background:#f3e8d5;padding:18px 16px;margin:12px 0;border-left:3px solid var(--chapter-tone)}
+main .lud-book .folio.lud-entry-intro{padding:20px 1px 13px}
+main .lud-book .page-head{display:flex;align-items:baseline;gap:12px;
+ border:0;color:#796a50;font:700 10px/1.45 system-ui,Arial,sans-serif;letter-spacing:.08em
+}
+main .lud-book .page-head span:last-child{white-space:nowrap;letter-spacing:.12em;color:#7c6b50}
+main .lud-book .page-title{display:flex;flex-wrap:wrap;align-items:center;gap:11px;margin:12px 0 19px}
+main .lud-book .page-title .chapter-emblem{flex:0 0 48px;width:48px;height:48px;
+ background:var(--chapter-soft);border:1px solid var(--chapter-tone);
+ color:var(--chapter-tone);border-radius:7px
+}
+main .lud-book .page-title .lud-emblem-svg{width:28px;height:28px}
+main .lud-book .page-title h3{font:normal clamp(24px,3.25vw,35px)/1.18 Georgia,serif;
+ color:#314b3d;letter-spacing:-.023em;margin:0;flex:1 1 65%
+}
+main .lud-book .lud-entry-tag{width:100%;display:block;order:-1;
+ color:var(--chapter-tone);font:800 10px/1.3 system-ui,Arial,sans-serif;letter-spacing:.13em
+}
+main .lud-book .lud-entry-support .page-title h3{font-size:clamp(22px,2.9vw,29px)}
+main .lud-book .page-copy{max-width:none;min-width:0}
+main .lud-book .body-copy,main .lud-book .lud-list{font:14px/1.76 Georgia,serif;color:#41392f!important}
+main .lud-book .body-copy{margin:13px 0}
+main .lud-book .body-copy strong,main .lud-book .lud-list strong{color:#355447;font-weight:700}
+main .lud-book .section-heading{font:normal 23px/1.3 Georgia,serif;
+ margin:27px 0 13px;padding:12px 0 0;border:0;border-top:1px solid #cbb89d;
+ color:var(--chapter-tone)
+}
+main .lud-book .subheading{font:800 13px/1.5 system-ui,Arial,sans-serif;
+ color:var(--chapter-tone);letter-spacing:.03em;margin:19px 0 9px
+}
+main .lud-book .chapter-subtitle{margin:0 0 17px;color:#3d4938;border-left:3px solid var(--chapter-tone);
+ background:var(--chapter-soft);padding:11px 14px
+}
+main .lud-book .chapter-subtitle strong{font:700 12px/1.5 system-ui,Arial,sans-serif;color:#3c5141}
+main .lud-book .rule-note{padding:14px 16px;margin:17px 0;background:var(--chapter-soft);
+ color:#453d30;border-left:3px solid var(--chapter-tone);border-radius:0 4px 4px 0
+}
+main .lud-book .rule-note strong{font-weight:700;color:#315442}
+main .lud-book .rule-note .body-copy{font-size:13px;line-height:1.7;margin:7px 0 0}
+main .lud-book .lud-rule-row{display:grid;grid-template-columns:minmax(130px,25%) minmax(0,1fr);
+ gap:15px;padding:12px 4px;border-bottom:1px solid #cdbda3;
+ align-items:start;min-width:0;color:#40372e;font:14px/1.73 Georgia,serif
+}
+main .lud-book .lud-rule-row:first-of-type{border-top:1px solid #cdbda3}
+main .lud-book .lud-rule-key{color:#355847;font:800 12px/1.6 system-ui,Arial,sans-serif}
+main .lud-book .lud-rule-value{min-width:0}
+main .lud-book .lud-rule-value .mechanic{white-space:nowrap}
+main .lud-book .rules-scroll,main .lud-book .lud-doc-table{clear:both;max-width:100%;
+ margin:18px 0 23px;overflow-x:auto;background:#f0e4d0;border:1px solid #c8b494;border-radius:5px
+}
+main .lud-book .rules-table{width:100%;min-width:560px;border-collapse:collapse;table-layout:auto;font:13px/1.66 Georgia,serif}
+main .lud-book .rules-table th{background:#365849;color:#f9edda;font:800 11px/1.4 system-ui,Arial,sans-serif;
+ letter-spacing:.02em;text-align:left;padding:12px 13px;vertical-align:top;border-color:#b9a482
+}
+main .lud-book .rules-table td{color:#423b32;background:transparent;padding:11px 13px;
+ border-bottom:1px solid #cab798;vertical-align:top;text-align:left;overflow-wrap:normal;word-break:normal
+}
+main .lud-book .rules-table tr:nth-child(even) td{background:#e8d9bf7d}
+main .lud-book .rules-table .row-label{color:#345748;font-weight:750}
+main .lud-book .rules-table th:first-child,main .lud-book .rules-table td:first-child{position:static;min-width:150px}
+main .lud-book .mechanic{display:inline-flex;align-items:center;gap:3px;white-space:nowrap;
+ padding:2px 5px;border:1px solid #c0ab8b;background:#eadcc1;color:#315347;border-radius:4px
+}
+main .lud-book .mechanic img{width:16px;height:16px;object-fit:contain;flex:none}
+main .lud-book .lud-cost{font:800 12px/1.3 system-ui,Arial,sans-serif}
+main .lud-book .lud-resource-text{color:#345746}
+main .lud-book .lud-lead-media,main .lud-book .lud-tech-visual,main .lud-book .lud-tech-visual.is-reversed{
+ display:grid;grid-template-columns:minmax(0,1fr) minmax(185px,37%);
+ gap:clamp(16px,2.2vw,26px);align-items:start;clear:both;
+ width:100%;margin:17px 0 22px
+}
+main .lud-book .lud-lead-copy,main .lud-book .lud-tech-visual-copy{grid-column:1;grid-row:1;min-width:0}
+main .lud-book .lud-lead-copy>:first-child,main .lud-book .lud-tech-visual-copy>:first-child{margin-top:0}
+main .lud-book .lud-tech-visual.is-reversed{grid-template-columns:minmax(185px,37%) minmax(0,1fr)}
+main .lud-book .lud-tech-visual.is-reversed .lud-tech-visual-copy{grid-column:2;grid-row:1}
+main .lud-book .lud-tech-visual.is-reversed .lud-tech-illustration{grid-column:1;grid-row:1}
+main .lud-book .lud-lead-media .lud-illustration,main .lud-book .lud-tech-visual .lud-illustration{
+ float:none;clear:none;grid-column:2;grid-row:1;width:100%;max-width:none;margin:0;
+ border:1px solid #bba585;background:#e8d9be;padding:6px;box-shadow:0 4px 15px #5b452b21;
+ break-inside:avoid
+}
+main .lud-book .lud-illustration .lud-art-link{min-height:0;display:flex;align-items:center;justify-content:center;background:#e4d4b9}
+main .lud-book .lud-illustration .lud-art-link img{width:auto;max-width:100%;height:auto;max-height:270px;object-fit:contain;object-position:center}
+main .lud-book .lud-illustration figcaption{display:grid;gap:3px;padding:8px 6px 4px;color:#514336}
+main .lud-book .lud-illustration figcaption strong{font:normal 17px/1.28 Georgia,serif;color:#3b5944}
+main .lud-book .lud-illustration figcaption span{font:11px/1.45 system-ui,Arial,sans-serif;color:#5b5040}
+main .lud-book .lud-illustration figcaption small{font:10px/1.5 system-ui,Arial,sans-serif;color:#60533e;overflow-wrap:anywhere}
+main .lud-book .lud-illustration figcaption a{color:#346477;overflow-wrap:anywhere}
+main .lud-book .lud-paths,main .lud-book .lud-iii-paths,main .lud-book .paths{clear:both;grid-template-columns:repeat(3,minmax(0,1fr))}
+main .lud-book .paths a{background:#eadcc5;border:1px solid #c5af8e;border-radius:5px;padding:13px;text-decoration:none}
+main .lud-book .paths a strong{color:#355441;font:normal 17px/1.35 Georgia,serif}
+main .lud-book .paths a small{color:#625546;font:11px/1.46 system-ui,Arial,sans-serif}
+main .lud-book .paths a:hover{background:#e0d0b3;border-color:var(--chapter-tone)}
+main .lud-book .lud-operation{background:#e7d7bd;border-left:3px solid var(--chapter-tone);color:#365242}
+aside .page-nav{display:block}
+aside .lud-sidebar-group{padding:0 0 13px;margin:0 0 13px;border-bottom:1px solid #456051}
+aside .lud-sidebar-group-head{display:flex;gap:9px;align-items:center;color:#e2d4b6;
+ padding:10px 1px 8px;font:700 12px/1.35 system-ui,Arial,sans-serif}
+aside .lud-sidebar-group-head span{font:normal 21px Georgia,serif;color:#d1b784}
+aside .lud-sidebar-group .page-nav a,aside .lud-sidebar-group>a{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px}
+aside .page-nav a:hover,aside .page-nav a:focus-visible{background:#283c2f;color:#fff6df}
+:where(.lud-quick-tabs a,.lud-overview-card,.lud-chapter-ability,aside a):focus-visible{outline:3px solid #9e7c4f;outline-offset:2px}
+@media(max-width:1180px){
+ main .lud-overview{grid-template-columns:1fr 1fr}
+ main .lud-overview-card:last-child{grid-column:1/-1}
+ main .lud-book{padding:0 19px 25px}
+ main .lud-book-heading{margin:0 -19px;padding:22px 20px}
+}
+@media(max-width:980px){
+ main .lud-overview{grid-template-columns:1fr}
+ main .lud-overview-card:last-child{grid-column:auto}
+ main .lud-book-abilities{grid-template-columns:1fr}
+ main .lud-book .lud-lead-media,main .lud-book .lud-tech-visual,main .lud-book .lud-tech-visual.is-reversed{
+ display:flex;flex-direction:column;gap:11px
+ }
+ main .lud-book .lud-lead-media .lud-illustration,main .lud-book .lud-tech-visual .lud-illustration{
+  order:-1;width:min(100%,480px);margin:0 auto
+ }
+ main .lud-book .lud-lead-copy,main .lud-book .lud-tech-visual-copy{width:100%}
+ main .lud-book .paths,main .lud-book .lud-paths,main .lud-book .lud-iii-paths{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+ main .hero{padding:26px 0}
+ main .lud-quick-tabs{gap:7px;margin:19px 0}
+ main .lud-quick-tabs a{flex-basis:100%;padding:9px 11px}
+ main .lud-overview-card{padding:13px 12px}
+ main .lud-overview-card strong{font-size:19px}
+ main .lud-book{padding:0 12px 18px;margin:23px 0 35px;border-radius:4px}
+ main .lud-book-heading{margin:0 -12px;padding:18px 13px;gap:11px}
+ main .lud-book-crest{width:48px;height:48px;flex-basis:48px}
+ main .lud-book-crest svg{width:31px;height:31px}
+ main .lud-book-heading h2{font-size:31px}
+ main .lud-book-overline{font-size:9px}
+ main .lud-book-subtitle{font-size:13px}
+ main .lud-book .folio.lud-entry-feature{margin:12px 0;padding:16px 12px}
+ main .lud-book .page-title h3{font-size:26px}
+ main .lud-book .page-head{font-size:9px}
+ main .lud-book .page-head span:first-child{max-width:70%}
+ main .lud-book .lud-rule-row{grid-template-columns:1fr;gap:4px;padding:11px 3px}
+ main .lud-book .rules-table{min-width:600px;font-size:12px}
+ main .lud-book .rules-table td{padding:10px}
+ main .lud-book .body-copy{font-size:13px}
+}
+@media print{
+ main .lud-quick-tabs{display:none!important}
+ main .lud-overview{grid-template-columns:repeat(3,1fr)}
+ main .lud-book{break-before:page!important;page-break-before:always!important;background:#fff!important;
+ margin:0;padding:0;border:0;box-shadow:none
+ }
+ main .lud-book-heading{margin:0;padding:12mm 0 5mm;background:#fff!important}
+ main .lud-book .folio,main .lud-book .folio.lud-entry-feature,main .lud-book .folio.lud-entry-reference{
+  break-before:auto!important;page-break-before:auto!important;break-inside:auto!important;
+  margin:0;padding:6mm 0;border:0;border-top:1px solid #c4bba8;
+  background:#fff!important;box-shadow:none
+ }
+ main .lud-book .lud-lead-media,main .lud-book .lud-tech-visual,main .lud-book .lud-tech-visual.is-reversed{
+  display:grid;grid-template-columns:1fr 30%;gap:9px;break-inside:avoid
+ }
+ main .lud-book .lud-lead-media .lud-illustration,main .lud-book .lud-tech-visual .lud-illustration{width:100%;grid-column:2;order:initial}
+ main .lud-book .lud-tech-visual.is-reversed .lud-tech-visual-copy{grid-column:1}
+ main .lud-book .lud-tech-visual.is-reversed .lud-tech-illustration{grid-column:2}
+ main .lud-book .lud-illustration .lud-art-link img{max-height:140px}
+ main .lud-book .rules-table{min-width:0;font-size:10px}
+ main .lud-book .rules-scroll,main .lud-book .lud-doc-table{overflow:visible}
+ main .lud-book .page-title h3{font-size:28px}
+ main .lud-book .body-copy{font-size:11px}
+}
+
 </style></head><body><div class="layout"><aside aria-label="Navegação do dossiê"><div class="identity"><div class="seal">L</div><div><strong>ÁRBORIUS</strong><small>CODEX / DOSSIÊ INDIVIDUAL</small></div></div><div class="side-tag">Trilogia de Maestrias</div><nav class="main-nav"><a href="#inicio"><b>I</b><span>Artesã das Folhas</span></a><a href="#tecelavivo"><b>II</b><span>Tecelã do Vivo</span></a><a href="#cacadora-silenciosa"><b>III</b><span>Caçadora Silenciosa</span></a></nav><div class="side-tag">Índice completo</div><nav class="page-nav" aria-label="Índice das 27 folhas"><div class="lud-sidebar-group"><div class="lud-sidebar-group-head"><span>I</span><strong>Artesã das Folhas</strong></div><a href="#inicio"><b>01</b><span>Artesã das Folhas</span></a><a href="#requisitos"><b>02</b><span>Requisitos e condição de desbloqueio</span></a><a href="#oficina"><b>03</b><span>I — Oficina da Folha</span></a><a href="#engenhos"><b>04</b><span>II — Engenhos da Araucária</span></a><a href="#ciclo"><b>05</b><span>III — Ciclo Arboriano</span></a><a href="#projetil"><b>06</b><span>B. Projétil Médico Arboriano</span></a><a href="#socorro"><b>07</b><span>Protocolo do Último Socorro</span></a><a href="#economia"><b>08</b><span>Economia de recursos e integrações</span></a></div><div class="lud-sidebar-group"><div class="lud-sidebar-group-head"><span>II</span><strong>Tecelã do Vivo</strong></div><a href="#tecelavivo"><b>09</b><span>Maestria II · Tecelã do Vivo</span></a><a href="#tecela-requisitos"><b>10</b><span>Requisitos da Tecelã</span></a><a href="#segunda-anatomia"><b>11</b><span>I · Segunda Anatomia</span></a><a href="#simbiose"><b>12</b><span>II · Engenharia de Simbiose</span></a><a href="#companheiros-oficina"><b>13</b><span>Companheiros de Oficina</span></a><a href="#farmacia-equina"><b>14</b><span>Farmácia de Campo Equina</span></a><a href="#treinamento-campeiros"><b>15</b><span>Treinamento Aprimorado</span></a><a href="#cirurgia"><b>16</b><span>III · Cirurgia de Reconstrução</span></a><a href="#excisao"><b>17</b><span>Excisão Assimilada equina</span></a><a href="#tecela-exemplos"><b>18</b><span>Exemplos e limites</span></a><a href="#tecela-consulta"><b>19</b><span>Consulta rápida da Tecelã</span></a></div><div class="lud-sidebar-group"><div class="lud-sidebar-group-head"><span>III</span><strong>Caçadora Silenciosa</strong></div><a href="#cacadora-silenciosa"><b>20</b><span>Maestria III · Caçadora Silenciosa</span></a><a href="#cacadora-requisitos"><b>21</b><span>Requisitos da Caçadora</span></a><a href="#pontaria-galope"><b>22</b><span>I · Pontaria de Galope</span></a><a href="#interdicao-cirurgica"><b>23</b><span>II · Interdição Cirúrgica</span></a><a href="#tocaia-perfeita"><b>24</b><span>Tocaia Perfeita</span></a><a href="#cacada-sem-rastros"><b>25</b><span>III · Caçada Sem Rastros</span></a><a href="#cacadora-exemplos"><b>26</b><span>Exemplos de economia</span></a><a href="#cacadora-consulta"><b>27</b><span>Limites e consulta rápida</span></a></div></nav><div class="side-tag">Símbolos de Assimilação</div><div class="legend"><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/sucesso.svg" alt="" width="19" height="19"><span>Sucesso · A</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/adaptacao.svg" alt="" width="19" height="19"><span>Adaptação · B</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pressao.svg" alt="" width="19" height="19"><span>Pressão · C</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pontodedeterminacao.svg" alt="" width="19" height="19"><span>Ponto de Determinação</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pontodesaude.svg" alt="" width="19" height="19"><span>Pontos de Saúde</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/pontodeassimilacao.svg" alt="" width="19" height="19"><span>Ponto de Assimilação</span></div><div><img class="glyph" src="/Codex-de-Arb-rius/symbols/niveldeassimilacao.svg" alt="" width="19" height="19"><span>Nível de Assimilação</span></div></div><div class="side-footer"><small>Homebrew em teste · Link não listado</small></div></aside><main><div class="toolbar"><span>Codex de Árborius / Ludmila Gatozzo</span><button class="print" type="button" onclick="window.print()">Imprimir / salvar PDF</button></div><header class="hero"><p class="eyebrow">ASSIMILAÇÃO RPG · DOSSIÊ CONSOLIDADO · TRILOGIA I–III</p><h1>Ludmila Gatozzo<span>Trilogia de Maestrias</span></h1><p>Engenharia de sobrevivência · criação simbiótica · precisão da caçadora furtiva</p></header><nav class="lud-quick-tabs" aria-label="Navegação pelas Maestrias"><a href="#inicio">I · Artesã das Folhas</a><a href="#tecelavivo">II · Tecelã do Vivo</a><a href="#cacadora-silenciosa">III · Caçadora Silenciosa</a></nav><div class="lud-overview" aria-label="Resumo dos três caminhos"><a href="#inicio" class="lud-overview-card lud-overview-forest"><span class="lud-overview-number">I</span><span class="lud-overview-text"><strong>Artesã das Folhas</strong><small>Preparar, reparar e socorrer.</small></span></a><a href="#tecelavivo" class="lud-overview-card lud-overview-olive"><span class="lud-overview-number">II</span><span class="lud-overview-text"><strong>Tecelã do Vivo</strong><small>Cultivar, reconstruir e cuidar.</small></span></a><a href="#cacadora-silenciosa" class="lud-overview-card lud-overview-bronze"><span class="lud-overview-number">III</span><span class="lud-overview-text"><strong>Caçadora Silenciosa</strong><small>Observar, atingir e desaparecer.</small></span></a></div><p class="lud-publication-note"><strong>Trilogia de campanha · [HOMEBREW] [TESTE]</strong> · Artesã das Folhas v1.3, Tecelã do Vivo v1.2 e Caçadora Silenciosa v1.0, conforme SRD Interno v1.25. O desbloqueio exige os requisitos de cada Maestria; este dossiê não concede capacidades automaticamente.</p><section class="lud-book lud-book-forest" aria-labelledby="lud-maestria-i-title"><header class="lud-book-heading"><div class="lud-book-crest"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21C5 12 11 5 21 3c0 10-5 16-14 18Z"/><path d="M7 21L20 7M3 10l5 5M12 4l4 4"/></svg></div><div class="lud-book-heading-body"><p class="lud-book-overline">MAESTRIA I · Engenharia, recuperação e socorro</p><h2 id="lud-maestria-i-title">Artesã das Folhas</h2><p class="lud-book-subtitle">Conhecimento artesanal que transforma os recursos encontrados em ferramentas e dispositivos de sobrevivência.</p></div></header><nav class="lud-book-abilities" aria-label="Capacidades de Artesã das Folhas"><a href="#oficina" class="lud-chapter-ability"><span class="lud-ability-number">1</span><span>Oficina da Folha</span></a><a href="#engenhos" class="lud-chapter-ability"><span class="lud-ability-number">2</span><span>Engenhos da Araucária</span></a><a href="#ciclo" class="lud-chapter-ability"><span class="lud-ability-number">3</span><span>Ciclo Arboriano</span></a></nav><div class="lud-book-entries">
 <section class="folio engineering lud-entry lud-entry-intro" id="inicio"><header class="page-head"><span>Dossiê pessoal · Maestria I</span><span>01 / 27</span></header><div class="page-copy"><div class="lud-lead-media"><div class="lud-lead-copy"><p class="body-copy">Ludmila já domina suas técnicas. O desafio é encontrar, preservar e transformar os recursos necessários para colocá-las em prática.</p></div><figure class="lud-illustration lud-internet-art" data-art-maestria="inicio"><a class="lud-art-link" href="https://i.playground.ru/p/MWTJZXKXZv3me4I0-OMPqQ.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Visualizar ilustração — Artesã das Folhas"><img src="https://i.playground.ru/p/MWTJZXKXZv3me4I0-OMPqQ.jpeg" data-fallback="/Codex-de-Arb-rius/dossies/assets/ludmila/artesa-oficina.svg" alt="Artesã das Folhas: Uma bancada de sobrevivência instalada na floresta, entre ferramentas e equipamentos recuperados." loading="lazy" decoding="async" referrerpolicy="no-referrer"><span class="lud-art-fail">Ilustração indisponível. Abrir a fonte.</span></a><figcaption><strong>Artesã das Folhas</strong><span>Uma bancada de sobrevivência instalada na floresta, entre ferramentas e equipamentos recuperados.</span><small>Referência visual · Fonte: <a href="https://www.playground.ru/metro_exodus/o_vyzhivanii_medvedyah_mutantah_volkah_i_fraktsii_deti_lesa_v_metro_exodus-314163" target="_blank" rel="noopener noreferrer">Metro Exodus · 4A Games / Playground.ru</a></small></figcaption></figure></div><div class="rule-note"><strong>Conceito central</strong><p class="body-copy">A Maestria é um conhecimento adquirido. Seus procedimentos estão disponíveis desde o desbloqueio; custos, materiais, ferramentas, testes e consequências continuam existindo.</p></div><h4 class="section-heading">As três capacidades</h4><div class="paths"><a href="#oficina"><span>I</span><strong>Oficina da Folha</strong><small>Infraestrutura artesanal de campo</small></a><a href="#engenhos"><span>II</span><strong>Engenhos da Araucária</strong><small>Reparação, engenharia reversa e refinamento</small></a><a href="#ciclo"><span>III</span><strong>Ciclo Arboriano</strong><small>Aplicadores médicos manuais, à distância e de emergência</small></a></div><blockquote>“Não preciso encontrar uma máquina funcionando. Preciso descobrir o que ainda pode ser aproveitado.”</blockquote></div></section>
 <section class="folio engineering lud-entry lud-entry-requirements" id="requisitos"><header class="page-head"><span>Aptidões e Características</span><span>02 / 27</span></header><div class="page-title"><span class="chapter-emblem">✣</span><h3>Requisitos e condição de desbloqueio</h3></div><div class="page-copy"><div class="rules-scroll" role="region" tabindex="0"><table class="rules-table"><thead><tr><th>Aptidões</th><th>Características obrigatórias</th></tr></thead><tbody><tr><td class="row-label">Sagacidade 2+ · Manufaturas 2+ · Medicina 1+ · Resolução 3+</td><td>Gambiarra · Disciplinado · Inabalável</td></tr></tbody></table></div><p class="body-copy">Marco narrativo: participação significativa na recuperação, construção ou adaptação de um equipamento. A Maestria é concedida pelo Assimilador após o cumprimento dos requisitos.</p><div class="rule-note"><strong>Condição registrada na ficha</strong><p class="body-copy">Na ficha apresentada, Ludmila ainda precisa desenvolver Resolução 3+ e registrar as Características obrigatórias antes do desbloqueio.</p></div><p class="body-copy">Gambiarra permite alterar Características de Artefatos; Disciplinado protege um trabalho metódico fora de Conflito; Inabalável converte <span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/adaptacao.svg" alt="" aria-hidden="true" width="18" height="18"><span>B</span></span> em <span class="mechanic"><img class="glyph" src="/Codex-de-Arb-rius/symbols/sucesso.svg" alt="" aria-hidden="true" width="18" height="18"><span>A</span></span> em resistências mentais/emocionais, dentro de seu limite oficial por sessão. Seus efeitos não são duplicados por esta Maestria.</p></div></section>
