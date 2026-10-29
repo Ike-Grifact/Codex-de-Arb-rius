@@ -173,3 +173,17 @@ Padrão adotado, em consonância com os dossiês de Apolo, Aruana e José:
 - **Impressão:** o capítulo começa em nova página, mas folhas internas não devem forçar quebra de página a cada pequena capacidade.
 
 **Auditoria comparativa:** as 27 seções continuam contendo exatamente o mesmo texto de regras no corpo `page-copy` antes e depois da reorganização (27/27 comparações textuais idênticas, 7.569 palavras). Preservam-se 20 tabelas, 19 figuras, 130 marcações mecânicas e todos os 27 IDs de âncora. A apresentação em navegador precisa de conferência visual após o deploy.
+
+## 15. Ludmila — aproveitamento de proporções nas 19 ilustrações
+
+Na revisão de 29/10/2026, o dossiê deixa de usar indiscriminadamente a mesma coluna de aproximadamente 37% para retratos, pinturas quadradas e paisagens.
+
+- **Medição por imagem:** quando uma arte realmente carrega, `naturalWidth / naturalHeight` determina o modo: panorama/paisagem (≥ 1,29), retrato (≤ 0,85) ou composição intermediária/quadrada. O mesmo processo se aplica às artes SVG locais usadas em fallback. Não atribuir orientação apenas pela URL ou pelo tema.
+- **Paisagem:** apresentação ampliada, centralizada, com texto da introdução em largura útil logo abaixo; altura limitada sem recortar a composição. Desse modo uma paisagem não fica comprimida numa coluna estreita enquanto a descrição deixa um grande vazio.
+- **Retrato:** coluna lateral proporcionalmente menor, altura disponível maior para aproveitar o formato vertical. Quando o parágrafo ao lado é curto, limitar a altura da figura para não abrir grande intervalo antes da regra seguinte.
+- **Quadrada:** cartão lateral em proporção intermediária, preservando a imagem inteira.
+- **Responsividade:** aplicar o critério de empilhamento à largura **da folha** com CSS container queries (≤ 560px), com fallback para largura de tela pequena. Não forçar todas as imagens para baixo simplesmente porque o viewport é inferior a 980px, desconsiderando a largura livre após a barra lateral.
+- **Proteção do conteúdo:** textos, ícones, custos, notas e tabelas continuam fora de recortes e sobreposições; `object-fit:contain`. As colunas invertidas mantêm texto amplo, e a tabela não pode virar um bloco comum por uma regra de layout.
+- **Impressão:** altura de imagem limitada e texto legível; manter proporções.
+
+A auditoria compara integralmente o conteúdo das 27 folhas e confirma **27/27 textos idênticos**, as **19 figuras** com suas referências e SVGs alternativos, **20 tabelas**, **130 marcadores mecânicos**, HTML e CSS estruturais balanceados. A verificação final de carregamento e aparência das obras remotas exige navegação real: o código foi preparado para se adaptar a suas dimensões efetivas.
