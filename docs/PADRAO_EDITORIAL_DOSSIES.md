@@ -130,3 +130,18 @@ O dossiê público da personagem formaliza a ordem **I — Artesã das Folhas v1
 - Nenhuma alteração de regra no Foundry; prevalece a trilogia fornecida e SRD v1.25 para esta formalização.
 
 A revisão mantém a página pública antiga para não quebrar os links de jogadores.
+
+## 12. Ludmila — referências de imagem externas (29/10/2026)
+
+Atualização exclusivamente visual sobre a trilogia v1.25. As três vinhetas SVG locais permanecem no repositório como *fallback* caso uma fonte externa esteja indisponível. As ilustrações principais são **referências de obras publicadas por terceiros**, não arte oficial nem representação literal da personagem.
+
+| Seção | Referência visual e crédito |
+|---|---|
+| Maestria I — Artesã das Folhas | Bancada de sobrevivência em mata, imagem de *Metro Exodus* (4A Games), publicada por Playground.ru |
+| Maestria II — Tecelã do Vivo | Corpo, raízes e tecnologia, imagem publicada em *História Demais para um Corpo Só* (Zarak Krumfort / Substack) |
+| Segunda Anatomia | Prótese entre flores e raízes, fotografia promocional do braço de Malenia (*Elden Ring*) publicada pela PureArts |
+| Maestria III — Caçadora Silenciosa | Cavaleira com rifle em floresta, *Lone Guardian* — Shay Vision |
+
+Cada cartão contém legenda descritiva e link à página de origem, mantendo proporção da obra, layout lateral em telas largas e empilhamento em telas pequenas. O clique abre o lightbox existente, e o hover mostra uma ampliação quando disponível. Não sobrepor o botão "Ampliar". Se o servidor da obra externa bloquear o arquivo, exibir a vinheta local correspondente; não remover o link para a publicação original.
+
+Não redistribuir as imagens externas como arquivos próprios do repositório sem autorização/licença aplicável. A disponibilidade remota, a compatibilidade com hotlink e os direitos sobre as obras permanecem sob responsabilidade das respectivas fontes. Nenhuma mecânica, custo, requisito ou texto normativo foi alterado.
