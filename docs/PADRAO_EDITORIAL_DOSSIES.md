@@ -201,3 +201,19 @@ Fonte primária: `Ekhyos_Trilogia_de_Maestrias_Consolidada_v1.0.docx`, versão d
 **Convenção de recursos:** `A` = Sucesso, `B` = Adaptação e `C` = Pressão, com símbolos oficiais do site. `d` = Ponto de Determinação **real**, também com o símbolo oficial. `a` = Ponto **Ancestral** do Einherjar, representado por selo próprio e legenda independente; não é Sucesso A, não altera D nem financia Cadência ou usos gerais de Determinação. Conservar o teto de quatro dados mantidos, o limite de uma ação comum por turno e a exclusividade entre o canto do Bardo e o estado Einherjar.
 
 A trilogia publicada não concede automaticamente novos recursos, alterações no Cabo de Guerra, mutações, capacidades ou itens; nenhuma alteração no Foundry. A página deve ser testada visualmente no GitHub Pages após o deploy; fontes externas podem bloquear hotlinks.
+
+## 17. Ekhyos — correção visual e redação de consulta (29/10/2026)
+
+Esta revisão **substitui** no dossiê de Ekhyos a orientação gráfica de imagens do §16 deste guia, sem alterar o SRD v1.26 nem os textos normativos das técnicas.
+
+**Diagnóstico:** foram herdadas classes genéricas de Ludmila que, conforme a largura da tela ou a proporção da imagem, colocavam paisagens sobre a explicação e às vezes deixavam grandes espaços vazios. As 12 ilustrações originais vinham de fontes muito heterogêneas, algumas com visuais repetidos e pouca relação concreta com o efeito da técnica; o SVG de fallback terminava substituindo a arte por desenhos abstratos quando havia bloqueio de hotlink.
+
+**Correção adotada:**
+- Reduz para **7 obras escolhidas**, ligadas à voz do skald, ao campo de batalha, à persistência, à defesa da vanguarda, ao preço de permanecer ferido e à preservação da memória. Preferir obras históricas e pintores conhecidos, com autor, título e endereço da fonte verificáveis em legenda compacta. Os três SVGs técnicos anteriores não são mais usados nas figuras de Ekhyos.
+- Manter **imagem à direita** em composição de duas colunas para todas as proporções (incluindo paisagens). A largura da arte fica em torno de 28% da folha e sua altura é limitada, com `object-fit:contain`, sem cortes na obra. Nas larguras úteis inferiores a aproximadamente 590 px, empilhar em ordem **imagem, texto**, preservando legibilidade.
+- Se uma fonte remota falhar, ocultar o cartão sem substituir por um SVG visualmente dissonante; o texto ocupa a largura da folha. O link original e sua autoria permanecem nas referências do arquivo HTML.
+- Adicionar **9 painéis de consulta rápida** com 29 linhas de gatilho, teste, custo, efeito, frequência e limitação segundo a técnica respectiva. O documento conserva abaixo deles os **textos normativos integrais**, sem aumentar bônus nem eliminar exceções.
+- Nos parágrafos curtos de *Juramento da Vanguarda* e *O Último a Cair*, aproximar o quadro normativo da descrição lateral, evitando a coluna de texto vazia e mantendo custos e limites na mesma unidade visual.
+- Preservar ícones oficiais de Sucesso (A), Adaptação (B), Pressão (C) e Determinação real (d), além do selo específico dos Pontos Ancestrais (a), e nunca tratar a reserva ancestral como um segundo Cabo de Guerra.
+
+**Conferência comparativa:** **24/24 seções** com texto normativo idêntico à versão anterior após remover apenas os painéis novos e arte; três Maestrias, 12 tabelas, sete figuras, sete créditos, links internos válidos e sem IDs duplicados. A inspeção visual das imagens renderizadas e dos servidores remotos só pode ser confirmada em navegador após o deploy.
