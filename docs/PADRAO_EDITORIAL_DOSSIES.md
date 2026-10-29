@@ -116,3 +116,17 @@ A Maestria I — Artesã das Folhas v1.3 permanece com suas oito seções origin
 - Nenhuma capacidade é concedida sem seus requisitos, tempo, materiais, instalações e custos.
 - Documentação de origem v1.2 declara a versão *Codex v1.23* e está marcada **[HOMEBREW] [TESTE]**. A base v1.18 disponível localmente não contém essa nova Maestria; não alegar validação cruzada com o texto integral da v1.23 sem consultar a versão vigente.
 - Ícones e títulos devem respeitar quebra de linha: contagem + glifo sempre no mesmo bloco, tabelas com rolagem horizontal em tela pequena.
+
+## 11. Ludmila — trilogia consolidada v1.0 / SRD v1.25 (29/10/2026)
+
+O dossiê público da personagem formaliza a ordem **I — Artesã das Folhas v1.3 → II — Tecelã do Vivo v1.2 → III — Caçadora Silenciosa v1.0**. As capacidades de cada Maestria são conhecimentos após seu desbloqueio; o documento não concede progresso, Características, animais, armas, próteses ou materiais gratuitamente. **[HOMEBREW] [TESTE]**.
+
+- **Maestria I:** preserva as oito folhas; a designação vigente, conforme SRD v1.21, é **Engenhos da Araucária**, substituindo editorialmente a denominação histórica “Engenhos da Restinga”, sem mudar a mecânica.
+- **Maestria II:** conserva as onze folhas e as capacidades já publicadas. As referências de precedência usam agora **SRD v1.25**, retirando a nota desatualizada que tratava v1.18 como última consolidação.
+- **Maestria III:** acrescenta oito folhas completas (20–27): visão geral, requisitos, Pontaria de Galope, Interdição Cirúrgica, Tocaia Perfeita, Caçada Sem Rastros, exemplos fechados, limites e consulta rápida. Preserva os custos/limites do documento consolidado v1.0 e o funcionamento independente dos Campeiros.
+- Ícones de capacidade distintos nas nove técnicas e recursos mecânicos legíveis com os SVG oficiais para A/B/C, Saúde e Determinação; números e texto acessível preservados junto do símbolo.
+- Três vinhetas editoriais SVG próprias hospedadas em `public/dossies/assets/ludmila/`, uma por Maestria. Molduras em pergaminho, legendas, proporção preservada, prévia centralizada no hover, ampliação por clique e navegação por teclado. São **artes vetoriais editoriais**, não ilustrações mecânicas oficiais nem substitutas das imagens originais do guia.
+- Mantém índice lateral, paginação completa, contraste do pergaminho, tabelas com rolagem horizontal no celular e impressão legível.
+- Nenhuma alteração de regra no Foundry; prevalece a trilogia fornecida e SRD v1.25 para esta formalização.
+
+A revisão mantém a página pública antiga para não quebrar os links de jogadores.
