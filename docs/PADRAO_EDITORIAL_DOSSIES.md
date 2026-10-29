@@ -105,3 +105,14 @@ As antigas imagens da Sutura (Pikabu) e de Rosto Emprestado (st-note) foram subs
 Não sobrepor o botão decorativo **Ampliar** à arte. Manter interação por mouse (prévia), clique (visualização integral), teclado e link de origem, além de mensagem de fallback se houver bloqueio da imagem externa. Os títulos e créditos devem refletir a imagem atual, não sua antiga posição.
 
 Uma mudança meramente editorial não pode alterar textos mecânicos, custos, ações, dados ou tabelas.
+
+## 10. Ludmila — Maestrias I e II na mesma página (28/10/2026)
+
+A Maestria I — Artesã das Folhas v1.3 permanece com suas oito seções originais. A **Maestria II — Tecelã do Vivo v1.2** foi acrescentada em 11 seções, preservando integralmente o conteúdo normativo do dossiê enviado e separando Segunda Anatomia, Engenharia de Simbiose e Cirurgia de Reconstrução.
+
+- Tema de pergaminho claro e texto escuro; navegação lateral verde-escura, análoga às páginas dos demais jogadores.
+- Requisitos de desbloqueio, próteses, coleta, cultivo, companheiros, adaptação de preparados, treinamento, excisão e consulta rápida distribuídos em tabelas e parágrafos de mesa.
+- Símbolos oficiais das pastas `/symbols/` para A, B, C, Saúde máxima e E mínimo. Contagens e recursos continuam escritos junto aos ícones, nunca substituídos apenas por imagem.
+- Nenhuma capacidade é concedida sem seus requisitos, tempo, materiais, instalações e custos.
+- Documentação de origem v1.2 declara a versão *Codex v1.23* e está marcada **[HOMEBREW] [TESTE]**. A base v1.18 disponível localmente não contém essa nova Maestria; não alegar validação cruzada com o texto integral da v1.23 sem consultar a versão vigente.
+- Ícones e títulos devem respeitar quebra de linha: contagem + glifo sempre no mesmo bloco, tabelas com rolagem horizontal em tela pequena.
