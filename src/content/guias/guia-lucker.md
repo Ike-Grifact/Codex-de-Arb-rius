@@ -1,7 +1,7 @@
 ---
 title: "Guia do Jogador — Linhagem Lucker"
 slug: "guia-lucker"
-description: "Lore conhecida, criação, Código Genético, Fome, Teto Predatório, Absorções e guia de gameplay da Linhagem Lucker."
+description: "Lore conhecida, criação, Código Genético, Fome, Teto Predatório, Absorções, Lucker Superior e guia de gameplay da Linhagem Lucker."
 type: "guia"
 status: "publicado"
 visibility: "publico"
@@ -14,8 +14,8 @@ tags:
   - codigo-genetico
   - fome
   - teto-predatorio
-updated: 2026-08-18
-version: "Edição Final Consolidada v3"
+updated: 2026-11-01
+version: "Edição Final Consolidada v3 — adendo SRD v1.27"
 origin: "Guia_do_Jogador_Lucker_Edicao_Final_v3.pdf"
 exports:
   pdf: true
@@ -23,12 +23,12 @@ exports:
   html: false
 ---
 
-<!-- Guia de jogador consolidado a partir da Edição Final v3 e compatibilizado com o SRD Interno v1.6. Segredos de campanha, origem verdadeira dos Luckers e conteúdo exclusivo do Assimilador permanecem fora desta versão. -->
+<!-- Guia de jogador consolidado a partir da Edição Final v3; adendo do Lucker Superior extraído do SRD Interno v1.27 (§119.14), em playtest. Segredos de campanha, origem verdadeira dos Luckers e conteúdo exclusivo do Assimilador permanecem fora desta versão. -->
 
 # LINHAGEM LUCKER
 ## Guia do Jogador
 
-**Edição Final Consolidada v3 — regras vigentes**
+**Edição Final Consolidada v3 — adendo Lucker Superior (SRD v1.27, em playtest)**
 
 **Codex de Árborius — Assimilação RPG**
 
@@ -63,6 +63,7 @@ Este documento contém somente as informações conhecidas pelos personagens, as
 14. Fim do Teto e Estado Suscetível
 15. Absorção Evolutiva
 16. Limite definitivo
+16-A. Lucker Superior — Resiliência Assimilada (D5/E5)
 17. Montaria comum
 
 ## Parte III — Guia para jogar
@@ -540,6 +541,32 @@ O Lucker é perdido quando alcança:
 
 Todas as Pressões ativas contam, independentemente da origem da mutação.
 
+## 16-A. Lucker Superior — Resiliência Assimilada (D5/E5)
+
+> **[HOMEBREW] [TESTE — SRD Interno v1.27, §119.14]** Este estágio é uma regra da **Linhagem Lucker**, não uma mutação, Característica ou Maestria adquirida à parte.
+
+O **Lucker Superior** surge automaticamente quando uma transição válida do Cabo de Guerra leva o personagem a **D5/E5**. A **Resiliência Assimilada** funciona de **D5/E5 até D1/E9** (Nível de Assimilação 5 ou maior e Nível de Determinação ainda positivo). Se o personagem recuperar um Nível de Determinação e voltar a **E4 ou menos**, esta permissão fica dormente até retornar a E5.
+
+### Permissão restrita de gasto
+
+O Lucker Superior pode pagar **1 Ponto de Assimilação (1e) no lugar de 1 Ponto de Determinação (1d)** exclusivamente nestas situações:
+
+| Situação | O que 1e permite | O que continua valendo |
+|---|---|---|
+| **Perseverança** | Ignorar **uma penalidade aplicável**, inclusive de Saúde, como se pagasse 1d. | No máximo **uma penalidade por rodada**. Não remove Pressões mantidas nem recupera Saúde. |
+| **Saúde S2 — Debilitação** | Pagar o custo necessário para **tentar agir** em S2. | A penalidade **−AA** permanece; para ignorá-la é necessário outro custo válido, como Perseverança. |
+| **Saúde S1 — Incapacitação** | **Manter consciência e comunicação durante a rodada**. | Não concede uma Ação. Para tentar uma Ação que envolva teste, ainda são necessários **2B** e condições ficcionais adequadas, segundo as regras críticas. |
+
+Cada gasto é independente. O Lucker pode usar **d reais** em qualquer uma dessas situações, se ainda os possuir; substituir por e é uma **opção**, não uma obrigação.
+
+**Exemplo em S2:** com 2e disponíveis, o Lucker pode gastar **1e para tentar agir** e **outro 1e em Perseverança para ignorar a penalidade −AA naquele teste**, respeitando seu limite de uma penalidade ignorada por rodada. Se optar também por **Agir por Instinto**, paga separadamente o custo normal da Rolagem Assimilada.
+
+**Limites:** a Resiliência Assimilada **não** substitui Determinação em **Empenho**, custos de Características, Maestrias, ativações, habilidades, Origens, dano, perdas emocionais, recuperação de Determinação ou qualquer efeito não listado na tabela. Não gera pontos de Determinação, dados mantidos, Ações extras ou alterações no Cabo de Guerra. A regra geral de **2d para suprir 1e**, quando permitida, continua distinta; não se podem encadear conversões para criar recursos.
+
+**O que não muda:** até chegar a D0/E10, o Lucker mantém **Fome, Teto Predatório, Sobrevivência Predatória, Pulso, Recuperação e Absorções Predatórias**. Gastar e não impede perdas de Determinação nem concede imunidade às Pressões, a ferimentos ou ao Estado Suscetível. O limite definitivo de **20 Pressões em Inoportunas ativas** permanece.
+
+Ao chegar a **D0/E10**, vale o **regime próprio do Lucker Primordial**, registrado no SRD (§119.12), em lugar dessa substituição limitada. A equivalência plena de recursos do Primordial **não** é concedida antecipadamente ao Superior.
+
 ## 17. Montaria comum
 
 Em campanhas nas quais os Arborianos começam com Campeiros Exploradores, o Lucker recebe uma **montaria comum não Ressonante**, com arreios básicos, salvo impedimento narrativo.
@@ -568,6 +595,7 @@ Mantenha separados na ficha:
 - Pontos de Determinação atuais;
 - Nível de Assimilação;
 - Pontos de Assimilação atuais;
+- estágio Superior ativo (D5/E5 a D1/E9) ou dormente;
 - Teto Predatório;
 - Recuperação Predatória disponível ou usada;
 - Pulso de Sobrevivência disponível ou usado.
@@ -759,6 +787,16 @@ Um Lucker possui zero Pontos de Determinação e Teto Predatório 1. Em uma Abso
 6. As cartas são sorteadas aleatoriamente dos baralhos gerais.
 7. O Código Genético não participa.
 
+### 22.7. Resiliência Assimilada na Saúde crítica
+
+Um Lucker em **D5/E5**, com **2 Pontos de Assimilação disponíveis**, está em **S2 — Debilitação**:
+
+1. Gasta **1e** para poder tentar agir, sem cancelar automaticamente o **−AA**.
+2. Gasta **outro 1e em Perseverança** para ignorar essa penalidade no teste da rodada.
+3. Não pode usar o mesmo pagamento para Empenho ou para Agir por Instinto.
+
+Se estivesse em **S1 — Incapacitação**, **1e** manteria consciência e comunicação na rodada, mas **não** forneceria uma Ação gratuita; uma tentativa com teste ainda dependeria das condições críticas e de **2B**.
+
 ## 23. Fluxo de recuperação
 
 ```text
@@ -823,6 +861,9 @@ para tentar        |
 | **Manifestação forçada** | cartas aleatórias; Código Genético fora |
 | **Absorção Evolutiva** | D−1/E+1, manifestação com fonte + Código; máximo de metade dos resultados positivos em cartas positivas do Código |
 | **Genofágica** | Adaptativa independente da Linhagem; não é requisito nem benefício automático de Lucker |
+| **Lucker Superior (D5/E5 a D1/E9)** | 1e substitui 1d **apenas** em Perseverança, tentativa de agir em S2 ou consciência/comunicação em S1; cada custo é separado |
+| **Restrições do Superior** | Não vale para Empenho, Maestrias e outras ativações; Fome, Teto, Pulso e Absorções continuam até D0/E10 |
+| **Lucker Primordial (D0/E10)** | Regime distinto do SRD (§119.12): não antecipar sua equivalência plena ao Superior |
 | **Limite definitivo** | {{pressao:20}} acumuladas em Inoportunas ativas |
 | **Montaria** | comum, não Ressonante e sem dado equino |
 
@@ -832,7 +873,7 @@ para tentar        |
 
 O livro-base estabelece que um Infectado comum recupera **1 + Resolução Pontos de Determinação** após repouso completo em condições ideais e recupera completamente os Pontos de Assimilação ao final de cada cena.
 
-**Código Genético, Recuperação Predatória, Pulso de Sobrevivência, Fome predatória, Sobrevivência Predatória, Teto Predatório, Destinos Predatórios, Absorção Predatória e o limite de 20 Pressões são regras específicas do Codex de Árborius.**
+**Código Genético, Recuperação Predatória, Pulso de Sobrevivência, Fome predatória, Sobrevivência Predatória, Teto Predatório, Destinos Predatórios, Absorção Predatória, Resiliência Assimilada do Lucker Superior e o limite de 20 Pressões são regras específicas do Codex de Árborius.**
 
 A **Assimilação Genofágica** é um homebrew Adaptativo separado e não constitui uma regra automática da Linhagem Lucker.
 
