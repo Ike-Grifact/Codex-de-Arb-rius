@@ -50,19 +50,28 @@
     ["cujo sentido depende do personagem","após uma cena difícil","sem equivaler a previsão certa","associado a lembranças pessoais","que exige autoconsciência","sem penalidade automática"],
     ["com reação de testemunhas","na proximidade da flora local","afetando o ambiente imediato","por um curto intervalo","com risco ainda indeterminado","abrindo um novo mistério"]
   ];
+  let imported=null;
+  const key="codex-arborius-oraculos-licenciados-v1";
+  function valid(data){return Array.isArray(data)&&data.length===36&&data.every(x=>x&&typeof x.title==="string"&&Array.isArray(x.cells)&&x.cells.length===6&&x.cells.every(row=>Array.isArray(row)&&row.length===6&&row.every(v=>typeof v==="string"&&v.length>0)))}
+  try{const stored=localStorage.getItem(key);if(stored){const p=JSON.parse(stored);if(valid(p))imported=p}}catch(e){}
+  function sourceStatus(){const node=document.getElementById("source-status");if(node)node.textContent=imported?"Modo atual: 1.296 resultados do arquivo do livro, guardados somente neste navegador.":"Modo atual: propostas narrativas originais de Árborius."}
   const titleTexts=[...document.querySelectorAll("#table-select option")].map(o=>o.textContent);
   const sel=document.getElementById("table-select"),rs=document.getElementById("row-select"),cs=document.getElementById("col-select"),result=document.getElementById("oracle-result"),heading=document.getElementById("oracle-heading"),cat=document.getElementById("oracle-category"),coord=document.getElementById("oracle-coord"),grid=document.getElementById("oracle-matrix"),wrap=document.getElementById("matrix-wrap"),toggle=document.getElementById("toggle-matrix");
   const labels=["0–1","2","3","4","5","6+"];
-  function makeResult(i,r,c){return entries[i][r]+"; "+columnModifiers[Math.floor(i/4)][c]+"."}
+  function makeResult(i,r,c){return imported?imported[i].cells[r][c]:entries[i][r]+"; "+columnModifiers[Math.floor(i/4)][c]+"."}
   function render(){
     const i=Number(sel.value),r=Number(rs.value),c=Number(cs.value);
-    heading.textContent=titleTexts[i];cat.textContent=groups[Math.floor(i/4)];result.textContent=makeResult(i,r,c);coord.textContent="Tabela "+(i+1)+" de 36 · linha "+labels[r]+" · coluna "+labels[c];
+    heading.textContent=imported?imported[i].title.replace("*",""):titleTexts[i];cat.textContent=groups[Math.floor(i/4)]+(imported?" · livro p. "+imported[i].page:" · propostas Árborius");result.textContent=makeResult(i,r,c);coord.textContent="Tabela "+(i+1)+" de 36 · linha "+labels[r]+" · coluna "+labels[c];
     grid.replaceChildren();const head=document.createElement("thead"),hrow=document.createElement("tr");
     ["","0–1","2","3","4","5","6+"].forEach(x=>{const th=document.createElement("th");th.textContent=x;hrow.append(th)});head.append(hrow);grid.append(head);
     const tbody=document.createElement("tbody");
     for(let ir=0;ir<6;ir++){const tr=document.createElement("tr");const th=document.createElement("th");th.textContent=labels[ir];tr.append(th);for(let ic=0;ic<6;ic++){const td=document.createElement("td");td.textContent=makeResult(i,ir,ic);if(ir===r&&ic===c)td.className="picked";td.addEventListener("click",()=>{rs.value=String(ir);cs.value=String(ic);render()});tr.append(td)}tbody.append(tr)}grid.append(tbody);
     document.querySelectorAll(".oracle-index button").forEach((b,j)=>b.classList.toggle("active",j===Math.floor(i/4)));
   }
+  const fileInput=document.getElementById("import-source");
+  fileInput.addEventListener("change",async()=>{const file=fileInput.files&&fileInput.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!valid(data))throw new Error("O arquivo precisa ter 36 matrizes com 6 linhas e 6 colunas de texto.");imported=data;try{localStorage.setItem(key,JSON.stringify(imported))}catch(e){}sourceStatus();render()}catch(e){alert("Não foi possível importar as tabelas: "+e.message)}fileInput.value=""});
+  document.getElementById("clear-source").addEventListener("click",()=>{imported=null;try{localStorage.removeItem(key)}catch(e){}sourceStatus();render()});
+  sourceStatus();
   function rnd(n){const x=new Uint32Array(1);crypto.getRandomValues(x);return x[0]%n}
   [sel,rs,cs].forEach(el=>el.addEventListener("change",render));
   document.getElementById("generate-oracle").addEventListener("click",()=>{rs.value=String(rnd(6));cs.value=String(rnd(6));render()});
