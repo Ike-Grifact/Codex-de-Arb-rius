@@ -177,3 +177,10 @@
 .player-guide-card__arrow{color:var(--forest-600);font-size:1.1rem}
 @media(max-width:680px){.player-guide-grid{grid-template-columns:1fr}.player-guide-card{padding:1rem}.player-guides__hint{max-width:none}}
 @media(prefers-reduced-motion:reduce){.player-guide-card{transition:none}.player-guide-card:hover,.player-guide-card:focus-visible{transform:none}}
+
+/* Araucária coronet — identifica as Maestrias sem confundir com Origem ou Assimilação. */
+.player-guide-card{grid-template-columns:60px minmax(0,1fr) auto}
+.player-guide-card__number{position:relative;width:56px;height:56px;display:grid;place-items:center}
+.player-guide-card__number img{display:block;width:43px;height:43px;object-fit:contain}
+.player-guide-card__number small{position:absolute;right:-3px;bottom:-3px;min-width:19px;padding:2px 3px;border:1px solid var(--sage-300);border-radius:7px;background:var(--paper);color:var(--forest-700);font:700 9px/1.1 system-ui,sans-serif;text-align:center}
+@media(max-width:680px){.player-guide-card{grid-template-columns:60px minmax(0,1fr) auto}}
