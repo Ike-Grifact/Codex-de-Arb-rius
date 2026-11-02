@@ -14,7 +14,7 @@ const {item}=Astro.props;
 const base=import.meta.env.BASE_URL;
 const grupo=apoloGrupos.find(x=>x.stage===item.stage);
 const url=withBase(`maestrias/apolo/${item.slug}/`,base);
-const guide=withBase(`dossies/apolo-hellman-f943e1efaaa2.html#${item.sourceSection}`,base);
+const guide=withBase(`dossies/apolo-hellman-f943e1efaaa2.html#habilidade-${item.slug}`,base);
 const related=apoloMaestrias.filter(x=>x.stage===item.stage&&x.slug!==item.slug);
 const crosslinks=remissoesApolo[item.slug]||[];
 ---
