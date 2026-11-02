@@ -38,6 +38,50 @@
     ]
   };
 
+  // Fichas curtas independentes de Apolo: a mesma fonte alimenta os 15 links e os cartões.
+  const apoloRuleBase = new URL("../../maestrias/apolo/", document.currentScript?.src || location.href).href;
+  const apoloRules = Object.create(null);
+  if (apolo) {
+    fetch(new URL("resumos.json", apoloRuleBase).href)
+      .then(response => { if (!response.ok) throw new Error("Falha nas fichas"); return response.json(); })
+      .then(records => {
+        Object.assign(apoloRules, records);
+        if (current?.node?.closest(".technique[data-rule-slug]")) show(current,pinned);
+      })
+      .catch(() => {
+        // Sem rede, o texto completo do guia permanece disponível como antes.
+      });
+  }
+
+  function conciseRecord(record) {
+    const wrap = document.createElement("div");
+    wrap.className="codex-rule-summary";
+    const lead=document.createElement("p");
+    lead.className="codex-rule-summary__lead";
+    lead.textContent=record.headline;
+    wrap.appendChild(lead);
+    for (const rule of (record.rules || []).slice(0,4)) {
+      const entry=document.createElement("div");
+      entry.className="codex-rule-summary__rule";
+      const heading=document.createElement("strong");
+      heading.className="codex-rule-summary__rule-title";
+      heading.textContent=rule.title;
+      const text=document.createElement("p");
+      text.innerHTML=rule.text;
+      entry.append(heading,text);
+      wrap.append(entry);
+    }
+    if (record.warning) {
+      const alert=document.createElement("p");
+      alert.className="codex-rule-summary__warning";
+      const strong=document.createElement("strong");
+      strong.textContent="Limite: ";
+      alert.append(strong,document.createTextNode(record.warning));
+      wrap.appendChild(alert);
+    }
+    return {heading:record.name,cost:"Ficha rápida · "+record.kind,costs:record.costs,html:wrap,full:false,concise:true,href:new URL(record.slug+"/",apoloRuleBase).href};
+  }
+
   const normalize = (value) => (value || "").replace(/\s+/g, " ").trim();
   function cleanFragment(source, maxChars = 12500) {
     const wrapper = document.createElement("div");
@@ -106,6 +150,9 @@
     const parent = node.closest(".technique");
     const heading = normalize(node.textContent.replace("⌕", ""));
     if (parent) {
+      if (apolo && parent.dataset.ruleSlug && apoloRules[parent.dataset.ruleSlug]) {
+        return conciseRecord(apoloRules[parent.dataset.ruleSlug]);
+      }
       const rich = parent.querySelector(".tech-content");
       return { heading:normalize(parent.querySelector("h3")?.textContent || heading),cost:normalize(parent.querySelector(".tech-cost")?.textContent),html:cleanFragment(rich),full:true,href:"#" + (parent.closest("section[id]")?.id || "inicio") };
     }
@@ -156,11 +203,22 @@
     if (hideTimer) clearTimeout(hideTimer);
     if (current?.button && current.button !== item.button) current.button.setAttribute("aria-expanded","false");
     title.textContent=result.heading;
-    cost.textContent=result.cost;
+    cost.replaceChildren();
+    if (result.costs) {
+      for (const c of result.costs) {
+        const chip = document.createElement("span");
+        chip.className="codex-rule-mini-cost codex-rule-mini-cost--"+c.type;
+        const v=document.createElement("strong");v.textContent=c.value;
+        const label=document.createElement("small");label.textContent=c.label;
+        chip.append(v,label);
+        cost.appendChild(chip);
+      }
+    } else cost.textContent=result.cost;
     body.replaceChildren(result.html);
     if (!body.textContent.trim()) body.textContent="Consulte a seção completa para os detalhes desta capacidade.";
     body.scrollTop = 0;
-    note.textContent = result.full ? "Regra completa deste bloco · Dossiê do jogador" : "Prévia do texto existente · Consulte a seção integral";
+    note.textContent = result.concise ? "Resumo editorial · SRD v1.29 [TESTE]" : (result.full ? "Regra completa deste bloco · Dossiê do jogador" : "Prévia do texto existente · Consulte a seção integral");
+    read.textContent = result.concise ? "Abrir ficha individual →" : "Ler seção completa →";
     read.href=result.href;
     pop.setAttribute("aria-hidden","false");
     item.button?.setAttribute("aria-expanded","true");
@@ -200,7 +258,7 @@
   }
 
   // Navegador lateral (inspirado na consulta hierárquica de livros de regras).
-  document.querySelectorAll(".side-nav a[href^='#'],.page-nav a[href^='#'],.lore-mobile-nav a[href^='#']").forEach(node=>connect(node,false));
+  document.querySelectorAll(".side-nav a[href^='#'],.page-nav a[href^='#'],.lore-mobile-nav a[href^='#'],.codex-rule-direct-link").forEach(node=>connect(node,false));
   // Cada técnica aparece em um cartão com o próprio texto da habilidade, sem criar regras novas.
   const headings=[
     ".technique .tech-head h3",

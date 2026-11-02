@@ -1,0 +1,59 @@
+---
+import {apoloMaestrias,apoloGrupos} from "../../../data/apolo-maestrias.mjs";
+import {withBase} from "../../../lib/paths";
+import ApoloRuleSidebar from "../../../components/ApoloRuleSidebar.astro";
+import "../../../styles/apolo-rule-cards.css";
+export function getStaticPaths(){
+  return apoloMaestrias.map(item=>({params:{slug:item.slug},props:{item}}));
+}
+const {item}=Astro.props;
+const base=import.meta.env.BASE_URL;
+const grupo=apoloGrupos.find(x=>x.stage===item.stage);
+const url=withBase(`maestrias/apolo/${item.slug}/`,base);
+const guide=withBase(`dossies/apolo-hellman-f943e1efaaa2.html#${item.sourceSection}`,base);
+const related=apoloMaestrias.filter(x=>x.stage===item.stage&&x.slug!==item.slug);
+---
+<html lang="pt-BR">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content={item.headline}/>
+<meta name="theme-color" content="#193d33"/>
+<title>{item.name} | Apolo Hellman · Codex de Árborius</title>
+<link rel="icon" type="image/svg+xml" href={withBase("symbols/maestria-araucaria-coroa.svg",base)}/>
+</head>
+<body>
+<div class="rule-shell">
+<ApoloRuleSidebar current={item.slug}/>
+<main class="rule-page">
+  <div class="rule-topbar"><span>Codex / Maestrias / Apolo / {grupo.name}</span><a href={withBase("maestrias/apolo/",base)}>Todas as fichas</a></div>
+  <header class="rule-intro">
+    <p class="rule-eyebrow">Ficha individual · {grupo.name} · {item.kind}</p>
+    <div class="rule-masthead"><img src={withBase("symbols/maestria-araucaria-coroa.svg",base)} alt="Araucária coroada, símbolo de Maestria"/><h1 class="rule-title">{item.name}</h1></div>
+    <p class="rule-lead">{item.headline}</p>
+    <p class="rule-annotation">Consulta rápida para mesa · SRD de Árborius v1.29 [HOMEBREW] [TESTE]</p>
+  </header>
+  <article class="rule-paper">
+    <div class="rule-paper-head">
+      <p>Recursos e custos</p>
+      <div class="rule-cost-row">{item.costs.map(c=><span class={`rule-cost rule-cost--${c.type}`}><strong>{c.value}</strong><small>{c.label}</small></span>)}</div>
+    </div>
+    <dl class="rule-stats">{item.stats.map(pair=><div class="rule-stat"><dt>{pair[0]}</dt><dd>{pair[1]}</dd></div>)}</dl>
+    <div class="rule-body">{item.rules.map(rule=><section class="rule-effect"><h2>{rule.title}</h2><p><Fragment set:html={rule.text}/></p></section>)}</div>
+    <div class="rule-warning"><strong>Atenção</strong><span>{item.warning}</span></div>
+  </article>
+  <div class="rule-footer">
+    <a class="rule-button rule-button--primary" href={guide}>Ler explicação completa no guia de Apolo</a>
+    <a class="rule-button" href={withBase("maestrias/apolo/",base)}>Voltar ao índice de habilidades</a>
+  </div>
+  <section class="rule-collection" aria-label="Outras habilidades da mesma Maestria">
+    <h2>Outras capacidades do mesmo caminho</h2>
+    <div class="rule-cards">
+    {related.map(cap=><a class="rule-index-card" href={withBase(`maestrias/apolo/${cap.slug}/`,base)}>
+      <span class="rule-index-kicker">{cap.kind}</span><strong>{cap.name}</strong><p>{cap.headline}</p>
+      <span class="rule-cost-row">{cap.costs.slice(0,2).map(c=><span class={`rule-cost rule-cost--${c.type}`}><b>{c.value}</b><small>{c.label}</small></span>)}</span>
+    </a>)}
+    </div>
+  </section>
+</main>
+</div>
+</body>
+</html>
