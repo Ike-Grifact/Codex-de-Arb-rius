@@ -379,73 +379,121 @@
   .ability-section .technique a {transition:none}
 }
 
-/* ARBORIUS NOTATION v1 — ícones oficiais, custos legíveis e iconografia de referências.
-   A=sucesso azul, B=adaptação vermelha, C=pressão ocre, PM=araucária coroada.
-   As cores reforçam nomes/ícones; jamais são o único indicador de significado. */
+/* ARBORIUS NOTATION v2 — paleta de jogo: A vermelho, B amarelo, C azul,
+   d vermelho, e azul, PM cinza claro com araucária/coroa.
+   O número e o sinal × são texto livre; APENAS o ícone ocupa a caixa.
+   As cores nunca substituem os nomes e os símbolos. */
 :root{
- --codex-symbol-a:#245a78;
- --codex-symbol-b:#803f42;
- --codex-symbol-c:#78571d;
- --codex-symbol-pm:#2d5a47;
+ --codex-symbol-a:#922e39;
+ --codex-symbol-b:#7a580e;
+ --codex-symbol-c:#235e86;
+ --codex-symbol-pm:#34483c;
+ --codex-symbol-d:#922e39;
+ --codex-symbol-e:#235e86;
 }
 .codex-symbol-token {
  display:inline-flex!important;
  align-items:center!important;
- vertical-align:-.24em;
- gap:4px;
+ vertical-align:-.20em;
+ gap:5px;
  max-width:100%;
- padding:1px 5px 1px 5px;
- margin:0 2px;
- border:1px solid #bdd0d9;
- border-radius:5px;
- background:#e8f1f6;
- color:var(--codex-symbol-a)!important;
- font:800 .88em/1.25 system-ui,sans-serif!important;
+ margin:0 3px;
+ padding:0!important;
+ border:0!important;
+ border-radius:0!important;
+ background:transparent!important;
+ color:#303b31!important;
+ font:800 .94em/1.35 system-ui,sans-serif!important;
  letter-spacing:0;
  white-space:nowrap;
  word-break:normal;
- box-decoration-break:clone;
 }
 .codex-symbol-token__count,
-.codex-symbol-token__modifier {display:inline-block;flex:none}
-.codex-symbol-token img{
- display:inline-block!important;
- width:19px!important;
- height:19px!important;
- max-width:19px!important;
- min-width:19px;
+.codex-symbol-token__modifier {
+ display:inline-block;
+ flex:none;
+ padding:0;
+ margin:0;
+ background:transparent!important;
+ border:0!important;
+ color:#293b32!important;
+ line-height:1.4;
+}
+.codex-symbol-token__glyph{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ width:29px;
+ height:27px;
+ flex:none;
+ box-sizing:border-box;
+ padding:3px;
+ border:1px solid #d5a7ab;
+ border-radius:6px;
+ background:#f6e4e5;
+ vertical-align:middle;
+}
+.codex-symbol-token__glyph img{
+ display:block!important;
+ width:20px!important;
+ height:20px!important;
+ max-width:20px!important;
+ min-width:20px;
+ flex:none;
  object-fit:contain!important;
  vertical-align:middle;
+ padding:0!important;
+ border:0!important;
  margin:0!important;
- flex:none;
 }
-.codex-symbol-token--B {background:#f4e6e5;color:var(--codex-symbol-b)!important;border-color:#d8b3b4}
-.codex-symbol-token--C {background:#f5e9d1;color:var(--codex-symbol-c)!important;border-color:#d3bb83}
-.codex-symbol-token--PM {background:#e6f0e8;color:var(--codex-symbol-pm)!important;border-color:#b8d0c0}
-.codex-symbol-token--d {background:#e8eef5;color:#2b5178!important;border-color:#b6c9db}
-.codex-symbol-token--e {background:#f3e7dc;color:#714e2a!important;border-color:#d9bfa0}
-.apolo-linked-reading .codex-symbol-token,
-.apolo-linked-intro .codex-symbol-token,
-.ability-section .technique .codex-symbol-token{
- color:inherit;
+.codex-symbol-token--A .codex-symbol-token__glyph {
+ border-color:#d5a7ab;background:#f6e4e5;
 }
-.apolo-linked-reading .codex-symbol-token--A,
-.apolo-linked-intro .codex-symbol-token--A,
-.ability-section .technique .codex-symbol-token--A {color:var(--codex-symbol-a)!important}
-.apolo-linked-reading .codex-symbol-token--B,
-.apolo-linked-intro .codex-symbol-token--B,
-.ability-section .technique .codex-symbol-token--B {color:var(--codex-symbol-b)!important}
-.apolo-linked-reading .codex-symbol-token--C,
-.apolo-linked-intro .codex-symbol-token--C,
-.ability-section .technique .codex-symbol-token--C {color:var(--codex-symbol-c)!important}
-.apolo-linked-reading .codex-symbol-token--PM,
-.apolo-linked-intro .codex-symbol-token--PM,
-.ability-section .technique .codex-symbol-token--PM {color:var(--codex-symbol-pm)!important}
+.codex-symbol-token--B .codex-symbol-token__glyph {
+ border-color:#d4bf6e;background:#fff3c8;
+}
+.codex-symbol-token--C .codex-symbol-token__glyph {
+ border-color:#accbe3;background:#e5f1fb;
+}
+.codex-symbol-token--PM .codex-symbol-token__glyph {
+ border-color:#c6cbc9;background:#eceeed;
+}
+.codex-symbol-token--d .codex-symbol-token__glyph {
+ border-color:#d5a7ab;background:#f6e4e5;
+}
+.codex-symbol-token--e .codex-symbol-token__glyph {
+ border-color:#accbe3;background:#e5f1fb;
+}
+/* As ilustrações originais dos dados foram criadas com outra ordem cromática.
+   Filtros localizados atualizam a matiz da arte no dossiê sem alterar os SVGs da biblioteca. */
+.codex-symbol-token--A .codex-symbol-token__glyph img {filter:hue-rotate(140deg)}
+.codex-symbol-token--B .codex-symbol-token__glyph img {filter:hue-rotate(55deg)}
+.codex-symbol-token--C .codex-symbol-token__glyph img {filter:hue-rotate(170deg)}
 .ability-section .technique .tech-cost:has(.codex-symbol-token){white-space:normal!important}
 .ability-section .technique .tech-cost .codex-symbol-token {
  font-size:12px!important;
  margin:1px 3px;
 }
+.ability-section .technique .tech-cost .codex-symbol-token__count,
+.ability-section .technique .apolo-rule-body .codex-symbol-token__count,
+.codex-rule-popover .codex-symbol-token__count {color:#273a30!important}
+
+/* Cores da legenda e de símbolos históricos também seguem a ordem A/B/C. */
+body .sidebar .legend-mark.a {background:#922e39!important;color:#fff!important}
+body .sidebar .legend-mark.b {background:#efcc60!important;color:#403007!important}
+body .sidebar .legend-mark.c {background:#235e86!important;color:#fff!important}
+body .sidebar .legend-mark.a img {filter:hue-rotate(140deg)}
+body .sidebar .legend-mark.b img {filter:hue-rotate(55deg)}
+body .sidebar .legend-mark.c img {filter:hue-rotate(170deg)}
+.ability-section .sym-a {color:#922e39!important;border-color:#d5a7ab!important;background:#f6e4e5!important}
+.ability-section .sym-b {color:#634a11!important;border-color:#d4bf6e!important;background:#fff3c8!important}
+.ability-section .sym-c {color:#235e86!important;border-color:#accbe3!important;background:#e5f1fb!important}
+.apolo-linked-intro a[href*="/regras/sucesso-a/"],
+.ability-section .apolo-linked-reading a[href*="/regras/sucesso-a/"] {color:#922e39!important}
+.apolo-linked-intro a[href*="/regras/adaptacao-b/"],
+.ability-section .apolo-linked-reading a[href*="/regras/adaptacao-b/"] {color:#71540e!important}
+.apolo-linked-intro a[href*="/regras/pressao-c/"],
+.ability-section .apolo-linked-reading a[href*="/regras/pressao-c/"] {color:#235e86!important}
 
 /* Todos os chips 'Consultar' recebem um ícone e uma cor por família. */
 .ability-section .technique .apolo-tech-references {
@@ -477,22 +525,22 @@
  overflow-wrap:anywhere;
 }
 .ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="A"] {
- background:#245a78!important;border-color:#245a78!important;color:#fff!important;
+ background:#922e39!important;border-color:#922e39!important;color:#fff!important;
 }
 .ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="B"] {
- background:#803f42!important;border-color:#803f42!important;color:#fff!important;
+ background:#efcc60!important;border-color:#d1ac44!important;color:#3f310b!important;
 }
 .ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="C"] {
- background:#78571d!important;border-color:#78571d!important;color:#fff!important;
+ background:#235e86!important;border-color:#235e86!important;color:#fff!important;
 }
 .ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="PM"] {
- background:#2d5a47!important;border-color:#2d5a47!important;color:#fff!important;
+ background:#eceeed!important;border-color:#c6cbc9!important;color:#2c4439!important;
 }
 .ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="d"] {
- background:#34597b!important;border-color:#34597b!important;color:#fff!important;
+ background:#922e39!important;border-color:#922e39!important;color:#fff!important;
 }
 .ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="e"] {
- background:#775333!important;border-color:#775333!important;color:#fff!important;
+ background:#235e86!important;border-color:#235e86!important;color:#fff!important;
 }
 .ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="acao"] {
  background:#71502e!important;border-color:#71502e!important;color:#fff!important;
@@ -550,25 +598,26 @@
 }
 .codex-rule-mini-cost strong {display:inline-flex;align-items:center;flex-wrap:wrap;color:#2c493a!important}
 .codex-rule-mini-cost small {color:#4e584a!important;font-size:11px;line-height:1.4}
-.codex-rule-mini-cost:has(.codex-symbol-token--A) {background:#eaf2f7!important;border-color:#abc6d8!important}
-.codex-rule-mini-cost:has(.codex-symbol-token--B) {background:#f8ebeb!important;border-color:#d8b3b4!important}
-.codex-rule-mini-cost:has(.codex-symbol-token--C) {background:#f8f0dd!important;border-color:#dcc89e!important}
-.codex-rule-mini-cost:has(.codex-symbol-token--PM) {background:#eaf3eb!important;border-color:#b5cfbe!important}
+.codex-rule-mini-cost:has(.codex-symbol-token--A) {background:#f8f1f0!important;border-color:#d7b9ba!important}
+.codex-rule-mini-cost:has(.codex-symbol-token--B) {background:#faf6e9!important;border-color:#dec98a!important}
+.codex-rule-mini-cost:has(.codex-symbol-token--C) {background:#edf4fa!important;border-color:#b8cee0!important}
+.codex-rule-mini-cost:has(.codex-symbol-token--PM) {background:#f1f2f0!important;border-color:#c6cbc9!important}
 .codex-rule-popover .codex-symbol-token {font-size:12px!important;vertical-align:middle}
 .codex-rule-popover .codex-symbol-token img,
 .codex-rule-popover__body .codex-symbol-token img {
  width:18px!important;height:18px!important;max-width:18px!important;
 }
 .codex-rule-popover__body .codex-symbol-token {
- border:1px solid #b7c5b6!important;
- padding:1px 4px!important;
- margin:0 2px!important;
+ border:0!important;
+ padding:0!important;
+ background:transparent!important;
+ margin:0 3px!important;
  display:inline-flex!important;
 }
-.codex-rule-popover__body .codex-symbol-token--A {background:#e8f1f6!important;color:#245a78!important}
-.codex-rule-popover__body .codex-symbol-token--B {background:#f4e6e5!important;color:#803f42!important}
-.codex-rule-popover__body .codex-symbol-token--C {background:#f5e9d1!important;color:#78571d!important}
-.codex-rule-popover__body .codex-symbol-token--PM {background:#e6f0e8!important;color:#2d5a47!important}
+.codex-rule-popover__body .codex-symbol-token--A {background:transparent!important;color:#293b32!important}
+.codex-rule-popover__body .codex-symbol-token--B {background:transparent!important;color:#293b32!important}
+.codex-rule-popover__body .codex-symbol-token--C {background:transparent!important;color:#293b32!important}
+.codex-rule-popover__body .codex-symbol-token--PM {background:transparent!important;color:#293b32!important}
 
 /* Unidade de leitura única: texto primeiro, toda a arte depois do último parágrafo. */
 @media screen {
@@ -645,4 +694,58 @@
  }
  .ability-section .apolo-book-spread .apolo-book-text {width:100%!important}
  .ability-section .apolo-book-spread .apolo-book-media {display:block!important;width:70%!important;margin:12px auto!important}
+}
+
+
+/* Consistência dos SVGs nos chips de consulta. */
+.apolo-tech-references a.apolo-ref-chip[data-codex-kind="A"] img.codex-ref-icon {filter:hue-rotate(140deg)}
+.apolo-tech-references a.apolo-ref-chip[data-codex-kind="B"] img.codex-ref-icon {filter:hue-rotate(55deg)}
+.apolo-tech-references a.apolo-ref-chip[data-codex-kind="C"] img.codex-ref-icon {filter:hue-rotate(170deg)}
+.apolo-tech-references a.apolo-ref-chip[data-codex-kind="B"]:hover {filter:brightness(.94)}
+.apolo-tech-references a.apolo-ref-chip[data-codex-kind="PM"]:hover {filter:brightness(.96)}
+/* O resumo superior é uma barra escura: os links precisam ser claros até quando visitados. */
+body .apolo-quicknav > a.codex-rule-collection-link,
+body .apolo-quicknav > a.codex-rule-collection-link:link,
+body .apolo-quicknav > a.codex-rule-collection-link:visited {
+ color:#f4e5bd!important;
+ text-decoration:underline!important;
+ text-decoration-color:#d7c08a!important;
+ text-underline-offset:4px;
+ font-weight:700;
+}
+body .apolo-quicknav > a.codex-rule-collection-link:hover,
+body .apolo-quicknav > a.codex-rule-collection-link:focus-visible {
+ color:#ffffff!important;
+ background:#384b40!important;
+ outline-offset:3px;
+}
+body .apolo-quicknav > span {color:#e2e7de!important}
+body .apolo-quicknav > a img {background:#eceeed;border-radius:5px;padding:3px;box-sizing:border-box}
+/* Cartões não devem misturar a caixa do custo e a caixa do emblema. */
+.codex-rule-popover__cost .codex-rule-mini-cost {
+ background:#f5f4f0!important;
+ border-color:#d3d3cd!important;
+ color:#273b30!important;
+}
+.codex-rule-popover__cost .codex-rule-mini-cost:has(.codex-symbol-token--PM) {
+ background:#efefed!important;
+ border-color:#c6cbc9!important;
+}
+.codex-rule-popover__body .codex-symbol-token__glyph,
+.codex-rule-popover__cost .codex-symbol-token__glyph {
+ padding:2px;
+ width:28px;
+ height:27px;
+}
+.codex-rule-popover__body .codex-symbol-token__glyph img,
+.codex-rule-popover__cost .codex-symbol-token__glyph img {
+ width:20px!important;
+ height:20px!important;
+ max-width:20px!important;
+}
+/* Notação também ao imprimir: N × fora, símbolo com moldura neutra. */
+@media print {
+ .codex-symbol-token {border:0!important;background:transparent!important;color:#293b32!important}
+ .codex-symbol-token__glyph {background:#f1f1ef!important;border-color:#bac3ba!important}
+ .codex-symbol-token__count {color:#293b32!important}
 }
