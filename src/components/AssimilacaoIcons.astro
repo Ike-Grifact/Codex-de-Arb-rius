@@ -1,0 +1,23 @@
+---
+import {withBase} from "../lib/paths";
+const {value="",slug="",size=19}=Astro.props;
+const icons=[
+  {key:"A",file:"sucesso.svg",label:"Sucesso A"},
+  {key:"B",file:"adaptacao.svg",label:"Adaptação B"},
+  {key:"C",file:"pressao.svg",label:"Pressão C"},
+  {key:"d",file:"pontodedeterminacao.svg",label:"Ponto de Determinação"},
+  {key:"e",file:"pontodeassimilacao.svg",label:"Ponto de Assimilação"},
+  {key:"PM",file:"maestria-araucaria-coroa.svg",label:"Ponto de Maestria"}
+];
+const find=[];
+const val=String(value);
+if(slug==="sucesso-a"||/(?:\d+|\+)A\b/.test(val)||/\bA\s*\/\s*B/.test(val))find.push("A");
+if(slug==="adaptacao-b"||/(?:\d+|\+)B\b/.test(val)||/\bA\s*\/\s*B/.test(val))find.push("B");
+if(slug==="pressao-c"||/(?:\d+|\+)C\b/.test(val))find.push("C");
+if(slug==="pontos-de-determinacao"||/\d+d\b/.test(val))find.push("d");
+if(slug==="pontos-de-assimilacao"||/\d+e\b/.test(val))find.push("e");
+if(slug==="pontos-de-maestria"||/\d+\s*PM\b/.test(val)&&find.length===0)find.push("PM");
+const actual=icons.filter(x=>find.includes(x.key));
+const base=import.meta.env.BASE_URL;
+---
+{actual.map(i=><img class="rule-game-symbol" src={withBase(`symbols/${i.file}`,base)} width={size} height={size} alt={i.label} loading="lazy"/>)} 
