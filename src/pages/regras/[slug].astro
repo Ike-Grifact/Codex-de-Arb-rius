@@ -18,7 +18,7 @@ const related=referenciasArborius.filter(x=>item.related?.includes(x.slug));
 <body><div class="rule-shell">
 <ReferenceSidebar current={item.slug}/>
 <main class="rule-page">
-<div class="rule-topbar"><span>Codex / Regras / {type.title}</span><a href={withBase("maestrias/apolo/capitulo/",base)}>Ler capítulo de Apolo</a></div>
+<div class="rule-topbar"><span>Codex / Regras / {type.title}</span><a href={withBase("dossies/apolo-hellman-f943e1efaaa2.html",base)}>Ler capítulo de Apolo</a></div>
 <header class="rule-intro">
 <p class="rule-eyebrow"><span class={`rule-kind rule-kind--${item.type}`}>{type.title}</span> {type.hint} · {item.origin}</p>
 <h1 class="rule-title">{item.title}</h1><p class="rule-lead">{item.lead}</p>
@@ -37,7 +37,7 @@ const related=referenciasArborius.filter(x=>item.related?.includes(x.slug));
 <h2>Referências relacionadas</h2>
 <div class="rule-reference-grid">{related.map(ref=><a href={withBase(`regras/${ref.slug}/`,base)} class={`rule-ref-tile rule-ref-tile--${ref.type}`} data-codex-ref="true" data-ref-type={ref.type} data-ref-title={ref.title} data-ref-summary={ref.lead} data-ref-label={tiposReferencia[ref.type].title} data-ref-cost={ref.fields?.[0]?.[1]||""}><span class={`rule-kind rule-kind--${ref.type}`}>{tiposReferencia[ref.type].title}</span><strong>{ref.title}</strong><small>{ref.lead}</small></a>)}</div>
 </section>
-<div class="rule-footer"><a class="rule-button rule-button--primary" href={withBase("maestrias/apolo/capitulo/",base)}>Voltar ao capítulo de Apolo</a><a class="rule-button" href={withBase("regras/",base)}>Índice das regras</a></div>
+<div class="rule-footer"><a class="rule-button rule-button--primary" href={withBase("dossies/apolo-hellman-f943e1efaaa2.html",base)}>Voltar ao capítulo de Apolo</a><a class="rule-button" href={withBase("regras/",base)}>Índice das regras</a></div>
 </main></div>
 <script src={withBase("dossies/assets/linked-references.js",base)} defer></script>
 </body></html>
