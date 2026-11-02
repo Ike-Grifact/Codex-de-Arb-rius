@@ -81,7 +81,7 @@
   const starts=["As Cinzas","O Eco","A Vigília","O Segredo","A Sombra","O Último Rastro","A Memória","Os Herdeiros","A Voz"];
   const ends=["das Raízes","do Vale","do Horto","da Serra","do Refúgio","dos Errantes","da Fronteira","das Águas","da Mata"];
   const epithets=["Esquecidas","Silencioso","Velado","de Ferro","Sem Nome","Partido","do Poente","do Primeiro Sol"];
-  document.getElementById("generate-name").addEventListener("click",()=>{document.getElementById("name-result").textContent=starts[rnd(starts.length)]+" "+ends[rnd(ends.length)]+" "+epithets[rnd(epithets.length)]});
+  document.getElementById("generate-name").addEventListener("click",()=>{document.getElementById("name-result").textContent=starts[rnd(starts.length)]+" "+ends[rnd(ends.length)]});
   const search=document.getElementById("search"),sheets=[...document.querySelectorAll(".sheet")];
   search.addEventListener("input",()=>{const s=search.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");sheets.forEach(p=>{const text=p.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");p.classList.toggle("hidden-search",!text.includes(s))})});
   let zoom=1;const updateZoom=()=>document.documentElement.style.setProperty("--zoom",String(zoom));
