@@ -212,14 +212,14 @@
         if (apolo) {
           const value=String(c.value||"");
           const files=[];
-          if (/\\d+\\s*PM\\b/.test(value)) files.push("maestria-araucaria-coroa.svg");
-          if (/(?:\\d+|\\+)A\\b/.test(value)) files.push("sucesso.svg");
-          if (/(?:\\d+|\\+)B\\b/.test(value)) files.push("adaptacao.svg");
-          if (/\\d+d\\b/.test(value)) files.push("pontodedeterminacao.svg");
-          if (/\\d+e\\b/.test(value)) files.push("pontodeassimilacao.svg");
+          if (/\d+\s*PM\b/.test(value)) files.push("maestria-araucaria-coroa.svg");
+          if (/(?:\d+|\+)A\b/.test(value)) files.push("sucesso.svg");
+          if (/(?:\d+|\+)B\b/.test(value)) files.push("adaptacao.svg");
+          if (/\d+d\b/.test(value)) files.push("pontodedeterminacao.svg");
+          if (/\d+e\b/.test(value)) files.push("pontodeassimilacao.svg");
           for (const file of files) {
             const ico=document.createElement("img");
-            ico.src=new URL("../../symbols/"+file,document.currentScript?.src||location.href).href;
+            ico.src=new URL(file,emblem).href;
             ico.alt="";ico.setAttribute("aria-hidden","true");
             chip.appendChild(ico);
           }
