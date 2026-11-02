@@ -749,3 +749,12 @@ body .apolo-quicknav > a img {background:#eceeed;border-radius:5px;padding:3px;b
  .codex-symbol-token__glyph {background:#f1f1ef!important;border-color:#bac3ba!important}
  .codex-symbol-token__count {color:#293b32!important}
 }
+
+
+/* Referências de símbolos dentro de frases (que não contêm números) também seguem a paleta. */
+.apolo-linked-intro a[href*="/regras/sucesso-a/"] img.apolo-rule-symbol,
+.ability-section .apolo-linked-reading a[href*="/regras/sucesso-a/"] img.apolo-rule-symbol {filter:hue-rotate(140deg)}
+.apolo-linked-intro a[href*="/regras/adaptacao-b/"] img.apolo-rule-symbol,
+.ability-section .apolo-linked-reading a[href*="/regras/adaptacao-b/"] img.apolo-rule-symbol {filter:hue-rotate(55deg)}
+.apolo-linked-intro a[href*="/regras/pressao-c/"] img.apolo-rule-symbol,
+.ability-section .apolo-linked-reading a[href*="/regras/pressao-c/"] img.apolo-rule-symbol {filter:hue-rotate(170deg)}
