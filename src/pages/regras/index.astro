@@ -1,0 +1,18 @@
+---
+import {referenciasArborius,tiposReferencia} from "../../data/arborius-references.mjs";
+import {withBase} from "../../lib/paths";
+import ReferenceSidebar from "../../components/ReferenceSidebar.astro";
+import "../../styles/apolo-rule-cards.css";
+import "../../styles/linked-rules.css";
+const base=import.meta.env.BASE_URL;
+const types=["acao","regra","recurso","procedimento"];
+---
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Regras e Ações — Codex de Árborius</title><meta name="description" content="Referências de ações, recursos e regras do Assimilação RPG com páginas próprias e consultas contextuais."/>
+<link rel="icon" type="image/svg+xml" href={withBase("symbols/maestria-araucaria-coroa.svg",base)}/></head>
+<body><div class="rule-shell"><ReferenceSidebar/><main class="rule-page">
+<div class="rule-topbar"><span>Codex / Regras / Glossário</span><a href={withBase("maestrias/apolo/capitulo/",base)}>Capítulo de Apolo</a></div>
+<header class="rule-intro"><p class="rule-eyebrow">Livro de regras interligado</p><h1 class="rule-title">Regras, Ações e Recursos</h1><p class="rule-lead">Cada termo tem seu próprio cartão. Nas páginas das Maestrias, <strong>links dentro do texto</strong> abrem uma prévia e conduzem à referência completa.</p><p class="rule-annotation">Termos do livro-base e adendos de Árborius claramente identificados; referência condensada.</p></header>
+{types.map(t=><section class="rule-collection"><div class="rule-group-heading"><h2>{tiposReferencia[t].title}s</h2><p>{tiposReferencia[t].hint}</p></div>
+<div class="rule-reference-grid">{referenciasArborius.filter(x=>x.type===t).map(x=><a class={`rule-ref-tile rule-ref-tile--${t}`} href={withBase(`regras/${x.slug}/`,base)} data-codex-ref="true" data-ref-type={t} data-ref-title={x.title} data-ref-summary={x.lead} data-ref-label={tiposReferencia[t].title} data-ref-cost={x.fields?.[0]?.[1]||""}><span class={`rule-kind rule-kind--${t}`}>{tiposReferencia[t].title}</span><strong>{x.title}</strong><small>{x.lead}</small></a>)}</div></section>)}
+</main></div><script src={withBase("dossies/assets/linked-references.js",base)} defer></script></body></html>
