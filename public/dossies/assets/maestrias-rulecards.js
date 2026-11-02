@@ -209,7 +209,7 @@
     if (!body.textContent.trim()) body.textContent="Consulte a seção completa para os detalhes desta capacidade.";
     body.scrollTop = 0;
     note.textContent = result.concise ? "Resumo editorial · SRD v1.29 [TESTE]" : (result.full ? "Regra completa deste bloco · Dossiê do jogador" : "Prévia do texto existente · Consulte a seção integral");
-    read.textContent = result.concise ? "Abrir ficha individual →" : "Ler seção completa →";
+    read.textContent = result.concise ? "Ir à regra integral nesta página →" : "Ler seção completa →";
     read.href=result.href;
     pop.setAttribute("aria-hidden","false");
     item.button?.setAttribute("aria-expanded","true");
