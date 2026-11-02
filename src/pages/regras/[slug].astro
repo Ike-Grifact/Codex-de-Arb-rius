@@ -2,6 +2,7 @@
 import {referenciasArborius,tiposReferencia} from "../../data/arborius-references.mjs";
 import {withBase} from "../../lib/paths";
 import ReferenceSidebar from "../../components/ReferenceSidebar.astro";
+import AssimilacaoIcons from "../../components/AssimilacaoIcons.astro";
 import "../../styles/apolo-rule-cards.css";
 import "../../styles/linked-rules.css";
 export function getStaticPaths(){return referenciasArborius.map(item=>({params:{slug:item.slug},props:{item}}));}
@@ -21,7 +22,7 @@ const related=referenciasArborius.filter(x=>item.related?.includes(x.slug));
 <div class="rule-topbar"><span>Codex / Regras / {type.title}</span><a href={withBase("dossies/apolo-hellman-f943e1efaaa2.html",base)}>Ler capítulo de Apolo</a></div>
 <header class="rule-intro">
 <p class="rule-eyebrow"><span class={`rule-kind rule-kind--${item.type}`}>{type.title}</span> {type.hint} · {item.origin}</p>
-<h1 class="rule-title">{item.title}</h1><p class="rule-lead">{item.lead}</p>
+<h1 class="rule-title"><AssimilacaoIcons slug={item.slug} size={40}/>{item.title}</h1><p class="rule-lead">{item.lead}</p>
 <p class="rule-annotation">Fonte: {item.source} · Texto de consulta condensado, não substitui o livro.</p>
 </header>
 <article class={`rule-paper rule-paper--${item.type}`}>
@@ -35,7 +36,7 @@ const related=referenciasArborius.filter(x=>item.related?.includes(x.slug));
 </article>
 <section class="rule-collection">
 <h2>Referências relacionadas</h2>
-<div class="rule-reference-grid">{related.map(ref=><a href={withBase(`regras/${ref.slug}/`,base)} class={`rule-ref-tile rule-ref-tile--${ref.type}`} data-codex-ref="true" data-ref-type={ref.type} data-ref-title={ref.title} data-ref-summary={ref.lead} data-ref-label={tiposReferencia[ref.type].title} data-ref-cost={ref.fields?.[0]?.[1]||""}><span class={`rule-kind rule-kind--${ref.type}`}>{tiposReferencia[ref.type].title}</span><strong>{ref.title}</strong><small>{ref.lead}</small></a>)}</div>
+<div class="rule-reference-grid">{related.map(ref=><a href={withBase(`regras/${ref.slug}/`,base)} class={`rule-ref-tile rule-ref-tile--${ref.type}`} data-codex-ref="true" data-ref-type={ref.type} data-ref-title={ref.title} data-ref-summary={ref.lead} data-ref-label={tiposReferencia[ref.type].title} data-ref-cost={ref.fields?.[0]?.[1]||""}><span class={`rule-kind rule-kind--${ref.type}`}>{tiposReferencia[ref.type].title}</span><strong><AssimilacaoIcons slug={ref.slug} size={18}/>{ref.title}</strong><small>{ref.lead}</small></a>)}</div>
 </section>
 <div class="rule-footer"><a class="rule-button rule-button--primary" href={withBase("dossies/apolo-hellman-f943e1efaaa2.html",base)}>Voltar ao capítulo de Apolo</a><a class="rule-button" href={withBase("regras/",base)}>Índice das regras</a></div>
 </main></div>
