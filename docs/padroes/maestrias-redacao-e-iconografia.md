@@ -76,18 +76,20 @@ Este exemplo **resume** as disposições do SRD; nunca se sobrepõe ao texto nor
 
 | Símbolo | Arquivo oficial do projeto | Família cromática |
 |---|---|---|
-| Sucesso A | sucesso.svg | Azul |
-| Adaptação B | adaptacao.svg | Vermelho |
-| Pressão C | pressao.svg | Ocre |
-| Ponto de Maestria PM | maestria-araucaria-coroa.svg | Verde-copa e coroa dourada |
-| Ponto de Determinação d | pontodedeterminacao.svg | Azul acinzentado |
-| Ponto de Assimilação e | pontodeassimilacao.svg | Terra |
+| Sucesso A | sucesso.svg | **Vermelho** |
+| Adaptação B | adaptacao.svg | **Amarelo** |
+| Pressão C | pressao.svg | **Azul** |
+| Ponto de Maestria PM | maestria-araucaria-coroa.svg | **Cinza-claro neutro na moldura**, preservando a araucária e coroa originais |
+| Ponto de Determinação d | pontodedeterminacao.svg | **Vermelho** |
+| Ponto de Assimilação e | pontodeassimilacao.svg | **Azul** |
 
-**Notação na interface:** número → **×** → **ícone**, sem repetir a letra. Exemplos: **3 × [ícone A]**, **1 × [ícone PM]**, **2 × [ícone e]**. Formas **incorretas**: *ícone + 3A*, *3A + ícone*, *ícone PM + 1 PM*. No texto-fonte, fórmulas/atributos, notações como 3A e 1 PM seguem válidas: é o **renderizador** que altera a apresentação, não os custos.
+**Notação na interface:** número → **×** → **ícone**, sem repetir a letra. **O número e o sinal × ficam FORA da moldura colorida: somente o ícone fica dentro.** Exemplos: **3 × [caixa do ícone A]**, **1 × [caixa cinza-clara com ícone PM]**, **2 × [caixa do ícone e]**. Formas **incorretas**: *ícone + 3A*, *3A + ícone*, *ícone PM + 1 PM*. No texto-fonte, fórmulas/atributos, notações como 3A e 1 PM seguem válidas: é o **renderizador** que altera a apresentação, não os custos.
 
 **Combinações:** escrever **1 × [PM] + (1 × [A] + 1 × [B] OU 2 × [A])**, preservando alternativas, parênteses e sinais de bônus. Não transformar “ou” em “e”, nem símbolos gastos em símbolos investidos.
 
-**Acessibilidade:** cada token possui descrição integral para leitor de tela (exemplo: “3 Sucessos (A)”), SVG com alt vazio, número e ícone inseparáveis, foco identificável e contraste de texto normal ≥4,5:1. Cor jamais é o único indicador.
+**Acessibilidade:** cada token possui descrição integral para leitor de tela (exemplo: “3 Sucessos (A)”), SVG com alt vazio, número + × + ícone inseparáveis **na mesma unidade semântica**, embora a caixa visual envolva apenas o ícone. Foco identificável e contraste de texto normal ≥4,5:1. Cor jamais é o único indicador.
+
+**Contrato cromático fixo aprovado para o Codex:** A = vermelho, B = amarelo, C = azul; d = vermelho, e = azul; PM = cinza-claro. **A cor da moldura do PM não recolore a araucária nem a coroa dentro do SVG.** O dossiê pode usar filtros de matiz localizados para exibir a arte histórica dos símbolos A/B/C nessas famílias de cor, sem modificar os SVGs de origem. Conferir também legenda, chips de consulta, popover e impressão — não basta atualizar somente o token.
 
 **Código do dossiê:**
 - **public/dossies/assets/codex-symbol-notation.js**: renderiza quantidades + ícones oficiais, garante símbolos dos chips de consulta.
@@ -112,7 +114,7 @@ Este exemplo **resume** as disposições do SRD; nunca se sobrepõe ao texto nor
 - [ ] Preços e **“e / ou”** coincidem com o registro normativo.
 - [ ] Nenhum benefício secundário é gratuito por acidente, nem existe custo duplicado.
 - [ ] Regra legível integralmente sem popover.
-- [ ] Quantidades visuais no formato **N × ícone**, sem letra redundante.
+- [ ] Quantidades visuais no formato **N × [caixa contendo só o ícone]**, sem letra redundante; PM cinza claro, A vermelho, B amarelo, C azul, d vermelho e e azul.
 - [ ] Ícone correto nos chips, cards e recursos; PM é araucária com coroa.
 - [ ] Imagens abaixo do texto, sem comprimir a coluna de leitura.
 - [ ] Contraste, mobile, impressão, foco e acessibilidade revisados.
