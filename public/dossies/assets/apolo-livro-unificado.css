@@ -260,3 +260,44 @@
   .apolo-linked-reading h3 .codex-linked-term {color:#244f38!important}
   .apolo-linked-reading h3 {break-after:avoid;page-break-after:avoid}
 }
+
+
+/* Referências mecânicas: símbolos não usam a mesma cor dos links de glossário. */
+.apolo-linked-intro a[href*="/regras/sucesso-a/"],
+.apolo-linked-reading a[href*="/regras/sucesso-a/"] {color:#efd393!important}
+.apolo-linked-intro a[href*="/regras/adaptacao-b/"],
+.apolo-linked-reading a[href*="/regras/adaptacao-b/"] {color:#b2e0bc!important}
+.apolo-linked-intro a[href*="/regras/pressao-c/"],
+.apolo-linked-reading a[href*="/regras/pressao-c/"] {color:#f2afa4!important}
+.apolo-linked-intro .apolo-primer-subhead {
+  margin:21px 0 0;
+  padding:10px 14px 5px;
+  border:1px solid #aeb8a036;
+  border-bottom:0;
+  border-left:3px solid #b5ca9b;
+  border-radius:8px 8px 0 0;
+  background:#ffffff09;
+  color:#f1dba9;
+  font:750 15px/1.45 system-ui,sans-serif;
+}
+.apolo-linked-intro .apolo-primer-subhead + p {
+  max-width:none;
+  margin:0 0 14px;
+  padding:5px 14px 14px;
+  border:1px solid #aeb8a036;
+  border-top:0;
+  border-left:3px solid #b5ca9b;
+  border-radius:0 0 8px 8px;
+  background:#ffffff09;
+}
+@media print {
+  .apolo-linked-intro .apolo-primer-subhead,
+  .apolo-linked-intro .apolo-primer-subhead + p {
+    background:white!important;
+    color:#2d4835!important;
+    border-color:#a8b4a3!important;
+  }
+  .apolo-linked-intro a[href*="/regras/sucesso-a/"] {color:#72531f!important}
+  .apolo-linked-intro a[href*="/regras/adaptacao-b/"] {color:#245b3e!important}
+  .apolo-linked-intro a[href*="/regras/pressao-c/"] {color:#8c382f!important}
+}
