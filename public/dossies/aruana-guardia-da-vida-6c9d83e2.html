@@ -201,7 +201,15 @@ body:before{background-image:repeating-linear-gradient(90deg,#8e744b09 0 1px,tra
  .aru-gaia-spread .aru-art-gaia{height:255px;min-height:0;box-shadow:none}
  .aru-gaia-spread .aru-art-gaia img{object-fit:contain!important}
 }
-</style></head><body><div class="layout">
+</style>
+<style id="codex-illustration-hover-v2">
+/* A imagem permanece no cartão; nenhum zoom de tela cheia ao passar o mouse. */
+.aru-hover-layer{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
+figure img{scale:1;transition:scale .24s ease!important}
+@media(hover:hover) and (pointer:fine){figure:hover img{scale:1.025}}
+@media(prefers-reduced-motion:reduce){figure img{transition:none!important}figure:hover img{scale:1}}
+</style>
+</head><body><div class="layout">
 <aside class="sidebar" aria-label="Índice do dossiê"><div class="identity"><div class="sigil">A</div><div><b>ÁRBORIUS</b><small>CODEX / DOSSIÊ DA JOGADORA</small></div></div>
 <nav class="side-nav" aria-label="Maestrias"><a class="nav-link green" href="#maestria-1"><span class="roman">I</span><span><b>Comunhão Natural</b><small>Vida • Folha • Gaia</small></span></a><a class="nav-link gold" href="#maestria-2"><span class="roman">II</span><span><b>Bênção de Ártemis</b><small>Ciclos • Eclipse</small></span></a><a class="nav-link red" href="#maestria-3"><span class="roman">III</span><span><b>Herança Runaespinho</b><small>Harmonia • Transformação</small></span></a></nav>
 <div class="sidebar-cap">Índice dos capítulos</div><div class="chapter-nav"><a href="#folha-2" class="chapter-link"><span>02</span>COMUNHÃO NATURAL</a><a href="#folha-3" class="chapter-link"><span>03</span>TRAMA VIVA</a><a href="#folha-4" class="chapter-link"><span>04</span>BÊNÇÃO DAS FOLHAS</a><a href="#folha-5" class="chapter-link"><span>05</span>COOPERAÇÃO E CONDICIONANTES</a><a href="#folha-6" class="chapter-link"><span>06</span>VIDA, REPOUSO E SACRIFÍCIO</a><a href="#folha-7" class="chapter-link"><span>07</span>BÊNÇÃO DE ÁRTEMIS</a><a href="#folha-8" class="chapter-link"><span>08</span>O ELO DOS GÊMEOS</a><a href="#folha-9" class="chapter-link"><span>09</span>A CÓLERA E O ECLIPSE</a><a href="#folha-10" class="chapter-link"><span>10</span>A LUZ E A GUARDA</a><a href="#folha-11" class="chapter-link"><span>11</span>HERANÇA RUNAESPINHO</a><a href="#folha-12" class="chapter-link"><span>12</span>LEITURA E HARMONIA</a><a href="#folha-13" class="chapter-link"><span>13</span>REESCRITA E ENXERTIA</a><a href="#folha-14" class="chapter-link"><span>14</span>REGRAS DE COMPATIBILIDADE</a></div>
@@ -397,7 +405,7 @@ function show(f){if(!fine.matches||dialog.open||f.classList.contains("aru-art-fa
 function open(f){hide();if(f.classList.contains("aru-art-failed")){window.open(f.getAttribute("data-image-url"),"_blank","noopener");return;}
  const d=details(f);modalImg.src=d.url;modalImg.alt=d.alt;if(typeof dialog.showModal==="function"){dialog.showModal();close.focus();}else window.open(d.url,"_blank","noopener");}
 figures.forEach(f=>{const img=f.querySelector("img");img.addEventListener("error",()=>{f.classList.add("aru-art-failed");hide();});img.addEventListener("load",()=>{f.classList.remove("aru-art-failed");});if(img.complete&&img.naturalWidth===0)f.classList.add("aru-art-failed");
- f.addEventListener("pointerenter",()=>show(f));f.addEventListener("pointerleave",hide);f.addEventListener("click",()=>open(f));
+ f.addEventListener("pointerleave",hide);f.addEventListener("click",()=>open(f));
  f.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open(f);}});
 });
 close.addEventListener("click",()=>dialog.close());dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close();});dialog.addEventListener("close",hide);

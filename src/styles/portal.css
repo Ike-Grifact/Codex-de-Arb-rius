@@ -162,3 +162,18 @@
 .lore-card > .tag-list {
   margin: 1rem 0;
 }
+
+/* Player guide links — two-column layout */
+.player-guides{margin-bottom:clamp(3rem,7vw,6rem)}
+.player-guides__hint{max-width:38ch;margin:0;color:var(--muted);font-size:.78rem}
+.player-guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.player-guide-card{min-width:0;display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:center;gap:1rem;padding:1.3rem 1.2rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--forest-950);text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.player-guide-card:hover,.player-guide-card:focus-visible{transform:translateY(-2px);border-color:var(--sage-300);box-shadow:0 8px 18px rgba(31,56,43,.09)}
+.player-guide-card:focus-visible{outline:2px solid var(--forest-600);outline-offset:3px}
+.player-guide-card__number{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid var(--sage-300);background:var(--sage-100);font:500 1.15rem Georgia,serif;color:var(--forest-800)}
+.player-guide-card__copy{display:grid;gap:.33rem;min-width:0}
+.player-guide-card__copy strong{font:500 clamp(1.1rem,2.2vw,1.5rem)/1.2 Georgia,serif}
+.player-guide-card__copy small{color:var(--muted);font-size:.75rem;line-height:1.45}
+.player-guide-card__arrow{color:var(--forest-600);font-size:1.1rem}
+@media(max-width:680px){.player-guide-grid{grid-template-columns:1fr}.player-guide-card{padding:1rem}.player-guides__hint{max-width:none}}
+@media(prefers-reduced-motion:reduce){.player-guide-card{transition:none}.player-guide-card:hover,.player-guide-card:focus-visible{transform:none}}
