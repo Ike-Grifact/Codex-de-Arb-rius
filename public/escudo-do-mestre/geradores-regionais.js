@@ -59,7 +59,9 @@ const flora={
  ["mangue-branco","Laguncularia racemosa","Espécie de mangue nas formações flúvio-marinhas."],
  ["siriúba","Avicennia schaueriana","Árvore de manguezal do litoral paranaense."],
  ["caixeta","Tabebuia cassinoides","Árvore de áreas encharcadas e caxetais."],
- ["pitangueira","Eugenia uniflora","Frutífera nativa presente na região."]
+ ["pitangueira","Eugenia uniflora","Frutífera nativa presente na região."],
+ ["erva-baleeira","Varronia curassavica","Arbusto medicinal nativo de formações atlânticas, associado a ambientes costeiros."],
+ ["aroeira-vermelha","Schinus terebinthifolia","Árvore nativa de formações litorâneas, incluindo restinga."]
  ],
  serra:[
  ["palmito-juçara","Euterpe edulis","Palmeira de sub-bosque da Mata Atlântica."],
@@ -69,7 +71,9 @@ const flora={
  ["quaresmeira","Pleroma sp.","Árvore ou arbusto de flores roxas de mata atlântica."],
  ["pitangueira","Eugenia uniflora","Planta frutífera nativa."],
  ["guanandi","Calophyllum brasiliense","Árvore de formações úmidas."],
- ["caroba","Jacaranda puberula","Árvore nativa registrada no litoral."]
+ ["caroba","Jacaranda puberula","Árvore nativa registrada no litoral."],
+ ["guaco","Mikania glomerata","Trepadeira de florestas úmidas do Sul e Sudeste."],
+ ["erva-baleeira","Varronia curassavica","Arbusto aromático registrado na Mata Atlântica."]
  ],
  planalto:[
  ["araucária","Araucaria angustifolia","Pinheiro-do-paraná, espécie emblemática das florestas do planalto."],
@@ -79,24 +83,57 @@ const flora={
  ["pinheiro-bravo","Podocarpus lambertii","Conífera nativa de regiões de altitude."],
  ["guabirobeira","Campomanesia xanthocarpa","Frutífera nativa do Sul."],
  ["cedro-rosa","Cedrela fissilis","Árvore florestal nativa."],
- ["butiá","Butia eriospatha","Palmeira nativa de regiões do Sul."]
+ ["butiá","Butia eriospatha","Palmeira nativa de regiões do Sul."],
+ ["espinheira-santa","Maytenus ilicifolia","Arbusto nativo da região Sul, documentado inclusive no Paraná."]
  ],
  campos:[
- ["carqueja","Baccharis sp.","Arbusto comum em ambientes de campos."],
+ ["carqueja-amarga","Baccharis trimera","Subarbusto típico de campos e áreas abertas do Sul."],
  ["butiá","Butia eriospatha","Palmeira que pode ocorrer em mosaicos de campos e mata."],
  ["guabirobeira","Campomanesia xanthocarpa","Frutífera encontrada em áreas de transição."],
  ["capim-barba-de-bode","Aristida sp.","Gramínea de vegetação campestre."],
  ["araucária","Araucaria angustifolia","Pode aparecer nos limites de fragmentos florestais."],
  ["pitangueira","Eugenia uniflora","Frutífera nativa de locais adequados."],
  ["bracatinga","Mimosa scabrella","Árvore pioneira de áreas abertas e de transição."],
- ["erva-mate","Ilex paraguariensis","Planta de capões e formações florestais."]
+ ["erva-mate","Ilex paraguariensis","Planta de capões e formações florestais."],
+ ["macela","Achyrocline satureioides","Herbácea aromática associada a ambientes campestres."],
+ ["espinheira-santa","Maytenus ilicifolia","Espécie nativa de matas e bordas florestais do Sul."]
  ]
 };
-const personals=[
- ["João","Miguel","Bento","Vicente","Davi","Pedro","Luiz","Antônio","Rafael","Caio","Elias","Túlio","Mateus","Artur","Joaquim","Daniel"],
- ["Ana","Maria","Helena","Luísa","Cecília","Rosa","Lúcia","Clara","Juliana","Beatriz","Irene","Tereza","Lorena","Isadora","Marina","Ester"]
-];
-const surnames=["Silva","Santos","Oliveira","Souza","Almeida","Machado","Rosa","Moraes","Barros","Vieira","Ribeiro","Ferreira","Carvalho","Martins","Costa","Pereira","Lopes","Rodrigues","Bianchi","Kowalski","Zielinski","Schneider","Siqueira","Farias","Gonçalves","Pereira de Lima","Nogueira","Bortolotti"];
+const namePools={
+ brasil:{label:"Brasil e lusofonia",given:[["João","Miguel","Bento","Vicente","Davi","Pedro","Luiz","Antônio","Rafael","Caio","Elias","Túlio","Mateus","Artur","Joaquim","Daniel","Iuri"],["Ana","Maria","Helena","Luísa","Cecília","Rosa","Lúcia","Clara","Juliana","Beatriz","Irene","Tereza","Lorena","Isadora","Marina","Tainá"]],surnames:["Silva","Santos","Oliveira","Souza","Almeida","Machado","Moraes","Barros","Vieira","Ribeiro","Ferreira","Carvalho","Martins","Costa","Pereira","Lopes","Rodrigues","Farias"]},
+ hispanico:{label:"América Latina hispanofalante",given:[["Mateo","Diego","Santiago","Javier","Emilio","Andrés","Ignacio","Gabriel"],["Valentina","Lucía","Camila","Sofía","Isabela","Mariana","Jimena","Paloma"]],surnames:["García","Hernández","González","Ramírez","Fernández","Mendoza","Vargas","Navarro","Rojas","Salazar","Morales"]},
+ africa:{label:"Repertórios africanos diversos",given:[["Kwame","Kofi","Amadou","Chinedu","Ibrahim","Boubacar","Tendai","Sibusiso"],["Amina","Fatou","Binta","Zainab","Ama","Nia","Thandiwe","Abena"]],surnames:["Diallo","Diop","Traoré","Mensah","Okafor","N'Diaye","Kamara","Mbeki","Osei","Bello"]},
+ arabico:{label:"Árabe e Oriente Médio",given:[["Omar","Karim","Samir","Rami","Youssef","Nabil","Tariq","Zaid"],["Leila","Nour","Yasmin","Salma","Mariam","Hana","Dalia","Lina"]],surnames:["Haddad","Mansour","Khalil","Farah","Nasser","Rahman","Saleh","Habib","Darwish","Aziz"]},
+ europeu:{label:"Europa ocidental e setentrional",given:[["Luca","Jonas","Emil","Hugo","Nicolas","Henrik","Leon","Theo"],["Ingrid","Elena","Clara","Astrid","Emma","Elise","Freya","Sophie"]],surnames:["Rossi","Bianchi","Schneider","Müller","Fischer","Dubois","Moreau","Lindberg","Andersen","Janssen"]},
+ leste:{label:"Europa central e oriental",given:[["Marek","Aleksander","Ilya","Milan","Luka","Tomasz","Pavel","Viktor"],["Milena","Zofia","Nadia","Daria","Anja","Vera","Irina","Katarina"]],surnames:["Kowalski","Novak","Petrov","Horvat","Zielinski","Kovač","Nowak","Sokolov","Marković","Popescu"]},
+ "sul-asia":{label:"Sul da Ásia",given:[["Ravi","Arjun","Aarav","Dev","Kabir","Rohan","Ishaan","Amir"],["Asha","Priya","Anaya","Meera","Nisha","Kiran","Diya","Leena"]],surnames:["Patel","Shah","Nair","Singh","Rao","Mehta","Khan","Das","Menon","Kapoor"]},
+ japao:{label:"Japão",surnameFirst:true,given:[["Haruto","Ren","Kenji","Akira","Hiroshi","Takeshi","Sora","Yuto"],["Yui","Hana","Mei","Sakura","Aoi","Emi","Yuna","Rin"]],surnames:["Sato","Tanaka","Suzuki","Mori","Nakamura","Yamamoto","Ito","Kobayashi","Watanabe"]},
+ china:{label:"China",surnameFirst:true,given:[["Wei","Jun","Hao","Ming","Lei","Tao","Qiang","Jian"],["Mei","Lin","Yan","Lian","Xiu","Yue","Na","Jing"]],surnames:["Wang","Chen","Li","Zhao","Huang","Zhang","Liu","Wu","Xu","Sun"]},
+ coreia:{label:"Coreia",surnameFirst:true,given:[["Min-jun","Seo-jun","Ji-ho","Hyun-woo","Do-yun","Tae-hyun","Jun-seo"],["Ji-woo","Seo-yeon","Min-seo","Ha-eun","Su-bin","Yu-na","Ji-min"]],surnames:["Kim","Park","Lee","Choi","Jeong","Kang","Cho","Yoon","Han","Lim"]}
+};
+const namePoolKeys=Object.keys(namePools);
+function humanName(preference,gender){
+ const sourceKey=preference==="global"||preference==="livre"?one(namePoolKeys):preference;
+ const source=namePools[sourceKey]||namePools.brasil;
+ const target=preference==="livre"?namePools[one(namePoolKeys)]:source;
+ const first=one(source.given[gender]);const last=one(target.surnames);
+ return {value:preference==="livre"?(first+" "+last):(source.surnameFirst?(last+" "+first):(first+" "+last)),
+ note:preference==="livre"?"Nome e sobrenome combinados livremente entre repertórios linguísticos.":("Repertório nominal: "+source.label+"."),
+ source:sourceKey};
+}
+const medicineReference={
+ "Maytenus ilicifolia":{basis:"Indicação fitoterápica registrada no SUS",info:"Espinheira-santa: produtos padronizados das folhas são usados para sintomas de dispepsia e como coadjuvantes em gastrite e úlcera gastroduodenal. Não é autorização para uso caseiro.",source:"Ministério da Saúde",url:"https://www.gov.br/saude/pt-br/composicao/sectics/plantas-medicinais-e-fitoterapicos/plantas-medicinais-e-fitoterapicos-no-sus/"},
+ "Mikania glomerata":{basis:"Indicação fitoterápica registrada no SUS",info:"Guaco: uso fitoterápico expectorante e broncodilatador. Diferenciar produto regulamentado de identificação e preparo improvisados.",source:"Ministério da Saúde",url:"https://www.gov.br/saude/pt-br/composicao/sectics/plantas-medicinais-e-fitoterapicos/plantas-medicinais-e-fitoterapicos-no-sus/"},
+ "Baccharis trimera":{basis:"Uso documentado em formulário farmacopéico",info:"Carqueja-amarga: uso antidispéptico registrado. Há advertências e interações possíveis; não presumir segurança só por ser planta.",source:"Formulário de Fitoterápicos (Ministério da Saúde)",url:"https://www.gov.br/saude/pt-br/acesso-a-informacao/acoes-e-programas/plantas-medicinais-e-fitoterapicos-2/arquivos/publicacoes/formulario-de-fitoterapicos-da-farmacopeia-brasileira-sem-marca"},
+ "Varronia curassavica":{basis:"Uso tópico documentado",info:"Erva-baleeira: folhas e extratos estudados para ação anti-inflamatória, especialmente em aplicações tópicas para dor muscular. Não extrapolar para ingestão ou qualquer ferimento.",source:"CATI — extensão rural",url:"https://www.cati.sp.gov.br/Cati/_tecnologias/plantas_medicinais_aromaticas/erva_baleeira.php"},
+ "Schinus terebinthifolia":{basis:"Indicação tópica em fitoterápicos do SUS",info:"Aroeira-vermelha: a casca integra fitoterápicos tópicos com indicação específica. Não supor uso oral seguro ou que toda a árvore seja medicinal.",source:"Ministério da Saúde",url:"https://www.gov.br/saude/pt-br/composicao/sectics/plantas-medicinais-e-fitoterapicos/plantas-medicinais-e-fitoterapicos-no-sus/"},
+ "Eugenia uniflora":{basis:"Uso tradicional relatado (não equiparar a eficácia clínica)",info:"Pitangueira: folhas aparecem em relatos etnobotânicos como antidiarreicas; frutos são alimentares. A tradição não comprova que uma preparação seja segura ou eficaz.",source:"MDA — estudo etnobotânico",url:"https://www.gov.br/mda/pt-br/acervo-nucleo-de-estudos-agrarios/nead-outras-publicacoes-1/20-pescadores-artesanais-da-lagoa-mirim-etnoecologia-e-resiliencia.pdf"},
+ "Achyrocline satureioides":{basis:"Uso tradicional registrado",info:"Macela: utilizada tradicionalmente em infusões para desconfortos digestivos. Atribuição etnobotânica, sem validação clínica automática.",source:"MDA — estudo etnobotânico",url:"https://www.gov.br/mda/pt-br/acervo-nucleo-de-estudos-agrarios/nead-outras-publicacoes-1/20-pescadores-artesanais-da-lagoa-mirim-etnoecologia-e-resiliencia.pdf"},
+ "Ilex paraguariensis":{basis:"Uso alimentar e composto estimulante",info:"Erva-mate: folhas contêm cafeína, de efeito estimulante. É alimento/bebida, não uma indicação clínica para tratar doenças.",source:"Ministério da Saúde — definição de mate",url:"https://bvs.saude.gov.br/bvs/saudelegis/cnnpa/1978/res0012_30_03_1978.html"},
+ "Araucaria angustifolia":{basis:"Valor alimentar e ecológico — sem indicação terapêutica neste acervo",info:"Araucária: o pinhão tem valor alimentar e a espécie é estrutural para a floresta. Não foi selecionada indicação clínica validada para cura.",source:"",url:""},
+ "Euterpe edulis":{basis:"Valor alimentar e ecológico — sem indicação terapêutica neste acervo",info:"Juçara: os frutos têm uso alimentar e sustentam fauna frugívora. Não confundir alimento com medicamento; evitar coleta predatória de plantas nativas.",source:"",url:""}
+};
+const defaultMedicine={basis:"Sem indicação medicinal verificada nas referências selecionadas",info:"A espécie pode ter importância ecológica, alimentar ou artesanal, mas o gerador não atribui cura, efeito farmacológico nem segurança de uso sem documentação específica.",source:"",url:""};
 const roles={
  litoral:[["barqueiro","barqueira"],["pescador","pescadora"],["guia de trilhas","guia de trilhas"],["vigia do cais","vigia do cais"],["artesão de canoas","artesã de canoas"],["negociante de sal","negociante de sal"]],
  serra:[["mateiro","mateira"],["batedor","batedora"],["herbalista","herbalista"],["guarda de passagem","guarda de passagem"],["cartógrafo","cartógrafa"],["mensageiro","mensageira"]],
@@ -138,26 +175,86 @@ const variants=[
  ["da marca azul","Exibe pigmentação localizada, cuja origem precisa ser investigada."]
 ];
 const nameKind=document.getElementById("name-kind"),nameRegion=document.getElementById("name-region"),assimilated=document.getElementById("name-assimilated");
+const nameCulture=document.getElementById("name-culture"),hybridType=document.getElementById("name-hybrid-type"),hybridRegion=document.getElementById("name-hybrid-region");
+const cultureControls=document.getElementById("name-origin-controls"),hybridControls=document.getElementById("name-hybrid-controls"),assimilatedControl=document.getElementById("name-assimilated-control");
 const titleNode=document.getElementById("name-result"),detailNode=document.getElementById("name-detail"),contextNode=document.getElementById("name-context"),categoryNode=document.getElementById("name-category");
+const ancestryNode=document.getElementById("name-ancestry"),ancestryDetail=document.getElementById("name-ancestry-detail");
+const medicineNode=document.getElementById("name-medicinal"),medicineLabel=document.getElementById("name-medicinal-label"),medicineDetail=document.getElementById("name-medicinal-detail"),medicineSource=document.getElementById("name-medicinal-source");
+function updateGeneratorVisibility(){
+ const isHuman=nameKind.value==="npc"||nameKind.value==="enemy",isHybrid=nameKind.value==="hybrid";
+ cultureControls.hidden=!isHuman;hybridControls.hidden=!isHybrid;assimilatedControl.hidden=isHybrid;
+}
+function clearExtras(){
+ ancestryNode.hidden=true;medicineNode.hidden=true;medicineSource.hidden=true;
+}
+function showMedicine(plant,hybrid=false){
+ if(!plant)return;
+ const data=medicineReference[plant[1]]||defaultMedicine;
+ medicineNode.hidden=false;
+ medicineLabel.textContent=data.basis;
+ medicineDetail.textContent=plant[0]+" ("+plant[1]+"): "+data.info+(hybrid?" A fusão Assimilada NÃO herda essa propriedade por definição.":"");
+ if(data.url){medicineSource.hidden=false;medicineSource.href=data.url;medicineSource.textContent="Ver fonte: "+data.source}
+ else{medicineSource.hidden=true;medicineSource.removeAttribute("href")}
+}
+function hybridName(first,second){
+ const root=t=>t.toLocaleLowerCase("pt-BR").split(/[\s–—-]+/).filter(x=>!["de","do","da","dos","das"].includes(x))[0]||t;
+ const a=root(first),b=root(second);
+ const prefix=a.slice(0,Math.max(3,Math.ceil(a.length*.56)));
+ let suffix=b.slice(Math.max(1,Math.floor(b.length*.42)));
+ if(/[aeiouáéíóúâêôãõ]$/i.test(prefix)&&/^[aeiouáéíóúâêôãõ]/i.test(suffix))suffix=suffix.slice(1)||suffix;
+ const joined=prefix+suffix;
+ return joined.charAt(0).toLocaleUpperCase("pt-BR")+joined.slice(1);
+}
+function hybridSecondRegion(primary){
+ const choice=hybridRegion.value;
+ if(choice==="same")return primary;
+ if(choice==="any")return one(Object.keys(habitat).filter(k=>k!==primary));
+ return choice;
+}
+function makeHybrid(){
+ const kind=hybridType.value;
+ const type=kind==="random"?one(["fauna-fauna","fauna-flora","flora-flora"]):kind;
+ const [k1,k2]=type.split("-");
+ const regionA=nameRegion.value,regionB=hybridSecondRegion(regionA);
+ const first=one(k1==="fauna"?fauna[regionA]:flora[regionA]);
+ const options=(k2==="fauna"?fauna[regionB]:flora[regionB]).filter(x=>x[1]!==first[1]);
+ const second=one(options);
+ if(!first||!second)throw Error("Matrizes regionais insuficientes");
+ const sourceLabel=first[0]+" ("+first[1]+") × "+second[0]+" ("+second[1]+")";
+ const merged=hybridName(first[0],second[0]);
+ const matrixText={"fauna-fauna":"Duas matrizes animais","fauna-flora":"Uma matriz animal e uma vegetal","flora-flora":"Duas matrizes vegetais"}[type];
+ const v=one(variants);
+ titleNode.textContent=merged+" — "+v[0];
+ detailNode.textContent="Fusão fictícia: "+sourceLabel+". "+matrixText+" orientam o desenho; "+v[1];
+ categoryNode.textContent="Criatura Assimilada · "+habitat[regionA]+" + "+habitat[regionB];
+ contextNode.textContent="PROPOSTA DE LORE: nome e aparência não definem Aptidões, Saúde, mutações, perigo, comportamento nem compatibilidade anatômica. Aprovação do Assimilador é indispensável.";
+ ancestryNode.hidden=false;ancestryDetail.textContent=sourceLabel;
+ showMedicine(k1==="flora"?first:(k2==="flora"?second:null),true);
+}
 function generateEncounter(){
- const kind=nameKind.value,region=nameRegion.value,kindText=({npc:"NPC",enemy:"Antagonista",fauna:"Fauna",flora:"Flora"})[kind];
+ updateGeneratorVisibility();clearExtras();
+ const kind=nameKind.value,region=nameRegion.value,kindText=({npc:"NPC",enemy:"Antagonista",fauna:"Fauna",flora:"Flora",hybrid:"Assimilada"})[kind];
  categoryNode.textContent=kindText+" · "+habitat[region];
+ if(kind==="hybrid"){makeHybrid();return}
  if(kind==="npc"||kind==="enemy"){
-   const g=rnd(2),name=one(personals[g])+" "+one(surnames),job=one(kind==="enemy"?enemyRoles[region]:roles[region])[g];
-   titleNode.textContent=name;
-   detailNode.textContent=(kind==="enemy"?"Antagonista humano — ":"Personagem — ")+job+". "+one(kind==="enemy"?enemyHooks:npcHooks);
-   contextNode.textContent=(assimilated.checked?"Hipótese narrativa: possui um sinal de contato com a Assimilação, ainda não revelado. ":"")+"Não há ficha, hostilidade inevitável nem nível de poder atribuído.";
+  const g=rnd(2),identity=humanName(nameCulture.value,g),job=one(kind==="enemy"?enemyRoles[region]:roles[region])[g];
+  titleNode.textContent=identity.value;
+  detailNode.textContent=(kind==="enemy"?"Antagonista humano — ":"Personagem — ")+job+". "+one(kind==="enemy"?enemyHooks:npcHooks);
+  contextNode.textContent=identity.note+" O nome não determina origem, etnia, cultura nem índole. "+(assimilated.checked?"Possui um sinal de Assimilação ainda não explicado. ":"")+"Sem ficha nem nível de poder definido.";
  }else{
-   const species=one(kind==="fauna"?fauna[region]:flora[region]),v=one(variants);
-   titleNode.textContent=species[0]+(assimilated.checked?" "+v[0]:"");
-   detailNode.textContent=species[1]+" · "+species[2];
-   contextNode.textContent=assimilated.checked?"EXPANSÃO FICCIONAL: "+v[1]+" Não é propriedade real da espécie nem mutação oficial.":"Espécie de referência regional; sua presença no local específico depende do habitat e da história.";
+  const plant=kind==="flora",species=one(plant?flora[region]:fauna[region]),v=one(variants);
+  titleNode.textContent=species[0]+(assimilated.checked?" "+v[0]:"");
+  detailNode.textContent=species[1]+" · "+species[2];
+  contextNode.textContent=assimilated.checked?"EXPANSÃO FICCIONAL: "+v[1]+" O novo organismo não adquire atributos, poderes ou propriedades medicinais automaticamente.":"Referência ecológica; ocorrência local depende do habitat e do contexto da campanha.";
+  if(plant)showMedicine(species,false);
  }
 }
 document.getElementById("generate-name").addEventListener("click",generateEncounter);
-[nameKind,nameRegion,assimilated].forEach(el=>el.addEventListener("change",generateEncounter));
+[nameKind,nameRegion,nameCulture,hybridType,hybridRegion,assimilated].forEach(el=>el.addEventListener("change",generateEncounter));
 document.getElementById("copy-name").addEventListener("click",async()=>{
- const txt=[titleNode.textContent,categoryNode.textContent,detailNode.textContent,contextNode.textContent].join("\n");
+ const txt=[titleNode.textContent,categoryNode.textContent,detailNode.textContent,contextNode.textContent,
+ ancestryNode.hidden?"":("Espécies de origem: "+ancestryDetail.textContent),
+ medicineNode.hidden?"":("Propriedades reais / advertências: "+medicineLabel.textContent+" — "+medicineDetail.textContent)].filter(Boolean).join("\n");
  try{await navigator.clipboard.writeText(txt)}catch(e){window.prompt("Copie o resultado:",txt)}
 });
 const taskDefs=[
