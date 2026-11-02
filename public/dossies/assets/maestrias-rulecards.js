@@ -2,7 +2,6 @@
 (() => {
   "use strict";
 
-  const iconUrl = new URL("../symbols/maestria-araucaria-coroa.svg", document.currentScript?.src || location.href).href;
   // O script está em /dossies/assets/; o emblema é armazenado em /symbols/.
   const emblem = new URL("../../symbols/maestria-araucaria-coroa.svg", document.currentScript?.src || location.href).href;
   const apolo = location.pathname.includes("apolo-hellman");
@@ -56,7 +55,8 @@
         used += el.textContent?.length || 0;
       }
     }
-    wrapper.append(...clone.childNodes);
+    if (clone.matches("p,li,table,ul,ol,blockquote")) wrapper.append(clone);
+    else wrapper.append(...clone.childNodes);
     return wrapper;
   }
 
@@ -94,6 +94,12 @@
   }
 
   function resolve(node) {
+    const apoloSection = apolo && node.matches(".section-header h2") ? node.closest(".ability-section[id]") : null;
+    if (apoloSection && apoloSummary[apoloSection.id]) {
+      const div = document.createElement("div");
+      div.innerHTML = apoloSummary[apoloSection.id].join("");
+      return {heading:normalize(node.textContent),cost:"Trilogia PO/PM · campanha em teste",html:div,full:false,href:"#" + apoloSection.id};
+    }
     const parent = node.closest(".technique");
     const heading = normalize(node.textContent.replace("⌕", ""));
     if (parent) {
