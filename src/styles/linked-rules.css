@@ -1,0 +1,60 @@
+/* Codex de Árborius — referências cruzadas por tipo, adaptadas ao sistema Assimilação. */
+:root{--ref-action:#946338;--ref-rule:#674f92;--ref-resource:#287b78;--ref-procedure:#a04f4a;--ref-ability:#315d49}
+.rule-linked-help{color:#687469;font-size:12px}
+.codex-linked-term{font-weight:750;text-decoration-line:underline;text-decoration-style:solid;text-decoration-thickness:1.5px;text-underline-offset:3px;transition:background .16s ease,color .16s ease;border-radius:2px;padding:0 1px}
+.codex-linked-term:hover,.codex-linked-term:focus-visible{background:#dce8da;outline-offset:3px}
+.codex-linked-term--habilidade{color:#285e4d}
+.codex-linked-term--acao{color:#88592c}
+.codex-linked-term--regra{color:#65498d}
+.codex-linked-term--recurso{color:#146b6c}
+.codex-linked-term--procedimento{color:#9b4a46}
+.rule-kind{display:inline-block;vertical-align:baseline;border:1px solid transparent;border-radius:3px;padding:3px 7px;margin-right:5px;text-transform:uppercase;letter-spacing:.085em;font:750 10px/1.1 system-ui,sans-serif}
+.rule-kind--habilidade{background:#e2ede3;color:#23533d;border-color:#a1bdac}
+.rule-kind--acao{background:#f0e5d8;color:#8c5b30;border-color:#d8bba1}
+.rule-kind--regra{background:#ece6f5;color:#6d518f;border-color:#c7b8d8}
+.rule-kind--recurso{background:#daedeb;color:#216b69;border-color:#a5cac6}
+.rule-kind--procedimento{background:#f3e4e1;color:#954b48;border-color:#dbb7b0}
+.rule-reference-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.rule-ref-tile{display:flex;flex-direction:column;gap:7px;min-width:0;padding:15px 16px;border:1px solid #d3cabb;border-left:4px solid var(--ref-rule);border-radius:8px;background:#fcfaf4;color:#293b31;text-decoration:none}
+.rule-ref-tile--acao{border-left-color:var(--ref-action)}
+.rule-ref-tile--regra{border-left-color:var(--ref-rule)}
+.rule-ref-tile--recurso{border-left-color:var(--ref-resource)}
+.rule-ref-tile--procedimento{border-left-color:var(--ref-procedure)}
+.rule-ref-tile strong{font:650 17px/1.2 Georgia,serif;color:#284737}
+.rule-ref-tile small{font:12px/1.55 system-ui,sans-serif;color:#68736a}
+.rule-ref-tile:hover,.rule-ref-tile:focus-visible{box-shadow:0 8px 18px #14372718;background:#fff}
+.rule-ref-tile .rule-kind{align-self:flex-start}
+.rule-paper--acao .rule-ref-head{border-top:4px solid var(--ref-action)}.rule-paper--regra .rule-ref-head{border-top:4px solid var(--ref-rule)}.rule-paper--recurso .rule-ref-head{border-top:4px solid var(--ref-resource)}.rule-paper--procedimento .rule-ref-head{border-top:4px solid var(--ref-procedure)}
+.rule-ref-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.rule-procedure{list-style:none;counter-reset:none;margin:0;padding:0}
+.rule-procedure li{display:flex;gap:14px;align-items:baseline;padding:12px 0;border-bottom:1px solid #e5ddce;font-size:14px;line-height:1.7;color:#36463c}
+.rule-procedure li:last-child{border-bottom:0}
+.rule-procedure li>strong{flex:0 0 27px;font:750 11px/1.5 system-ui;color:#7b765e}
+.rule-page--chapter{max-width:970px}
+.rule-chapter-hero{padding-bottom:19px;border-bottom:1px solid #cfc9ba}
+.rule-chapter-jumps{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 0}
+.rule-chapter-jumps a{display:inline-flex;padding:7px 12px;border:1px solid #b1c4b5;border-radius:5px;color:#27513e;text-decoration:none;background:#edf3eb;font-size:12px;font-weight:750}
+.rule-reading-intro,.rule-chapter-section,.rule-chapter-end{margin:0 0 45px;scroll-margin-top:18px}
+.rule-reading-intro{padding:23px 0;border-bottom:1px solid #cfc9ba}
+.rule-page--chapter h2{color:#244332;font:500 clamp(27px,3.7vw,39px)/1.2 Georgia,serif}
+.rule-page--chapter h3{margin:25px 0 8px;color:#2c3c32;font:700 20px/1.23 Georgia,serif}
+.rule-page--chapter p{max-width:76ch;color:#3c4c40;line-height:1.8;font-size:15px}
+.rule-chapter-heading{display:flex;gap:18px;align-items:center;margin:29px 0 21px;padding:17px 19px;border-top:2px solid #b19668;border-bottom:1px solid #d0c6b5;background:linear-gradient(95deg,#eae3d3,#f8f4eb)}
+.rule-chapter-heading>span{display:grid;place-items:center;flex:0 0 59px;height:59px;border:1px solid #b59a70;border-radius:50%;font:500 30px Georgia,serif;color:#547363;background:#f5efdf}
+.rule-chapter-heading p{margin:0;color:#7b7565;font:750 10px/1.2 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.1em}
+.rule-chapter-heading h2{margin:2px 0 3px!important}
+.rule-chapter-heading small{color:#607165;font-size:12px}
+.rule-chapter-end{margin-top:36px;padding:19px 21px;border:1px solid #dad0b9;border-radius:8px;background:#f2ede2}
+.rule-ref-popover{display:none;position:fixed;z-index:16000;width:min(380px,calc(100vw - 24px));max-height:min(72vh,470px);overflow:auto;padding:0;border:1px solid #b7a987;border-radius:10px;background:#faf7ee;color:#293a31;box-shadow:0 20px 55px #112a1fa3;font:13px/1.55 system-ui,sans-serif}
+.rule-ref-popover[data-open="true"]{display:block}
+.rule-ref-popover__head{display:flex;gap:11px;align-items:center;padding:13px 15px;border-bottom:1px solid #d7cfbf;background:#f0e9d8}
+.rule-ref-popover__head strong{font:700 18px/1.2 Georgia,serif;color:#2c4437;overflow-wrap:anywhere}
+.rule-ref-popover__body{padding:13px 15px;font-size:13px}
+.rule-ref-popover__body p{margin:0 0 9px}
+.rule-ref-popover__footer{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 14px;border-top:1px solid #d7cfbf;background:#f5f0e5}
+.rule-ref-popover__footer a{font-size:12px;font-weight:800;color:#285744}
+.rule-ref-popover__footer small{font-size:10px;color:#716c5e}
+@media(max-width:780px){.rule-reference-grid{grid-template-columns:1fr}.rule-page--chapter p{font-size:14px}}
+@media(max-width:690px){.rule-chapter-heading{padding:12px;gap:12px}.rule-chapter-heading>span{flex-basis:45px;height:45px;font-size:23px}.rule-ref-popover{left:10px!important;right:10px!important;top:auto!important;bottom:10px!important;width:auto!important}}
+@media(prefers-reduced-motion:reduce){.codex-linked-term{transition:none}}
+@media print{.rule-ref-popover{display:none!important}.rule-chapter-jumps{display:none}.codex-linked-term{text-decoration:none}}
