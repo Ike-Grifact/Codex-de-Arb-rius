@@ -378,3 +378,271 @@
   .apolo-ability-index__links a,
   .ability-section .technique a {transition:none}
 }
+
+/* ARBORIUS NOTATION v1 — ícones oficiais, custos legíveis e iconografia de referências.
+   A=sucesso azul, B=adaptação vermelha, C=pressão ocre, PM=araucária coroada.
+   As cores reforçam nomes/ícones; jamais são o único indicador de significado. */
+:root{
+ --codex-symbol-a:#245a78;
+ --codex-symbol-b:#803f42;
+ --codex-symbol-c:#78571d;
+ --codex-symbol-pm:#2d5a47;
+}
+.codex-symbol-token {
+ display:inline-flex!important;
+ align-items:center!important;
+ vertical-align:-.24em;
+ gap:4px;
+ max-width:100%;
+ padding:1px 5px 1px 5px;
+ margin:0 2px;
+ border:1px solid #bdd0d9;
+ border-radius:5px;
+ background:#e8f1f6;
+ color:var(--codex-symbol-a)!important;
+ font:800 .88em/1.25 system-ui,sans-serif!important;
+ letter-spacing:0;
+ white-space:nowrap;
+ word-break:normal;
+ box-decoration-break:clone;
+}
+.codex-symbol-token__count,
+.codex-symbol-token__modifier {display:inline-block;flex:none}
+.codex-symbol-token img{
+ display:inline-block!important;
+ width:19px!important;
+ height:19px!important;
+ max-width:19px!important;
+ min-width:19px;
+ object-fit:contain!important;
+ vertical-align:middle;
+ margin:0!important;
+ flex:none;
+}
+.codex-symbol-token--B {background:#f4e6e5;color:var(--codex-symbol-b)!important;border-color:#d8b3b4}
+.codex-symbol-token--C {background:#f5e9d1;color:var(--codex-symbol-c)!important;border-color:#d3bb83}
+.codex-symbol-token--PM {background:#e6f0e8;color:var(--codex-symbol-pm)!important;border-color:#b8d0c0}
+.codex-symbol-token--d {background:#e8eef5;color:#2b5178!important;border-color:#b6c9db}
+.codex-symbol-token--e {background:#f3e7dc;color:#714e2a!important;border-color:#d9bfa0}
+.apolo-linked-reading .codex-symbol-token,
+.apolo-linked-intro .codex-symbol-token,
+.ability-section .technique .codex-symbol-token{
+ color:inherit;
+}
+.apolo-linked-reading .codex-symbol-token--A,
+.apolo-linked-intro .codex-symbol-token--A,
+.ability-section .technique .codex-symbol-token--A {color:var(--codex-symbol-a)!important}
+.apolo-linked-reading .codex-symbol-token--B,
+.apolo-linked-intro .codex-symbol-token--B,
+.ability-section .technique .codex-symbol-token--B {color:var(--codex-symbol-b)!important}
+.apolo-linked-reading .codex-symbol-token--C,
+.apolo-linked-intro .codex-symbol-token--C,
+.ability-section .technique .codex-symbol-token--C {color:var(--codex-symbol-c)!important}
+.apolo-linked-reading .codex-symbol-token--PM,
+.apolo-linked-intro .codex-symbol-token--PM,
+.ability-section .technique .codex-symbol-token--PM {color:var(--codex-symbol-pm)!important}
+.ability-section .technique .tech-cost:has(.codex-symbol-token){white-space:normal!important}
+.ability-section .technique .tech-cost .codex-symbol-token {
+ font-size:12px!important;
+ margin:1px 3px;
+}
+
+/* Todos os chips 'Consultar' recebem um ícone e uma cor por família. */
+.ability-section .technique .apolo-tech-references {
+ display:flex!important;
+ align-items:center!important;
+ flex-wrap:wrap;
+ gap:8px!important;
+ margin-top:19px;
+ padding-top:14px!important;
+}
+.ability-section .technique .apolo-tech-references>span {
+ width:auto;
+ min-width:max-content;
+ color:#465346!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip {
+ display:inline-flex!important;
+ align-items:center!important;
+ justify-content:flex-start;
+ gap:6px!important;
+ min-height:34px;
+ padding:6px 10px!important;
+ border-radius:6px!important;
+ border:1px solid #445b54!important;
+ background:#3b5350!important;
+ color:#fffdf6!important;
+ font:700 12px/1.4 system-ui,sans-serif!important;
+ text-decoration:none!important;
+ overflow-wrap:anywhere;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="A"] {
+ background:#245a78!important;border-color:#245a78!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="B"] {
+ background:#803f42!important;border-color:#803f42!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="C"] {
+ background:#78571d!important;border-color:#78571d!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="PM"] {
+ background:#2d5a47!important;border-color:#2d5a47!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="d"] {
+ background:#34597b!important;border-color:#34597b!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="e"] {
+ background:#775333!important;border-color:#775333!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="acao"] {
+ background:#71502e!important;border-color:#71502e!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="objetivo"] {
+ background:#3a664c!important;border-color:#3a664c!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip[data-codex-kind="procedimento"] {
+ background:#31616c!important;border-color:#31616c!important;color:#fff!important;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip:focus-visible {
+ outline:3px solid #1b516f!important;
+ outline-offset:3px;
+}
+.ability-section .technique .apolo-tech-references a.apolo-ref-chip:hover {
+ filter:brightness(1.15);
+ text-decoration:underline!important;
+ text-underline-offset:3px;
+}
+.apolo-tech-references .codex-ref-icon {
+ width:19px!important;
+ height:19px!important;
+ min-width:19px;
+ max-width:19px!important;
+ object-fit:contain;
+ vertical-align:middle;
+ flex:none;
+ margin:0!important;
+}
+.apolo-tech-references svg.codex-ref-icon {
+ stroke:currentColor;
+ fill:none;
+}
+
+/* Cartão de consulta: o mesmo renderizador da página cuida dos custos e do corpo. */
+.codex-rule-popover__cost {
+ display:flex!important;
+ flex-wrap:wrap;
+ gap:6px;
+ align-items:flex-start;
+ line-height:1.5;
+}
+.codex-rule-popover__cost .codex-rule-mini-cost {
+ display:inline-flex!important;
+ flex-wrap:wrap;
+ gap:5px;
+ align-items:center;
+ max-width:100%;
+ padding:6px 8px!important;
+ background:#f7f4e9!important;
+ border:1px solid #b6b9a7!important;
+ border-radius:6px;
+ color:#2b493a!important;
+ line-height:1.45!important;
+}
+.codex-rule-mini-cost strong {display:inline-flex;align-items:center;flex-wrap:wrap;color:#2c493a!important}
+.codex-rule-mini-cost small {color:#4e584a!important;font-size:11px;line-height:1.4}
+.codex-rule-mini-cost:has(.codex-symbol-token--A) {background:#eaf2f7!important;border-color:#abc6d8!important}
+.codex-rule-mini-cost:has(.codex-symbol-token--B) {background:#f8ebeb!important;border-color:#d8b3b4!important}
+.codex-rule-mini-cost:has(.codex-symbol-token--C) {background:#f8f0dd!important;border-color:#dcc89e!important}
+.codex-rule-mini-cost:has(.codex-symbol-token--PM) {background:#eaf3eb!important;border-color:#b5cfbe!important}
+.codex-rule-popover .codex-symbol-token {font-size:12px!important;vertical-align:middle}
+.codex-rule-popover .codex-symbol-token img,
+.codex-rule-popover__body .codex-symbol-token img {
+ width:18px!important;height:18px!important;max-width:18px!important;
+}
+.codex-rule-popover__body .codex-symbol-token {
+ border:1px solid #b7c5b6!important;
+ padding:1px 4px!important;
+ margin:0 2px!important;
+ display:inline-flex!important;
+}
+.codex-rule-popover__body .codex-symbol-token--A {background:#e8f1f6!important;color:#245a78!important}
+.codex-rule-popover__body .codex-symbol-token--B {background:#f4e6e5!important;color:#803f42!important}
+.codex-rule-popover__body .codex-symbol-token--C {background:#f5e9d1!important;color:#78571d!important}
+.codex-rule-popover__body .codex-symbol-token--PM {background:#e6f0e8!important;color:#2d5a47!important}
+
+/* Unidade de leitura única: texto primeiro, toda a arte depois do último parágrafo. */
+@media screen {
+ .ability-section .apolo-book-spread,
+ .ability-section .apolo-book-spread.apolo-media-left {
+   display:flex!important;
+   flex-direction:column!important;
+   align-items:stretch!important;
+   gap:14px!important;
+   width:100%;
+   margin:16px 0 32px;
+ }
+ .ability-section .apolo-book-spread .apolo-book-text,
+ .ability-section .apolo-book-spread.apolo-media-left .apolo-book-text {
+   order:0!important;
+   flex:none;
+   width:100%!important;
+   max-width:none!important;
+   grid-column:auto!important;
+   grid-row:auto!important;
+ }
+ .ability-section .apolo-book-spread .apolo-book-media,
+ .ability-section .apolo-book-spread.apolo-media-left .apolo-book-media {
+   order:1!important;
+   width:min(100%,720px)!important;
+   max-width:720px!important;
+   margin:0 auto 4px!important;
+   grid-column:auto!important;
+   grid-row:auto!important;
+ }
+ .ability-section .apolo-book-spread .apolo-art.apolo-book-figure {
+   width:100%!important;
+   height:clamp(230px,38vw,450px)!important;
+   min-height:0!important;
+   margin:0!important;
+   background:#e8ddc7!important;
+ }
+ .ability-section .apolo-book-spread .apolo-art.apolo-book-figure>img {
+   object-fit:contain!important;
+   object-position:center!important;
+ }
+ .ability-section .apolo-book-spread .apolo-book-media.apolo-book-stack {
+   display:flex!important;
+   flex-direction:column!important;
+   align-items:center;
+   gap:12px;
+ }
+ .ability-section .apolo-book-spread .apolo-book-media.apolo-book-stack .apolo-book-figure {
+   width:100%!important;
+   max-width:720px!important;
+   height:clamp(220px,32vw,360px)!important;
+ }
+}
+@media(max-width:620px) {
+ .ability-section .apolo-book-spread .apolo-art.apolo-book-figure {
+   height:clamp(205px,66vw,330px)!important;
+ }
+ .ability-section .technique .apolo-tech-references a.apolo-ref-chip {
+   padding:6px 8px!important;
+   font-size:11px!important;
+ }
+ .codex-symbol-token img{width:17px!important;height:17px!important;min-width:17px}
+}
+@media print {
+ .codex-symbol-token {background:#fff!important;border-color:#aebbb3!important;color:#193a2c!important}
+ .ability-section .technique .apolo-tech-references a.apolo-ref-chip {
+   background:#fff!important;color:#1b382b!important;border-color:#aaa!important;
+ }
+ .ability-section .technique .apolo-tech-references a.apolo-ref-chip svg.codex-ref-icon {stroke:#1b382b!important}
+ .ability-section .apolo-book-spread,
+ .ability-section .apolo-book-spread.apolo-media-left {
+   display:block!important;
+   break-inside:auto!important;
+ }
+ .ability-section .apolo-book-spread .apolo-book-text {width:100%!important}
+ .ability-section .apolo-book-spread .apolo-book-media {display:block!important;width:70%!important;margin:12px auto!important}
+}

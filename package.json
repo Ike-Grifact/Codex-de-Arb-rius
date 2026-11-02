@@ -9,13 +9,14 @@
     "start": "astro dev",
     "validate": "node scripts/validate-content.mjs",
     "downloads": "node scripts/build-downloads.mjs",
-    "prebuild": "node scripts/validate-content.mjs && node scripts/build-downloads.mjs",
+    "prebuild": "node scripts/validate-content.mjs && node scripts/build-downloads.mjs && node scripts/validate-apolo-editorial.mjs",
     "build": "astro build",
     "postbuild": "node scripts/validate-build.mjs",
     "preview": "astro preview",
     "migrate": "node scripts/migrate-guides.mjs",
     "content:import": "node scripts/content-import.mjs",
-    "content:doctor": "node scripts/content-doctor.mjs"
+    "content:doctor": "node scripts/content-doctor.mjs",
+    "validate:apolo": "node scripts/validate-apolo-editorial.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "7.0.3",
