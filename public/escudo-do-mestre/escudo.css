@@ -98,3 +98,23 @@ table{border-collapse:collapse;width:100%;font-size:11px}th,td{border:1px solid 
   .outcome-pair .symrow img{width:10px;height:10px}
   .time-quick td,.time-quick th{font-size:8px}
 }
+
+/* Gerador cosmopolita e fusões Assimiladas */
+[hidden]{display:none!important}
+.generator-context{display:flex;flex-direction:column;gap:6px;padding:10px;background:#f7eee0;border:1px solid #d8c7aa;border-left:3px solid #93683e;margin:4px 0}
+.generator-context>label{font-size:11px;font-weight:800;color:#68482f}
+.generator-context select{background:#fffbf3;padding:9px;border:1px solid #baa688;border-radius:3px;width:100%;color:#30463f}
+.generator-context .small{margin:0}
+.name-ancestry{background:#ecede0;border:1px solid #ccd0ba;padding:10px 11px;margin-top:7px;color:#3e5748}
+.name-ancestry strong{font-size:11px;letter-spacing:.04em}
+.name-ancestry p{font-size:12px!important;margin-top:5px!important}
+.name-medicinal{background:#eef0e5;border:1px solid #b5c6a9;border-left:4px solid #62806a;padding:12px;margin-top:8px;color:#384d3c;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.name-medicinal h4{font:700 16px Georgia,serif;margin:0;color:#2c5245}
+.name-medicinal-tag{font-size:10px;background:#d3decf;color:#315643;border-radius:2px;padding:4px 6px;font-weight:800}
+.name-medicinal p{margin:0!important;color:#40594a!important;font-size:12px!important}
+.name-medicinal a{font-size:11px;font-weight:700;color:#315c62;text-underline-offset:3px}
+.name-medicinal small{color:#705e47;font-size:10px}
+.name-result-card{min-height:270px}
+.names-regional .names-heading>p{line-height:1.55}
+@media(max-width:720px){.name-medicinal{padding:11px}.name-result-card{min-height:0}.generator-context{padding:9px}}
+@media print{.name-ancestry,.name-medicinal,.generator-context{display:none!important}}
