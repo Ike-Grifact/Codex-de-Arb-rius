@@ -36,12 +36,18 @@
       count.textContent=n+" ×";
       span.append(count);
     }
+    // A quantidade permanece FORA da caixa colorida; somente o emblema fica na caixa.
+    // O agrupamento externo é único para leitores de tela e impede quebra entre N × e ícone.
+    const glyph=document.createElement("span");
+    glyph.className="codex-symbol-token__glyph";
+    glyph.setAttribute("aria-hidden","true");
     const img=document.createElement("img");
     img.src=new URL(item.file,base).href;
     img.alt="";
     img.setAttribute("aria-hidden","true");
     img.decoding="async";
-    span.append(img);
+    glyph.append(img);
+    span.append(glyph);
     return span;
   }
   function renderText(root) {
@@ -143,6 +149,16 @@
       field.replaceChildren(makeToken(parts[0]),document.createTextNode(" / "),makeToken(parts[1]));
     }
   }
+  function enhanceLegacy(root) {
+    // Exemplo antigo: <span class="sym sym-a"><img ...><span>3A</span></span>
+    // Um único token evita o problema "ícone + 3A" e também mantém +2A como bônus.
+    root.querySelectorAll?.(".sym.sym-a,.sym.sym-b,.sym.sym-c").forEach(old=>{
+      const type=old.classList.contains("sym-a")?"A":old.classList.contains("sym-b")?"B":"C";
+      const match=old.textContent.trim().match(/^([+\-−]?)(\d+)\s*([ABC])$/);
+      if (!match || match[3]!==type) return;
+      old.replaceWith(makeToken(type,match[2],match[1]));
+    });
+  }
   function enhance(root) {
     if(!root)return;
     // Símbolo antigo inserido antes de "1A" causa duplicidade na leitura visual.
@@ -151,6 +167,7 @@
         link.querySelectorAll("img.apolo-rule-symbol").forEach(img=>img.remove());
       }
     });
+    enhanceLegacy(root);
     enhanceRefs(root);
     enhancePairs(root);
     renderText(root);

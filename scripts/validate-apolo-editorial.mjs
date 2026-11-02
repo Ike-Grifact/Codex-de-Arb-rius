@@ -30,6 +30,18 @@ check("cartões usam o mesmo renderizador",cards.includes("CodexSymbolNotation?.
 check("renderizador acessível",icons.includes('span.setAttribute("role","img")')&&icons.includes('span.setAttribute("aria-label"'));
 check("ícones oficiais mapeados",files.every(name=>icons.includes(name)&&existsSync(join(root,"public/symbols",name))));
 check("notação N × ícone",icons.includes('count.textContent=n+" ×"')&&icons.includes("makeToken"));
+check("quantidade fora da moldura",icons.includes('glyph.className="codex-symbol-token__glyph"')&&icons.includes("glyph.append(img)")&&icons.includes("span.append(glyph)")&&css.includes(".codex-symbol-token__glyph{"));
+check("moldura somente no glifo",css.includes(".codex-symbol-token {")&&css.includes("background:transparent!important")&&css.includes("border:0!important"));
+check("badges antigos sem duplicação de ícones",icons.includes("function enhanceLegacy(root)")&&icons.includes("old.replaceWith(makeToken(type,match[2],match[1]))"));
+check("todas as famílias de referência com cores corretas",css.includes('a.apolo-ref-chip[data-codex-kind="A"]')&&css.includes('a.apolo-ref-chip[data-codex-kind="B"]')&&css.includes('a.apolo-ref-chip[data-codex-kind="C"]')&&css.includes('a.apolo-ref-chip[data-codex-kind="PM"]'));
+check("card não envolve número em moldura duplicada",css.includes("A linha de custo do cartão NÃO é outra moldura"));
+
+check("paleta do livro A vermelha B amarela C azul",css.includes("--codex-symbol-a:#922e39")&&css.includes("--codex-symbol-b:#7a580e")&&css.includes("--codex-symbol-c:#235e86"));
+check("determinação vermelha e assimilação azul",css.includes("--codex-symbol-d:#922e39")&&css.includes("--codex-symbol-e:#235e86"));
+check("PM com moldura cinza clara",css.includes(".codex-symbol-token--PM .codex-symbol-token__glyph")&&css.includes("background:#eceeed"));
+check("link da barra escura legível",css.includes("body .apolo-quicknav > a.codex-rule-collection-link")&&css.includes("color:#f4e5bd!important"));
+check("paleta escrita no guia",guide.includes("A = vermelho, B = amarelo, C = azul")&&guide.includes("PM = cinza-claro"));
+
 check("chips com ícones de referência",icons.includes("enhanceRefs(root)")&&css.includes(".apolo-ref-chip[data-codex-kind="));
 check("imagens ficam abaixo da regra",css.includes("order:0!important")&&css.includes("order:1!important")&&css.includes("display:flex!important"));
 check("guia normativo com precedência e direitos",guide.includes("Precedência")&&guide.includes("D&D Beyond")&&guide.includes("SRD"));
