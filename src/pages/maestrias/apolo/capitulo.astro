@@ -1,76 +1,13 @@
 ---
-import ReferenceSidebar from "../../../components/ReferenceSidebar.astro";
-import RuleReference from "../../../components/RuleReference.astro";
 import {withBase} from "../../../lib/paths";
-import "../../../styles/apolo-rule-cards.css";
-import "../../../styles/linked-rules.css";
-const base=import.meta.env.BASE_URL;
+const destino=withBase("dossies/apolo-hellman-f943e1efaaa2.html",import.meta.env.BASE_URL);
 ---
-<html lang="pt-BR">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>As Três Maestrias de Apolo — Livro do Jogador | Codex de Árborius</title>
-<meta name="description" content="Capítulo interligado das Maestrias de Apolo: habilidade, ação, recurso e regra com referências individuais."/>
-<link rel="icon" type="image/svg+xml" href={withBase("symbols/maestria-araucaria-coroa.svg",base)}/></head>
-<body><div class="rule-shell">
-<ReferenceSidebar current="capitulo"/>
-<main class="rule-page rule-page--chapter">
-<div class="rule-topbar"><span>Livro do Jogador / Apolo Hellman / Maestrias I–III</span><a href={withBase("dossies/apolo-hellman-f943e1efaaa2.html",base)}>Abrir dossiê detalhado</a></div>
-<header class="rule-intro rule-chapter-hero">
-<p class="rule-eyebrow"><span class="rule-kind rule-kind--habilidade">Maestrias</span> Trilogia consolidada · SRD v1.29</p>
-<div class="rule-masthead"><img src={withBase("symbols/maestria-araucaria-coroa.svg",base)} alt="Araucária coroada"/><h1 class="rule-title">Os três caminhos de Apolo</h1></div>
-<p class="rule-lead">Discernir antes da ameaça, coordenar a sobrevivência do grupo e pagar o preço da própria linhagem. As Maestrias concedem possibilidades; a cena exige escolhas, exposição e consequências.</p>
-<p class="rule-annotation">[HOMEBREW] [TESTE] · Este é o capítulo de leitura contínua. Os <strong>termos sublinhados</strong> abrem fichas separadas; os cartões aparecem ao passar o mouse ou focar, e o clique abre a regra completa.</p>
-<div class="rule-chapter-jumps"><a href="#primeiro-caminho">I · Adaptativa</a><a href="#segundo-caminho">II · Bênção</a><a href="#terceiro-caminho">III · Sangue</a></div>
-</header>
-<section class="rule-reading-intro" aria-labelledby="sistema-de-maestria"><h2 id="sistema-de-maestria">Como funciona uma Maestria?</h2>
-<p>As três Maestrias compartilham a mesma reserva de <RuleReference slug="pontos-de-maestria">Pontos de Maestria (PM)</RuleReference>: <strong>2 PM</strong> na I, <strong>4 PM</strong> na II e <strong>6 PM</strong> na III. Uma técnica ativa convertida custa <strong>1 PM</strong>; passivas e raciocínio legítimo não pagam para existir.</p>
-<p>Em uma <RuleReference slug="acao-em-conflito">Ação em Conflito</RuleReference>, Apolo segue o resultado dos dados e os custos em <RuleReference slug="sucesso-a">Sucessos (A)</RuleReference> e <RuleReference slug="adaptacao-b">Adaptações (B)</RuleReference>. Quando uma técnica ativa exigir teste, o PM permite manter um dado a mais dentre os já rolados, com descarte protegido e o teto usual de quatro resultados. A <RuleReference slug="pressao-c">Pressão (C)</RuleReference> continua válida.</p>
-<p>Em <RuleReference slug="acao-simples">narrativa fluida</RuleReference>, reconhecer uma pista que estava à vista e bolar uma solução não exige PM nem rolagem artificial. Gastar PM só é necessário para uma <strong>intervenção excepcional prevista na habilidade</strong>. A recuperação segue a <RuleReference slug="recuperacao-de-pm">regra própria de PM</RuleReference>: <strong>+1 por nova cena significativa</strong>; durante Conflito, pode-se pagar <strong>2d ou 3e</strong> para recuperar <strong>1 PM pessoal</strong>, uma vez por rodada.</p>
-</section>
-<section class="rule-chapter-section" id="primeiro-caminho">
-<div class="rule-chapter-heading"><span>I</span><div><p>Primeiro caminho · Discernir</p><h2>Maestria Adaptativa</h2><small>Reserva máxima após o desbloqueio: 2 PM</small></div></div>
-<p>A estratégia de Apolo nasce da percepção de padrões, do estudo de uma <RuleReference slug="conflito">ameaça em Conflito</RuleReference> e da criação de alternativas que os outros Infectados possam executar. A Maestria não monopoliza a criatividade: qualquer jogador pode observar e sugerir soluções.</p>
-<h3><RuleReference tipo="habilidade" slug="leitura-de-partitura">Leitura de Partitura</RuleReference></h3>
-<p>Depois de ver uma mesma ativação duas vezes, Apolo reconhece seu padrão sem gastar PM. Para ir além, pode usar <strong>Análise Imediata</strong> por <strong>1 PM</strong> e <RuleReference slug="sucesso-a">1A</RuleReference> ou <RuleReference slug="adaptacao-b">1B</RuleReference> em Conflito. Para antecipar uma ativação ainda não realizada, necessita de indícios e paga <strong>1 PM</strong> mais <strong>1A+1B ou 2A</strong>. Essas informações oferecem pistas exploráveis; não vencem a ameaça sozinhas.</p>
-<h3><RuleReference tipo="habilidade" slug="analise-preventiva">Análise Preventiva</RuleReference></h3>
-<p>Antes que a situação se agrave, Apolo pode estudar rotas, dispositivos e movimentos por observação comum. Quando deseja uma pista que não seria perceptível por dedução ordinária, paga <strong>1 PM</strong>. Começar um <RuleReference slug="conflito">Conflito</RuleReference> que seja realmente outra cena permite a recuperação normal de PM sem apagar as informações descobertas.</p>
-<h3><RuleReference tipo="habilidade" slug="plano-de-contramedida">Plano de Contramedida</RuleReference></h3>
-<p>Uma hipótese plausível pode abrir um <RuleReference slug="objetivo-secundario">Objetivo Secundário</RuleReference> com ferramentas, marcos e custos próprios. O Plano não cobra PM por ter sido pensado. Uma leitura especializada de Apolo pode identificar a fonte de uma ativação e abrir o Plano na mesma ação com um único PM já pago. O progresso real exige <RuleReference slug="sucesso-a">A investidos</RuleReference>; um <RuleReference slug="marco-de-debilitacao">marco de Debilitação</RuleReference> reduz a ameaça, e a <RuleReference slug="neutralizacao">Neutralização</RuleReference> pode eliminar aquela ativação.</p>
-<h3><RuleReference tipo="habilidade" slug="vinculo-tatico">Vínculo Tático</RuleReference></h3>
-<p>Por <strong>1 PM</strong>, Apolo estabelece coordenação com um aliado escolhido. Durante o Conflito, esse aliado recebe <strong>+1B em um teste pertinente por rodada</strong> enquanto o vínculo permanecer válido. Não existe cobrança de PM a cada rodada; trocar o alvo exige nova ativação.</p>
-<h3><RuleReference tipo="habilidade" slug="golpe-de-ruptura">Golpe de Ruptura</RuleReference></h3>
-<p>Após ler a ativação e avançar metade do Plano, Apolo pode sacrificar uma arma compatível de Qualidade 2 ou superior, gastar <strong>1 PM</strong> e investir <strong>1A próprio</strong>. A ruptura acrescenta <strong>+2A exclusivamente ao Objetivo Secundário</strong>, uma vez por Conflito. A arma é perdida, mesmo quando a fuga ou a intervenção ainda dependem de novas ações.</p>
-<h3><RuleReference tipo="habilidade" slug="repertorio-marcial">Repertório Marcial</RuleReference></h3>
-<p>O repertório que Apolo desenvolveu permanece disponível como conhecimento passivo. Ele pode adaptar movimentos fisicamente possíveis sem pagar PM para lembrar, mas observar uma técnica não concede automaticamente Aptidões nem mutações.</p>
-</section>
-<section class="rule-chapter-section" id="segundo-caminho">
-<div class="rule-chapter-heading"><span>II</span><div><p>Segundo caminho · Permanecer humano</p><h2>Bênção de Apolo</h2><small>Reserva máxima compartilhada: 4 PM</small></div></div>
-<p>Esta Maestria se expressa mais por identidade, criação e laços do que por técnicas pagas. Sua aquisição também amplia a reserva disponível para todas as técnicas desbloqueadas da Maestria I.</p>
-<h3><RuleReference tipo="habilidade" slug="haicais-e-desenhos">Haicais, Desenhos e Ritos</RuleReference></h3>
-<p>As produções artísticas podem gerar Experiência quando o jogador efetivamente cria e apresenta obras inéditas, obedecendo aos limites de tempo e frequência do guia. Não basta dizer que a arte foi produzida para receber a recompensa.</p>
-<h3><RuleReference tipo="habilidade" slug="julgamento-solar">Julgamento Solar</RuleReference></h3>
-<p>Apolo percebe formas em escuridão absoluta quando suas condições sensoriais permitem. Além disso, dispõe de uma terceira <RuleReference slug="pontos-de-origem">Origem</RuleReference> especial, disponível <strong>uma vez por sessão e somente à noite</strong>. Não é gasto de PM e não pode ser combinado com <RuleReference slug="agir-por-instinto">Agir por Instinto</RuleReference>.</p>
-<h3><RuleReference tipo="habilidade" slug="heranca-compartilhada">Herança Compartilhada</RuleReference></h3>
-<p>O laço com Aruana permite que Apolo ceda <strong>2 XP próprios ainda não gastos</strong> para que ela receba <strong>1 XP</strong>. A transferência consome os XP de origem; não duplica recursos nem transfere Maestria.</p>
-<h3><RuleReference tipo="habilidade" slug="convergencia-dos-gemeos">Convergência dos Gêmeos</RuleReference></h3>
-<p>Uma vez por Conflito, quando Apolo e Aruana investirem pelo menos <strong>1A próprio cada, no mesmo Objetivo e rodada</strong>, acrescentam <strong>+1A único</strong> a esse Objetivo. A Convergência é um gatilho compartilhado e não consome PM.</p>
-</section>
-<section class="rule-chapter-section" id="terceiro-caminho">
-<div class="rule-chapter-heading"><span>III</span><div><p>Terceiro caminho · Persistir</p><h2>Linhagem de Sangue</h2><small>Reserva máxima compartilhada: 6 PM</small></div></div>
-<p>A Linhagem traz o instinto de rastrear, recuperar o corpo e enfrentar ameaças em duelos difíceis. Mesmo com 6 PM, Apolo continua dependente de <RuleReference slug="pontos-de-assimilacao">Assimilação</RuleReference>, <RuleReference slug="pontos-de-determinacao">Determinação</RuleReference> e das condições físicas da cena.</p>
-<h3><RuleReference tipo="habilidade" slug="percepcao-hematica">Percepção Hemática</RuleReference></h3>
-<p>Apolo interpreta vestígios, ferimentos e manchas de sangue detectáveis, sem transformar o sentido em radar infalível. É uma habilidade passiva.</p>
-<h3><RuleReference tipo="habilidade" slug="marca-sanguinea">Marca Sanguínea</RuleReference></h3>
-<p>Por <strong>1 PM</strong> e contato direto do próprio sangue com a criatura, Apolo estabelece uma Marca. Ele percebe a direção aproximada do alvo até <strong>1 km por Nível de Assimilação</strong>, até o próximo Repouso Completo. Apenas uma Marca permanece ativa.</p>
-<h3><RuleReference tipo="habilidade" slug="duelo-hematico">Duelo Hemático</RuleReference></h3>
-<p>Antes do início de uma disputa individual com o alvo marcado, Apolo pode declarar um duelo. O <RuleReference slug="conflito">Conflito</RuleReference> é preparado para um Infectado e não reduz artificialmente custos ou dano. A ajuda direta dos companheiros pode salvar Apolo, mas invalida a recompensa especial do duelo.</p>
-<h3><RuleReference tipo="habilidade" slug="heranca-de-batalha">Herança de Batalha</RuleReference></h3>
-<p>Após <RuleReference slug="neutralizacao">neutralizar</RuleReference> pessoalmente a criatura marcada e obter um troféu biológico válido, Apolo pode guardar uma Herança. Consumir esse troféu permite anular <strong>1C no próximo Teste de Assimilação</strong>, segundo os limites da habilidade.</p>
-<h3><RuleReference tipo="habilidade" slug="controle-hemorragico">Controle Hemorrágico</RuleReference></h3>
-<p>A regeneração continua sendo uma manifestação biológica: custa <strong>2 Pontos de Assimilação (2e)</strong>, <strong>sem PM adicional</strong>, e só permite sair de S2 para S3 ou de S3 para S4, obedecendo às restrições de repouso e ação do guia.</p>
-</section>
-<section class="rule-chapter-end"><h2>Como consultar este capítulo</h2><p>Os links de <span class="rule-kind rule-kind--habilidade">Habilidade</span> levam às fichas individuais de Apolo. As referências de <span class="rule-kind rule-kind--acao">Ação</span>, <span class="rule-kind rule-kind--regra">Regra</span> e <span class="rule-kind rule-kind--recurso">Recurso</span> conduzem a páginas próprias, com procedimentos e limites. Passe o mouse, navegue com Tab ou abra o link para consultar.</p>
-<div class="rule-footer"><a class="rule-button rule-button--primary" href={withBase("maestrias/apolo/",base)}>Ver as 15 fichas de habilidades</a><a class="rule-button" href={withBase("regras/",base)}>Glossário de regras e ações</a><a class="rule-button" href={withBase("dossies/apolo-hellman-f943e1efaaa2.html",base)}>Dossiê ilustrado integral</a></div></section>
-</main></div>
-<script src={withBase("dossies/assets/linked-references.js",base)} defer></script>
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex,follow"/>
+<meta http-equiv="refresh" content={`0; url=${destino}`}/>
+<link rel="canonical" href={destino}/>
+<title>Maestrias de Apolo — Dossiê Ilustrado | Codex de Árborius</title></head>
+<body><p>O capítulo de Maestrias agora faz parte do <a href={destino}>dossiê ilustrado de Apolo Hellman</a>. Suas fichas individuais continuam nos mesmos endereços.</p>
+<script define:vars={{destino}}>const hashMap={"#primeiro-caminho":"#adaptativa","#segundo-caminho":"#bencao","#terceiro-caminho":"#sangue","#sistema-de-maestria":"#como-funcionam-maestrias"};location.replace(destino+(hashMap[location.hash]||location.hash||""));</script>
 </body></html>

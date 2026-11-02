@@ -63,3 +63,10 @@
 .codex-rule-summary__rule .rule-e{color:#ad4347!important}
 .codex-rule-summary__warning{margin:9px 0 1px!important;padding:8px 10px;background:#f8eae1;border-left:3px solid #b57863;border-radius:3px;color:#8a4d3d!important;font:12px/1.5 system-ui,sans-serif!important}
 @media print{.apolo-quicknav,.codex-rule-direct-link{display:none!important}}
+
+/* A/B da interface rápida respeitam as cores e os símbolos do Assimilação. */
+.codex-rule-mini-cost--success{background:#f3e6c9;border-color:#d8bb81;color:#855b27}
+.codex-rule-mini-cost--adapt{background:#dfece0;border-color:#abccb3;color:#2a6849}
+.codex-rule-summary__rule .rule-a{color:#b48535!important}
+.codex-rule-summary__rule .rule-b{color:#348661!important}
+.codex-rule-mini-cost img{height:17px;width:17px;max-width:18px;object-fit:contain;vertical-align:middle}

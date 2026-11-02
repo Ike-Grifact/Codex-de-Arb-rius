@@ -63,3 +63,8 @@
 .rule-inline-ref-list .codex-linked-term{display:inline-block;padding:6px 9px;border:1px solid #d6c9b0;border-radius:6px;background:#fcf8ee;text-decoration:none;font-size:12px}
 .rule-inline-ref-list .codex-linked-term:hover,.rule-inline-ref-list .codex-linked-term:focus-visible{background:#e9eee7}
 .rule-linked-help{max-width:72ch;margin:12px 0 21px;line-height:1.65}
+
+/* As referências usam ícones oficiais sem trocar a identidade das Maestrias. */
+.codex-linked-term .rule-game-symbol{height:16px;max-width:17px;min-width:14px;margin-right:4px;vertical-align:-.2em}
+.rule-ref-tile .rule-game-symbol{height:19px;max-width:21px;margin-right:6px}
+.rule-paper--regra:has(.rule-title .rule-game-symbol) .rule-ref-head{border-top-color:#b18e4f}

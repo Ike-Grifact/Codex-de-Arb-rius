@@ -45,3 +45,12 @@ a{color:inherit}.rule-shell{max-width:1300px;margin:0 auto;display:grid;grid-tem
 @media(max-width:690px){.rule-shell{display:block}.rule-sidebar{position:static;max-height:none;padding:10px 12px 12px;border-right:0;border-bottom:3px solid #ac9665}.rule-brand{padding:4px;border:0}.rule-brand img{width:36px;height:36px}.rule-sidebar-title{display:none}.rule-nav{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory}.rule-nav-group{flex:0 0 185px;margin:5px 0}.rule-nav-group a{font-size:11px;padding:6px 8px}.rule-cards{grid-template-columns:1fr}.rule-masthead img{width:49px;height:49px}.rule-title{font-size:2.5rem}.rule-lead{font-size:15px}}
 @media print{.rule-shell{display:block}.rule-sidebar,.rule-topbar,.rule-footer,.rule-collection{display:none}.rule-page{padding:0}.rule-paper{box-shadow:none;background:white}.rule-effect{break-inside:avoid}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rule-index-card{transition:none}.rule-index-card:hover{transform:none}}
+
+/* Símbolos e semântica cromática do Assimilação RPG: A ouro, B verde, C vermelho. */
+.rule-game-symbol{display:inline-block;vertical-align:-.2em;object-fit:contain;width:auto;max-width:23px;height:1.4em;min-width:15px;margin-right:5px;flex:none}
+.rule-title .rule-game-symbol{height:42px;max-width:44px;width:auto;margin-right:11px;vertical-align:-.1em}
+.rule-cost .rule-game-symbol{height:18px;min-width:18px;max-width:21px;margin-right:1px;vertical-align:middle}
+.rule-cost--success{background:#f6ecd3;color:#8a5e26;border-color:#dcca98}
+.rule-cost--adapt{background:#dfede2;color:#256546;border-color:#a6c9b0}
+.rule-cost--symbol{background:#eee9d8;color:#605636;border-color:#cac09e}
+.rule-effect .rule-a{color:#a47630}.rule-effect .rule-b{color:#2c7851}.rule-effect .rule-e{color:#a44446}

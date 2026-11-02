@@ -5,6 +5,7 @@ import ApoloRuleSidebar from "../../../components/ApoloRuleSidebar.astro";
 import "../../../styles/apolo-rule-cards.css";
 import "../../../styles/linked-rules.css";
 import RuleReference from "../../../components/RuleReference.astro";
+import AssimilacaoIcons from "../../../components/AssimilacaoIcons.astro";
 import {remissoesApolo} from "../../../data/apolo-rule-crosslinks.mjs";
 export function getStaticPaths(){
   return apoloMaestrias.map(item=>({params:{slug:item.slug},props:{item}}));
@@ -13,7 +14,7 @@ const {item}=Astro.props;
 const base=import.meta.env.BASE_URL;
 const grupo=apoloGrupos.find(x=>x.stage===item.stage);
 const url=withBase(`maestrias/apolo/${item.slug}/`,base);
-const guide=withBase(`dossies/apolo-hellman-f943e1efaaa2.html#${item.sourceSection}`,base);
+const guide=withBase(`dossies/apolo-hellman-f943e1efaaa2.html#habilidade-${item.slug}`,base);
 const related=apoloMaestrias.filter(x=>x.stage===item.stage&&x.slug!==item.slug);
 const crosslinks=remissoesApolo[item.slug]||[];
 ---
@@ -39,7 +40,7 @@ const crosslinks=remissoesApolo[item.slug]||[];
   <article class="rule-paper">
     <div class="rule-paper-head">
       <p>Recursos e custos</p>
-      <div class="rule-cost-row">{item.costs.map(c=><span class={`rule-cost rule-cost--${c.type}`}><strong>{c.value}</strong><small>{c.label}</small></span>)}</div>
+      <div class="rule-cost-row">{item.costs.map(c=><span class={`rule-cost rule-cost--${c.type}`}><AssimilacaoIcons value={c.value} size={20}/><strong>{c.value}</strong><small>{c.label}</small></span>)}</div>
     </div>
     <dl class="rule-stats">{item.stats.map(pair=><div class="rule-stat"><dt>{pair[0]}</dt><dd>{pair[1]}</dd></div>)}</dl>
     <div class="rule-body">{item.rules.map(rule=><section class="rule-effect"><h2>{rule.title}</h2><p><Fragment set:html={rule.text}/></p></section>)}</div>
@@ -47,7 +48,7 @@ const crosslinks=remissoesApolo[item.slug]||[];
   </article>
   <div class="rule-footer">
     <a class="rule-button rule-button--primary" href={guide}>Ler explicação detalhada no dossiê</a>
-    <a class="rule-button" href={withBase("maestrias/apolo/capitulo/",base)}>Ler capítulo de Apolo</a>
+    <a class="rule-button" href={withBase("dossies/apolo-hellman-f943e1efaaa2.html",base)}>Ler capítulo de Apolo</a>
     <a class="rule-button" href={withBase("maestrias/apolo/",base)}>Voltar ao índice de habilidades</a>
   </div>
   <section class="rule-collection" aria-label="Referências aplicadas à habilidade"><h2>Regras e ações relacionadas</h2><div class="rule-inline-ref-list">{crosslinks.map(slug=><RuleReference slug={slug}/>)}</div></section>
@@ -56,7 +57,7 @@ const crosslinks=remissoesApolo[item.slug]||[];
     <div class="rule-cards">
     {related.map(cap=><a class="rule-index-card" href={withBase(`maestrias/apolo/${cap.slug}/`,base)}>
       <span class="rule-index-kicker">{cap.kind}</span><strong>{cap.name}</strong><p>{cap.headline}</p>
-      <span class="rule-cost-row">{cap.costs.slice(0,2).map(c=><span class={`rule-cost rule-cost--${c.type}`}><b>{c.value}</b><small>{c.label}</small></span>)}</span>
+      <span class="rule-cost-row">{cap.costs.slice(0,2).map(c=><span class={`rule-cost rule-cost--${c.type}`}><AssimilacaoIcons value={c.value} size={18}/><b>{c.value}</b><small>{c.label}</small></span>)}</span>
     </a>)}
     </div>
   </section>
