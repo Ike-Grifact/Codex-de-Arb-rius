@@ -32,6 +32,19 @@ A apresentação do Codex deve parecer um **livro de consulta para o jogador**, 
 
 Para passivas, mencionar **sem custo de ativação** quando isso fizer sentido. Não criar testes artificiais só para gastar PM nem pagar por raciocínio legítimo, pistas evidentes ou proposta plausível de Plano.
 
+### Aplicação editorial comprovada no dossiê de Apolo (v2)
+
+A organização observável nas regras básicas de 2024 do D&D Beyond inclui um quadro inicial de características, uma tabela de progressão e cada característica em um título próprio, com subdivisões por efeitos/condições. Seu glossário mantém as definições acessíveis por referências cruzadas. Para **Assimilação**, usamos a **forma de leitura, nunca a progressão de D&D**:
+
+- **Mapa de desbloqueio** com I, II e III, mostrando a mesma reserva máxima de 2 → 4 → 6 PM (não há níveis de classe de D&D).
+- **Quadro por caminho** com nome clicável, tipo, uso/custo e função breve de cada habilidade. A regra integral continua logo abaixo.
+- **Características com subtítulos H4 semânticos**: “Quando usar”, “Custo”, “Efeito”, “Duração”, “Limites”, ou variações que respeitem a técnica. Subtítulos devem ajudar a descobrir a regra, não repartir uma frase arbitrariamente.
+- **Prosa normativa direta**: protagonista, gatilho, custo, resultado e exceção; evita intercalar comentário de desenvolvimento ou justificativa de conversão no meio do efeito.
+- **Cards como resumos derivados da própria página**. O script de Apolo deve ler as seções da técnica e o atributo de custo `data-cost-source`, sem depender de uma segunda cópia editorial divergente.
+- **Fontes em cada capítulo**: SRD v1.29, §193 e Partes XXIX–XXX, identificados como [HOMEBREW] [TESTE]. Glossário e links são complementos.
+
+O método editorial do D&D Beyond é referência externa, não fonte normativa. Não reproduzir regras, redação ou identidade gráfica de D&D. Não deduzir mecânicas de *Assimilação* a partir de exemplos de D&D.
+
 ## 3. Precisão mecânica: escrita de Assimilação, não de D&D
 
 - **A (Sucesso):** em testes dos Infectados, eficácia e avanço de Objetivos; em rolagens do **Assimilador**, A representa brecha, hesitação, oportunidade favorável aos Infectados. Jamais descrever A do Assimilador como êxito hostil.
@@ -93,7 +106,7 @@ Este exemplo **resume** as disposições do SRD; nunca se sobrepõe ao texto nor
 
 **Código do dossiê:**
 - **public/dossies/assets/codex-symbol-notation.js**: renderiza quantidades + ícones oficiais, garante símbolos dos chips de consulta.
-- **public/dossies/assets/maestrias-rulecards.js**: consulta dos cards recebe a mesma notação após gerar seu conteúdo.
+- **public/dossies/assets/maestrias-rulecards.js**: consulta dos cards usa diretamente `apoloFeatureCard(parent)` para resumir a regra integral da página, mantendo a mesma notação e lendo o custo original em `data-cost-source`.
 - **public/dossies/assets/apolo-editorial-playerbook.css**: visual de tokens, chips, contraste e imagem abaixo.
 - **public/dossies/apolo-hellman-f943e1efaaa2.html**: texto-fonte legível e integral; custos como conteúdo semântico.
 

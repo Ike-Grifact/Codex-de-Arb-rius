@@ -174,7 +174,7 @@
   }
   window.CodexSymbolNotation=Object.freeze({enhance,makeToken});
   function init() {
-    document.querySelectorAll(".apolo-linked-intro,.apolo-linked-reading,.maestria-economia,.ability-section").forEach(enhance);
+    document.querySelectorAll(".apolo-reader-map,.apolo-linked-intro,.apolo-linked-reading,.maestria-economia,.ability-section").forEach(enhance);
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});
   else init();

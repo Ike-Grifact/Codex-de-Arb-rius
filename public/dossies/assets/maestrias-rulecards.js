@@ -38,48 +38,36 @@
     ]
   };
 
-  // Fichas curtas independentes de Apolo: a mesma fonte alimenta os 15 links e os cartões.
-  const apoloRuleBase = new URL("../../maestrias/apolo/", document.currentScript?.src || location.href).href;
-  const apoloRules = Object.create(null);
-  if (apolo) {
-    fetch(new URL("resumos.json", apoloRuleBase).href)
-      .then(response => { if (!response.ok) throw new Error("Falha nas fichas"); return response.json(); })
-      .then(records => {
-        Object.assign(apoloRules, records);
-        if (current?.node?.closest(".technique[data-rule-slug]")) show(current,pinned);
-      })
-      .catch(() => {
-        // Sem rede, o texto completo do guia permanece disponível como antes.
-      });
-  }
-
-  function conciseRecord(record) {
-    const wrap = document.createElement("div");
+  // O resumo do cartão nasce do texto integral e VIVO da página: uma fonte só.
+  // O SRD continua a fonte normativa; a ficha objetiva é consulta complementar.
+  function apoloFeatureCard(parent) {
+    const wrap=document.createElement("div");
     wrap.className="codex-rule-summary";
     const lead=document.createElement("p");
     lead.className="codex-rule-summary__lead";
-    lead.textContent=record.headline;
+    lead.textContent=parent.querySelector(".apolo-tech-teaser")?.textContent?.trim() || "";
     wrap.appendChild(lead);
-    for (const rule of (record.rules || []).slice(0,4)) {
+    const sections=[...parent.querySelectorAll(".apolo-rule-part")];
+    const samples=sections.length<=4 ? sections : [...sections.slice(0,3),sections.at(-1)];
+    for(const section of samples) {
       const entry=document.createElement("div");
       entry.className="codex-rule-summary__rule";
       const heading=document.createElement("strong");
       heading.className="codex-rule-summary__rule-title";
-      heading.textContent=rule.title;
-      const text=document.createElement("p");
-      text.innerHTML=rule.text;
-      entry.append(heading,text);
-      wrap.append(entry);
+      heading.textContent=section.querySelector("h4")?.textContent || "Regra";
+      const paragraph=document.createElement("p");
+      const original=section.querySelector("p");
+      if(original)paragraph.innerHTML=original.innerHTML;
+      entry.append(heading,paragraph);
+      wrap.appendChild(entry);
     }
-    if (record.warning) {
-      const alert=document.createElement("p");
-      alert.className="codex-rule-summary__warning";
-      const strong=document.createElement("strong");
-      strong.textContent="Limite: ";
-      alert.append(strong,document.createTextNode(record.warning));
-      wrap.appendChild(alert);
-    }
-    return {heading:record.name,cost:"Ficha rápida · "+record.kind,costs:record.costs,html:wrap,full:false,concise:true,href:new URL(record.slug+"/",apoloRuleBase).href};
+    const costField=parent.querySelector(".tech-cost");
+    return {
+      heading:parent.querySelector(".tech-head h3")?.textContent?.trim() || parent.dataset.ruleSlug,
+      cost:costField?.dataset.costSource || costField?.textContent?.trim() || "",
+      html:wrap,full:false,concise:true,
+      href:"#"+parent.id
+    };
   }
 
   const normalize = (value) => (value || "").replace(/\s+/g, " ").trim();
@@ -150,8 +138,8 @@
     const parent = node.closest(".technique");
     const heading = normalize(node.textContent.replace("⌕", ""));
     if (parent) {
-      if (apolo && parent.dataset.ruleSlug && apoloRules[parent.dataset.ruleSlug]) {
-        return conciseRecord(apoloRules[parent.dataset.ruleSlug]);
+      if (apolo && parent.dataset.ruleSlug && parent.querySelector(".apolo-rule-part")) {
+        return apoloFeatureCard(parent);
       }
       const rich = parent.querySelector(".tech-content");
       return { heading:normalize(parent.querySelector("h3")?.textContent || heading),cost:normalize(parent.querySelector(".tech-cost")?.textContent),html:cleanFragment(rich),full:true,href:"#" + (parent.closest("section[id]")?.id || "inicio") };
@@ -221,7 +209,7 @@
     if (!body.textContent.trim()) body.textContent="Consulte a seção completa para os detalhes desta capacidade.";
     body.scrollTop = 0;
     note.textContent = result.concise ? "Resumo editorial · SRD v1.29 [TESTE]" : (result.full ? "Regra completa deste bloco · Dossiê do jogador" : "Prévia do texto existente · Consulte a seção integral");
-    read.textContent = result.concise ? "Abrir ficha individual →" : "Ler seção completa →";
+    read.textContent = result.concise ? "Ir à regra integral nesta página →" : "Ler seção completa →";
     read.href=result.href;
     pop.setAttribute("aria-hidden","false");
     item.button?.setAttribute("aria-expanded","true");

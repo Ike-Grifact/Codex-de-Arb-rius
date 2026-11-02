@@ -102,6 +102,7 @@ Localmente, copie `.env.example` para `.env` e ajuste a URL. O arquivo `.env` é
 ## Padrões editoriais de Maestrias
 
 - [Guia de redação e iconografia de Maestrias](docs/padroes/maestrias-redacao-e-iconografia.md) — escrita fiel ao Assimilação, metodologia de consulta inspirada na organização do D&D Beyond (sem importar regras), ícones A/B/C/PM, acessibilidade, cards e fluxo das ilustrações.
+- [Auditoria editorial de Apolo (02/11/2026)](docs/revisoes/apolo-auditoria-editorial-2026-11-02.md) — comparação de estrutura com o D&D Beyond, mapa de habilidades e invariantes do SRD v1.29.
 - Rode `pnpm run validate:apolo` para conferir a estrutura de leitura e os símbolos do dossiê de Apolo. Essa validação também integra o `prebuild`.
 
 ## Scripts

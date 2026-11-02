@@ -20,6 +20,27 @@ const files=["sucesso.svg","adaptacao.svg","pressao.svg","maestria-araucaria-cor
 
 check("15 técnicas no dossiê",ids.size===15);
 check("15 corpos de regra visíveis",count(html,/class="tech-content apolo-rule-body"/g)===15);
+
+check("53 subseções de regras legíveis",count(html,/class="apolo-rule-part"/g)===53&&count(html,/<h4 id="regra-/g)===53);
+check("índice de características por caminho",count(html,/class="apolo-feature-table"/g)===3&&count(html,/class="apolo-reader-map__item /g)===3);
+check("custo original preservado para o card",count(html,/data-cost-source="/g)===15);
+check("resumo da técnica deriva da própria regra",cards.includes("function apoloFeatureCard(parent)")&&cards.includes('parent.querySelectorAll(".apolo-rule-part")')&&cards.includes("costField?.dataset.costSource")&&!cards.includes('resumos.json'));
+check("renderizador alcança mapa de Maestrias",icons.includes(".apolo-reader-map,.apolo-linked-intro"));
+check("HTML semântico de tabelas e capítulos",count(html,/<article\b/g)===count(html,/<\/article>/g)&&count(html,/<section\b/g)===count(html,/<\/section>/g)&&count(html,/<table\b/g)===count(html,/<\/table>/g));
+const ruleText=(slug)=>{
+ const start=html.indexOf('<article id="habilidade-'+slug+'"');
+ const end=start<0?-1:html.indexOf("</article>",start);
+ return start>=0&&end>=0?html.slice(start,end):"";
+};
+check("Leitura conserva custos A/B e pistas",ruleText("leitura-de-partitura").includes("1 PM e 1A ou 1B")&&ruleText("leitura-de-partitura").includes("1A + 1B ou 2A"));
+check("Vínculo não recebe custo por rodada",ruleText("vinculo-tatico").includes("Não há manutenção de PM por rodada")&&ruleText("vinculo-tatico").includes("+1B no resultado de um teste pertinente por rodada"));
+check("Golpe conserva sacrifício e destino de A",ruleText("golpe-de-ruptura").includes("Qualidade anterior 2 ou superior")&&ruleText("golpe-de-ruptura").includes("+2A exclusivamente ao mesmo Objetivo Secundário"));
+check("Controle Hemorrágico não cobra PM",ruleText("controle-hemorragico").includes("2 Pontos de Assimilação (2e)")&&ruleText("controle-hemorragico").includes("sem cobrança adicional de PM"));
+check("Marca não cobra 1e antigo",ruleText("marca-sanguinea").includes("substitui")&&ruleText("marca-sanguinea").includes("o custo anterior de 1e"));
+check("Origem noturna não custa PM",ruleText("julgamento-solar").includes("uma vez por sessão")&&ruleText("julgamento-solar").includes("não gasta PM"));
+check("Convergência é compartilhada",ruleText("convergencia-dos-gemeos").includes("mesmo Objetivo e na mesma rodada")&&ruleText("convergencia-dos-gemeos").includes("compartilhada pelos irmãos"));
+check("guia registra método de classes sem importar D&D",guide.includes("Aplicação editorial comprovada no dossiê de Apolo (v2)")&&guide.includes("não fonte normativa"));
+
 check("3 índices de capítulos",count(html,/class="apolo-ability-index"/g)===3);
 check("15 referências internas para técnicas",links.length===15&&links.every(id=>ids.has(id)));
 check("sem regras essenciais recolhidas",!html.includes("class=\"apolo-tech-expand\""));
@@ -51,5 +72,5 @@ if(issues.length){
  console.error("[Apolo editorial] Falha de validação:\n"+issues.map(s=>"- "+s).join("\n"));
  process.exitCode=1;
 }else{
- console.log("[Apolo editorial] OK: 15 técnicas, 3 capítulos, ícones, chips, ordem de leitura, acessibilidade e guia.");
+ console.log("[Apolo editorial] OK: 15 técnicas, 53 subseções, 3 tabelas, 3 caminhos, SRD, ícones, cards derivados, acessibilidade e guia.");
 }
