@@ -12,7 +12,7 @@ const groups=["acao","regra","recurso","procedimento"];
 <div class="rule-nav-group"><h2>Capítulo de Apolo</h2>
 <a href={withBase("maestrias/apolo/capitulo/",base)} aria-current={current==="capitulo"?"page":undefined}>I–III · Maestrias de Apolo</a>
 <a href={withBase("maestrias/apolo/",base)}>Fichas das 15 capacidades</a></div>
-{groups.map(type=><div class="rule-nav-group"><h2>{tiposReferencia[type].title}s</h2>
+{groups.map(type=><div class="rule-nav-group"><h2>{{acao:"Ações",regra:"Regras",recurso:"Recursos",procedimento:"Procedimentos"}[type]}</h2>
 {referenciasArborius.filter(e=>e.type===type).map(e=><a href={withBase(`regras/${e.slug}/`,base)} aria-current={current===e.slug?"page":undefined}>{e.title}</a>)}
 </div>)}
 </nav></aside>
