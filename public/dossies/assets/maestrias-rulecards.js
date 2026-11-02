@@ -208,6 +208,22 @@
       for (const c of result.costs) {
         const chip = document.createElement("span");
         chip.className="codex-rule-mini-cost codex-rule-mini-cost--"+c.type;
+        // Apolo: usar os próprios símbolos do Assimilação nos custos do cartão.
+        if (apolo) {
+          const value=String(c.value||"");
+          const files=[];
+          if (/\\d+\\s*PM\\b/.test(value)) files.push("maestria-araucaria-coroa.svg");
+          if (/(?:\\d+|\\+)A\\b/.test(value)) files.push("sucesso.svg");
+          if (/(?:\\d+|\\+)B\\b/.test(value)) files.push("adaptacao.svg");
+          if (/\\d+d\\b/.test(value)) files.push("pontodedeterminacao.svg");
+          if (/\\d+e\\b/.test(value)) files.push("pontodeassimilacao.svg");
+          for (const file of files) {
+            const ico=document.createElement("img");
+            ico.src=new URL("../../symbols/"+file,document.currentScript?.src||location.href).href;
+            ico.alt="";ico.setAttribute("aria-hidden","true");
+            chip.appendChild(ico);
+          }
+        }
         const v=document.createElement("strong");v.textContent=c.value;
         const label=document.createElement("small");label.textContent=c.label;
         chip.append(v,label);
