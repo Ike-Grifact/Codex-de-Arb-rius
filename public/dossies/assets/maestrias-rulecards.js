@@ -94,11 +94,14 @@
   }
 
   function resolve(node) {
-    const apoloSection = apolo && node.matches(".section-header h2") ? node.closest(".ability-section[id]") : null;
-    if (apoloSection && apoloSummary[apoloSection.id]) {
-      const div = document.createElement("div");
-      div.innerHTML = apoloSummary[apoloSection.id].join("");
-      return {heading:normalize(node.textContent),cost:"Trilogia PO/PM · campanha em teste",html:div,full:false,href:"#" + apoloSection.id};
+    const maestriaSection = node.matches(".section-header h2") ? node.closest(".ability-section[id]") : null;
+    if (maestriaSection) {
+      if (apolo && apoloSummary[maestriaSection.id]) {
+        const div = document.createElement("div");
+        div.innerHTML = apoloSummary[maestriaSection.id].join("");
+        return {heading:normalize(node.textContent),cost:"Trilogia PO/PM · campanha em teste",html:div,full:false,href:"#" + maestriaSection.id};
+      }
+      return {heading:normalize(node.textContent),cost:"Resumo do dossiê",html:fromSection(maestriaSection),full:false,href:"#" + maestriaSection.id};
     }
     const parent = node.closest(".technique");
     const heading = normalize(node.textContent.replace("⌕", ""));
@@ -211,7 +214,7 @@
   ];
   document.querySelectorAll(headings.join(",")).forEach(node=>connect(node,true));
 
-  if (apolo) {
+  {
     document.querySelectorAll(".section-header h2").forEach(heading=>{
       const mark=document.createElement("span");mark.className="codex-maestria-inline";mark.setAttribute("aria-hidden","true");
       const icon=document.createElement("img");icon.src=emblem;icon.alt="";mark.appendChild(icon);heading.prepend(mark);
