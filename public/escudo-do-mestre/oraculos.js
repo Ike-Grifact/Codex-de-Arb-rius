@@ -78,10 +78,6 @@
   toggle.addEventListener("click",()=>{wrap.hidden=!wrap.hidden;toggle.setAttribute("aria-expanded",String(!wrap.hidden));toggle.textContent=wrap.hidden?"Ver 6×6":"Ocultar 6×6"});
   document.getElementById("copy-oracle").addEventListener("click",async()=>{const value=heading.textContent+": "+result.textContent;if(navigator.clipboard){try{await navigator.clipboard.writeText(value);return}catch(e){}}window.prompt("Copie o resultado:",value)});
   document.querySelectorAll(".oracle-index button").forEach((b,i)=>b.addEventListener("click",()=>{sel.value=String(i*4);render();document.getElementById("oraculos").scrollIntoView({behavior:"smooth"})}));
-  const starts=["As Cinzas","O Eco","A Vigília","O Segredo","A Sombra","O Último Rastro","A Memória","Os Herdeiros","A Voz"];
-  const ends=["das Raízes","do Vale","do Horto","da Serra","do Refúgio","dos Errantes","da Fronteira","das Águas","da Mata"];
-  const epithets=["Esquecidas","Silencioso","Velado","de Ferro","Sem Nome","Partido","do Poente","do Primeiro Sol"];
-  document.getElementById("generate-name").addEventListener("click",()=>{document.getElementById("name-result").textContent=starts[rnd(starts.length)]+" "+ends[rnd(ends.length)]});
   const search=document.getElementById("search"),sheets=[...document.querySelectorAll(".sheet")];
   search.addEventListener("input",()=>{const s=search.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");sheets.forEach(p=>{const text=p.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");p.classList.toggle("hidden-search",!text.includes(s))})});
   let zoom=1;const updateZoom=()=>document.documentElement.style.setProperty("--zoom",String(zoom));
