@@ -55,29 +55,233 @@
   function valid(data){return Array.isArray(data)&&data.length===36&&data.every(x=>x&&typeof x.title==="string"&&Array.isArray(x.cells)&&x.cells.length===6&&x.cells.every(row=>Array.isArray(row)&&row.length===6&&row.every(v=>typeof v==="string"&&v.length>0)))}
   try{const stored=localStorage.getItem(key);if(stored){const p=JSON.parse(stored);if(valid(p))imported=p}}catch(e){}
   function sourceStatus(){const node=document.getElementById("source-status");if(node)node.textContent=imported?"Modo atual: 1.296 resultados do arquivo do livro, guardados somente neste navegador.":"Modo atual: propostas narrativas originais de Árborius."}
+
   const titleTexts=[...document.querySelectorAll("#table-select option")].map(o=>o.textContent);
-  const sel=document.getElementById("table-select"),rs=document.getElementById("row-select"),cs=document.getElementById("col-select"),result=document.getElementById("oracle-result"),heading=document.getElementById("oracle-heading"),cat=document.getElementById("oracle-category"),coord=document.getElementById("oracle-coord"),grid=document.getElementById("oracle-matrix"),wrap=document.getElementById("matrix-wrap"),toggle=document.getElementById("toggle-matrix");
+  const sel=document.getElementById("table-select"),rs=document.getElementById("row-select"),cs=document.getElementById("col-select");
+  const method=document.getElementById("oracle-method"),result=document.getElementById("oracle-result"),heading=document.getElementById("oracle-heading");
+  const cat=document.getElementById("oracle-category"),coord=document.getElementById("oracle-coord");
+  const grid=document.getElementById("oracle-matrix"),wrap=document.getElementById("matrix-wrap"),toggle=document.getElementById("toggle-matrix");
+  const oracleDice=document.getElementById("oracle-rolls"),oracleDieGrid=document.getElementById("oracle-roll-grid");
+  const mixTheme=document.getElementById("mix-theme"),mixResults=document.getElementById("mix-results"),mixSynthesis=document.getElementById("mix-synthesis");
+  const mixTitle=document.getElementById("mix-synthesis-title"),mixText=document.getElementById("mix-synthesis-text"),mixSource=document.getElementById("mix-source"),mixCopy=document.getElementById("copy-mix");
   const labels=["0–1","2","3","4","5","6+"];
-  function makeResult(i,r,c){return imported?imported[i].cells[r][c]:entries[i][r]+"; "+columnModifiers[Math.floor(i/4)][c]+"."}
+  const dieFaces={
+    10:["","","C","C","BC","A","AA","AB","ABC","AAC"],
+    12:["","","C","C","BC","A","AA","AB","ABC","AAC","ABBC","CC"]
+  };
+  const diceIcons={6:"d6",10:"d10",12:"d12"};
+  const symbolIcons={A:"sucesso",B:"adaptacao",C:"pressao"};
+  const symbolNames={A:"Sucesso",B:"Adaptação",C:"Pressão"};
+  const imgRoot="/Codex-de-Arb-rius/symbols/";
+  let lastSingle=null;
+  let lastMix=null;
+
+  // Distribuição idêntica aos métodos da tabela de criação do livro, p. 277.
+  function rnd(n){
+    const max=4294967296,limit=max-(max%n),data=new Uint32Array(1);
+    let value; do{crypto.getRandomValues(data);value=data[0]}while(value>=limit);
+    return value%n;
+  }
+  function rollAxis(methodName){
+    if(methodName==="numeric"){
+      const face=rnd(6)+1;
+      return {type:6,faces:[{number:face,text:String(face)}],count:face,bucket:face-1,numeric:true};
+    }
+    const size=methodName==="high"?12:10;
+    const faces=[0,1].map(()=>{
+      const faceNumber=rnd(size)+1;
+      return {number:faceNumber,text:dieFaces[size][faceNumber-1]};
+    });
+    const count=faces.reduce((sum,f)=>sum+f.text.length,0);
+    return {type:size,faces,count,bucket:count<=1?0:Math.min(5,count-1),numeric:false};
+  }
+  function rollPair(){return {method:method.value,row:rollAxis(method.value),col:rollAxis(method.value)}}
+  function rollSummary(axis){
+    return axis.numeric
+      ? "1d6: "+axis.faces[0].number+" → faixa "+labels[axis.bucket]
+      : "2d"+axis.type+": "+axis.faces.map(f=>f.text||"vazia").join(" + ")+" = "+axis.count+" símbolo(s) → faixa "+labels[axis.bucket];
+  }
+  function renderFace(face,size){
+    const el=document.createElement("div");el.className="oracle-face";
+    const ident=document.createElement("span");ident.className="oracle-face-shape";
+    const die=document.createElement("img");die.src=imgRoot+diceIcons[size]+".svg";die.alt="";
+    ident.append(die);
+    const words=document.createElement("span");words.className="oracle-face-content";
+    if(size===6){words.classList.add("numeric");words.textContent=String(face.number);el.setAttribute("aria-label","d6 numérico, face "+face.number)}
+    else if(!face.text){words.textContent="—";el.setAttribute("aria-label","d"+size+", face vazia")}
+    else{
+      const spoken=[];
+      for(const symbol of face.text){
+        const icon=document.createElement("img");icon.src=imgRoot+symbolIcons[symbol]+".svg";icon.alt=symbolNames[symbol];
+        icon.className="oracle-face-icon";words.append(icon);spoken.push(symbolNames[symbol]);
+      }
+      el.setAttribute("aria-label","d"+size+", "+spoken.join(", "));
+    }
+    el.append(ident,words);
+    return el;
+  }
+  function diceSummaryBlock(axis,label){
+    const outer=document.createElement("div");outer.className="oracle-roll-axis";
+    const head=document.createElement("div");head.className="oracle-axis-heading";
+    const n=document.createElement("b");n.textContent=label;
+    const tally=document.createElement("strong");tally.textContent=labels[axis.bucket];
+    head.append(n,tally);
+    const faceRow=document.createElement("div");faceRow.className="oracle-face-row";
+    axis.faces.forEach(f=>faceRow.append(renderFace(f,axis.type)));
+    const expl=document.createElement("p");expl.className="oracle-roll-explain";expl.textContent=rollSummary(axis);
+    outer.append(head,faceRow,expl);return outer;
+  }
+  function makeResult(i,r,c){
+    return imported?imported[i].cells[r][c]:entries[i][r]+"; "+columnModifiers[Math.floor(i/4)][c]+".";
+  }
+  function tableTitle(i){return imported?imported[i].title.replaceAll("*",""):titleTexts[i]}
+  function renderSingleFaces(){
+    oracleDieGrid.replaceChildren();
+    oracleDice.hidden=!lastSingle;
+    if(!lastSingle)return;
+    oracleDieGrid.append(diceSummaryBlock(lastSingle.row,"Linha"),diceSummaryBlock(lastSingle.col,"Coluna"));
+  }
   function render(){
     const i=Number(sel.value),r=Number(rs.value),c=Number(cs.value);
-    heading.textContent=imported?imported[i].title.replace("*",""):titleTexts[i];cat.textContent=groups[Math.floor(i/4)]+(imported?" · livro p. "+imported[i].page:" · propostas Árborius");result.textContent=makeResult(i,r,c);coord.textContent="Tabela "+(i+1)+" de 36 · linha "+labels[r]+" · coluna "+labels[c];
-    grid.replaceChildren();const head=document.createElement("thead"),hrow=document.createElement("tr");
-    ["","0–1","2","3","4","5","6+"].forEach(x=>{const th=document.createElement("th");th.textContent=x;hrow.append(th)});head.append(hrow);grid.append(head);
+    heading.textContent=tableTitle(i);
+    cat.textContent=groups[Math.floor(i/4)]+(imported?" · livro p. "+imported[i].page:" · propostas Árborius");
+    result.textContent=makeResult(i,r,c);
+    coord.textContent="Tabela "+(i+1)+" de 36 · linha "+labels[r]+" · coluna "+labels[c];
+    grid.replaceChildren();
+    const head=document.createElement("thead"),hrow=document.createElement("tr");
+    ["","0–1","2","3","4","5","6+"].forEach(x=>{
+      const th=document.createElement("th");th.textContent=x;hrow.append(th);
+    });
+    head.append(hrow);grid.append(head);
     const tbody=document.createElement("tbody");
-    for(let ir=0;ir<6;ir++){const tr=document.createElement("tr");const th=document.createElement("th");th.textContent=labels[ir];tr.append(th);for(let ic=0;ic<6;ic++){const td=document.createElement("td");td.textContent=makeResult(i,ir,ic);if(ir===r&&ic===c)td.className="picked";td.addEventListener("click",()=>{rs.value=String(ir);cs.value=String(ic);render()});tr.append(td)}tbody.append(tr)}grid.append(tbody);
+    for(let ir=0;ir<6;ir++){
+      const tr=document.createElement("tr"),th=document.createElement("th");th.textContent=labels[ir];tr.append(th);
+      for(let ic=0;ic<6;ic++){
+        const td=document.createElement("td");td.textContent=makeResult(i,ir,ic);
+        if(ir===r&&ic===c)td.classList.add("picked");
+        td.addEventListener("click",()=>{lastSingle=null;rs.value=ir;cs.value=ic;render()});
+        tr.append(td);
+      }
+      tbody.append(tr);
+    }
+    grid.append(tbody);
     document.querySelectorAll(".oracle-index button").forEach((b,j)=>b.classList.toggle("active",j===Math.floor(i/4)));
+    renderSingleFaces();
   }
+
+  const mixPresets={
+    criatura:{label:"Criatura Assimilada",roles:["Organismo","Comportamento","Alteração"],draw:()=>[16,17,18]},
+    evento:{label:"Evento inesperado",roles:["Ambiente","Reviravolta","Repercussão"],draw:()=>[rnd(4),20+rnd(4),32+rnd(4)]},
+    encontro:{label:"Encontro com personagens",roles:["Pessoa ou grupo","História que circula","Dificuldade"],draw:()=>[8+rnd(4),12+rnd(4),20+rnd(4)]},
+    exploracao:{label:"Exploração e cenário",roles:["Local ou obstáculo","Atmosfera","Descoberta"],draw:()=>[4+rnd(4),rnd(4),24+rnd(4)]},
+    rumor:{label:"Rumor e consequência",roles:["Boato","Fonte","Consequência"],draw:()=>[12,14,13]},
+    objeto:{label:"Objeto ou relíquia",roles:["Objeto","História","Importância"],draw:()=>[24,26,25]},
+    assimilacao:{label:"Fenômeno de Assimilação",roles:["Manifestação","Mutação","Efeito"],draw:()=>[16,18,19]},
+    sonho:{label:"Sonho ou visão",roles:["Imagem","Consequência íntima","Significado em disputa"],draw:()=>[28,29,31]},
+    surpresa:{label:"Surpresa",roles:["Primeiro elemento","Segundo elemento","Terceiro elemento"],draw:()=>{
+      const keys=[0,1,2,3,4,5,6,7,8];
+      for(let i=keys.length-1;i>0;i--){const j=rnd(i+1);[keys[i],keys[j]]=[keys[j],keys[i]]}
+      return keys.slice(0,3).map(group=>group*4+rnd(4));
+    }}
+  };
+  function mixSentence(theme,parts){
+    const s=parts.map(p=>p.replace(/[.!?;\s]+$/g,""));
+    const common={
+      surpresa:"Três sinais independentes atravessam a mesma cena: "+s[0]+". Em paralelo, "+s[1]+". A terceira ocorrência é "+s[2]+". O Assimilador decide se existe uma relação real entre elas ou apenas uma coincidência significativa.",
+      criatura:"Uma presença orgânica surge: "+s[0]+". Sua forma de agir revela "+s[1]+". A Assimilação manifesta "+s[2]+". Defina como isso afeta o ambiente antes de escolher qualquer ficha ou mutação.",
+      evento:"O ambiente apresenta "+s[0]+". Em seguida ocorre "+s[1]+". O desdobramento que alcança a região é "+s[2]+". Descubra quais personagens tentam aproveitar ou impedir a mudança.",
+      encontro:"O grupo encontra alguém marcado por "+s[0]+". A respeito desse encontro, circula "+s[1]+". A situação se complica por "+s[2]+". A relação só se define pelas escolhas feitas em cena.",
+      exploracao:"Na travessia, destaca-se "+s[0]+". A percepção do lugar muda com "+s[1]+". A recompensa, pista ou problema encontrado é "+s[2]+". Use os três como uma única oportunidade de exploração.",
+      rumor:"Circula o seguinte boato: "+s[0]+". A origem da informação envolve "+s[1]+". Investigá-lo pode trazer "+s[2]+". Nem tudo precisa ser verdadeiro.",
+      objeto:"O objeto encontrado é descrito como "+s[0]+". Sua origem está ligada a "+s[1]+". O interesse despertado por ele é "+s[2]+". O valor emerge de quem reconhece a peça.",
+      assimilacao:"O organismo ou fenômeno parte de "+s[0]+". Apresenta a transformação "+s[1]+". Seu efeito reconhecível é "+s[2]+". Não conceda poderes ou recursos mecânicos automaticamente.",
+      sonho:"O sonho apresenta "+s[0]+". A experiência íntima se mistura com "+s[1]+". Outra camada do sonho aponta para "+s[2]+". Interprete tudo como possibilidade simbólica, jamais como certeza."
+    };
+    return common[theme]||common.surpresa;
+  }
+  function renderMix(){
+    if(!lastMix){mixResults.replaceChildren();const placeholder=document.createElement("div");placeholder.className="mix-empty";placeholder.textContent="Escolha um tema e clique em Gerar Master Mix. Três tabelas serão sorteadas com seus dados e resultados.";mixResults.append(placeholder);mixSynthesis.hidden=true;mixCopy.disabled=true;return}
+    mixResults.replaceChildren();
+    const preset=mixPresets[lastMix.theme],values=[];
+    lastMix.parts.forEach((part,j)=>{
+      const box=document.createElement("article");box.className="mix-card";
+      const top=document.createElement("span");top.className="mix-order";top.textContent=String(j+1).padStart(2,"0")+" · "+preset.roles[j];
+      const title=document.createElement("h4");title.textContent=tableTitle(part.index);
+      const source=document.createElement("small");source.className="mix-table-source";source.textContent="Tabela "+(part.index+1)+" · "+groups[Math.floor(part.index/4)]+(imported?" · p. "+imported[part.index].page:" · proposta");
+      const text=document.createElement("p");text.className="mix-card-result";text.textContent=makeResult(part.index,part.roll.row.bucket,part.roll.col.bucket);
+      values.push(text.textContent);
+      const dieArea=document.createElement("div");dieArea.className="mix-rolls";
+      dieArea.append(diceSummaryBlock(part.roll.row,"Linha"),diceSummaryBlock(part.roll.col,"Coluna"));
+      box.append(top,title,source,text,dieArea);
+      mixResults.append(box);
+    });
+    mixSource.textContent="Método: "+(lastMix.method==="standard"?"2d10 por eixo":lastMix.method==="high"?"2d12 por eixo":"1d6 numérico por eixo")+" · "+(imported?"resultados das matrizes importadas do livro":"propostas narrativas do Codex")+".";
+    mixTitle.textContent=preset.label+" · proposta de cena";
+    mixText.textContent=mixSentence(lastMix.theme,values);
+    mixSynthesis.hidden=false;mixCopy.disabled=false;
+  }
+  async function copyText(value){
+    if(navigator.clipboard)try{await navigator.clipboard.writeText(value);return}catch(e){}
+    window.prompt("Copie o resultado:",value);
+  }
+
   const fileInput=document.getElementById("import-source");
-  fileInput.addEventListener("change",async()=>{const file=fileInput.files&&fileInput.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!valid(data))throw new Error("O arquivo precisa ter 36 matrizes com 6 linhas e 6 colunas de texto.");imported=data;try{localStorage.setItem(key,JSON.stringify(imported))}catch(e){}sourceStatus();render()}catch(e){alert("Não foi possível importar as tabelas: "+e.message)}fileInput.value=""});
-  document.getElementById("clear-source").addEventListener("click",()=>{imported=null;try{localStorage.removeItem(key)}catch(e){}sourceStatus();render()});
+  fileInput.addEventListener("change",async()=>{
+    const file=fileInput.files&&fileInput.files[0];if(!file)return;
+    try{
+      const data=JSON.parse(await file.text());
+      if(!valid(data))throw new Error("O arquivo precisa ter 36 matrizes com 6 linhas e 6 colunas de texto.");
+      imported=data;try{localStorage.setItem(key,JSON.stringify(imported))}catch(e){}
+      sourceStatus();render();renderMix();
+    }catch(e){alert("Não foi possível importar as tabelas: "+e.message)}
+    fileInput.value="";
+  });
+  document.getElementById("clear-source").addEventListener("click",()=>{
+    imported=null;try{localStorage.removeItem(key)}catch(e){}
+    sourceStatus();render();renderMix();
+  });
   sourceStatus();
-  function rnd(n){const x=new Uint32Array(1);crypto.getRandomValues(x);return x[0]%n}
-  [sel,rs,cs].forEach(el=>el.addEventListener("change",render));
-  document.getElementById("generate-oracle").addEventListener("click",()=>{rs.value=String(rnd(6));cs.value=String(rnd(6));render()});
-  toggle.addEventListener("click",()=>{wrap.hidden=!wrap.hidden;toggle.setAttribute("aria-expanded",String(!wrap.hidden));toggle.textContent=wrap.hidden?"Ver 6×6":"Ocultar 6×6"});
-  document.getElementById("copy-oracle").addEventListener("click",async()=>{const value=heading.textContent+": "+result.textContent;if(navigator.clipboard){try{await navigator.clipboard.writeText(value);return}catch(e){}}window.prompt("Copie o resultado:",value)});
-  document.querySelectorAll(".oracle-index button").forEach((b,i)=>b.addEventListener("click",()=>{sel.value=String(i*4);render();document.getElementById("oraculos").scrollIntoView({behavior:"smooth"})}));
+  sel.addEventListener("change",()=>{lastSingle=null;render()});
+  [rs,cs].forEach(el=>el.addEventListener("change",()=>{lastSingle=null;render()}));
+  method.addEventListener("change",()=>{lastSingle=null;render()});
+  document.getElementById("generate-oracle").addEventListener("click",()=>{
+    lastSingle=rollPair();
+    rs.value=String(lastSingle.row.bucket);cs.value=String(lastSingle.col.bucket);
+    render();
+  });
+  document.getElementById("generate-mix").addEventListener("click",()=>{
+    const theme=mixTheme.value,preset=mixPresets[theme];
+    if(!preset)return;
+    const indexes=preset.draw();
+    lastMix={theme,method:method.value,parts:indexes.map(index=>({index,roll:rollPair()}))};
+    renderMix();
+  });
+  mixCopy.addEventListener("click",()=>{
+    if(!lastMix)return;
+    const p=mixPresets[lastMix.theme];
+    const lines=["MASTER MIX · "+p.label,"Método: "+(lastMix.method==="high"?"2d12":lastMix.method==="numeric"?"1d6 numérico":"2d10")+" por eixo"];
+    lastMix.parts.forEach((part,j)=>{
+      const r=part.roll.row,c=part.roll.col;
+      lines.push("",""+(j+1)+". "+p.roles[j]+" — "+tableTitle(part.index),
+        "Linha: "+rollSummary(r)+" | Coluna: "+rollSummary(c),
+        "Resultado: "+makeResult(part.index,r.bucket,c.bucket));
+    });
+    lines.push("","Síntese: "+mixText.textContent);
+    copyText(lines.join("\n"));
+  });
+  toggle.addEventListener("click",()=>{
+    wrap.hidden=!wrap.hidden;toggle.setAttribute("aria-expanded",String(!wrap.hidden));
+    toggle.textContent=wrap.hidden?"Ver 6×6":"Ocultar 6×6";
+  });
+  document.getElementById("copy-oracle").addEventListener("click",()=>{
+    const extra=lastSingle?"\n"+rollSummary(lastSingle.row)+"\n"+rollSummary(lastSingle.col):"\nConsulta manual (sem rolagem)";
+    copyText(heading.textContent+" — "+coord.textContent+"\n"+result.textContent+extra);
+  });
+  document.querySelectorAll(".oracle-index button").forEach((b,i)=>b.addEventListener("click",()=>{
+    lastSingle=null;sel.value=String(i*4);render();
+    document.getElementById("oraculos").scrollIntoView({behavior:"smooth"});
+  }));
+  renderMix();
   const search=document.getElementById("search"),sheets=[...document.querySelectorAll(".sheet")];
   search.addEventListener("input",()=>{const s=search.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");sheets.forEach(p=>{const text=p.textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");p.classList.toggle("hidden-search",!text.includes(s))})});
   let zoom=1;const updateZoom=()=>document.documentElement.style.setProperty("--zoom",String(zoom));
