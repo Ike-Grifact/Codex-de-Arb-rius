@@ -89,7 +89,7 @@
     const clone = source.cloneNode(true);
     clone.querySelectorAll("script,style,figure,dialog,iframe,video,audio,canvas,button,form,.codex-rule-trigger,.lud-illustration,.lud-hover-layer,.apolo-art,.aru-art,.vespa-art").forEach(el => el.remove());
     clone.querySelectorAll("img").forEach(img => {
-      if (!img.closest(".sym,.mechanic,.reference-resource,.cost-glyph")) img.remove();
+      if (!img.closest(".sym,.mechanic,.reference-resource,.cost-glyph,.codex-symbol-token")) img.remove();
     });
     if (clone.innerHTML.length > maxChars) {
       let used = 0;
@@ -208,22 +208,8 @@
       for (const c of result.costs) {
         const chip = document.createElement("span");
         chip.className="codex-rule-mini-cost codex-rule-mini-cost--"+c.type;
-        // Apolo: usar os próprios símbolos do Assimilação nos custos do cartão.
-        if (apolo) {
-          const value=String(c.value||"");
-          const files=[];
-          if (/\d+\s*PM\b/.test(value)) files.push("maestria-araucaria-coroa.svg");
-          if (/(?:\d+|\+)A\b/.test(value)) files.push("sucesso.svg");
-          if (/(?:\d+|\+)B\b/.test(value)) files.push("adaptacao.svg");
-          if (/\d+d\b/.test(value)) files.push("pontodedeterminacao.svg");
-          if (/\d+e\b/.test(value)) files.push("pontodeassimilacao.svg");
-          for (const file of files) {
-            const ico=document.createElement("img");
-            ico.src=new URL(file,emblem).href;
-            ico.alt="";ico.setAttribute("aria-hidden","true");
-            chip.appendChild(ico);
-          }
-        }
+        // Custos passam por uma única camada de notação compartilhada com o livro.
+        // Não anexar SVG aqui: o renderizador converte "1 PM" em "1 × [símbolo]".
         const v=document.createElement("strong");v.textContent=c.value;
         const label=document.createElement("small");label.textContent=c.label;
         chip.append(v,label);
@@ -231,6 +217,7 @@
       }
     } else cost.textContent=result.cost;
     body.replaceChildren(result.html);
+    if (apolo) window.CodexSymbolNotation?.enhance(pop);
     if (!body.textContent.trim()) body.textContent="Consulte a seção completa para os detalhes desta capacidade.";
     body.scrollTop = 0;
     note.textContent = result.concise ? "Resumo editorial · SRD v1.29 [TESTE]" : (result.full ? "Regra completa deste bloco · Dossiê do jogador" : "Prévia do texto existente · Consulte a seção integral");
