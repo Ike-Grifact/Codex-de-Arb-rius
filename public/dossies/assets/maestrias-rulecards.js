@@ -258,7 +258,7 @@
   }
 
   // Navegador lateral (inspirado na consulta hierárquica de livros de regras).
-  document.querySelectorAll(".side-nav a[href^='#'],.page-nav a[href^='#'],.lore-mobile-nav a[href^='#']").forEach(node=>connect(node,false));
+  document.querySelectorAll(".side-nav a[href^='#'],.page-nav a[href^='#'],.lore-mobile-nav a[href^='#'],.codex-rule-direct-link").forEach(node=>connect(node,false));
   // Cada técnica aparece em um cartão com o próprio texto da habilidade, sem criar regras novas.
   const headings=[
     ".technique .tech-head h3",
