@@ -758,3 +758,20 @@ body .apolo-quicknav > a img {background:#eceeed;border-radius:5px;padding:3px;b
 .ability-section .apolo-linked-reading a[href*="/regras/adaptacao-b/"] img.apolo-rule-symbol {filter:hue-rotate(55deg)}
 .apolo-linked-intro a[href*="/regras/pressao-c/"] img.apolo-rule-symbol,
 .ability-section .apolo-linked-reading a[href*="/regras/pressao-c/"] img.apolo-rule-symbol {filter:hue-rotate(170deg)}
+
+
+/* A linha de custo do cartão NÃO é outra moldura: cada recurso tem somente
+   a moldura do próprio emblema, com N × sobre o papel livre. */
+.codex-rule-popover__cost .codex-rule-mini-cost,
+.codex-rule-popover__cost .codex-rule-mini-cost:has(.codex-symbol-token),
+.codex-rule-popover__cost .codex-rule-mini-cost:has(.codex-symbol-token--PM) {
+ background:transparent!important;
+ border:0!important;
+ border-radius:0!important;
+ padding:2px 5px!important;
+ box-shadow:none!important;
+}
+.codex-rule-popover__cost .codex-rule-mini-cost + .codex-rule-mini-cost {
+ border-left:1px solid #d5d4cd!important;
+ padding-left:10px!important;
+}
