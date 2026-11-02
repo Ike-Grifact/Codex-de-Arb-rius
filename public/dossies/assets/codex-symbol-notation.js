@@ -154,7 +154,7 @@
     // Um único token evita o problema "ícone + 3A" e também mantém +2A como bônus.
     root.querySelectorAll?.(".sym.sym-a,.sym.sym-b,.sym.sym-c").forEach(old=>{
       const type=old.classList.contains("sym-a")?"A":old.classList.contains("sym-b")?"B":"C";
-      const match=old.textContent.trim().match(/^([+\\-−]?)(\\d+)\\s*([ABC])$/);
+      const match=old.textContent.trim().match(/^([+\-−]?)(\d+)\s*([ABC])$/);
       if (!match || match[3]!==type) return;
       old.replaceWith(makeToken(type,match[2],match[1]));
     });
