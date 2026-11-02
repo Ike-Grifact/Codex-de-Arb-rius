@@ -2,6 +2,7 @@
 import {apoloMaestrias,apoloGrupos} from "../../../data/apolo-maestrias.mjs";
 import {withBase} from "../../../lib/paths";
 import ApoloRuleSidebar from "../../../components/ApoloRuleSidebar.astro";
+import AssimilacaoIcons from "../../../components/AssimilacaoIcons.astro";
 import "../../../styles/apolo-rule-cards.css";
 const base=import.meta.env.BASE_URL;
 ---
@@ -29,7 +30,7 @@ const base=import.meta.env.BASE_URL;
 <section class="rule-collection" aria-label={grupo.name}>
   <div class="rule-group-heading"><h2>{grupo.name}</h2><p>{grupo.description}</p></div>
   <div class="rule-cards">
-  {apoloMaestrias.filter(item=>item.stage===grupo.stage).map(item=><a class="rule-index-card" href={withBase(`maestrias/apolo/${item.slug}/`,base)}><span class="rule-index-kicker">{item.kind}</span><strong>{item.name}</strong><p>{item.headline}</p><span class="rule-cost-row">{item.costs.slice(0,3).map(cost=><span class={`rule-cost rule-cost--${cost.type}`}><b>{cost.value}</b><small>{cost.label}</small></span>)}</span></a>)}
+  {apoloMaestrias.filter(item=>item.stage===grupo.stage).map(item=><a class="rule-index-card" href={withBase(`maestrias/apolo/${item.slug}/`,base)}><span class="rule-index-kicker">{item.kind}</span><strong>{item.name}</strong><p>{item.headline}</p><span class="rule-cost-row">{item.costs.slice(0,3).map(cost=><span class={`rule-cost rule-cost--${cost.type}`}><AssimilacaoIcons value={cost.value} size={17}/><b>{cost.value}</b><small>{cost.label}</small></span>)}</span></a>)}
   </div>
 </section>
 ))}
