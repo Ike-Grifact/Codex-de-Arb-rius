@@ -36,12 +36,18 @@
       count.textContent=n+" ×";
       span.append(count);
     }
+    // A quantidade permanece FORA da caixa colorida; somente o emblema fica na caixa.
+    // O agrupamento externo é único para leitores de tela e impede quebra entre N × e ícone.
+    const glyph=document.createElement("span");
+    glyph.className="codex-symbol-token__glyph";
+    glyph.setAttribute("aria-hidden","true");
     const img=document.createElement("img");
     img.src=new URL(item.file,base).href;
     img.alt="";
     img.setAttribute("aria-hidden","true");
     img.decoding="async";
-    span.append(img);
+    glyph.append(img);
+    span.append(glyph);
     return span;
   }
   function renderText(root) {
