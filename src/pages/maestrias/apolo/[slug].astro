@@ -3,6 +3,9 @@ import {apoloMaestrias,apoloGrupos} from "../../../data/apolo-maestrias.mjs";
 import {withBase} from "../../../lib/paths";
 import ApoloRuleSidebar from "../../../components/ApoloRuleSidebar.astro";
 import "../../../styles/apolo-rule-cards.css";
+import "../../../styles/linked-rules.css";
+import RuleReference from "../../../components/RuleReference.astro";
+import {remissoesApolo} from "../../../data/apolo-rule-crosslinks.mjs";
 export function getStaticPaths(){
   return apoloMaestrias.map(item=>({params:{slug:item.slug},props:{item}}));
 }
@@ -12,6 +15,7 @@ const grupo=apoloGrupos.find(x=>x.stage===item.stage);
 const url=withBase(`maestrias/apolo/${item.slug}/`,base);
 const guide=withBase(`dossies/apolo-hellman-f943e1efaaa2.html#${item.sourceSection}`,base);
 const related=apoloMaestrias.filter(x=>x.stage===item.stage&&x.slug!==item.slug);
+const crosslinks=remissoesApolo[item.slug]||[];
 ---
 <html lang="pt-BR">
 <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -26,11 +30,12 @@ const related=apoloMaestrias.filter(x=>x.stage===item.stage&&x.slug!==item.slug)
 <main class="rule-page">
   <div class="rule-topbar"><span>Codex / Maestrias / Apolo / {grupo.name}</span><a href={withBase("maestrias/apolo/",base)}>Todas as fichas</a></div>
   <header class="rule-intro">
-    <p class="rule-eyebrow">Ficha individual · {grupo.name} · {item.kind}</p>
+    <p class="rule-eyebrow"><span class="rule-kind rule-kind--habilidade">Habilidade</span> {grupo.name} · {item.kind}</p>
     <div class="rule-masthead"><img src={withBase("symbols/maestria-araucaria-coroa.svg",base)} alt="Araucária coroada, símbolo de Maestria"/><h1 class="rule-title">{item.name}</h1></div>
     <p class="rule-lead">{item.headline}</p>
     <p class="rule-annotation">Consulta rápida para mesa · SRD de Árborius v1.29 [HOMEBREW] [TESTE]</p>
   </header>
+  <p class="rule-linked-help">Esta capacidade usa os conceitos de {crosslinks.map((slug,i)=><Fragment>{i>0?", ":""}<RuleReference slug={slug}/></Fragment>)}. Passe o mouse sobre um termo para consultar ou clique para abrir a regra.</p>
   <article class="rule-paper">
     <div class="rule-paper-head">
       <p>Recursos e custos</p>
@@ -41,9 +46,11 @@ const related=apoloMaestrias.filter(x=>x.stage===item.stage&&x.slug!==item.slug)
     <div class="rule-warning"><strong>Atenção</strong><span>{item.warning}</span></div>
   </article>
   <div class="rule-footer">
-    <a class="rule-button rule-button--primary" href={guide}>Ler explicação completa no guia de Apolo</a>
+    <a class="rule-button rule-button--primary" href={guide}>Ler explicação detalhada no dossiê</a>
+    <a class="rule-button" href={withBase("maestrias/apolo/capitulo/",base)}>Ler capítulo de Apolo</a>
     <a class="rule-button" href={withBase("maestrias/apolo/",base)}>Voltar ao índice de habilidades</a>
   </div>
+  <section class="rule-collection" aria-label="Referências aplicadas à habilidade"><h2>Regras e ações relacionadas</h2><div class="rule-inline-ref-list">{crosslinks.map(slug=><RuleReference slug={slug}/>)}</div></section>
   <section class="rule-collection" aria-label="Outras habilidades da mesma Maestria">
     <h2>Outras capacidades do mesmo caminho</h2>
     <div class="rule-cards">
@@ -55,5 +62,6 @@ const related=apoloMaestrias.filter(x=>x.stage===item.stage&&x.slug!==item.slug)
   </section>
 </main>
 </div>
+<script src={withBase("dossies/assets/linked-references.js",base)} defer></script>
 </body>
 </html>
