@@ -1,0 +1,15 @@
+---
+import {referenciasPorSlug,tiposReferencia} from "../data/arborius-references.mjs";
+import {apoloPorSlug} from "../data/apolo-maestrias.mjs";
+import {withBase} from "../lib/paths";
+const {slug,tipo="regra"}=Astro.props;
+const habilidade=tipo==="habilidade";
+const entry=habilidade?apoloPorSlug[slug]:referenciasPorSlug[slug];
+if(!entry)throw new Error("Referência não encontrada: "+tipo+"/"+slug);
+const refType=habilidade?"habilidade":entry.type;
+const url=withBase(habilidade?`maestrias/apolo/${slug}/`:`regras/${slug}/`,import.meta.env.BASE_URL);
+const label=habilidade?"Habilidade":tiposReferencia[refType]?.title||"Regra";
+const preview=habilidade?entry.headline:entry.lead;
+const value=habilidade?entry.costs?.[0]?.value:entry.fields?.[0]?.[1];
+---
+<a href={url} class={`codex-linked-term codex-linked-term--${refType}`} data-codex-ref="true" data-ref-type={refType} data-ref-label={label} data-ref-title={entry.name||entry.title} data-ref-summary={preview} data-ref-cost={value||""} aria-label={`${entry.name||entry.title} — ${label}; abrir referência`}><slot>{entry.name||entry.title}</slot></a>
