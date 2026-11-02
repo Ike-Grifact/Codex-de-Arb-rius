@@ -1,0 +1,380 @@
+/* Apolo — edição do livro do jogador (camada visual de leitura; 2026-11-02).
+   Fonte integral à vista, sem imitar marca ou UI do D&D Beyond.
+   Escopo restrito ao dossiê e aos seus três caminhos de Maestria. */
+:root {
+  --apolo-paper:#f7f0e2;
+  --apolo-paper-raised:#fcf8ee;
+  --apolo-text:#263a2f;
+  --apolo-secondary:#47564c;
+  --apolo-rule-border:#c5b493;
+  --apolo-focus:#315c83;
+}
+.ability-section.green {--apolo-path:#315f46;--apolo-path-wash:#e9f2e7}
+.ability-section.gold {--apolo-path:#865e2c;--apolo-path-wash:#f4ead3}
+.ability-section.red {--apolo-path:#8a443d;--apolo-path-wash:#f5e8e2}
+
+/* O prefácio é uma página do livro, não uma caixa de texto escuro deslocada. */
+.apolo-linked-intro {
+  background:var(--apolo-paper-raised)!important;
+  border-color:#c2b08a!important;
+  border-left-color:#856e3e!important;
+  box-shadow:0 6px 23px #59452b16!important;
+  color:var(--apolo-text)!important;
+}
+.apolo-linked-intro h2 {
+  color:#2b4435!important;
+  font-weight:600!important;
+}
+.apolo-linked-intro p,
+.apolo-linked-intro li {
+  max-width:81ch;
+  color:var(--apolo-text)!important;
+  font-size:15px!important;
+  line-height:1.76!important;
+}
+.apolo-linked-intro strong {color:#203c2e!important}
+.apolo-linked-intro .apolo-primer-subhead {
+  background:#eee5d3!important;
+  color:#344b39!important;
+  border-color:#c3b392!important;
+  border-left-color:#41684a!important;
+  font-size:16px!important;
+}
+.apolo-linked-intro .apolo-primer-subhead+p {
+  background:#faf7ef!important;
+  border-color:#c3b392!important;
+  border-left-color:#41684a!important;
+}
+
+/* Abertura dos capítulos I, II e III — mesmo fundo da página. */
+.ability-section .apolo-linked-reading {
+  min-width:0;
+  background:var(--apolo-paper)!important;
+  border:1px solid var(--apolo-rule-border)!important;
+  border-left:5px solid var(--apolo-path)!important;
+  border-radius:11px!important;
+  color:var(--apolo-text)!important;
+  box-shadow:0 5px 20px #513e2710!important;
+  padding:clamp(20px,2.5vw,32px)!important;
+  margin:22px 0 33px!important;
+}
+.ability-section .apolo-linked-reading .apolo-unified-tag {
+  background:#eee4ce!important;
+  border:1px solid #d0bd91!important;
+  color:#5d4a2c!important;
+  font-size:11px!important;
+}
+.ability-section .apolo-linked-reading .rule-chapter-heading {
+  border-bottom:1px solid var(--apolo-rule-border)!important;
+  margin-bottom:16px;
+}
+.ability-section .apolo-linked-reading .rule-chapter-heading>span {
+  color:var(--apolo-path)!important;
+  background:var(--apolo-path-wash)!important;
+  border-color:var(--apolo-rule-border)!important;
+}
+.ability-section .apolo-linked-reading .rule-chapter-heading p {
+  color:#526253!important;
+  font-weight:750!important;
+  letter-spacing:.09em;
+}
+.ability-section .apolo-linked-reading .rule-chapter-heading h2 {
+  color:var(--apolo-path)!important;
+  font-weight:650!important;
+  text-wrap:balance;
+}
+.ability-section .apolo-linked-reading .rule-chapter-heading small {
+  background:#e9e0cc!important;
+  border:1px solid #c7b28a!important;
+  color:#574522!important;
+  font-size:12px!important;
+  font-weight:750!important;
+}
+.ability-section .apolo-linked-reading p,
+.ability-section .apolo-linked-reading li {
+  color:var(--apolo-text)!important;
+  line-height:1.75!important;
+}
+.ability-section .apolo-linked-reading .rule-chapter-heading+p {
+  color:#2a4133!important;
+  font-size:16px!important;
+  max-width:84ch;
+  margin-top:14px;
+}
+.ability-section .apolo-linked-reading strong {color:#254331!important}
+
+/* Índice de habilidades da Maestria, sem duplicar a explicação completa. */
+.ability-section .apolo-linked-reading .apolo-ability-index {
+  margin:24px 0 0;
+  padding:17px 18px 16px;
+  background:#efe5d2;
+  border:1px solid #cbb994;
+  border-radius:8px;
+}
+.ability-section .apolo-linked-reading .apolo-ability-index h3 {
+  padding:0!important;
+  margin:0 0 5px!important;
+  border:0!important;
+  border-radius:0!important;
+  background:none!important;
+  color:#304d39!important;
+  font:700 18px/1.35 Georgia,serif!important;
+}
+.ability-section .apolo-linked-reading .apolo-ability-index p {
+  margin:4px 0 12px!important;
+  color:#475548!important;
+  font:14px/1.6 system-ui,sans-serif!important;
+}
+.apolo-ability-index__links {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:7px 13px;
+}
+.apolo-ability-index__links a {
+  display:block;
+  min-width:0;
+  padding:7px 9px;
+  border-left:3px solid var(--apolo-path);
+  border-radius:3px;
+  background:#f9f5ea;
+  color:#244e39!important;
+  font:750 13px/1.35 system-ui,sans-serif;
+  text-decoration:none;
+  overflow-wrap:anywhere;
+}
+.apolo-ability-index__links a:hover,
+.apolo-ability-index__links a:focus-visible {
+  background:#e4eadf;
+  color:#173d29!important;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+
+/* Largura para ler o texto; imagem acompanha, sem comprimir a regra. */
+@media(min-width:851px) {
+  .ability-section .apolo-book-spread {
+    grid-template-columns:minmax(0,1.9fr) minmax(200px,.83fr)!important;
+    align-items:start;
+    gap:clamp(17px,2.2vw,27px);
+  }
+  .ability-section .apolo-book-spread.apolo-media-left {
+    grid-template-columns:minmax(200px,.83fr) minmax(0,1.9fr)!important;
+  }
+}
+
+/* A habilidade é uma unidade editorial completa, sempre aberta. */
+.ability-section .apolo-book-spread .apolo-book-text .technique,
+.ability-section .apolo-book-spread .apolo-book-text .technique.featured,
+.ability-section>article.technique {
+  display:block!important;
+  background:var(--apolo-paper-raised)!important;
+  border:1px solid var(--apolo-rule-border)!important;
+  border-left:4px solid var(--apolo-path)!important;
+  border-radius:9px!important;
+  box-shadow:0 4px 16px #4a3a2510!important;
+  padding:20px clamp(15px,2vw,23px)!important;
+  margin:0!important;
+  min-width:0;
+  scroll-margin-top:100px;
+  break-inside:auto!important;
+}
+.ability-section .technique .tech-head {
+  display:flex!important;
+  align-items:flex-start!important;
+  gap:12px!important;
+  flex-wrap:wrap;
+  margin-bottom:11px!important;
+}
+.ability-section .technique .icon-well {
+  width:40px!important;
+  flex:0 0 40px!important;
+  height:40px!important;
+  background:var(--apolo-path-wash)!important;
+  border:1px solid #cbb994!important;
+  border-radius:7px!important;
+  color:var(--apolo-path)!important;
+}
+.ability-section .technique .tech-label {flex:1 1 190px;min-width:0}
+.ability-section .technique .tech-head h3 {
+  color:#263e32!important;
+  font:700 clamp(19px,1.9vw,23px)/1.3 Georgia,serif!important;
+  letter-spacing:0!important;
+  margin:0 0 9px!important;
+}
+.ability-section .technique .tech-head h3 a,
+.ability-section .technique .tech-head h3 .apolo-ability-link {
+  color:#263e32!important;
+  text-decoration:none;
+  border-bottom:1px solid #809984;
+  text-underline-offset:3px;
+}
+.ability-section .technique .tech-head h3 a:hover,
+.ability-section .technique .tech-head h3 a:focus-visible {
+  color:#245f45!important;
+  text-decoration:underline;
+}
+.ability-section .technique .tech-cost {
+  display:inline-block!important;
+  max-width:100%;
+  padding:6px 9px;
+  background:var(--apolo-path-wash)!important;
+  border:1px solid #b9c4af;
+  border-radius:5px;
+  color:#364b39!important;
+  font:750 12px/1.5 system-ui,sans-serif!important;
+  letter-spacing:0!important;
+  overflow-wrap:anywhere;
+}
+.ability-section .technique .codex-rule-direct-link {
+  margin:0 8px 7px 0;
+  padding:5px 9px;
+  border-color:#b9a47c;
+  background:#f4ead3;
+  color:#344a34!important;
+  font:700 12px/1.45 system-ui,sans-serif;
+}
+.ability-section .technique .apolo-tech-teaser {
+  padding:0 0 12px;
+  margin:10px 0 14px;
+  border-bottom:1px solid #d9cbb1;
+  color:#465a4b!important;
+  font:italic 15px/1.65 Georgia,serif!important;
+  opacity:1!important;
+}
+.ability-section .technique .apolo-rule-body {
+  display:block!important;
+  background:transparent!important;
+  color:var(--apolo-text)!important;
+  margin:4px 0 14px;
+}
+.ability-section .technique .apolo-rule-body .apolo-rule-line {
+  color:var(--apolo-text)!important;
+  background:transparent!important;
+  font:15px/1.76 Georgia,serif!important;
+  margin:0!important;
+  padding:12px 0 11px!important;
+  overflow-wrap:break-word;
+  hyphens:auto;
+}
+.ability-section .technique .apolo-rule-body .apolo-rule-line+.apolo-rule-line {
+  border-top:1px solid #e1d7c5;
+}
+.ability-section .technique .apolo-rule-body .apolo-rule-key {
+  font:800 13px/1.65 system-ui,sans-serif!important;
+  color:var(--apolo-path)!important;
+  margin-right:4px;
+}
+.ability-section .technique .apolo-rule-body strong {
+  color:#214735!important;
+}
+.ability-section .technique .apolo-rule-body .rewards {
+  margin:11px 0 14px!important;
+  background:#f7efdf!important;
+  border-color:#c2ac86!important;
+  border-radius:6px!important;
+  overflow:hidden;
+}
+.ability-section .technique .apolo-rule-body .reward-line {border-color:#d0c1a6!important}
+.ability-section .technique .apolo-rule-body .reward-title {
+  color:#4d3a20!important;
+  background:#e9d8b6!important;
+  font-weight:800!important;
+}
+.ability-section .technique .apolo-rule-body .reward-detail {
+  color:#304435!important;
+  background:#f8f2e7!important;
+}
+.ability-section .technique .apolo-tech-references {
+  border-top:1px solid #cdbf9e!important;
+  padding:12px 0 0!important;
+  margin-top:12px;
+}
+.ability-section .technique .apolo-tech-references>span {
+  color:#5e594a!important;
+  font:750 11px/1.4 system-ui,sans-serif!important;
+  text-transform:uppercase;
+}
+.ability-section .technique .apolo-tech-references a {
+  display:inline-flex;
+  align-items:center;
+  gap:3px;
+  min-height:29px;
+  background:#284738!important;
+  border-color:#546d5a!important;
+  color:#f4f7e9!important;
+  font:700 11px/1.4 system-ui,sans-serif!important;
+  text-decoration:none;
+}
+.ability-section .technique .apolo-tech-references a:hover,
+.ability-section .technique .apolo-tech-references a:focus-visible {background:#346549!important}
+
+/* Links semânticos: A é dourado, B é verde, C é vermelho, sempre com nomes. */
+.apolo-linked-intro .codex-linked-term,
+.ability-section .apolo-linked-reading .codex-linked-term {
+  color:#29533d!important;
+  text-underline-offset:3px;
+  text-decoration:underline;
+}
+.apolo-linked-intro .codex-linked-term--recurso,
+.ability-section .apolo-linked-reading .codex-linked-term--recurso {color:#185c62!important}
+.apolo-linked-intro .codex-linked-term--acao,
+.ability-section .apolo-linked-reading .codex-linked-term--acao {color:#765124!important}
+.apolo-linked-intro .codex-linked-term--regra,
+.ability-section .apolo-linked-reading .codex-linked-term--regra {color:#5b4679!important}
+.apolo-linked-intro a[href*="/regras/sucesso-a/"],
+.ability-section .apolo-linked-reading a[href*="/regras/sucesso-a/"] {color:#785521!important}
+.apolo-linked-intro a[href*="/regras/adaptacao-b/"],
+.ability-section .apolo-linked-reading a[href*="/regras/adaptacao-b/"] {color:#266044!important}
+.apolo-linked-intro a[href*="/regras/pressao-c/"],
+.ability-section .apolo-linked-reading a[href*="/regras/pressao-c/"] {color:#923f36!important}
+.apolo-linked-intro a:focus-visible,
+.ability-section .apolo-linked-reading a:focus-visible,
+.ability-section .technique a:focus-visible {outline:3px solid var(--apolo-focus)!important;outline-offset:3px}
+.ability-section .apolo-linked-reading a:hover,
+.apolo-linked-intro a:hover {background:#e9dec6!important}
+
+/* Telas estreitas e impressão: uma coluna, sem sumir com conteúdo. */
+@media(max-width:850px) {
+  .ability-section .apolo-book-spread,
+  .ability-section .apolo-book-spread.apolo-media-left {
+    display:flex!important;
+    flex-direction:column!important;
+    gap:14px;
+  }
+  .ability-section .apolo-book-spread .apolo-book-text {order:0;width:100%;max-width:none}
+  .ability-section .apolo-book-spread .apolo-book-media {order:1;width:100%;max-width:550px}
+}
+@media(max-width:620px) {
+  .ability-section .apolo-linked-reading {padding:17px!important}
+  .apolo-ability-index__links {grid-template-columns:1fr}
+  .ability-section .apolo-linked-reading .apolo-ability-index {padding:12px}
+  .ability-section .apolo-linked-reading .rule-chapter-heading h2 {font-size:clamp(25px,7vw,32px)!important}
+  .ability-section .apolo-book-spread .apolo-book-text .technique,
+  .ability-section .apolo-book-spread .apolo-book-text .technique.featured,
+  .ability-section>article.technique {padding:15px 13px!important}
+  .ability-section .technique .tech-head {gap:8px!important}
+  .ability-section .technique .tech-head h3 {font-size:19px!important}
+  .ability-section .technique .apolo-rule-body .apolo-rule-line {font-size:15px!important;line-height:1.68!important}
+}
+@media print {
+  .apolo-linked-intro,
+  .ability-section .apolo-linked-reading,
+  .ability-section .apolo-book-spread .apolo-book-text .technique {
+    background:white!important;
+    color:#202e25!important;
+    border-color:#a3a69c!important;
+    box-shadow:none!important;
+  }
+  .ability-section .apolo-linked-reading p,
+  .ability-section .technique .apolo-rule-body .apolo-rule-line,
+  .ability-section .technique .apolo-tech-teaser {color:#202e25!important}
+  .ability-section .technique .tech-head h3,
+  .ability-section .technique .tech-head h3 a {color:#1c3c2b!important}
+  .apolo-ability-index__links a {background:white!important;color:#254331!important}
+  .ability-section .technique .apolo-tech-references a {color:#183625!important;background:white!important}
+  .ability-section .apolo-book-spread .apolo-book-media {max-width:35%}
+}
+@media(prefers-reduced-motion:reduce) {
+  .apolo-ability-index__links a,
+  .ability-section .technique a {transition:none}
+}
