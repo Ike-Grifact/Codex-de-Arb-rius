@@ -99,10 +99,16 @@ Para mostrar um botão na Área do Assimilador, crie no GitHub uma variável de 
 
 Localmente, copie `.env.example` para `.env` e ajuste a URL. O arquivo `.env` é ignorado pelo Git.
 
+## Padrões editoriais de Maestrias
+
+- [Guia de redação e iconografia de Maestrias](docs/padroes/maestrias-redacao-e-iconografia.md) — escrita fiel ao Assimilação, metodologia de consulta inspirada na organização do D&D Beyond (sem importar regras), ícones A/B/C/PM, acessibilidade, cards e fluxo das ilustrações.
+- Rode `pnpm run validate:apolo` para conferir a estrutura de leitura e os símbolos do dossiê de Apolo. Essa validação também integra o `prebuild`.
+
 ## Scripts
 
 - `pnpm run migrate`: verifica os HTMLs prioritários contra suas fontes Markdown e regenera os dois guias de linhagem com metadados.
 - `pnpm run validate`: verifica fontes, símbolos, slugs, metadados e ausência de arquivos reservados em `public/`.
+- `pnpm run validate:apolo`: valida regra integral visível, índices e ícones de Apolo; executa no prebuild.
 - `pnpm run downloads`: gera as exportações Markdown públicas.
 - `pnpm run build`: valida, gera downloads, compila o Astro e inspeciona o resultado.
 
