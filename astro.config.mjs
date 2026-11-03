@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import remarkGameSymbols from "./src/plugins/remark-game-symbols.mjs";
 import remarkGuideLinks from "./src/plugins/remark-guide-links.mjs";
+import remarkAtlasLinks from "./src/plugins/remark-atlas-links.mjs";
 import remarkLoreIncludes from "./src/plugins/remark-lore-includes.mjs";
 import remarkContentAssets from "./src/plugins/remark-content-assets.mjs";
 
@@ -34,6 +35,7 @@ export default defineConfig({
       remarkLoreIncludes,
       [remarkContentAssets, { base }],
       [remarkGuideLinks, { base }],
+      [remarkAtlasLinks, { base }],
       [remarkGameSymbols, { base }]
     ],
     shikiConfig: {
