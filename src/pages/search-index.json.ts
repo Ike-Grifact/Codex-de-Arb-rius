@@ -22,13 +22,14 @@ const excerpt = (body: string, fallback: string) => {
 const labels = (tags: string[]) => tags.map(tagLabel);
 
 export async function GET() {
-  const [guides, materials, items, lore, quests, sessions] = await Promise.all([
+  const [guides, materials, items, lore, quests, sessions, characters] = await Promise.all([
     getCollection("guias"),
     getCollection("materiais"),
     getCollection("itens"),
     getCollection("lore"),
     getCollection("quests"),
-    getCollection("sessoes")
+    getCollection("sessoes"),
+    getCollection("atlas")
   ]);
 
   const publicOnly = <T extends { data: { visibility: string; status: string } }>(entries: T[]) =>
@@ -72,6 +73,15 @@ export async function GET() {
       excerpt: excerpt(entry.body ?? "", entry.data.description),
       tags: labels(entry.data.tags),
       link: `mundo/#${entry.data.slug}`
+    })),
+    ...publicOnly(characters).filter((entry) => !entry.data.example).map((entry) => ({
+      title: entry.data.title,
+      type: "Personagem",
+      category: "personagem",
+      categoryLabel: "Personagem",
+      excerpt: excerpt(entry.body ?? "", entry.data.description),
+      tags: labels(entry.data.tags),
+      link: `personagens/${entry.data.slug}/`
     })),
     ...publicOnly(quests).filter((entry) => entry.data.state !== "oculta").map((entry) => ({
       title: entry.data.title,

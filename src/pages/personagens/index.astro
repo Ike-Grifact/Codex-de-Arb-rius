@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import { withBase } from "../../lib/paths";
+import PersonagensSidebar from "../../components/PersonagensSidebar.astro";
+import "../../styles/apolo-rule-cards.css";
+import "../../styles/personagens.css";
+
+const base = import.meta.env.BASE_URL;
+const entries = (await getCollection("atlas"))
+  .filter(entry => entry.data.visibility === "publico" && entry.data.status === "publicado" && !entry.data.example)
+  .sort((a,b) => a.data.title.localeCompare(b.data.title, "pt-BR"));
+---
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Biografias, memórias e vínculos dos personagens da campanha Codex de Árborius." />
+  <meta name="theme-color" content="#193d33" />
+  <title>Personagens | Codex de Árborius</title>
+</head>
+<body>
+  <div class="rule-shell">
+    <PersonagensSidebar />
+    <main class="rule-page" id="conteudo">
+      <div class="rule-topbar"><span>Codex / Personagens</span><a href={withBase("",base)}>Início</a></div>
+      <header class="rule-intro">
+        <p class="rule-eyebrow">Codex de Árborius · Histórias da campanha</p>
+        <div class="rule-masthead">
+          <span class="biography-seal" aria-hidden="true">Á</span>
+          <h1 class="rule-title">Personagens</h1>
+        </div>
+        <p class="rule-lead">Vidas, escolhas e acontecimentos que marcaram Árborius. Cada biografia preserva a trajetória de um personagem em seu próprio registro.</p>
+        <p class="rule-annotation">Biografias narrativas · Registros cronológicos · Leitura pública</p>
+      </header>
+      <section class="rule-collection" aria-label="Biografias disponíveis">
+        <div class="rule-group-heading"><h2>Biografias</h2><p>{entries.length} {entries.length === 1 ? "personagem publicado" : "personagens publicados"}</p></div>
+        <div class="rule-cards">
+          {entries.map(entry => (
+            <a class="rule-index-card biography-index-card" href={withBase("personagens/" + entry.data.slug + "/",base)}>
+              <span class="rule-index-kicker">Biografia · Árborius</span>
+              <strong>{entry.data.title}</strong>
+              <p>{entry.data.description}</p>
+              <span class="biography-card-link">Ler história <span aria-hidden="true">→</span></span>
+            </a>
+          ))}
+        </div>
+        {entries.length === 0 && <p class="biography-empty">Nenhuma biografia pública cadastrada.</p>}
+      </section>
+      <div class="rule-footer"><a class="rule-button" href={withBase("mundo/",base)}>Explorar o mundo</a><a class="rule-button rule-button--primary" href={withBase("",base)}>Voltar ao Codex</a></div>
+    </main>
+  </div>
+</body>
+</html>

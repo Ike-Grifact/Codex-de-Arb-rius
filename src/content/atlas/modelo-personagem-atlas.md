@@ -4,8 +4,8 @@ slug: "modelo-personagem-atlas"
 description: "Modelo público de ficha histórica; não é personagem canônico da campanha."
 type: "registro-atlas"
 kind: "personagem"
-visibility: "publico"
-status: "publicado"
+visibility: "reservado"
+status: "rascunho"
 example: true
 updated: 2026-10-08
 tags:

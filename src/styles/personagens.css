@@ -1,0 +1,40 @@
+/* Biografias: composição editorial alinhada à paleta das Maestrias de Árborius. */
+.biography-brand-mark,.biography-seal{
+  display:inline-grid;place-items:center;flex:none;
+  font-family:Georgia,"Times New Roman",serif;
+  border:1px solid #c3aa74;background:#f5ecd9;color:#284939;
+}
+.biography-brand-mark{width:47px;height:47px;border-radius:11px;font-size:30px;line-height:1}
+.biography-seal{width:64px;height:64px;border-radius:16px;font-size:40px;line-height:1}
+.biography-index-card{display:flex;flex-direction:column;min-height:235px;border-top:4px solid #ac9665}
+.biography-index-card p{max-width:60ch;line-height:1.65}
+.biography-card-link{margin-top:auto;padding-top:18px;color:#315e47;font-size:12px;font-weight:800;letter-spacing:.02em}
+.biography-card-link span{margin-left:4px}
+.biography-paper{border-top:4px solid #ad9461}
+.biography-paper-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:9px;align-items:center}
+.biography-paper-head__details{display:flex;flex-wrap:wrap;gap:15px;color:#6c7468;font-size:11px;font-weight:650}
+.biography-prose{padding:clamp(18px,4vw,46px);font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:1.9;color:#374a40}
+.biography-prose > p:first-child{margin:0 0 30px;padding:20px 23px;border:1px solid #d9cbb1;border-left:4px solid #ae9769;border-radius:8px;background:#f4eee2;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:13px;line-height:1.95}
+.biography-prose p{max-width:78ch;margin:0 0 1.1em}
+.biography-prose h2{margin:38px 0 16px;padding:0 0 13px;border-bottom:1px solid #d8cdb9;font:500 clamp(24px,3.1vw,34px)/1.18 Georgia,serif;color:#234333}
+.biography-prose h2:first-child{margin-top:0}
+.biography-prose h3{margin:27px 0 12px;font:700 21px/1.3 Georgia,serif;color:#365846}
+.biography-prose strong{color:#213d31}
+.biography-prose a{color:#2b6952;font-weight:700;text-decoration-color:#bba36e;text-decoration-thickness:1.5px;text-underline-offset:3px}
+.biography-prose a:hover,.biography-prose a:focus-visible{color:#193b2c;text-decoration-color:#193b2c}
+.biography-prose blockquote{margin:16px 0;padding:10px 20px;border-left:3px solid #b79c66;background:#f3efe6}
+.biography-prose hr{border:0;border-top:1px solid #d8cdb9;margin:30px 0}
+.biography-related-note,.biography-empty{margin-top:12px;color:#657169;font-size:14px;line-height:1.7}
+@media(max-width:690px){
+  .biography-brand-mark{width:36px;height:36px;font-size:25px}
+  .biography-seal{width:49px;height:49px;font-size:33px}
+  .biography-prose{font-size:15px;padding:18px}
+  .biography-prose > p:first-child{padding:14px;font-size:12px}
+  .biography-paper-head__details{font-size:10px}
+}
+@media print{
+  .biography-prose{padding:15px}
+  .biography-paper{border:0}
+  .biography-prose h2,.biography-prose h3{break-after:avoid}
+  .biography-prose p{orphans:3;widows:3}
+}

@@ -2,7 +2,7 @@ import { readFile, readdir } from "node:fs/promises";
 import { resolve, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-// O nome permanece texto até que uma ficha pública do Atlas esteja publicada.
+// Referências de personagens ficam em texto até que sua biografia pública exista.
 const atlasRoot = resolve(fileURLToPath(new URL("../content/atlas/", import.meta.url)));
 const atlasPattern = /^atlas:([a-z0-9-]+)$/;
 
@@ -42,7 +42,7 @@ export default function remarkAtlasLinks({ base = "/" } = {}) {
         const slug = child.type === "link" ? child.url?.match(atlasPattern)?.[1] : null;
         if (slug) {
           if (published.has(slug)) {
-            child.url = withBase("atlas/#" + slug, base);
+            child.url = withBase("personagens/" + slug + "/", base);
             return [child];
           }
           // Não cria destinos inexistentes para biografias futuras.

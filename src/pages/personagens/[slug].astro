@@ -1,0 +1,72 @@
+---
+import { getCollection, render } from "astro:content";
+import { withBase } from "../../lib/paths";
+import PersonagensSidebar from "../../components/PersonagensSidebar.astro";
+import "../../styles/apolo-rule-cards.css";
+import "../../styles/personagens.css";
+
+export async function getStaticPaths() {
+  const entries = (await getCollection("atlas"))
+    .filter(entry => entry.data.visibility === "publico" && entry.data.status === "publicado" && !entry.data.example);
+  return entries.map(entry => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const base = import.meta.env.BASE_URL;
+const stamp = new Intl.DateTimeFormat("pt-BR",{timeZone:"UTC",day:"2-digit",month:"2-digit",year:"numeric"}).format(entry.data.updated);
+const related = (await getCollection("atlas"))
+  .filter(other => other.data.visibility === "publico" && other.data.status === "publicado" && !other.data.example && entry.data.relations.includes(other.data.slug));
+---
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content={entry.data.description} />
+  <meta name="theme-color" content="#193d33" />
+  <title>{entry.data.title} — Biografia | Codex de Árborius</title>
+</head>
+<body>
+  <div class="rule-shell">
+    <PersonagensSidebar current={entry.data.slug} />
+    <main class="rule-page" id="conteudo">
+      <div class="rule-topbar"><span>Codex / Personagens / {entry.data.title}</span><a href={withBase("personagens/",base)}>Todas as biografias</a></div>
+      <header class="rule-intro">
+        <p class="rule-eyebrow">Árborius · Registro biográfico</p>
+        <div class="rule-masthead">
+          <span class="biography-seal" aria-hidden="true">{entry.data.title.slice(0,1)}</span>
+          <h1 class="rule-title">{entry.data.title}</h1>
+        </div>
+        <p class="rule-lead">{entry.data.description}</p>
+        <p class="rule-annotation">Histórico narrativo · Atualizado em {stamp}</p>
+      </header>
+      <article class="rule-paper biography-paper">
+        <div class="rule-paper-head biography-paper-head">
+          <p>Registro de personagem</p>
+          <div class="biography-paper-head__details"><span>Codex de Árborius</span><span>Última atualização · {stamp}</span></div>
+        </div>
+        <div class="biography-prose"><Content /></div>
+      </article>
+      <section class="rule-collection" aria-label="Relações entre personagens">
+        <div class="rule-group-heading"><h2>Vínculos e relações</h2><p>As biografias relacionadas são conectadas assim que forem publicadas.</p></div>
+        {related.length ? (
+          <div class="rule-cards">
+            {related.map(other => (
+              <a class="rule-index-card biography-index-card" href={withBase("personagens/" + other.data.slug + "/",base)}>
+                <span class="rule-index-kicker">Personagem relacionado</span>
+                <strong>{other.data.title}</strong>
+                <p>{other.data.description}</p>
+                <span class="biography-card-link">Abrir biografia <span aria-hidden="true">→</span></span>
+              </a>
+            ))}
+          </div>
+        ) : <p class="biography-related-note">Os personagens mencionados na história ainda não possuem biografias públicas vinculadas.</p>}
+      </section>
+      <div class="rule-footer">
+        <a class="rule-button rule-button--primary" href={withBase("personagens/",base)}>Voltar às biografias</a>
+        <a class="rule-button" href={withBase("mundo/",base)}>Consultar o mundo</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

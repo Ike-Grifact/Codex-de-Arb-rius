@@ -1,0 +1,38 @@
+---
+import { getCollection } from "astro:content";
+import { withBase } from "../lib/paths";
+
+interface Props {
+  current?: string;
+}
+const { current = "" } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const entries = (await getCollection("atlas"))
+  .filter(entry => entry.data.visibility === "publico" && entry.data.status === "publicado" && !entry.data.example)
+  .sort((a,b) => a.data.title.localeCompare(b.data.title, "pt-BR"));
+---
+
+<aside class="rule-sidebar" aria-label="Navegação de personagens">
+  <a class="rule-brand" href={withBase("personagens/",base)}>
+    <span class="biography-brand-mark" aria-hidden="true">Á</span>
+    <span><strong>Codex de Árborius</strong><small>Biografias · Personagens</small></span>
+  </a>
+  <p class="rule-sidebar-title">Histórias da campanha</p>
+  <nav class="rule-nav" aria-label="Índice de personagens">
+    <div class="rule-nav-group">
+      <h2>Navegação</h2>
+      <a href={withBase("personagens/",base)} aria-current={!current ? "page" : undefined}>Todas as biografias</a>
+      <a href={withBase("mundo/",base)}>Mundo de Árborius</a>
+      <a href={withBase("cronicas/",base)}>Crônicas</a>
+      <a href={withBase("",base)}>Página inicial</a>
+    </div>
+    <div class="rule-nav-group">
+      <h2>Personagens</h2>
+      {entries.map(entry => (
+        <a href={withBase("personagens/" + entry.data.slug + "/",base)} aria-current={current === entry.data.slug ? "page" : undefined}>
+          {entry.data.title}
+        </a>
+      ))}
+    </div>
+  </nav>
+</aside>
