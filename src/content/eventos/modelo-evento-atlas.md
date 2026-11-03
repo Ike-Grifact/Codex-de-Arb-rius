@@ -3,8 +3,8 @@ title: "Acontecimento demonstrativo"
 slug: "modelo-evento-atlas"
 description: "Exemplo não canônico de mudança vinculada a uma sessão."
 type: "evento"
-visibility: "publico"
-status: "publicado"
+visibility: "reservado"
+status: "rascunho"
 example: true
 updated: 2026-10-08
 tags:

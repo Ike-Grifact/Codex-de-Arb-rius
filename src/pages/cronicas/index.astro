@@ -7,7 +7,7 @@ import "../../styles/atlas.css";
 const published = (entry) => entry.data.visibility === "publico" && entry.data.status === "publicado";
 const sessions = (await getCollection("sessoes")).filter(published).sort((a,b)=>b.data.number-a.data.number);
 const events = (await getCollection("eventos")).filter(published).sort((a,b)=>a.data.order-b.data.order);
-const atlas = (await getCollection("atlas")).filter(published);
+const atlas = (await getCollection("atlas")).filter(entry => published(entry) && !entry.data.example);
 const atlasBySlug = new Map(atlas.map(entry=>[entry.data.slug,entry]));
 const rendered = await Promise.all(sessions.map(async session => ({
   session,
@@ -47,15 +47,14 @@ const base = import.meta.env.BASE_URL;
         ))}
       </div>
       <div class="world-explorer__bottom">
-        <a href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/sessoes" target="_blank" rel="noopener noreferrer">＋ Nova sessão ↗</a>
-        <a href="https://github.com/Ike-Grifact/Codex-de-Arb-rius/new/main/src/content/eventos" target="_blank" rel="noopener noreferrer">＋ Novo acontecimento ↗</a>
+        <a href={withBase("personagens/",base)}>Consultar personagens →</a>
       </div>
     </aside>
     <div class="world-record-stage">
       <header class="world-stage-toolbar">
         <div class="world-crumbs"><span>Árborius</span><span>/</span><span>Crônicas</span><span>/</span><strong data-selected-session>Sessão</strong></div>
         <div class="world-stage-toolbar__links">
-          <a href={withBase("atlas/",base)}>Atlas Vivo</a>
+          <a href={withBase("personagens/",base)}>Personagens</a>
           <a href={withBase("mundo/",base)}>Mundo</a>
         </div>
       </header>
@@ -70,9 +69,6 @@ const base = import.meta.env.BASE_URL;
               <h2>{session.data.title}</h2>
               <p class="world-record-lead">{session.data.description}</p>
               <p class="chronicle-date">{new Intl.DateTimeFormat("pt-BR", {timeZone:"UTC",day:"2-digit",month:"long",year:"numeric"}).format(session.data.date)}</p>
-              <div class="world-record-actions">
-                <a class="world-primary-action" href={"https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/sessoes/" + session.data.slug + ".md"} target="_blank" rel="noopener noreferrer">Editar sessão no GitHub ↗</a>
-              </div>
               <section class="world-description">
                 <div class="world-section-caption"><span>01</span><h3>Resumo da sessão</h3></div>
                 <div class="world-markdown"><Content /></div>
@@ -87,10 +83,14 @@ const base = import.meta.env.BASE_URL;
                     <div class="world-markdown"><EventContent /></div>
                     {event.data.impacts.length>0&&(
                       <ul class="chronicle-impact-list">{event.data.impacts.map(impact=>(
-                        <li><a href={withBase("atlas/#"+impact.target,base)}>{atlasBySlug.get(impact.target)?.data.title??impact.target}</a> — {impact.description}</li>
+                        <li>
+                          {atlasBySlug.has(impact.target)
+                            ? <a href={withBase("personagens/" + impact.target + "/",base)}>{atlasBySlug.get(impact.target)?.data.title}</a>
+                            : <span>{impact.target}</span>}
+                          {" — "}{impact.description}
+                        </li>
                       ))}</ul>
                     )}
-                    <a class="chronicle-event__edit" href={"https://github.com/Ike-Grifact/Codex-de-Arb-rius/edit/main/src/content/eventos/"+event.data.slug+".md"} target="_blank" rel="noopener noreferrer">Editar acontecimento ↗</a>
                   </div>
                 )) : <p class="world-rail-empty">Nenhum acontecimento público vinculado a esta sessão.</p>}
               </section>
@@ -111,11 +111,11 @@ const base = import.meta.env.BASE_URL;
             <span class="world-label">PARTICIPANTES</span>
             <p class="world-rail-foot">{session.data.participants.join(", ") || "Nenhum participante informado."}</p>
             <span class="world-label">OUTRAS SEÇÕES</span>
-            <p class="world-rail-foot"><a href={withBase("atlas/",base)}>Consultar fichas relacionadas →</a></p>
+            <p class="world-rail-foot"><a href={withBase("personagens/",base)}>Consultar biografias relacionadas →</a></p>
           </aside>
         </article>
       ))}
-      {!sessions.length&&<div class="world-no-record"><h2>Nenhuma Crônica publicada</h2><p>Registre a primeira sessão pública no GitHub.</p></div>}
+      {!sessions.length&&<div class="world-no-record"><h2>Nenhuma Crônica publicada</h2><p>Os registros de sessões serão apresentados aqui quando publicados.</p></div>}
     </div>
   </div>
 </PortalLayout>
