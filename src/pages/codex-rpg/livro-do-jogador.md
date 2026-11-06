@@ -349,15 +349,27 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 | **P = D** | **Equilíbrio tenso.** A personagem mantém o controle com esforço; não é acerto desesperado nem falha com medo apenas por esse empate. |
 | **D > P** | **Desespero dominante.** A personagem age com medo, impulso ou perda de controle. **O que acontece com o D depende de ter alcançado ou não a DT.** |
 
-### Destino do Desespero dominante: acertar ou falhar
+### Destino do Desespero dominante — acerto, falha e iniciativa
 
-**Acerto desesperado — P + D ≥ DT e D > P.** O personagem alcança o objetivo num impulso. **Os D restantes são transferidos como Pressão para a ameaça ou inimigo mais próximo que possa atuar na cena.** Essa Pressão pertence à ameaça que a recebeu, podendo financiar sua reação conforme as ativações estabelecidas para o conflito. **Se não existir uma ameaça próxima**, os D não precisam virar um banco de inimigo inexistente: o Mestre aplica uma **consequência narrativa proporcional**, como tropeçar, perder posição, bater num obstáculo, danificar a armadura, derrubar uma ferramenta ou expor um recurso. **Ferir automaticamente o próprio personagem ou um aliado não é a consequência padrão de um acerto desesperado.**
+**Acerto desesperado (P + D ≥ DT, D > P):** a personagem realiza a ação; todos os **D restantes** vão como **Pressão local à ameaça elegível mais próxima**. Sem ameaça próxima, há uma complicação narrativa proporcional, como tropeçar, perder posição ou danificar uma armadura, sem causar automaticamente ferimento no personagem ou num aliado.
 
-**Falha com medo — P + D < DT e D > P.** O objetivo não é alcançado, e o personagem perde o controle em um momento perigoso. **Todos os D restantes vão para a Reserva Acumulada de Desespero da cena** (um banco coletivo de pressão para consequências futuras). A falha também **pode** produzir ferimento no próprio personagem ou em aliados próximos, perda de posição, consumo de recursos ou **perda de Coragem**, conforme a situação. Não aplique todos esses efeitos automaticamente de uma vez. **O valor exato de dano, de Coragem perdida e os custos para gastar a reserva acumulada ainda precisam ser definidos no playtest**; não presuma 1 ponto ou uma tabela de ativações que não foi aprovada.
+**Falha com medo (P + D < DT, D > P):** a personagem **perde exatamente 1 Coragem**, seus **D restantes alimentam a Reserva de Pressão Acumulada** até o limite e **a iniciativa passa à oposição**. Também pode haver dano acidental ao próprio personagem ou a um aliado próximo, perda de recursos ou outros efeitos conforme a ficção e as ativações aprovadas. Não aplique todas essas complicações simultaneamente por padrão.
 
-**Quando D ≤ P:** a personagem conserva o controle ou se equilibra no medo. Se alcançar a DT, executa a ação de acordo com a abordagem; **não transfere automaticamente D à ameaça mais próxima nem à reserva acumulada**. Se falhar, é uma falha comum, sem acionar por si só a categoria especial de falha com medo.
+**Falha com Presença (P + D < DT, P ≥ D, P > 0):** nada de ruim acontece automaticamente; a ação não é concluída e **a oportunidade passa a outro jogador**. Não perde Coragem nem acrescenta Pressão à reserva.
 
-**Importante:** a Reserva Acumulada é diferente da **Pressão entregue à ameaça mais próxima num acerto desesperado**. Não conte o mesmo D nas duas reservas. A identidade da ameaça próxima, distância narrativa, gastos da reserva e prioridade entre ameaças ainda serão refinados em playtest.
+**Falha vazia (nenhum símbolo mantido):** a ação não é concluída, **não acontece consequência automática**, e **outro jogador pode agir**. Se o jogador gastou Improvisos para anular os últimos D, esses D não entram na reserva.
+
+**Acerto controlado ou equilibrado (P + D ≥ DT, P ≥ D):** a ação acontece com controle ou equilíbrio tenso; não há transferência automática de Pressão.
+
+### Reserva de Pressão Acumulada — capacidade por número de jogadores
+
+**A reserva coletiva começa com 2 Pressões e comporta até 2 + 1 por jogador.** Com 2 PJs o limite é **4**; com 3 é **5**; com 4 é **6**. Cinco não é teto universal. Cada falha com medo acrescenta seus D restantes **até o teto**; o excedente não fica armazenado.
+
+**O Mestre pode gastar essa reserva durante sequências de acertos dos jogadores**, permitindo ativações mesmo sem uma falha recente. O gasto segue os custos das fichas das ameaças: **não há custo universal presumido**.
+
+**Comando dos mobs:** Comandantes, Minichefes e Chefes podem ser ativados diretamente usando a reserva coletiva. Para usar essa reserva para ativar um **mob comum**, deve haver **ao menos um Comandante, Minichefe ou Chefe presente e capaz de transmitir ordens** àquele mob. Sem liderança, não é permitido gastar Pressão coletiva para ativar mobs comuns. Essa restrição não cancela as fontes de Pressão locais ou ativação própria, quando descritas na ficha.
+
+**Não duplique símbolos:** D de acerto desesperado → Pressão local da ameaça próxima; D de falha com medo → reserva coletiva. Não credite o mesmo D às duas fontes. As condições de permanência da reserva entre cenas e os custos de ativação continuam em playtest.
 
 **O d4 básico** tem faces ○, ○, D e I+D, sem Presença pura. Ele permite tentar ações sem treinamento, mas tende a produzir resultados dominados pelo Desespero, especialmente quando usado em duas fontes não compradas.
 
@@ -459,59 +471,31 @@ Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltraç�
 
 **Ser bem-sucedido em Influência não controla pensamentos:** o guarda pode aceitar conversar, oferecer um acordo ou pedir garantias, conforme a intenção declarada e o contexto.
 
-## Acerto, falha e controle
+## Acertos e falhas: passagem da iniciativa
 
-**A soma P + D restante determina se o objetivo foi alcançado. A comparação D > P determina se o medo dominou a personagem.** São duas perguntas diferentes.
-
-| Resultado | Balanço | Desfecho |
+| Resultado | Condição | Desfecho |
 |---|---|---|
-| **Acerto** | **P ≥ D** | Alcança o objetivo mantendo controle ou equilíbrio tenso. Não há transferência automática de Pressão. |
-| **Acerto desesperado** | **D > P** | Alcança o objetivo; passa os **D restantes como Pressão à ameaça mais próxima**. Sem ameaça, sofre uma consequência narrativa/ambiental proporcional. |
-| **Falha comum** | **P ≥ D** | Não alcança a DT. Sem efeito especial de medo automático; a ficção pode continuar perigosa. |
-| **Falha com medo** | **D > P** | Não alcança a DT; envia os **D restantes à Reserva Acumulada de Desespero** da cena. Pode ferir a si ou a aliados próximos, perder Coragem ou causar outra complicação apropriada. |
+| Acerto controlado | P + D ≥ DT e P ≥ D | Ação alcançada; sem transferência automática. |
+| Acerto desesperado | P + D ≥ DT e D > P | D à ameaça mais próxima, ou custo narrativo sem ameaça. |
+| Falha com Presença | P + D < DT e P ≥ D e P > 0 | Nada acontece automaticamente; próximo PJ pode agir. |
+| Falha vazia | Nenhum símbolo | Nada acontece automaticamente; próximo PJ pode agir. |
+| Falha com medo | P + D < DT e D > P | **−1 Coragem**, D à reserva até seu teto, **turno da oposição**, com possíveis consequências adicionais contextualizadas. |
 
-**O mesmo D nunca é creditado simultaneamente a uma ameaça individual e à reserva acumulada.** Ter Desespero não implica dano automático, e a perda de Coragem não possui valor numérico fechado nesta edição.
-
-### Exemplo — A mesma DT, riscos diferentes
-
-Corven tenta atravessar uma passagem vigiada de **DT 2**:
-
-| Símbolos após Improvisos | Soma | Resultado |
-|---|---:|---|
-| **2P** | 2 | **Acerto sob controle**, sem transferir Pressão. |
-| **1P + 1D** | 2 | **Acerto em equilíbrio tenso** (P = D), sem transferência automática. |
-| **0P + 2D** | 2 | **Acerto desesperado:** os 2D vão como Pressão ao inimigo mais próximo; sem inimigo próximo, a travessia pode danificar a armadura ou derrubar uma ferramenta. |
-| **0P + 1D**, DT 2 | 1 | **Falha com medo:** 1D vai à reserva acumulada, e uma consequência física, social ou psicológica pode ocorrer. |
-| **0P + 1D + 1I**, DT 2 | 1 ou 0 | Se gastar I para anular D, a soma vira zero; a falha continua, mas deixa de gerar Desespero a acumular. |
-
-A mesma combinação de símbolos serve para narrar a **intenção**, a **intensidade do medo** e as consequências.
+**Exemplo:** Corven obtém **1P** para DT 2: falha com Presença e outro PJ age. Se tira **nada**, outro PJ também age. Se tira **1D**, falha com medo, perde **1 Coragem**, soma **1 Pressão** à reserva e entrega a iniciativa à oposição. Se tira **2D**, alcança DT 2 desesperadamente e passa **2 Pressões à ameaça mais próxima**, quando houver.
 
 # VI. Improviso, Desespero e iniciativa
 
-**Improviso (I)** expressa a capacidade de adaptação ao medo: antes de resolver a DT, cada I pode cancelar 1D, sacrificando também seu ponto para o objetivo. Também pode favorecer um aliado ou alimentar uma capacidade especial, respeitando a regra de um uso por símbolo.
+Improviso pode neutralizar Desespero **antes da DT**: 1I anula 1D, eliminando o ponto correspondente para o objetivo. Cada I só pode ser gasto uma vez.
 
-A iniciativa continua **narrativa, sem rodadas rígidas**. Entretanto, os símbolos definem duas destinações diferentes do Desespero dominante:
+**Falha vazia ou com Presença:** nada acontece automaticamente, e a iniciativa passa a **outro jogador**. **Falha com medo:** **−1 Coragem**, D restante à **Reserva de Pressão Acumulada** (até o teto) e a iniciativa **passa à oposição**. **Acerto desesperado:** D restante como Pressão à ameaça próxima; sem ameaça, complicação narrativa proporcional.
 
-- **Acertou desesperadamente (D > P e superou a DT):** os D restantes são convertidos em **Pressão da ameaça mais próxima**, caso exista uma ameaça elegível para agir. Sem ameaça próxima, aplica-se uma complicação de cena — tropeçar, se desequilibrar, arranhar a armadura, quebrar um objeto ou perder posição — coerente com a execução impulsiva.
-- **Falhou com medo (D > P e não superou a DT):** os D restantes alimentam a **Reserva Acumulada de Desespero** do conflito. Além disso, a falha pode causar lesão acidental na personagem ou em aliados próximos, perda de Coragem ou outro custo proporcional à cena. A reserva não recebe automaticamente D de acertos desesperados.
+### Reserva, ondas de acertos e liderança
 
-**Não confunda Pressão da ameaça mais próxima com a Reserva Acumulada de Desespero.** A primeira é localizada; a segunda acompanha o risco coletivo da cena. A relação de gasto entre ambas e os preços de ativações ainda precisam ser estabelecidos; por enquanto, anote separadamente quantidade e origem. Não transforme cada D em dano ou num ataque extra automático.
+A reserva começa com **2 Pressões de base** e seu teto é **2 + número de PJs**. Assim, três jogadores permitem até **5**, quatro jogadores até **6**. Quando os jogadores conseguem uma sequência de acertos, o Mestre ainda pode gastar Pressão acumulada para ativar ameaças, respeitando custos próprios.
 
-### Exemplo — A mesma passagem, acerto e falha
+**Comandante, Minichefe ou Chefe:** podem ser ativados diretamente. **Mobs comuns:** só podem ser ativados com essa reserva **se houver um desses líderes presente e apto a transmitir ordens aos mobs**. Sem líder, a reserva coletiva não pode ativá-los. Pressão própria/local pode ter regras diferentes, se explicitadas.
 
-Corven precisa atravessar uma saída protegida por um vigia de **DT 2**.
-
-**Acerto desesperado:** obtém **2D e 0P**. Ele chega à saída, mas passa **2 pontos de Pressão ao vigia**, por ser a ameaça mais próxima. Se o mesmo teste ocorresse num corredor vazio, poderia alcançar a saída caindo sobre as próprias proteções, danificando a armadura ou derrubando um equipamento.
-
-**Falha com medo:** obtém **1D e 0P**. Não alcança DT 2. O **1D entra na Reserva Acumulada**; ao se atrapalhar na fuga, pode esbarrar em um companheiro, se cortar numa borda ou perder Coragem, dependendo do contexto. Os custos exatos de dano e Coragem seguem em teste.
-
-**Acerto controlado:** obtém **2P + 1D**. Alcança a DT com **P > D**, controla a ação e não passa Pressão automaticamente ao vigia.
-
-### Exemplo — Improviso pode mudar a categoria
-
-Neris rola **0P + 2D + 1I**, numa tarefa de **DT 2**. Se conservar os símbolos, alcança a DT desesperadamente e transfere **2D à ameaça mais próxima**. Se usar **1I para anular 1D**, fica com **0P + 1D**, falha com medo e envia **1D para a Reserva Acumulada**. Se já tiver **1P + 2D + 1I**, anular 1D a coloca em **P = D**, com soma 2 para a DT: alcança o objetivo com controle tenso, sem gerar transferência automática.
-
-As ativações da oposição e os efeitos da reserva devem ser definidos antes da sessão; o livro não cria uma tabela numérica inexistente.
+**Exemplo:** com três PJs, o Mestre começa com **2** e pode acumular até **5**. Uma falha com medo de 2D eleva a reserva a 4; outra de 2D preenche somente o último ponto. O Mestre pode gastar a reserva numa ativação aprovada de Minichefe, inclusive durante uma onda de acertos. Um mob comum exige um líder elegível para receber ordens. Não invente custo de ativação onde a ficha não definir.
 
 # VII. Corpo, armaduras e ataques
 
