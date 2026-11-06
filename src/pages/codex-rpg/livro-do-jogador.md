@@ -90,16 +90,17 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Passo 2 — Atributos (7 XP de Base).** Escolha em que capacidades deseja investir usando **apenas os 7 XP de Base**. **Mesmo sem comprar um Atributo**, ele fornece 1d4 básico para uma ação pertinente. Comprar grau 1 muda esse dado para 1d6. Em testes, mantenha pelo menos um dado de Atributo, inclusive se for o d4.
 
-**Passo 3 — Formação (7 XP).** Com a segunda reserva, escolha Conhecimentos e Práticas compatíveis com a história. Exemplos: Erudição, Ciências, Engenharia; Armas, Furtividade, Infiltração, Expressão, Manufaturas, Herborismo, Mineração, Domesticação ou Comércio. As Perícias básicas de Montaria, Combate, Armas, Furto, Acrobata, Alquimia e Comércio também podem ser compradas com essa reserva. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
+**Passo 3 — Formação (7 XP).** Com a segunda reserva, escolha Conhecimentos e Práticas compatíveis com a história. Exemplos: Erudição, Ciências, Engenharia; Furtividade, Atletismo, Infiltração, Expressão, Manufaturas, Herborismo, Mineração ou Comércio. **Armas é uma habilitação sem dados próprios. Punhos é um treinamento de d10 a d12 disponível somente após adquirir sua Perícia.** As Perícias básicas de Montaria, Combate, Armas, Furto, Acrobata, Alquimia e Comércio também podem ser compradas com essa reserva. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
 
 ### Entendendo Conhecimentos, Práticas e Perícias
 
-**Conhecimentos** representam aquilo que o personagem **sabe, compreende, investiga ou projeta**. **Práticas** representam aquilo que ele **treinou e executa**. Quando comprados, ambos oferecem **fontes de dados d10**. Sem investimento, uma tentativa comum pertinente pode usar **1d4 básico de improviso** na posição de uma fonte não treinada. O nome da capacidade precisa fazer sentido na ação narrada. **Atletismo** é um exemplo provisório de Prática para esforços físicos coordenados, não uma Perícia especial com efeitos exclusivos já definidos.
+**Conhecimentos** representam aquilo que o personagem sabe e **Práticas com dados** aquilo que treinou; essas fontes podem oferecer d10 e evoluir até d12. Sem compra, ações comuns ainda podem usar **d4 de improviso**. **Exceções: Armas 1 é uma habilitação que NÃO fornece dados**, e a **Prática Punhos** só pode receber investimentos em d10 **depois de habilitada pela Perícia Punhos**. Dados das armas empunhadas, quando existirem, pertencem às fichas de equipamento.
 
 | Grupo | Exemplos provisórios | Quando a fonte pode entrar na pilha |
 |---|---|---|
 | **Conhecimentos** | Biologia, Ciências, Engenharia, Erudição, Geografia, Medicina | Reconhecer fenômenos, planejar estruturas, interpretar registros, diagnosticar e estudar uma situação |
-| **Práticas** | Armas, Atletismo, Furtividade, Infiltração, Manufaturas, Mineração, Herborismo, Expressão, Comércio, Sobrevivência | Manejar armas, saltar, escalar, esconder-se, infiltrar-se, fabricar, extrair minério, coletar ervas, negociar e sobreviver |
+| **Práticas com dados** | Atletismo, Furtividade, Infiltração, Manufaturas, Mineração, Herborismo, Expressão, Comércio, Sobrevivência; **Punhos** (depois de habilitado) | Saltar, escalar, infiltrar-se, fabricar, negociar, sobreviver e treinar golpes desarmados. |
+| **Habilitação sem dados próprios** | **Armas 1** | Compra de acesso à especialização: **não fornece 1d10 nem progride até 3d12**. |
 
 **Esses nomes e essa divisão são um catálogo de exemplo, não a lista definitiva de capacidades.** Herborismo e Mineração, por exemplo, podem futuramente ter aplicações técnicas e práticas separadas. O essencial agora é a função de cada grupo.
 
@@ -113,17 +114,17 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 | 5 — Segunda evolução | **1d10 + 2d12** | **28 XP** |
 | 6 — Domínio completo | **3d12** | **36 XP** |
 
-**Como comprar os dados:** os três d10 custam **2, 6 e 12 XP**, respectivamente. Isso resulta em **20 XP acumulados para 3d10**. Depois de alcançar esse grau, as conversões permanentes para d12 custam **18 XP**, **28 XP** e **36 XP**, na ordem. **Os valores da tabela são o custo de cada avanço**, não totais e nem multiplicadores a aplicar novamente. O custo acumulado até **3d12 é 102 XP**. O acesso a graus avançados por Marco segue em playtest.
+**Como comprar os dados:** os três d10 custam **2, 6 e 12 XP**; depois, as conversões permanentes para d12 custam **18, 28 e 36 XP**, totalizando **102 XP até 3d12**. Esses valores são preços de cada avanço. A tabela se aplica apenas a **Conhecimentos e Práticas que fornecem dados**, inclusive **Punhos após ser habilitado**. **Armas 1 não usa essa tabela e nunca fornece d10/d12.** A liberação de graus avançados por Marco continua em playtest.
 
 **Exemplo rápido:** Comércio 1 custa **2 XP** e fornece **1d10**. Elevar Comércio 1 → 2 custa **mais 6 XP**, ficando com **2d10** e **8 XP investidos**. Subir até Comércio 3 custa **outros 12 XP**, chegando a **3d10** e **20 XP acumulados**. Para transformar o primeiro deles em d12, seria necessário investir **mais 18 XP**, alcançando **38 XP acumulados** nessa capacidade.
 
-**Perícias são diferentes de Conhecimentos e Práticas:** uma Perícia concede uma **vantagem especial** — como +1 Improviso ou combinar três Aptidões —, mas não entrega dados d10 automaticamente. Conhecimentos e Práticas são Aptidões que fornecem dados conforme o grau comprado. O orçamento inicial de Formação pode adquirir ambos. **Algumas Perícias têm pré-requisitos e graus próprios**, formando trilhas. A nomenclatura de *Atributos*, *Aptidões* e dos antigos *Instintos* ainda está sendo refinada; por ora, as seis capacidades de Base continuam chamadas de **Atributos**.
+**Perícias normalmente abrem possibilidades de ação e combinação, sem fornecer dados por si só.** **Armas 1 é uma habilitação marcial sem dados.** A **Perícia Punhos** abre a compra de graus de treinamento em Punhos (1d10 até 3d12), mas não concede um d10 gratuitamente. **Combinar Punhos, Atletismo e Atributo depende de uma segunda Perícia**. O orçamento inicial de Formação pode custear habilitações, Perícias e fontes treinadas. Os nomes de Atributos, Aptidões e antigos Instintos ainda serão refinados.
 
 **Sem a Perícia, um personagem ainda pode tentar a ação comum**, combinando duas partes, inclusive com d4 de improviso. O d4 não imita os benefícios de Perícia. Gastar **1 Coragem** melhora um dado em **um passo** antes do teste, mas não substitui a Perícia que autoriza três Aptidões.
 
 ## Perícias básicas — catálogo inicial
 
-**Aptidão** é um **Atributo, Conhecimento ou Prática** utilizado na ação. Uma Perícia não é fonte de dados por si só. Armas, ferramentas, montarias e outros equipamentos podem ser relevantes narrativamente e fornecer dados se sua própria ficha disser isso, mas **não acrescentam automaticamente uma quarta Aptidão**.
+**Aptidão** é um **Atributo, Conhecimento ou Prática que forneça dados na ação**. **Armas 1 não é fonte de dados:** é uma habilitação. Uma arma ou ferramenta só é fonte de equipamento quando sua ficha fornece dados expressamente. **Punhos** é uma fonte de Prática comprável depois de adquirir sua Perícia. Nenhuma Perícia acrescenta automaticamente dados de armas.
 
 | Tipo de Perícia | Custo | Benefício |
 |---|---:|---|
@@ -133,13 +134,17 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Os nomes e condições de Perícias de +1P ainda não foram definidos.** O valor de 3 XP estabelece a categoria de custo, mas **não autoriza comprar um +1 Presença genérico sem uma Perícia concreta**.
 
-### Pré-requisitos e especialização inicial de Armas
+### Habilitação de Armas, Punhos e especialização inicial
 
-**[DEFINIDO] Ao comprar Armas 1 (primeiro grau da Prática Armas, por 2 XP), o personagem escolhe UMA Perícia de Armas como especialização inicial:** **Armas Leves, Armas Médias, Armas Pesadas ou Armas à Distância**. **Essa primeira Perícia já está incluída na compra de Armas 1 e não custa mais 2 XP.** Ela permite, no tipo de arma escolhido, a combinação **Armas + duas outras Aptidões pertinentes**. A Perícia não fornece dados próprios nem aumenta o limite do Marco.
+**[DEFINIDO] Armas 1 custa 2 XP de Formação, mas é uma habilitação SEM dados próprios.** Não é uma Prática 1d10 nem se desenvolve pelos graus 2–6 de d10/d12. Comprar Armas 1 permite escolher **uma Perícia inicial incluída sem custo extra**: Armas Leves, Armas Médias, Armas Pesadas, Armas à Distância ou **Punhos (combate desarmado; nome provisório)**. Outras especializações custam **2 XP cada** e exigem a habilitação.
 
-**[DEFINIDO] Ter Armas 1 ou superior é o pré-requisito para possuir Perícias de Armas.** Sem Armas comprado, o personagem ainda pode tentar manejo comum com seu d4, mas não recebe essa combinação especial de três Aptidões. **Cada categoria adicional de Armas deve ser comprada separadamente por 2 XP**, com o pré-requisito Armas 1 já satisfeito. A escolha inicial não concede todas as categorias.
+**Perícias com arma empunhada** autorizam combinar **até três fontes pertinentes** quando a categoria de arma e a ação justificarem, respeitando o limite do Marco. A **arma só fornece dados se sua ficha disser que fornece**. Não se pode declarar um d10 da Prática Armas.
 
-**[DEFINIDO COMO DIREÇÃO DE DESIGN] Outras Perícias também poderão exigir graus mínimos em Atributos, Conhecimentos, Práticas ou Perícias anteriores.** Só serão adquiridas ou elevadas quando os requisitos especificados forem cumpridos. **Os limiares exatos da maioria dessas Perícias ainda estão pendentes**: exemplos a validar incluem Furtividade para Furto, Atletismo para Acrobata, Biologia para Alquimia, Comércio para a Perícia Comércio e formação com Armas para Montaria Armada. **Essas sugestões não devem ser aplicadas como exigências oficiais antes de serem aprovadas.**
+**Punhos é uma especialização de acesso, não a combinação de três fontes.** A Perícia Punhos habilita a compra da **Prática especializada Punhos**: grau 1 = 1d10 por **2 XP adicionais**, grau 2 = 2d10 por **mais 6 XP**, grau 3 = 3d10 por **mais 12 XP**; então as três melhorias para d12 custam **18, 28 e 36 XP**, até 3d12. A Perícia de acesso **não oferece um d10 gratuito**. Essa técnica vale para **socos, mãos abertas, cotovelos, joelhos, chutes e o próprio corpo**. Qualquer personagem ainda pode tentar golpes comuns sem treinamento usando d4 de improviso.
+
+**Combinação desarmada separada:** para juntar **Atributo + Punhos + Atletismo** na mesma rolagem, o personagem precisa comprar uma **segunda Perícia de combinação**, provisoriamente chamada **Artes Marciais (2 XP)**, que exige a especialização Punhos. O nome definitivo e eventuais requisitos adicionais de grau ainda estão em análise. A Perícia Punhos sozinha permite o teste comum de **Atributo + Punhos**.
+
+**[DIREÇÃO DE DESIGN]** Outras Perícias poderão exigir graus mínimos de Atributos, Conhecimentos, Práticas e Perícias anteriores. Sugestões ainda não aprovadas incluem Furtividade para Furto, Atletismo para Acrobata, Biologia para Alquimia, Comércio para a Perícia Comércio e acesso a Armas para Montaria Armada.
 
 ### Perícias que concedem Improviso — 1 XP
 
