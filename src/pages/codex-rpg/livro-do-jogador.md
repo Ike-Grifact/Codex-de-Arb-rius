@@ -338,22 +338,28 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 ### Ordem de resolução e balanço do controle
 
-1. **Role e escolha os dados mantidos** conforme o Marco. Ignore os símbolos dos dados descartados; mantenha pelo menos um dado de Atributo.
-2. **Escolha como empregar os Improvisos (I)** antes da DT. Cada **1I pode anular 1D**, mas o D anulado deixa de contribuir para a DT. Um I gasto não pode ser reutilizado nem converter-se automaticamente em P.
-3. **Compare P + D restante com a DT** para saber se o objetivo foi alcançado. O personagem pode ter sucesso apesar do Desespero ou evitar riscos e perder a oportunidade.
-4. **Compare P e D restante** para interpretar o controle da ação, **independentemente de alcançar a DT**. O que importa é a quantidade de símbolos **mantidos e não anulados**, não a de dados ou o valor das faces.
+1. **Role e escolha os dados mantidos** conforme o Marco. Pelo menos um dado mantido precisa vir do Atributo.
+2. **Gaste Improvisos (I) antes de comparar com a DT**, se quiser. Cada **1I anula 1D**, removendo também o ponto que aquele D acrescentaria à DT. Um I gasto não pode gerar outro efeito.
+3. **Compare P + D restante com a DT** para saber se a intenção foi alcançada.
+4. **Compare P e D restante** para determinar o controle e, se necessário, o destino do Desespero.
 
-| Balanço após os Improvisos | Leitura narrativa | Consequência |
-|---|---|---|
-| **P > D** | **Presença dominante** | Age essencialmente como planejou, com intenção e controle. Um D isolado não obriga a entregar recursos ao inimigo. |
-| **P = D** | **Equilíbrio tenso** | A ação exige esforço e autocontrole; não é classificada como acerto desesperado. O mestre descreve a tensão sem impor automaticamente ferimento ou perda de controle. |
-| **D > P** | **Desespero dominante** | Age no limite ou fora do planejado. Se alcançou a DT, o objetivo pode acontecer, **mas parte do controle é perdida**: pode tropeçar, se ferir, atingir alguém próximo, quebrar algo, fazer barulho ou provocar um efeito diferente do pretendido. |
+| Controle após gastar Improvisos | Interpretação |
+|---|---|
+| **P > D** | **Presença dominante.** A personagem age como pretendia. Ter algum D não transfere Pressão automaticamente. |
+| **P = D** | **Equilíbrio tenso.** A personagem mantém o controle com esforço; não é acerto desesperado nem falha com medo apenas por esse empate. |
+| **D > P** | **Desespero dominante.** A personagem age com medo, impulso ou perda de controle. **O que acontece com o D depende de ter alcançado ou não a DT.** |
 
-**Só existe acerto desesperado quando a ação alcança a DT e o Desespero restante supera a Presença (D > P).** A igualdade não basta. Desespero não é um banco automático de pontos para inimigos: consequências nascem da ação, das circunstâncias e das ameaças presentes. A oposição só ganha uma vantagem ou oportunidade quando isso for uma consequência coerente da cena; **nem todo resultado desesperado causa ferimento**, e consequências graves precisam de justificativa e proporção.
+### Destino do Desespero dominante: acertar ou falhar
 
-**Improviso é a ferramenta de compensação:** o personagem pode sacrificar parte do resultado numérico para neutralizar o medo e retomar o controle. Anular um D pode transformar **D > P em D = P**, ou **D = P em P > D**, mas também pode fazer o total ficar abaixo da DT. Improviso não cria Presença sem uma capacidade específica.
+**Acerto desesperado — P + D ≥ DT e D > P.** O personagem alcança o objetivo num impulso. **Os D restantes são transferidos como Pressão para a ameaça ou inimigo mais próximo que possa atuar na cena.** Essa Pressão pertence à ameaça que a recebeu, podendo financiar sua reação conforme as ativações estabelecidas para o conflito. **Se não existir uma ameaça próxima**, os D não precisam virar um banco de inimigo inexistente: o Mestre aplica uma **consequência narrativa proporcional**, como tropeçar, perder posição, bater num obstáculo, danificar a armadura, derrubar uma ferramenta ou expor um recurso. **Ferir automaticamente o próprio personagem ou um aliado não é a consequência padrão de um acerto desesperado.**
 
-**O d4 básico mostra ○, ○, D e I+D**, sem Presença pura. Portanto, acertar apenas com dados não treinados geralmente implica Desespero dominante, até que uma regra especial permita criar P ou que outros dados forneçam Presença.
+**Falha com medo — P + D < DT e D > P.** O objetivo não é alcançado, e o personagem perde o controle em um momento perigoso. **Todos os D restantes vão para a Reserva Acumulada de Desespero da cena** (um banco coletivo de pressão para consequências futuras). A falha também **pode** produzir ferimento no próprio personagem ou em aliados próximos, perda de posição, consumo de recursos ou **perda de Coragem**, conforme a situação. Não aplique todos esses efeitos automaticamente de uma vez. **O valor exato de dano, de Coragem perdida e os custos para gastar a reserva acumulada ainda precisam ser definidos no playtest**; não presuma 1 ponto ou uma tabela de ativações que não foi aprovada.
+
+**Quando D ≤ P:** a personagem conserva o controle ou se equilibra no medo. Se alcançar a DT, executa a ação de acordo com a abordagem; **não transfere automaticamente D à ameaça mais próxima nem à reserva acumulada**. Se falhar, é uma falha comum, sem acionar por si só a categoria especial de falha com medo.
+
+**Importante:** a Reserva Acumulada é diferente da **Pressão entregue à ameaça mais próxima num acerto desesperado**. Não conte o mesmo D nas duas reservas. A identidade da ameaça próxima, distância narrativa, gastos da reserva e prioridade entre ameaças ainda serão refinados em playtest.
+
+**O d4 básico** tem faces ○, ○, D e I+D, sem Presença pura. Ele permite tentar ações sem treinamento, mas tende a produzir resultados dominados pelo Desespero, especialmente quando usado em duas fontes não compradas.
 
 ### Maestria em desenvolvimento — Presença pelo Improviso
 
@@ -453,53 +459,59 @@ Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltraç�
 
 **Ser bem-sucedido em Influência não controla pensamentos:** o guarda pode aceitar conversar, oferecer um acordo ou pedir garantias, conforme a intenção declarada e o contexto.
 
-## Alcançar a DT e interpretar o controle
+## Acerto, falha e controle
 
-Primeiro compare **P + D restante** com a DT, após as escolhas com Improviso, para saber **se** o personagem alcançou o objetivo. Depois compare **P e D** para entender **como** ele agiu. **Ter algum Desespero não significa necessariamente perder o controle:** isso só ocorre quando **D > P**.
+**A soma P + D restante determina se o objetivo foi alcançado. A comparação D > P determina se o medo dominou a personagem.** São duas perguntas diferentes.
 
-| Balanço do resultado | Como a ação acontece |
-|---|---|
-| **P > D**, nenhum D restante | **Ação limpa:** intenção e execução sob controle. |
-| **P > D**, com algum D restante | **Presença dominante:** sente a tensão, mas age essencialmente como planejou. |
-| **P = D** | **Equilíbrio tenso:** esforço e medo se equilibram, sem acerto desesperado. |
-| **D > P** | **Desespero dominante:** o movimento ou a decisão foge parcialmente do controle. **Se a DT foi alcançada, é um acerto desesperado.** |
-| **P + D abaixo da DT** | **Falha no objetivo**, tenha ou não havido perda de controle. |
+| Resultado | Balanço | Desfecho |
+|---|---|---|
+| **Acerto** | **P ≥ D** | Alcança o objetivo mantendo controle ou equilíbrio tenso. Não há transferência automática de Pressão. |
+| **Acerto desesperado** | **D > P** | Alcança o objetivo; passa os **D restantes como Pressão à ameaça mais próxima**. Sem ameaça, sofre uma consequência narrativa/ambiental proporcional. |
+| **Falha comum** | **P ≥ D** | Não alcança a DT. Sem efeito especial de medo automático; a ficção pode continuar perigosa. |
+| **Falha com medo** | **D > P** | Não alcança a DT; envia os **D restantes à Reserva Acumulada de Desespero** da cena. Pode ferir a si ou a aliados próximos, perder Coragem ou causar outra complicação apropriada. |
 
-Um **acerto desesperado (D > P)** pode causar um movimento brusco, dano acidental ao personagem, risco para alguém próximo, queda de ferramenta, barulho ou destruição do que tentava preservar. **O Mestre escolhe uma consequência proporcional à ficção**, não uma lesão obrigatória. Desespero **não é transferido automaticamente a inimigos**: adversários só aproveitam riscos efetivamente criados pela ação.
+**O mesmo D nunca é creditado simultaneamente a uma ameaça individual e à reserva acumulada.** Ter Desespero não implica dano automático, e a perda de Coragem não possui valor numérico fechado nesta edição.
 
-### Exemplo — Três acertos e uma falha
+### Exemplo — A mesma DT, riscos diferentes
 
-Corven tenta atravessar um trecho vigiado de **DT 2**.
+Corven tenta atravessar uma passagem vigiada de **DT 2**:
 
-| Símbolos mantidos | Valor para DT | Interpretação |
+| Símbolos após Improvisos | Soma | Resultado |
 |---|---:|---|
-| **2P, 0D** | **2** | Passa de forma limpa, exatamente como queria. |
-| **2P, 1D** | **3** | Passa com **Presença dominante**, ainda no controle. |
-| **1P, 1D** | **2** | Passa em **equilíbrio tenso**; D não domina. |
-| **0P, 2D** | **2** | Passa **desesperadamente**; pode fazer barulho ou se machucar durante a travessia. |
-| **0P, 1D, 1I** | **1 ou 0** | Não atinge DT 2; pode gastar I para anular D e reduzir o risco, ficando em zero. |
+| **2P** | 2 | **Acerto sob controle**, sem transferir Pressão. |
+| **1P + 1D** | 2 | **Acerto em equilíbrio tenso** (P = D), sem transferência automática. |
+| **0P + 2D** | 2 | **Acerto desesperado:** os 2D vão como Pressão ao inimigo mais próximo; sem inimigo próximo, a travessia pode danificar a armadura ou derrubar uma ferramenta. |
+| **0P + 1D**, DT 2 | 1 | **Falha com medo:** 1D vai à reserva acumulada, e uma consequência física, social ou psicológica pode ocorrer. |
+| **0P + 1D + 1I**, DT 2 | 1 ou 0 | Se gastar I para anular D, a soma vira zero; a falha continua, mas deixa de gerar Desespero a acumular. |
 
-Não existe rolagem adicional para interpretar controle: os mesmos símbolos contam a história.
+A mesma combinação de símbolos serve para narrar a **intenção**, a **intensidade do medo** e as consequências.
 
 # VI. Improviso, Desespero e iniciativa
 
-**Improviso (I)** é a adaptação ao medo: pode ser gasto para **anular 1D antes da DT**, facilitar a ação de um aliado ou alimentar uma capacidade especial. Cada I só pode ser gasto uma vez.
+**Improviso (I)** expressa a capacidade de adaptação ao medo: antes de resolver a DT, cada I pode cancelar 1D, sacrificando também seu ponto para o objetivo. Também pode favorecer um aliado ou alimentar uma capacidade especial, respeitando a regra de um uso por símbolo.
 
-Neutralizar Desespero reduz a soma para DT e também a chance de uma ação descontrolada. O jogador decide entre **avançar aceitando D** ou **preservar o controle com menos progresso**. A presença de D não causa perda de controle sozinha: compare sempre **D > P** após as anulações.
+A iniciativa continua **narrativa, sem rodadas rígidas**. Entretanto, os símbolos definem duas destinações diferentes do Desespero dominante:
 
-A iniciativa é narrativa, sem turnos rígidos. **Desespero não é uma moeda entregue automaticamente a inimigos.** Quando D > P e a ação é realizada, o Mestre descreve uma consequência do comportamento impulsivo: um golpe mal dirigido, um tropeço, uma lesão em si mesmo, um aliado atingido, ferramentas derrubadas ou uma ameaça atraída pelo ruído. **Nem todo acerto desesperado exige dano**, e uma ameaça só ganha oportunidade se a cena realmente abrir essa brecha.
+- **Acertou desesperadamente (D > P e superou a DT):** os D restantes são convertidos em **Pressão da ameaça mais próxima**, caso exista uma ameaça elegível para agir. Sem ameaça próxima, aplica-se uma complicação de cena — tropeçar, se desequilibrar, arranhar a armadura, quebrar um objeto ou perder posição — coerente com a execução impulsiva.
+- **Falhou com medo (D > P e não superou a DT):** os D restantes alimentam a **Reserva Acumulada de Desespero** do conflito. Além disso, a falha pode causar lesão acidental na personagem ou em aliados próximos, perda de Coragem ou outro custo proporcional à cena. A reserva não recebe automaticamente D de acertos desesperados.
 
-### Exemplo — A mesma infiltração, comportamentos diferentes
+**Não confunda Pressão da ameaça mais próxima com a Reserva Acumulada de Desespero.** A primeira é localizada; a segunda acompanha o risco coletivo da cena. A relação de gasto entre ambas e os preços de ativações ainda precisam ser estabelecidos; por enquanto, anote separadamente quantidade e origem. Não transforme cada D em dano ou num ataque extra automático.
 
-Corven atravessa uma passagem vigiada. Com **2P e 0D**, move-se conforme planejou. Com **0P e 2D**, pode atravessar no impulso e bater numa prateleira, provocando ruído. O vigia reage **ao barulho da cena**, não por ganhar automaticamente dois pontos de D.
+### Exemplo — A mesma passagem, acerto e falha
 
-Neris negocia com um chefe de patrulha: **2P + 1D** ainda significa **controle**, pois P > D. Já **1P + 2D**, se alcançar a DT, pode fazê-la falar mais alto, prometer algo que não queria ou ofender o chefe sem intenção. Ela pode gastar **1I** antes da DT para anular D, obter **P = D** e diminuir esse risco, mas perde um ponto da soma para a DT.
+Corven precisa atravessar uma saída protegida por um vigia de **DT 2**.
 
-**A oposição ativa continua existindo** e pode aproveitar consequências reais, mas seus custos de ativação ainda estão em playtest.
+**Acerto desesperado:** obtém **2D e 0P**. Ele chega à saída, mas passa **2 pontos de Pressão ao vigia**, por ser a ameaça mais próxima. Se o mesmo teste ocorresse num corredor vazio, poderia alcançar a saída caindo sobre as próprias proteções, danificando a armadura ou derrubando um equipamento.
 
-### Exemplo — Improviso não substitui Presença
+**Falha com medo:** obtém **1D e 0P**. Não alcança DT 2. O **1D entra na Reserva Acumulada**; ao se atrapalhar na fuga, pode esbarrar em um companheiro, se cortar numa borda ou perder Coragem, dependendo do contexto. Os custos exatos de dano e Coragem seguem em teste.
 
-Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (P)** e **d10 face 8 (P + I)**: são **2P**, suficiente para fechar com controle, e sobra **1I** para apoiar um aliado. Com apenas **1P + 1I**, não alcançaria DT 2 sem uma Maestria que permita converter Improviso em Presença.
+**Acerto controlado:** obtém **2P + 1D**. Alcança a DT com **P > D**, controla a ação e não passa Pressão automaticamente ao vigia.
+
+### Exemplo — Improviso pode mudar a categoria
+
+Neris rola **0P + 2D + 1I**, numa tarefa de **DT 2**. Se conservar os símbolos, alcança a DT desesperadamente e transfere **2D à ameaça mais próxima**. Se usar **1I para anular 1D**, fica com **0P + 1D**, falha com medo e envia **1D para a Reserva Acumulada**. Se já tiver **1P + 2D + 1I**, anular 1D a coloca em **P = D**, com soma 2 para a DT: alcança o objetivo com controle tenso, sem gerar transferência automática.
+
+As ativações da oposição e os efeitos da reserva devem ser definidos antes da sessão; o livro não cria uma tabela numérica inexistente.
 
 # VII. Corpo, armaduras e ataques
 
