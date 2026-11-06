@@ -140,7 +140,7 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 | **Montaria** | Recebe **+1I** em testes realizados **montado**, quando a montaria realmente contribuir para a ação. |
 | **Combate** | Recebe **+1I** em **testes de combate**, incluindo ataques, defesas ou disputas de posição dentro de um confronto. |
 
-O **Improviso adicional não conta como Presença nem soma diretamente à DT**. Antes de conferir a DT, pode **anular 1 Desespero (D)**, retirando também **1 ponto da soma para a DT**, ou ser usado para ajudar um aliado, conforme as regras de Improviso. **Esse I concedido pela Perícia poderá contar para uma futura Maestria que converta Improvisos em Presença, se a Maestria assim permitir; tal Maestria ainda não está disponível.** **Cada Perícia contribui com seu bônus uma vez por teste pertinente.** Se Montaria e Combate se aplicarem ao mesmo teste de combate montado, cada uma pode acrescentar seu próprio Improviso, sem alterar os dados rolados ou o limite dos dados mantidos.
+O **Improviso adicional não soma diretamente à DT**, mas pode ser usado nas **regras básicas de todos os personagens**: **1I anula 1 Desespero (D)** antes da DT (retirando também o ponto que D daria), **2I viram 1 Presença (P)** ou Improvisos podem apoiar um aliado. **Improvisos concedidos por Perícias contam normalmente para 2I → 1P, sem precisar comprar outra Perícia ou Maestria.** Cada símbolo só pode ser gasto uma vez. **Cada Perícia contribui com seu bônus uma vez por teste pertinente.** Se Montaria e Combate se aplicarem ao mesmo teste de combate montado, cada uma pode acrescentar seu próprio Improviso, sem alterar os dados rolados ou o limite dos dados mantidos.
 
 ### Perícias de combinação — 2 XP cada
 
@@ -294,7 +294,7 @@ Os resultados são representados por **glifos rúnicos provisórios**. As letras
 | Resultado | Runa | Sigla | Função |
 |---|:---:|:---:|---|
 | **Presença** | **ᛏ** | P | Representa intenção, firmeza e controle: o personagem age **como imaginou e pretendeu**. Contribui integralmente para alcançar a DT e para o dano calculado nesta edição. |
-| **Improviso** | **ᛃ** | I | Representa adaptação diante do medo: altera a abordagem, ajuda aliados ou neutraliza Desespero antes da DT. **Não** gera Presença nem aumenta diretamente a soma. |
+| **Improviso** | **ᛃ** | I | Representa adaptação diante do medo: ajuda aliados, **1I pode anular 1D** ou **2I podem gerar 1P** antes da DT. Um I isolado não contribui para a soma. |
 | **Desespero** | **ᚦ** | D | Representa medo, impulso e perda de controle. Se **D > P**, um **acerto** transfere os D restantes como Pressão à ameaça mais próxima (ou causa complicação narrativa sem ameaça); uma **falha** acumula os D na Reserva de Desespero e pode ferir ou custar Coragem. Conta pela metade no dano calculado, arredondando para baixo. |
 | **Face vazia** | **○** | — | Nenhum símbolo: não acrescenta pontos ao teste. |
 
@@ -331,15 +331,15 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 | **d10, face 7** | **ᛏᛏ = 2P** | **2** | Duas Presenças sem Desespero. |
 | **d10, face 9** | **ᛏᛃᚦ = 1P + 1I + 1D** | **2** | O Improviso é um símbolo separado; o Desespero só permanece se não for anulado antes da DT. |
 | **d10, face 10** | **ᛏᛏᚦ = 2P + 1D** | **3** | Atinge DT mais alta e mantém Presença dominante (P > D). |
-| **d12, face 11** | **ᛏᛃᛃᚦ = 1P + 2I + 1D** | **2** | Tem quatro símbolos ao todo, mas só dois contam para DT. |
+| **d12, face 11** | **ᛏᛃᛃᚦ = 1P + 2I + 1D** | **2 (ou 3 se converter 2I → 1P)** | A conversão dá **2P + 1D**, mas os Improvisos gastos não podem anular o D. |
 | **d12, face 12** | **ᚦᚦ = 2D** | **2** | Nenhuma Presença pura e dois Desesperos. |
 
-**Regra de leitura:** **Presença (P)** indica o quanto a personagem executa a ação como queria; **Desespero (D)** indica o quanto o medo e o impulso tomam conta; **Improviso (I)** indica sua capacidade de se adaptar. Para alcançar a DT, contam **P + D que restarem depois dos gastos de Improviso**. A rolagem não determina apenas *se* a personagem fez algo, mas também *como* ela agiu.
+**Regra de leitura:** **Presença (P)** indica o quanto a personagem executa a ação como queria; **Desespero (D)** indica o quanto o medo e o impulso tomam conta; **Improviso (I)** indica sua capacidade de se adaptar. **Antes de comparar com a DT, qualquer personagem pode converter 2I em 1P, sem Perícia ou Maestria**, ou gastar 1I para anular 1D. Depois dessas escolhas, conte **P + D restante**. A rolagem revela tanto *se* a personagem agiu quanto *como*.
 
 ### Ordem de resolução e balanço do controle
 
 1. **Role e escolha os dados mantidos** conforme o Marco. Pelo menos um dado mantido precisa vir do Atributo.
-2. **Gaste Improvisos (I) antes de comparar com a DT**, se quiser. Cada **1I anula 1D**, removendo também o ponto que aquele D acrescentaria à DT. Um I gasto não pode gerar outro efeito.
+2. **Escolha o uso dos Improvisos (I) antes de comparar a DT**: cada **1I pode anular 1D** (retirando também o ponto que D daria à DT), ou **2I podem gerar 1P** que conta para DT e controle. **Ambos são usos básicos e gratuitos**, disponíveis a todos. Cada I só pode ser consumido uma vez; não pode anular D e gerar P ao mesmo tempo.
 3. **Compare P + D restante com a DT** para saber se a intenção foi alcançada.
 4. **Compare P e D restante** para determinar o controle e, se necessário, o destino do Desespero.
 
@@ -357,7 +357,7 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 **Falha com Presença (P + D < DT, P ≥ D, P > 0):** nada de ruim acontece automaticamente; a ação não é concluída e **a oportunidade passa a outro jogador**. Não perde Coragem nem acrescenta Pressão à reserva.
 
-**Falha vazia (P = 0 e D = 0, mesmo que sobre algum I):** a ação não é concluída, **não acontece consequência negativa automática**, e **outro jogador pode agir**. Se o jogador gastou Improvisos para anular os últimos D, esses D não entram na reserva. Improvisos remanescentes podem ter usos próprios, mas não fazem o teste alcançar a DT.
+**Falha vazia (P = D = 0 depois de resolver o uso de I):** a ação não é concluída, **não acontece consequência negativa automática**, e **outro jogador pode agir**. Os D anulados não entram na reserva. **Com pelo menos 2I, o jogador pode convertê-los em 1P antes da DT**; nesse caso o resultado deixa de ser vazio e pode até alcançar DT 1.
 
 **Acerto controlado ou equilibrado (P + D ≥ DT, P ≥ D):** a ação acontece com controle ou equilíbrio tenso; não há transferência automática de Pressão.
 
@@ -373,11 +373,17 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 **O d4 básico** tem faces ○, ○, D e I+D, sem Presença pura. Ele permite tentar ações sem treinamento, mas tende a produzir resultados dominados pelo Desespero, especialmente quando usado em duas fontes não compradas.
 
-### Maestria em desenvolvimento — Presença pelo Improviso
+### Regra básica — Dois Improvisos geram uma Presença
 
-**Proposta ainda não disponível para compra:** uma Maestria poderia permitir **gastar 2 Improvisos (2I) para criar 1 Presença (1P)** antes da comparação com a DT. Os dois Improvisos seriam consumidos e **não poderiam também anular Desespero**. A Presença criada contribuiria para a DT e para o dano como os demais símbolos P.
+**[DEFINIDO] 2 Improvisos (2I) podem ser consumidos para criar 1 Presença (1P) por qualquer personagem.** Não requer Perícia, Maestria, treinamento, compra em XP nem gasto de Coragem. Faça a conversão **depois de selecionar os dados mantidos e antes da comparação com a DT**.
 
-**Exemplo:** com **1P + 2I + 1D** diante de **DT 2**, gastar **1I para anular D** deixa só **1P**, insuficiente para a DT, embora o controle melhore. Com a futura Maestria, **2I virariam 1P**, resultando em **2P + 1D**: o objetivo é alcançado e **P > D**, então há Presença dominante, sem acerto desesperado. O custo em XP, os pré-requisitos e a frequência de uso ainda precisam ser definidos.
+A **Presença criada conta para a DT, para o balanço P versus D e para o dano calculado**, como um símbolo P obtido nos dados. Não cria outro dado, não altera quantos resultados podem ser mantidos e não muda as faces que definem um crítico.
+
+**Cada Improviso é consumido uma única vez.** Os dois I convertidos não podem também anular D, beneficiar aliados ou ativar outros efeitos. É possível converter pares adicionais na mesma rolagem, caso existam Improvisos suficientes. Símbolos I recebidos de Perícias também podem ser usados, **sem necessidade de Perícia ou Maestria de conversão**.
+
+**Exemplo 1 — decisão entre segurança e progresso:** com **1P + 2I + 1D** contra **DT 2**, gastar **1I para anular D** deixa apenas **1P**, e a ação falha. Converter **2I em 1P**, por sua vez, deixa **2P + 1D**, alcançando a DT com **Presença dominante (P > D)**. O Desespero não foi anulado, mas não domina a ação.
+
+**Exemplo 2 — d4 sem treinamento:** dois d4 na face **4** fornecem **2I + 2D**. Sem conversão, somam 2 para a DT, com **D > P**. Ao converter **2I → 1P**, o resultado passa a **1P + 2D** e soma **3 para a DT**, mas ainda é desesperado porque **D > P**. Improviso melhora a chance de atingir o objetivo, porém não garante controle.
 
 ### Exemplo — Dado mais pesado nem sempre é mais seguro
 
@@ -395,7 +401,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de P
 3. **Escolha as partes da rolagem.** Por padrão, combine **Atributo + Conhecimento, Prática ou equipamento** pertinentes; no grau 0, cada fonte oferece **1d4 de improviso**. Com uma **Perícia de combinação aplicável (2 XP)**, use **sua Aptidão central + duas outras Aptidões**.
 4. **Role a pilha.** Cada fonte pode contribuir com até três dados comprados **ou um único d4 básico**, nunca ambos. A Perícia pode autorizar a terceira Aptidão, mas não adiciona dados próprios.
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
-6. **Gaste Improvisos e confira a DT.** Antes da comparação, escolha se gasta Improvisos para anular Desesperos (1I cancela 1D). Depois some **Presença + Desespero restante (P + D)**. Se alcançar a DT, a ação acontece; só então resolva os efeitos de risco remanescentes, o dano e os Improvisos usados para outros fins.
+6. **Gaste Improvisos e confira a DT.** Antes da comparação, escolha entre **anular 1D com 1I**, **converter 2I em 1P** ou destinar I a outros efeitos. Some **Presença final + Desespero restante (P + D)**. Se alcançar a DT, a ação acontece; depois resolva controle, risco e dano. **A conversão é regra básica, sem depender de Perícia ou Maestria.**
 
 **Exemplo.** Maela tenta abrir uma passagem de **DT 2** usando Força 1 (1d6) e uma ferramenta com 1d10. O d6 mostra **P**, e o d10 mostra **P + I + D**. Com **2P + 1D**, a DT é alcançada e **P > D**: ela continua no controle. Pode usar **1I para anular D** e ficar com **2P**, ainda suficiente. Se a DT fosse **3**, precisaria conservar D para alcançá-la, mas **isso não seria um acerto desesperado**, pois P ainda seria maior que D.
 
@@ -426,7 +432,7 @@ No Marco I, ela **mantém o primeiro d6 e o d10**, totalizando **3P sem Desesper
 
 Corven tem **Agilidade 1 (1d6)**, mas **Infiltração 0 (1d4)**. Ele tenta atravessar uma passagem com guarda distraído, de **DT 1**. A rolagem usa duas fontes: **1d6 de Agilidade + 1d4 de Infiltração**.
 
-Se o d6 cair em **1 (○)** e o d4 cair em **3 (ᚦ)**, o total é **1D**, suficiente para uma **DT 1**, com risco. Se o d4 cair em **4 (ᛃᚦ)**, o resultado é **1I + 1D**: Corven pode **conservar D** para alcançar DT 1 e aceitar Desespero, ou **gastar I para anular D antes da comparação**, ficando com **0 para a DT** e falhando. O Improviso não gera Presença.
+Se o d6 cair em **1 (○)** e o d4 cair em **3 (ᚦ)**, o total é **1D**, suficiente para uma **DT 1**, com risco. Se o d4 cair em **4 (ᛃᚦ)**, o resultado é **1I + 1D**: Corven pode **conservar D** para alcançar DT 1 e aceitar Desespero, ou **gastar I para anular D antes da comparação**, ficando com **0 para a DT** e falhando. **Um I isolado não gera Presença; 2I geram 1P pela regra básica.**
 
 Sem Agilidade comprada, Corven poderia tentar **1d4 de Agilidade + 1d4 de Infiltração**, se ambas as fontes forem pertinentes. Os dois dados só alcançam DT 2 caso ambos forneçam Desespero: o improviso continua arriscado. **O d4 não fornece um terceiro dado extra a quem já comprou uma fonte.**
 
@@ -485,7 +491,7 @@ Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltraç�
 
 # VI. Improviso, Desespero e iniciativa
 
-Improviso pode neutralizar Desespero **antes da DT**: 1I anula 1D, eliminando o ponto correspondente para o objetivo. Cada I só pode ser gasto uma vez.
+**Antes da DT, qualquer personagem pode gastar 1I para neutralizar 1D ou converter 2I em 1P**, sem requisito de Perícia ou Maestria. Anular D elimina seu ponto para o objetivo; converter 2I cria Presença que conta normalmente. Cada I só pode ser gasto uma vez.
 
 **Falha vazia ou com Presença:** nada acontece automaticamente, e a iniciativa passa a **outro jogador**. **Falha com medo:** **−1 Coragem**, D restante à **Reserva de Pressão Acumulada** (até o teto) e a iniciativa **passa à oposição**. **Acerto desesperado:** D restante como Pressão à ameaça próxima; sem ameaça, complicação narrativa proporcional.
 
