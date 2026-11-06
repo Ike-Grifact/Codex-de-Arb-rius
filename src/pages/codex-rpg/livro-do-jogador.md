@@ -67,7 +67,7 @@ Maela possui **Agilidade 0**. Caminhar em segurança não exige teste, mas salta
 
 **Atletismo** é uma Prática sugerida para o playtest. Engenharia só entra se o uso técnico do bastão fizer parte da ação; a ferramenta não concede outro dado gratuitamente.
 
-Se os **2d4** mostrarem **3 e 4**, Maela mantém **2D + 1I, sem Presença (P = 0)**. Se conservar **2D**, alcança **DT 2** desesperadamente. **Havendo uma ameaça próxima, passa 2D como Pressão a ela**; sem ameaça, pode tropeçar, perder posição ou danificar um item. Se gastar **1I para anular 1D**, sua soma cai a **1**: **falha com medo**, e o **1D restante alimenta a Reserva Acumulada** da cena, com possível consequência de falha.
+Se os **2d4** mostrarem **3 e 4**, Maela mantém **2D + 1I, sem Presença (P = 0)**. Se conservar **2D**, alcança **DT 2** desesperadamente. **Havendo uma ameaça próxima, passa 2D como Pressão a ela**; sem ameaça, pode tropeçar, perder posição ou danificar um item. Se gastar **1I para anular 1D**, sua soma cai a **1**: **falha com medo**, portanto **perde 1 Coragem**, **1D alimenta a Reserva de Pressão Acumulada** (até o teto) e a iniciativa passa à oposição; outros riscos dependem da cena.
 
 Se ambos os d4 saírem na **face 4**, podem formar um **crítico**, recuperando **1 Coragem**. Isso não elimina Desespero nem cria Presença automaticamente. **Pelo menos um dado mantido precisa vir do Atributo**.
 
@@ -357,7 +357,7 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 **Falha com Presença (P + D < DT, P ≥ D, P > 0):** nada de ruim acontece automaticamente; a ação não é concluída e **a oportunidade passa a outro jogador**. Não perde Coragem nem acrescenta Pressão à reserva.
 
-**Falha vazia (nenhum símbolo mantido):** a ação não é concluída, **não acontece consequência automática**, e **outro jogador pode agir**. Se o jogador gastou Improvisos para anular os últimos D, esses D não entram na reserva.
+**Falha vazia (P = 0 e D = 0, mesmo que sobre algum I):** a ação não é concluída, **não acontece consequência negativa automática**, e **outro jogador pode agir**. Se o jogador gastou Improvisos para anular os últimos D, esses D não entram na reserva. Improvisos remanescentes podem ter usos próprios, mas não fazem o teste alcançar a DT.
 
 **Acerto controlado ou equilibrado (P + D ≥ DT, P ≥ D):** a ação acontece com controle ou equilíbrio tenso; não há transferência automática de Pressão.
 
@@ -478,7 +478,7 @@ Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltraç�
 | Acerto controlado | P + D ≥ DT e P ≥ D | Ação alcançada; sem transferência automática. |
 | Acerto desesperado | P + D ≥ DT e D > P | D à ameaça mais próxima, ou custo narrativo sem ameaça. |
 | Falha com Presença | P + D < DT e P ≥ D e P > 0 | Nada acontece automaticamente; próximo PJ pode agir. |
-| Falha vazia | Nenhum símbolo | Nada acontece automaticamente; próximo PJ pode agir. |
+| Falha vazia | P = D = 0 | Nada acontece automaticamente; próximo PJ pode agir. |
 | Falha com medo | P + D < DT e D > P | **−1 Coragem**, D à reserva até seu teto, **turno da oposição**, com possíveis consequências adicionais contextualizadas. |
 
 **Exemplo:** Corven obtém **1P** para DT 2: falha com Presença e outro PJ age. Se tira **nada**, outro PJ também age. Se tira **1D**, falha com medo, perde **1 Coragem**, soma **1 Pressão** à reserva e entrega a iniciativa à oposição. Se tira **2D**, alcança DT 2 desesperadamente e passa **2 Pressões à ameaça mais próxima**, quando houver.
@@ -505,7 +505,7 @@ A reserva começa com **2 Pressões de base** e seu teto é **2 + número de PJs
 
 **Atenção ao d4 básico em ataques:** um d4 que contribua apenas **1D não anulado** pode ajudar a atingir uma DT 1, mas, sozinho, produz **0 de dano calculado**: **0P + ⌊1D/2⌋ = 0**. Superar a DT não significa ferir automaticamente alguém quando o dano é zero. A ação pode obter um efeito narrativo compatível — como forçar uma reação, afastar uma arma ou abrir uma brecha — sem reduzir Vida. As regras de efeitos corporais ainda estão em teste.
 
-Por exemplo, 2 Presenças + 1 Desespero geram **2 de dano calculado**; 1 Presença + 2 Desesperos geram **2**; 3 Desesperos geram **1**. Num **acerto desesperado (D > P)** contra uma ameaça próxima, os D restantes são **transferidos como Pressão a essa ameaça**; sem ameaça elegível, podem provocar tropeço, dano ao equipamento ou outra consequência narrativa. Numa **falha com medo (D > P)**, os D vão à **Reserva Acumulada**, e dano acidental a si ou a aliados e perda de Coragem são consequências possíveis. A fórmula de dano continua experimental.
+Por exemplo, 2 Presenças + 1 Desespero geram **2 de dano calculado**; 1 Presença + 2 Desesperos geram **2**; 3 Desesperos geram **1**. Num **acerto desesperado (D > P)** contra uma ameaça próxima, os D restantes são **transferidos como Pressão a essa ameaça**; sem ameaça elegível, podem provocar tropeço, dano ao equipamento ou outra consequência narrativa. Numa **falha com medo (D > P)**, os D vão à **Reserva Acumulada** (até o teto), o personagem **perde exatamente 1 Coragem** e a iniciativa passa à oposição; ferimentos acidentais em si ou aliados são consequências adicionais possíveis. A fórmula de dano continua experimental.
 
 ### Exemplo — Acerto, dano e Vida são coisas distintas
 
@@ -664,7 +664,7 @@ As profissões surgem da build: uma trilha de Armas, Força e montaria pode leva
 
 A comunidade de Maela precisa recuperar um gerador mecânico abandonado. A oficina está isolada por um portão deformado, e dois saqueadores tentam alcançar o mesmo equipamento. O objetivo dos Aprendizes é **recuperar uma peça essencial e sair com vida**, não necessariamente vencer um combate.
 
-**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Em **acerto desesperado (D > P)**, os D passam como Pressão à ameaça mais próxima, ou geram complicação ambiental na ausência dela. Em **falha com medo (D > P)**, os D vão à Reserva Acumulada; tropeços perigosos, ferimentos acidentais e perda de Coragem são possíveis conforme a ficção.
+**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Em **acerto desesperado (D > P)**, os D passam como Pressão à ameaça mais próxima, ou geram complicação ambiental na ausência dela. Em **falha com medo (D > P)**, os D vão à Reserva Acumulada (até o teto), **perde 1 Coragem** e a oposição assume a iniciativa; tropeços perigosos ou ferimentos acidentais podem acontecer conforme a ficção.
 
 Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantos Desesperos surgiram e como os jogadores resolveram a cena.
 
