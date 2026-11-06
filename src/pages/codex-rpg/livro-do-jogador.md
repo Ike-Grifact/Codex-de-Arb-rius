@@ -323,10 +323,10 @@ Os resultados são representados por **glifos rúnicos provisórios**. As letras
 
 A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edição. O d4 básico não é somado aos dados adquiridos de uma fonte; é substituído por eles. Não há tabela de d20 porque suas faces e custos extraordinários ainda não foram aprovados.
 
-| Exemplo de face | Leitura rúnica | Para superar DT | Outros efeitos |
+| Exemplo de face | Leitura rúnica | Pontos para a DT antes de anular D | Outros efeitos |
 |---|---|---:|---|
 | **d4, face 3** | **ᚦ = 1D** | **1** | Êxito incerto possível numa DT 1. |
-| **d4, face 4** | **ᛃᚦ = 1I + 1D** | **1** | A Improviso pode mitigar a Desespero depois do teste. |
+| **d4, face 4** | **ᛃᚦ = 1I + 1D** | **1 se o D for mantido; 0 se anulado** | Gastar o Improviso para anular o Desespero elimina também o ponto que ele daria à DT. |
 | **d6, face 6** | **ᛏ = 1P** | **1** | Um Precisão. |
 | **d10, face 7** | **ᛏᛏ = 2P** | **2** | Dois Precisões sem Desespero. |
 | **d10, face 9** | **ᛏᛃᚦ = 1P + 1I + 1D** | **2** | A Improviso é separada; a Desespero permanece como símbolo obtido. |
@@ -369,9 +369,9 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de P
 3. **Escolha as partes da rolagem.** Por padrão, combine **Atributo + Conhecimento, Prática ou equipamento** pertinentes; no grau 0, cada fonte oferece **1d4 de improviso**. Com uma **Perícia de combinação aplicável (2 XP)**, use **sua Aptidão central + duas outras Aptidões**.
 4. **Role a pilha.** Cada fonte pode contribuir com até três dados comprados **ou um único d4 básico**, nunca ambos. A Perícia pode autorizar a terceira Aptidão, mas não adiciona dados próprios.
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
-6. **Compare com a DT.** Some apenas os Precisões e Desesperos dos dados mantidos. Se alcançar ou superar a DT, a ação acontece. Depois resolva Improvisos, dano e Desesperos.
+6. **Gaste Improvisos e confira a DT.** Antes da comparação, escolha se gasta Improvisos para anular Desesperos (1I cancela 1D). Depois some **Precisão + Desespero restante (P + D)**. Se alcançar a DT, a ação acontece; só então resolva os efeitos de risco remanescentes, o dano e os Improvisos usados para outros fins.
 
-**Exemplo.** Maela tenta forçar uma passagem de DT 2 usando Força 1 (1d6) e uma ferramenta que forneça 1d10. Ela rola P no d6 e PID no d10. Mantém os dois: **2 Precisões + 1 Desespero = 3 para atingir a DT**. Ela consegue abrir a passagem, mas a Desespero pode ser usada pelo mestre para fazer uma ameaça intervir. A Improviso pode reduzir em 1 a Desespero transmitida, se esse for o efeito escolhido.
+**Exemplo.** Maela tenta abrir uma passagem de **DT 2** com **Força 1 (1d6)** e uma ferramenta que fornece **1d10**. O d6 mostra **P** e o d10 mostra **P + I + D**. Ela mantém ambos: inicialmente tem **2P + 1D = 3 para a DT**. Pode gastar **1I para anular 1D antes da comparação**, ficando com **2P = 2 para a DT**, ainda suficiente para abrir a passagem, sem transmitir Desespero. Se a dificuldade fosse **DT 3**, teria de **conservar o D** para alcançar o objetivo, aceitando a intervenção da oposição.
 
 ### Exemplo completo de uma rolagem: seis etapas
 
@@ -380,7 +380,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de P
 3. **Fontes:** **Inteligência 1 (1d6)** + **Manufaturas 1 (1d10)**. O Conhecimento ou a Prática só entra porque é pertinente ao reparo.
 4. **Rolagem:** o d6 cai na **face 6 = ᛏ (P)**; o d10 cai na **face 9 = ᛏᛃᚦ (P + I + D)**.
 5. **Resultados mantidos:** no Marco I ela pode manter até **dois dados** e precisa incluir um de **Atributo**. Mantém ambos.
-6. **DT e efeitos:** **2 Precisões + 1 Desespero = 3**, portanto o reparo de DT 2 funciona. Maela ainda possui **1 Improviso**, que pode usar para reduzir **1 Desespero transferida**, se essa for sua escolha.
+6. **Improviso, DT e efeitos:** antes de calcular a DT, Maela pode gastar **1I para anular o D**. Sua soma cai de **2P + 1D = 3** para **2P = 2**, que ainda alcança a **DT 2** do reparo. Nenhum Desespero é transmitido. Se não gastar o Improviso, alcança **3 para a DT**, mas conserva **1D** para a oposição.
 
 O d10 não «vira» uma terceira fonte por conter três símbolos: **símbolos e dados são medidas diferentes**.
 
@@ -400,7 +400,7 @@ No Marco I, ela **mantém o primeiro d6 e o d10**, totalizando **3P sem Desesper
 
 Corven tem **Agilidade 1 (1d6)**, mas **Infiltração 0 (1d4)**. Ele tenta atravessar uma passagem com guarda distraído, de **DT 1**. A rolagem usa duas fontes: **1d6 de Agilidade + 1d4 de Infiltração**.
 
-Se o d6 cair em **1 (○)** e o d4 cair em **3 (ᚦ)**, o total é **1 Desespero**, suficiente para a DT 1. O objetivo é alcançado com risco, não com Precisão puro. Se o d4 cair em **4 (ᛃᚦ)**, a Desespero também conta como 1 para a DT, e a Improviso pode reduzir a Desespero transferida **depois de verificar o resultado**.
+Se o d6 cair em **1 (○)** e o d4 cair em **3 (ᚦ)**, o total é **1D**, suficiente para uma **DT 1**, com risco. Se o d4 cair em **4 (ᛃᚦ)**, o resultado é **1I + 1D**: Corven pode **conservar D** para alcançar DT 1 e aceitar Desespero, ou **gastar I para anular D antes da comparação**, ficando com **0 para a DT** e falhando. O Improviso não gera Precisão.
 
 Sem Agilidade comprada, Corven poderia tentar **1d4 de Agilidade + 1d4 de Infiltração**, se ambas as fontes forem pertinentes. Os dois dados só alcançam DT 2 caso ambos forneçam Desespero: o improviso continua arriscado. **O d4 não fornece um terceiro dado extra a quem já comprou uma fonte.**
 
@@ -447,11 +447,11 @@ Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltraç�
 
 ## Acerto limpo, acerto sob Desespero e Falha
 
-Se **P + D** alcança a DT **sem nenhuma Desespero mantida**, você teve um **acerto limpo**. Em conflitos, isso ajuda a preservar a iniciativa. **O d4 básico nunca gera acerto limpo por si só**, pois só contribui para a DT através de Desespero.
+Se **P + D restante** alcança a DT **sem Desespero não anulado**, você teve um **acerto limpo**. Em conflitos, isso ajuda a preservar a iniciativa. **O d4 básico nunca fornece Precisão por si só**; se seus D forem anulados, deixa de contribuir para a DT. Uma futura Maestria poderá criar Precisão a partir de Improvisos.
 
-Se alcança a DT **com Desesperos mantidas**, obtém o objetivo, mas entrega recursos à oposição. Em um combate, isso pode abrir um contra-ataque; durante uma fuga, pode provocar perseguição; em uma conversa, pode permitir que um líder inimigo interfira.
+Se alcança a DT **com Desespero não anulado**, obtém o objetivo, mas entrega recursos à oposição. Em um combate, isso pode abrir um contra-ataque; numa fuga, provocar perseguição; numa conversa, permitir que um líder inimigo interfira.
 
-Se **P + D** fica abaixo da DT, a ação falha e a iniciativa pode retornar à oposição.
+Se **P + D restante** fica abaixo da DT, a ação falha e a iniciativa pode retornar à oposição. Isso pode acontecer **porque o jogador gastou Improvisos para neutralizar Desespero** antes de verificar a DT.
 
 ### Exemplo — Três resultados para uma mesma DT
 
@@ -463,35 +463,37 @@ Corven tenta entrar na mina com **Agilidade 1 (1d6) + Infiltração 1 (1d10)** c
 | d6 face **3 (D)** + d10 face **6 (P)** | **1P + 1D = 2** | **Acerto sob Desespero**: ele entra, mas a oposição ganha Desespero. |
 | d6 face **1 (○)** + d10 face **5 (I + D)** | **0P + 1D = 1** | **Falha**: a Improviso não eleva a soma à DT. |
 
-**Precisão na tarefa e ausência de riscos não são a mesma coisa.** Dois acertos podem atingir a mesma DT e produzir consequências muito diferentes.
+**Alcançar o objetivo e evitar riscos não são a mesma coisa.** Dois acertos podem atingir a mesma DT e produzir consequências muito diferentes.
 
-# VI. Improviso e iniciativa
+# VI. Improviso, Desespero e iniciativa
 
-Uma **Improviso** mantida pode ser gasta para **dar a oportunidade de agir a um aliado antes da resposta inimiga** ou **reduzir em 1 a Desespero transferida**. Ela não é um Precisão extra. Um personagem precisa de resultados que atinjam a DT, e depois pode escolher se usa sua Improviso para acelerar a equipe ou proteger o grupo da próxima resposta.
+**Improviso (I)** representa uma solução inesperada ou uma brecha: pode ser gasto para **anular 1 Desespero (D) antes da DT**, ajudar um aliado a agir antes da reação da oposição ou alimentar uma capacidade específica. **Cada símbolo I só pode ser gasto uma vez.**
 
-Não existe uma rodada individual fixa. A sequência passa entre jogadores e inimigos conforme acertos limpos, acertos sob Desespero, falhas, Improvisos e intervenções. Um combatente habilidoso pode eliminar ameaças fracas em sequência, mas inimigos mais perigosos exigem resultados arriscados e alimentam o banco de Desesperos do mestre.
+**Ao anular Desespero, reduz-se também o progresso do teste:** o D neutralizado deixa de contar na soma **P + D**. Isso cria a escolha entre **alcançar o objetivo com consequências** e **evitar riscos mesmo sem conseguir avançar**. Um Improviso não é uma Precisão extra; seu uso não garante êxito.
 
-**O mestre pode usar Desesperos para mais que atacar:** segurar uma porta, atrasar uma negociação, mobilizar um líder, sabotar uma estrutura, ameaçar um NPC, fortalecer uma rolagem ou interromper um ritual.
+Não existe uma rodada individual fixa. A sequência passa entre jogadores e inimigos conforme acertos limpos, acertos com Desespero, falhas, Improvisos e intervenções. Um combatente habilidoso pode eliminar ameaças fracas em sequência, mas inimigos mais perigosos exigem resultados arriscados e alimentam o banco de Desespero do mestre.
+
+**O mestre pode usar o Desespero não anulado para mais que atacar:** segurar uma porta, atrasar uma negociação, mobilizar um líder, sabotar uma estrutura, ameaçar um NPC, fortalecer uma rolagem ou interromper um ritual.
 
 ### Exemplo — Uma cena sem turnos fixos
 
-Corven passa pelo vigia com **acerto limpo** e mantém o fluxo de ação dos jogadores. Neris tenta negociar com o chefe da patrulha: ela alcança a DT, mas gera **1 Desespero**. O mestre registra esse recurso e, quando puder pagar uma ativação apropriada, o chefe pode mandar **fechar o portão**, **interromper a conversa** ou **ameaçar um trabalhador**. A intenção da cena ainda é conseguir peças, não matar a patrulha.
+Corven passa pelo vigia com **acerto limpo**, preservando o fluxo de ação dos jogadores. Neris negocia com o chefe da patrulha: ela alcança a DT conservando **1D**, então o mestre registra esse Desespero. Quando puder pagar uma ativação pertinente, o chefe poderá **fechar o portão**, **interromper a conversa** ou **ameaçar um trabalhador**.
 
-Se Neris também mantiver uma **Improviso**, pode usá-la para **reduzir 1 Desespero transferida** ou facilitar a passagem da oportunidade a um aliado, conforme a situação e a regra de iniciativa aplicada.
+Se Neris tiver **1I**, poderá gastá-lo **antes da comparação com a DT** para anular esse Desespero. Contudo, se a negociação dependesse justamente daquele ponto de D para atingir a DT, **não conseguiria o acordo**. Também pode guardar o I para apoiar um aliado, aceitando o risco.
 
-**Não existem ataques gratuitos para cada inimigo presente.** A oposição age através das oportunidades e ativações que o conflito permitir. Custos exatos de ativação permanecem em playtest.
+**Não existem ataques gratuitos para cada inimigo presente.** A oposição age pelas oportunidades e ativações do conflito. Os custos exatos dessas ativações permanecem em playtest.
 
-### Exemplo — Improviso ajuda, mas não resolve o teste sozinha
+### Exemplo — Improviso ajuda, mas não substitui Precisão
 
-Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (P)** e **d10 face 8 (P + I)**: são **2P**, então consegue fechar. A Improviso pode beneficiar um aliado depois. Se sua rolagem tivesse apenas **1P + 1I**, **não** alcançaria DT 2.
+Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (P)** e **d10 face 8 (P + I)**. Tem **2P**, alcança a DT sem Desespero e pode usar **1I** para ajudar um aliado. Se tivesse apenas **1P + 1I**, ficaria abaixo da DT 2: o Improviso não vale Precisão sem uma Maestria específica que autorize essa conversão.
 
 # VII. Corpo, armaduras e ataques
 
 **Não existe rolagem separada de dano.** Quando um ataque atinge a DT, use os mesmos dados mantidos:
 
-**Dano = Precisões + metade das Desesperos (arredondada para baixo).**
+**Dano = quantidade de Precisões (P) + metade dos Desesperos restantes (D), arredondada para baixo.** Desespero anulado com Improviso antes da DT não contribui para o dano.
 
-**Atenção ao improviso em ataques:** um d4 que contribua apenas **1 Desespero** pode ajudar a atingir uma DT 1, mas, sozinho, produz **0 de dano calculado**: **0P + ⌊1D/2⌋ = 0**. Superar a DT não significa ferir automaticamente alguém quando o dano é zero. A ação pode obter um efeito narrativo compatível — como forçar uma reação, afastar uma arma ou abrir uma brecha — sem reduzir Vida. As regras de efeitos corporais ainda estão em teste.
+**Atenção ao d4 básico em ataques:** um d4 que contribua apenas **1D não anulado** pode ajudar a atingir uma DT 1, mas, sozinho, produz **0 de dano calculado**: **0P + ⌊1D/2⌋ = 0**. Superar a DT não significa ferir automaticamente alguém quando o dano é zero. A ação pode obter um efeito narrativo compatível — como forçar uma reação, afastar uma arma ou abrir uma brecha — sem reduzir Vida. As regras de efeitos corporais ainda estão em teste.
 
 Por exemplo, 2 Precisões + 1 Desespero geram **2 de dano**; 1 Precisão + 2 Desesperos geram **2 de dano**; 3 Desesperos geram **1 de dano**. As Desesperos continuam sendo recurso de oposição, salvo capacidades que as reduzam.
 
@@ -577,20 +579,23 @@ Maela paga **1 Coragem** para elevar **seu d6 para d10 antes da rolagem**. Se os
 
 Depois de aumentar Força para **2d6**, Maela rola **2d6 + 1d10** com uma ferramenta apropriada. No Marco I, mantém apenas dois resultados. Gastar Coragem para **manter um terceiro** é uma possibilidade de playtest com **custo ainda não aprovado**; não altera a quantidade de dados efetivamente rolados.
 
-### Exemplo — Crítico com improviso: d4 + d6
+### Exemplo — Crítico com d4 + d6: aceitar risco ou falhar com segurança
 
-Corven tenta escapar de uma passagem estreita usando **Agilidade 1 (1d6)** e **Infiltração 0 (1d4)**. Ele mantém ambos no Marco I, com estas faces:
+Corven tenta atravessar uma passagem de **DT 2** usando **Agilidade 1 (1d6)** e **Infiltração 0 (1d4)**. Mantém dois dados no Marco I:
 
 | Dado mantido | Face máxima | Símbolos |
 |---|---:|---|
-| **d4 básico de Infiltração** | **4** | **ᛃᚦ = 1 Improviso + 1 Desespero** |
-| **d6 de Agilidade** | **6** | **ᛏ = 1 Precisão** |
+| **d4 básico de Infiltração** | **4** | **ᛃᚦ = 1 Improviso + 1 Desespero (I + D)** |
+| **d6 de Agilidade** | **6** | **ᛏ = 1 Precisão (P)** |
 
-**Resultado:** **1P + 1D = 2 para a DT**, com **1I** disponível. Contra uma **DT 2**, Corven consegue passar. Ele pode usar a **Improviso para reduzir em 1 a Desespero transferida**, sem mudar o valor 2 já alcançado na DT.
+Corven tem **1P + 1D = 2** para a DT, além de **1I**. Ele precisa escolher:
 
-Como **os dois dados mantidos saíram nas faces máximas (4 e 6)**, Corven também obtém **um crítico e recupera 1 Coragem**, até seu limite. **Não precisa ter gasto Coragem antes:** o d4 normal já é válido para o crítico. Se tivesse usado 1 Coragem para elevar o d4 a d6, teria de rolar **d6**, e não poderia considerar a face 4 antiga.
+- **Aceitar o Desespero:** alcança a **DT 2**, atravessa a passagem e entrega **1D** para a oposição.
+- **Gastar o Improviso para anular D:** sua soma cai para apenas **1P**, insuficiente para **DT 2**. Ele evita transmitir Desespero, mas não consegue atravessar.
 
-**Outro exemplo:** d6 na face **6** e d10 na face **10**, ambos mantidos, também geram crítico, embora o d10 contenha **1 Desespero**. Um crítico não exige uma rolagem sem riscos.
+**Crítico é independente dessa escolha:** os dois dados mantidos mostram suas faces máximas (4 e 6), portanto ele **recupera 1 Coragem**, até o limite da reserva, mesmo que tenha escolhido mitigar o risco e não alcançar a DT. A rolagem não se transforma automaticamente em acerto limpo.
+
+Se Corven tivesse gasto **1 Coragem para elevar d4 a d6** antes da rolagem, teria de considerar a face do **novo d6**, e não reaproveitar a face 4 antiga. D6 na face 6 e d10 na face 10, ambos mantidos, também geram crítico, mesmo que o d10 mostre Desespero.
 
 # IX. Marcos, XP e profissões
 
