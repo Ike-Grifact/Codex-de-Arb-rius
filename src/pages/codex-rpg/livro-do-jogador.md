@@ -78,11 +78,11 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 | Orçamento inicial | Valor | O que comprar |
 |---|---:|---|
 | **Base (Atributos)** | **7 XP** | Força, Agilidade, Destreza, Inteligência, Influência e Vigor, seguindo os custos próprios de d6 e suas evoluções. |
-| **Formação (Perícias)** | **7 XP** | Conhecimentos e Práticas que fornecem d10; no futuro, Perícias específicas conforme seus custos e pré-requisitos. |
+| **Formação (Perícias)** | **7 XP** | Conhecimentos e Práticas que fornecem d10; Perícias básicas do catálogo, com efeitos e custos próprios. |
 
 **As duas reservas são separadas apenas na criação:** não transfira XP de Base para Formação, nem o contrário. Não é obrigatório gastar tudo; saldos não utilizados devem ser anotados na respectiva reserva. **Depois da criação**, o XP recebido em sessões pode ser investido normalmente conforme os custos e requisitos de cada capacidade; não há uma divisão automática de 50/50 para novos XP.
 
-**Nesta edição, Conhecimentos e Práticas têm custos definidos, mas o catálogo de Perícias específicas ainda não.** Por isso, o orçamento de Formação pode ser gasto de imediato nos treinamentos d10. Comprar uma Perícia especial requer que a mesa tenha antes aprovado seu preço e efeito; nenhum bônus de Perícia é concedido gratuitamente.
+**Conhecimentos, Práticas e as Perícias básicas do catálogo já têm custos definidos.** Os 7 XP de Formação podem ser gastos em treinamentos ou Perícias. Efeitos de Perícias não listadas ainda precisam ser definidos antes da compra.
 
 **Vida máxima = 3 + grau de Vigor.** Por exemplo: Vigor 0 → **3 de Vida**; Vigor 1 → **4**; Vigor 2 → **5**; Vigor 3 → **6**. Aumentar Vigor posteriormente aumenta a Vida máxima em +1 por grau adquirido. Esta fórmula substitui a antiga referência de 6 pontos iniciais e não depende de uma divisão de Vitalidade.
 
@@ -90,7 +90,7 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Passo 2 — Atributos (7 XP de Base).** Escolha em que capacidades deseja investir usando **apenas os 7 XP de Base**. **Mesmo sem comprar um Atributo**, ele fornece 1d4 básico para uma ação pertinente. Comprar grau 1 muda esse dado para 1d6. Em testes, mantenha pelo menos um dado de Atributo, inclusive se for o d4.
 
-**Passo 3 — Formação (7 XP).** Com a segunda reserva, escolha Conhecimentos e Práticas compatíveis com a história. Exemplos: Erudição, Ciências, Engenharia; Armas, Furtividade, Infiltração, Expressão, Manufaturas, Herborismo, Mineração, Domesticação ou Comércio. Futuras Perícias específicas também poderão disputar essa reserva quando seus efeitos e custos forem definidos. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
+**Passo 3 — Formação (7 XP).** Com a segunda reserva, escolha Conhecimentos e Práticas compatíveis com a história. Exemplos: Erudição, Ciências, Engenharia; Armas, Furtividade, Infiltração, Expressão, Manufaturas, Herborismo, Mineração, Domesticação ou Comércio. As Perícias básicas de Montaria, Combate, Armas, Furto, Acrobata, Alquimia e Comércio também podem ser compradas com essa reserva. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
 
 ### Entendendo Conhecimentos, Práticas e Perícias
 
@@ -98,7 +98,7 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 | Grupo | Exemplos provisórios | Quando a fonte pode entrar na pilha |
 |---|---|---|
-| **Conhecimentos** | Ciências, Engenharia, Erudição, Geografia, Medicina | Reconhecer fenômenos, planejar estruturas, interpretar registros, diagnosticar e estudar uma situação |
+| **Conhecimentos** | Biologia, Ciências, Engenharia, Erudição, Geografia, Medicina | Reconhecer fenômenos, planejar estruturas, interpretar registros, diagnosticar e estudar uma situação |
 | **Práticas** | Armas, Atletismo, Furtividade, Infiltração, Manufaturas, Mineração, Herborismo, Expressão, Comércio, Sobrevivência | Manejar armas, saltar, escalar, esconder-se, infiltrar-se, fabricar, extrair minério, coletar ervas, negociar e sobreviver |
 
 **Esses nomes e essa divisão são um catálogo de exemplo, não a lista definitiva de capacidades.** Herborismo e Mineração, por exemplo, podem futuramente ter aplicações técnicas e práticas separadas. O essencial agora é a função de cada grupo.
@@ -117,23 +117,79 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Exemplo rápido:** Comércio 1 custa **2 XP** e fornece **1d10**. Elevar Comércio 1 → 2 custa **mais 6 XP**, ficando com **2d10** e **8 XP investidos**. Subir até Comércio 3 custa **outros 12 XP**, chegando a **3d10** e **20 XP acumulados**. Para transformar o primeiro deles em d12, seria necessário investir **mais 18 XP**, alcançando **38 XP acumulados** nessa capacidade.
 
-**Perícias específicas são diferentes dos treinamentos:** neste livro, o termo nomeia **Características compráveis**, como Mãos Leves, Pegada Firme ou futuras especializações de Mineração. Uma Perícia pode modificar a aplicação dos resultados, criar efeitos e impor pré-requisitos; **não é automaticamente mais uma fonte d10**. O nome **«orçamento de Formação/Perícias»** identifica de onde sai o XP inicial, **não transforma Conhecimentos e Práticas em Perícias especiais**.
+**Perícias são diferentes de Conhecimentos e Práticas:** uma Perícia concede uma **vantagem especial** — como +1 Adaptação ou combinar três Aptidões —, mas não entrega dados d10 automaticamente. Conhecimentos e Práticas são Aptidões que fornecem dados conforme o grau comprado. O orçamento inicial de Formação pode adquirir ambos.
 
-**Sem uma Perícia, o personagem ainda pode tentar ações comuns.** Seu Atributo e um Conhecimento/Prática não treinado podem fornecer dados, incluindo d4 básicos. O d4 **não reproduz poderes, bônus ou exceções exclusivos** de uma Perícia. É possível gastar **1 ponto de Determinação para elevar temporariamente um único dado em um passo**, por exemplo **d4 → d6**. A melhoria vale apenas para uma rolagem e não pode ser encadeada com outro aumento por Determinação no mesmo teste.
+**Sem a Perícia, um personagem ainda pode tentar a ação comum**, combinando duas partes, inclusive com d4 de improviso. O d4 não imita os benefícios de Perícia. Gastar **1 Determinação** melhora um dado em **um passo** antes do teste, mas não substitui a Perícia que autoriza três Aptidões.
 
-**Direção para o desenvolvimento:** evoluções permanentes até d12 devem representar investimento concentrado. **Perícias especializadas e Determinação** poderão oferecer **aumento temporário ou condicionado do passo de um dado**, quando suas regras e custos forem definidos. Isso não concede d12 gratuito a qualquer personagem nem transforma a Perícia automaticamente numa quarta fonte. A intenção é premiar a **sinergia entre capacidades adquiridas** em situações específicas.
+## Perícias básicas — catálogo inicial
+
+**Aptidão** é um **Atributo, Conhecimento ou Prática** utilizado na ação. Uma Perícia não é fonte de dados por si só. Armas, ferramentas, montarias e outros equipamentos podem ser relevantes narrativamente e fornecer dados se sua própria ficha disser isso, mas **não acrescentam automaticamente uma quarta Aptidão**.
+
+| Tipo de Perícia | Custo | Benefício |
+|---|---:|---|
+| **Adaptação** | **1 XP** | Adiciona **+1 Adaptação (A)** num teste que cumpra a condição da Perícia. |
+| **Combinação** | **2 XP** | Permite usar **uma Aptidão central + outras duas Aptidões pertinentes** na mesma rolagem. |
+| **Sucesso** | **3 XP** | Custo para Perícias específicas que concedam **+1 Sucesso (S)** quando sua condição for satisfeita. |
+
+**Os nomes e condições de Perícias de +1S ainda não foram definidos.** O valor de 3 XP estabelece a categoria de custo, mas **não autoriza comprar um +1 Sucesso genérico sem uma Perícia concreta**.
+
+### Perícias que concedem Adaptação — 1 XP
+
+| Perícia | Efeito |
+|---|---|
+| **Montaria** | Recebe **+1A** em testes realizados **montado**, quando a montaria realmente contribuir para a ação. |
+| **Combate** | Recebe **+1A** em **testes de combate**, incluindo ataques, defesas ou disputas de posição dentro de um confronto. |
+
+A Adaptação extra **não conta como Sucesso nem soma à DT**. Depois de verificar a DT, pode reduzir **1 Incerteza transferida** ou beneficiar um aliado, conforme as regras de Adaptação. **Cada Perícia contribui com seu bônus uma vez por teste pertinente.** Se Montaria e Combate se aplicarem ao mesmo teste de combate montado, cada uma pode acrescentar sua própria Adaptação, sem alterar os dados rolados ou o limite dos dados mantidos.
+
+### Perícias de combinação — 2 XP cada
+
+| Perícia | Aptidão central | Permite combinar |
+|---|---|---|
+| **Armas Leves** | **Armas**, usando arma leve | Armas **+ duas outras Aptidões** relacionadas ao manejo da arma leve. |
+| **Armas Médias** | **Armas**, usando arma média | Armas **+ duas outras Aptidões** relacionadas ao manejo da arma média. |
+| **Armas Pesadas** | **Armas**, usando arma pesada | Armas **+ duas outras Aptidões** relacionadas ao manejo da arma pesada. |
+| **Armas à Distância** | **Armas**, usando arma à distância | Armas **+ duas outras Aptidões** para mirar, atirar ou arremessar. |
+| **Furto** | **Furtividade** | Furtividade **+ duas outras Aptidões** para subtrair ou ocultar algo sem ser percebido. |
+| **Acrobata** | **Atletismo** | Atletismo **+ duas outras Aptidões** em saltos, escaladas, quedas e manobras físicas. |
+| **Alquimia** | **Biologia** (Conhecimento) | Biologia **+ duas outras Aptidões** para identificar, preparar ou manipular misturas e substâncias. |
+| **Comércio** | **Comércio** (Prática) | Comércio **+ duas outras Aptidões** para compra, venda, avaliação e negociação. |
+
+Cada categoria de armas tem **sua própria Perícia**, comprada separadamente. Novos tipos de arma poderão ter Perícias específicas futuramente. **Alquimia é uma Perícia baseada no Conhecimento Biologia**, e não uma nova reserva gratuita de dados.
+
+### Como combinar três Aptidões
+
+**Sem Perícia de combinação:** o teste usa **duas partes**, normalmente **um Atributo + uma segunda fonte pertinente**.
+
+**Com uma Perícia de combinação aplicável:** o teste pode usar **a Aptidão central indicada na Perícia + duas outras Aptidões pertinentes**, que podem ser Atributos, Conhecimentos ou Práticas. Pelo menos **uma das três deve ser um Atributo**, e pelo menos **um dado desse Atributo deve ser mantido**. Cada Aptidão entra com seus dados comprados ou **um único d4 de improviso**, caso não tenha sido adquirida.
+
+A Perícia **não adiciona dados próprios**; ela permite a terceira fonte. **O limite de dados mantidos do Marco continua igual**: no nível 1, ainda são dois resultados, mesmo quando a personagem rola dados de três Aptidões. Não é permitido somar duas Perícias de combinação para formar quatro ou cinco Aptidões na mesma ação. Nenhuma combinação pode incluir capacidades que não contribuam efetivamente para a situação.
+
+### Exemplos de Perícias em cena
+
+**Armas Leves:** Corven usa **Destreza 1 (1d6) + Armas 1 (1d10) + Atletismo 0 (1d4)** para atacar com uma arma leve ao mesmo tempo em que avança por uma passagem instável. A Perícia **Armas Leves (2 XP)** autoriza as três Aptidões. No Marco I ele rola **1d6 + 1d10 + 1d4**, mas só mantém **dois dados**, incluindo o de Destreza. Sem a Perícia, usaria apenas duas fontes.
+
+**Furto:** uma personagem combina **Destreza + Furtividade + Atletismo** para alcançar uma bolsa, removê-la sem ruído e escapar saltando um parapeito. Atletismo só entra porque a movimentação arriscada faz parte da ação.
+
+**Acrobata:** Maela usa **Agilidade + Atletismo + Engenharia** para atravessar uma estrutura quebrada após calcular como usar um bastão de apoio. Engenharia precisa participar concretamente do movimento; não basta possuir o Conhecimento.
+
+**Alquimia:** o personagem combina **Inteligência + Biologia + Herborismo** para preparar uma mistura a partir de plantas desconhecidas. Biologia é a Aptidão central; a Perícia Alquimia (2 XP) autoriza a terceira.
+
+**Comércio:** Neris combina **Influência + Comércio + Engenharia** ao comprar uma máquina avariada, pois o Conhecimento técnico é relevante para avaliar seu valor. O bônus não vale quando Engenharia não participa da negociação.
+
+**Combate e Montaria:** um combatente montado pode receber **+1A por Montaria** e **+1A por Combate**, se tiver comprado ambas (1 XP cada) e a ação satisfizer as duas condições. Isso não acrescenta Sucessos nem altera a DT.
 
 #### Exemplo — Saber não é fazer
 
 Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustentação de uma galeria, se tiver Engenharia comprada. Para **extrair minério**, outro personagem pode usar **Força + Mineração**. Para **negociar o preço**, Neris usa **Influência + Comércio**. Embora todas essas áreas contribuam para a mesma missão, não concedem os mesmos dados em todas as situações.
 
-### Regra fundamental — Combinação de duas partes
+### Regra fundamental — Duas partes, com exceções das Perícias
 
-**Todo teste é uma combinação de exatamente duas partes:** **um Atributo pertinente + uma segunda fonte** (Conhecimento, Prática ou equipamento que conceda dados). Cada fonte oferece seus dados comprados ou **1d4 básico de improviso**, se estiver em grau 0. Isso permite **2d4** quando nenhuma das duas foi comprada. A escolha deve nascer da abordagem narrada, não da vontade de usar uma ficha mais forte.
+**Normalmente, todo teste combina exatamente duas partes:** um Atributo pertinente e uma segunda fonte (Conhecimento, Prática ou equipamento com dados próprios). Cada fonte fornece dados comprados ou **1d4 de improviso** no grau 0. Duas capacidades não adquiridas podem formar **2d4**.
 
-No exemplo do vão: **Agilidade + Atletismo** resolve um salto; **Agilidade + Engenharia** só serve se a personagem estiver usando conhecimento técnico de forma concreta, como para aproveitar um bastão como alavanca. Equipamento narrativo não adiciona automaticamente uma terceira parte. **Sempre mantenha ao menos um dado do Atributo**.
+**Perícias de combinação (2 XP) são a exceção:** permitem usar **três Aptidões pertinentes**, conforme a Aptidão central e o contexto da Perícia. O número de fontes aumenta, mas **não muda quantos dados o Marco permite manter**. A escolha das Aptidões nasce da ação narrada; não se podem adicionar dados apenas por estarem disponíveis.
 
-**Combinar três capacidades num teste é uma possibilidade futura de design, ainda não habilitada no Livro do Jogador, inclusive nos Marcos III e IV.** As builds continuam importantes porque permitem escolher **quais duas fontes** aplicar em situações diferentes. Perícias podem vir a oferecer exceções específicas, com regras próprias.
+Em um salto, **Agilidade + Atletismo** é a combinação comum. Com a Perícia **Acrobata**, uma preparação especial com bastão pode justificar **Agilidade + Atletismo + Engenharia**, desde que o planejamento técnico seja realmente relevante. Sempre mantenha ao menos um dado de Atributo.
 
 **Passo 4 — Equipamento.** Registre itens, ferramentas e armas de acordo com o objetivo da missão. O equipamento pode fornecer dados próprios, mas não substitui a obrigação de manter um dado de Atributo em testes.
 
@@ -225,7 +281,7 @@ Para alcançar **6 de Vida**, o personagem precisa de **Vigor 3**. Com a tabela 
 
 ### Exemplo de ficha inicial
 
-**Maela, Aprendiz da Forja.** **Base: Força 2 (2d6) = 3 XP; Inteligência 2 (2d6) = 3 XP; Vigor 1 (1d6) = 1 XP. Total de Base: 7/7 XP.** **Formação: Manufaturas 1 (1d10) = 2 XP; Mineração 1 (1d10) = 2 XP; Engenharia 1 (1d10) = 2 XP. Total de Formação: 6/7 XP; sobra 1 XP.** Vida: **4**. Determinação: **10**. Profissão: **Aprendiz**. Sua ficha é voltada à recuperação de máquinas, extração e reparos, mas não pertence a uma classe fechada.
+**Maela, Aprendiz da Forja.** **Base: Força 2 (2d6) = 3 XP; Inteligência 2 (2d6) = 3 XP; Vigor 1 (1d6) = 1 XP. Total de Base: 7/7 XP.** **Formação: Manufaturas 1 (1d10) = 2 XP; Mineração 1 (1d10) = 2 XP; Engenharia 1 (1d10) = 2 XP. Total de Formação: 6/7 XP; sobra 1 XP.** Ela pode guardar esse ponto ou comprar **Combate (1 XP)** para receber **+1A nos testes de combate**. Vida: **4**. Determinação: **10**. Profissão: **Aprendiz**. Sua ficha é voltada à recuperação de máquinas, extração e reparos, mas não pertence a uma classe fechada.
 
 # IV. O que os dados dizem
 
@@ -295,8 +351,8 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de S
 
 1. **Declare a ação e o objetivo.** O mestre apresenta a DT quando ela é relevante.
 2. **Escolha um Atributo apropriado.** Ele é a fonte obrigatória de dados, com **1d4 básico quando o grau for zero**.
-3. **Escolha obrigatoriamente a segunda parte.** O teste combina **Atributo + Conhecimento, Prática ou equipamento** pertinentes. Se a segunda parte estiver no grau 0, fornece **1d4 de improviso**. Duas partes não compradas resultam em **2d4**.
-4. **Role a pilha.** Cada fonte pode contribuir com até três dados comprados **ou um único d4 básico**, nunca ambos.
+3. **Escolha as partes da rolagem.** Por padrão, combine **Atributo + Conhecimento, Prática ou equipamento** pertinentes; no grau 0, cada fonte oferece **1d4 de improviso**. Com uma **Perícia de combinação aplicável (2 XP)**, use **sua Aptidão central + duas outras Aptidões**.
+4. **Role a pilha.** Cada fonte pode contribuir com até três dados comprados **ou um único d4 básico**, nunca ambos. A Perícia pode autorizar a terceira Aptidão, mas não adiciona dados próprios.
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
 6. **Compare com a DT.** Some apenas os Sucessos e Incertezas dos dados mantidos. Se alcançar ou superar a DT, a ação acontece. Depois resolva Adaptações, dano e Incertezas.
 
@@ -525,12 +581,12 @@ Como **os dois dados mantidos saíram nas faces máximas (4 e 6)**, Corven tamb�
 
 | Marco | Níveis | Fontes por teste | Mantém normalmente |
 |---|---|---:|---:|
-| I | 1–5 | até 2 | 2 dados |
-| II | 6–10 | até 2 | 3 dados |
-| III | 11–15 | **2** | 3 dados |
-| IV | 16–20 | **2** | até 4 dados **(em teste)** |
+| I | 1–5 | **2 (3 com Perícia)** | 2 dados |
+| II | 6–10 | **2 (3 com Perícia)** | 3 dados |
+| III | 11–15 | **2 (3 com Perícia)** | 3 dados |
+| IV | 16–20 | **2 (3 com Perícia)** | até 4 dados **(em teste)** |
 
-No **nível 6**, o personagem começa a manter três dados naturalmente, caso tenha dados suficientes. **Todos os Marcos desta versão continuam usando exatamente duas partes por teste**, com pelo menos um dado de Atributo mantido. No Marco III, combinar três capacidades permanece um objetivo futuro, não uma regra ativa. Manter quatro dados no Marco IV ainda é experimental.
+No **nível 6**, o personagem começa a manter três dados naturalmente, caso tenha dados suficientes. **Sem Perícia de combinação, todos os Marcos usam duas partes por teste**. Com uma **Perícia aplicável**, são permitidas **três Aptidões**, sempre mantendo pelo menos um dado de Atributo. O limite de resultados mantidos continua sendo o do Marco. Manter quatro dados no Marco IV ainda é experimental.
 
 ### Exemplo — O que muda de verdade entre os Marcos
 
@@ -541,7 +597,7 @@ No **nível 6**, o personagem começa a manter três dados naturalmente, caso te
 | **III — nível 11** | Atributo + Conhecimento | **3d6 + 3d10 = 6 dados** | **3**, sendo pelo menos 1 de Atributo. |
 | **IV — nível 16** | Atributo + Prática | **3d6 + 3d10 = 6 dados** | **até 4, provisoriamente**, incluindo Atributo. |
 
-**Os números rolados nessa tabela são exemplos de capacidades compradas.** Não são presentes automáticos por subir de nível. Cada uma das **duas partes** pode fornecer até **três dados**, então o máximo estrutural nesta versão é **6 dados rolados em qualquer Marco**. Equipamentos com dados podem ocupar a segunda parte, mas não se somam como terceira fonte.
+**Os números rolados nessa tabela são exemplos de capacidades compradas.** Cada fonte pode fornecer até **três dados**: **duas fontes** permitem até **6 dados rolados** e uma **Perícia de combinação adequada** autoriza **três Aptidões**, chegando a até **9 dados rolados**. O personagem ainda **mantém somente os dados permitidos pelo Marco**, incluindo ao menos um de Atributo. Equipamentos não se somam gratuitamente como fonte adicional.
 
 #### Uma rolagem de nível 6, detalhada
 
@@ -553,7 +609,7 @@ No nível 6, pode manter **três dados**, escolhendo o d6 face 6 e os dois d10. 
 
 Mais tarde, Maela investiu em **Inteligência 2 (2d6)**, **Engenharia 2 (2d10)** e **Manufaturas 2 (2d10)**. Ela tenta restaurar uma bomba d'água. Para **identificar a falha**, combina **Inteligência + Engenharia**, rolando **2d6 + 2d10**. Para **fabricar a peça**, pode realizar outra ação com **Destreza + Manufaturas** (usando o d4 básico de Destreza, se não investiu nela).
 
-Em cada teste usa **exatamente duas partes**, mesmo no Marco III. Ela pode manter **três dados**, incluindo pelo menos um de Atributo. A vantagem de sua build é oferecer abordagens diferentes em etapas distintas, e não juntar três fontes no mesmo teste.
+**Sem Perícia de combinação**, Maela usa **duas partes** nesse teste, mesmo no Marco III. Ela pode manter **três dados**, incluindo pelo menos um de Atributo. **Com uma Perícia de combinação adequada**, pode usar três Aptidões pertinentes numa única ação, mas ainda manteria somente **três resultados** nesse Marco.
 
 **Nenhum Marco oferece um d20 gratuito.** O d20 é uma exceção extraordinária ligada a recursos e técnicas que ainda precisam de validação.
 
@@ -596,7 +652,7 @@ Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; *
 
 # XI. O que ainda está em teste
 
-Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos dos **outros usos** de Determinação (aumento de um passo já custa **1 ponto**); tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; catálogo inicial de Perícias e seus custos; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
+Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos dos **outros usos** de Determinação (aumento de um passo já custa **1 ponto**); tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; futuras Perícias de +1 Sucesso (3 XP), seus nomes e condições; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
 
 O mestre e os jogadores devem decidir qualquer regra ainda pendente antes da sessão e registrar o procedimento utilizado. **Não é necessário inventar estatísticas para as linhagens não-humanas:** elas não são personagens de jogador nesta primeira edição.
 
