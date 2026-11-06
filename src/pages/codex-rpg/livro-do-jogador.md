@@ -28,7 +28,7 @@ Cristais funcionam como recursos e moeda. As regiões abaixo das Espinhas concen
 
 ### Exemplo contínuo — A caravana do Poço Seco
 
-Tainá, Breno e Mara recebem uma missão: recuperar peças para a bomba d'água de uma cidade construída com metal de arcas antigas. O material está numa mina sob uma Espinha do Mundo. Há saqueadores nas galerias, um túnel desabando e um guarda que pode aceitar um acordo.
+Maela, Corven e Neris recebem uma missão: recuperar peças para a bomba d'água de uma cidade construída com metal de arcas antigas. O material está numa mina sob uma Espinha do Mundo. Há saqueadores nas galerias, um túnel desabando e um guarda que pode aceitar um acordo.
 
 Ao longo deste livro, esse mesmo grupo servirá para explicar **criação de personagens, fontes de dados, DTs, iniciativa, riscos, ferimentos e XP**. O objetivo da missão é salvar a cidade; derrotar os saqueadores não é obrigatório.
 
@@ -46,7 +46,7 @@ A progressão é aberta, mas não irrestrita. Você precisa pagar XP por capacid
 
 | Atributo | Use quando... |
 |---|---|
-| **Potência** | aplica força, carrega peso, rompe obstáculos, segura algo |
+| **Força** | aplica força, carrega peso, rompe obstáculos, segura algo |
 | **Agilidade** | reage, se esquiva, reposiciona, executa movimentos rápidos |
 | **Destreza** | mira, coordena mãos e olhos, realiza movimentos precisos |
 | **Inteligência** | deduz, aprende, lê, combina técnicas, aplica conhecimento |
@@ -57,7 +57,7 @@ A progressão é aberta, mas não irrestrita. Você precisa pagar XP por capacid
 
 ### Exemplo — Atributo zero e ações sem teste
 
-Tainá possui **Agilidade 0**. Ela consegue caminhar e subir escadas seguras normalmente, pois isso não requer teste. Porém, se precisar saltar um vão enquanto pedras caem, um teste arriscado de Agilidade exige ao menos **um dado de Atributo apropriado**: ela não possui nenhum. Ela pode buscar outra solução, como instalar uma corda com Inteligência e Manufaturas, esperar uma oportunidade ou pedir ajuda. Ter uma ferramenta não cria automaticamente um Atributo que falta.
+Maela possui **Agilidade 0**. Ela consegue caminhar e subir escadas seguras normalmente, pois isso não requer teste. Porém, se precisar saltar um vão enquanto pedras caem, um teste arriscado de Agilidade exige ao menos **um dado de Atributo apropriado**: ela não possui nenhum. Ela pode buscar outra solução, como instalar uma corda com Inteligência e Manufaturas, esperar uma oportunidade ou pedir ajuda. Ter uma ferramenta não cria automaticamente um Atributo que falta.
 
 Quando uma ação realmente exigir teste, **pelo menos um dos resultados mantidos deve vir de Atributo**. Não basta possuir d10 de equipamento ou de treinamento.
 
@@ -93,7 +93,7 @@ A criação inicial usa os seguintes valores de referência discutidos para o jo
 
 #### Exemplo — Saber não é fazer
 
-Na mina, Tainá pode usar **Inteligência + Engenharia** para entender a sustentação de uma galeria, se tiver Engenharia comprada. Para **extrair minério**, outro personagem pode usar **Potência + Mineração**. Para **negociar o preço**, Mara usa **Influência + Comércio**. Embora todas essas áreas contribuam para a mesma missão, não concedem os mesmos dados em todas as situações.
+Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustentação de uma galeria, se tiver Engenharia comprada. Para **extrair minério**, outro personagem pode usar **Força + Mineração**. Para **negociar o preço**, Neris usa **Influência + Comércio**. Embora todas essas áreas contribuam para a mesma missão, não concedem os mesmos dados em todas as situações.
 
 **Atributo + Conhecimento** e **Atributo + Prática** são exemplos de duas fontes. O equipamento pode ocupar uma dessas fontes, quando sua ficha conceder dados. Antes do nível 11, não combine simultaneamente **Atributo + Prática + Equipamento** numa única rolagem: são três fontes, além do limite inicial.
 
@@ -101,21 +101,21 @@ Na mina, Tainá pode usar **Inteligência + Engenharia** para entender a sustent
 
 **Passo 5 — Objetivo.** Escolha uma razão para continuar vivo: proteger alguém, encontrar uma Espinha do Mundo, recuperar um conhecimento perdido, salvar a comunidade ou descobrir o que restou das arcas.
 
-### Exemplo de criação — Tainá, passo a passo
+### Exemplo de criação — Maela, passo a passo
 
 | Etapa | Decisão | Efeito |
 |---|---|---|
 | 1. Origem | Aprendeu a consertar ferramentas nas oficinas de uma cidade humana. | Identidade narrativa, sem dados gratuitos. |
-| 2. Atributos | Compra **Potência 1** e **Inteligência 1**. | **1d6** de cada; **2 + 2 = 4 XP**. |
+| 2. Atributos | Compra **Força 1** e **Inteligência 1**. | **1d6** de cada; **2 + 2 = 4 XP**. |
 | 3. Conhecimento/Prática | Compra **Manufaturas 1**. | **1d10** nas ações compatíveis; **3 XP**. |
 | 4. Equipamento | Leva ferramentas, corda e uma mochila. | São itens da história; dados extras dependem da ficha do equipamento, não da simples descrição. |
 | 5. Objetivo | Recuperar peças para a bomba d'água. | Motivo para agir e decidir. |
 
-**Cálculo:** Tainá gastou **7 dos 7 XP iniciais**, começa com **6 de Vida**, **10 de Determinação** e profissão **Aprendiz**. Nenhuma compra de Perícia ou Maestria foi pressuposta.
+**Cálculo:** Maela gastou **7 dos 7 XP iniciais**, começa com **6 de Vida**, **10 de Determinação** e profissão **Aprendiz**. Nenhuma compra de Perícia ou Maestria foi pressuposta.
 
-### Exemplo alternativo — Mara, negociadora Aprendiz
+### Exemplo alternativo — Neris, negociadora Aprendiz
 
-Mara compra **Influência 1 (2 XP)**, **Destreza 1 (2 XP)** e **Comércio 1 (3 XP)**. Seu total também é **7 XP**. Ela é melhor em negociações, enquanto Tainá é preparada para trabalhos manuais; **o nível não define a profissão nem concede essas capacidades automaticamente**.
+Neris compra **Influência 1 (2 XP)**, **Destreza 1 (2 XP)** e **Comércio 1 (3 XP)**. Seu total também é **7 XP**. Ela é melhor em negociações, enquanto Maela é preparada para trabalhos manuais; **o nível não define a profissão nem concede essas capacidades automaticamente**.
 
 ## Compras de XP — tabela experimental
 
@@ -136,19 +136,19 @@ Mara compra **Influência 1 (2 XP)**, **Destreza 1 (2 XP)** e **Comércio 1 (3 X
 | 2 | 2d10 | 6 |
 | 3 | 3d10 | 9 |
 
-Os custos são **incrementais**. Por exemplo, evoluir Potência de grau 0 até grau 2 custa 2 + 3 = 5 XP. Graus superiores e seus requisitos de Marco ainda estão em playtest.
+Os custos são **incrementais**. Por exemplo, evoluir Força de grau 0 até grau 2 custa 2 + 3 = 5 XP. Graus superiores e seus requisitos de Marco ainda estão em playtest.
 
 ### Exemplo — Evoluindo uma fonte
 
-Depois da primeira missão, Tainá acumula **5 XP novos**. Pode investir **3 XP** para elevar Potência de grau **1 (1d6)** a grau **2 (2d6)** e guardar os **2 XP** restantes; não precisa comprar novamente o primeiro grau.
+Depois da primeira missão, Maela acumula **5 XP novos**. Pode investir **3 XP** para elevar Força de grau **1 (1d6)** a grau **2 (2d6)** e guardar os **2 XP** restantes; não precisa comprar novamente o primeiro grau.
 
 Se preferir, pode comprar **Agilidade 1 por 2 XP** com os pontos restantes, ampliando as ações que consegue tentar. Já comprar **Mineração 1** custaria **3 XP**; ela precisaria economizar mais um ponto. O XP **total conquistado** define o nível, mas somente o XP **disponível e gasto** define as fontes na ficha.
 
-**Dois d6 de Potência não significam dois dados mantidos obrigatórios:** no primeiro Marco, você pode rolar os dois mais outra fonte compatível, mas continua mantendo no máximo dois resultados no total.
+**Dois d6 de Força não significam dois dados mantidos obrigatórios:** no primeiro Marco, você pode rolar os dois mais outra fonte compatível, mas continua mantendo no máximo dois resultados no total.
 
 ### Exemplo de ficha inicial
 
-**Tainá, Aprendiz da Forja.** Potência 1 (1d6) custa 2 XP; Inteligência 1 (1d6), 2 XP; Manufaturas 1 (1d10), 3 XP. Total: **7 XP**. Vida: 6. Determinação: 10. Sua ficha não faz dela uma ferreira de uma classe fechada, mas seu caminho aponta para Engenharia, coleta de minérios e reparos.
+**Maela, Aprendiz da Forja.** Força 1 (1d6) custa 2 XP; Inteligência 1 (1d6), 2 XP; Manufaturas 1 (1d10), 3 XP. Total: **7 XP**. Vida: 6. Determinação: 10. Sua ficha não faz dela uma ferreira de uma classe fechada, mas seu caminho aponta para Engenharia, coleta de minérios e reparos.
 
 # IV. O que os dados dizem
 
@@ -219,34 +219,34 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de S
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
 6. **Compare com a DT.** Some apenas os Sucessos e Pressões dos dados mantidos. Se alcançar ou superar a DT, a ação acontece. Depois resolva Adaptações, dano e Pressões.
 
-**Exemplo.** Tainá tenta forçar uma passagem de DT 2 usando Potência 1 (1d6) e uma ferramenta que forneça 1d10. Ela rola S no d6 e SAP no d10. Mantém os dois: **2 Sucessos + 1 Pressão = 3 para atingir a DT**. Ela consegue abrir a passagem, mas a Pressão pode ser usada pelo mestre para fazer uma ameaça intervir. A Adaptação pode reduzir em 1 a Pressão transmitida, se esse for o efeito escolhido.
+**Exemplo.** Maela tenta forçar uma passagem de DT 2 usando Força 1 (1d6) e uma ferramenta que forneça 1d10. Ela rola S no d6 e SAP no d10. Mantém os dois: **2 Sucessos + 1 Pressão = 3 para atingir a DT**. Ela consegue abrir a passagem, mas a Pressão pode ser usada pelo mestre para fazer uma ameaça intervir. A Adaptação pode reduzir em 1 a Pressão transmitida, se esse for o efeito escolhido.
 
 ### Exemplo completo de uma rolagem: seis etapas
 
-1. **Ação:** Tainá tenta consertar uma engrenagem antes de a oficina inundar.
+1. **Ação:** Maela tenta consertar uma engrenagem antes de a oficina inundar.
 2. **DT:** o mestre define **DT 2** para o reparo arriscado.
 3. **Fontes:** **Inteligência 1 (1d6)** + **Manufaturas 1 (1d10)**. O Conhecimento ou a Prática só entra porque é pertinente ao reparo.
 4. **Rolagem:** o d6 cai na **face 6 = ᛏ (S)**; o d10 cai na **face 9 = ᛏᛃᚦ (S + A + P)**.
 5. **Resultados mantidos:** no Marco I ela pode manter até **dois dados** e precisa incluir um de **Atributo**. Mantém ambos.
-6. **DT e efeitos:** **2 Sucessos + 1 Pressão = 3**, portanto o reparo de DT 2 funciona. Tainá ainda possui **1 Adaptação**, que pode usar para reduzir **1 Pressão transferida**, se essa for sua escolha.
+6. **DT e efeitos:** **2 Sucessos + 1 Pressão = 3**, portanto o reparo de DT 2 funciona. Maela ainda possui **1 Adaptação**, que pode usar para reduzir **1 Pressão transferida**, se essa for sua escolha.
 
 O d10 não «vira» uma terceira fonte por conter três símbolos: **símbolos e dados são medidas diferentes**.
 
 ### Exemplo de seleção: rolar três dados, manter dois
 
-Mais tarde, Tainá tem **Potência 2 (2d6)** e usa uma alavanca experimental que **fornece 1d10**. Ela rola:
+Mais tarde, Maela tem **Força 2 (2d6)** e usa uma alavanca experimental que **fornece 1d10**. Ela rola:
 
 | Fonte | Face | Símbolos |
 |---|---:|---|
-| Potência — primeiro d6 | 6 | **ᛏ (S)** |
-| Potência — segundo d6 | 5 | **ᛃᚦ (A + P)** |
+| Força — primeiro d6 | 6 | **ᛏ (S)** |
+| Força — segundo d6 | 5 | **ᛃᚦ (A + P)** |
 | Alavanca — d10 | 7 | **ᛏᛏ (2S)** |
 
 No Marco I, ela **mantém o primeiro d6 e o d10**, totalizando **3S sem Pressão**. O segundo d6 foi rolado, mas descartado; seus símbolos não entram na resolução. Ela não pode escolher somente o dado de equipamento quando a rolagem exige o Atributo obrigatório.
 
 ### Exemplo de falha mesmo com Adaptação
 
-Breno, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᛃᚦ = A + P)**. A soma para a DT é **1**, portanto **ele falha**. A Adaptação não conta como Sucesso e não transforma o resultado em êxito.
+Corven, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᛃᚦ = A + P)**. A soma para a DT é **1**, portanto **ele falha**. A Adaptação não conta como Sucesso e não transforma o resultado em êxito.
 
 ## DTs para iniciar os testes
 
@@ -267,11 +267,11 @@ Uma DT é **fixa pela situação**: uma porta não fica mais resistente porque v
 
 | Tentativa | Fontes compatíveis | DT ilustrativa | O que está em jogo |
 |---|---|---:|---|
-| Tainá força uma tranca enferrujada | Potência + ferramenta com dados definidos | **2** | Abrir a passagem antes de o teto ceder |
-| Breno evita uma sentinela distraída | Agilidade + Infiltração | **2** | Atravessar sem ser notado |
-| Breno atravessa uma sala bem iluminada e vigiada | Agilidade + Infiltração | **4** | Evitar que toda a patrulha seja alertada |
-| Mara tenta convencer um guarda indeciso | Influência + Comércio | **2** | Negociar o acesso à mina |
-| Tainá tenta decifrar um esquema de manutenção | Inteligência + Engenharia, **se tiver Engenharia adquirida** | **3** | Entender a máquina sem quebrá-la |
+| Maela força uma tranca enferrujada | Força + ferramenta com dados definidos | **2** | Abrir a passagem antes de o teto ceder |
+| Corven evita uma sentinela distraída | Agilidade + Infiltração | **2** | Atravessar sem ser notado |
+| Corven atravessa uma sala bem iluminada e vigiada | Agilidade + Infiltração | **4** | Evitar que toda a patrulha seja alertada |
+| Neris tenta convencer um guarda indeciso | Influência + Comércio | **2** | Negociar o acesso à mina |
+| Maela tenta decifrar um esquema de manutenção | Inteligência + Engenharia, **se tiver Engenharia adquirida** | **3** | Entender a máquina sem quebrá-la |
 
 A DT não cresce só porque o personagem subiu de nível. Em particular, **DT 4 é quase o teto de um Aprendiz com 1d6 de Atributo + 1d10 de segunda fonte**: esses dados só conseguem alcançar 4 quando ambos mostram resultados suficientemente bons.
 
@@ -291,7 +291,7 @@ Se **S + P** fica abaixo da DT, a ação falha e a iniciativa pode retornar à o
 
 ### Exemplo — Três resultados para uma mesma DT
 
-Breno tenta entrar na mina com **Agilidade 1 (1d6) + Infiltração 1 (1d10)** contra **DT 2**.
+Corven tenta entrar na mina com **Agilidade 1 (1d6) + Infiltração 1 (1d10)** contra **DT 2**.
 
 | Dados mantidos | Resultado | Desfecho |
 |---|---|---|
@@ -311,15 +311,15 @@ Não existe uma rodada individual fixa. A sequência passa entre jogadores e ini
 
 ### Exemplo — Uma cena sem turnos fixos
 
-Breno passa pelo vigia com **acerto limpo** e mantém o fluxo de ação dos jogadores. Mara tenta negociar com o chefe da patrulha: ela alcança a DT, mas gera **1 Pressão**. O mestre registra esse recurso e, quando puder pagar uma ativação apropriada, o chefe pode mandar **fechar o portão**, **interromper a conversa** ou **ameaçar um trabalhador**. A intenção da cena ainda é conseguir peças, não matar a patrulha.
+Corven passa pelo vigia com **acerto limpo** e mantém o fluxo de ação dos jogadores. Neris tenta negociar com o chefe da patrulha: ela alcança a DT, mas gera **1 Pressão**. O mestre registra esse recurso e, quando puder pagar uma ativação apropriada, o chefe pode mandar **fechar o portão**, **interromper a conversa** ou **ameaçar um trabalhador**. A intenção da cena ainda é conseguir peças, não matar a patrulha.
 
-Se Mara também mantiver uma **Adaptação**, pode usá-la para **reduzir 1 Pressão transferida** ou facilitar a passagem da oportunidade a um aliado, conforme a situação e a regra de iniciativa aplicada.
+Se Neris também mantiver uma **Adaptação**, pode usá-la para **reduzir 1 Pressão transferida** ou facilitar a passagem da oportunidade a um aliado, conforme a situação e a regra de iniciativa aplicada.
 
 **Não existem ataques gratuitos para cada inimigo presente.** A oposição age através das oportunidades e ativações que o conflito permitir. Custos exatos de ativação permanecem em playtest.
 
 ### Exemplo — Adaptação ajuda, mas não resolve o teste sozinha
 
-Tainá precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (S)** e **d10 face 8 (S + A)**: são **2S**, então consegue fechar. A Adaptação pode beneficiar um aliado depois. Se sua rolagem tivesse apenas **1S + 1A**, **não** alcançaria DT 2.
+Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (S)** e **d10 face 8 (S + A)**: são **2S**, então consegue fechar. A Adaptação pode beneficiar um aliado depois. Se sua rolagem tivesse apenas **1S + 1A**, **não** alcançaria DT 2.
 
 # VII. Corpo, armaduras e ataques
 
@@ -331,7 +331,7 @@ Por exemplo, 2 Sucessos + 1 Pressão geram **2 de dano**; 1 Sucesso + 2 Pressõe
 
 ### Exemplo — Acerto, dano e Vida são coisas distintas
 
-Breno ataca um saqueador de **DT Geral 2**, estabelecida como exemplo para o encontro. Sua **Destreza 1 fornece 1d6** e sua arma experimental **fornece 1d10**. Ele mantém d6 face **6 (1S)** e d10 face **10 (2S + 1P)**.
+Corven ataca um saqueador de **DT Geral 2**, estabelecida como exemplo para o encontro. Sua **Destreza 1 fornece 1d6** e sua arma experimental **fornece 1d10**. Ele mantém d6 face **6 (1S)** e d10 face **10 (2S + 1P)**.
 
 **Para acertar:** 3S + 1P = **4**, suficiente para DT 2. **Dano calculado:** 3S + metade de 1P arredondada para baixo = **3**. **Pressão:** o resultado ainda tem **1P**.
 
@@ -355,7 +355,7 @@ Os ataques são definidos pela **intenção e pelo tipo de vulnerabilidade busca
 
 ### Exemplo — Escolher a intenção do golpe
 
-Na entrada de uma mina, um vigia impede que Breno alcance a passagem. O mestre apresenta estas **DTs apenas para o exemplo**:
+Na entrada de uma mina, um vigia impede que Corven alcance a passagem. O mestre apresenta estas **DTs apenas para o exemplo**:
 
 | Declaração | DT demonstrativa | Interpretação |
 |---|---:|---|
@@ -387,7 +387,7 @@ Armas **leves** favorecem manejo e dados como d10; **médias** oferecem combina�
 
 ### Exemplo — O equipamento é uma fonte de dados
 
-Uma lança equilibrada **de exemplo para playtest** fornece **2d10**. Breno tem **Destreza 1 (1d6)**. Portanto, ao usá-la numa ação compatível, rola **1d6 + 2d10**, mas no Marco I **mantém dois dados**, incluindo o d6 de Destreza.
+Uma lança equilibrada **de exemplo para playtest** fornece **2d10**. Corven tem **Destreza 1 (1d6)**. Portanto, ao usá-la numa ação compatível, rola **1d6 + 2d10**, mas no Marco I **mantém dois dados**, incluindo o d6 de Destreza.
 
 Uma arma pesada pode oferecer dados d12 em vez de d10; isso muda a distribuição de **S, A e P**, não cria automaticamente «+2 dano por ser pesada». O equipamento precisa ter seus dados **declarados antes do teste**.
 
@@ -401,17 +401,17 @@ Quando o personagem mantém **pelo menos dois dados em suas faces máximas de cr
 
 ### Exemplo — Determinação para ultrapassar um limite
 
-Tainá possui **Potência 1 (1d6)** e uma ferramenta de exemplo com **1d10**, mantendo ambos. O máximo normal para a DT é **1 + 3 = 4**; uma comporta de **DT 5** não pode ser superada por esses dois dados sem recursos adicionais.
+Maela possui **Força 1 (1d6)** e uma ferramenta de exemplo com **1d10**, mantendo ambos. O máximo normal para a DT é **1 + 3 = 4**; uma comporta de **DT 5** não pode ser superada por esses dois dados sem recursos adicionais.
 
 Se a mesa adotar **provisoriamente** o custo de **1 Determinação para aumentar um passo**, ela pode elevar o d6 a **d10 antes da rolagem**. Se os dados mostrarem **face 7 (2S)** e **face 10 (2S + 1P)**, alcança **5 para a DT**. Não é garantia de êxito: apenas torna a tentativa possível.
 
 ### Exemplo — Manter dado adicional
 
-Depois de aumentar Potência para **2d6**, Tainá rola **2d6 + 1d10** com uma ferramenta apropriada. No Marco I, mantém apenas dois resultados. Gastar Determinação para **manter um terceiro** é uma possibilidade de playtest com **custo ainda não aprovado**; não altera a quantidade de dados efetivamente rolados.
+Depois de aumentar Força para **2d6**, Maela rola **2d6 + 1d10** com uma ferramenta apropriada. No Marco I, mantém apenas dois resultados. Gastar Determinação para **manter um terceiro** é uma possibilidade de playtest com **custo ainda não aprovado**; não altera a quantidade de dados efetivamente rolados.
 
 ### Exemplo — Crítico
 
-Breno mantém um d6 na **face 6** e um d10 na **face 10**. Os dois dados atingiram suas **faces máximas numéricas**, cumprindo o critério inicial de crítico; recupera **1 Determinação** até o limite da reserva. Porém, a face 10 do d10 contém **1 Pressão**. Portanto, **um crítico não é necessariamente um acerto limpo**. A padronização final em d12 e d20 ainda está em teste.
+Corven mantém um d6 na **face 6** e um d10 na **face 10**. Os dois dados atingiram suas **faces máximas numéricas**, cumprindo o critério inicial de crítico; recupera **1 Determinação** até o limite da reserva. Porém, a face 10 do d10 contém **1 Pressão**. Portanto, **um crítico não é necessariamente um acerto limpo**. A padronização final em d12 e d20 ainda está em teste.
 
 # IX. Marcos, XP e profissões
 
@@ -437,13 +437,13 @@ No **nível 6**, o personagem começa a manter três dados naturalmente, caso te
 
 #### Uma rolagem de nível 6, detalhada
 
-Tainá tem **Potência 2 (2d6)** e **Manufaturas 2 (2d10)**, comprados com XP. Ela rola **d6 face 6 (S), d6 face 3 (P), d10 face 7 (2S), d10 face 10 (2S + P)**.
+Maela tem **Força 2 (2d6)** e **Manufaturas 2 (2d10)**, comprados com XP. Ela rola **d6 face 6 (S), d6 face 3 (P), d10 face 7 (2S), d10 face 10 (2S + P)**.
 
 No nível 6, pode manter **três dados**, escolhendo o d6 face 6 e os dois d10. Seu resultado é **5S + 1P = 6 para DT**. O d6 face 3 é descartado. No nível 5, mantendo apenas dois dados e respeitando um d6 de Atributo, conseguiria no máximo **4 para a DT** com essa mesma sequência de faces: o d6 face 6 (**1S**) e o d10 face 10 (**2S + 1P**). No nível 6 chega a **6**, graças ao terceiro dado mantido.
 
 #### Uma rolagem de nível 11, detalhada
 
-Mais tarde, Tainá utiliza **Potência 2 (2d6)** + **Manufaturas 2 (2d10)** + **uma máquina de oficina de teste (2d10)** na mesma tarefa. Agora são **três fontes** e **seis dados rolados**. Porém, ela continua mantendo **apenas três**, com ao menos um d6 de Potência.
+Mais tarde, Maela utiliza **Força 2 (2d6)** + **Manufaturas 2 (2d10)** + **uma máquina de oficina de teste (2d10)** na mesma tarefa. Agora são **três fontes** e **seis dados rolados**. Porém, ela continua mantendo **apenas três**, com ao menos um d6 de Força.
 
 O terceiro grupo **não aumenta automaticamente o teto numérico dos três dados mantidos**; melhora a chance de obter resultados favoráveis entre mais opções. Essa é a principal vantagem do Marco III.
 
@@ -460,27 +460,27 @@ A referência experimental de XP é: **7 XP para a criação; 5 XP conquistados 
 | Ao acumular 25 XP após a criação | **32** | **6** | Depende de quanto já foi gasto |
 | Ao acumular 50 XP após a criação | **57** | **11** | Depende de quanto já foi gasto |
 
-Por exemplo, Tainá pode gastar seus **5 XP livres** no nível 2 para comprar **Potência 2 (3 XP adicionais)** e **Agilidade 1 (2 XP)**. Subir de nível não concede automaticamente esses dados: ela os recebe porque **pagou as compras**.
+Por exemplo, Maela pode gastar seus **5 XP livres** no nível 2 para comprar **Força 2 (3 XP adicionais)** e **Agilidade 1 (2 XP)**. Subir de nível não concede automaticamente esses dados: ela os recebe porque **pagou as compras**.
 
 O mesmo raciocínio vale para Perícias e futuras Maestrias, que precisam disputar o mesmo orçamento de XP.
 
-As profissões surgem da build: uma trilha de Armas, Potência e montaria pode levar à Cavalaria; Engenharia, Mineração e Manufaturas podem levar à fabricação especializada; Influência e Comércio podem sustentar uma profissão social. O nome e os benefícios definitivos de cada profissão dependem de futuras Perícias e Maestrias.
+As profissões surgem da build: uma trilha de Armas, Força e montaria pode levar à Cavalaria; Engenharia, Mineração e Manufaturas podem levar à fabricação especializada; Influência e Comércio podem sustentar uma profissão social. O nome e os benefícios definitivos de cada profissão dependem de futuras Perícias e Maestrias.
 
 # X. Primeiro cenário de teste: o portão da oficina
 
-A comunidade de Tainá precisa recuperar um gerador mecânico abandonado. A oficina está isolada por um portão deformado, e dois saqueadores tentam alcançar o mesmo equipamento. O objetivo dos Aprendizes é **recuperar uma peça essencial e sair com vida**, não necessariamente vencer um combate.
+A comunidade de Maela precisa recuperar um gerador mecânico abandonado. A oficina está isolada por um portão deformado, e dois saqueadores tentam alcançar o mesmo equipamento. O objetivo dos Aprendizes é **recuperar uma peça essencial e sair com vida**, não necessariamente vencer um combate.
 
-**Três abordagens possíveis:** Tainá pode usar Potência e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se os personagens acumularem Pressões, o mestre pode fazer os saqueadores segurarem o portão, ameaçarem um morador, derrubarem uma estrutura ou pedirem reforços.
+**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se os personagens acumularem Pressões, o mestre pode fazer os saqueadores segurarem o portão, ameaçarem um morador, derrubarem uma estrutura ou pedirem reforços.
 
 Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantas Pressões surgiram e como os jogadores resolveram a cena.
 
 ### Exemplo de sessão — Três soluções diferentes
 
-**Caminho A: abrir o portão.** Tainá usa **Potência + uma ferramenta** com dados previstos na ficha de equipamento. Se superar **DT 2**, abre passagem; se houver Pressão, os saqueadores podem ganhar uma oportunidade para interferir.
+**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha de equipamento. Se superar **DT 2**, abre passagem; se houver Pressão, os saqueadores podem ganhar uma oportunidade para interferir.
 
-**Caminho B: negociar com os saqueadores.** Mara utiliza **Influência + Comércio**, contra uma **DT 3 demonstrativa**. O sucesso pode garantir um acordo que não exija violência. A Pressão pode trazer cobranças adicionais, a chegada de um líder ou um terceiro interessado.
+**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio**, contra uma **DT 3 demonstrativa**. O sucesso pode garantir um acordo que não exija violência. A Pressão pode trazer cobranças adicionais, a chegada de um líder ou um terceiro interessado.
 
-**Caminho C: procurar a janela.** Breno utiliza **Agilidade + Infiltração**. Como a entrada é arriscada e exposta, o mestre definiu **DT 4**: é possível que um Aprendiz descubra outra maneira de chegar à janela, reduza o perigo com preparação ou simplesmente desista do caminho. Nem toda DT precisa ser vencida com força bruta.
+**Caminho C: procurar a janela.** Corven utiliza **Agilidade + Infiltração**. Como a entrada é arriscada e exposta, o mestre definiu **DT 4**: é possível que um Aprendiz descubra outra maneira de chegar à janela, reduza o perigo com preparação ou simplesmente desista do caminho. Nem toda DT precisa ser vencida com força bruta.
 
 **Resultado coletivo:** qualquer uma dessas escolhas pode levar à peça de que a cidade precisa. O grupo recebe recompensa pela **missão**, não pela quantidade de inimigos derrotados. A cooperação numérica entre rolagens ainda necessita de uma regra aprovada; os jogadores podem sempre colaborar **narrativamente**.
 
