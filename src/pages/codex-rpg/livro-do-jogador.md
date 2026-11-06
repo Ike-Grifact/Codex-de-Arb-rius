@@ -330,7 +330,7 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 | **d6, face 6** | **ᛏ = 1P** | **1** | Uma Presença. |
 | **d10, face 7** | **ᛏᛏ = 2P** | **2** | Duas Presenças sem Desespero. |
 | **d10, face 9** | **ᛏᛃᚦ = 1P + 1I + 1D** | **2** | O Improviso é um símbolo separado; o Desespero só permanece se não for anulado antes da DT. |
-| **d10, face 10** | **ᛏᛏᚦ = 2P + 1D** | **3** | Atinge DT mais alta, mas produz Desespero. |
+| **d10, face 10** | **ᛏᛏᚦ = 2P + 1D** | **3** | Atinge DT mais alta e mantém Presença dominante (P > D). |
 | **d12, face 11** | **ᛏᛃᛃᚦ = 1P + 2I + 1D** | **2** | Tem quatro símbolos ao todo, mas só dois contam para DT. |
 | **d12, face 12** | **ᚦᚦ = 2D** | **2** | Nenhuma Presença pura e dois Desesperos. |
 
@@ -604,10 +604,10 @@ Corven tenta atravessar uma passagem de **DT 2** usando **Agilidade 1 (1d6)** e 
 
 Corven tem **1P + 1D = 2** para a DT, além de **1I**. Ele precisa escolher:
 
-- **Aceitar o Desespero:** alcança a **DT 2**, atravessa a passagem e entrega **1D** para a oposição.
-- **Gastar o Improviso para anular D:** sua soma cai para apenas **1P**, insuficiente para **DT 2**. Ele evita transmitir Desespero, mas não consegue atravessar.
+- **Conservar o Desespero:** alcança **DT 2** e atravessa a passagem. Como **1P = 1D**, age em **equilíbrio tenso**, sem perder o controle automaticamente nem entregar D aos inimigos.
+- **Gastar o Improviso para anular D:** sua soma cai para apenas **1P**, insuficiente para **DT 2**. Evita agir impulsivamente, mas não conclui a travessia.
 
-**Crítico é independente dessa escolha:** os dois dados mantidos mostram suas faces máximas (4 e 6), portanto ele **recupera 1 Coragem**, até o limite da reserva, mesmo que tenha escolhido mitigar o risco e não alcançar a DT. A rolagem não se transforma automaticamente em acerto limpo.
+**Crítico é independente dessa escolha:** os dois dados mantidos mostram suas faces máximas (4 e 6), portanto ele **recupera 1 Coragem**, até o limite da reserva, mesmo que tenha escolhido neutralizar D e não alcançar a DT. **P = D é equilíbrio tenso; não é acerto desesperado.**
 
 Se Corven tivesse gasto **1 Coragem para elevar d4 a d6** antes da rolagem, teria de considerar a face do **novo d6**, e não reaproveitar a face 4 antiga. D6 na face 6 e d10 na face 10, ambos mantidos, também geram crítico, mesmo que o d10 mostre Desespero.
 
