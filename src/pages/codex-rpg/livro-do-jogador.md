@@ -352,7 +352,7 @@ Uma DT é **fixa pela situação**: uma porta não fica mais resistente porque v
 | Corven evita uma sentinela distraída | Agilidade + Infiltração | **2** | Atravessar sem ser notado |
 | Corven atravessa uma sala bem iluminada e vigiada | Agilidade + Infiltração | **4** | Evitar que toda a patrulha seja alertada |
 | Neris tenta convencer um guarda indeciso | Influência + Comércio | **2** | Negociar o acesso à mina |
-| Maela tenta decifrar um esquema de manutenção | Inteligência + Engenharia, **se tiver Engenharia adquirida** | **3** | Entender a máquina sem quebrá-la |
+| Maela tenta decifrar um esquema de manutenção | Inteligência + Engenharia (**1d4 de Engenharia se não houver treinamento**) | **3** | Entender a máquina sem quebrá-la |
 
 A DT não cresce só porque o personagem subiu de nível. Em particular, **DT 4 é quase o teto de um Aprendiz com 1d6 de Atributo + 1d10 de segunda fonte**: esses dados só conseguem alcançar 4 quando ambos mostram resultados suficientemente bons.
 
@@ -407,6 +407,8 @@ Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (S)** e **d10
 **Não existe rolagem separada de dano.** Quando um ataque atinge a DT, use os mesmos dados mantidos:
 
 **Dano = Sucessos + metade das Incertezas (arredondada para baixo).**
+
+**Atenção ao improviso em ataques:** um d4 que contribua apenas **1 Incerteza** pode ajudar a atingir uma DT 1, mas, sozinho, produz **0 de dano calculado**: **0S + ⌊1I/2⌋ = 0**. Superar a DT não significa ferir automaticamente alguém quando o dano é zero. A ação pode obter um efeito narrativo compatível — como forçar uma reação, afastar uma arma ou abrir uma brecha — sem reduzir Vida. As regras de efeitos corporais ainda estão em teste.
 
 Por exemplo, 2 Sucessos + 1 Incerteza geram **2 de dano**; 1 Sucesso + 2 Incertezas geram **2 de dano**; 3 Incertezas geram **1 de dano**. As Incertezas continuam sendo recurso de oposição, salvo capacidades que as reduzam.
 
