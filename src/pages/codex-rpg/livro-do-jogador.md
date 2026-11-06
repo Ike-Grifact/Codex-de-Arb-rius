@@ -92,25 +92,38 @@ Os custos são **incrementais**. Por exemplo, evoluir Potência de grau 0 até g
 
 Codex RPG utiliza dados simbólicos especiais. Você pode consultar a tabela abaixo para simular resultados com dados numéricos comuns.
 
-- **S — Sucesso:** contribui para alcançar a DT e para dano.
-- **P — Pressão:** também contribui para alcançar a DT, mas oferece oportunidades à oposição. No dano, conta pela metade, arredondando para baixo.
-- **A — Adaptação:** permite controlar o ritmo da ação ou reduzir consequências; **não** aumenta a DT alcançada por si só.
-- **— — Falha:** face sem símbolo relevante.
+## Símbolos rúnicos temporários
+
+Os resultados são representados por **glifos rúnicos provisórios**. As letras **S**, **A** e **P** continuam sendo abreviações mecânicas para anotações, fórmulas e acessibilidade. Os glifos são inspirados em runas históricas, mas **não constituem um alfabeto oficial do cenário** nesta edição.
+
+| Resultado | Runa | Sigla | Função |
+|---|:---:|:---:|---|
+| **Sucesso** | **ᛏ** | S | Avança na ação, ajuda a superar a DT e conta integralmente para dano. A forma lembra uma espada apontada para cima. |
+| **Adaptação** | **ᛃ** | A | Redireciona a ação, passa oportunidade a um aliado ou reduz Pressão. **Não** é Sucesso nem aumenta a DT por si só. |
+| **Pressão** | **ᚦ** | P | Ajuda a superar a DT, mas alimenta as oportunidades da oposição; conta pela metade no dano, arredondando para baixo. A forma espinhosa lembra as Espinhas do Mundo. |
+| **Face vazia** | **○** | — | Nenhum símbolo: não acrescenta pontos ao teste. |
+
+**Leitura rápida:** **ᛏᛃᚦ** corresponde a **1S + 1A + 1P**. Várias runas na mesma face se acumulam; por exemplo, **ᛏᛏᚦ** corresponde a **2S + 1P**.
+
+### Tabela de conversão dos dados numéricos
 
 | Face | d6 | d10 | d12 |
 |---|---|---|---|
-| 1 | — | — | — |
-| 2 | — | — | — |
-| 3 | P | P | P |
-| 4 | P | P | P |
-| 5 | AP | AP | AP |
-| 6 | S | S | S |
-| 7 | — | SS | SS |
-| 8 | — | SA | SA |
-| 9 | — | SAP | SAP |
-| 10 | — | SSP | SSP |
-| 11 | — | — | SAAP |
-| 12 | — | — | PP |
+| 1 | ○ | ○ | ○ |
+| 2 | ○ | ○ | ○ |
+| 3 | ᚦ | ᚦ | ᚦ |
+| 4 | ᚦ | ᚦ | ᚦ |
+| 5 | ᛃᚦ | ᛃᚦ | ᛃᚦ |
+| 6 | ᛏ | ᛏ | ᛏ |
+| 7 | — | ᛏᛏ | ᛏᛏ |
+| 8 | — | ᛏᛃ | ᛏᛃ |
+| 9 | — | ᛏᛃᚦ | ᛏᛃᚦ |
+| 10 | — | ᛏᛏᚦ | ᛏᛏᚦ |
+| 11 | — | — | ᛏᛃᛃᚦ |
+| 12 | — | — | ᚦᚦ |
+
+**Atenção:** o travessão **—** nas linhas acima indica que o dado não possui aquela face; já o círculo **○** indica uma face existente sem símbolos.
+
 
 Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de Sucessos; o d12 apresenta combinações mais arriscadas. O **d20** representa extremos: somente um pode compor a pilha de um personagem, e seus resultados definitivos ainda estão em teste. Ele **não é necessário no playtest inicial humano**.
 
