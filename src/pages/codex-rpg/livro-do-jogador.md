@@ -140,11 +140,17 @@ Neris compra **Influência 1 (1 XP)**, **Destreza 1 (1 XP)** e **Agilidade 1 (1 
 | 1 | **1d6** | **1** | 1 |
 | 2 | **2d6** | **2** | 3 |
 | 3 | **3d6** | **4** | 7 |
-| 4 | **2d6 + 1d10** | **3** | 10 |
-| 5 | **1d6 + 2d10** | **6** | 16 |
-| 6 | **3d10** | **12** | 28 |
+| 4 | **2d6 + 1d10** | **6** | 13 |
+| 5 | **1d6 + 2d10** | **10** | 23 |
+| 6 | **3d10** | **14** | 37 |
 
-**Interpretação explícita dos multiplicadores:** o primeiro, segundo e terceiro d6 custam **1, 2 e 4 XP** (cada novo dado custa **×2** em relação ao anterior). Após alcançar três d6, a troca de cada d6 por um d10 custa **×3 do valor original daquele dado**, respectivamente **3, 6 e 12 XP**. Assim, as trocas não aumentam o número de dados da fonte: mudam seu **passo**.
+**Como comprar os dados:** o primeiro, segundo e terceiro d6 custam **1, 2 e 4 XP** (×2 entre os novos dados). Depois de alcançar **3d6**, as três conversões permanentes para d10 custam, nesta ordem, **6, 10 e 14 XP**. São **custos fixos e incrementais**, sempre **4 XP mais baratos** que as respectivas conversões de d10 para d12 (10, 14 e 18 XP). Cada conversão **substitui** um d6 por um d10; não acrescenta um quarto dado à fonte.
+
+### Exemplo — Força até 3d10
+
+Corven investe **1 + 2 + 4 = 7 XP** para comprar **Força 3 (3d6)**. Se desejar evoluir a fonte, paga **6 XP** para trocar um d6 por um d10 (**2d6 + 1d10**, 13 XP acumulados). Depois, paga **10 XP** pela segunda troca (**1d6 + 2d10**, 23 XP acumulados). A última troca custa **14 XP** (**3d10**, 37 XP acumulados).
+
+Esses são dados **permanentes** de Força; uma melhoria temporária por Determinação ou por uma futura Perícia não exige comprar esses graus e não permanece na ficha. Em qualquer Marco, a quantidade de dados mantidos continua limitada pelas regras de progressão.
 
 ### Conhecimentos e Práticas: d10 com evolução para d12
 
@@ -160,7 +166,7 @@ Neris compra **Influência 1 (1 XP)**, **Destreza 1 (1 XP)** e **Agilidade 1 (1 
 
 O primeiro, segundo e terceiro d10 custam **2, 4 e 8 XP** (×2). As três conversões permanentes para d12 custam, nesta ordem, **10, 14 e 18 XP**. São valores definidos para cada melhoria, **não multiplicações de XP**. A conversão substitui um d10 por um d12, sem acrescentar um quarto dado à fonte.
 
-**Importante:** a evolução de **Atributos d6 → d10** continua usando o multiplicador ×3 sobre o custo de cada dado (3, 6 e 12 XP). Já a evolução de **Conhecimentos/Práticas d10 → d12** usa uma tabela própria: **10, 14 e 18 XP**. Um Atributo grau 6 custa **28 XP ao todo**; um Conhecimento ou Prática grau 6 custa **56 XP ao todo**. Esses preços representam especialização permanente; os requisitos de acesso por Marco ainda serão definidos.
+**Importante:** a evolução permanente de **Atributos d6 → d10** usa preços próprios de **6, 10 e 14 XP**; a evolução de **Conhecimentos/Práticas d10 → d12** usa **10, 14 e 18 XP**. Ambas exigem comprar os três dados-base antes de evoluí-los. Um Atributo grau 6 custa **37 XP ao todo**; um Conhecimento ou Prática grau 6 custa **56 XP ao todo**. Esses preços representam especialização permanente; os requisitos de acesso por Marco ainda serão definidos.
 
 **Por que ainda cobrar caro pelo d12?** A tabela de faces do Codex RPG contém combinações diferentes de Sucesso, Adaptação e Pressão. O d12 amplia possibilidades e riscos, mas **não aumenta o máximo de S + P por dado em comparação com o d10**. Os valores **10/14/18 XP** tornam a evolução permanente uma escolha relevante; uma **Perícia apropriada** ou o uso de **Determinação** poderá oferecer uma melhoria temporária sob condições específicas, após aprovação dos respectivos custos. O equilíbrio dessa escolha ainda será testado.
 
