@@ -1,0 +1,77 @@
+---
+import PortalLayout from "../../layouts/PortalLayout.astro";
+import { withBase } from "../../lib/paths";
+const base = import.meta.env.BASE_URL;
+---
+
+<PortalLayout
+  title="Codex RPG · Playtest Humano"
+  description="Sistema independente de fantasia sombria pós-colapso: Livro do Jogador v0.1, regras de dados, XP, atributos e progressão."
+>
+  <div class="page-container codex-rpg-home">
+    <header class="codex-rpg-hero">
+      <p class="eyebrow">Sistema original · 06/11/2026 · edição experimental</p>
+      <h1>Codex <em>RPG</em></h1>
+      <p class="codex-rpg-intro">Um mundo desfeito por uma entidade cósmica. Espinhas do Mundo vermelhas suspensas, arcas humanas caídas, cidades de pedra e metal, povos sobreviventes e expedições cujo custo não se mede apenas em ferimentos.</p>
+      <div class="codex-rpg-hero-actions">
+        <a class="button button--primary" href={withBase("codex-rpg/livro-do-jogador/",base)}>Ler o Livro do Jogador</a>
+        <a class="button" href={withBase("biblioteca/",base)}>Voltar à biblioteca de Árborius</a>
+      </div>
+      <p class="codex-rpg-separation"><strong>Atenção:</strong> Codex RPG é um sistema próprio em desenvolvimento, distinto de <em>Assimilação RPG</em>. As regras da campanha original e seu SRD privado não são reproduzidos nesta seção.</p>
+    </header>
+
+    <section class="codex-rpg-section" aria-labelledby="livro-titulo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Primeira edição pública</p>
+          <h2 id="livro-titulo">Livro do Jogador · v0.1</h2>
+        </div>
+      </div>
+      <div class="codex-rpg-card">
+        <div class="codex-rpg-card__label">PLAYTEST · HUMANOS</div>
+        <h3>Comece como Aprendiz</h3>
+        <p>Crie personagens Humanos com Atributos que começam em zero, compre Conhecimentos e Práticas com XP e avance pelos Marcos de progressão. Explore dados de Sucesso, Pressão e Adaptação, testes por DT, armaduras, ações em equipe e iniciativa fluida.</p>
+        <div class="codex-rpg-meta">
+          <span>Criação inicial: 7 XP (teste)</span>
+          <span>Marco II: 3 dados mantidos</span>
+          <span>Marco III: 3 fontes</span>
+        </div>
+        <a href={withBase("codex-rpg/livro-do-jogador/",base)} class="button button--primary">Abrir livro completo</a>
+      </div>
+    </section>
+
+    <section class="codex-rpg-section" aria-labelledby="estado-titulo">
+      <div class="section-heading"><div><p class="eyebrow">Transparência de regras</p><h2 id="estado-titulo">O que está em desenvolvimento</h2></div></div>
+      <div class="codex-rpg-mini-grid">
+        <article><h3>Regras de base</h3><p>Criação de Aprendizes, Atributos, retenção de dados, DTs, Pressão e Adaptação estão descritos no livro.</p></article>
+        <article><h3>Regras em teste</h3><p>Custos de XP e Determinação, armaduras, críticos, ferimentos e o d20 extraordinário ainda exigem sessões de validação.</p></article>
+        <article><h3>Próximas linhagens</h3><p>Luckers, Luckers de Sangue e Runa-Espinhos fazem parte do universo, mas não são opções jogáveis nesta edição.</p></article>
+      </div>
+    </section>
+  </div>
+</PortalLayout>
+
+<style>
+  .codex-rpg-home{max-width:1130px}
+  .codex-rpg-hero{padding:clamp(2rem,5vw,4.5rem);background:linear-gradient(125deg,#231f22,#35272a 57%,#503031);color:#f4eae0;border-radius:15px;box-shadow:0 20px 48px rgba(41,31,32,.14)}
+  .codex-rpg-hero .eyebrow{color:#dfb18d}
+  .codex-rpg-hero h1{margin:.2rem 0 1.2rem;font:500 clamp(3rem,7vw,6rem)/1 Georgia,serif;letter-spacing:-.05em}
+  .codex-rpg-hero h1 em{font-style:italic;color:#d7a18c}
+  .codex-rpg-intro{max-width:75ch;font:1.13rem/1.65 Georgia,serif;color:#e1d6ce}
+  .codex-rpg-hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.9rem 0}
+  .codex-rpg-hero .button{border-color:#ac8d83;color:#f7ece7}
+  .codex-rpg-hero .button--primary{background:#eee0d3;color:#3c282a;border-color:#eee0d3}
+  .codex-rpg-separation{max-width:78ch;font-size:.8rem;line-height:1.5;color:#e3c7bd;margin-top:2rem}
+  .codex-rpg-section{margin-top:3.2rem}
+  .codex-rpg-card{padding:2rem;background:var(--paper);border:1px solid var(--line);border-left:5px solid #9c5146;border-radius:12px}
+  .codex-rpg-card__label{color:#9c5146;font-weight:800;font-size:.7rem;letter-spacing:.11em}
+  .codex-rpg-card h3{margin:.55rem 0 .7rem;color:var(--forest-950);font:600 1.6rem Georgia,serif}
+  .codex-rpg-card p{max-width:78ch;color:var(--muted)}
+  .codex-rpg-meta{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.25rem 0}
+  .codex-rpg-meta span{padding:.35rem .65rem;border-radius:20px;background:#e9e2d8;font-size:.73rem;font-weight:650;color:#755349}
+  .codex-rpg-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+  .codex-rpg-mini-grid article{padding:1.5rem;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+  .codex-rpg-mini-grid h3{margin:0 0 .5rem;color:#754139;font:600 1.1rem Georgia,serif}
+  .codex-rpg-mini-grid p{margin:0;color:var(--muted);font-size:.9rem}
+  @media(max-width:750px){.codex-rpg-mini-grid{grid-template-columns:1fr}.codex-rpg-hero{padding:2rem 1.4rem}}
+</style>
