@@ -111,7 +111,7 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Perícias específicas são diferentes dos treinamentos:** neste livro, o termo nomeia **Características compráveis**, como Mãos Leves, Pegada Firme ou futuras especializações de Mineração. Uma Perícia pode modificar a aplicação dos resultados, criar efeitos e impor pré-requisitos; **não é automaticamente mais uma fonte d10**. O nome **«orçamento de Formação/Perícias»** identifica de onde sai o XP inicial, **não transforma Conhecimentos e Práticas em Perícias especiais**.
 
-**Sem uma Perícia, o personagem ainda pode tentar ações comuns.** Seu Atributo e um Conhecimento/Prática não treinado podem fornecer dados, incluindo d4 básicos. O d4 **não reproduz poderes, bônus ou exceções exclusivos** de uma Perícia. É possível **gastar Determinação para elevar temporariamente um d4 a d6** antes do teste; o custo desse gasto permanece em playtest.
+**Sem uma Perícia, o personagem ainda pode tentar ações comuns.** Seu Atributo e um Conhecimento/Prática não treinado podem fornecer dados, incluindo d4 básicos. O d4 **não reproduz poderes, bônus ou exceções exclusivos** de uma Perícia. É possível gastar **1 ponto de Determinação para elevar temporariamente um único dado em um passo**, por exemplo **d4 → d6**. A melhoria vale apenas para uma rolagem e não pode ser encadeada com outro aumento por Determinação no mesmo teste.
 
 **Direção para o desenvolvimento:** evoluções permanentes até d12 devem representar investimento concentrado. **Perícias especializadas e Determinação** poderão oferecer **aumento temporário ou condicionado do passo de um dado**, quando suas regras e custos forem definidos. Isso não concede d12 gratuito a qualquer personagem nem transforma a Perícia automaticamente numa quarta fonte. A intenção é premiar a **sinergia entre capacidades adquiridas** em situações específicas.
 
@@ -323,7 +323,7 @@ Sem Agilidade comprada, Corven poderia tentar **1d4 de Agilidade + 1d4 de Infilt
 
 ### Exemplo — Determinação com treinamento ausente
 
-Neris não comprou **Medicina**, mas precisa socorrer alguém. Pode tentar usando **1d4 de Medicina não treinada** e o Atributo apropriado. Ao **gastar Determinação para melhorar um passo**, pode transformar temporariamente **esse d4 em d6** antes da rolagem. O novo dado só vale nesse teste e não concede a capacidade permanentemente. **O custo em Determinação ainda precisa ser fixado.**
+Neris não comprou **Medicina**, mas precisa socorrer alguém. Pode tentar usando **1d4 de Medicina não treinada** e o Atributo apropriado. Ao gastar **1 ponto de Determinação antes da rolagem**, pode transformar temporariamente **esse d4 em d6**. O novo dado só vale nesse teste e não concede a capacidade permanentemente. **Não pode gastar outra Determinação para elevar o mesmo dado a d10 nesse teste:** é um único passo por vez.
 
 ### Exemplo de falha mesmo com Adaptação
 
@@ -476,25 +476,38 @@ Uma arma pesada pode oferecer dados d12 em vez de d10; isso muda a distribuiçã
 
 # VIII. Determinação, descanso e críticos
 
-Humanos começam com **10 pontos de Determinação**. Esse recurso permite superar limites momentâneos: melhorar **temporariamente um passo de dado** (**d4 → d6**, d6 → d10 ou d10 → d12), manter um resultado adicional ou ativar uma habilidade especial. Os custos dessas ações não estão definitivamente estabelecidos; para o primeiro playtest, combine-os antes de iniciar a sessão e registre os gastos. O aumento temporário **não altera o grau comprado na ficha** e não garante sucesso. Perícias especializadas poderão oferecer melhorias condicionais semelhantes, mas seu catálogo ainda não está pronto.
+Humanos começam com **10 pontos de Determinação**. **Elevar um dado em um passo custa exatamente 1 Determinação**, gasto **antes da rolagem**. Escolha **um único dado** e avance apenas um passo: **d4 → d6**, **d6 → d10** ou **d10 → d12**. **Só uma elevação por Determinação é permitida em cada teste**, sem acumular gastos para saltar etapas (não é permitido d4 → d10 diretamente). O dado melhorado vale somente para aquela rolagem: não muda os graus comprados nem garante sucesso.
+
+Determinação também poderá servir para **manter um resultado adicional** ou ativar habilidades especiais, mas os custos dessas outras aplicações ainda precisam ser definidos. Perícias especializadas poderão oferecer melhorias condicionais semelhantes quando seu catálogo estiver pronto.
 
 A vida corporal se recupera na referência de **1 ponto por descanso**, desde que a condição do personagem permita descanso efetivo. Ferimentos mais graves devem causar penalidades progressivas; a tabela própria do Codex RPG ainda será produzida.
 
-Quando o personagem mantém **pelo menos dois dados em suas faces máximas de crítico**, recupera **1 Determinação**. A identificação exata dessas faces, **incluindo se o d4 é elegível para críticos** e quais são as faces de crítico do d12, será padronizada antes da edição definitiva dos dados físicos.
+**Crítico:** quando o personagem **mantém pelo menos dois dados que mostram a face numérica máxima do respectivo dado**, recupera **1 Determinação**, sem exceder sua reserva máxima. **O d4 básico conta normalmente:** um **d4 na face 4** e um **d6 na face 6**, ambos mantidos, formam um crítico, mesmo que o d4 não tenha Sucesso puro. O crítico depende das faces máximas, e **não exige acerto limpo**. Para o d12, a face numérica máxima é **12**, ainda que ela mostre apenas Incertezas. A padronização dos dados extraordinários d20 permanece em teste.
 
 ### Exemplo — Determinação para ultrapassar um limite
 
 Maela possui **Força 1 (1d6)** e uma ferramenta de exemplo com **1d10**, mantendo ambos. O máximo normal para a DT é **1 + 3 = 4**; uma comporta de **DT 5** não pode ser superada por esses dois dados sem recursos adicionais.
 
-Se a mesa adotar **provisoriamente** o custo de **1 Determinação para aumentar um passo**, ela pode elevar o d6 a **d10 antes da rolagem**. Se os dados mostrarem **face 7 (2S)** e **face 10 (2S + 1I)**, alcança **5 para a DT**. Não é garantia de êxito: apenas torna a tentativa possível.
+Maela paga **1 Determinação** para elevar **seu d6 para d10 antes da rolagem**. Se os dois d10 mostrarem **face 7 (2S)** e **face 10 (2S + 1I)**, alcança **5 para a DT**. Não é garantia de êxito: apenas torna a tentativa possível. Ela **não pode** gastar uma segunda Determinação nesse mesmo teste para elevar esse dado mais uma vez, de d10 para d12.
 
 ### Exemplo — Manter dado adicional
 
 Depois de aumentar Força para **2d6**, Maela rola **2d6 + 1d10** com uma ferramenta apropriada. No Marco I, mantém apenas dois resultados. Gastar Determinação para **manter um terceiro** é uma possibilidade de playtest com **custo ainda não aprovado**; não altera a quantidade de dados efetivamente rolados.
 
-### Exemplo — Crítico
+### Exemplo — Crítico com improviso: d4 + d6
 
-Corven mantém um d6 na **face 6** e um d10 na **face 10**. Os dois dados atingiram suas **faces máximas numéricas**, cumprindo o critério inicial de crítico; recupera **1 Determinação** até o limite da reserva. Porém, a face 10 do d10 contém **1 Incerteza**. Portanto, **um crítico não é necessariamente um acerto limpo**. A padronização final em d12 e d20 ainda está em teste.
+Corven tenta escapar de uma passagem estreita usando **Agilidade 1 (1d6)** e **Infiltração 0 (1d4)**. Ele mantém ambos no Marco I, com estas faces:
+
+| Dado mantido | Face máxima | Símbolos |
+|---|---:|---|
+| **d4 básico de Infiltração** | **4** | **ᛃᚦ = 1 Adaptação + 1 Incerteza** |
+| **d6 de Agilidade** | **6** | **ᛏ = 1 Sucesso** |
+
+**Resultado:** **1S + 1I = 2 para a DT**, com **1A** disponível. Contra uma **DT 2**, Corven consegue passar. Ele pode usar a **Adaptação para reduzir em 1 a Incerteza transferida**, sem mudar o valor 2 já alcançado na DT.
+
+Como **os dois dados mantidos saíram nas faces máximas (4 e 6)**, Corven também obtém **um crítico e recupera 1 Determinação**, até seu limite. **Não precisa ter gasto Determinação antes:** o d4 normal já é válido para o crítico. Se tivesse usado 1 Determinação para elevar o d4 a d6, teria de rolar **d6**, e não poderia considerar a face 4 antiga.
+
+**Outro exemplo:** d6 na face **6** e d10 na face **10**, ambos mantidos, também geram crítico, embora o d10 contenha **1 Incerteza**. Um crítico não exige uma rolagem sem riscos.
 
 # IX. Marcos, XP e profissões
 
@@ -571,7 +584,7 @@ Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; *
 
 # XI. O que ainda está em teste
 
-Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos de Determinação; tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; catálogo inicial de Perícias e seus custos; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
+Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos dos **outros usos** de Determinação (aumento de um passo já custa **1 ponto**); tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; catálogo inicial de Perícias e seus custos; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
 
 O mestre e os jogadores devem decidir qualquer regra ainda pendente antes da sessão e registrar o procedimento utilizado. **Não é necessário inventar estatísticas para as linhagens não-humanas:** elas não são personagens de jogador nesta primeira edição.
 
