@@ -105,7 +105,7 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 | Grau de Conhecimento ou Prática | Dados da fonte | Custo para o próximo grau |
 |---|---|---:|
-| 0 — Sem treinamento | **1d4 (improviso)** | — |
+| 0 — Sem treinamento | **1d4 (sem treinamento)** | — |
 | 1 — Iniciado | **1d10** | **2 XP** |
 | 2 — Treinado | **2d10** | **6 XP** |
 | 3 — Especialista | **3d10** | **12 XP** |
@@ -140,7 +140,7 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 | **Montaria** | Recebe **+1I** em testes realizados **montado**, quando a montaria realmente contribuir para a ação. |
 | **Combate** | Recebe **+1I** em **testes de combate**, incluindo ataques, defesas ou disputas de posição dentro de um confronto. |
 
-O **Improviso adicional não conta como Precisão nem soma à DT**. Antes de conferir a DT, pode **anular 1 Desespero (D)**, retirando também **1 ponto da soma para a DT**, ou ser usado para ajudar um aliado, conforme as regras de Improviso. **Cada Perícia contribui com seu bônus uma vez por teste pertinente.** Se Montaria e Combate se aplicarem ao mesmo teste de combate montado, cada uma pode acrescentar sua própria Improviso, sem alterar os dados rolados ou o limite dos dados mantidos.
+O **Improviso adicional não conta como Precisão nem soma diretamente à DT**. Antes de conferir a DT, pode **anular 1 Desespero (D)**, retirando também **1 ponto da soma para a DT**, ou ser usado para ajudar um aliado, conforme as regras de Improviso. **Esse I concedido pela Perícia poderá contar para uma futura Maestria que converta Improvisos em Precisão, se a Maestria assim permitir; tal Maestria ainda não está disponível.** **Cada Perícia contribui com seu bônus uma vez por teste pertinente.** Se Montaria e Combate se aplicarem ao mesmo teste de combate montado, cada uma pode acrescentar seu próprio Improviso, sem alterar os dados rolados ou o limite dos dados mantidos.
 
 ### Perícias de combinação — 2 XP cada
 
@@ -302,7 +302,7 @@ Os resultados são representados por **glifos rúnicos provisórios**. As letras
 
 ### Tabela de conversão dos dados numéricos
 
-| Face | d4 (improviso) | d6 | d10 | d12 |
+| Face | d4 (sem treinamento) | d6 | d10 | d12 |
 |---|---|---|---|---|
 | 1 | ○ | ○ | ○ | ○ |
 | 2 | ○ | ○ | ○ | ○ |
@@ -317,7 +317,7 @@ Os resultados são representados por **glifos rúnicos provisórios**. As letras
 | 11 | — | — | — | ᛏᛃᛃᚦ |
 | 12 | — | — | — | ᚦᚦ |
 
-**Atenção:** o travessão **—** nas linhas acima indica que o dado não possui aquela face; já o círculo **○** indica uma face existente sem símbolos. O d4 tem **○, ○, ᚦ, ᛃᚦ**: não possui Precisão puro.
+**Atenção:** o travessão **—** nas linhas acima indica que o dado não possui aquela face; já o círculo **○** indica uma face existente sem símbolos. O d4 tem **○, ○, ᚦ, ᛃᚦ**: não possui Precisão pura.
 
 ### Como ler os símbolos em dados comuns
 
@@ -327,12 +327,12 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 |---|---|---:|---|
 | **d4, face 3** | **ᚦ = 1D** | **1** | Êxito incerto possível numa DT 1. |
 | **d4, face 4** | **ᛃᚦ = 1I + 1D** | **1 se o D for mantido; 0 se anulado** | Gastar o Improviso para anular o Desespero elimina também o ponto que ele daria à DT. |
-| **d6, face 6** | **ᛏ = 1P** | **1** | Um Precisão. |
-| **d10, face 7** | **ᛏᛏ = 2P** | **2** | Dois Precisões sem Desespero. |
-| **d10, face 9** | **ᛏᛃᚦ = 1P + 1I + 1D** | **2** | A Improviso é separada; a Desespero permanece como símbolo obtido. |
+| **d6, face 6** | **ᛏ = 1P** | **1** | Uma Precisão. |
+| **d10, face 7** | **ᛏᛏ = 2P** | **2** | Duas Precisões sem Desespero. |
+| **d10, face 9** | **ᛏᛃᚦ = 1P + 1I + 1D** | **2** | O Improviso é um símbolo separado; o Desespero só permanece se não for anulado antes da DT. |
 | **d10, face 10** | **ᛏᛏᚦ = 2P + 1D** | **3** | Atinge DT mais alta, mas produz Desespero. |
 | **d12, face 11** | **ᛏᛃᛃᚦ = 1P + 2I + 1D** | **2** | Tem quatro símbolos ao todo, mas só dois contam para DT. |
-| **d12, face 12** | **ᚦᚦ = 2D** | **2** | Nenhum Precisão puro e duas Desesperos. |
+| **d12, face 12** | **ᚦᚦ = 2D** | **2** | Nenhuma Precisão pura e dois Desesperos. |
 
 **Regra de leitura:** **Precisão (P)** e **Desespero (D) não anulado** contam para alcançar a DT. **Improviso (I)** não conta diretamente para a DT e pode ser gasto para conter o Desespero, ajudar um aliado ou ativar uma capacidade.
 
@@ -355,7 +355,7 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 ### Exemplo — Dado mais pesado nem sempre é mais seguro
 
-Um d10 pode mostrar **ᛏᛏ** na face 7, enquanto o d12 pode mostrar **ᚦᚦ** na face 12. Ambos contribuem com **2 para DT**, mas só o primeiro tem **2 Precisões puros**. D12 não significa «dano maior por padrão»: ele tem uma distribuição de resultados diferente, com mais oportunidades e riscos.
+Um d10 pode mostrar **ᛏᛏ** na face 7, enquanto o d12 pode mostrar **ᚦᚦ** na face 12. Ambos contribuem com **2 para DT**, mas só o primeiro tem **2 Precisões puras**. D12 não significa «dano maior por padrão»: ele tem uma distribuição de resultados diferente, com mais oportunidades e riscos.
 
 A progressão de passos considerada é **d4 → d6 → d10 → d12 → d20**, mas a passagem para **d20** permanece excepcional e não participa destes exemplos de playtest.
 
@@ -410,7 +410,7 @@ Neris não comprou **Medicina**, mas precisa socorrer alguém. Pode tentar usand
 
 ### Exemplo de falha mesmo com Improviso
 
-Corven, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᛃᚦ = I + D)**. A soma para a DT é **1**, portanto **ele falha**. A Improviso não conta como Precisão e não transforma o resultado em êxito.
+Corven, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᛃᚦ = I + D)**. A soma para a DT é **1**, portanto **ele falha**. O Improviso não conta como Precisão e não transforma o resultado em êxito.
 
 ## DTs para iniciar os testes
 
@@ -461,7 +461,7 @@ Corven tenta entrar na mina com **Agilidade 1 (1d6) + Infiltração 1 (1d10)** c
 |---|---|---|
 | d6 face **6 (P)** + d10 face **6 (P)** | **2P, 0D** | **Acerto limpo**: ele entra sem fornecer Desespero. |
 | d6 face **3 (D)** + d10 face **6 (P)** | **1P + 1D = 2** | **Acerto sob Desespero**: ele entra, mas a oposição ganha Desespero. |
-| d6 face **1 (○)** + d10 face **5 (I + D)** | **0P + 1D = 1** | **Falha**: a Improviso não eleva a soma à DT. |
+| d6 face **1 (○)** + d10 face **5 (I + D)** | **0P + 1D = 1** | **Falha**: o Improviso não eleva a soma à DT. |
 
 **Alcançar o objetivo e evitar riscos não são a mesma coisa.** Dois acertos podem atingir a mesma DT e produzir consequências muito diferentes.
 
@@ -495,7 +495,7 @@ Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (P)** e **d10
 
 **Atenção ao d4 básico em ataques:** um d4 que contribua apenas **1D não anulado** pode ajudar a atingir uma DT 1, mas, sozinho, produz **0 de dano calculado**: **0P + ⌊1D/2⌋ = 0**. Superar a DT não significa ferir automaticamente alguém quando o dano é zero. A ação pode obter um efeito narrativo compatível — como forçar uma reação, afastar uma arma ou abrir uma brecha — sem reduzir Vida. As regras de efeitos corporais ainda estão em teste.
 
-Por exemplo, 2 Precisões + 1 Desespero geram **2 de dano**; 1 Precisão + 2 Desesperos geram **2 de dano**; 3 Desesperos geram **1 de dano**. As Desesperos continuam sendo recurso de oposição, salvo capacidades que as reduzam.
+Por exemplo, 2 Precisões + 1 Desespero geram **2 de dano**; 1 Precisão + 2 Desesperos geram **2 de dano**; 3 Desesperos geram **1 de dano**. Os Desesperos continuam sendo recurso de oposição, salvo capacidades que as reduzam.
 
 ### Exemplo — Acerto, dano e Vida são coisas distintas
 
@@ -567,7 +567,7 @@ Coragem também poderá servir para **manter um resultado adicional** ou ativar 
 
 A vida corporal se recupera na referência de **1 ponto por descanso**, desde que a condição do personagem permita descanso efetivo. Ferimentos mais graves devem causar penalidades progressivas; a tabela própria do Codex RPG ainda será produzida.
 
-**Crítico:** quando o personagem **mantém pelo menos dois dados que mostram a face numérica máxima do respectivo dado**, recupera **1 Coragem**, sem exceder sua reserva máxima. **O d4 básico conta normalmente:** um **d4 na face 4** e um **d6 na face 6**, ambos mantidos, formam um crítico, mesmo que o d4 não tenha Precisão puro. O crítico depende das faces máximas, e **não exige acerto limpo**. Para o d12, a face numérica máxima é **12**, ainda que ela mostre apenas Desesperos. A padronização dos dados extraordinários d20 permanece em teste.
+**Crítico:** quando o personagem **mantém pelo menos dois dados que mostram a face numérica máxima do respectivo dado**, recupera **1 Coragem**, sem exceder sua reserva máxima. **O d4 básico conta normalmente:** um **d4 na face 4** e um **d6 na face 6**, ambos mantidos, formam um crítico, mesmo que o d4 não tenha Precisão pura. O crítico depende das faces máximas, e **não exige acerto limpo**. Para o d12, a face numérica máxima é **12**, ainda que ela mostre apenas Desesperos. A padronização dos dados extraordinários d20 permanece em teste.
 
 ### Exemplo — Coragem para ultrapassar um limite
 
@@ -577,7 +577,7 @@ Maela paga **1 Coragem** para elevar **seu d6 para d10 antes da rolagem**. Se os
 
 ### Exemplo — Manter dado adicional
 
-Depois de aumentar Força para **2d6**, Maela rola **2d6 + 1d10** com uma ferramenta apropriada. No Marco I, mantém apenas dois resultados. Gastar Coragem para **manter um terceiro** é uma possibilidade de playtest com **custo ainda não aprovado**; não altera a quantidade de dados efetivamente rolados.
+Depois de aumentar Força para **2d6**, Maela rola **2d6 + 1d10** com uma ferramenta apropriada. No Marco I, mantém apenas dois resultados. Gastar Coragem para **manter um terceiro** permanece uma possibilidade de playtest com **custo ainda não aprovado**; não altera a quantidade de dados efetivamente rolados.
 
 ### Exemplo — Crítico com d4 + d6: aceitar risco ou falhar com segurança
 
@@ -656,7 +656,7 @@ A comunidade de Maela precisa recuperar um gerador mecânico abandonado. A ofici
 
 **Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se os personagens acumularem Desesperos, o mestre pode fazer os saqueadores segurarem o portão, ameaçarem um morador, derrubarem uma estrutura ou pedirem reforços.
 
-Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantas Desesperos surgiram e como os jogadores resolveram a cena.
+Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantos Desesperos surgiram e como os jogadores resolveram a cena.
 
 ### Exemplo de sessão — Três soluções diferentes
 
