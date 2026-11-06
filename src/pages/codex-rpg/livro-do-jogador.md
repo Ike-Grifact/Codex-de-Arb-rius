@@ -67,7 +67,7 @@ Maela possui **Agilidade 0**. Caminhar em segurança não exige teste, mas salta
 
 **Atletismo** é uma Prática sugerida para o playtest. Engenharia só entra se o uso técnico do bastão fizer parte da ação; a ferramenta não concede outro dado gratuitamente.
 
-Se os **2d4** mostrarem **3 e 4**, Maela mantém **2D + 1I, sem Presença (P = 0)**. Pode **aceitar 2D para alcançar DT 2**, mas, como **2D > 0P**, pula desesperadamente e talvez se desequilibre, solte o bastão ou caia do outro lado. Não significa que um inimigo ganhe automaticamente pontos. Se gastar **1I para anular 1D**, a soma cai a **1**, e ela **não alcança DT 2**, embora tenha reduzido o Desespero.
+Se os **2d4** mostrarem **3 e 4**, Maela mantém **2D + 1I, sem Presença (P = 0)**. Se conservar **2D**, alcança **DT 2** desesperadamente. **Havendo uma ameaça próxima, passa 2D como Pressão a ela**; sem ameaça, pode tropeçar, perder posição ou danificar um item. Se gastar **1I para anular 1D**, sua soma cai a **1**: **falha com medo**, e o **1D restante alimenta a Reserva Acumulada** da cena, com possível consequência de falha.
 
 Se ambos os d4 saírem na **face 4**, podem formar um **crítico**, recuperando **1 Coragem**. Isso não elimina Desespero nem cria Presença automaticamente. **Pelo menos um dado mantido precisa vir do Atributo**.
 
@@ -295,7 +295,7 @@ Os resultados são representados por **glifos rúnicos provisórios**. As letras
 |---|:---:|:---:|---|
 | **Presença** | **ᛏ** | P | Representa intenção, firmeza e controle: o personagem age **como imaginou e pretendeu**. Contribui integralmente para alcançar a DT e para o dano calculado nesta edição. |
 | **Improviso** | **ᛃ** | I | Representa adaptação diante do medo: altera a abordagem, ajuda aliados ou neutraliza Desespero antes da DT. **Não** gera Presença nem aumenta diretamente a soma. |
-| **Desespero** | **ᚦ** | D | Representa impulso, medo e perda de controle. Ajuda a atingir a DT, mas, **se D > P**, domina a ação e pode gerar consequências para o próprio personagem, aliados ou ambiente; não é entregue automaticamente ao inimigo. Conta pela metade no dano calculado, arredondando para baixo. |
+| **Desespero** | **ᚦ** | D | Representa medo, impulso e perda de controle. Se **D > P**, um **acerto** transfere os D restantes como Pressão à ameaça mais próxima (ou causa complicação narrativa sem ameaça); uma **falha** acumula os D na Reserva de Desespero e pode ferir ou custar Coragem. Conta pela metade no dano calculado, arredondando para baixo. |
 | **Face vazia** | **○** | — | Nenhum símbolo: não acrescenta pontos ao teste. |
 
 **Leitura rápida:** **ᛏᛃᚦ** corresponde a **1P + 1I + 1D**. Várias runas na mesma face se acumulam; por exemplo, **ᛏᛏᚦ** corresponde a **2P + 1D**.
@@ -521,7 +521,7 @@ As ativações da oposição e os efeitos da reserva devem ser definidos antes d
 
 **Atenção ao d4 básico em ataques:** um d4 que contribua apenas **1D não anulado** pode ajudar a atingir uma DT 1, mas, sozinho, produz **0 de dano calculado**: **0P + ⌊1D/2⌋ = 0**. Superar a DT não significa ferir automaticamente alguém quando o dano é zero. A ação pode obter um efeito narrativo compatível — como forçar uma reação, afastar uma arma ou abrir uma brecha — sem reduzir Vida. As regras de efeitos corporais ainda estão em teste.
 
-Por exemplo, 2 Presenças + 1 Desespero geram **2 de dano calculado**; 1 Presença + 2 Desesperos geram **2**; 3 Desesperos geram **1**. Se **D > P**, o ataque pode sair do controle, atingindo o alvo errado, expondo o agressor ou colocando alguém próximo em risco. **Desespero não é recurso automático da oposição.** O dano permanece uma regra experimental.
+Por exemplo, 2 Presenças + 1 Desespero geram **2 de dano calculado**; 1 Presença + 2 Desesperos geram **2**; 3 Desesperos geram **1**. Num **acerto desesperado (D > P)** contra uma ameaça próxima, os D restantes são **transferidos como Pressão a essa ameaça**; sem ameaça elegível, podem provocar tropeço, dano ao equipamento ou outra consequência narrativa. Numa **falha com medo (D > P)**, os D vão à **Reserva Acumulada**, e dano acidental a si ou a aliados e perda de Coragem são consequências possíveis. A fórmula de dano continua experimental.
 
 ### Exemplo — Acerto, dano e Vida são coisas distintas
 
@@ -680,15 +680,15 @@ As profissões surgem da build: uma trilha de Armas, Força e montaria pode leva
 
 A comunidade de Maela precisa recuperar um gerador mecânico abandonado. A oficina está isolada por um portão deformado, e dois saqueadores tentam alcançar o mesmo equipamento. O objetivo dos Aprendizes é **recuperar uma peça essencial e sair com vida**, não necessariamente vencer um combate.
 
-**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se um personagem agir com **D > P**, pode arrancar uma estrutura bruscamente, se ferir, ameaçar alguém sem querer ou fazer um ruído que atraia os saqueadores. A consequência depende da ação, não de um banco automático de Desespero.
+**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Em **acerto desesperado (D > P)**, os D passam como Pressão à ameaça mais próxima, ou geram complicação ambiental na ausência dela. Em **falha com medo (D > P)**, os D vão à Reserva Acumulada; tropeços perigosos, ferimentos acidentais e perda de Coragem são possíveis conforme a ficção.
 
 Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantos Desesperos surgiram e como os jogadores resolveram a cena.
 
 ### Exemplo de sessão — Três soluções diferentes
 
-**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha. Se alcançar **DT 2**, abre passagem; **somente com D > P** isso se torna um acerto desesperado, podendo resultar em queda, ferimento ou alguém atingido pelo portão.
+**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha. Se alcançar **DT 2**, abre passagem. Quando **D > P**, transfere D como Pressão ao saqueador mais próximo; se estiver sozinha, pode abrir o portão desajeitadamente, danificando a proteção ou derrubando ferramentas.
 
-**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio** contra **DT 3 demonstrativa**. Pode conseguir um acordo pacífico; se **D > P**, talvez prometa algo que não pretendia ou ofenda o interlocutor num impulso. O risco surge de seu comportamento, não de uma transferência automática aos saqueadores.
+**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio** contra **DT 3 demonstrativa**. Se alcançar a DT com **D > P**, passa os D como Pressão ao saqueador mais próximo, que poderá explorar a hesitação no diálogo. Sem interlocutor ameaçador elegível, uma promessa precipitada ou deslize social pode ser a complicação narrativa.
 
 **Caminho C: procurar a janela.** Corven utiliza **Agilidade + Infiltração**. Como a entrada é arriscada e exposta, o mestre definiu **DT 4**: é possível que um Aprendiz descubra outra maneira de chegar à janela, reduza o perigo com preparação ou simplesmente desista do caminho. Nem toda DT precisa ser vencida com força bruta.
 
