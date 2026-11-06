@@ -26,6 +26,12 @@ O mundo é habitado por outros povos. Os **Luckers** vieram do espaço após uma
 
 Cristais funcionam como recursos e moeda. As regiões abaixo das Espinhas concentram cavernas cobiçadas, mas atraem criaturas, fanáticos e perigos ambientais. As missões podem ser **caçadas, exploração, resgate, negociação, mineração, manufatura, proteção ou reconstrução**. Vencer um conflito não significa necessariamente matar alguém.
 
+### Exemplo contínuo — A caravana do Poço Seco
+
+Tainá, Breno e Mara recebem uma missão: recuperar peças para a bomba d'água de uma cidade construída com metal de arcas antigas. O material está numa mina sob uma Espinha do Mundo. Há saqueadores nas galerias, um túnel desabando e um guarda que pode aceitar um acordo.
+
+Ao longo deste livro, esse mesmo grupo servirá para explicar **criação de personagens, fontes de dados, DTs, iniciativa, riscos, ferimentos e XP**. O objetivo da missão é salvar a cidade; derrotar os saqueadores não é obrigatório.
+
 # II. Quem você é
 
 Todo personagem começa na profissão **Aprendiz**. Não se escolhe uma classe fechada na criação. Uma profissão posterior surge daquilo que você aprende: um guarda pode se tornar cavaleiro, ferreiro ou explorador; alguém dedicado à Engenharia pode aprender armas e Infiltração; um comerciante pode dominar Herborismo e coleta.
@@ -49,6 +55,12 @@ A progressão é aberta, mas não irrestrita. Você precisa pagar XP por capacid
 
 **Todos os Atributos começam em grau 0**. Você pode comprá-los com XP. Um Atributo em zero não oferece dados para testes arriscados. Ações corriqueiras continuam possíveis sem rolagem.
 
+### Exemplo — Atributo zero e ações sem teste
+
+Tainá possui **Agilidade 0**. Ela consegue caminhar e subir escadas seguras normalmente, pois isso não requer teste. Porém, se precisar saltar um vão enquanto pedras caem, um teste arriscado de Agilidade exige ao menos **um dado de Atributo apropriado**: ela não possui nenhum. Ela pode buscar outra solução, como instalar uma corda com Inteligência e Manufaturas, esperar uma oportunidade ou pedir ajuda. Ter uma ferramenta não cria automaticamente um Atributo que falta.
+
+Quando uma ação realmente exigir teste, **pelo menos um dos resultados mantidos deve vir de Atributo**. Não basta possuir d10 de equipamento ou de treinamento.
+
 # III. Faça um Humano Aprendiz
 
 A criação inicial usa os seguintes valores de referência discutidos para o jogo: **6 pontos de vida corporal**, **10 pontos de Determinação** e **7 XP para comprar suas primeiras capacidades**. O corpo humano também possui uma referência de vitalidade de 18, da qual deriva a reserva corporal inicial pela divisão em três. A fórmula exata pela qual Vigor aumenta a vida ainda está em desenvolvimento; não some um bônus arbitrário nesta edição.
@@ -59,9 +71,51 @@ A criação inicial usa os seguintes valores de referência discutidos para o jo
 
 **Passo 3 — Conhecimentos e Práticas.** Escolha treinamento compatível com a história. Exemplos: Erudição, Ciências, Engenharia; Armas, Furtividade, Infiltração, Expressão, Manufaturas, Herborismo, Mineração, Domesticação ou Comércio. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
 
+### Entendendo Conhecimentos, Práticas e Perícias
+
+**Conhecimentos** representam aquilo que o personagem **sabe, compreende, investiga ou projeta**. **Práticas** representam aquilo que ele **treinou e executa**. Ambos são **fontes de dados d10** compradas com XP, mas o nome da capacidade precisa fazer sentido na ação narrada.
+
+| Grupo | Exemplos provisórios | Quando a fonte pode entrar na pilha |
+|---|---|---|
+| **Conhecimentos** | Ciências, Engenharia, Erudição, Geografia, Medicina | Reconhecer fenômenos, planejar estruturas, interpretar registros, diagnosticar e estudar uma situação |
+| **Práticas** | Armas, Furtividade, Infiltração, Manufaturas, Mineração, Herborismo, Expressão, Comércio, Sobrevivência | Manejar armas, esconder-se, entrar em lugares protegidos, fabricar, extrair minério, coletar ervas, negociar e sobreviver |
+
+**Esses nomes e essa divisão são um catálogo de exemplo, não a lista definitiva de capacidades.** Herborismo e Mineração, por exemplo, podem futuramente ter aplicações técnicas e práticas separadas. O essencial agora é a função de cada grupo.
+
+| Grau de Conhecimento ou Prática | Dados que a fonte fornece | Custo incremental para chegar ao grau |
+|---|---|---:|
+| 0 — Sem treinamento | Nenhum | — |
+| 1 — Iniciado | **1d10** | 3 XP |
+| 2 — Treinado | **2d10** | 6 XP |
+| 3 — Especialista | **3d10** | 9 XP |
+
+**Perícias são outra coisa:** neste livro, o termo nomeia **Características compráveis**, como Mãos Leves, Pegada Firme ou futuras especializações de Mineração. Uma Perícia pode modificar a aplicação dos resultados, criar efeitos e impor pré-requisitos; **não é automaticamente mais uma fonte d10**.
+
+#### Exemplo — Saber não é fazer
+
+Na mina, Tainá pode usar **Inteligência + Engenharia** para entender a sustentação de uma galeria, se tiver Engenharia comprada. Para **extrair minério**, outro personagem pode usar **Potência + Mineração**. Para **negociar o preço**, Mara usa **Influência + Comércio**. Embora todas essas áreas contribuam para a mesma missão, não concedem os mesmos dados em todas as situações.
+
+**Atributo + Conhecimento** e **Atributo + Prática** são exemplos de duas fontes. O equipamento pode ocupar uma dessas fontes, quando sua ficha conceder dados. Antes do nível 11, não combine simultaneamente **Atributo + Prática + Equipamento** numa única rolagem: são três fontes, além do limite inicial.
+
 **Passo 4 — Equipamento.** Registre itens, ferramentas e armas de acordo com o objetivo da missão. O equipamento pode fornecer dados próprios, mas não substitui a obrigação de manter um dado de Atributo em testes.
 
 **Passo 5 — Objetivo.** Escolha uma razão para continuar vivo: proteger alguém, encontrar uma Espinha do Mundo, recuperar um conhecimento perdido, salvar a comunidade ou descobrir o que restou das arcas.
+
+### Exemplo de criação — Tainá, passo a passo
+
+| Etapa | Decisão | Efeito |
+|---|---|---|
+| 1. Origem | Aprendeu a consertar ferramentas nas oficinas de uma cidade humana. | Identidade narrativa, sem dados gratuitos. |
+| 2. Atributos | Compra **Potência 1** e **Inteligência 1**. | **1d6** de cada; **2 + 2 = 4 XP**. |
+| 3. Conhecimento/Prática | Compra **Manufaturas 1**. | **1d10** nas ações compatíveis; **3 XP**. |
+| 4. Equipamento | Leva ferramentas, corda e uma mochila. | São itens da história; dados extras dependem da ficha do equipamento, não da simples descrição. |
+| 5. Objetivo | Recuperar peças para a bomba d'água. | Motivo para agir e decidir. |
+
+**Cálculo:** Tainá gastou **7 dos 7 XP iniciais**, começa com **6 de Vida**, **10 de Determinação** e profissão **Aprendiz**. Nenhuma compra de Perícia ou Maestria foi pressuposta.
+
+### Exemplo alternativo — Mara, negociadora Aprendiz
+
+Mara compra **Influência 1 (2 XP)**, **Destreza 1 (2 XP)** e **Comércio 1 (3 XP)**. Seu total também é **7 XP**. Ela é melhor em negociações, enquanto Tainá é preparada para trabalhos manuais; **o nível não define a profissão nem concede essas capacidades automaticamente**.
 
 ## Compras de XP — tabela experimental
 
@@ -83,6 +137,14 @@ A criação inicial usa os seguintes valores de referência discutidos para o jo
 | 3 | 3d10 | 9 |
 
 Os custos são **incrementais**. Por exemplo, evoluir Potência de grau 0 até grau 2 custa 2 + 3 = 5 XP. Graus superiores e seus requisitos de Marco ainda estão em playtest.
+
+### Exemplo — Evoluindo uma fonte
+
+Depois da primeira missão, Tainá acumula **5 XP novos**. Pode investir **3 XP** para elevar Potência de grau **1 (1d6)** a grau **2 (2d6)** e guardar os **2 XP** restantes; não precisa comprar novamente o primeiro grau.
+
+Se preferir, pode comprar **Agilidade 1 por 2 XP** com os pontos restantes, ampliando as ações que consegue tentar. Já comprar **Mineração 1** custaria **3 XP**; ela precisaria economizar mais um ponto. O XP **total conquistado** define o nível, mas somente o XP **disponível e gasto** define as fontes na ficha.
+
+**Dois d6 de Potência não significam dois dados mantidos obrigatórios:** no primeiro Marco, você pode rolar os dois mais outra fonte compatível, mas continua mantendo no máximo dois resultados no total.
 
 ### Exemplo de ficha inicial
 
@@ -123,6 +185,27 @@ Os resultados são representados por **glifos rúnicos provisórios**. As letras
 | 12 | — | — | ᚦᚦ |
 
 **Atenção:** o travessão **—** nas linhas acima indica que o dado não possui aquela face; já o círculo **○** indica uma face existente sem símbolos.
+
+### Como ler os símbolos em dados comuns
+
+A tabela mostra **todas as faces dos dados d6, d10 e d12** usadas nesta edição. Não há tabela de d20 porque suas faces e custos extraordinários ainda não foram aprovados.
+
+| Exemplo de face | Leitura rúnica | Para superar DT | Outros efeitos |
+|---|---|---:|---|
+| **d6, face 6** | **ᛏ = 1S** | **1** | Um Sucesso. |
+| **d10, face 7** | **ᛏᛏ = 2S** | **2** | Dois Sucessos sem Pressão. |
+| **d10, face 9** | **ᛏᛃᚦ = 1S + 1A + 1P** | **2** | A Adaptação é separada; a Pressão permanece como símbolo obtido. |
+| **d10, face 10** | **ᛏᛏᚦ = 2S + 1P** | **3** | Atinge DT mais alta, mas produz Pressão. |
+| **d12, face 11** | **ᛏᛃᛃᚦ = 1S + 2A + 1P** | **2** | Tem quatro símbolos ao todo, mas só dois contam para DT. |
+| **d12, face 12** | **ᚦᚦ = 2P** | **2** | Nenhum Sucesso puro e duas Pressões. |
+
+**Regra de leitura:** para a DT, conte **S + P**. A letra **A** significa **Adaptação**, não aumenta o valor da rolagem e não gera dano direto. A mesma face pode produzir mais de um símbolo.
+
+### Exemplo — Dado mais pesado nem sempre é mais seguro
+
+Um d10 pode mostrar **ᛏᛏ** na face 7, enquanto o d12 pode mostrar **ᚦᚦ** na face 12. Ambos contribuem com **2 para DT**, mas só o primeiro tem **2 Sucessos puros**. D12 não significa «dano maior por padrão»: ele tem uma distribuição de resultados diferente, com mais oportunidades e riscos.
+
+A progressão de passos considerada é **d6 → d10 → d12 → d20**, mas a passagem para **d20** permanece excepcional e não participa destes exemplos de playtest.
 
 
 Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de Sucessos; o d12 apresenta combinações mais arriscadas. O **d20** representa extremos: somente um pode compor a pilha de um personagem, e seus resultados definitivos ainda estão em teste. Ele **não é necessário no playtest inicial humano**.
