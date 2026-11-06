@@ -215,7 +215,7 @@ Em um salto, **Agilidade + Atletismo** é a combinação comum. Com a Perícia *
 | 4. Equipamento | Leva ferramentas, corda e uma mochila. | São itens da história; dados extras dependem da ficha do equipamento, não da simples descrição. |
 | 5. Objetivo | Recuperar peças para a bomba d'água. | Motivo para agir e decidir. |
 
-**Cálculo:** Maela investiu **7/7 XP de Base** e **6/7 XP de Formação**, totalizando **13 XP gastos de 14 iniciais**, com **1 XP de Formação guardado**. Começa com **4 de Vida** (Vigor 1: 3 + 1), **10 de Coragem** e profissão **Aprendiz**. Nenhuma Perícia especial ou Maestria foi inventada. Seus dados pertencem a fontes distintas; **no Marco I não pode combinar mais de duas fontes nem manter mais de dois dados**.
+**Cálculo:** Maela investiu **7/7 XP de Base** e **6/7 XP de Formação**, totalizando **13 XP gastos de 14 iniciais**, com **1 XP de Formação guardado**. Começa com **4 de Vida** (Vigor 1: 3 + 1), **10 de Coragem** e profissão **Aprendiz**. Nenhuma Perícia especial ou Maestria foi inventada. Seus dados pertencem a fontes distintas; **no Marco I pode combinar duas partes normalmente ou três Aptidões com uma Perícia de combinação aplicável, mantendo no máximo dois dados**. Maela ainda não comprou uma Perícia de combinação.
 
 ### Exemplo alternativo — Neris, negociadora Aprendiz
 
