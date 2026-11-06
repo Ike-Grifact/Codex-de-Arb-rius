@@ -90,21 +90,25 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 | 1 — Iniciado | **1d10** | **2 XP** |
 | 2 — Treinado | **2d10** | **4 XP** |
 | 3 — Especialista | **3d10** | **8 XP** |
-| 4 — Primeira evolução | **2d10 + 1d12** | **8 XP** |
-| 5 — Segunda evolução | **1d10 + 2d12** | **16 XP** |
-| 6 — Domínio completo | **3d12** | **32 XP** |
+| 4 — Primeira evolução | **2d10 + 1d12** | **6 XP** |
+| 5 — Segunda evolução | **1d10 + 2d12** | **12 XP** |
+| 6 — Domínio completo | **3d12** | **24 XP** |
 
-**Como interpretar os multiplicadores nesta edição:** cada novo dado segue a progressão **2, 4 e 8 XP (×2)**. Depois de obter três d10, transformar cada um em d12 custa **quatro vezes o custo de compra daquele dado**: **8, 16 e 32 XP (×4)**, respectivamente. Os preços são **incrementais**, não o custo total do grau. Os graus 4–6 e a utilidade dos d12 ainda serão validados em playtest.
+**Como interpretar os multiplicadores nesta edição:** cada novo d10 custa **2, 4 e 8 XP (×2)**. Depois de obter três d10, cada evolução permanente para d12 custa **três vezes o preço original daquele dado**: **6, 12 e 24 XP (×3)**. Os custos são **incrementais**, não o custo total do grau. Mesmo com a redução do multiplicador, a especialização completa em 3d12 exige **56 XP investidos nessa única capacidade**. O acesso a graus avançados por Marco segue em playtest.
 
 **Exemplo rápido:** Comércio 1 custa **2 XP** e fornece **1d10**. Elevar Comércio 1 → 2 custa mais **4 XP**, deixando **2d10**. Comércio 3 custa outros **8 XP**, ficando com **3d10**, ou **14 XP acumulados**.
 
 **Perícias são outra coisa:** neste livro, o termo nomeia **Características compráveis**, como Mãos Leves, Pegada Firme ou futuras especializações de Mineração. Uma Perícia pode modificar a aplicação dos resultados, criar efeitos e impor pré-requisitos; **não é automaticamente mais uma fonte d10**.
+
+**Direção para o desenvolvimento:** evoluções permanentes até d12 devem representar investimento concentrado. **Perícias especializadas e Determinação** poderão oferecer **aumento temporário ou condicionado do passo de um dado**, quando suas regras e custos forem definidos. Isso não concede d12 gratuito a qualquer personagem nem transforma a Perícia automaticamente numa quarta fonte. A intenção é premiar a **sinergia entre capacidades adquiridas** em situações específicas.
 
 #### Exemplo — Saber não é fazer
 
 Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustentação de uma galeria, se tiver Engenharia comprada. Para **extrair minério**, outro personagem pode usar **Força + Mineração**. Para **negociar o preço**, Neris usa **Influência + Comércio**. Embora todas essas áreas contribuam para a mesma missão, não concedem os mesmos dados em todas as situações.
 
 **Atributo + Conhecimento** e **Atributo + Prática** são exemplos de duas fontes. O equipamento pode ocupar uma dessas fontes, quando sua ficha conceder dados. Antes do nível 11, não combine simultaneamente **Atributo + Prática + Equipamento** numa única rolagem: são três fontes, além do limite inicial.
+
+**A partir do Marco III**, o foco da build será poder combinar **três capacidades compatíveis** na mesma ação, por exemplo **Inteligência + Engenharia + Manufaturas** para recuperar uma máquina antiga. Cada uma precisa ter sido comprada separadamente e fazer sentido naquela situação; o Mestre não aceita qualquer combinação só para reunir dados melhores. Atributo continua obrigatório, enquanto Perícias podem futuramente aperfeiçoar as fontes segundo efeitos próprios.
 
 **Passo 4 — Equipamento.** Registre itens, ferramentas e armas de acordo com o objetivo da missão. O equipamento pode fornecer dados próprios, mas não substitui a obrigação de manter um dado de Atributo em testes.
 
@@ -150,17 +154,23 @@ Neris compra **Influência 1 (1 XP)**, **Destreza 1 (1 XP)** e **Agilidade 1 (1 
 | 1 | **1d10** | **2** | 2 |
 | 2 | **2d10** | **4** | 6 |
 | 3 | **3d10** | **8** | 14 |
-| 4 | **2d10 + 1d12** | **8** | 22 |
-| 5 | **1d10 + 2d12** | **16** | 38 |
-| 6 | **3d12** | **32** | 70 |
+| 4 | **2d10 + 1d12** | **6** | 20 |
+| 5 | **1d10 + 2d12** | **12** | 32 |
+| 6 | **3d12** | **24** | 56 |
 
-O primeiro, segundo e terceiro d10 custam **2, 4 e 8 XP** (×2). Para converter cada d10 em d12, pague **×4 do custo de compra do dado correspondente**: **8, 16 e 32 XP**.
+O primeiro, segundo e terceiro d10 custam **2, 4 e 8 XP** (×2). Para converter cada d10 em d12, pague **×3 do custo de compra daquele dado**: **6, 12 e 24 XP**. As melhorias substituem dados, não adicionam novos dados à fonte.
 
-**Importante:** esses multiplicadores são a interpretação de playtest adotada nesta tabela: **×3 e ×4 multiplicam o custo-base de cada posição de dado, não o preço total acumulado de toda a capacidade**. Um Atributo grau 6 custa **28 XP ao todo**; uma Prática grau 6 custa **70 XP ao todo**. São especializações para uma campanha até o nível 20, não compras previstas para Aprendizes.
+**Importante:** o multiplicador **×3** das evoluções d6 → d10 e d10 → d12 se aplica ao custo original de **cada dado específico**, não ao preço acumulado da capacidade. Um Atributo grau 6 custa **28 XP ao todo**; um Conhecimento ou Prática grau 6 custa **56 XP ao todo**. Esses custos tornam o domínio permanente de dados maiores uma escolha de especialização, e não algo que todos os personagens devem comprar. Os requisitos de acesso por Marco ainda serão definidos.
 
-**Por que d12 não é automaticamente melhor em todo teste?** A tabela de faces do Codex RPG contém combinações diferentes de Sucesso, Adaptação e Pressão. O d12 amplia possibilidades e riscos, mas **não aumenta o máximo de S + P por dado em comparação com o d10**. Por isso, o custo ×4 precisa ser reavaliado depois de sessões reais.
+**Por que ainda cobrar caro pelo d12?** A tabela de faces do Codex RPG contém combinações diferentes de Sucesso, Adaptação e Pressão. O d12 amplia possibilidades e riscos, mas **não aumenta o máximo de S + P por dado em comparação com o d10**. O custo **×3** representa a raridade de dominar permanentemente esse tipo de dado, enquanto uma **Perícia apropriada** ou um gasto de **Determinação** poderá oferecê-lo apenas em condições específicas, após aprovação das regras dessas opções. O custo e o benefício reais continuarão sob avaliação no playtest.
 
 **A regra de no máximo três dados por fonte permanece.** Graus 4–6 substituem d6 por d10 ou d10 por d12; nunca acrescentam um quarto dado à mesma fonte. A liberação desses graus por Marco ainda precisa de definição.
+
+### Exemplo — Especializar-se ou misturar capacidades
+
+Depois de investir **14 XP em Engenharia 3 (3d10)**, transformar um desses d10 em d12 custa **6 XP extras**, totalizando **20 XP** nessa área. Melhorar o segundo custa outros **12 XP**, e o terceiro, mais **24 XP**. Isso exige decisões importantes para um personagem que também deseja desenvolver Atributos, Práticas e Perícias.
+
+Outra build pode manter **Engenharia 2 (2d10)** e comprar **Manufaturas 2 (2d10)**. Ela não terá um d12 permanente, mas, no **Marco III**, poderá combinar **Inteligência + Engenharia + Manufaturas** em tarefas que realmente exijam as três capacidades. A construção de personagem busca oferecer **especialização e versatilidade contextual**, não simplesmente elevar todos os dados ao maior passo.
 
 ### Exemplo — Quanto rende 7 XP no primeiro nível?
 
@@ -429,7 +439,7 @@ Uma arma pesada pode oferecer dados d12 em vez de d10; isso muda a distribuiçã
 
 # VIII. Determinação, descanso e críticos
 
-Humanos começam com **10 pontos de Determinação**. Esse recurso permite superar limites momentâneos: melhorar um passo de dado, manter um resultado adicional ou ativar uma habilidade especial. Os custos dessas ações não estão definitivamente estabelecidos; para o primeiro playtest, combine-os antes de iniciar a sessão e registre os gastos.
+Humanos começam com **10 pontos de Determinação**. Esse recurso permite superar limites momentâneos: melhorar **temporariamente um passo de dado** (por exemplo, d6 → d10 ou d10 → d12), manter um resultado adicional ou ativar uma habilidade especial. Os custos dessas ações não estão definitivamente estabelecidos; para o primeiro playtest, combine-os antes de iniciar a sessão e registre os gastos. O aumento temporário **não altera o grau comprado na ficha** e não garante sucesso. Perícias especializadas poderão oferecer melhorias condicionais semelhantes, mas seu catálogo ainda não está pronto.
 
 A vida corporal se recupera na referência de **1 ponto por descanso**, desde que a condição do personagem permita descanso efetivo. Ferimentos mais graves devem causar penalidades progressivas; a tabela própria do Codex RPG ainda será produzida.
 
@@ -466,10 +476,10 @@ No **nível 6**, o personagem começa a manter três dados naturalmente, caso te
 |---|---|---|---|
 | **I — nível 5** | Atributo + Prática | **2d6 + 2d10 = 4 dados** | **2**, sendo pelo menos 1 de Atributo. |
 | **II — nível 6** | Atributo + Prática | **2d6 + 2d10 = 4 dados** | **3**, sendo pelo menos 1 de Atributo. |
-| **III — nível 11** | Atributo + Prática + equipamento | **2d6 + 2d10 + 2d10 = 6 dados** | **3**, sendo pelo menos 1 de Atributo. |
-| **IV — nível 16** | Atributo + Prática + equipamento | **2d6 + 2d10 + 2d10 = 6 dados** | **até 4, provisoriamente**, incluindo Atributo. |
+| **III — nível 11** | Atributo + Conhecimento + Prática | **2d6 + 2d10 + 2d10 = 6 dados** | **3**, sendo pelo menos 1 de Atributo. |
+| **IV — nível 16** | Atributo + Conhecimento + Prática | **2d6 + 2d10 + 2d10 = 6 dados** | **até 4, provisoriamente**, incluindo Atributo. |
 
-**Os números rolados nessa tabela são exemplos de fontes já compradas e de equipamento que declara fornecer dados.** Não são presentes automáticos por subir de nível. Cada fonte pode fornecer no máximo **três dados**; portanto, o teto estrutural é **6 dados rolados** até o nível 10 e **9 dados rolados** a partir do nível 11.
+**Os números rolados nessa tabela são exemplos de capacidades já compradas.** Não são presentes automáticos por subir de nível. Cada fonte pode fornecer no máximo **três dados**; portanto, o teto estrutural é **6 dados rolados** até o nível 10 e **9 dados rolados** a partir do nível 11. Equipamentos que concedam dados ainda podem ocupar uma fonte compatível segundo sua ficha; a prioridade de design, porém, é permitir que o personagem **combine o que aprendeu**.
 
 #### Uma rolagem de nível 6, detalhada
 
@@ -479,9 +489,9 @@ No nível 6, pode manter **três dados**, escolhendo o d6 face 6 e os dois d10. 
 
 #### Uma rolagem de nível 11, detalhada
 
-Mais tarde, Maela utiliza **Força 2 (2d6)** + **Manufaturas 2 (2d10)** + **uma máquina de oficina de teste (2d10)** na mesma tarefa. Agora são **três fontes** e **seis dados rolados**. Porém, ela continua mantendo **apenas três**, com ao menos um d6 de Força.
+Mais tarde, Maela investiu em **Inteligência 2 (2d6)**, **Engenharia 2 (2d10)** e **Manufaturas 2 (2d10)**. Ela tenta restaurar os mecanismos de uma antiga bomba d'água. O conhecimento de Engenharia ajuda a compreender o circuito mecânico; a Prática de Manufaturas serve para ajustar as peças; Inteligência orienta o projeto. Como as **três capacidades são relevantes**, ela pode rolar **seis dados de três fontes** no Marco III e manter **três**, incluindo pelo menos um d6 de Inteligência.
 
-O terceiro grupo **não aumenta automaticamente o teto numérico dos três dados mantidos**; melhora a chance de obter resultados favoráveis entre mais opções. Essa é a principal vantagem do Marco III.
+O terceiro grupo **não aumenta automaticamente o teto numérico dos três dados mantidos**; melhora a chance de obter resultados favoráveis entre mais opções. Essa é a principal vantagem do Marco III: **uma build integrada tem novas combinações**, sem precisar possuir d12 em tudo.
 
 **Nenhum Marco oferece um d20 gratuito.** O d20 é uma exceção extraordinária ligada a recursos e técnicas que ainda precisam de validação.
 
