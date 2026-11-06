@@ -1,0 +1,70 @@
+---
+import PortalLayout from "./PortalLayout.astro";
+import { withBase } from "../lib/paths";
+
+interface Props {
+  frontmatter?: { title?: string; description?: string };
+}
+
+const title = Astro.props.frontmatter?.title ?? "Codex RPG — Livro do Jogador";
+const description = Astro.props.frontmatter?.description ?? "Livro do Jogador do Codex RPG, edição experimental para personagens Humanos.";
+const base = import.meta.env.BASE_URL;
+---
+
+<PortalLayout title={title} description={description}>
+  <div class="page-container codex-rpg-shell">
+    <nav class="codex-rpg-breadcrumb" aria-label="Localização">
+      <a href={withBase("codex-rpg/", base)}>Codex RPG</a>
+      <span aria-hidden="true">/</span>
+      <span>Livro do Jogador</span>
+    </nav>
+    <div class="codex-rpg-notice">
+      <strong>PLAYTEST HUMANO · VERSÃO 0.1</strong>
+      <span>Sistema próprio em desenvolvimento. Não confundir com Assimilação RPG ou o SRD privado de Árborius.</span>
+    </div>
+    <article class="codex-rpg-reader">
+      <slot />
+    </article>
+    <div class="codex-rpg-reader-footer">
+      <p>Uma edição em desenvolvimento: custos e parâmetros marcados como experimentais podem mudar.</p>
+      <button type="button" onclick="window.print()">Imprimir / salvar em PDF</button>
+      <a href={withBase("codex-rpg/", base)}>Voltar para Codex RPG</a>
+    </div>
+  </div>
+</PortalLayout>
+
+<style is:global>
+  .codex-rpg-shell { max-width: 980px; }
+  .codex-rpg-breadcrumb {display:flex;align-items:center;gap:.65rem;color:var(--muted);font-size:.8rem;margin-bottom:1.1rem}
+  .codex-rpg-breadcrumb a{color:var(--forest-700);font-weight:800}
+  .codex-rpg-notice {display:grid;gap:.3rem;padding:1rem 1.25rem;background:#faf1e7;border:1px solid #d9c3aa;border-left:5px solid #833e39;border-radius:10px;margin-bottom:1.5rem}
+  .codex-rpg-notice strong{color:#803e36;font:800 .76rem/1.2 ui-sans-serif,system-ui;letter-spacing:.09em}
+  .codex-rpg-notice span{color:#6f5d53;font-size:.85rem}
+  .codex-rpg-reader {background:#fbf8f1;padding:clamp(1.25rem,4vw,3.2rem);border:1px solid #dfd6c9;border-radius:13px;box-shadow:0 9px 28px rgba(29,27,25,.05);font-family:Georgia,'Times New Roman',serif;color:#302c2b;line-height:1.75}
+  .codex-rpg-reader h1{color:#813f36;font:600 clamp(2.3rem,5vw,4rem)/1.08 Georgia,serif;letter-spacing:-.035em;margin:0 0 .6rem}
+  .codex-rpg-reader h2{color:#58352f;font:550 clamp(1.55rem,3vw,2.1rem)/1.18 Georgia,serif;margin:2rem 0 .9rem;letter-spacing:-.02em}
+  .codex-rpg-reader h3{color:#813f36;font:700 1.13rem/1.35 ui-sans-serif,system-ui;margin:1.6rem 0 .7rem}
+  .codex-rpg-reader p{max-width:78ch;margin:.65rem 0 1rem}
+  .codex-rpg-reader li{margin-bottom:.45rem}
+  .codex-rpg-reader a{color:#783e38}
+  .codex-rpg-reader blockquote{padding:.9rem 1.2rem;border-left:4px solid #ae7557;background:#f5ede2;color:#674f46;margin:1.2rem 0}
+  .codex-rpg-reader blockquote p{margin:.25rem 0}
+  .codex-rpg-reader table{width:100%;border-collapse:collapse;margin:1.2rem 0 1.5rem;font:400 .91rem/1.45 ui-sans-serif,system-ui}
+  .codex-rpg-reader thead{background:#ede2d4;color:#633a33}
+  .codex-rpg-reader td,.codex-rpg-reader th{padding:.6rem .7rem;text-align:left;border-bottom:1px solid #e1d8ca;vertical-align:top}
+  .codex-rpg-reader tbody tr:nth-child(even){background:#f5f0e7}
+  .codex-rpg-reader hr{border:0;border-top:1px solid #d6c7b7;margin:2rem 0}
+  .codex-rpg-reader strong{color:#492b28}
+  .codex-rpg-reader code{font-family:ui-monospace,monospace}
+  .codex-rpg-reader-footer{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin:1.4rem 0 3rem;color:var(--muted);font-size:.84rem}
+  .codex-rpg-reader-footer p{margin:0;flex:1 1 220px}
+  .codex-rpg-reader-footer button,.codex-rpg-reader-footer a{padding:.6rem .9rem;border:1px solid #a98a74;background:#fffaf1;color:#633a33;border-radius:7px;font-weight:700;cursor:pointer;text-decoration:none}
+  @media (max-width:720px){.codex-rpg-reader{overflow-wrap:anywhere}.codex-rpg-reader table{font-size:.77rem}.codex-rpg-reader td,.codex-rpg-reader th{padding:.4rem}}
+  @media print{
+    .codex-rpg-breadcrumb,.codex-rpg-reader-footer,.app-header,.app-sidebar,.mobile-navigation{display:none!important}
+    .portal-main{margin:0!important;padding:0!important}
+    .codex-rpg-reader{padding:0;border:0;box-shadow:none}
+    .codex-rpg-reader table{break-inside:avoid}
+    .codex-rpg-reader h2,.codex-rpg-reader h3{break-after:avoid}
+  }
+</style>
