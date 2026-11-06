@@ -109,11 +109,11 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 | 1 — Iniciado | **1d10** | **2 XP** |
 | 2 — Treinado | **2d10** | **4 XP** |
 | 3 — Especialista | **3d10** | **8 XP** |
-| 4 — Primeira evolução | **2d10 + 1d12** | **10 XP** |
-| 5 — Segunda evolução | **1d10 + 2d12** | **14 XP** |
-| 6 — Domínio completo | **3d12** | **18 XP** |
+| 4 — Primeira evolução | **2d10 + 1d12** | **12 XP** |
+| 5 — Segunda evolução | **1d10 + 2d12** | **16 XP** |
+| 6 — Domínio completo | **3d12** | **20 XP** |
 
-**Como comprar os dados:** os três d10 custam **2, 4 e 8 XP**, respectivamente. Após possuir 3d10, a evolução permanente é paga em três passos: **10 XP** para trocar o primeiro d10 por d12, **14 XP** para trocar o segundo e **18 XP** para trocar o terceiro. **São custos incrementais fixos** dessa progressão — não um multiplicador calculado sobre cada dado. O custo acumulado até **3d12 é 56 XP**. O acesso aos graus avançados por Marco segue em playtest.
+**Como comprar os dados:** os três d10 custam **2, 4 e 8 XP**, respectivamente. Depois de alcançar 3d10 (14 XP acumulados), a evolução permanente custa **12 XP** para trocar o primeiro d10 por d12, **16 XP** para trocar o segundo e **20 XP** para trocar o terceiro. **São custos incrementais fixos**, não multiplicadores sobre o preço de cada dado. O custo acumulado até **3d12 é 62 XP**. O acesso a graus avançados por Marco segue em playtest.
 
 **Exemplo rápido:** Comércio 1 custa **2 XP** e fornece **1d10**. Elevar Comércio 1 → 2 custa mais **4 XP**, deixando **2d10**. Comércio 3 custa outros **8 XP**, ficando com **3d10**, ou **14 XP acumulados**.
 
@@ -169,7 +169,7 @@ Neris investe **7 XP de Base** em **Influência 2 (3 XP)**, **Destreza 2 (3 XP)*
 | 5 | **1d6 + 2d10** | **10** | 23 |
 | 6 | **3d10** | **14** | 37 |
 
-**Como comprar os dados:** no grau 0, um Atributo tem 1d4 gratuito. O primeiro d6 **substitui** esse d4. O primeiro, segundo e terceiro d6 custam **1, 2 e 4 XP** (×2 entre os novos dados). Depois de alcançar **3d6**, as três conversões permanentes para d10 custam, nesta ordem, **6, 10 e 14 XP**. São **custos fixos e incrementais**, sempre **4 XP mais baratos** que as respectivas conversões de d10 para d12 (10, 14 e 18 XP). Cada conversão **substitui** um d6 por um d10; não acrescenta um quarto dado à fonte.
+**Como comprar os dados:** no grau 0, um Atributo tem 1d4 gratuito. O primeiro d6 **substitui** esse d4. O primeiro, segundo e terceiro d6 custam **1, 2 e 4 XP** (×2 entre os novos dados). Depois de alcançar **3d6**, as três conversões permanentes para d10 custam, nesta ordem, **6, 10 e 14 XP**. São **custos fixos e incrementais**, sempre **6 XP mais baratos** que as respectivas conversões de d10 para d12 (12, 16 e 20 XP). Cada conversão **substitui** um d6 por um d10; não acrescenta um quarto dado à fonte.
 
 ### Exemplo — Força até 3d10
 
@@ -185,23 +185,23 @@ Esses são dados **permanentes** de Força; uma melhoria temporária por Determi
 | 1 | **1d10** | **2** | 2 |
 | 2 | **2d10** | **4** | 6 |
 | 3 | **3d10** | **8** | 14 |
-| 4 | **2d10 + 1d12** | **10** | 24 |
-| 5 | **1d10 + 2d12** | **14** | 38 |
-| 6 | **3d12** | **18** | 56 |
+| 4 | **2d10 + 1d12** | **12** | 26 |
+| 5 | **1d10 + 2d12** | **16** | 42 |
+| 6 | **3d12** | **20** | 62 |
 
-No grau 0, um Conhecimento ou Prática tem 1d4 básico para improvisar. Ao comprar o primeiro d10, **substitua** esse d4. O primeiro, segundo e terceiro d10 custam **2, 4 e 8 XP** (×2). As três conversões permanentes para d12 custam, nesta ordem, **10, 14 e 18 XP**. São valores definidos para cada melhoria, **não multiplicações de XP**. A conversão substitui um d10 por um d12, sem acrescentar um quarto dado à fonte.
+No grau 0, um Conhecimento ou Prática tem 1d4 básico para improvisar. Ao comprar o primeiro d10, **substitua** esse d4. O primeiro, segundo e terceiro d10 custam **2, 4 e 8 XP** (×2). As três conversões permanentes para d12 custam, nesta ordem, **12, 16 e 20 XP**. São valores definidos para cada melhoria, **não multiplicações de XP**. A conversão substitui um d10 por um d12, sem acrescentar um quarto dado à fonte.
 
-**Importante:** a evolução permanente de **Atributos d6 → d10** usa preços próprios de **6, 10 e 14 XP**; a evolução de **Conhecimentos/Práticas d10 → d12** usa **10, 14 e 18 XP**. Ambas exigem comprar os três dados-base antes de evoluí-los. Um Atributo grau 6 custa **37 XP ao todo**; um Conhecimento ou Prática grau 6 custa **56 XP ao todo**. Esses preços representam especialização permanente; os requisitos de acesso por Marco ainda serão definidos.
+**Importante:** a evolução permanente de **Atributos d6 → d10** usa preços próprios de **6, 10 e 14 XP**; a evolução de **Conhecimentos/Práticas d10 → d12** usa **12, 16 e 20 XP**. Ambas exigem comprar os três dados-base antes de evoluí-los. Um Atributo grau 6 custa **37 XP ao todo**; um Conhecimento ou Prática grau 6 custa **62 XP ao todo**. Esses preços representam especialização permanente; os requisitos de acesso por Marco ainda serão definidos.
 
-**Por que ainda cobrar caro pelo d12?** A tabela de faces do Codex RPG contém combinações diferentes de Sucesso, Adaptação e Incerteza. O d12 amplia possibilidades e riscos, mas **não aumenta o máximo de S + I por dado em comparação com o d10**. Os valores **10/14/18 XP** tornam a evolução permanente uma escolha relevante; uma **Perícia apropriada** ou o uso de **Determinação** poderá oferecer uma melhoria temporária sob condições específicas, após aprovação dos respectivos custos. O equilíbrio dessa escolha ainda será testado.
+**Por que ainda cobrar caro pelo d12?** A tabela de faces do Codex RPG contém combinações diferentes de Sucesso, Adaptação e Incerteza. O d12 amplia possibilidades e riscos, mas **não aumenta o máximo de S + I por dado em comparação com o d10**. Os valores **12/16/20 XP** tornam a evolução permanente uma escolha relevante; uma **Perícia apropriada** ou o uso de **Determinação** poderá oferecer uma melhoria temporária sob condições específicas, após aprovação dos respectivos custos. O equilíbrio dessa escolha ainda será testado.
 
 **A regra de no máximo três dados por fonte permanece.** Graus 4–6 substituem d6 por d10 ou d10 por d12; nunca acrescentam um quarto dado à mesma fonte. A liberação desses graus por Marco ainda precisa de definição.
 
 ### Exemplo — Especializar-se ou misturar capacidades
 
-Depois de investir **14 XP em Engenharia 3 (3d10)**, transformar o primeiro d10 em d12 custa **10 XP extras**, totalizando **24 XP** nessa área. Melhorar o segundo custa **14 XP**, elevando o investimento a **38 XP**; o terceiro custa **18 XP**, totalizando **56 XP**. Isso exige decisões importantes para um personagem que também deseja desenvolver Atributos, Práticas e Perícias.
+Depois de investir **14 XP em Engenharia 3 (3d10)**, transformar o primeiro d10 em d12 custa **12 XP extras**, totalizando **26 XP** nessa área. Melhorar o segundo custa **16 XP**, elevando o investimento a **42 XP**; o terceiro custa **20 XP**, totalizando **62 XP**. Isso exige decisões importantes para um personagem que também deseja desenvolver Atributos, Práticas e Perícias.
 
-Outra build pode manter **Engenharia 2 (2d10)** e comprar **Manufaturas 2 (2d10)**. Ela não terá um d12 permanente, mas, no **Marco III**, poderá combinar **Inteligência + Engenharia + Manufaturas** em tarefas que realmente exijam as três capacidades. A construção de personagem busca oferecer **especialização e versatilidade contextual**, não simplesmente elevar todos os dados ao maior passo.
+Outra build pode manter **Engenharia 2 (2d10)** e comprar **Manufaturas 2 (2d10)**. Ela não terá um d12 permanente, mas poderá usar **Inteligência + Engenharia** para analisar um mecanismo e, em outro teste, **Destreza + Manufaturas** para fabricar a peça necessária. A construção de personagem busca oferecer **especialização e versatilidade contextual**, sempre combinando **duas partes por teste** nesta edição.
 
 ### Exemplo — Quanto rendem 14 XP no primeiro nível?
 
