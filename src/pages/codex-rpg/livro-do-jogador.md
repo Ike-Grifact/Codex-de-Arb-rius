@@ -84,12 +84,19 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Esses nomes e essa divisão são um catálogo de exemplo, não a lista definitiva de capacidades.** Herborismo e Mineração, por exemplo, podem futuramente ter aplicações técnicas e práticas separadas. O essencial agora é a função de cada grupo.
 
-| Grau de Conhecimento ou Prática | Dados que a fonte fornece | Custo incremental para chegar ao grau |
+| Grau de Conhecimento ou Prática | Dados da fonte | Custo para o próximo grau |
 |---|---|---:|
 | 0 — Sem treinamento | Nenhum | — |
-| 1 — Iniciado | **1d10** | 3 XP |
-| 2 — Treinado | **2d10** | 6 XP |
-| 3 — Especialista | **3d10** | 9 XP |
+| 1 — Iniciado | **1d10** | **2 XP** |
+| 2 — Treinado | **2d10** | **4 XP** |
+| 3 — Especialista | **3d10** | **8 XP** |
+| 4 — Primeira evolução | **2d10 + 1d12** | **8 XP** |
+| 5 — Segunda evolução | **1d10 + 2d12** | **16 XP** |
+| 6 — Domínio completo | **3d12** | **32 XP** |
+
+**Como interpretar os multiplicadores nesta edição:** cada novo dado segue a progressão **2, 4 e 8 XP (×2)**. Depois de obter três d10, transformar cada um em d12 custa **quatro vezes o custo de compra daquele dado**: **8, 16 e 32 XP (×4)**, respectivamente. Os preços são **incrementais**, não o custo total do grau. Os graus 4–6 e a utilidade dos d12 ainda serão validados em playtest.
+
+**Exemplo rápido:** Comércio 1 custa **2 XP** e fornece **1d10**. Elevar Comércio 1 → 2 custa mais **4 XP**, deixando **2d10**. Comércio 3 custa outros **8 XP**, ficando com **3d10**, ou **14 XP acumulados**.
 
 **Perícias são outra coisa:** neste livro, o termo nomeia **Características compráveis**, como Mãos Leves, Pegada Firme ou futuras especializações de Mineração. Uma Perícia pode modificar a aplicação dos resultados, criar efeitos e impor pré-requisitos; **não é automaticamente mais uma fonte d10**.
 
@@ -108,55 +115,76 @@ Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustenta
 | Etapa | Decisão | Efeito |
 |---|---|---|
 | 1. Origem | Aprendeu a consertar ferramentas nas oficinas de uma cidade humana. | Identidade narrativa, sem dados gratuitos. |
-| 2. Atributos | Compra **Força 1** e **Inteligência 1**. | **1d6** de cada; **2 + 2 = 4 XP**. |
-| 3. Conhecimento/Prática | Compra **Manufaturas 1**. | **1d10** nas ações compatíveis; **3 XP**. |
+| 2. Atributos | Compra **Força 1**, **Inteligência 1** e **Vigor 1**. | **1d6** de cada; **1 + 1 + 1 = 3 XP**. |
+| 3. Conhecimento/Prática | Compra **Manufaturas 1** e **Mineração 1**. | **1d10** de cada; **2 + 2 = 4 XP**. |
 | 4. Equipamento | Leva ferramentas, corda e uma mochila. | São itens da história; dados extras dependem da ficha do equipamento, não da simples descrição. |
 | 5. Objetivo | Recuperar peças para a bomba d'água. | Motivo para agir e decidir. |
 
-**Cálculo:** Maela gastou **7 dos 7 XP iniciais**, começa com **3 de Vida** (Vigor 0: 3 + 0), **10 de Determinação** e profissão **Aprendiz**. Nenhuma compra de Perícia ou Maestria foi pressuposta. Ela poderá aumentar sua Vida máxima comprando graus de Vigor com XP.
+**Cálculo:** Maela gastou **7 dos 7 XP iniciais**, começa com **4 de Vida** (Vigor 1: 3 + 1), **10 de Determinação** e profissão **Aprendiz**. Nenhuma compra de Perícia ou Maestria foi pressuposta. Os cinco dados adquiridos estão divididos entre fontes diferentes; **não rola os cinco juntos** numa ação de Marco I.
 
 ### Exemplo alternativo — Neris, negociadora Aprendiz
 
-Neris compra **Influência 1 (2 XP)**, **Destreza 1 (2 XP)** e **Comércio 1 (3 XP)**. Seu total também é **7 XP**. Ela é melhor em negociações, enquanto Maela é preparada para trabalhos manuais; **o nível não define a profissão nem concede essas capacidades automaticamente**.
+Neris compra **Influência 1 (1 XP)**, **Destreza 1 (1 XP)** e **Agilidade 1 (1 XP)**; também compra **Comércio 1 (2 XP)** e **Infiltração 1 (2 XP)**. Seu total é **7 XP**. Ela é melhor em negociações e deslocamento discreto, enquanto Maela é preparada para trabalhos manuais; **o nível não define a profissão nem concede capacidades automaticamente**.
 
-## Compras de XP — tabela experimental
+## Compras de XP — tabela experimental revisada
 
-| Grau de Atributo | Dados | XP para subir um grau |
-|---|---|---:|
-| 0 | Nenhum | — |
-| 1 | 1d6 | 2 |
-| 2 | 2d6 | 3 |
-| 3 | 3d6 | 4 |
-| 4 | 2d6 + 1d10 | 5 |
-| 5 | 1d6 + 2d10 | 6 |
-| 6 | 3d10 | 7 |
+### Atributos (antigos Instintos): d6 com evolução para d10
 
-| Grau de Conhecimento/Prática | Dados | XP para subir um grau |
-|---|---|---:|
-| 0 | Nenhum | — |
-| 1 | 1d10 | 3 |
-| 2 | 2d10 | 6 |
-| 3 | 3d10 | 9 |
+| Grau de Atributo | Dados da fonte | XP para avançar | XP total investido |
+|---|---|---:|---:|
+| 0 | Nenhum | — | 0 |
+| 1 | **1d6** | **1** | 1 |
+| 2 | **2d6** | **2** | 3 |
+| 3 | **3d6** | **4** | 7 |
+| 4 | **2d6 + 1d10** | **3** | 10 |
+| 5 | **1d6 + 2d10** | **6** | 16 |
+| 6 | **3d10** | **12** | 28 |
 
-Os custos são **incrementais**. Por exemplo, evoluir Força de grau 0 até grau 2 custa 2 + 3 = 5 XP. Graus superiores e seus requisitos de Marco ainda estão em playtest.
+**Interpretação explícita dos multiplicadores:** o primeiro, segundo e terceiro d6 custam **1, 2 e 4 XP** (cada novo dado custa **×2** em relação ao anterior). Após alcançar três d6, a troca de cada d6 por um d10 custa **×3 do valor original daquele dado**, respectivamente **3, 6 e 12 XP**. Assim, as trocas não aumentam o número de dados da fonte: mudam seu **passo**.
+
+### Conhecimentos e Práticas: d10 com evolução para d12
+
+| Grau de Conhecimento ou Prática | Dados da fonte | XP para avançar | XP total investido |
+|---|---|---:|---:|
+| 0 | Nenhum | — | 0 |
+| 1 | **1d10** | **2** | 2 |
+| 2 | **2d10** | **4** | 6 |
+| 3 | **3d10** | **8** | 14 |
+| 4 | **2d10 + 1d12** | **8** | 22 |
+| 5 | **1d10 + 2d12** | **16** | 38 |
+| 6 | **3d12** | **32** | 70 |
+
+O primeiro, segundo e terceiro d10 custam **2, 4 e 8 XP** (×2). Para converter cada d10 em d12, pague **×4 do custo de compra do dado correspondente**: **8, 16 e 32 XP**.
+
+**Importante:** esses multiplicadores são a interpretação de playtest adotada nesta tabela: **×3 e ×4 multiplicam o custo-base de cada posição de dado, não o preço total acumulado de toda a capacidade**. Um Atributo grau 6 custa **28 XP ao todo**; uma Prática grau 6 custa **70 XP ao todo**. São especializações para uma campanha até o nível 20, não compras previstas para Aprendizes.
+
+**Por que d12 não é automaticamente melhor em todo teste?** A tabela de faces do Codex RPG contém combinações diferentes de Sucesso, Adaptação e Pressão. O d12 amplia possibilidades e riscos, mas **não aumenta o máximo de S + P por dado em comparação com o d10**. Por isso, o custo ×4 precisa ser reavaliado depois de sessões reais.
+
+**A regra de no máximo três dados por fonte permanece.** Graus 4–6 substituem d6 por d10 ou d10 por d12; nunca acrescentam um quarto dado à mesma fonte. A liberação desses graus por Marco ainda precisa de definição.
+
+### Exemplo — Quanto rende 7 XP no primeiro nível?
+
+Um Aprendiz pode comprar **Força 1 (1 XP)** e **Manufaturas 2 (2 + 4 = 6 XP)**. Assim, já rola **1d6 + 2d10** em tarefas compatíveis. Apesar dos **três dados rolados**, no Marco I mantém somente **dois**, sendo pelo menos **um de Força**.
+
+Outra opção é dividir o XP entre vários Atributos e Práticas, sacrificando o tamanho de uma fonte para tentar mais tipos de ação. **A quantidade de XP investida não altera o limite de dados mantidos de cada Marco.**
 
 ### Exemplo — Evoluindo uma fonte
 
-Depois da primeira missão, Maela acumula **5 XP novos**. Pode investir **3 XP** para elevar Força de grau **1 (1d6)** a grau **2 (2d6)** e guardar os **2 XP** restantes; não precisa comprar novamente o primeiro grau.
+Depois da primeira missão, Maela acumula **5 XP novos**. Pode investir **2 XP** para elevar Força de grau **1 (1d6)** a grau **2 (2d6)** e guardar os **3 XP** restantes; não precisa comprar novamente o primeiro grau.
 
-Se preferir, pode comprar **Agilidade 1 por 2 XP** com os pontos restantes, ampliando as ações que consegue tentar. Já comprar **Mineração 1** custaria **3 XP**; ela precisaria economizar mais um ponto. O XP **total conquistado** define o nível, mas somente o XP **disponível e gasto** define as fontes na ficha.
+Ela pode gastar **1 XP** dos pontos restantes em **Agilidade 1**, ampliando as ações que consegue tentar, e guardar **2 XP**. Como já possui **Mineração 1**, elevar Mineração para grau 2 exige **4 XP adicionais**, não o preço inicial de novo. O XP **total conquistado** define o nível, mas somente o XP **disponível e gasto** define as fontes na ficha.
 
 **Dois d6 de Força não significam dois dados mantidos obrigatórios:** no primeiro Marco, você pode rolar os dois mais outra fonte compatível, mas continua mantendo no máximo dois resultados no total.
 
 ### Exemplo — Vigor aumenta a Vida, não oferece Vida grátis
 
-Maela escolhe entre melhorar suas ferramentas ou sobreviver a mais ferimentos. Se comprar **Vigor 1 por 2 XP**, sua Vida máxima aumenta de **3 para 4** e ela recebe **1d6 de Vigor** para ações compatíveis. O custo sai dos mesmos 7 XP iniciais; seria necessário rever outra compra da ficha.
+Maela escolhe entre melhorar suas ferramentas ou sobreviver a mais ferimentos. Na ficha inicial revisada, ela comprou **Vigor 1 por 1 XP**: sua Vida máxima aumentou de **3 para 4**, e ela recebeu **1d6 de Vigor** para ações compatíveis. Se subir para **Vigor 2**, paga **2 XP adicionais**, recebe **2d6 de Vigor** e passa a ter **5 de Vida máxima**.
 
-Para alcançar **6 de Vida**, ela precisaria de **Vigor 3**. Pela tabela incremental experimental, chegar a Vigor 3 custa **2 + 3 + 4 = 9 XP**, acima do orçamento inicial de 7 XP. Portanto, **nenhum Humano começa automaticamente com 6 de Vida** nessa criação de teste.
+Para alcançar **6 de Vida**, o personagem precisa de **Vigor 3**. Com a nova tabela, Vigor 3 custa **1 + 2 + 4 = 7 XP**: é **possível** chegar a 6 de Vida no nível 1 gastando **todos os 7 XP iniciais em Vigor**, mas isso deixa o Aprendiz sem outros Atributos e sem Conhecimentos/Práticas adquiridos. **Ninguém recebe 6 de Vida automaticamente.**
 
 ### Exemplo de ficha inicial
 
-**Maela, Aprendiz da Forja.** Força 1 (1d6) custa 2 XP; Inteligência 1 (1d6), 2 XP; Manufaturas 1 (1d10), 3 XP. Total: **7 XP**. **Vigor 0 e Vida: 3**. Determinação: 10. Sua ficha não faz dela uma ferreira de uma classe fechada, mas seu caminho aponta para Engenharia, coleta de minérios e reparos.
+**Maela, Aprendiz da Forja.** Força 1 (1d6) custa **1 XP**; Inteligência 1 (1d6), **1 XP**; Vigor 1 (1d6), **1 XP**; Manufaturas 1 (1d10), **2 XP**; Mineração 1 (1d10), **2 XP**. Total: **7 XP**. **Vigor 1 e Vida: 4**. Determinação: 10. Sua ficha não faz dela uma ferreira de classe fechada, mas seu caminho aponta para Engenharia, coleta de minérios e reparos.
 
 # IV. O que os dados dizem
 
@@ -468,7 +496,7 @@ A referência experimental de XP é: **7 XP para a criação; 5 XP conquistados 
 | Ao acumular 25 XP após a criação | **32** | **6** | Depende de quanto já foi gasto |
 | Ao acumular 50 XP após a criação | **57** | **11** | Depende de quanto já foi gasto |
 
-Por exemplo, Maela pode gastar seus **5 XP livres** no nível 2 para comprar **Força 2 (3 XP adicionais)** e **Agilidade 1 (2 XP)**. Subir de nível não concede automaticamente esses dados: ela os recebe porque **pagou as compras**.
+Por exemplo, Maela pode gastar **3 dos 5 XP livres** no nível 2 para comprar **Força 2 (2 XP adicionais)** e **Agilidade 1 (1 XP)**, guardando **2 XP**. Subir de nível não concede automaticamente esses dados: ela os recebe porque **pagou as compras**.
 
 O mesmo raciocínio vale para Perícias e futuras Maestrias, que precisam disputar o mesmo orçamento de XP.
 
