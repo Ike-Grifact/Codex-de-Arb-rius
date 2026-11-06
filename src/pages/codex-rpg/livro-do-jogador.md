@@ -63,7 +63,9 @@ Quando uma ação realmente exigir teste, **pelo menos um dos resultados mantido
 
 # III. Faça um Humano Aprendiz
 
-A criação inicial usa os seguintes valores de referência discutidos para o jogo: **6 pontos de vida corporal**, **10 pontos de Determinação** e **7 XP para comprar suas primeiras capacidades**. O corpo humano também possui uma referência de vitalidade de 18, da qual deriva a reserva corporal inicial pela divisão em três. A fórmula exata pela qual Vigor aumenta a vida ainda está em desenvolvimento; não some um bônus arbitrário nesta edição.
+A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos de Determinação** e **7 XP para comprar suas primeiras capacidades**. **Cada grau de Vigor acrescenta +1 ponto à Vida máxima.** Todos os Atributos começam em grau 0, inclusive Vigor; portanto, o Humano que não comprar Vigor tem **3 de Vida**.
+
+**Vida máxima = 3 + grau de Vigor.** Por exemplo: Vigor 0 → **3 de Vida**; Vigor 1 → **4**; Vigor 2 → **5**; Vigor 3 → **6**. Aumentar Vigor posteriormente aumenta a Vida máxima em +1 por grau adquirido. Esta fórmula substitui a antiga referência de 6 pontos iniciais e não depende de uma divisão de Vitalidade.
 
 **Passo 1 — Origem.** Diga de que cidade, caravana, arca, oficina ou comunidade seu Aprendiz veio e o que o motiva a explorar o mundo.
 
@@ -111,7 +113,7 @@ Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustenta
 | 4. Equipamento | Leva ferramentas, corda e uma mochila. | São itens da história; dados extras dependem da ficha do equipamento, não da simples descrição. |
 | 5. Objetivo | Recuperar peças para a bomba d'água. | Motivo para agir e decidir. |
 
-**Cálculo:** Maela gastou **7 dos 7 XP iniciais**, começa com **6 de Vida**, **10 de Determinação** e profissão **Aprendiz**. Nenhuma compra de Perícia ou Maestria foi pressuposta.
+**Cálculo:** Maela gastou **7 dos 7 XP iniciais**, começa com **3 de Vida** (Vigor 0: 3 + 0), **10 de Determinação** e profissão **Aprendiz**. Nenhuma compra de Perícia ou Maestria foi pressuposta. Ela poderá aumentar sua Vida máxima comprando graus de Vigor com XP.
 
 ### Exemplo alternativo — Neris, negociadora Aprendiz
 
@@ -146,9 +148,15 @@ Se preferir, pode comprar **Agilidade 1 por 2 XP** com os pontos restantes, ampl
 
 **Dois d6 de Força não significam dois dados mantidos obrigatórios:** no primeiro Marco, você pode rolar os dois mais outra fonte compatível, mas continua mantendo no máximo dois resultados no total.
 
+### Exemplo — Vigor aumenta a Vida, não oferece Vida grátis
+
+Maela escolhe entre melhorar suas ferramentas ou sobreviver a mais ferimentos. Se comprar **Vigor 1 por 2 XP**, sua Vida máxima aumenta de **3 para 4** e ela recebe **1d6 de Vigor** para ações compatíveis. O custo sai dos mesmos 7 XP iniciais; seria necessário rever outra compra da ficha.
+
+Para alcançar **6 de Vida**, ela precisaria de **Vigor 3**. Pela tabela incremental experimental, chegar a Vigor 3 custa **2 + 3 + 4 = 9 XP**, acima do orçamento inicial de 7 XP. Portanto, **nenhum Humano começa automaticamente com 6 de Vida** nessa criação de teste.
+
 ### Exemplo de ficha inicial
 
-**Maela, Aprendiz da Forja.** Força 1 (1d6) custa 2 XP; Inteligência 1 (1d6), 2 XP; Manufaturas 1 (1d10), 3 XP. Total: **7 XP**. Vida: 6. Determinação: 10. Sua ficha não faz dela uma ferreira de uma classe fechada, mas seu caminho aponta para Engenharia, coleta de minérios e reparos.
+**Maela, Aprendiz da Forja.** Força 1 (1d6) custa 2 XP; Inteligência 1 (1d6), 2 XP; Manufaturas 1 (1d10), 3 XP. Total: **7 XP**. **Vigor 0 e Vida: 3**. Determinação: 10. Sua ficha não faz dela uma ferreira de uma classe fechada, mas seu caminho aponta para Engenharia, coleta de minérios e reparos.
 
 # IV. O que os dados dizem
 
@@ -488,7 +496,7 @@ Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; *
 
 # XI. O que ainda está em teste
 
-Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos de Determinação; tabela de ferimentos e Vigor; fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; catálogo inicial de Perícias e seus custos; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
+Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos de Determinação; tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; catálogo inicial de Perícias e seus custos; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
 
 O mestre e os jogadores devem decidir qualquer regra ainda pendente antes da sessão e registrar o procedimento utilizado. **Não é necessário inventar estatísticas para as linhagens não-humanas:** elas não são personagens de jogador nesta primeira edição.
 
