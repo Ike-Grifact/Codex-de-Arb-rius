@@ -53,13 +53,15 @@ A progressão é aberta, mas não irrestrita. Você precisa pagar XP por capacid
 | **Influência** | negocia, convence, comanda, ameaça, interpreta intenções sociais |
 | **Vigor** | suporta esforço, resiste a ferimentos, preserva concentração |
 
-**Todos os Atributos começam em grau 0**. Você pode comprá-los com XP. Um Atributo em zero não oferece dados para testes arriscados. Ações corriqueiras continuam possíveis sem rolagem.
+**Todos os Atributos começam em grau 0**, e todos podem tentar ações arriscadas mesmo sem investir XP. Um Atributo no grau 0 fornece **1d4 de improviso** quando for pertinente. Comprar grau 1 **substitui o d4 por 1d6**; o dado básico não é somado aos dados comprados. Ações corriqueiras continuam possíveis sem rolagem.
 
-### Exemplo — Atributo zero e ações sem teste
+### Exemplo — Atributo zero ainda permite tentar
 
-Maela possui **Agilidade 0**. Ela consegue caminhar e subir escadas seguras normalmente, pois isso não requer teste. Porém, se precisar saltar um vão enquanto pedras caem, um teste arriscado de Agilidade exige ao menos **um dado de Atributo apropriado**: ela não possui nenhum. Ela pode buscar outra solução, como instalar uma corda com Inteligência e Manufaturas, esperar uma oportunidade ou pedir ajuda. Ter uma ferramenta não cria automaticamente um Atributo que falta.
+Maela possui **Agilidade 0**. Caminhar e subir escadas seguras não requer teste, mas saltar um vão enquanto pedras caem é arriscado. Ela pode usar seu **1d4 básico de Agilidade**: as faces 1 e 2 são vazias; a face 3 traz **1 Incerteza**; a face 4 traz **1 Incerteza + 1 Adaptação**. Uma **DT 1** pode ser alcançada, mas nunca por Sucesso puro nesse dado.
 
-Quando uma ação realmente exigir teste, **pelo menos um dos resultados mantidos deve vir de Atributo**. Não basta possuir d10 de equipamento ou de treinamento.
+Ela também pode buscar uma rota segura, usar uma corda ou pedir ajuda. O d4 garante a chance de agir, não a mesma competência de alguém treinado.
+
+**Pelo menos um dado mantido deve vir do Atributo pertinente**, mesmo que seja o d4 básico. Dados de equipamento ou treinamento não substituem essa exigência.
 
 # III. Faça um Humano Aprendiz
 
@@ -78,24 +80,24 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Passo 1 — Origem.** Diga de que cidade, caravana, arca, oficina ou comunidade seu Aprendiz veio e o que o motiva a explorar o mundo.
 
-**Passo 2 — Atributos (7 XP de Base).** Escolha em que capacidades deseja investir usando **apenas os 7 XP de Base**. Para o teste inicial, compre pelo menos um Atributo de grau 1, pois um teste arriscado precisa manter pelo menos um dado de Atributo.
+**Passo 2 — Atributos (7 XP de Base).** Escolha em que capacidades deseja investir usando **apenas os 7 XP de Base**. **Mesmo sem comprar um Atributo**, ele fornece 1d4 básico para uma ação pertinente. Comprar grau 1 muda esse dado para 1d6. Em testes, mantenha pelo menos um dado de Atributo, inclusive se for o d4.
 
-**Passo 3 — Formação (7 XP).** Com a segunda reserva, escolha Conhecimentos e Práticas compatíveis com a história. Exemplos: Erudição, Ciências, Engenharia; Armas, Furtividade, Infiltração, Expressão, Manufaturas, Herborismo, Mineração, Domesticação ou Comércio. Futuras Perícias específicas também poderão disputar essa reserva quando seus efeitos e custos forem definidos. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
+**Passo 3 — Formação (7 XP).** Com a segunda reserva, escolha Conhecimentos e Práticas compatíveis com a história. Exemplos: Erudição, Ciências, Engenharia; Armas, Furtividade, Infiltração, Exincerteza, Manufaturas, Herborismo, Mineração, Domesticação ou Comércio. Futuras Perícias específicas também poderão disputar essa reserva quando seus efeitos e custos forem definidos. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
 
 ### Entendendo Conhecimentos, Práticas e Perícias
 
-**Conhecimentos** representam aquilo que o personagem **sabe, compreende, investiga ou projeta**. **Práticas** representam aquilo que ele **treinou e executa**. Ambos são **fontes de dados d10** compradas com XP, mas o nome da capacidade precisa fazer sentido na ação narrada.
+**Conhecimentos** representam aquilo que o personagem **sabe, compreende, investiga ou projeta**. **Práticas** representam aquilo que ele **treinou e executa**. Quando comprados, ambos oferecem **fontes de dados d10**. Sem investimento, uma tentativa comum pertinente pode usar **1d4 básico de improviso** na posição de uma fonte não treinada. O nome da capacidade precisa fazer sentido na ação narrada.
 
 | Grupo | Exemplos provisórios | Quando a fonte pode entrar na pilha |
 |---|---|---|
 | **Conhecimentos** | Ciências, Engenharia, Erudição, Geografia, Medicina | Reconhecer fenômenos, planejar estruturas, interpretar registros, diagnosticar e estudar uma situação |
-| **Práticas** | Armas, Furtividade, Infiltração, Manufaturas, Mineração, Herborismo, Expressão, Comércio, Sobrevivência | Manejar armas, esconder-se, entrar em lugares protegidos, fabricar, extrair minério, coletar ervas, negociar e sobreviver |
+| **Práticas** | Armas, Furtividade, Infiltração, Manufaturas, Mineração, Herborismo, Exincerteza, Comércio, Sobrevivência | Manejar armas, esconder-se, entrar em lugares protegidos, fabricar, extrair minério, coletar ervas, negociar e sobreviver |
 
 **Esses nomes e essa divisão são um catálogo de exemplo, não a lista definitiva de capacidades.** Herborismo e Mineração, por exemplo, podem futuramente ter aplicações técnicas e práticas separadas. O essencial agora é a função de cada grupo.
 
 | Grau de Conhecimento ou Prática | Dados da fonte | Custo para o próximo grau |
 |---|---|---:|
-| 0 — Sem treinamento | Nenhum | — |
+| 0 — Sem treinamento | **1d4 (improviso)** | — |
 | 1 — Iniciado | **1d10** | **2 XP** |
 | 2 — Treinado | **2d10** | **4 XP** |
 | 3 — Especialista | **3d10** | **8 XP** |
@@ -108,6 +110,8 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 **Exemplo rápido:** Comércio 1 custa **2 XP** e fornece **1d10**. Elevar Comércio 1 → 2 custa mais **4 XP**, deixando **2d10**. Comércio 3 custa outros **8 XP**, ficando com **3d10**, ou **14 XP acumulados**.
 
 **Perícias específicas são diferentes dos treinamentos:** neste livro, o termo nomeia **Características compráveis**, como Mãos Leves, Pegada Firme ou futuras especializações de Mineração. Uma Perícia pode modificar a aplicação dos resultados, criar efeitos e impor pré-requisitos; **não é automaticamente mais uma fonte d10**. O nome **«orçamento de Formação/Perícias»** identifica de onde sai o XP inicial, **não transforma Conhecimentos e Práticas em Perícias especiais**.
+
+**Sem uma Perícia, o personagem ainda pode tentar ações comuns.** Seu Atributo e um Conhecimento/Prática não treinado podem fornecer dados, incluindo d4 básicos. O d4 **não reproduz poderes, bônus ou exceções exclusivos** de uma Perícia. É possível **gastar Determinação para elevar temporariamente um d4 a d6** antes do teste; o custo desse gasto permanece em playtest.
 
 **Direção para o desenvolvimento:** evoluções permanentes até d12 devem representar investimento concentrado. **Perícias especializadas e Determinação** poderão oferecer **aumento temporário ou condicionado do passo de um dado**, quando suas regras e custos forem definidos. Isso não concede d12 gratuito a qualquer personagem nem transforma a Perícia automaticamente numa quarta fonte. A intenção é premiar a **sinergia entre capacidades adquiridas** em situações específicas.
 
@@ -137,7 +141,7 @@ Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustenta
 
 ### Exemplo alternativo — Neris, negociadora Aprendiz
 
-Neris investe **7 XP de Base** em **Influência 2 (3 XP)**, **Destreza 2 (3 XP)** e **Agilidade 1 (1 XP)**. Com a reserva de Formação, compra **Comércio 1 (2 XP)**, **Infiltração 1 (2 XP)** e **Expressão 1 (2 XP)**, guardando **1 XP** dessa reserva. Ela é melhor em negociações e deslocamento discreto, enquanto Maela é preparada para trabalhos manuais; **o nível não define a profissão nem concede capacidades automaticamente**.
+Neris investe **7 XP de Base** em **Influência 2 (3 XP)**, **Destreza 2 (3 XP)** e **Agilidade 1 (1 XP)**. Com a reserva de Formação, compra **Comércio 1 (2 XP)**, **Infiltração 1 (2 XP)** e **Exincerteza 1 (2 XP)**, guardando **1 XP** dessa reserva. Ela é melhor em negociações e deslocamento discreto, enquanto Maela é preparada para trabalhos manuais; **o nível não define a profissão nem concede capacidades automaticamente**.
 
 ## Compras de XP — tabela experimental revisada
 
@@ -145,7 +149,7 @@ Neris investe **7 XP de Base** em **Influência 2 (3 XP)**, **Destreza 2 (3 XP)*
 
 | Grau de Atributo | Dados da fonte | XP para avançar | XP total investido |
 |---|---|---:|---:|
-| 0 | Nenhum | — | 0 |
+| 0 | **1d4 básico (sem investimento)** | — | 0 |
 | 1 | **1d6** | **1** | 1 |
 | 2 | **2d6** | **2** | 3 |
 | 3 | **3d6** | **4** | 7 |
@@ -153,7 +157,7 @@ Neris investe **7 XP de Base** em **Influência 2 (3 XP)**, **Destreza 2 (3 XP)*
 | 5 | **1d6 + 2d10** | **10** | 23 |
 | 6 | **3d10** | **14** | 37 |
 
-**Como comprar os dados:** o primeiro, segundo e terceiro d6 custam **1, 2 e 4 XP** (×2 entre os novos dados). Depois de alcançar **3d6**, as três conversões permanentes para d10 custam, nesta ordem, **6, 10 e 14 XP**. São **custos fixos e incrementais**, sempre **4 XP mais baratos** que as respectivas conversões de d10 para d12 (10, 14 e 18 XP). Cada conversão **substitui** um d6 por um d10; não acrescenta um quarto dado à fonte.
+**Como comprar os dados:** no grau 0, um Atributo tem 1d4 gratuito. O primeiro d6 **substitui** esse d4. O primeiro, segundo e terceiro d6 custam **1, 2 e 4 XP** (×2 entre os novos dados). Depois de alcançar **3d6**, as três conversões permanentes para d10 custam, nesta ordem, **6, 10 e 14 XP**. São **custos fixos e incrementais**, sempre **4 XP mais baratos** que as respectivas conversões de d10 para d12 (10, 14 e 18 XP). Cada conversão **substitui** um d6 por um d10; não acrescenta um quarto dado à fonte.
 
 ### Exemplo — Força até 3d10
 
@@ -165,7 +169,7 @@ Esses são dados **permanentes** de Força; uma melhoria temporária por Determi
 
 | Grau de Conhecimento ou Prática | Dados da fonte | XP para avançar | XP total investido |
 |---|---|---:|---:|
-| 0 | Nenhum | — | 0 |
+| 0 | **1d4 básico (sem treinamento)** | — | 0 |
 | 1 | **1d10** | **2** | 2 |
 | 2 | **2d10** | **4** | 6 |
 | 3 | **3d10** | **8** | 14 |
@@ -173,11 +177,11 @@ Esses são dados **permanentes** de Força; uma melhoria temporária por Determi
 | 5 | **1d10 + 2d12** | **14** | 38 |
 | 6 | **3d12** | **18** | 56 |
 
-O primeiro, segundo e terceiro d10 custam **2, 4 e 8 XP** (×2). As três conversões permanentes para d12 custam, nesta ordem, **10, 14 e 18 XP**. São valores definidos para cada melhoria, **não multiplicações de XP**. A conversão substitui um d10 por um d12, sem acrescentar um quarto dado à fonte.
+No grau 0, um Conhecimento ou Prática tem 1d4 básico para improvisar. Ao comprar o primeiro d10, **substitua** esse d4. O primeiro, segundo e terceiro d10 custam **2, 4 e 8 XP** (×2). As três conversões permanentes para d12 custam, nesta ordem, **10, 14 e 18 XP**. São valores definidos para cada melhoria, **não multiplicações de XP**. A conversão substitui um d10 por um d12, sem acrescentar um quarto dado à fonte.
 
 **Importante:** a evolução permanente de **Atributos d6 → d10** usa preços próprios de **6, 10 e 14 XP**; a evolução de **Conhecimentos/Práticas d10 → d12** usa **10, 14 e 18 XP**. Ambas exigem comprar os três dados-base antes de evoluí-los. Um Atributo grau 6 custa **37 XP ao todo**; um Conhecimento ou Prática grau 6 custa **56 XP ao todo**. Esses preços representam especialização permanente; os requisitos de acesso por Marco ainda serão definidos.
 
-**Por que ainda cobrar caro pelo d12?** A tabela de faces do Codex RPG contém combinações diferentes de Sucesso, Adaptação e Pressão. O d12 amplia possibilidades e riscos, mas **não aumenta o máximo de S + P por dado em comparação com o d10**. Os valores **10/14/18 XP** tornam a evolução permanente uma escolha relevante; uma **Perícia apropriada** ou o uso de **Determinação** poderá oferecer uma melhoria temporária sob condições específicas, após aprovação dos respectivos custos. O equilíbrio dessa escolha ainda será testado.
+**Por que ainda cobrar caro pelo d12?** A tabela de faces do Codex RPG contém combinações diferentes de Sucesso, Adaptação e Incerteza. O d12 amplia possibilidades e riscos, mas **não aumenta o máximo de S + I por dado em comparação com o d10**. Os valores **10/14/18 XP** tornam a evolução permanente uma escolha relevante; uma **Perícia apropriada** ou o uso de **Determinação** poderá oferecer uma melhoria temporária sob condições específicas, após aprovação dos respectivos custos. O equilíbrio dessa escolha ainda será testado.
 
 **A regra de no máximo três dados por fonte permanece.** Graus 4–6 substituem d6 por d10 ou d10 por d12; nunca acrescentam um quarto dado à mesma fonte. A liberação desses graus por Marco ainda precisa de definição.
 
@@ -217,56 +221,60 @@ Codex RPG utiliza dados simbólicos especiais. Você pode consultar a tabela aba
 
 ## Símbolos rúnicos temporários
 
-Os resultados são representados por **glifos rúnicos provisórios**. As letras **S**, **A** e **P** continuam sendo abreviações mecânicas para anotações, fórmulas e acessibilidade. Os glifos são inspirados em runas históricas, mas **não constituem um alfabeto oficial do cenário** nesta edição.
+Os resultados são representados por **glifos rúnicos provisórios**. As letras **S**, **A** e **I** continuam sendo abreviações mecânicas para anotações, fórmulas e acessibilidade. Os glifos são inspirados em runas históricas, mas **não constituem um alfabeto oficial do cenário** nesta edição.
 
 | Resultado | Runa | Sigla | Função |
 |---|:---:|:---:|---|
 | **Sucesso** | **ᛏ** | S | Avança na ação, ajuda a superar a DT e conta integralmente para dano. A forma lembra uma espada apontada para cima. |
-| **Adaptação** | **ᛃ** | A | Redireciona a ação, passa oportunidade a um aliado ou reduz Pressão. **Não** é Sucesso nem aumenta a DT por si só. |
-| **Pressão** | **ᚦ** | P | Ajuda a superar a DT, mas alimenta as oportunidades da oposição; conta pela metade no dano, arredondando para baixo. A forma espinhosa lembra as Espinhas do Mundo. |
+| **Adaptação** | **ᛃ** | A | Redireciona a ação, passa oportunidade a um aliado ou reduz Incerteza. **Não** é Sucesso nem aumenta a DT por si só. |
+| **Incerteza** | **ᚦ** | I | Ajuda a superar a DT com risco, custo, hesitação ou intervenção da oposição; conta pela metade no dano, arredondando para baixo. A forma espinhosa lembra as Espinhas do Mundo. |
 | **Face vazia** | **○** | — | Nenhum símbolo: não acrescenta pontos ao teste. |
 
-**Leitura rápida:** **ᛏᛃᚦ** corresponde a **1S + 1A + 1P**. Várias runas na mesma face se acumulam; por exemplo, **ᛏᛏᚦ** corresponde a **2S + 1P**.
+**Leitura rápida:** **ᛏᛃᚦ** corresponde a **1S + 1A + 1I**. Várias runas na mesma face se acumulam; por exemplo, **ᛏᛏᚦ** corresponde a **2S + 1I**.
 
 ### Tabela de conversão dos dados numéricos
 
-| Face | d6 | d10 | d12 |
-|---|---|---|---|
-| 1 | ○ | ○ | ○ |
-| 2 | ○ | ○ | ○ |
-| 3 | ᚦ | ᚦ | ᚦ |
-| 4 | ᚦ | ᚦ | ᚦ |
-| 5 | ᛃᚦ | ᛃᚦ | ᛃᚦ |
-| 6 | ᛏ | ᛏ | ᛏ |
-| 7 | — | ᛏᛏ | ᛏᛏ |
-| 8 | — | ᛏᛃ | ᛏᛃ |
-| 9 | — | ᛏᛃᚦ | ᛏᛃᚦ |
-| 10 | — | ᛏᛏᚦ | ᛏᛏᚦ |
-| 11 | — | — | ᛏᛃᛃᚦ |
-| 12 | — | — | ᚦᚦ |
+| Face | d4 (improviso) | d6 | d10 | d12 |
+|---|---|---|---|---|
+| 1 | ○ | ○ | ○ | ○ |
+| 2 | ○ | ○ | ○ | ○ |
+| 3 | ᚦ | ᚦ | ᚦ | ᚦ |
+| 4 | ᛃᚦ | ᚦ | ᚦ | ᚦ |
+| 5 | — | ᛃᚦ | ᛃᚦ | ᛃᚦ |
+| 6 | — | ᛏ | ᛏ | ᛏ |
+| 7 | — | — | ᛏᛏ | ᛏᛏ |
+| 8 | — | — | ᛏᛃ | ᛏᛃ |
+| 9 | — | — | ᛏᛃᚦ | ᛏᛃᚦ |
+| 10 | — | — | ᛏᛏᚦ | ᛏᛏᚦ |
+| 11 | — | — | — | ᛏᛃᛃᚦ |
+| 12 | — | — | — | ᚦᚦ |
 
-**Atenção:** o travessão **—** nas linhas acima indica que o dado não possui aquela face; já o círculo **○** indica uma face existente sem símbolos.
+**Atenção:** o travessão **—** nas linhas acima indica que o dado não possui aquela face; já o círculo **○** indica uma face existente sem símbolos. O d4 tem **○, ○, ᚦ, ᛃᚦ**: não possui Sucesso puro.
 
 ### Como ler os símbolos em dados comuns
 
-A tabela mostra **todas as faces dos dados d6, d10 e d12** usadas nesta edição. Não há tabela de d20 porque suas faces e custos extraordinários ainda não foram aprovados.
+A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edição. O d4 básico não é somado aos dados adquiridos de uma fonte; é substituído por eles. Não há tabela de d20 porque suas faces e custos extraordinários ainda não foram aprovados.
 
 | Exemplo de face | Leitura rúnica | Para superar DT | Outros efeitos |
 |---|---|---:|---|
+| **d4, face 3** | **ᚦ = 1I** | **1** | Êxito incerto possível numa DT 1. |
+| **d4, face 4** | **ᛃᚦ = 1A + 1I** | **1** | A Adaptação pode mitigar a Incerteza depois do teste. |
 | **d6, face 6** | **ᛏ = 1S** | **1** | Um Sucesso. |
-| **d10, face 7** | **ᛏᛏ = 2S** | **2** | Dois Sucessos sem Pressão. |
-| **d10, face 9** | **ᛏᛃᚦ = 1S + 1A + 1P** | **2** | A Adaptação é separada; a Pressão permanece como símbolo obtido. |
-| **d10, face 10** | **ᛏᛏᚦ = 2S + 1P** | **3** | Atinge DT mais alta, mas produz Pressão. |
-| **d12, face 11** | **ᛏᛃᛃᚦ = 1S + 2A + 1P** | **2** | Tem quatro símbolos ao todo, mas só dois contam para DT. |
-| **d12, face 12** | **ᚦᚦ = 2P** | **2** | Nenhum Sucesso puro e duas Pressões. |
+| **d10, face 7** | **ᛏᛏ = 2S** | **2** | Dois Sucessos sem Incerteza. |
+| **d10, face 9** | **ᛏᛃᚦ = 1S + 1A + 1I** | **2** | A Adaptação é separada; a Incerteza permanece como símbolo obtido. |
+| **d10, face 10** | **ᛏᛏᚦ = 2S + 1I** | **3** | Atinge DT mais alta, mas produz Incerteza. |
+| **d12, face 11** | **ᛏᛃᛃᚦ = 1S + 2A + 1I** | **2** | Tem quatro símbolos ao todo, mas só dois contam para DT. |
+| **d12, face 12** | **ᚦᚦ = 2I** | **2** | Nenhum Sucesso puro e duas Incertezas. |
 
-**Regra de leitura:** para a DT, conte **S + P**. A letra **A** significa **Adaptação**, não aumenta o valor da rolagem e não gera dano direto. A mesma face pode produzir mais de um símbolo.
+**Regra de leitura:** para a DT, conte **S + I**. A letra **A** significa **Adaptação**, não aumenta o valor da rolagem e não gera dano direto. A mesma face pode produzir mais de um símbolo.
+
+**Incerteza (I)** é o novo nome do símbolo anteriormente chamado de Pressão (P), com a mesma função: ajuda a vencer a DT, mas traz risco, custo ou oportunidade para a oposição. No d4, **não existe Sucesso (S)**: qualquer contribuição para a DT vem de Incerteza. Se uma Adaptação reduzir a Incerteza transferida, isso ocorre **depois da conferência da DT**; não apaga o risco que existia na rolagem.
 
 ### Exemplo — Dado mais pesado nem sempre é mais seguro
 
 Um d10 pode mostrar **ᛏᛏ** na face 7, enquanto o d12 pode mostrar **ᚦᚦ** na face 12. Ambos contribuem com **2 para DT**, mas só o primeiro tem **2 Sucessos puros**. D12 não significa «dano maior por padrão»: ele tem uma distribuição de resultados diferente, com mais oportunidades e riscos.
 
-A progressão de passos considerada é **d6 → d10 → d12 → d20**, mas a passagem para **d20** permanece excepcional e não participa destes exemplos de playtest.
+A progressão de passos considerada é **d4 → d6 → d10 → d12 → d20**, mas a passagem para **d20** permanece excepcional e não participa destes exemplos de playtest.
 
 
 Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de Sucessos; o d12 apresenta combinações mais arriscadas. O **d20** representa extremos: somente um pode compor a pilha de um personagem, e seus resultados definitivos ainda estão em teste. Ele **não é necessário no playtest inicial humano**.
@@ -274,22 +282,22 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de S
 # V. Como fazer uma rolagem
 
 1. **Declare a ação e o objetivo.** O mestre apresenta a DT quando ela é relevante.
-2. **Escolha um Atributo apropriado.** Ele é a fonte obrigatória de dados.
-3. **Acrescente outra fonte permitida.** Pode ser um Conhecimento, uma Prática ou os dados de um equipamento. Os Marcos avançados permitem três fontes.
-4. **Role a pilha.** Cada fonte pode contribuir com até três dados.
+2. **Escolha um Atributo apropriado.** Ele é a fonte obrigatória de dados, com **1d4 básico quando o grau for zero**.
+3. **Acrescente outra fonte permitida.** Pode ser um Conhecimento, uma Prática ou dados de um equipamento. Se o treinamento for pertinente mas não comprado, use seu **1d4 de improviso**. Os Marcos avançados permitem três fontes.
+4. **Role a pilha.** Cada fonte pode contribuir com até três dados comprados **ou um único d4 básico**, nunca ambos.
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
-6. **Compare com a DT.** Some apenas os Sucessos e Pressões dos dados mantidos. Se alcançar ou superar a DT, a ação acontece. Depois resolva Adaptações, dano e Pressões.
+6. **Compare com a DT.** Some apenas os Sucessos e Incertezas dos dados mantidos. Se alcançar ou superar a DT, a ação acontece. Depois resolva Adaptações, dano e Incertezas.
 
-**Exemplo.** Maela tenta forçar uma passagem de DT 2 usando Força 1 (1d6) e uma ferramenta que forneça 1d10. Ela rola S no d6 e SAP no d10. Mantém os dois: **2 Sucessos + 1 Pressão = 3 para atingir a DT**. Ela consegue abrir a passagem, mas a Pressão pode ser usada pelo mestre para fazer uma ameaça intervir. A Adaptação pode reduzir em 1 a Pressão transmitida, se esse for o efeito escolhido.
+**Exemplo.** Maela tenta forçar uma passagem de DT 2 usando Força 1 (1d6) e uma ferramenta que forneça 1d10. Ela rola S no d6 e SAI no d10. Mantém os dois: **2 Sucessos + 1 Incerteza = 3 para atingir a DT**. Ela consegue abrir a passagem, mas a Incerteza pode ser usada pelo mestre para fazer uma ameaça intervir. A Adaptação pode reduzir em 1 a Incerteza transmitida, se esse for o efeito escolhido.
 
 ### Exemplo completo de uma rolagem: seis etapas
 
 1. **Ação:** Maela tenta consertar uma engrenagem antes de a oficina inundar.
 2. **DT:** o mestre define **DT 2** para o reparo arriscado.
 3. **Fontes:** **Inteligência 1 (1d6)** + **Manufaturas 1 (1d10)**. O Conhecimento ou a Prática só entra porque é pertinente ao reparo.
-4. **Rolagem:** o d6 cai na **face 6 = ᛏ (S)**; o d10 cai na **face 9 = ᛏᛃᚦ (S + A + P)**.
+4. **Rolagem:** o d6 cai na **face 6 = ᛏ (S)**; o d10 cai na **face 9 = ᛏᛃᚦ (S + A + I)**.
 5. **Resultados mantidos:** no Marco I ela pode manter até **dois dados** e precisa incluir um de **Atributo**. Mantém ambos.
-6. **DT e efeitos:** **2 Sucessos + 1 Pressão = 3**, portanto o reparo de DT 2 funciona. Maela ainda possui **1 Adaptação**, que pode usar para reduzir **1 Pressão transferida**, se essa for sua escolha.
+6. **DT e efeitos:** **2 Sucessos + 1 Incerteza = 3**, portanto o reparo de DT 2 funciona. Maela ainda possui **1 Adaptação**, que pode usar para reduzir **1 Incerteza transferida**, se essa for sua escolha.
 
 O d10 não «vira» uma terceira fonte por conter três símbolos: **símbolos e dados são medidas diferentes**.
 
@@ -300,14 +308,26 @@ Mais tarde, Maela tem **Força 2 (2d6)** e usa uma alavanca experimental que **f
 | Fonte | Face | Símbolos |
 |---|---:|---|
 | Força — primeiro d6 | 6 | **ᛏ (S)** |
-| Força — segundo d6 | 5 | **ᛃᚦ (A + P)** |
+| Força — segundo d6 | 5 | **ᛃᚦ (A + I)** |
 | Alavanca — d10 | 7 | **ᛏᛏ (2S)** |
 
-No Marco I, ela **mantém o primeiro d6 e o d10**, totalizando **3S sem Pressão**. O segundo d6 foi rolado, mas descartado; seus símbolos não entram na resolução. Ela não pode escolher somente o dado de equipamento quando a rolagem exige o Atributo obrigatório.
+No Marco I, ela **mantém o primeiro d6 e o d10**, totalizando **3S sem Incerteza**. O segundo d6 foi rolado, mas descartado; seus símbolos não entram na resolução. Ela não pode escolher somente o dado de equipamento quando a rolagem exige o Atributo obrigatório.
+
+### Exemplo — Tentar mesmo sem treinamento
+
+Corven tem **Agilidade 1 (1d6)**, mas **Infiltração 0 (1d4)**. Ele tenta atravessar uma passagem com guarda distraído, de **DT 1**. A rolagem usa duas fontes: **1d6 de Agilidade + 1d4 de Infiltração**.
+
+Se o d6 cair em **1 (○)** e o d4 cair em **3 (ᚦ)**, o total é **1 Incerteza**, suficiente para a DT 1. O objetivo é alcançado com risco, não com Sucesso puro. Se o d4 cair em **4 (ᛃᚦ)**, a Incerteza também conta como 1 para a DT, e a Adaptação pode reduzir a Incerteza transferida **depois de verificar o resultado**.
+
+Sem Agilidade comprada, Corven poderia tentar **1d4 de Agilidade + 1d4 de Infiltração**, se ambas as fontes forem pertinentes. Os dois dados só alcançam DT 2 caso ambos forneçam Incerteza: o improviso continua arriscado. **O d4 não fornece um terceiro dado extra a quem já comprou uma fonte.**
+
+### Exemplo — Determinação com treinamento ausente
+
+Neris não comprou **Medicina**, mas precisa socorrer alguém. Pode tentar usando **1d4 de Medicina não treinada** e o Atributo apropriado. Ao **gastar Determinação para melhorar um passo**, pode transformar temporariamente **esse d4 em d6** antes da rolagem. O novo dado só vale nesse teste e não concede a capacidade permanentemente. **O custo em Determinação ainda precisa ser fixado.**
 
 ### Exemplo de falha mesmo com Adaptação
 
-Corven, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᛃᚦ = A + P)**. A soma para a DT é **1**, portanto **ele falha**. A Adaptação não conta como Sucesso e não transforma o resultado em êxito.
+Corven, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᛃᚦ = A + I)**. A soma para a DT é **1**, portanto **ele falha**. A Adaptação não conta como Sucesso e não transforma o resultado em êxito.
 
 ## DTs para iniciar os testes
 
@@ -342,13 +362,13 @@ Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltraç�
 
 **Ser bem-sucedido em Influência não controla pensamentos:** o guarda pode aceitar conversar, oferecer um acordo ou pedir garantias, conforme a intenção declarada e o contexto.
 
-## Acerto limpo, acerto sob Pressão e Falha
+## Acerto limpo, acerto sob Incerteza e Falha
 
-Se **S + P** alcança a DT **sem nenhuma Pressão mantida**, você teve um **acerto limpo**. Em conflitos, isso ajuda a preservar a iniciativa.
+Se **S + I** alcança a DT **sem nenhuma Incerteza mantida**, você teve um **acerto limpo**. Em conflitos, isso ajuda a preservar a iniciativa. **O d4 básico nunca gera acerto limpo por si só**, pois só contribui para a DT através de Incerteza.
 
-Se alcança a DT **com Pressões mantidas**, obtém o objetivo, mas entrega recursos à oposição. Em um combate, isso pode abrir um contra-ataque; durante uma fuga, pode provocar perseguição; em uma conversa, pode permitir que um líder inimigo interfira.
+Se alcança a DT **com Incertezas mantidas**, obtém o objetivo, mas entrega recursos à oposição. Em um combate, isso pode abrir um contra-ataque; durante uma fuga, pode provocar perseguição; em uma conversa, pode permitir que um líder inimigo interfira.
 
-Se **S + P** fica abaixo da DT, a ação falha e a iniciativa pode retornar à oposição.
+Se **S + I** fica abaixo da DT, a ação falha e a iniciativa pode retornar à oposição.
 
 ### Exemplo — Três resultados para uma mesma DT
 
@@ -356,25 +376,25 @@ Corven tenta entrar na mina com **Agilidade 1 (1d6) + Infiltração 1 (1d10)** c
 
 | Dados mantidos | Resultado | Desfecho |
 |---|---|---|
-| d6 face **6 (S)** + d10 face **6 (S)** | **2S, 0P** | **Acerto limpo**: ele entra sem fornecer Pressão. |
-| d6 face **3 (P)** + d10 face **6 (S)** | **1S + 1P = 2** | **Acerto sob Pressão**: ele entra, mas a oposição ganha Pressão. |
-| d6 face **1 (○)** + d10 face **5 (A + P)** | **0S + 1P = 1** | **Falha**: a Adaptação não eleva a soma à DT. |
+| d6 face **6 (S)** + d10 face **6 (S)** | **2S, 0I** | **Acerto limpo**: ele entra sem fornecer Incerteza. |
+| d6 face **3 (I)** + d10 face **6 (S)** | **1S + 1I = 2** | **Acerto sob Incerteza**: ele entra, mas a oposição ganha Incerteza. |
+| d6 face **1 (○)** + d10 face **5 (A + I)** | **0S + 1I = 1** | **Falha**: a Adaptação não eleva a soma à DT. |
 
 **Sucesso na tarefa e ausência de riscos não são a mesma coisa.** Dois acertos podem atingir a mesma DT e produzir consequências muito diferentes.
 
 # VI. Adaptação e iniciativa
 
-Uma **Adaptação** mantida pode ser gasta para **dar a oportunidade de agir a um aliado antes da resposta inimiga** ou **reduzir em 1 a Pressão transferida**. Ela não é um Sucesso extra. Um personagem precisa de resultados que atinjam a DT, e depois pode escolher se usa sua Adaptação para acelerar a equipe ou proteger o grupo da próxima resposta.
+Uma **Adaptação** mantida pode ser gasta para **dar a oportunidade de agir a um aliado antes da resposta inimiga** ou **reduzir em 1 a Incerteza transferida**. Ela não é um Sucesso extra. Um personagem precisa de resultados que atinjam a DT, e depois pode escolher se usa sua Adaptação para acelerar a equipe ou proteger o grupo da próxima resposta.
 
-Não existe uma rodada individual fixa. A sequência passa entre jogadores e inimigos conforme acertos limpos, acertos sob Pressão, falhas, Adaptações e intervenções. Um combatente habilidoso pode eliminar ameaças fracas em sequência, mas inimigos mais perigosos exigem resultados arriscados e alimentam o banco de Pressões do mestre.
+Não existe uma rodada individual fixa. A sequência passa entre jogadores e inimigos conforme acertos limpos, acertos sob Incerteza, falhas, Adaptações e intervenções. Um combatente habilidoso pode eliminar ameaças fracas em sequência, mas inimigos mais perigosos exigem resultados arriscados e alimentam o banco de Incertezas do mestre.
 
-**O mestre pode usar Pressões para mais que atacar:** segurar uma porta, atrasar uma negociação, mobilizar um líder, sabotar uma estrutura, ameaçar um NPC, fortalecer uma rolagem ou interromper um ritual.
+**O mestre pode usar Incertezas para mais que atacar:** segurar uma porta, atrasar uma negociação, mobilizar um líder, sabotar uma estrutura, ameaçar um NPC, fortalecer uma rolagem ou interromper um ritual.
 
 ### Exemplo — Uma cena sem turnos fixos
 
-Corven passa pelo vigia com **acerto limpo** e mantém o fluxo de ação dos jogadores. Neris tenta negociar com o chefe da patrulha: ela alcança a DT, mas gera **1 Pressão**. O mestre registra esse recurso e, quando puder pagar uma ativação apropriada, o chefe pode mandar **fechar o portão**, **interromper a conversa** ou **ameaçar um trabalhador**. A intenção da cena ainda é conseguir peças, não matar a patrulha.
+Corven passa pelo vigia com **acerto limpo** e mantém o fluxo de ação dos jogadores. Neris tenta negociar com o chefe da patrulha: ela alcança a DT, mas gera **1 Incerteza**. O mestre registra esse recurso e, quando puder pagar uma ativação apropriada, o chefe pode mandar **fechar o portão**, **interromper a conversa** ou **ameaçar um trabalhador**. A intenção da cena ainda é conseguir peças, não matar a patrulha.
 
-Se Neris também mantiver uma **Adaptação**, pode usá-la para **reduzir 1 Pressão transferida** ou facilitar a passagem da oportunidade a um aliado, conforme a situação e a regra de iniciativa aplicada.
+Se Neris também mantiver uma **Adaptação**, pode usá-la para **reduzir 1 Incerteza transferida** ou facilitar a passagem da oportunidade a um aliado, conforme a situação e a regra de iniciativa aplicada.
 
 **Não existem ataques gratuitos para cada inimigo presente.** A oposição age através das oportunidades e ativações que o conflito permitir. Custos exatos de ativação permanecem em playtest.
 
@@ -386,15 +406,15 @@ Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (S)** e **d10
 
 **Não existe rolagem separada de dano.** Quando um ataque atinge a DT, use os mesmos dados mantidos:
 
-**Dano = Sucessos + metade das Pressões (arredondada para baixo).**
+**Dano = Sucessos + metade das Incertezas (arredondada para baixo).**
 
-Por exemplo, 2 Sucessos + 1 Pressão geram **2 de dano**; 1 Sucesso + 2 Pressões geram **2 de dano**; 3 Pressões geram **1 de dano**. As Pressões continuam sendo recurso de oposição, salvo capacidades que as reduzam.
+Por exemplo, 2 Sucessos + 1 Incerteza geram **2 de dano**; 1 Sucesso + 2 Incertezas geram **2 de dano**; 3 Incertezas geram **1 de dano**. As Incertezas continuam sendo recurso de oposição, salvo capacidades que as reduzam.
 
 ### Exemplo — Acerto, dano e Vida são coisas distintas
 
-Corven ataca um saqueador de **DT Geral 2**, estabelecida como exemplo para o encontro. Sua **Destreza 1 fornece 1d6** e sua arma experimental **fornece 1d10**. Ele mantém d6 face **6 (1S)** e d10 face **10 (2S + 1P)**.
+Corven ataca um saqueador de **DT Geral 2**, estabelecida como exemplo para o encontro. Sua **Destreza 1 fornece 1d6** e sua arma experimental **fornece 1d10**. Ele mantém d6 face **6 (1S)** e d10 face **10 (2S + 1I)**.
 
-**Para acertar:** 3S + 1P = **4**, suficiente para DT 2. **Dano calculado:** 3S + metade de 1P arredondada para baixo = **3**. **Pressão:** o resultado ainda tem **1P**.
+**Para acertar:** 3S + 1I = **4**, suficiente para DT 2. **Dano calculado:** 3S + metade de 1I arredondada para baixo = **3**. **Incerteza:** o resultado ainda tem **1I**.
 
 Se a proteção receber o golpe, esses **3 pontos de dano calculado** podem afetar sua integridade conforme a ficha. Se o golpe atingir **diretamente o corpo humano**, a hipótese de playtest atual é perder **1 ponto de Vida por ferimento comum**; não confunda dano calculado com perda corporal. Exceções fatais, colossais e especiais continuam em desenvolvimento.
 
@@ -444,27 +464,27 @@ Em contrapartida, as placas minerais de uma criatura podem ser descritas como pa
 
 ## Armas
 
-Armas **leves** favorecem manejo e dados como d10; **médias** oferecem combinações equilibradas; **pesadas** podem fornecer mais d12 e resultados extremos com mais Pressões. O dano vem dos símbolos obtidos, não de um dado de dano separado ou de um bônus automático pela classe da arma.
+Armas **leves** favorecem manejo e dados como d10; **médias** oferecem combinações equilibradas; **pesadas** podem fornecer mais d12 e resultados extremos com mais Incertezas. O dano vem dos símbolos obtidos, não de um dado de dano separado ou de um bônus automático pela classe da arma.
 
 ### Exemplo — O equipamento é uma fonte de dados
 
 Uma lança equilibrada **de exemplo para playtest** fornece **2d10**. Corven tem **Destreza 1 (1d6)**. Portanto, ao usá-la numa ação compatível, rola **1d6 + 2d10**, mas no Marco I **mantém dois dados**, incluindo o d6 de Destreza.
 
-Uma arma pesada pode oferecer dados d12 em vez de d10; isso muda a distribuição de **S, A e P**, não cria automaticamente «+2 dano por ser pesada». O equipamento precisa ter seus dados **declarados antes do teste**.
+Uma arma pesada pode oferecer dados d12 em vez de d10; isso muda a distribuição de **S, A e I**, não cria automaticamente «+2 dano por ser pesada». O equipamento precisa ter seus dados **declarados antes do teste**.
 
 # VIII. Determinação, descanso e críticos
 
-Humanos começam com **10 pontos de Determinação**. Esse recurso permite superar limites momentâneos: melhorar **temporariamente um passo de dado** (por exemplo, d6 → d10 ou d10 → d12), manter um resultado adicional ou ativar uma habilidade especial. Os custos dessas ações não estão definitivamente estabelecidos; para o primeiro playtest, combine-os antes de iniciar a sessão e registre os gastos. O aumento temporário **não altera o grau comprado na ficha** e não garante sucesso. Perícias especializadas poderão oferecer melhorias condicionais semelhantes, mas seu catálogo ainda não está pronto.
+Humanos começam com **10 pontos de Determinação**. Esse recurso permite superar limites momentâneos: melhorar **temporariamente um passo de dado** (**d4 → d6**, d6 → d10 ou d10 → d12), manter um resultado adicional ou ativar uma habilidade especial. Os custos dessas ações não estão definitivamente estabelecidos; para o primeiro playtest, combine-os antes de iniciar a sessão e registre os gastos. O aumento temporário **não altera o grau comprado na ficha** e não garante sucesso. Perícias especializadas poderão oferecer melhorias condicionais semelhantes, mas seu catálogo ainda não está pronto.
 
 A vida corporal se recupera na referência de **1 ponto por descanso**, desde que a condição do personagem permita descanso efetivo. Ferimentos mais graves devem causar penalidades progressivas; a tabela própria do Codex RPG ainda será produzida.
 
-Quando o personagem mantém **pelo menos dois dados em suas faces máximas de crítico**, recupera **1 Determinação**. A identificação exata dessas faces, especialmente no d12, será padronizada antes da edição definitiva dos dados físicos.
+Quando o personagem mantém **pelo menos dois dados em suas faces máximas de crítico**, recupera **1 Determinação**. A identificação exata dessas faces, **incluindo se o d4 é elegível para críticos** e quais são as faces de crítico do d12, será padronizada antes da edição definitiva dos dados físicos.
 
 ### Exemplo — Determinação para ultrapassar um limite
 
 Maela possui **Força 1 (1d6)** e uma ferramenta de exemplo com **1d10**, mantendo ambos. O máximo normal para a DT é **1 + 3 = 4**; uma comporta de **DT 5** não pode ser superada por esses dois dados sem recursos adicionais.
 
-Se a mesa adotar **provisoriamente** o custo de **1 Determinação para aumentar um passo**, ela pode elevar o d6 a **d10 antes da rolagem**. Se os dados mostrarem **face 7 (2S)** e **face 10 (2S + 1P)**, alcança **5 para a DT**. Não é garantia de êxito: apenas torna a tentativa possível.
+Se a mesa adotar **provisoriamente** o custo de **1 Determinação para aumentar um passo**, ela pode elevar o d6 a **d10 antes da rolagem**. Se os dados mostrarem **face 7 (2S)** e **face 10 (2S + 1I)**, alcança **5 para a DT**. Não é garantia de êxito: apenas torna a tentativa possível.
 
 ### Exemplo — Manter dado adicional
 
@@ -472,7 +492,7 @@ Depois de aumentar Força para **2d6**, Maela rola **2d6 + 1d10** com uma ferram
 
 ### Exemplo — Crítico
 
-Corven mantém um d6 na **face 6** e um d10 na **face 10**. Os dois dados atingiram suas **faces máximas numéricas**, cumprindo o critério inicial de crítico; recupera **1 Determinação** até o limite da reserva. Porém, a face 10 do d10 contém **1 Pressão**. Portanto, **um crítico não é necessariamente um acerto limpo**. A padronização final em d12 e d20 ainda está em teste.
+Corven mantém um d6 na **face 6** e um d10 na **face 10**. Os dois dados atingiram suas **faces máximas numéricas**, cumprindo o critério inicial de crítico; recupera **1 Determinação** até o limite da reserva. Porém, a face 10 do d10 contém **1 Incerteza**. Portanto, **um crítico não é necessariamente um acerto limpo**. A padronização final em d12 e d20 ainda está em teste.
 
 # IX. Marcos, XP e profissões
 
@@ -498,9 +518,9 @@ No **nível 6**, o personagem começa a manter três dados naturalmente, caso te
 
 #### Uma rolagem de nível 6, detalhada
 
-Maela tem **Força 2 (2d6)** e **Manufaturas 2 (2d10)**, comprados com XP. Ela rola **d6 face 6 (S), d6 face 3 (P), d10 face 7 (2S), d10 face 10 (2S + P)**.
+Maela tem **Força 2 (2d6)** e **Manufaturas 2 (2d10)**, comprados com XP. Ela rola **d6 face 6 (S), d6 face 3 (I), d10 face 7 (2S), d10 face 10 (2S + I)**.
 
-No nível 6, pode manter **três dados**, escolhendo o d6 face 6 e os dois d10. Seu resultado é **5S + 1P = 6 para DT**. O d6 face 3 é descartado. No nível 5, mantendo apenas dois dados e respeitando um d6 de Atributo, conseguiria no máximo **4 para a DT** com essa mesma sequência de faces: o d6 face 6 (**1S**) e o d10 face 10 (**2S + 1P**). No nível 6 chega a **6**, graças ao terceiro dado mantido.
+No nível 6, pode manter **três dados**, escolhendo o d6 face 6 e os dois d10. Seu resultado é **5S + 1I = 6 para DT**. O d6 face 3 é descartado. No nível 5, mantendo apenas dois dados e respeitando um d6 de Atributo, conseguiria no máximo **4 para a DT** com essa mesma sequência de faces: o d6 face 6 (**1S**) e o d10 face 10 (**2S + 1I**). No nível 6 chega a **6**, graças ao terceiro dado mantido.
 
 #### Uma rolagem de nível 11, detalhada
 
@@ -531,15 +551,15 @@ As profissões surgem da build: uma trilha de Armas, Força e montaria pode leva
 
 A comunidade de Maela precisa recuperar um gerador mecânico abandonado. A oficina está isolada por um portão deformado, e dois saqueadores tentam alcançar o mesmo equipamento. O objetivo dos Aprendizes é **recuperar uma peça essencial e sair com vida**, não necessariamente vencer um combate.
 
-**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se os personagens acumularem Pressões, o mestre pode fazer os saqueadores segurarem o portão, ameaçarem um morador, derrubarem uma estrutura ou pedirem reforços.
+**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se os personagens acumularem Incertezas, o mestre pode fazer os saqueadores segurarem o portão, ameaçarem um morador, derrubarem uma estrutura ou pedirem reforços.
 
-Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantas Pressões surgiram e como os jogadores resolveram a cena.
+Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantas Incertezas surgiram e como os jogadores resolveram a cena.
 
 ### Exemplo de sessão — Três soluções diferentes
 
-**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha de equipamento. Se superar **DT 2**, abre passagem; se houver Pressão, os saqueadores podem ganhar uma oportunidade para interferir.
+**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha de equipamento. Se superar **DT 2**, abre passagem; se houver Incerteza, os saqueadores podem ganhar uma oportunidade para interferir.
 
-**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio**, contra uma **DT 3 demonstrativa**. O sucesso pode garantir um acordo que não exija violência. A Pressão pode trazer cobranças adicionais, a chegada de um líder ou um terceiro interessado.
+**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio**, contra uma **DT 3 demonstrativa**. O sucesso pode garantir um acordo que não exija violência. A Incerteza pode trazer cobranças adicionais, a chegada de um líder ou um terceiro interessado.
 
 **Caminho C: procurar a janela.** Corven utiliza **Agilidade + Infiltração**. Como a entrada é arriscada e exposta, o mestre definiu **DT 4**: é possível que um Aprendiz descubra outra maneira de chegar à janela, reduza o perigo com preparação ou simplesmente desista do caminho. Nem toda DT precisa ser vencida com força bruta.
 
