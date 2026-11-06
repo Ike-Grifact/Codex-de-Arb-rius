@@ -57,11 +57,19 @@ A progressão é aberta, mas não irrestrita. Você precisa pagar XP por capacid
 
 ### Exemplo — Atributo zero ainda permite tentar
 
-Maela possui **Agilidade 0**. Caminhar e subir escadas seguras não requer teste, mas saltar um vão enquanto pedras caem é arriscado. Ela pode usar seu **1d4 básico de Agilidade**: as faces 1 e 2 são vazias; a face 3 traz **1 Incerteza**; a face 4 traz **1 Incerteza + 1 Adaptação**. Uma **DT 1** pode ser alcançada, mas nunca por Sucesso puro nesse dado.
+Maela possui **Agilidade 0**. Caminhar em segurança não exige teste, mas saltar um vão enquanto pedras caem é arriscado. **Todo teste combina duas partes pertinentes**, mesmo quando ambas não foram compradas.
 
-Ela também pode buscar uma rota segura, usar uma corda ou pedir ajuda. O d4 garante a chance de agir, não a mesma competência de alguém treinado.
+| Abordagem de Maela | Duas partes do teste | Dados rolados |
+|---|---|---|
+| Saltar com impulso e equilíbrio | **Agilidade 0 + Atletismo 0** | **1d4 + 1d4 = 2d4** |
+| Improvisar uma vara de apoio, calculando seu ponto de alavanca | **Agilidade 0 + Engenharia 1** | **1d4 + 1d10**, se o planejamento técnico for realmente relevante |
+| Saltar após treinar Atletismo | **Agilidade 0 + Atletismo 1** | **1d4 + 1d10** |
 
-**Pelo menos um dado mantido deve vir do Atributo pertinente**, mesmo que seja o d4 básico. Dados de equipamento ou treinamento não substituem essa exigência.
+**Atletismo é uma Prática sugerida para o playtest**, que cobre saltar, escalar, nadar e correr sob risco; seu nome e sua presença no catálogo definitivo ainda precisam ser aprovados. **Engenharia não substitui Atletismo num salto comum**: só contribui se houver um problema técnico real, como projetar o uso de um bastão, apoio ou mecanismo. O bastão por si só não fornece uma terceira fonte ou dados de equipamento não declarados.
+
+Se os **2d4** mostrarem faces **3 e 4**, Maela mantém ambos: obtém **2 Incertezas para a DT** e **1 Adaptação**. Pode superar **DT 2**, mas não possui Sucesso puro. A Adaptação pode reduzir em 1 a Incerteza transferida **depois** da conferência da DT. Se ambos mostrarem a face **4**, também alcança as duas faces máximas para **crítico**, respeitando a regra de recuperação de Determinação.
+
+**Pelo menos um dado mantido deve vir do Atributo pertinente.** A segunda parte pode ser Conhecimento, Prática ou equipamento com dados declarados. Gastar Determinação para elevar um dado em um passo não cria uma terceira parte.
 
 # III. Faça um Humano Aprendiz
 
@@ -82,16 +90,16 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Passo 2 — Atributos (7 XP de Base).** Escolha em que capacidades deseja investir usando **apenas os 7 XP de Base**. **Mesmo sem comprar um Atributo**, ele fornece 1d4 básico para uma ação pertinente. Comprar grau 1 muda esse dado para 1d6. Em testes, mantenha pelo menos um dado de Atributo, inclusive se for o d4.
 
-**Passo 3 — Formação (7 XP).** Com a segunda reserva, escolha Conhecimentos e Práticas compatíveis com a história. Exemplos: Erudição, Ciências, Engenharia; Armas, Furtividade, Infiltração, Exincerteza, Manufaturas, Herborismo, Mineração, Domesticação ou Comércio. Futuras Perícias específicas também poderão disputar essa reserva quando seus efeitos e custos forem definidos. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
+**Passo 3 — Formação (7 XP).** Com a segunda reserva, escolha Conhecimentos e Práticas compatíveis com a história. Exemplos: Erudição, Ciências, Engenharia; Armas, Furtividade, Infiltração, Expressão, Manufaturas, Herborismo, Mineração, Domesticação ou Comércio. Futuras Perícias específicas também poderão disputar essa reserva quando seus efeitos e custos forem definidos. A lista final e a divisão entre Conhecimento e Prática ainda não estão fechadas.
 
 ### Entendendo Conhecimentos, Práticas e Perícias
 
-**Conhecimentos** representam aquilo que o personagem **sabe, compreende, investiga ou projeta**. **Práticas** representam aquilo que ele **treinou e executa**. Quando comprados, ambos oferecem **fontes de dados d10**. Sem investimento, uma tentativa comum pertinente pode usar **1d4 básico de improviso** na posição de uma fonte não treinada. O nome da capacidade precisa fazer sentido na ação narrada.
+**Conhecimentos** representam aquilo que o personagem **sabe, compreende, investiga ou projeta**. **Práticas** representam aquilo que ele **treinou e executa**. Quando comprados, ambos oferecem **fontes de dados d10**. Sem investimento, uma tentativa comum pertinente pode usar **1d4 básico de improviso** na posição de uma fonte não treinada. O nome da capacidade precisa fazer sentido na ação narrada. **Atletismo** é um exemplo provisório de Prática para esforços físicos coordenados, não uma Perícia especial com efeitos exclusivos já definidos.
 
 | Grupo | Exemplos provisórios | Quando a fonte pode entrar na pilha |
 |---|---|---|
 | **Conhecimentos** | Ciências, Engenharia, Erudição, Geografia, Medicina | Reconhecer fenômenos, planejar estruturas, interpretar registros, diagnosticar e estudar uma situação |
-| **Práticas** | Armas, Furtividade, Infiltração, Manufaturas, Mineração, Herborismo, Exincerteza, Comércio, Sobrevivência | Manejar armas, esconder-se, entrar em lugares protegidos, fabricar, extrair minério, coletar ervas, negociar e sobreviver |
+| **Práticas** | Armas, Atletismo, Furtividade, Infiltração, Manufaturas, Mineração, Herborismo, Expressão, Comércio, Sobrevivência | Manejar armas, saltar, escalar, esconder-se, infiltrar-se, fabricar, extrair minério, coletar ervas, negociar e sobreviver |
 
 **Esses nomes e essa divisão são um catálogo de exemplo, não a lista definitiva de capacidades.** Herborismo e Mineração, por exemplo, podem futuramente ter aplicações técnicas e práticas separadas. O essencial agora é a função de cada grupo.
 
@@ -119,9 +127,13 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustentação de uma galeria, se tiver Engenharia comprada. Para **extrair minério**, outro personagem pode usar **Força + Mineração**. Para **negociar o preço**, Neris usa **Influência + Comércio**. Embora todas essas áreas contribuam para a mesma missão, não concedem os mesmos dados em todas as situações.
 
-**Atributo + Conhecimento** e **Atributo + Prática** são exemplos de duas fontes. O equipamento pode ocupar uma dessas fontes, quando sua ficha conceder dados. Antes do nível 11, não combine simultaneamente **Atributo + Prática + Equipamento** numa única rolagem: são três fontes, além do limite inicial.
+### Regra fundamental — Combinação de duas partes
 
-**A partir do Marco III**, o foco da build será poder combinar **três capacidades compatíveis** na mesma ação, por exemplo **Inteligência + Engenharia + Manufaturas** para recuperar uma máquina antiga. Cada uma precisa ter sido comprada separadamente e fazer sentido naquela situação; o Mestre não aceita qualquer combinação só para reunir dados melhores. Atributo continua obrigatório, enquanto Perícias podem futuramente aperfeiçoar as fontes segundo efeitos próprios.
+**Todo teste é uma combinação de exatamente duas partes:** **um Atributo pertinente + uma segunda fonte** (Conhecimento, Prática ou equipamento que conceda dados). Cada fonte oferece seus dados comprados ou **1d4 básico de improviso**, se estiver em grau 0. Isso permite **2d4** quando nenhuma das duas foi comprada. A escolha deve nascer da abordagem narrada, não da vontade de usar uma ficha mais forte.
+
+No exemplo do vão: **Agilidade + Atletismo** resolve um salto; **Agilidade + Engenharia** só serve se a personagem estiver usando conhecimento técnico de forma concreta, como para aproveitar um bastão como alavanca. Equipamento narrativo não adiciona automaticamente uma terceira parte. **Sempre mantenha ao menos um dado do Atributo**.
+
+**Combinar três capacidades num teste é uma possibilidade futura de design, ainda não habilitada no Livro do Jogador, inclusive nos Marcos III e IV.** As builds continuam importantes porque permitem escolher **quais duas fontes** aplicar em situações diferentes. Perícias podem vir a oferecer exceções específicas, com regras próprias.
 
 **Passo 4 — Equipamento.** Registre itens, ferramentas e armas de acordo com o objetivo da missão. O equipamento pode fornecer dados próprios, mas não substitui a obrigação de manter um dado de Atributo em testes.
 
@@ -141,7 +153,7 @@ Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustenta
 
 ### Exemplo alternativo — Neris, negociadora Aprendiz
 
-Neris investe **7 XP de Base** em **Influência 2 (3 XP)**, **Destreza 2 (3 XP)** e **Agilidade 1 (1 XP)**. Com a reserva de Formação, compra **Comércio 1 (2 XP)**, **Infiltração 1 (2 XP)** e **Exincerteza 1 (2 XP)**, guardando **1 XP** dessa reserva. Ela é melhor em negociações e deslocamento discreto, enquanto Maela é preparada para trabalhos manuais; **o nível não define a profissão nem concede capacidades automaticamente**.
+Neris investe **7 XP de Base** em **Influência 2 (3 XP)**, **Destreza 2 (3 XP)** e **Agilidade 1 (1 XP)**. Com a reserva de Formação, compra **Comércio 1 (2 XP)**, **Infiltração 1 (2 XP)** e **Expressão 1 (2 XP)**, guardando **1 XP** dessa reserva. Ela é melhor em negociações e deslocamento discreto, enquanto Maela é preparada para trabalhos manuais; **o nível não define a profissão nem concede capacidades automaticamente**.
 
 ## Compras de XP — tabela experimental revisada
 
@@ -283,7 +295,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de S
 
 1. **Declare a ação e o objetivo.** O mestre apresenta a DT quando ela é relevante.
 2. **Escolha um Atributo apropriado.** Ele é a fonte obrigatória de dados, com **1d4 básico quando o grau for zero**.
-3. **Acrescente outra fonte permitida.** Pode ser um Conhecimento, uma Prática ou dados de um equipamento. Se o treinamento for pertinente mas não comprado, use seu **1d4 de improviso**. Os Marcos avançados permitem três fontes.
+3. **Escolha obrigatoriamente a segunda parte.** O teste combina **Atributo + Conhecimento, Prática ou equipamento** pertinentes. Se a segunda parte estiver no grau 0, fornece **1d4 de improviso**. Duas partes não compradas resultam em **2d4**.
 4. **Role a pilha.** Cada fonte pode contribuir com até três dados comprados **ou um único d4 básico**, nunca ambos.
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
 6. **Compare com a DT.** Some apenas os Sucessos e Incertezas dos dados mantidos. Se alcançar ou superar a DT, a ação acontece. Depois resolva Adaptações, dano e Incertezas.
@@ -515,10 +527,10 @@ Como **os dois dados mantidos saíram nas faces máximas (4 e 6)**, Corven tamb�
 |---|---|---:|---:|
 | I | 1–5 | até 2 | 2 dados |
 | II | 6–10 | até 2 | 3 dados |
-| III | 11–15 | até 3 | 3 dados |
-| IV | 16–20 | até 3 | até 4 dados **(em teste)** |
+| III | 11–15 | **2** | 3 dados |
+| IV | 16–20 | **2** | até 4 dados **(em teste)** |
 
-No **nível 6**, o personagem começa a manter três dados naturalmente, caso tenha dados suficientes. No **nível 11**, pode combinar até três fontes compatíveis; isso amplia a pilha, mas não cria dados que não existiam na ficha. Uma progressão extraordinária poderá habilitar o quarto dado em Marco avançado, ainda provisório.
+No **nível 6**, o personagem começa a manter três dados naturalmente, caso tenha dados suficientes. **Todos os Marcos desta versão continuam usando exatamente duas partes por teste**, com pelo menos um dado de Atributo mantido. No Marco III, combinar três capacidades permanece um objetivo futuro, não uma regra ativa. Manter quatro dados no Marco IV ainda é experimental.
 
 ### Exemplo — O que muda de verdade entre os Marcos
 
@@ -526,10 +538,10 @@ No **nível 6**, o personagem começa a manter três dados naturalmente, caso te
 |---|---|---|---|
 | **I — nível 5** | Atributo + Prática | **2d6 + 2d10 = 4 dados** | **2**, sendo pelo menos 1 de Atributo. |
 | **II — nível 6** | Atributo + Prática | **2d6 + 2d10 = 4 dados** | **3**, sendo pelo menos 1 de Atributo. |
-| **III — nível 11** | Atributo + Conhecimento + Prática | **2d6 + 2d10 + 2d10 = 6 dados** | **3**, sendo pelo menos 1 de Atributo. |
-| **IV — nível 16** | Atributo + Conhecimento + Prática | **2d6 + 2d10 + 2d10 = 6 dados** | **até 4, provisoriamente**, incluindo Atributo. |
+| **III — nível 11** | Atributo + Conhecimento | **3d6 + 3d10 = 6 dados** | **3**, sendo pelo menos 1 de Atributo. |
+| **IV — nível 16** | Atributo + Prática | **3d6 + 3d10 = 6 dados** | **até 4, provisoriamente**, incluindo Atributo. |
 
-**Os números rolados nessa tabela são exemplos de capacidades já compradas.** Não são presentes automáticos por subir de nível. Cada fonte pode fornecer no máximo **três dados**; portanto, o teto estrutural é **6 dados rolados** até o nível 10 e **9 dados rolados** a partir do nível 11. Equipamentos que concedam dados ainda podem ocupar uma fonte compatível segundo sua ficha; a prioridade de design, porém, é permitir que o personagem **combine o que aprendeu**.
+**Os números rolados nessa tabela são exemplos de capacidades compradas.** Não são presentes automáticos por subir de nível. Cada uma das **duas partes** pode fornecer até **três dados**, então o máximo estrutural nesta versão é **6 dados rolados em qualquer Marco**. Equipamentos com dados podem ocupar a segunda parte, mas não se somam como terceira fonte.
 
 #### Uma rolagem de nível 6, detalhada
 
@@ -539,9 +551,9 @@ No nível 6, pode manter **três dados**, escolhendo o d6 face 6 e os dois d10. 
 
 #### Uma rolagem de nível 11, detalhada
 
-Mais tarde, Maela investiu em **Inteligência 2 (2d6)**, **Engenharia 2 (2d10)** e **Manufaturas 2 (2d10)**. Ela tenta restaurar os mecanismos de uma antiga bomba d'água. O conhecimento de Engenharia ajuda a compreender o circuito mecânico; a Prática de Manufaturas serve para ajustar as peças; Inteligência orienta o projeto. Como as **três capacidades são relevantes**, ela pode rolar **seis dados de três fontes** no Marco III e manter **três**, incluindo pelo menos um d6 de Inteligência.
+Mais tarde, Maela investiu em **Inteligência 2 (2d6)**, **Engenharia 2 (2d10)** e **Manufaturas 2 (2d10)**. Ela tenta restaurar uma bomba d'água. Para **identificar a falha**, combina **Inteligência + Engenharia**, rolando **2d6 + 2d10**. Para **fabricar a peça**, pode realizar outra ação com **Destreza + Manufaturas** (usando o d4 básico de Destreza, se não investiu nela).
 
-O terceiro grupo **não aumenta automaticamente o teto numérico dos três dados mantidos**; melhora a chance de obter resultados favoráveis entre mais opções. Essa é a principal vantagem do Marco III: **uma build integrada tem novas combinações**, sem precisar possuir d12 em tudo.
+Em cada teste usa **exatamente duas partes**, mesmo no Marco III. Ela pode manter **três dados**, incluindo pelo menos um de Atributo. A vantagem de sua build é oferecer abordagens diferentes em etapas distintas, e não juntar três fontes no mesmo teste.
 
 **Nenhum Marco oferece um d20 gratuito.** O d20 é uma exceção extraordinária ligada a recursos e técnicas que ainda precisam de validação.
 
