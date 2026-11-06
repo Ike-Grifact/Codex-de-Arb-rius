@@ -221,6 +221,33 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de S
 
 **Exemplo.** Tainá tenta forçar uma passagem de DT 2 usando Potência 1 (1d6) e uma ferramenta que forneça 1d10. Ela rola S no d6 e SAP no d10. Mantém os dois: **2 Sucessos + 1 Pressão = 3 para atingir a DT**. Ela consegue abrir a passagem, mas a Pressão pode ser usada pelo mestre para fazer uma ameaça intervir. A Adaptação pode reduzir em 1 a Pressão transmitida, se esse for o efeito escolhido.
 
+### Exemplo completo de uma rolagem: seis etapas
+
+1. **Ação:** Tainá tenta consertar uma engrenagem antes de a oficina inundar.
+2. **DT:** o mestre define **DT 2** para o reparo arriscado.
+3. **Fontes:** **Inteligência 1 (1d6)** + **Manufaturas 1 (1d10)**. O Conhecimento ou a Prática só entra porque é pertinente ao reparo.
+4. **Rolagem:** o d6 cai na **face 6 = ᛏ (S)**; o d10 cai na **face 9 = ᛏᛃᚦ (S + A + P)**.
+5. **Resultados mantidos:** no Marco I ela pode manter até **dois dados** e precisa incluir um de **Atributo**. Mantém ambos.
+6. **DT e efeitos:** **2 Sucessos + 1 Pressão = 3**, portanto o reparo de DT 2 funciona. Tainá ainda possui **1 Adaptação**, que pode usar para reduzir **1 Pressão transferida**, se essa for sua escolha.
+
+O d10 não «vira» uma terceira fonte por conter três símbolos: **símbolos e dados são medidas diferentes**.
+
+### Exemplo de seleção: rolar três dados, manter dois
+
+Mais tarde, Tainá tem **Potência 2 (2d6)** e usa uma alavanca experimental que **fornece 1d10**. Ela rola:
+
+| Fonte | Face | Símbolos |
+|---|---:|---|
+| Potência — primeiro d6 | 6 | **ᛏ (S)** |
+| Potência — segundo d6 | 5 | **ᛃᚦ (A + P)** |
+| Alavanca — d10 | 7 | **ᛏᛏ (2S)** |
+
+No Marco I, ela **mantém o primeiro d6 e o d10**, totalizando **3S sem Pressão**. O segundo d6 foi rolado, mas descartado; seus símbolos não entram na resolução. Ela não pode escolher somente o dado de equipamento quando a rolagem exige o Atributo obrigatório.
+
+### Exemplo de falha mesmo com Adaptação
+
+Breno, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᛃᚦ = A + P)**. A soma para a DT é **1**, portanto **ele falha**. A Adaptação não conta como Sucesso e não transforma o resultado em êxito.
+
 ## DTs para iniciar os testes
 
 | DT | Desafio típico |
@@ -236,6 +263,24 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de S
 
 Uma DT é **fixa pela situação**: uma porta não fica mais resistente porque você subiu de nível. A dificuldade muda quando o mundo realmente muda — uma tranca reforçada, uma guarda mais atenta, um desabamento ou uma intervenção ativa de inimigos.
 
+### Exemplo — Porta, furtividade e negociação usam a mesma matemática
+
+| Tentativa | Fontes compatíveis | DT ilustrativa | O que está em jogo |
+|---|---|---:|---|
+| Tainá força uma tranca enferrujada | Potência + ferramenta com dados definidos | **2** | Abrir a passagem antes de o teto ceder |
+| Breno evita uma sentinela distraída | Agilidade + Infiltração | **2** | Atravessar sem ser notado |
+| Breno atravessa uma sala bem iluminada e vigiada | Agilidade + Infiltração | **4** | Evitar que toda a patrulha seja alertada |
+| Mara tenta convencer um guarda indeciso | Influência + Comércio | **2** | Negociar o acesso à mina |
+| Tainá tenta decifrar um esquema de manutenção | Inteligência + Engenharia, **se tiver Engenharia adquirida** | **3** | Entender a máquina sem quebrá-la |
+
+A DT não cresce só porque o personagem subiu de nível. Em particular, **DT 4 é quase o teto de um Aprendiz com 1d6 de Atributo + 1d10 de segunda fonte**: esses dados só conseguem alcançar 4 quando ambos mostram resultados suficientemente bons.
+
+### Exemplo — Um NPC pode resistir
+
+Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltração ou **agir ativamente** para procurar intrusos. A regra matemática definitiva de oposição ativa ainda será escolhida no playtest. Até lá, use a DT explícita de cada situação e não some automaticamente uma rolagem defensiva inteira por cima dessa DT.
+
+**Ser bem-sucedido em Influência não controla pensamentos:** o guarda pode aceitar conversar, oferecer um acordo ou pedir garantias, conforme a intenção declarada e o contexto.
+
 ## Acerto limpo, acerto sob Pressão e Falha
 
 Se **S + P** alcança a DT **sem nenhuma Pressão mantida**, você teve um **acerto limpo**. Em conflitos, isso ajuda a preservar a iniciativa.
@@ -243,6 +288,18 @@ Se **S + P** alcança a DT **sem nenhuma Pressão mantida**, você teve um **ace
 Se alcança a DT **com Pressões mantidas**, obtém o objetivo, mas entrega recursos à oposição. Em um combate, isso pode abrir um contra-ataque; durante uma fuga, pode provocar perseguição; em uma conversa, pode permitir que um líder inimigo interfira.
 
 Se **S + P** fica abaixo da DT, a ação falha e a iniciativa pode retornar à oposição.
+
+### Exemplo — Três resultados para uma mesma DT
+
+Breno tenta entrar na mina com **Agilidade 1 (1d6) + Infiltração 1 (1d10)** contra **DT 2**.
+
+| Dados mantidos | Resultado | Desfecho |
+|---|---|---|
+| d6 face **6 (S)** + d10 face **6 (S)** | **2S, 0P** | **Acerto limpo**: ele entra sem fornecer Pressão. |
+| d6 face **3 (P)** + d10 face **6 (S)** | **1S + 1P = 2** | **Acerto sob Pressão**: ele entra, mas a oposição ganha Pressão. |
+| d6 face **1 (○)** + d10 face **5 (A + P)** | **0S + 1P = 1** | **Falha**: a Adaptação não eleva a soma à DT. |
+
+**Sucesso na tarefa e ausência de riscos não são a mesma coisa.** Dois acertos podem atingir a mesma DT e produzir consequências muito diferentes.
 
 # VI. Adaptação e iniciativa
 
@@ -252,6 +309,18 @@ Não existe uma rodada individual fixa. A sequência passa entre jogadores e ini
 
 **O mestre pode usar Pressões para mais que atacar:** segurar uma porta, atrasar uma negociação, mobilizar um líder, sabotar uma estrutura, ameaçar um NPC, fortalecer uma rolagem ou interromper um ritual.
 
+### Exemplo — Uma cena sem turnos fixos
+
+Breno passa pelo vigia com **acerto limpo** e mantém o fluxo de ação dos jogadores. Mara tenta negociar com o chefe da patrulha: ela alcança a DT, mas gera **1 Pressão**. O mestre registra esse recurso e, quando puder pagar uma ativação apropriada, o chefe pode mandar **fechar o portão**, **interromper a conversa** ou **ameaçar um trabalhador**. A intenção da cena ainda é conseguir peças, não matar a patrulha.
+
+Se Mara também mantiver uma **Adaptação**, pode usá-la para **reduzir 1 Pressão transferida** ou facilitar a passagem da oportunidade a um aliado, conforme a situação e a regra de iniciativa aplicada.
+
+**Não existem ataques gratuitos para cada inimigo presente.** A oposição age através das oportunidades e ativações que o conflito permitir. Custos exatos de ativação permanecem em playtest.
+
+### Exemplo — Adaptação ajuda, mas não resolve o teste sozinha
+
+Tainá precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (S)** e **d10 face 8 (S + A)**: são **2S**, então consegue fechar. A Adaptação pode beneficiar um aliado depois. Se sua rolagem tivesse apenas **1S + 1A**, **não** alcançaria DT 2.
+
 # VII. Corpo, armaduras e ataques
 
 **Não existe rolagem separada de dano.** Quando um ataque atinge a DT, use os mesmos dados mantidos:
@@ -259,6 +328,14 @@ Não existe uma rodada individual fixa. A sequência passa entre jogadores e ini
 **Dano = Sucessos + metade das Pressões (arredondada para baixo).**
 
 Por exemplo, 2 Sucessos + 1 Pressão geram **2 de dano**; 1 Sucesso + 2 Pressões geram **2 de dano**; 3 Pressões geram **1 de dano**. As Pressões continuam sendo recurso de oposição, salvo capacidades que as reduzam.
+
+### Exemplo — Acerto, dano e Vida são coisas distintas
+
+Breno ataca um saqueador de **DT Geral 2**, estabelecida como exemplo para o encontro. Sua **Destreza 1 fornece 1d6** e sua arma experimental **fornece 1d10**. Ele mantém d6 face **6 (1S)** e d10 face **10 (2S + 1P)**.
+
+**Para acertar:** 3S + 1P = **4**, suficiente para DT 2. **Dano calculado:** 3S + metade de 1P arredondada para baixo = **3**. **Pressão:** o resultado ainda tem **1P**.
+
+Se a proteção receber o golpe, esses **3 pontos de dano calculado** podem afetar sua integridade conforme a ficha. Se o golpe atingir **diretamente o corpo humano**, a hipótese de playtest atual é perder **1 ponto de Vida por ferimento comum**; não confunda dano calculado com perda corporal. Exceções fatais, colossais e especiais continuam em desenvolvimento.
 
 ## Três intenções de ataque
 
@@ -276,17 +353,43 @@ Os ataques são definidos pela **intenção e pelo tipo de vulnerabilidade busca
 
 **Exemplo:** um golpe para incapacitar um vigia atinge uma região vulnerável e produz um ferimento real. O dano é registrado na Vida do vigia, não em uma trilha separada de braço ou perna. Um nocaute ou outra consequência adicional depende da situação e das regras de incapacitação, ainda em desenvolvimento.
 
+### Exemplo — Escolher a intenção do golpe
+
+Na entrada de uma mina, um vigia impede que Breno alcance a passagem. O mestre apresenta estas **DTs apenas para o exemplo**:
+
+| Declaração | DT demonstrativa | Interpretação |
+|---|---:|---|
+| **Geral:** golpear sem mirar uma abertura específica | 2 | Enfrenta a proteção normal. |
+| **Não Letal:** procurar uma abertura para conter o vigia | 3 | Se atingir o corpo, **provoca perda de Vida**; imobilização ou nocaute precisam ser resolvidos pelas regras aplicáveis à cena. |
+| **Letal:** mirar uma abertura vital | 5 | Uma tarefa extraordinária para o Aprendiz, com intenção de provocar lesão grave. |
+
+**Importante:** Não Letal não significa «sem dano» nem «nocaute garantido». Letal não significa «morte automática». As três opções interagem com a **mesma Vida** e com a cobertura real da armadura. A fórmula final das DTs continua pendente.
+
 ## Armaduras equipadas e naturais
 
 Armaduras têm **DT, integridade, cobertura, resistência e mobilidade**. Uma escala experimental associa **integridade igual a duas vezes seu grau**: grau 3 → 6; grau 4 → 8; grau 9 → 18. A interação exata com as DTs de cada intenção de ataque está em revisão. Um golpe que supera a DT pode aplicar dano diretamente à integridade da proteção, sem rolagem adicional.
 
 Uma criatura com escamas ou carapaça pode ter a armadura natural como a **própria integridade corporal**, evitando barras duplicadas. Fraquezas anatômicas, elementais e técnicas podem mudar o impacto dos ataques. Não há superioridade automática e universal de martelos contra todas as armaduras.
 
+### Exemplo — Armadura não é Vida extra em todas as criaturas
+
+Numa ficha **experimental**, uma couraça de grau 3 tem **integridade 6**. Um golpe que a atinge e causa **2 de dano calculado** pode reduzir a integridade para **4**. Isso não significa retirar os mesmos dois pontos da Vida do usuário.
+
+Em contrapartida, as placas minerais de uma criatura podem ser descritas como parte do **próprio corpo**, sem uma segunda barra de armadura. Seu grau de proteção modifica DT ou resistência conforme a ficha, mas sua integridade corporal continua única.
+
+**Ainda falta definir** quando uma armadura quebra, quais ataques contornam cobertura e como as resistências funcionam. Não atribua proteção ignorada a todo ataque Não Letal ou Letal.
+
 **Vida corporal:** qualquer golpe que efetivamente ultrapasse a proteção e atinja o corpo — Geral, Não Letal ou Letal — afeta a **mesma reserva de Vida**. Como hipótese de playtest, ferimentos corporais comuns removem 1 ponto de Vida por ataque; vulnerabilidades fatais, efeitos colossais e técnicas especiais podem ser exceções. **Não Letal não significa dano zero:** significa que o agressor procura neutralizar o alvo sem intenção de matá-lo. As consequências ao chegar a zero Vida ainda precisam de regra definitiva.
 
 ## Armas
 
 Armas **leves** favorecem manejo e dados como d10; **médias** oferecem combinações equilibradas; **pesadas** podem fornecer mais d12 e resultados extremos com mais Pressões. O dano vem dos símbolos obtidos, não de um dado de dano separado ou de um bônus automático pela classe da arma.
+
+### Exemplo — O equipamento é uma fonte de dados
+
+Uma lança equilibrada **de exemplo para playtest** fornece **2d10**. Breno tem **Destreza 1 (1d6)**. Portanto, ao usá-la numa ação compatível, rola **1d6 + 2d10**, mas no Marco I **mantém dois dados**, incluindo o d6 de Destreza.
+
+Uma arma pesada pode oferecer dados d12 em vez de d10; isso muda a distribuição de **S, A e P**, não cria automaticamente «+2 dano por ser pesada». O equipamento precisa ter seus dados **declarados antes do teste**.
 
 # VIII. Determinação, descanso e críticos
 
@@ -295,6 +398,20 @@ Humanos começam com **10 pontos de Determinação**. Esse recurso permite super
 A vida corporal se recupera na referência de **1 ponto por descanso**, desde que a condição do personagem permita descanso efetivo. Ferimentos mais graves devem causar penalidades progressivas; a tabela própria do Codex RPG ainda será produzida.
 
 Quando o personagem mantém **pelo menos dois dados em suas faces máximas de crítico**, recupera **1 Determinação**. A identificação exata dessas faces, especialmente no d12, será padronizada antes da edição definitiva dos dados físicos.
+
+### Exemplo — Determinação para ultrapassar um limite
+
+Tainá possui **Potência 1 (1d6)** e uma ferramenta de exemplo com **1d10**, mantendo ambos. O máximo normal para a DT é **1 + 3 = 4**; uma comporta de **DT 5** não pode ser superada por esses dois dados sem recursos adicionais.
+
+Se a mesa adotar **provisoriamente** o custo de **1 Determinação para aumentar um passo**, ela pode elevar o d6 a **d10 antes da rolagem**. Se os dados mostrarem **face 7 (2S)** e **face 10 (2S + 1P)**, alcança **5 para a DT**. Não é garantia de êxito: apenas torna a tentativa possível.
+
+### Exemplo — Manter dado adicional
+
+Depois de aumentar Potência para **2d6**, Tainá rola **2d6 + 1d10** com uma ferramenta apropriada. No Marco I, mantém apenas dois resultados. Gastar Determinação para **manter um terceiro** é uma possibilidade de playtest com **custo ainda não aprovado**; não altera a quantidade de dados efetivamente rolados.
+
+### Exemplo — Crítico
+
+Breno mantém um d6 na **face 6** e um d10 na **face 10**. Os dois dados atingiram suas **faces máximas numéricas**, cumprindo o critério inicial de crítico; recupera **1 Determinação** até o limite da reserva. Porém, a face 10 do d10 contém **1 Pressão**. Portanto, **um crítico não é necessariamente um acerto limpo**. A padronização final em d12 e d20 ainda está em teste.
 
 # IX. Marcos, XP e profissões
 
@@ -307,7 +424,45 @@ Quando o personagem mantém **pelo menos dois dados em suas faces máximas de cr
 
 No **nível 6**, o personagem começa a manter três dados naturalmente, caso tenha dados suficientes. No **nível 11**, pode combinar até três fontes compatíveis; isso amplia a pilha, mas não cria dados que não existiam na ficha. Uma progressão extraordinária poderá habilitar o quarto dado em Marco avançado, ainda provisório.
 
+### Exemplo — O que muda de verdade entre os Marcos
+
+| Marco e nível de exemplo | Fontes disponíveis na mesma ação | Dados rolados na demonstração | Dados mantidos |
+|---|---|---|---|
+| **I — nível 5** | Atributo + Prática | **2d6 + 2d10 = 4 dados** | **2**, sendo pelo menos 1 de Atributo. |
+| **II — nível 6** | Atributo + Prática | **2d6 + 2d10 = 4 dados** | **3**, sendo pelo menos 1 de Atributo. |
+| **III — nível 11** | Atributo + Prática + equipamento | **2d6 + 2d10 + 2d10 = 6 dados** | **3**, sendo pelo menos 1 de Atributo. |
+| **IV — nível 16** | Atributo + Prática + equipamento | **2d6 + 2d10 + 2d10 = 6 dados** | **até 4, provisoriamente**, incluindo Atributo. |
+
+**Os números rolados nessa tabela são exemplos de fontes já compradas e de equipamento que declara fornecer dados.** Não são presentes automáticos por subir de nível. Cada fonte pode fornecer no máximo **três dados**; portanto, o teto estrutural é **6 dados rolados** até o nível 10 e **9 dados rolados** a partir do nível 11.
+
+#### Uma rolagem de nível 6, detalhada
+
+Tainá tem **Potência 2 (2d6)** e **Manufaturas 2 (2d10)**, comprados com XP. Ela rola **d6 face 6 (S), d6 face 3 (P), d10 face 7 (2S), d10 face 10 (2S + P)**.
+
+No nível 6, pode manter **três dados**, escolhendo o d6 face 6 e os dois d10. Seu resultado é **5S + 1P = 6 para DT**. O d6 face 3 é descartado. No nível 5, mantendo apenas dois dados e respeitando um d6 de Atributo, conseguiria no máximo **4 para a DT** com essa mesma sequência de faces: o d6 face 6 (**1S**) e o d10 face 10 (**2S + 1P**). No nível 6 chega a **6**, graças ao terceiro dado mantido.
+
+#### Uma rolagem de nível 11, detalhada
+
+Mais tarde, Tainá utiliza **Potência 2 (2d6)** + **Manufaturas 2 (2d10)** + **uma máquina de oficina de teste (2d10)** na mesma tarefa. Agora são **três fontes** e **seis dados rolados**. Porém, ela continua mantendo **apenas três**, com ao menos um d6 de Potência.
+
+O terceiro grupo **não aumenta automaticamente o teto numérico dos três dados mantidos**; melhora a chance de obter resultados favoráveis entre mais opções. Essa é a principal vantagem do Marco III.
+
+**Nenhum Marco oferece um d20 gratuito.** O d20 é uma exceção extraordinária ligada a recursos e técnicas que ainda precisam de validação.
+
 A referência experimental de XP é: **7 XP para a criação; 5 XP conquistados a cada avanço de nível; 2 XP por sessão significativa e +1 XP pela conclusão de uma missão**. O nível depende do XP total conquistado, não do saldo após compras. Não existe XP automático por criatura morta.
+
+### Exemplo — XP conquistado versus XP disponível
+
+| Momento | XP total conquistado desde a criação | Nível pela proposta de 5 XP por avanço | XP livre |
+|---|---:|---:|---|
+| Criação | **7** | **1** | 0, caso compre a ficha inteira |
+| Após duas sessões com 2 XP cada e uma missão concluída (+1 XP) | **12** | **2** | 5, antes de novas compras |
+| Ao acumular 25 XP após a criação | **32** | **6** | Depende de quanto já foi gasto |
+| Ao acumular 50 XP após a criação | **57** | **11** | Depende de quanto já foi gasto |
+
+Por exemplo, Tainá pode gastar seus **5 XP livres** no nível 2 para comprar **Potência 2 (3 XP adicionais)** e **Agilidade 1 (2 XP)**. Subir de nível não concede automaticamente esses dados: ela os recebe porque **pagou as compras**.
+
+O mesmo raciocínio vale para Perícias e futuras Maestrias, que precisam disputar o mesmo orçamento de XP.
 
 As profissões surgem da build: uma trilha de Armas, Potência e montaria pode levar à Cavalaria; Engenharia, Mineração e Manufaturas podem levar à fabricação especializada; Influência e Comércio podem sustentar uma profissão social. O nome e os benefícios definitivos de cada profissão dependem de futuras Perícias e Maestrias.
 
@@ -318,6 +473,16 @@ A comunidade de Tainá precisa recuperar um gerador mecânico abandonado. A ofic
 **Três abordagens possíveis:** Tainá pode usar Potência e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se os personagens acumularem Pressões, o mestre pode fazer os saqueadores segurarem o portão, ameaçarem um morador, derrubarem uma estrutura ou pedirem reforços.
 
 Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantas Pressões surgiram e como os jogadores resolveram a cena.
+
+### Exemplo de sessão — Três soluções diferentes
+
+**Caminho A: abrir o portão.** Tainá usa **Potência + uma ferramenta** com dados previstos na ficha de equipamento. Se superar **DT 2**, abre passagem; se houver Pressão, os saqueadores podem ganhar uma oportunidade para interferir.
+
+**Caminho B: negociar com os saqueadores.** Mara utiliza **Influência + Comércio**, contra uma **DT 3 demonstrativa**. O sucesso pode garantir um acordo que não exija violência. A Pressão pode trazer cobranças adicionais, a chegada de um líder ou um terceiro interessado.
+
+**Caminho C: procurar a janela.** Breno utiliza **Agilidade + Infiltração**. Como a entrada é arriscada e exposta, o mestre definiu **DT 4**: é possível que um Aprendiz descubra outra maneira de chegar à janela, reduza o perigo com preparação ou simplesmente desista do caminho. Nem toda DT precisa ser vencida com força bruta.
+
+**Resultado coletivo:** qualquer uma dessas escolhas pode levar à peça de que a cidade precisa. O grupo recebe recompensa pela **missão**, não pela quantidade de inimigos derrotados. A cooperação numérica entre rolagens ainda necessita de uma regra aprovada; os jogadores podem sempre colaborar **narrativamente**.
 
 **A recompensa da missão pode ser 1 XP adicional**, além do XP concedido pelas sessões. Não conceda experiência adicional só porque alguém eliminou os saqueadores.
 
