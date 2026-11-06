@@ -161,32 +161,35 @@ O **Improviso adicional não soma diretamente à DT**, mas pode ser usado nas **
 
 | Perícia | Aptidão central | Permite combinar |
 |---|---|---|
-| **Armas Leves** | **Armas**, usando arma leve | Armas **+ duas outras Aptidões** relacionadas ao manejo da arma leve. |
-| **Armas Médias** | **Armas**, usando arma média | Armas **+ duas outras Aptidões** relacionadas ao manejo da arma média. |
-| **Armas Pesadas** | **Armas**, usando arma pesada | Armas **+ duas outras Aptidões** relacionadas ao manejo da arma pesada. |
-| **Armas à Distância** | **Armas**, usando arma à distância | Armas **+ duas outras Aptidões** para mirar, atirar ou arremessar. |
+| **Armas Leves** | Categoria de arma leve empunhada | **Atributo + arma leve (se tiver dados declarados) + Aptidão pertinente**, ou outras três fontes coerentes. **Armas 1 não fornece d10.** |
+| **Armas Médias** | Categoria de arma média empunhada | Até três fontes pertinentes; dados da arma somente quando declarados na ficha. |
+| **Armas Pesadas** | Categoria de arma pesada empunhada | Até três fontes pertinentes; dados da arma somente quando declarados na ficha. |
+| **Armas à Distância** | Categoria de arma à distância empunhada | Até três fontes de mira, movimento e disparo; dados da arma somente quando declarados. |
 | **Furto** | **Furtividade** | Furtividade **+ duas outras Aptidões** para subtrair ou ocultar algo sem ser percebido. |
 | **Acrobata** | **Atletismo** | Atletismo **+ duas outras Aptidões** em saltos, escaladas, quedas e manobras físicas. |
 | **Alquimia** | **Biologia** (Conhecimento) | Biologia **+ duas outras Aptidões** para identificar, preparar ou manipular misturas e substâncias. |
 | **Comércio** | **Comércio** (Prática) | Comércio **+ duas outras Aptidões** para compra, venda, avaliação e negociação. |
+| **Artes Marciais** *(nome provisório)* | **Punhos** (Prática habilitada) | **Requer Perícia Punhos**; permite **Atributo + Punhos + outra Aptidão pertinente**, como Atletismo. **2 XP adicionais.** |
 
-As quatro categorias de Armas são **Perícias distintas**: a **primeira é escolhida sem custo adicional ao comprar Armas 1 (2 XP)**; as demais custam **2 XP cada** e requerem **Armas 1 ou superior**. Novas categorias poderão ser acrescentadas depois. **Alquimia é uma Perícia baseada no Conhecimento Biologia**, e não uma nova reserva gratuita de dados.
+**Armas 1 não oferece dados.** A primeira especialização é incluída ao comprar a habilitação por **2 XP**; categorias adicionais custam **2 XP cada**. **Punhos** pode ser essa primeira especialização, mas tem efeito próprio: **desbloqueia o treinamento Punhos de d10 a d12**, sem autorizar automaticamente três fontes. **Artes Marciais é uma segunda Perícia de combinação** para o desarmado. Armas equipadas só fornecem dados quando a ficha do equipamento os declara. Alquimia usa Biologia como Aptidão, sem dados extras gratuitos.
 
 ### Como combinar três Aptidões
 
 **Sem Perícia de combinação:** o teste usa **duas partes**, normalmente **um Atributo + uma segunda fonte pertinente**.
 
-**Com uma Perícia de combinação aplicável:** o teste pode usar **a Aptidão central indicada na Perícia + duas outras Aptidões pertinentes**, que podem ser Atributos, Conhecimentos ou Práticas. Pelo menos **uma das três deve ser um Atributo**, e pelo menos **um dado desse Atributo deve ser mantido**. Cada Aptidão entra com seus dados comprados ou **um único d4 de improviso**, caso não tenha sido adquirida.
+**Com uma Perícia de combinação aplicável:** o teste pode usar **até três fontes pertinentes** (Atributos, Conhecimentos, Práticas ou **equipamento com dados declarados**), incluindo ao menos um Atributo e mantendo pelo menos um dado dele. **Armas 1 não é fonte d10.** Punhos fornece sua progressão de dados somente se a Perícia de acesso estiver comprada e o grau treinado; combinar **Punhos + Atletismo + Atributo** exige a **Perícia separada Artes Marciais**.
 
 A Perícia **não adiciona dados próprios**; ela permite a terceira fonte. **O limite de dados mantidos do Marco continua igual**: no nível 1, ainda são dois resultados, mesmo quando a personagem rola dados de três Aptidões. Não é permitido somar duas Perícias de combinação para formar quatro ou cinco Aptidões na mesma ação. Nenhuma combinação pode incluir capacidades que não contribuam efetivamente para a situação.
 
 ### Exemplos de Perícias em cena
 
-**Armas Leves:** Corven comprou **Armas 1 por 2 XP** e escolheu **Armas Leves como sua especialização inicial incluída**. Ele pode rolar **Destreza 1 (1d6) + Armas 1 (1d10) + Atletismo 0 (1d4)** enquanto avança por terreno instável com uma arma leve. No Marco I, rola os três dados, mas mantém apenas **dois**, incluindo um de Destreza. Para obter Armas Médias, Pesadas ou à Distância, deverá comprar as demais Perícias por **2 XP cada**.
+**Armas Leves:** Corven comprou **Armas 1 por 2 XP**, sem dados, e escolheu **Armas Leves** como especialização incluída. A arma leve equipada experimental fornece **1d10 na sua própria ficha**. Avançando por piso instável, ele combina **Destreza 1 (1d6) + arma equipada (1d10) + Atletismo 0 (1d4)**, graças à Perícia. No Marco I, mantém **dois dados**, incluindo Destreza. **O d10 vem do equipamento, não de Armas 1.** Se a arma não fornecesse dados, esse d10 não existiria.
 
 **Furto:** uma personagem combina **Destreza + Furtividade + Atletismo** para alcançar uma bolsa, removê-la sem ruído e escapar saltando um parapeito. Atletismo só entra porque a movimentação arriscada faz parte da ação.
 
 **Acrobata:** Maela usa **Agilidade + Atletismo + Engenharia** para atravessar uma estrutura quebrada após calcular como usar um bastão de apoio. Engenharia precisa participar concretamente do movimento; não basta possuir o Conhecimento.
+
+**Combate desarmado e futura build de monge:** ao comprar a **habilitação Armas 1 (2 XP)**, o personagem escolhe **Punhos** como especialização inicial incluída. Compra então **Punhos 1 (1d10, mais 2 XP)** para treinar golpes com mãos e pés. Com **Destreza + Punhos**, usa as duas partes normais do teste. Se adquirir **Artes Marciais (2 XP, nome provisório)**, poderá combinar **Destreza + Punhos + Atletismo** quando pertinente, sem aumentar os dados mantidos pelo Marco. Punhos pode evoluir até **3d12**, construindo a identidade de monge ou artista marcial **sem classe fechada**.
 
 **Alquimia:** o personagem combina **Inteligência + Biologia + Herborismo** para preparar uma mistura a partir de plantas desconhecidas. Biologia é a Aptidão central; a Perícia Alquimia (2 XP) autoriza a terceira.
 
@@ -202,7 +205,7 @@ Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustenta
 
 **Normalmente, todo teste combina exatamente duas partes:** um Atributo pertinente e uma segunda fonte (Conhecimento, Prática ou equipamento com dados próprios). Cada fonte fornece dados comprados ou **1d4 de improviso** no grau 0. Duas capacidades não adquiridas podem formar **2d4**.
 
-**Perícias de combinação (2 XP) são a exceção:** permitem usar **três Aptidões pertinentes**, conforme a Aptidão central e o contexto da Perícia. O número de fontes aumenta, mas **não muda quantos dados o Marco permite manter**. A escolha das Aptidões nasce da ação narrada; não se podem adicionar dados apenas por estarem disponíveis.
+**Perícias de combinação (2 XP) são a exceção:** permitem usar **até três fontes pertinentes**, incluindo um Atributo. Nas categorias armadas, uma fonte pode ser a arma **apenas se conceder dados de equipamento**, nunca um d10 de Armas 1. **Punhos não autoriza uma terceira fonte por si só**: a Perícia **Artes Marciais** é a especialização adicional para combinações com Atletismo ou outras Aptidões. O limite de dados mantidos continua sendo o do Marco.
 
 Em um salto, **Agilidade + Atletismo** é a combinação comum. Com a Perícia **Acrobata**, uma preparação especial com bastão pode justificar **Agilidade + Atletismo + Engenharia**, desde que o planejamento técnico seja realmente relevante. Sempre mantenha ao menos um dado de Atributo.
 
@@ -582,7 +585,7 @@ Em contrapartida, as placas minerais de uma criatura podem ser descritas como pa
 
 ## Armas
 
-Armas **leves** favorecem manejo e dados como d10; **médias** oferecem combinações equilibradas; **pesadas** podem fornecer mais d12 e resultados extremos com mais Desesperos. O dano vem dos símbolos obtidos, não de um dado de dano separado ou de um bônus automático pela classe da arma.
+Armas **leves** podem oferecer dados **de equipamento** como d10; **médias** oferecem combinações diferentes e **pesadas** podem fornecer d12. **A habilitação Armas 1 e as Perícias de categorias armadas não fornecem dados próprios.** Já a especialização **Punhos** habilita uma **Prática treinável** de 1d10 até 3d12, para golpes com o corpo. O dano vem dos símbolos obtidos, não de um dado adicional pela categoria.
 
 ### Exemplo — O equipamento é uma fonte de dados
 
@@ -679,7 +682,7 @@ Por exemplo, Maela pode gastar **5 XP novos** no nível 2 para comprar **Força 
 
 O mesmo raciocínio vale para Perícias e futuras Maestrias, que precisam disputar o mesmo orçamento de XP.
 
-As profissões surgem **das combinações de pré-requisitos, graus de Perícias e Aptidões**, sem classes fechadas na criação. **Armas 1 + uma especialização inicial**, Combate e a trilha **Montaria I (Cavalos) → II (Feras) → III (Armada)** podem desenvolver uma identidade de cavalaria. Engenharia, Mineração e Manufaturas formam uma trilha de fabricação, enquanto Influência e Comércio sustentam uma profissão social. **Os graus das Perícias moldam a classe emergente**, mas o reconhecimento formal de cada profissão e seus benefícios ainda exigem regras específicas.
+As profissões surgem **das combinações de pré-requisitos, graus de Perícias e Aptidões**, sem classes fechadas na criação. **Armas 1 (habilitação sem dados) + categoria armada**, Combate e **Montaria I → II → III** podem desenvolver uma identidade de cavalaria. **Armas 1 + Punhos (até 3d12) + Artes Marciais + Atletismo** podem formar um **monge ou lutador desarmado**. Engenharia e Manufaturas formam o especialista da oficina; Influência e Comércio, a profissão social. O nome da profissão não concede bônus por si só.
 
 # X. Primeiro cenário de teste: o portão da oficina
 
