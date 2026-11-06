@@ -117,7 +117,7 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Exemplo rápido:** Comércio 1 custa **2 XP** e fornece **1d10**. Elevar Comércio 1 → 2 custa **mais 6 XP**, ficando com **2d10** e **8 XP investidos**. Subir até Comércio 3 custa **outros 12 XP**, chegando a **3d10** e **20 XP acumulados**. Para transformar o primeiro deles em d12, seria necessário investir **mais 18 XP**, alcançando **38 XP acumulados** nessa capacidade.
 
-**Perícias são diferentes de Conhecimentos e Práticas:** uma Perícia concede uma **vantagem especial** — como +1 Improviso ou combinar três Aptidões —, mas não entrega dados d10 automaticamente. Conhecimentos e Práticas são Aptidões que fornecem dados conforme o grau comprado. O orçamento inicial de Formação pode adquirir ambos.
+**Perícias são diferentes de Conhecimentos e Práticas:** uma Perícia concede uma **vantagem especial** — como +1 Improviso ou combinar três Aptidões —, mas não entrega dados d10 automaticamente. Conhecimentos e Práticas são Aptidões que fornecem dados conforme o grau comprado. O orçamento inicial de Formação pode adquirir ambos. **Algumas Perícias têm pré-requisitos e graus próprios**, formando trilhas. A nomenclatura de *Atributos*, *Aptidões* e dos antigos *Instintos* ainda está sendo refinada; por ora, as seis capacidades de Base continuam chamadas de **Atributos**.
 
 **Sem a Perícia, um personagem ainda pode tentar a ação comum**, combinando duas partes, inclusive com d4 de improviso. O d4 não imita os benefícios de Perícia. Gastar **1 Coragem** melhora um dado em **um passo** antes do teste, mas não substitui a Perícia que autoriza três Aptidões.
 
@@ -133,11 +133,21 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Os nomes e condições de Perícias de +1P ainda não foram definidos.** O valor de 3 XP estabelece a categoria de custo, mas **não autoriza comprar um +1 Presença genérico sem uma Perícia concreta**.
 
+### Pré-requisitos e especialização inicial de Armas
+
+**[DEFINIDO] Ao comprar Armas 1 (primeiro grau da Prática Armas, por 2 XP), o personagem escolhe UMA Perícia de Armas como especialização inicial:** **Armas Leves, Armas Médias, Armas Pesadas ou Armas à Distância**. **Essa primeira Perícia já está incluída na compra de Armas 1 e não custa mais 2 XP.** Ela permite, no tipo de arma escolhido, a combinação **Armas + duas outras Aptidões pertinentes**. A Perícia não fornece dados próprios nem aumenta o limite do Marco.
+
+**[DEFINIDO] Ter Armas 1 ou superior é o pré-requisito para possuir Perícias de Armas.** Sem Armas comprado, o personagem ainda pode tentar manejo comum com seu d4, mas não recebe essa combinação especial de três Aptidões. **Cada categoria adicional de Armas deve ser comprada separadamente por 2 XP**, com o pré-requisito Armas 1 já satisfeito. A escolha inicial não concede todas as categorias.
+
+**[DEFINIDO COMO DIREÇÃO DE DESIGN] Outras Perícias também poderão exigir graus mínimos em Atributos, Conhecimentos, Práticas ou Perícias anteriores.** Só serão adquiridas ou elevadas quando os requisitos especificados forem cumpridos. **Os limiares exatos da maioria dessas Perícias ainda estão pendentes**: exemplos a validar incluem Furtividade para Furto, Atletismo para Acrobata, Biologia para Alquimia, Comércio para a Perícia Comércio e formação com Armas para Montaria Armada. **Essas sugestões não devem ser aplicadas como exigências oficiais antes de serem aprovadas.**
+
 ### Perícias que concedem Improviso — 1 XP
 
 | Perícia | Efeito |
 |---|---|
-| **Montaria** | Recebe **+1I** em testes realizados **montado**, quando a montaria realmente contribuir para a ação. |
+| **Montaria I — Cavalos** | **1 XP**, grau inicial: **+1I** em testes **montado em cavalo**, quando a montaria realmente participar da ação. |
+| **Montaria II — Feras** | Grau seguinte, exige **Montaria I**: expande a especialização para **montar feras**. **Custo em XP, outros requisitos e benefícios mecânicos específicos ainda pendentes.** |
+| **Montaria III — Armada** | Grau final, exige **Montaria II**: especialização em **montaria armada**. **Custo em XP, outros requisitos e benefícios mecânicos específicos ainda pendentes.** |
 | **Combate** | Recebe **+1I** em **testes de combate**, incluindo ataques, defesas ou disputas de posição dentro de um confronto. |
 
 O **Improviso adicional não soma diretamente à DT**, mas pode ser usado nas **regras básicas de todos os personagens**: **1I anula 1 Desespero (D)** antes da DT (retirando também o ponto que D daria), **2I viram 1 Presença (P)** ou Improvisos podem apoiar um aliado. **Improvisos concedidos por Perícias contam normalmente para 2I → 1P, sem precisar comprar outra Perícia ou Maestria.** Cada símbolo só pode ser gasto uma vez. **Cada Perícia contribui com seu bônus uma vez por teste pertinente.** Se Montaria e Combate se aplicarem ao mesmo teste de combate montado, cada uma pode acrescentar seu próprio Improviso, sem alterar os dados rolados ou o limite dos dados mantidos.
@@ -155,7 +165,7 @@ O **Improviso adicional não soma diretamente à DT**, mas pode ser usado nas **
 | **Alquimia** | **Biologia** (Conhecimento) | Biologia **+ duas outras Aptidões** para identificar, preparar ou manipular misturas e substâncias. |
 | **Comércio** | **Comércio** (Prática) | Comércio **+ duas outras Aptidões** para compra, venda, avaliação e negociação. |
 
-Cada categoria de armas tem **sua própria Perícia**, comprada separadamente. Novos tipos de arma poderão ter Perícias específicas futuramente. **Alquimia é uma Perícia baseada no Conhecimento Biologia**, e não uma nova reserva gratuita de dados.
+As quatro categorias de Armas são **Perícias distintas**: a **primeira é escolhida sem custo adicional ao comprar Armas 1 (2 XP)**; as demais custam **2 XP cada** e requerem **Armas 1 ou superior**. Novas categorias poderão ser acrescentadas depois. **Alquimia é uma Perícia baseada no Conhecimento Biologia**, e não uma nova reserva gratuita de dados.
 
 ### Como combinar três Aptidões
 
@@ -167,7 +177,7 @@ A Perícia **não adiciona dados próprios**; ela permite a terceira fonte. **O 
 
 ### Exemplos de Perícias em cena
 
-**Armas Leves:** Corven usa **Destreza 1 (1d6) + Armas 1 (1d10) + Atletismo 0 (1d4)** para atacar com uma arma leve ao mesmo tempo em que avança por uma passagem instável. A Perícia **Armas Leves (2 XP)** autoriza as três Aptidões. No Marco I ele rola **1d6 + 1d10 + 1d4**, mas só mantém **dois dados**, incluindo o de Destreza. Sem a Perícia, usaria apenas duas fontes.
+**Armas Leves:** Corven comprou **Armas 1 por 2 XP** e escolheu **Armas Leves como sua especialização inicial incluída**. Ele pode rolar **Destreza 1 (1d6) + Armas 1 (1d10) + Atletismo 0 (1d4)** enquanto avança por terreno instável com uma arma leve. No Marco I, rola os três dados, mas mantém apenas **dois**, incluindo um de Destreza. Para obter Armas Médias, Pesadas ou à Distância, deverá comprar as demais Perícias por **2 XP cada**.
 
 **Furto:** uma personagem combina **Destreza + Furtividade + Atletismo** para alcançar uma bolsa, removê-la sem ruído e escapar saltando um parapeito. Atletismo só entra porque a movimentação arriscada faz parte da ação.
 
@@ -177,7 +187,7 @@ A Perícia **não adiciona dados próprios**; ela permite a terceira fonte. **O 
 
 **Comércio:** Neris combina **Influência + Comércio + Engenharia** ao comprar uma máquina avariada, pois o Conhecimento técnico é relevante para avaliar seu valor. O bônus não vale quando Engenharia não participa da negociação.
 
-**Combate e Montaria:** um combatente montado pode receber **+1I por Montaria** e **+1I por Combate**, se tiver comprado ambas (1 XP cada) e a ação satisfizer as duas condições. Isso não acrescenta Presenças nem altera a DT.
+**Combate e Montaria:** um combatente **montado num cavalo** pode receber **+1I por Montaria I — Cavalos** e **+1I por Combate**, se tiver comprado ambas por 1 XP cada e satisfizer as condições. **Montaria II — Feras** e **Montaria III — Armada** são avanços dessa mesma trilha; preços e benefícios adicionais continuam pendentes. Isso não acrescenta Presenças diretamente nem altera a DT.
 
 #### Exemplo — Saber não é fazer
 
@@ -664,7 +674,7 @@ Por exemplo, Maela pode gastar **5 XP novos** no nível 2 para comprar **Força 
 
 O mesmo raciocínio vale para Perícias e futuras Maestrias, que precisam disputar o mesmo orçamento de XP.
 
-As profissões surgem da build: uma trilha de Armas, Força e montaria pode levar à Cavalaria; Engenharia, Mineração e Manufaturas podem levar à fabricação especializada; Influência e Comércio podem sustentar uma profissão social. O nome e os benefícios definitivos de cada profissão dependem de futuras Perícias e Maestrias.
+As profissões surgem **das combinações de pré-requisitos, graus de Perícias e Aptidões**, sem classes fechadas na criação. **Armas 1 + uma especialização inicial**, Combate e a trilha **Montaria I (Cavalos) → II (Feras) → III (Armada)** podem desenvolver uma identidade de cavalaria. Engenharia, Mineração e Manufaturas formam uma trilha de fabricação, enquanto Influência e Comércio sustentam uma profissão social. **Os graus das Perícias moldam a classe emergente**, mas o reconhecimento formal de cada profissão e seus benefícios ainda exigem regras específicas.
 
 # X. Primeiro cenário de teste: o portão da oficina
 
@@ -688,7 +698,7 @@ Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; *
 
 # XI. O que ainda está em teste
 
-Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos dos **outros usos** de Coragem (aumento de um passo já custa **1 ponto**); tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; futuras Perícias de +1 Presença (3 XP), seus nomes e condições; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
+Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos dos **outros usos** de Coragem (aumento de um passo já custa **1 ponto**); tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; futuras Perícias de +1 Presença (3 XP), seus nomes e condições; **preços e benefícios de Montaria II/III, requisitos exatos de outras Perícias e nomes finais de Aptidões/Atributos/Instintos**; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
 
 O mestre e os jogadores devem decidir qualquer regra ainda pendente antes da sessão e registrar o procedimento utilizado. **Não é necessário inventar estatísticas para as linhagens não-humanas:** elas não são personagens de jogador nesta primeira edição.
 
