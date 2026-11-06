@@ -177,19 +177,29 @@ Não existe uma rodada individual fixa. A sequência passa entre jogadores e ini
 
 Por exemplo, 2 Sucessos + 1 Pressão geram **2 de dano**; 1 Sucesso + 2 Pressões geram **2 de dano**; 3 Pressões geram **1 de dano**. As Pressões continuam sendo recurso de oposição, salvo capacidades que as reduzam.
 
-## Três regiões de ataque
+## Três intenções de ataque
 
-**Geral** é a região mais acessível e normalmente enfrenta a armadura. **Extremidades** permite ferir braços, pernas, juntas e tendões, afetando capacidades. **Letal** representa ataques precisos às regiões vitais, com DT elevada e possíveis efeitos diretos no corpo.
+Os ataques são definidos pela **intenção e pelo tipo de vulnerabilidade buscada**, não por barras de vida separadas para braços ou pernas.
 
-A fórmula final das DTs regionais ainda está em teste. A hipótese atual para ataques às Extremidades é Agilidade + Destreza + proteção aplicável; para ataques Letais, 2 × (Agilidade + Destreza) + proteção aplicável. Use valores de DT definidos para cada inimigo no playtest até a fórmula ser aprovada.
+| Ataque | Intenção | Consequência |
+|---|---|---|
+| **Geral** | Golpear normalmente, enfrentando a proteção mais evidente. | Acerto contra a DT geral; armadura e cobertura são aplicadas conforme suas regras. |
+| **Não Letal** | Procurar uma abertura para **conter, desarmar, atordoar ou incapacitar sem buscar matar**. | É um ataque direcionado, com DT superior à Geral. **Se atingir o corpo, causa dano à Vida normalmente**; a intenção não apaga o ferimento. Um efeito de incapacitação específico exige regra, técnica ou consequência narrativa adequada. |
+| **Letal** | Procurar uma vulnerabilidade vital para causar uma lesão decisiva. | DT ainda mais exigente e possibilidade de efeitos graves, conforme a proteção e a vulnerabilidade atingidas. |
+
+**Não Letal e Letal compartilham o princípio de mirar vulnerabilidades**, mas diferem na intenção e nas possíveis consequências. Nenhum dos dois ignora armaduras automaticamente: só uma brecha que realmente esteja desprotegida ou uma capacidade expressa pode contornar a proteção.
+
+**Hipótese de DT para playtest (ainda não aprovada):** Não Letal = Agilidade + Destreza + proteção aplicável; Letal = 2 × (Agilidade + Destreza) + proteção aplicável. A DT Geral ainda precisa ser fixada. Use DTs previamente definidas na ficha da ameaça até concluir o balanceamento.
+
+**Exemplo:** um golpe para incapacitar um vigia atinge uma região vulnerável e produz um ferimento real. O dano é registrado na Vida do vigia, não em uma trilha separada de braço ou perna. Um nocaute ou outra consequência adicional depende da situação e das regras de incapacitação, ainda em desenvolvimento.
 
 ## Armaduras equipadas e naturais
 
-Armaduras têm **DT, integridade, cobertura, resistência e mobilidade**. Uma escala experimental associa **integridade igual a duas vezes seu grau**: grau 3 → 6; grau 4 → 8; grau 9 → 18. A interação exata com as DTs regionais está em revisão. Um golpe que supera a DT pode aplicar dano diretamente à integridade da proteção, sem rolagem adicional.
+Armaduras têm **DT, integridade, cobertura, resistência e mobilidade**. Uma escala experimental associa **integridade igual a duas vezes seu grau**: grau 3 → 6; grau 4 → 8; grau 9 → 18. A interação exata com as DTs de cada intenção de ataque está em revisão. Um golpe que supera a DT pode aplicar dano diretamente à integridade da proteção, sem rolagem adicional.
 
 Uma criatura com escamas ou carapaça pode ter a armadura natural como a **própria integridade corporal**, evitando barras duplicadas. Fraquezas anatômicas, elementais e técnicas podem mudar o impacto dos ataques. Não há superioridade automática e universal de martelos contra todas as armaduras.
 
-**Vida corporal:** em regra, ferimentos comuns no corpo removem 1 ponto de vida por ataque; ataques fatais, efeitos colossais e vulnerabilidades podem ser exceções. Essa distinção será consolidada com as DTs de ataque.
+**Vida corporal:** qualquer golpe que efetivamente ultrapasse a proteção e atinja o corpo — Geral, Não Letal ou Letal — afeta a **mesma reserva de Vida**. Como hipótese de playtest, ferimentos corporais comuns removem 1 ponto de Vida por ataque; vulnerabilidades fatais, efeitos colossais e técnicas especiais podem ser exceções. **Não Letal não significa dano zero:** significa que o agressor procura neutralizar o alvo sem intenção de matá-lo. As consequências ao chegar a zero Vida ainda precisam de regra definitiva.
 
 ## Armas
 
@@ -230,7 +240,7 @@ Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; *
 
 # XI. O que ainda está em teste
 
-Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos de Determinação; tabela de ferimentos e Vigor; fórmulas definitivas das três DTs regionais; cobertura e resistências das armaduras; critérios de críticos; catálogo inicial de Perícias e seus custos; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
+Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos de Determinação; tabela de ferimentos e Vigor; fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; catálogo inicial de Perícias e seus custos; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos; progressão de níveis e XP após o primeiro playtest.
 
 O mestre e os jogadores devem decidir qualquer regra ainda pendente antes da sessão e registrar o procedimento utilizado. **Não é necessário inventar estatísticas para as linhagens não-humanas:** elas não são personagens de jogador nesta primeira edição.
 
