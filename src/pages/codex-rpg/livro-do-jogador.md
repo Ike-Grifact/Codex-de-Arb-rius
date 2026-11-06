@@ -379,7 +379,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de P
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
 6. **Gaste Improvisos e confira a DT.** Antes da comparação, escolha se gasta Improvisos para anular Desesperos (1I cancela 1D). Depois some **Presença + Desespero restante (P + D)**. Se alcançar a DT, a ação acontece; só então resolva os efeitos de risco remanescentes, o dano e os Improvisos usados para outros fins.
 
-**Exemplo.** Maela tenta abrir uma passagem de **DT 2** com **Força 1 (1d6)** e uma ferramenta que fornece **1d10**. O d6 mostra **P** e o d10 mostra **P + I + D**. Ela mantém ambos: inicialmente tem **2P + 1D = 3 para a DT**. Pode gastar **1I para anular 1D antes da comparação**, ficando com **2P = 2 para a DT**, ainda suficiente para abrir a passagem, sem transmitir Desespero. Se a dificuldade fosse **DT 3**, teria de **conservar o D** para alcançar o objetivo, aceitando a intervenção da oposição.
+**Exemplo.** Maela tenta abrir uma passagem de **DT 2** usando Força 1 (1d6) e uma ferramenta com 1d10. O d6 mostra **P**, e o d10 mostra **P + I + D**. Com **2P + 1D**, a DT é alcançada e **P > D**: ela continua no controle. Pode usar **1I para anular D** e ficar com **2P**, ainda suficiente. Se a DT fosse **3**, precisaria conservar D para alcançá-la, mas **isso não seria um acerto desesperado**, pois P ainda seria maior que D.
 
 ### Exemplo completo de uma rolagem: seis etapas
 
@@ -388,7 +388,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de P
 3. **Fontes:** **Inteligência 1 (1d6)** + **Manufaturas 1 (1d10)**. O Conhecimento ou a Prática só entra porque é pertinente ao reparo.
 4. **Rolagem:** o d6 cai na **face 6 = ᛏ (P)**; o d10 cai na **face 9 = ᛏᛃᚦ (P + I + D)**.
 5. **Resultados mantidos:** no Marco I ela pode manter até **dois dados** e precisa incluir um de **Atributo**. Mantém ambos.
-6. **Improviso, DT e efeitos:** antes de calcular a DT, Maela pode gastar **1I para anular o D**. Sua soma cai de **2P + 1D = 3** para **2P = 2**, que ainda alcança a **DT 2** do reparo. Nenhum Desespero é transmitido. Se não gastar o Improviso, alcança **3 para a DT**, mas conserva **1D** para a oposição.
+6. **Improviso, DT e controle:** antes de calcular a DT, Maela pode gastar **1I para anular D**: a soma cai de **2P + 1D = 3** para **2P = 2**, suficiente para o reparo. Se não gastar o I, **2P + 1D** também funciona e **P > D**, portanto ela mantém controle. O D isolado não concede vantagem automática à oposição.
 
 O d10 não «vira» uma terceira fonte por conter três símbolos: **símbolos e dados são medidas diferentes**.
 
@@ -453,47 +453,53 @@ Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltraç�
 
 **Ser bem-sucedido em Influência não controla pensamentos:** o guarda pode aceitar conversar, oferecer um acordo ou pedir garantias, conforme a intenção declarada e o contexto.
 
-## Acerto limpo, acerto sob Desespero e Falha
+## Alcançar a DT e interpretar o controle
 
-Se **P + D restante** alcança a DT **sem Desespero não anulado**, você teve um **acerto limpo**. Em conflitos, isso ajuda a preservar a iniciativa. **O d4 básico nunca fornece Presença por si só**; se seus D forem anulados, deixa de contribuir para a DT. Uma futura Maestria poderá criar Presença a partir de Improvisos.
+Primeiro compare **P + D restante** com a DT, após as escolhas com Improviso, para saber **se** o personagem alcançou o objetivo. Depois compare **P e D** para entender **como** ele agiu. **Ter algum Desespero não significa necessariamente perder o controle:** isso só ocorre quando **D > P**.
 
-Se alcança a DT **com Desespero não anulado**, obtém o objetivo, mas entrega recursos à oposição. Em um combate, isso pode abrir um contra-ataque; numa fuga, provocar perseguição; numa conversa, permitir que um líder inimigo interfira.
+| Balanço do resultado | Como a ação acontece |
+|---|---|
+| **P > D**, nenhum D restante | **Ação limpa:** intenção e execução sob controle. |
+| **P > D**, com algum D restante | **Presença dominante:** sente a tensão, mas age essencialmente como planejou. |
+| **P = D** | **Equilíbrio tenso:** esforço e medo se equilibram, sem acerto desesperado. |
+| **D > P** | **Desespero dominante:** o movimento ou a decisão foge parcialmente do controle. **Se a DT foi alcançada, é um acerto desesperado.** |
+| **P + D abaixo da DT** | **Falha no objetivo**, tenha ou não havido perda de controle. |
 
-Se **P + D restante** fica abaixo da DT, a ação falha e a iniciativa pode retornar à oposição. Isso pode acontecer **porque o jogador gastou Improvisos para neutralizar Desespero** antes de verificar a DT.
+Um **acerto desesperado (D > P)** pode causar um movimento brusco, dano acidental ao personagem, risco para alguém próximo, queda de ferramenta, barulho ou destruição do que tentava preservar. **O Mestre escolhe uma consequência proporcional à ficção**, não uma lesão obrigatória. Desespero **não é transferido automaticamente a inimigos**: adversários só aproveitam riscos efetivamente criados pela ação.
 
-### Exemplo — Três resultados para uma mesma DT
+### Exemplo — Três acertos e uma falha
 
-Corven tenta entrar na mina com **Agilidade 1 (1d6) + Infiltração 1 (1d10)** contra **DT 2**.
+Corven tenta atravessar um trecho vigiado de **DT 2**.
 
-| Dados mantidos | Resultado | Desfecho |
-|---|---|---|
-| d6 face **6 (P)** + d10 face **6 (P)** | **2P, 0D** | **Acerto limpo**: ele entra sem fornecer Desespero. |
-| d6 face **3 (D)** + d10 face **6 (P)** | **1P + 1D = 2** | **Acerto sob Desespero**: ele entra, mas a oposição ganha Desespero. |
-| d6 face **1 (○)** + d10 face **5 (I + D)** | **0P + 1D = 1** | **Falha**: o Improviso não eleva a soma à DT. |
+| Símbolos mantidos | Valor para DT | Interpretação |
+|---|---:|---|
+| **2P, 0D** | **2** | Passa de forma limpa, exatamente como queria. |
+| **2P, 1D** | **3** | Passa com **Presença dominante**, ainda no controle. |
+| **1P, 1D** | **2** | Passa em **equilíbrio tenso**; D não domina. |
+| **0P, 2D** | **2** | Passa **desesperadamente**; pode fazer barulho ou se machucar durante a travessia. |
+| **0P, 1D, 1I** | **1 ou 0** | Não atinge DT 2; pode gastar I para anular D e reduzir o risco, ficando em zero. |
 
-**Alcançar o objetivo e evitar riscos não são a mesma coisa.** Dois acertos podem atingir a mesma DT e produzir consequências muito diferentes.
+Não existe rolagem adicional para interpretar controle: os mesmos símbolos contam a história.
 
 # VI. Improviso, Desespero e iniciativa
 
-**Improviso (I)** representa uma solução inesperada ou uma brecha: pode ser gasto para **anular 1 Desespero (D) antes da DT**, ajudar um aliado a agir antes da reação da oposição ou alimentar uma capacidade específica. **Cada símbolo I só pode ser gasto uma vez.**
+**Improviso (I)** é a adaptação ao medo: pode ser gasto para **anular 1D antes da DT**, facilitar a ação de um aliado ou alimentar uma capacidade especial. Cada I só pode ser gasto uma vez.
 
-**Ao anular Desespero, reduz-se também o progresso do teste:** o D neutralizado deixa de contar na soma **P + D**. Isso cria a escolha entre **alcançar o objetivo com consequências** e **evitar riscos mesmo sem conseguir avançar**. Um Improviso não é uma Presença extra; seu uso não garante êxito.
+Neutralizar Desespero reduz a soma para DT e também a chance de uma ação descontrolada. O jogador decide entre **avançar aceitando D** ou **preservar o controle com menos progresso**. A presença de D não causa perda de controle sozinha: compare sempre **D > P** após as anulações.
 
-Não existe uma rodada individual fixa. A sequência passa entre jogadores e inimigos conforme acertos limpos, acertos com Desespero, falhas, Improvisos e intervenções. Um combatente habilidoso pode eliminar ameaças fracas em sequência, mas inimigos mais perigosos exigem resultados arriscados e alimentam o banco de Desespero do mestre.
+A iniciativa é narrativa, sem turnos rígidos. **Desespero não é uma moeda entregue automaticamente a inimigos.** Quando D > P e a ação é realizada, o Mestre descreve uma consequência do comportamento impulsivo: um golpe mal dirigido, um tropeço, uma lesão em si mesmo, um aliado atingido, ferramentas derrubadas ou uma ameaça atraída pelo ruído. **Nem todo acerto desesperado exige dano**, e uma ameaça só ganha oportunidade se a cena realmente abrir essa brecha.
 
-**O mestre pode usar o Desespero não anulado para mais que atacar:** segurar uma porta, atrasar uma negociação, mobilizar um líder, sabotar uma estrutura, ameaçar um NPC, fortalecer uma rolagem ou interromper um ritual.
+### Exemplo — A mesma infiltração, comportamentos diferentes
 
-### Exemplo — Uma cena sem turnos fixos
+Corven atravessa uma passagem vigiada. Com **2P e 0D**, move-se conforme planejou. Com **0P e 2D**, pode atravessar no impulso e bater numa prateleira, provocando ruído. O vigia reage **ao barulho da cena**, não por ganhar automaticamente dois pontos de D.
 
-Corven passa pelo vigia com **acerto limpo**, preservando o fluxo de ação dos jogadores. Neris negocia com o chefe da patrulha: ela alcança a DT conservando **1D**, então o mestre registra esse Desespero. Quando puder pagar uma ativação pertinente, o chefe poderá **fechar o portão**, **interromper a conversa** ou **ameaçar um trabalhador**.
+Neris negocia com um chefe de patrulha: **2P + 1D** ainda significa **controle**, pois P > D. Já **1P + 2D**, se alcançar a DT, pode fazê-la falar mais alto, prometer algo que não queria ou ofender o chefe sem intenção. Ela pode gastar **1I** antes da DT para anular D, obter **P = D** e diminuir esse risco, mas perde um ponto da soma para a DT.
 
-Se Neris tiver **1I**, poderá gastá-lo **antes da comparação com a DT** para anular esse Desespero. Contudo, se a negociação dependesse justamente daquele ponto de D para atingir a DT, **não conseguiria o acordo**. Também pode guardar o I para apoiar um aliado, aceitando o risco.
+**A oposição ativa continua existindo** e pode aproveitar consequências reais, mas seus custos de ativação ainda estão em playtest.
 
-**Não existem ataques gratuitos para cada inimigo presente.** A oposição age pelas oportunidades e ativações do conflito. Os custos exatos dessas ativações permanecem em playtest.
+### Exemplo — Improviso não substitui Presença
 
-### Exemplo — Improviso ajuda, mas não substitui Presença
-
-Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (P)** e **d10 face 8 (P + I)**. Tem **2P**, alcança a DT sem Desespero e pode usar **1I** para ajudar um aliado. Se tivesse apenas **1P + 1I**, ficaria abaixo da DT 2: o Improviso não vale Presença sem uma Maestria específica que autorize essa conversão.
+Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (P)** e **d10 face 8 (P + I)**: são **2P**, suficiente para fechar com controle, e sobra **1I** para apoiar um aliado. Com apenas **1P + 1I**, não alcançaria DT 2 sem uma Maestria que permita converter Improviso em Presença.
 
 # VII. Corpo, armaduras e ataques
 
@@ -503,13 +509,13 @@ Maela precisa fechar um alçapão de **DT 2**. Mantém **d6 face 6 (P)** e **d10
 
 **Atenção ao d4 básico em ataques:** um d4 que contribua apenas **1D não anulado** pode ajudar a atingir uma DT 1, mas, sozinho, produz **0 de dano calculado**: **0P + ⌊1D/2⌋ = 0**. Superar a DT não significa ferir automaticamente alguém quando o dano é zero. A ação pode obter um efeito narrativo compatível — como forçar uma reação, afastar uma arma ou abrir uma brecha — sem reduzir Vida. As regras de efeitos corporais ainda estão em teste.
 
-Por exemplo, 2 Presenças + 1 Desespero geram **2 de dano**; 1 Presença + 2 Desesperos geram **2 de dano**; 3 Desesperos geram **1 de dano**. Os Desesperos continuam sendo recurso de oposição, salvo capacidades que as reduzam.
+Por exemplo, 2 Presenças + 1 Desespero geram **2 de dano calculado**; 1 Presença + 2 Desesperos geram **2**; 3 Desesperos geram **1**. Se **D > P**, o ataque pode sair do controle, atingindo o alvo errado, expondo o agressor ou colocando alguém próximo em risco. **Desespero não é recurso automático da oposição.** O dano permanece uma regra experimental.
 
 ### Exemplo — Acerto, dano e Vida são coisas distintas
 
 Corven ataca um saqueador de **DT Geral 2**, estabelecida como exemplo para o encontro. Sua **Destreza 1 fornece 1d6** e sua arma experimental **fornece 1d10**. Ele mantém d6 face **6 (1P)** e d10 face **10 (2P + 1D)**.
 
-**Para acertar:** 3P + 1D = **4**, suficiente para DT 2. **Dano calculado:** 3P + metade de 1D arredondada para baixo = **3**. **Desespero:** o resultado ainda tem **1D**.
+**Para acertar:** 3P + 1D = **4**, suficiente para DT 2. **Dano calculado:** 3P + metade de 1D arredondada para baixo = **3**. **Controle:** como P > D, Corven ainda dirige o golpe como pretendia, sem acerto desesperado.
 
 Se a proteção receber o golpe, esses **3 pontos de dano calculado** podem afetar sua integridade conforme a ficha. Se o golpe atingir **diretamente o corpo humano**, a hipótese de playtest atual é perder **1 ponto de Vida por ferimento comum**; não confunda dano calculado com perda corporal. Exceções fatais, colossais e especiais continuam em desenvolvimento.
 
@@ -662,15 +668,15 @@ As profissões surgem da build: uma trilha de Armas, Força e montaria pode leva
 
 A comunidade de Maela precisa recuperar um gerador mecânico abandonado. A oficina está isolada por um portão deformado, e dois saqueadores tentam alcançar o mesmo equipamento. O objetivo dos Aprendizes é **recuperar uma peça essencial e sair com vida**, não necessariamente vencer um combate.
 
-**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se os personagens acumularem Desesperos, o mestre pode fazer os saqueadores segurarem o portão, ameaçarem um morador, derrubarem uma estrutura ou pedirem reforços.
+**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Se um personagem agir com **D > P**, pode arrancar uma estrutura bruscamente, se ferir, ameaçar alguém sem querer ou fazer um ruído que atraia os saqueadores. A consequência depende da ação, não de um banco automático de Desespero.
 
 Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantos Desesperos surgiram e como os jogadores resolveram a cena.
 
 ### Exemplo de sessão — Três soluções diferentes
 
-**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha de equipamento. Se superar **DT 2**, abre passagem; se houver Desespero, os saqueadores podem ganhar uma oportunidade para interferir.
+**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha. Se alcançar **DT 2**, abre passagem; **somente com D > P** isso se torna um acerto desesperado, podendo resultar em queda, ferimento ou alguém atingido pelo portão.
 
-**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio**, contra uma **DT 3 demonstrativa**. O êxito pode garantir um acordo que não exija violência. A Desespero pode trazer cobranças adicionais, a chegada de um líder ou um terceiro interessado.
+**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio** contra **DT 3 demonstrativa**. Pode conseguir um acordo pacífico; se **D > P**, talvez prometa algo que não pretendia ou ofenda o interlocutor num impulso. O risco surge de seu comportamento, não de uma transferência automática aos saqueadores.
 
 **Caminho C: procurar a janela.** Corven utiliza **Agilidade + Infiltração**. Como a entrada é arriscada e exposta, o mestre definiu **DT 4**: é possível que um Aprendiz descubra outra maneira de chegar à janela, reduza o perigo com preparação ou simplesmente desista do caminho. Nem toda DT precisa ser vencida com força bruta.
 
