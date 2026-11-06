@@ -159,7 +159,7 @@ O **Improviso adicional não soma diretamente à DT**, mas pode ser usado nas **
 
 ### Perícias de combinação — 2 XP cada
 
-| Perícia | Aptidão central | Permite combinar |
+| Perícia | Referência central | Permite combinar |
 |---|---|---|
 | **Armas Leves** | Categoria de arma leve empunhada | **Atributo + arma leve (se tiver dados declarados) + Aptidão pertinente**, ou outras três fontes coerentes. **Armas 1 não fornece d10.** |
 | **Armas Médias** | Categoria de arma média empunhada | Até três fontes pertinentes; dados da arma somente quando declarados na ficha. |
@@ -263,7 +263,7 @@ Esses são dados **permanentes** de Força; uma melhoria temporária por Coragem
 | 5 | **1d10 + 2d12** | **28** | 66 |
 | 6 | **3d12** | **36** | 102 |
 
-No grau 0, um Conhecimento ou Prática tem 1d4 básico para improvisar. Ao comprar o primeiro d10, **substitua** esse d4. Os três d10 custam **2, 6 e 12 XP**; as três conversões permanentes para d12 custam **18, 28 e 36 XP**. **São custos por avanço**, sem multiplicação adicional. Cada conversão substitui um d10 por um d12, sem acrescentar um quarto dado à fonte.
+No grau 0, um Conhecimento ou Prática **que forneça dados** tem 1d4 básico para improvisar. Ao comprar o primeiro d10, **substitua** esse d4. Os três d10 custam **2, 6 e 12 XP**; as conversões permanentes para d12 custam **18, 28 e 36 XP**. A tabela inclui **Punhos após sua Perícia de acesso**, mas **não a habilitação Armas 1, que não fornece dados**. São custos por avanço, sem multiplicação adicional nem um quarto dado na fonte.
 
 **Importante:** a progressão completa dos **Atributos**, do grau 1 ao 6, custa **1 / 2 / 4 / 8 / 16 / 24 XP por avanço**, totalizando **55 XP**. A progressão de **Conhecimentos e Práticas** custa **2 / 6 / 12 / 18 / 28 / 36 XP por avanço**, totalizando **102 XP**. Ambos exigem comprar os três dados-base antes de evoluí-los. Esses preços representam especialização permanente; os requisitos de acesso por Marco ainda serão definidos.
 
@@ -416,7 +416,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de P
 
 1. **Declare a ação e o objetivo.** O mestre apresenta a DT quando ela é relevante.
 2. **Escolha um Atributo apropriado.** Ele é a fonte obrigatória de dados, com **1d4 básico quando o grau for zero**.
-3. **Escolha as partes da rolagem.** Por padrão, combine **Atributo + Conhecimento, Prática ou equipamento** pertinentes; no grau 0, cada fonte oferece **1d4 de improviso**. Com uma **Perícia de combinação aplicável (2 XP)**, use **sua Aptidão central + duas outras Aptidões**.
+3. **Escolha as partes da rolagem.** Por padrão, combine **Atributo + Conhecimento, Prática ou equipamento** pertinentes; no grau 0, cada fonte de Aptidão oferece **1d4 de improviso**. Com uma **Perícia de combinação aplicável (2 XP)**, use **até três fontes pertinentes**, que podem incluir equipamento **apenas com dados declarados**. **Armas 1 nunca fornece um dado** e **Punhos exige a Perícia separada Artes Marciais para combinar três fontes**.
 4. **Role a pilha.** Cada fonte pode contribuir com até três dados comprados **ou um único d4 básico**, nunca ambos. A Perícia pode autorizar a terceira Aptidão, mas não adiciona dados próprios.
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
 6. **Gaste Improvisos e confira a DT.** Antes da comparação, escolha entre **anular 1D com 1I**, **converter 2I em 1P** ou destinar I a outros efeitos. Some **Presença final + Desespero restante (P + D)**. Se alcançar a DT, a ação acontece; depois resolva controle, risco e dano. **A conversão é regra básica, sem depender de Perícia ou Maestria.**
