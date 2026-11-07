@@ -12,7 +12,43 @@ description: Livro integral de regras para playtest de Humanos em Codex RPG, fan
 
 *Fantasia sombria após o fim do mundo · 6 de novembro de 2026*
 
-> **Este livro é um material de teste.** Ele apresenta as regras já discutidas e identifica propostas numéricas ainda sujeitas a revisão. Nesta edição, **Humanos são a única linhagem jogável**. Luckers e Runa-Espinhos pertencem ao cenário, mas ainda não têm regras de criação aprovadas.
+> **Este livro é um material de teste.** Ele apresenta as regras já discutidas e identifica propostas numéricas ainda sujeitas a revisão. Nesta edição, **Humanos são a única origem jogável**. Luckers e Runa-Espinhos pertencem ao cenário, mas suas regras de criação ainda não estão completas.
+
+## O que é Codex RPG?
+
+**Codex RPG é um RPG de narrativa, combate tático e construção aberta de personagens.** Seu objetivo é permitir que cada jogador construa alguém que **realmente jogue como imaginou**. O sistema foi pensado especialmente para **builds híbridas**: combinar Aptidões, Perícias, Talentos e técnicas pode criar estilos tão diferentes quanto um guerreiro desarmado, uma alquimista exploradora, um negociante combatente ou um cavaleiro especializado em feras.
+
+**Todo personagem começa como Aprendiz.** Em vez de escolher uma classe pronta na criação, desenvolve seu modo de agir, aprende técnicas e gradualmente conquista uma profissão. É possível se aprofundar num ramo ou misturar caminhos para criar uma especialização própria. **Não é necessário pertencer a uma classe predefinida para usar uma combinação de capacidades.** As Perícias e suas exigências definem quais sinergias estão disponíveis; Talentos e profissões continuam em desenvolvimento onde não houver uma ficha aprovada.
+
+### Roll and keep: rolar possibilidades, manter decisões
+
+O núcleo do jogo é **roll and keep**. A personagem reúne dados de fontes pertinentes à ação, **rola uma pilha e escolhe quais resultados manter**. O **limite absoluto é quatro dados mantidos**, alcançado somente nas condições do Marco apropriado. Os demais Marcos mantêm menos; rolar vários dados **não significa poder usar todos os seus símbolos**.
+
+O Codex usa **d4, d6, d10, d12 e d20** como expressão da progressão das capacidades, das técnicas e do equipamento. **As faces são simbólicas, não resultados numéricos somados como em um d20 tradicional**. As tabelas com números servem apenas para simular os dados especiais enquanto eles não estão disponíveis. O **d20 é uma possibilidade excepcional ainda sem distribuição de faces fechada neste playtest**, portanto não faz parte da criação inicial.
+
+### Três símbolos, várias maneiras de concluir uma ação
+
+| Símbolo | O que ele conta sobre a ação |
+|---|---|
+| **Êxito (E)** · <span class="codex-rune codex-rune--exito" role="img" aria-label="Êxito">ᛋ</span> · **verde** | A intenção se concretiza: a personagem age como planejou. |
+| **Antecipar (A)** · <span class="codex-rune codex-rune--antecipar" role="img" aria-label="Antecipar">ᚨ</span> · **azul** | A personagem percebe a mudança, improvisa, redireciona seu esforço ou cria oportunidade para outra pessoa. |
+| **Pavor (P)** · <span class="codex-rune codex-rune--pavor" role="img" aria-label="Pavor">ᚦ</span> · **roxo-escuro** | A personagem avança apesar do medo, com chance de escapar do plano e abrir espaço para a oposição. |
+
+A **Dificuldade de Teste (DT)** mostra quanto progresso a situação exige. **Êxitos e Pavor não anulado contam para alcançá-la**, mas não são equivalentes na ficção. Uma personagem pode cumprir sua intenção sem Pavor, conseguir algo sob risco, ou evitar um risco sacrificando a própria chance de alcançar o objetivo. **1A pode anular 1P** antes da DT; **2A podem se transformar em 1E** por qualquer personagem. Antecipar também pode criar oportunidades para aliados, conforme a cena.
+
+**Exemplo:** numa tarefa de **DT 2**, **2E** cumprem o objetivo como planejado; **1E + 1P** cumprem a DT, mas deixam uma abertura tática; **2P** também cumprem a DT, porém com o Pavor dominando a execução. **A soma decide se a ação acontece; a composição dos símbolos decide como e com que consequências.**
+
+### Combate tático com iniciativa fluida
+
+Os jogadores **não ficam presos a uma fila rígida de turnos**. Eles podem agir, encadear iniciativas e passar oportunidades uns aos outros. **Antecipar** é parte dessa coordenação. **Qualquer Pavor que permaneça num acerto ou numa falha, mesmo apenas 1P, cria uma oportunidade de intervenção da oposição**; não é preciso que P seja maior que E para abrir essa janela. A relação **E > P, E = P ou P > E** determina **quanto controle** a personagem preserva, e não se a oposição pode reagir. A oposição só efetua uma ativação mediante as fontes e custos previstos para a cena, sem ganhar ataques gratuitos ilimitados.
+
+Quando um jogador **acerta com Pavor**, o objetivo acontece, mas o Pavor restante pode alimentar a **Pressão da ameaça mais próxima**; sem ameaça, resulta em uma complicação coerente com a ficção. Quando **falha com Pavor**, a personagem **perde 1 Coragem**, o Pavor restante alimenta a **Reserva de Pressão Acumulada** e a iniciativa vai à oposição. **Falhas sem Pavor** não causam penalidade automática e passam a oportunidade a outro jogador. O princípio de medo e reação deve valer também para criaturas e NPCs, mas **os números e a forma exata de transferência de Coragem entre os lados ainda precisam ser definidos**; não confunda Coragem com Pressão antes dessa definição.
+
+### Origens orientam builds, não proíbem profissões
+
+As **origens são os povos/raças dos personagens** e alteram sua criação. O plano é que cada origem tenha **afinidades**, tornando certas Aptidões ou Perícias mais acessíveis em XP e outras mais caras. Assim, algumas profissões são caminhos naturais para um povo, mas **nenhum caminho fica impossível só pela origem**. Os **Humanos** são a referência mais equilibrada. **Os ajustes de XP dos Luckers e Runa-Espinhos ainda não têm valores aprovados e não são aplicados nesta edição humana.**
+
+**Em resumo:** o jogador escolhe **quem quer se tornar**, a build define **quais ações consegue combinar**, os dados dizem **quanto controle tem ao executá-las**, e o combate tático muda **quem pode agir em seguida**.
 
 ---
 
@@ -366,30 +402,30 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 **Regra de leitura:** **Êxito (E)** indica o quanto a personagem executa a ação como queria; **Pavor (P)** indica o quanto o medo e o impulso tomam conta; **Antecipar (A)** indica sua capacidade de se adaptar. **Antes de comparar com a DT, qualquer personagem pode converter 2A em 1E, sem Perícia ou Maestria**, ou gastar 1A para anular 1P. Depois dessas escolhas, conte **E + P restante**. A rolagem revela tanto *se* a personagem agiu quanto *como*.
 
-### Ordem de resolução e balanço do controle
+### Ordem de resolução: objetivo, controle e oportunidade
 
-1. **Role e escolha os dados mantidos** conforme o Marco. Pelo menos um dado mantido precisa vir do Atributo.
-2. **Escolha o uso dos símbolos de Antecipar (A) antes de comparar a DT**: cada **1A pode anular 1P** (retirando também o ponto que P daria à DT), ou **2A podem gerar 1E** que conta para DT e controle. **Ambos são usos básicos e gratuitos**, disponíveis a todos. Cada A só pode ser consumido uma vez; não pode anular P e gerar E ao mesmo tempo.
-3. **Compare E + P restante com a DT** para saber se a intenção foi alcançada.
-4. **Compare E e P restante** para determinar o controle e, se necessário, o destino do Pavor.
+1. **Role a pilha e escolha os dados mantidos**, conforme o Marco. Mantenha pelo menos um dado de Atributo.
+2. **Decida como usar Antecipar (A) antes da DT**: cada **1A pode anular 1P**, reduzindo também o progresso em 1; cada **2A podem criar 1E**. Um símbolo gasto não pode ser usado novamente.
+3. **Some E + P restante e compare com a DT**. Assim se sabe se o objetivo foi alcançado.
+4. **Leia o balanço E versus P** para narrar o grau de controle e determinar a abertura tática.
 
-| Controle após gastar símbolos de Antecipar | Interpretação |
+| Balanço após os gastos de Antecipar | Como a personagem age |
 |---|---|
-| **E > P** | **Êxito dominante.** A personagem age como pretendia. Ter algum P não transfere Pressão automaticamente. |
-| **E = P** | **Equilíbrio tenso.** A personagem mantém o controle com esforço; não é acerto sob Pavor nem falha sob Pavor apenas por esse empate. |
-| **P > E** | **Pavor dominante.** A personagem age com medo, impulso ou perda de controle. **O que acontece com o P depende de ter alcançado ou não a DT.** |
+| **E > P** | **Êxito predominante:** executa a maior parte da ação como imaginou. Se houver algum P restante, ainda há uma brecha para oposição, mas a ação não perde o controle por completo. |
+| **E = P** | **Equilíbrio tenso:** adapta o plano sob pressão; mesmo assim, um P restante pode permitir reação da oposição. |
+| **P > E** | **Pavor predominante:** realiza movimentos ou escolhas impulsivas e corre riscos mais intensos de sair do planejado. |
 
-### Destino do Pavor dominante — acerto, falha e iniciativa
+### O que acontece ao acertar ou falhar?
 
-**Acerto sob Pavor (E + P ≥ DT, P > E):** a personagem realiza a ação; todos os **P restantes** vão como **Pressão local à ameaça elegível mais próxima**. Sem ameaça próxima, há uma complicação narrativa proporcional, como tropeçar, perder posição ou danificar uma armadura, sem causar automaticamente ferimento no personagem ou num aliado.
+**Acerto sem Pavor (E + P ≥ DT e P = 0):** a ação acontece como a personagem pretendeu, respeitadas as adaptações escolhidas. **A oportunidade continua entre os jogadores**, a menos que já exista outra ativação pertinente prevista na cena.
 
-**Falha sob Pavor (E + P < DT, P > E):** a personagem **perde exatamente 1 Coragem**, seus **P restantes alimentam a Reserva de Pressão Acumulada** até o limite e **a iniciativa passa à oposição**. Também pode haver dano acidental ao próprio personagem ou a um aliado próximo, perda de recursos ou outros efeitos conforme a ficção e as ativações aprovadas. Não aplique todas essas complicações simultaneamente por padrão.
+**Acerto com Pavor (E + P ≥ DT e P ≥ 1):** o objetivo acontece, mas **cada P restante pode ser direcionado como Pressão local à ameaça elegível mais próxima**. Mesmo quando **E > P**, a oposição ganha **uma janela de intervenção**, respeitando os custos e as ativações estabelecidas. **P > E** indica uma execução especialmente descontrolada, não o requisito mínimo para o Pavor ter consequência. Sem ameaça elegível, o Mestre descreve uma complicação narrativa proporcional à quantidade de P e à situação, como perder posição, fazer barulho ou danificar proteção.
 
-**Falha controlada (E + P < DT, E ≥ P, E > 0):** nada de ruim acontece automaticamente; a ação não é concluída e **a oportunidade passa a outro jogador**. Não perde Coragem nem acrescenta Pressão à reserva.
+**Falha com Pavor (E + P < DT e P ≥ 1):** a ação não alcança o objetivo, o personagem **perde exatamente 1 Coragem**, e os **P restantes entram na Reserva de Pressão Acumulada** até seu teto. **A iniciativa passa à oposição**, que poderá agir conforme suas ativações. Ferimentos acidentais em si ou em aliados, dano a equipamentos e outros efeitos adicionais exigem coerência com a cena; não acontecem todos automaticamente. **Mesmo que E seja maior que P, a presença de um P não anulado torna a falha uma falha com Pavor.**
 
-**Falha vazia (E = P = 0 depois de resolver o uso de A):** a ação não é concluída, **não acontece consequência negativa automática**, e **outro jogador pode agir**. Os P anulados não entram na reserva. **Com pelo menos 2A, o jogador pode convertê-los em 1E antes da DT**; nesse caso o resultado deixa de ser vazio e pode até alcançar DT 1.
+**Falha sem Pavor (E + P < DT e P = 0):** o objetivo não é alcançado. Não perde Coragem nem alimenta Pressão automaticamente. **A oportunidade passa a outro jogador**, tanto quando houve algum E insuficiente quanto numa rolagem vazia. Os símbolos A não gastos só têm efeitos se aplicados conforme suas regras.
 
-**Acerto controlado ou equilibrado (E + P ≥ DT, E ≥ P):** a ação acontece com controle ou equilíbrio tenso; não há transferência automática de Pressão.
+**Pavor e Pressão são coisas distintas:** **P** é o símbolo da rolagem; **Pressão** é o recurso registrado para a cena ou para uma ameaça. **Não credite o mesmo P duas vezes.** A troca de iniciativa e a ativação não são sinônimos de ataque gratuito: devem respeitar a economia do conflito.
 
 ### Reserva de Pressão Acumulada — capacidade por número de jogadores
 
@@ -409,7 +445,7 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 A **Êxito criada conta para a DT, para o balanço E versus P e para o dano calculado**, como um símbolo E obtido nos dados. Não cria outro dado, não altera quantos resultados podem ser mantidos e não muda as faces que definem um crítico.
 
-**Cado símbolo Antecipar é consumido uma única vez.** Os dois A convertidos não podem também anular P, beneficiar aliados ou ativar outros efeitos. É possível converter pares adicionais na mesma rolagem, caso existam símbolos de Antecipar suficientes. Símbolos A recebidos de Perícias também podem ser usados, **sem necessidade de Perícia ou Maestria de conversão**.
+**Cada símbolo Antecipar é consumido uma única vez.** Os dois A convertidos não podem também anular P, beneficiar aliados ou ativar outros efeitos. É possível converter pares adicionais na mesma rolagem, caso existam símbolos de Antecipar suficientes. Símbolos A recebidos de Perícias também podem ser usados, **sem necessidade de Perícia ou Maestria de conversão**.
 
 **Exemplo 1 — decisão entre segurança e progresso:** com **1E + 2A + 1P** contra **DT 2**, gastar **1A para anular P** deixa apenas **1E**, e a ação falha. Converter **2A em 1E**, por sua vez, deixa **2E + 1P**, alcançando a DT com **Êxito dominante (E > P)**. O Pavor não foi anulado, mas não domina a ação.
 
@@ -442,7 +478,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de �
 3. **Fontes:** **Inteligência 1 (1d6)** + **Manufaturas 1 (1d10)**. O Conhecimento ou a Prática só entra porque é pertinente ao reparo.
 4. **Rolagem:** o d6 cai na **face 6 = <span class="codex-rune codex-rune--exito" role="img" aria-label="Êxito" title="Êxito">ᛋ</span> (E)**; o d10 cai na **face 9 = <span class="codex-rune codex-rune--exito" role="img" aria-label="Êxito" title="Êxito">ᛋ</span><span class="codex-rune codex-rune--antecipar" role="img" aria-label="Antecipar" title="Antecipar">ᚨ</span><span class="codex-rune codex-rune--pavor" role="img" aria-label="Pavor" title="Pavor">ᚦ</span> (E + A + P)**.
 5. **Resultados mantidos:** no Marco I ela pode manter até **dois dados** e precisa incluir um de **Atributo**. Mantém ambos.
-6. **Antecipar, DT e controle:** antes de calcular a DT, Maela pode gastar **1A para anular P**: a soma cai de **2E + 1P = 3** para **2E = 2**, suficiente para o reparo. Se não gastar o A, **2E + 1P** também funciona e **E > P**, portanto ela mantém controle. O P isolado não concede vantagem automática à oposição.
+6. **Antecipar, DT e controle:** antes de calcular a DT, Maela pode gastar **1A para anular P**: a soma cai de **2E + 1P = 3** para **2E = 2**, suficiente para o reparo. Se não gastar o A, **2E + 1P** também funciona e **E > P**, portanto ela mantém controle. Um P restante abre possibilidade de intervenção da oposição, mesmo que E > P, respeitando as ativações.
 
 O d10 não «vira» uma terceira fonte por conter três símbolos: **símbolos e dados são medidas diferentes**.
 
@@ -507,31 +543,32 @@ Um guarda pode simplesmente impor uma **DT passiva** à tentativa de Infiltraç�
 
 **Ser bem-sucedido em Influência não controla pensamentos:** o guarda pode aceitar conversar, oferecer um acordo ou pedir garantias, conforme a intenção declarada e o contexto.
 
-## Acertos e falhas: passagem da iniciativa
+## Acertos e falhas: quem age em seguida?
 
 | Resultado | Condição | Desfecho |
 |---|---|---|
-| Acerto controlado | E + P ≥ DT e E ≥ P | Ação alcançada; sem transferência automática. |
-| Acerto sob Pavor | E + P ≥ DT e P > E | P à ameaça mais próxima, ou custo narrativo sem ameaça. |
-| Falha controlada | E + P < DT e E ≥ P e E > 0 | Nada acontece automaticamente; próximo PJ pode agir. |
-| Falha vazia | E = P = 0 | Nada acontece automaticamente; próximo PJ pode agir. |
-| Falha sob Pavor | E + P < DT e P > E | **−1 Coragem**, P à reserva até seu teto, **turno da oposição**, com possíveis consequências adicionais contextualizadas. |
+| **Acerto limpo** | E + P ≥ DT, **P = 0** | Cumpre o objetivo e preserva o fluxo de ações dos jogadores. |
+| **Acerto com Pavor** | E + P ≥ DT, **P ≥ 1** | Cumpre o objetivo, mas P pode ir à ameaça próxima; abre uma oportunidade de intervenção da oposição. |
+| **Falha sem Pavor** | E + P < DT, **P = 0** | Sem penalidade automática; outro jogador pode agir. |
+| **Falha com Pavor** | E + P < DT, **P ≥ 1** | **−1 Coragem**, P restante à reserva coletiva até o teto; iniciativa à oposição e possíveis consequências adicionais contextualizadas. |
 
-**Exemplo:** Corven obtém **1E** para DT 2: falha controlada e outro PJ age. Se tira **nada**, outro PJ também age. Se tira **1P**, falha sob Pavor, perde **1 Coragem**, soma **1 Pressão** à reserva e entrega a iniciativa à oposição. Se tira **2P**, alcança DT 2 sob Pavor e passa **2 Pressões à ameaça mais próxima**, quando houver.
+**Êxito dominante não significa ausência de risco.** Mesmo uma rolagem de **2E + 1P**, quando alcança a DT, deixa uma brecha tática para o Mestre; ela **não** é igual a **2E sem P**. O balanço E/P determina a intensidade da perda de controle.
+
+**Exemplo:** Corven tenta transpor um vão de **DT 2**. Com **2E**, avança limpo; com **1E + 1P**, atravessa, mas pode fazer ruído e abrir uma reação; com **2P**, atravessa impulsivamente e a pressão sobre ele é maior. Se tirar apenas **1E**, falha sem Pavor e outro PJ tenta. Se tirar apenas **1P**, falha com Pavor, perde 1 Coragem, soma 1P à reserva e entrega a iniciativa.
 
 # VI. Antecipar, Pavor e iniciativa
 
-**Antes da DT, qualquer personagem pode gastar 1A para neutralizar 1P ou converter 2A em 1E**, sem requisito de Perícia ou Maestria. Anular P elimina seu ponto para o objetivo; converter 2A cria Êxito que conta normalmente. Cada A só pode ser gasto uma vez.
+Antecipar representa ler o perigo e ajustar a ação: **1A anula 1P** e reduz o progresso; **2A geram 1E**, antes da DT. Uma capacidade específica também pode permitir **ceder uma oportunidade a um aliado**. Cada símbolo só pode ser gasto uma vez.
 
-**Falha vazia ou com Êxito:** nada acontece automaticamente, e a iniciativa passa a **outro jogador**. **Falha sob Pavor:** **−1 Coragem**, P restante à **Reserva de Pressão Acumulada** (até o teto) e a iniciativa **passa à oposição**. **Acerto sob Pavor:** P restante como Pressão à ameaça próxima; sem ameaça, complicação narrativa proporcional.
+**A iniciativa é dinâmica:** os jogadores mantêm o ritmo quando agem sem Pavor. **Qualquer Pavor restante abre uma possibilidade de intervenção**, inclusive em acertos com E predominante. Falhas com Pavor transferem o fluxo à oposição. A ameaça não recebe ataques gratuitos apenas por existir: o Mestre precisa de ativações possíveis e dos recursos aplicáveis à cena. O P de **acerto** é destinado à **ameaça elegível mais próxima**; o P de **falha** alimenta a **reserva coletiva**, respeitando o teto. Sem ameaça elegível, o acerto com Pavor produz uma consequência narrativa em vez de criar um inimigo.
 
 ### Reserva, ondas de acertos e liderança
 
-A reserva começa com **2 Pressões de base** e seu teto é **2 + número de PJs**. Assim, três jogadores permitem até **5**, quatro jogadores até **6**. Quando os jogadores conseguem uma sequência de acertos, o Mestre ainda pode gastar Pressão acumulada para ativar ameaças, respeitando custos próprios.
+A **Reserva de Pressão Acumulada** começa em **2 Pressões** e tem teto **2 + número de jogadores**. Com 3 PJs o limite é **5**; com 4 PJs é **6**. O Mestre pode gastar a reserva para ativar ameaças mesmo quando os jogadores encadearem acertos limpos, conforme os custos estabelecidos para as fichas.
 
-**Comandante, Minichefe ou Chefe:** podem ser ativados diretamente. **Mobs comuns:** só podem ser ativados com essa reserva **se houver um desses líderes presente e apto a transmitir ordens aos mobs**. Sem líder, a reserva coletiva não pode ativá-los. Pressão própria/local pode ter regras diferentes, se explicitadas.
+**Comandantes, Minichefes e Chefes** podem ser ativados diretamente com essa reserva. **Mobs comuns** só podem ser ativados por ela se houver um desses líderes **presente e apto a transmitir ordens**. Pressão local e ativações próprias podem ter procedimentos diferentes, desde que explicitados.
 
-**Exemplo:** com três PJs, o Mestre começa com **2** e pode acumular até **5**. Uma falha sob Pavor de 2P eleva a reserva a 4; outra de 2P preenche somente o último ponto. O Mestre pode gastar a reserva numa ativação aprovada de Minichefe, inclusive durante uma onda de acertos. Um mob comum exige um líder elegível para receber ordens. Não invente custo de ativação onde a ficha não definir.
+**A recuperação e transferência de Coragem envolvendo NPCs e criaturas, assim como os custos de algumas ativações, ainda exigem regras aprovadas.** Este princípio de troca de ritmo vale para ambos os lados, mas não inventa recursos mecânicos que ainda não foram definidos.
 
 # VII. Corpo, armaduras e ataques
 
@@ -541,13 +578,13 @@ A reserva começa com **2 Pressões de base** e seu teto é **2 + número de PJs
 
 **Atenção ao d4 básico em ataques:** um d4 que contribua apenas **1P não anulado** pode ajudar a atingir uma DT 1, mas, sozinho, produz **0 de dano calculado**: **0E + ⌊1P/2⌋ = 0**. Superar a DT não significa ferir automaticamente alguém quando o dano é zero. A ação pode obter um efeito narrativo compatível — como forçar uma reação, afastar uma arma ou abrir uma brecha — sem reduzir Vida. As regras de efeitos corporais ainda estão em teste.
 
-Por exemplo, 2 Êxitos + 1 Pavor geram **2 de dano calculado**; 1 Êxito + 2 símbolos de Pavor geram **2**; 3 símbolos de Pavor geram **1**. Num **acerto sob Pavor (P > E)** contra uma ameaça próxima, os P restantes são **transferidos como Pressão a essa ameaça**; sem ameaça elegível, podem provocar tropeço, dano ao equipamento ou outra consequência narrativa. Numa **falha sob Pavor (P > E)**, os P vão à **Reserva Acumulada** (até o teto), o personagem **perde exatamente 1 Coragem** e a iniciativa passa à oposição; ferimentos acidentais em si ou aliados são consequências adicionais possíveis. A fórmula de dano continua experimental.
+Por exemplo, 2 Êxitos + 1 Pavor geram **2 de dano calculado**; 1 Êxito + 2 símbolos de Pavor geram **2**; 3 símbolos de Pavor geram **1**. Num **acerto com Pavor (P ≥ 1)** contra uma ameaça próxima, os P restantes são **transferidos como Pressão a essa ameaça**; sem ameaça elegível, podem provocar tropeço, dano ao equipamento ou outra consequência narrativa. Numa **falha com Pavor (P ≥ 1)**, os P vão à **Reserva Acumulada** (até o teto), o personagem **perde exatamente 1 Coragem** e a iniciativa passa à oposição; ferimentos acidentais em si ou aliados são consequências adicionais possíveis. A fórmula de dano continua experimental.
 
 ### Exemplo — Acerto, dano e Vida são coisas distintas
 
 Corven ataca um saqueador de **DT Geral 2**, estabelecida como exemplo para o encontro. Sua **Destreza 1 fornece 1d6** e sua arma experimental **fornece 1d10**. Ele mantém d6 face **6 (1E)** e d10 face **10 (2E + 1P)**.
 
-**Para acertar:** 3E + 1P = **4**, suficiente para DT 2. **Dano calculado:** 3E + metade de 1P arredondada para baixo = **3**. **Controle:** como E > P, Corven ainda dirige o golpe como pretendia, sem acerto sob Pavor.
+**Para acertar:** 3E + 1P = **4**, suficiente para DT 2. **Dano calculado:** 3E + metade de 1P arredondada para baixo = **3**. **Controle:** como E > P, Corven ainda dirige o golpe como pretendia, com Êxito predominante, mas ainda permitindo uma reação pelo P restante.
 
 Se a proteção receber o golpe, esses **3 pontos de dano calculado** podem afetar sua integridade conforme a ficha. Se o golpe atingir **diretamente o corpo humano**, a hipótese de playtest atual é perder **1 ponto de Vida por ferimento comum**; não confunda dano calculado com perda corporal. Exceções fatais, colossais e especiais continuam em desenvolvimento.
 
@@ -724,15 +761,15 @@ As profissões surgem **das combinações de pré-requisitos, graus de Perícias
 
 A comunidade de Maela precisa recuperar um gerador mecânico abandonado. A oficina está isolada por um portão deformado, e dois saqueadores tentam alcançar o mesmo equipamento. O objetivo dos Aprendizes é **recuperar uma peça essencial e sair com vida**, não necessariamente vencer um combate.
 
-**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Em **acerto sob Pavor (P > E)**, os P passam como Pressão à ameaça mais próxima, ou geram complicação ambiental na ausência dela. Em **falha sob Pavor (P > E)**, os P vão à Reserva Acumulada (até o teto), **perde 1 Coragem** e a oposição assume a iniciativa; tropeços perigosos ou ferimentos acidentais podem acontecer conforme a ficção.
+**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Em **acerto sob Pavor (P > E)**, os P passam como Pressão à ameaça mais próxima, ou geram complicação ambiental na ausência dela. Em **falha com Pavor (P ≥ 1)**, os P vão à Reserva Acumulada (até o teto), **perde 1 Coragem** e a oposição assume a iniciativa; tropeços perigosos ou ferimentos acidentais podem acontecer conforme a ficção.
 
 Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantos símbolos de Pavor surgiram e como os jogadores resolveram a cena.
 
 ### Exemplo de sessão — Três soluções diferentes
 
-**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha. Se alcançar **DT 2**, abre passagem. Quando **P > E**, transfere P como Pressão ao saqueador mais próximo; se estiver sozinha, pode abrir o portão desajeitadamente, danificando a proteção ou derrubando ferramentas.
+**Caminho A: abrir o portão.** Maela usa **Força + uma ferramenta** com dados previstos na ficha. Se alcançar **DT 2**, abre passagem. Quando houver **P restante**, transfere P como Pressão ao saqueador mais próximo; se estiver sozinha, pode abrir o portão desajeitadamente, danificando a proteção ou derrubando ferramentas.
 
-**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio** contra **DT 3 demonstrativa**. Se alcançar a DT com **P > E**, passa os P como Pressão ao saqueador mais próximo, que poderá explorar a hesitação no diálogo. Sem interlocutor ameaçador elegível, uma promessa precipitada ou deslize social pode ser a complicação narrativa.
+**Caminho B: negociar com os saqueadores.** Neris utiliza **Influência + Comércio** contra **DT 3 demonstrativa**. Se alcançar a DT com **P restante**, passa os P como Pressão ao saqueador mais próximo, que poderá explorar a hesitação no diálogo. Sem interlocutor ameaçador elegível, uma promessa precipitada ou deslize social pode ser a complicação narrativa.
 
 **Caminho C: procurar a janela.** Corven utiliza **Agilidade + Infiltração**. Como a entrada é arriscada e exposta, o mestre definiu **DT 4**: é possível que um Aprendiz descubra outra maneira de chegar à janela, reduza o perigo com preparação ou simplesmente desista do caminho. Nem toda DT precisa ser vencida com força bruta.
 
