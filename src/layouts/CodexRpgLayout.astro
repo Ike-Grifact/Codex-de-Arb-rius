@@ -54,6 +54,14 @@ const base = import.meta.env.BASE_URL;
   .codex-rpg-reader td,.codex-rpg-reader th{padding:.6rem .7rem;text-align:left;border-bottom:1px solid #e1d8ca;vertical-align:top}
   .codex-rpg-reader tbody tr:nth-child(even){background:#f5f0e7}
   .codex-rpg-reader hr{border:0;border-top:1px solid #d6c7b7;margin:2rem 0}
+  /* Todas as runas do livro usam o mesmo código de cor, inclusive em tabelas e exemplos. */
+  .codex-rpg-reader .codex-rune{--rune-color:#444;display:inline-block;vertical-align:-.06em;font-family:"Noto Sans Runic","Segoe UI Symbol","DejaVu Sans",sans-serif;font-size:1.36em;line-height:1;color:var(--rune-color)!important;font-weight:700;text-shadow:0 0 .01px currentColor}
+  .codex-rpg-reader .codex-rune--exito{--rune-color:#267A45}
+  .codex-rpg-reader .codex-rune--antecipar{--rune-color:#2369BB}
+  .codex-rpg-reader .codex-rune--pavor{--rune-color:#542176}
+  .codex-rpg-reader table:has(.codex-symbol) td:nth-child(2),
+  .codex-rpg-reader table:has(.codex-symbol) th:nth-child(2){text-align:center;white-space:nowrap;min-width:3rem}
+  @media print{.codex-rpg-reader .codex-rune{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
   .codex-rpg-reader .codex-symbol{--rune-color:#444;display:inline-flex;align-items:center;gap:.4rem;padding:.12rem .45rem;border:1px solid var(--rune-color);border-radius:5px;color:var(--rune-color);font:700 .78rem/1.3 ui-sans-serif,system-ui;white-space:nowrap}
   .codex-rpg-reader .codex-symbol::before{content:'';display:inline-block;width:.75rem;height:.75rem;min-width:.75rem;border-radius:3px;background:var(--rune-color)}
   .codex-rpg-reader .codex-symbol--exito{--rune-color:#267A45}
