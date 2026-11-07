@@ -361,7 +361,7 @@ Os resultados são representados por **glifos rúnicos provisórios**: **Sowilo 
 |---|:---:|:---:|:---:|---|
 | **Êxito** | **<span class="codex-rune codex-rune--exito" role="img" aria-label="Êxito" title="Êxito">ᛋ</span>** | **E** | <span class="codex-symbol codex-symbol--exito">Verde · #267A45</span> | Representa execução e controle: a personagem age como pretendeu. Conta integralmente para a DT e para o dano calculado. |
 | **Antecipar** | **<span class="codex-rune codex-rune--antecipar" role="img" aria-label="Antecipar" title="Antecipar">ᚨ</span>** | **A** | <span class="codex-symbol codex-symbol--antecipar">Azul · #2369BB</span> | Representa adaptação diante do medo: **1A pode anular 1P** ou **2A podem criar 1E** antes de comparar a DT. Um símbolo A isolado não soma diretamente. |
-| **Pavor** | **<span class="codex-rune codex-rune--pavor" role="img" aria-label="Pavor" title="Pavor">ᚦ</span>** | **P** | <span class="codex-symbol codex-symbol--pavor">Roxo-escuro · #542176</span> | Representa impulso e perda de controle. Se **P > E**, o acerto passa P como Pressão à ameaça próxima (ou gera complicação narrativa sem ameaça); uma falha acumula P na reserva de Pressão e retira **1 Coragem**. Conta pela metade para dano, arredondando para baixo. |
+| **Pavor** | **<span class="codex-rune codex-rune--pavor" role="img" aria-label="Pavor" title="Pavor">ᚦ</span>** | **P** | <span class="codex-symbol codex-symbol--pavor">Roxo-escuro · #542176</span> | Representa medo e risco de perder o controle. **Qualquer P não anulado**, mesmo quando E > P, cria uma janela de intervenção: num acerto, P pode virar Pressão da ameaça próxima (ou complicação narrativa sem ameaça); numa falha, P vai à reserva coletiva e causa perda de **1 Coragem**. Conta pela metade para dano, arredondando para baixo. |
 | **Face vazia** | **○** | — | Sem cor | Nenhum símbolo: não acrescenta pontos ao teste. |
 
 **Leitura rápida:** **<span class="codex-rune codex-rune--exito" role="img" aria-label="Êxito" title="Êxito">ᛋ</span><span class="codex-rune codex-rune--antecipar" role="img" aria-label="Antecipar" title="Antecipar">ᚨ</span><span class="codex-rune codex-rune--pavor" role="img" aria-label="Pavor" title="Pavor">ᚦ</span>** corresponde a **1E + 1A + 1P**. Várias runas na mesma face se acumulam; por exemplo, **<span class="codex-rune codex-rune--exito" role="img" aria-label="Êxito" title="Êxito">ᛋ</span><span class="codex-rune codex-rune--exito" role="img" aria-label="Êxito" title="Êxito">ᛋ</span><span class="codex-rune codex-rune--pavor" role="img" aria-label="Pavor" title="Pavor">ᚦ</span>** corresponde a **2E + 1P**.
@@ -429,13 +429,13 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 ### Reserva de Pressão Acumulada — capacidade por número de jogadores
 
-**A reserva coletiva começa com 2 Pressões e comporta até 2 + 1 por jogador.** Com 2 PJs o limite é **4**; com 3 é **5**; com 4 é **6**. Cinco não é teto universal. Cada falha sob Pavor acrescenta seus P restantes **até o teto**; o excedente não fica armazenado.
+**A reserva coletiva começa com 2 Pressões e comporta até 2 + 1 por jogador.** Com 2 PJs o limite é **4**; com 3 é **5**; com 4 é **6**. Cinco não é teto universal. Cada falha com Pavor acrescenta seus P restantes **até o teto**; o excedente não fica armazenado.
 
 **O Mestre pode gastar essa reserva durante sequências de acertos dos jogadores**, permitindo ativações mesmo sem uma falha recente. O gasto segue os custos das fichas das ameaças: **não há custo universal presumido**.
 
 **Comando dos mobs:** Comandantes, Minichefes e Chefes podem ser ativados diretamente usando a reserva coletiva. Para usar essa reserva para ativar um **mob comum**, deve haver **ao menos um Comandante, Minichefe ou Chefe presente e capaz de transmitir ordens** àquele mob. Sem liderança, não é permitido gastar Pressão coletiva para ativar mobs comuns. Essa restrição não cancela as fontes de Pressão locais ou ativação própria, quando descritas na ficha.
 
-**Não duplique símbolos:** P de acerto sob Pavor → Pressão local da ameaça próxima; P de falha sob Pavor → reserva coletiva. Não credite o mesmo P às duas fontes. As condições de permanência da reserva entre cenas e os custos de ativação continuam em playtest.
+**Não duplique símbolos:** P de acerto com Pavor → Pressão local da ameaça próxima; P de falha com Pavor → reserva coletiva. Não credite o mesmo P às duas fontes. As condições de permanência da reserva entre cenas e os custos de ativação continuam em playtest.
 
 **O d4 básico** tem faces ○, ○, P e A+P, sem Êxito puro. Ele permite tentar ações sem treinamento, mas tende a produzir resultados dominados pelo Pavor, especialmente quando usado em duas fontes não compradas.
 
@@ -469,7 +469,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de �
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
 6. **Gaste símbolos de Antecipar e confira a DT.** Antes da comparação, escolha entre **anular 1P com 1A**, **converter 2A em 1E** ou destinar A a outros efeitos. Some **Êxito final + Pavor restante (E + P)**. Se alcançar a DT, a ação acontece; depois resolva controle, risco e dano. **A conversão é regra básica, sem depender de Perícia ou Maestria.**
 
-**Exemplo.** Maela tenta abrir uma passagem de **DT 2** usando Força 1 (1d6) e uma ferramenta com 1d10. O d6 mostra **E**, e o d10 mostra **E + A + P**. Com **2E + 1P**, a DT é alcançada e **E > P**: ela continua no controle. Pode usar **1A para anular P** e ficar com **2E**, ainda suficiente. Se a DT fosse **3**, precisaria conservar P para alcançá-la, mas **isso não seria um acerto sob Pavor**, pois E ainda seria maior que P.
+**Exemplo.** Maela tenta abrir uma passagem de **DT 2** usando Força 1 (1d6) e uma ferramenta com 1d10. O d6 mostra **E**, e o d10 mostra **E + A + P**. Com **2E + 1P**, a DT é alcançada e **E > P**: ela controla a execução, mas o **1P restante** ainda abre uma possibilidade de reação da oposição. Pode usar **1A para anular P** e ficar com **2E**, também suficientes, eliminando essa abertura. Se a DT fosse **3**, precisaria conservar P para alcançá-la e aceitar a oportunidade de intervenção.
 
 ### Exemplo completo de uma rolagem: seis etapas
 
@@ -700,7 +700,7 @@ Corven tem **1E + 1P = 2** para a DT, além de **1A**. Ele precisa escolher:
 - **Conservar o Pavor:** alcança **DT 2** e atravessa a passagem. Como **1E = 1P**, age em **equilíbrio tenso**, sem perder o controle automaticamente nem entregar P aos inimigos.
 - **Gastar o Antecipar para anular P:** sua soma cai para apenas **1E**, insuficiente para **DT 2**. Evita agir impulsivamente, mas não conclui a travessia.
 
-**Crítico é independente dessa escolha:** os dois dados mantidos mostram suas faces máximas (4 e 6), portanto ele **recupera 1 Coragem**, até o limite da reserva, mesmo que tenha escolhido neutralizar P e não alcançar a DT. **E = P é equilíbrio tenso; não é acerto sob Pavor.**
+**Crítico é independente dessa escolha:** os dois dados mantidos mostram suas faces máximas (4 e 6), portanto ele **recupera 1 Coragem**, até o limite da reserva, mesmo que tenha escolhido neutralizar P e não alcançar a DT. **E = P é equilíbrio tenso de controle; ainda assim, se P permanecer, haverá uma janela de intervenção da oposição.**
 
 Se Corven tivesse gasto **1 Coragem para elevar d4 a d6** antes da rolagem, teria de considerar a face do **novo d6**, e não reaproveitar a face 4 antiga. D6 na face 6 e d10 na face 10, ambos mantidos, também geram crítico, mesmo que o d10 mostre Pavor.
 
@@ -761,7 +761,7 @@ As profissões surgem **das combinações de pré-requisitos, graus de Perícias
 
 A comunidade de Maela precisa recuperar um gerador mecânico abandonado. A oficina está isolada por um portão deformado, e dois saqueadores tentam alcançar o mesmo equipamento. O objetivo dos Aprendizes é **recuperar uma peça essencial e sair com vida**, não necessariamente vencer um combate.
 
-**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Em **acerto sob Pavor (P > E)**, os P passam como Pressão à ameaça mais próxima, ou geram complicação ambiental na ausência dela. Em **falha com Pavor (P ≥ 1)**, os P vão à Reserva Acumulada (até o teto), **perde 1 Coragem** e a oposição assume a iniciativa; tropeços perigosos ou ferimentos acidentais podem acontecer conforme a ficção.
+**Três abordagens possíveis:** Maela pode usar Força e uma ferramenta para abrir o portão; alguém com Influência pode negociar um acordo; alguém com Destreza e Infiltração pode procurar uma entrada alternativa. Em **acerto com Pavor (P ≥ 1)**, o P restante abre uma oportunidade de oposição e pode virar Pressão da ameaça mais próxima; sem ameaça, gera complicação ambiental pertinente. Em **falha com Pavor (P ≥ 1)**, o P vai à reserva coletiva (até o teto), o personagem **perde 1 Coragem** e a oposição assume a iniciativa; acidentes e ferimentos adicionais dependem da ficção.
 
 Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; **DT 3** para negociação arriscada; **DT 4** para alcançar uma janela de difícil acesso. Estas DTs são pontos de referência experimentais, não um catálogo obrigatório. Registre quantas rolagens foram necessárias, se o grupo cooperou, quantos símbolos de Pavor surgiram e como os jogadores resolveram a cena.
 
