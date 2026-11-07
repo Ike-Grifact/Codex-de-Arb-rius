@@ -44,7 +44,7 @@ O combate do Codex RPG usa **protagonismo fluido entre jogadores e Narrador**. *
 
 O **Pavor de uma rolagem alimenta a oposição e normalmente autoriza a intervenção imediata do Narrador**. Registre **todos os símbolos P efetivamente rolados**, inclusive nos dados não mantidos; Antecipar pode neutralizar P antes da destinação. **Todo P não anulado vai à ameaça elegível mais próxima**, independentemente de acerto ou falha. **Sem inimigo próximo**, o P alimenta a **Reserva de Pressão Acumulada** (até seu teto), e o Narrador resolve uma complicação ou revés coerente quando sua intervenção acontecer. **Gastar Antecipar para passar a ação não cria Pavor: apenas deixa de anular o Pavor original, que alimenta a Pressão da oposição.** A rolagem de mais dados amplia as opções de Êxito e também a exposição ao Pavor.
 
-A reserva do Narrador começa com **2 Pressões** e tem teto **2 + 1 por jogador**. Pode ser gasta para introduzir ameaças, iniciar combates ou provocar eventos quando a ficção permitir, inclusive em sequências sem Pavor. **Mobs comuns exigem um Comandante, Minichefe ou Chefe presente e apto a transmitir ordens para serem ativados pela reserva coletiva**. Essa reserva não substitui a Pressão local da ameaça mais próxima.
+**Enquanto não houver Pavor, o protagonismo permanece livre entre os jogadores.** Isso não impede o Narrador de gastar a **Reserva de Pressão Acumulada de sessões anteriores** para **INICIAR UM CONFLITO**. Iniciar um conflito significa **colocar inimigos em cena ou apresentar uma situação que exija um objetivo específico dos personagens**. Não equivale a comprar um ataque avulso nem ao turno de um inimigo que já está em combate. A reserva começa a campanha com **2 Pressões**, tem teto **2 + 1 por jogador** e **conserva o saldo não gasto entre as sessões**. O custo de iniciar um conflito ainda depende de definição.
 
 Ao chegar a vez de um inimigo, ele gasta **1 Pressão para ativar seu turno**. Pode gastar **até 4 Pressões no total por ativação**, incluindo essa primeira, em poderes próprios, ajustes de dados e outros efeitos habilitados. **Quando um inimigo falha com Pavor, gera Coragem para os jogadores proporcionalmente ao Pavor obtido**; essa Coragem pode melhorar dados, permitir retenção extra e pagar habilidades especiais. O procedimento exato de distribuição dos pontos entre diferentes jogadores e os preços das habilidades precisam constar nas regras correspondentes.
 
@@ -427,7 +427,7 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 **Acerto sem Pavor:** a DT é alcançada e nenhum P permanece na pilha após as anulações. **O jogador conserva o protagonismo e pode agir novamente ou cedê-lo voluntariamente a outro jogador, sem custo e sem precisar de Antecipar.**
 
-**Falha sem Pavor:** a DT não é alcançada e nenhum P permanece. **O protagonismo passa ao próximo jogador**, sem gastar Antecipar. Não há perda de Coragem, Pressão nova nem revés automático por essa falha. Se os jogadores entrarem numa sequência dessas falhas, o Narrador ainda pode usar sua reserva coletiva já disponível para introduzir ameaças e eventos.
+**Falha sem Pavor:** a DT não é alcançada e nenhum P permanece. **O protagonismo passa ao próximo jogador**, sem gastar Antecipar. Não há perda de Coragem, Pressão nova nem revés automático por essa falha. Se os jogadores entrarem numa sequência dessas falhas, o Narrador ainda pode gastar a reserva persistente para **iniciar um conflito** com inimigos ou situação com objetivo; até lá, o protagonismo segue entre os jogadores.
 
 **Acerto com Pavor:** a DT é alcançada e resta pelo menos 1P em qualquer dado rolado, mesmo descartado. **O Narrador normalmente intervém, salvo quando 1A é gasto para ceder a um aliado sem anular o Pavor restante**; e **todo o P não anulado é encaminhado à ameaça elegível mais próxima**. Se ela puder agir, precisa gastar **1 Pressão para ativar seu turno**; pode investir mais conforme suas habilidades e limites. **Sem inimigo próximo**, o P alimenta a reserva coletiva (até o teto) e o Narrador introduz uma complicação decorrente do acerto, como perder posição, chamar atenção ou danificar um objeto. O jogador não simplesmente continua a agir como se fosse um acerto limpo.
 
@@ -451,19 +451,23 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 **Exemplo (DT 2):** após escolher os dados, Neris possui **1E + 1P + 1A**. Ela pode gastar **1A para anular 1P**, deixando só 1E e falhando sem Pavor; ou **manter o 1P** para alcançar DT 2 e gastar **1A para passar a Maela antes da intervenção**. No segundo caso, a oposição recebe **exatamente 1 Pressão**, não 2. Com **2A**, Neris teria também a alternativa de convertê-los em 1E, de acordo com a regra básica.
 
-### Reserva do Mestre, Pressão dos inimigos e regra de liderança
+### Dois recursos: iniciar o conflito e ativar inimigos
 
-| Recurso | Origem | Utilização |
+| Recurso | Origem e limite | Uso |
 |---|---|---|
-| **Reserva de Pressão Acumulada** | Começa em **2**, com teto de **2 + número de jogadores**. Recebe P de ações sem ameaça elegível. | O Mestre pode criar uma intervenção, chamar um inimigo ou evento, e pagar ativações com esse saldo conforme os custos aplicáveis. |
-| **Pressão local do inimigo** | **Todo P não anulado** da rolagem que tiver esse inimigo como ameaça elegível mais próxima. | Paga **1 Pressão para ativar o turno do inimigo** e seus efeitos, dentro do limite de gasto. |
-| **Coragem dos jogadores** | Reserva individual, ganhos por críticos e **Pavor gerado por falhas de inimigos**. | Melhora dados, pode manter mais dados e ativa habilidades conforme seus custos. |
+| **Reserva de Pressão Acumulada do Narrador** | A campanha começa em **2**, com teto de **2 + número de jogadores**. Recebe Pavor não anulado quando não há inimigo elegível próximo. **O saldo não gasto permanece entre sessões**. | **INICIAR UM CONFLITO:** introduzir inimigos na cena ou uma situação/evento com objetivo específico para o grupo. **Não pagar turnos isolados de inimigos já em combate.** |
+| **Pressão local de um inimigo** | Todo Pavor não anulado destinado à ameaça elegível mais próxima, enquanto ela estiver em cena. | **Ativar o turno do inimigo** por **1 Pressão local** e pagar as habilidades e ajustes permitidos. |
+| **Coragem dos jogadores** | Reserva individual, recuperada por críticos e por falhas com Pavor de inimigos. | Melhorar passo de dado, pagar habilidades e usar retenção extra quando o custo estiver aprovado. |
 
-**Limite da reserva coletiva:** 2 PJs → teto **4**; 3 PJs → **5**; 4 PJs → **6**. Ela **começa com 2**, independentemente do tamanho do grupo; o excedente de P não é armazenado. A reserva não recebe automaticamente o mesmo P encaminhado a um inimigo.
+**Reserva persistente:** com 2 jogadores, o teto é **4**; com 3, **5**; com 4, **6**. **Os 2 pontos iniciais são concedidos no início da campanha, não em toda sessão.** Ao encerrar uma sessão, registre o saldo não gasto; ele passa à próxima sessão e poderá aumentar com Pavor até o teto. **Quanto custa introduzir cada conflito ainda está [PENDENTE]**; não atribua um preço universal.
 
-**Regra de liderança:** para **gastar a reserva coletiva ativando mobs comuns**, é necessário haver **Comandante, Minichefe ou Chefe presente e apto a transmitir instruções** aos mobs. Esses líderes podem ser ativados diretamente com a reserva. Sem líder, o Mestre pode usar a reserva em eventos, ameaças elegíveis ou na introdução de um líder, se a situação permitir, **mas não pode comandar mobs comuns diretamente com ela**.
+**O que é iniciar um conflito?** É fazer entrar na história um problema com **objetivo claro**: colocar saqueadores no caminho dos personagens, introduzir uma criatura, provocar uma perseguição, bloquear uma saída, disparar um desastre ou apresentar uma negociação urgente. O Narrador pode fazer isso mesmo enquanto os jogadores rolam sem Pavor e agem livremente. **Iniciar o conflito não equivale a ativar um inimigo e não concede ataque gratuito.**
 
-**Custo e limite de ativação inimiga — [DEFINIDO]:** o inimigo gasta **1 Pressão para ganhar seu turno**. O máximo é de **4 Pressões gastas na mesma ativação**, incluindo a unidade necessária para agir. As restantes podem pagar habilidades, retenção de resultados extras ou mudança de um passo de dado, quando o efeito for permitido. **Não ultrapasse quatro dados mantidos**. Custos de habilidades especiais e preços exatos de efeitos adicionais devem constar de suas fichas; não pressuponha que qualquer efeito amplo custe apenas 1 Pressão.
+**Mobs e líderes:** um conflito pode começar com mobs comuns em cena, com ou sem comandante. **Comandantes, Minichefes ou Chefes**, quando presentes e aptos a transmitir ordens, podem **coordenar mobs comuns**. A exigência de liderança para ordens não impede introduzir esses mobs como parte do conflito. Cada ameaça recebe Pressão local segundo as rolagens, e não compra automaticamente turnos com a reserva entre sessões.
+
+**Ativação inimiga dentro de um conflito — [DEFINIDO]:** custa **1 Pressão local** para ganhar o turno. Um inimigo pode gastar **até 4 Pressões na mesma ativação**, incluindo a inicial; o restante paga habilidades e modificações permitidas pela sua ficha. Nunca ultrapasse o limite geral de **4 dados mantidos**. O custo de efeitos específicos continua vinculado às fichas ou pendente.
+
+**Sem Pavor e sem conflito iniciado:** os jogadores **seguem protagonizando a cena livremente**. Em acertos sem Pavor, quem age pode continuar ou passar a outro jogador; em falhas sem Pavor, passa a oportunidade ao próximo jogador, sem intervenção mecânica automática do Narrador. O Narrador ainda narra o ambiente normalmente; se quiser iniciar um conflito mecânico, pode **gastar a reserva persistente** e introduzir uma situação com objetivo concreto.
 
 ### Ameaças também podem falhar com Pavor
 
@@ -471,11 +475,13 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 A **distribuição dessa Coragem entre vários jogadores**, o custo de manter dados adicionais e os custos de habilidades específicas ainda precisam ser fechados para cada tipo de efeito. **A proporcionalidade 1P = 1 Coragem gerada** já orienta o recurso, mas **não significa conceder a todos os jogadores o total de P separadamente**.
 
-### Exemplo — Turnos e Pressão numa cena
+### Exemplo — Pressão guardada de sessões anteriores
 
-Com três jogadores, o Mestre começa com **2 Pressões**, podendo acumular até **5**. Os Aprendizes investigam uma mina antes de encontrar ameaças: se falharem sem gerar P, o protagonismo segue entre eles, enquanto o Mestre ainda pode gastar parte da reserva inicial para introduzir um Comandante ou iniciar um evento coerente com a cena.
+Há **3 jogadores**, e a reserva do Narrador começou a campanha com **2 Pressões**, tendo teto **5**. Ao terminar a sessão anterior, o Narrador tinha **4 Pressões não gastas**; na próxima sessão, **começa com esse mesmo saldo de 4**, sem receber outros 2 gratuitamente.
 
-Quando surge um inimigo, Maela consegue **2E e 0P** na pilha toda e **pode continuar agindo**. Corven rola três dados e mantém dois para alcançar a DT; um dado descartado mostra **1P**. A DT pode ser atingida apenas com Êxitos mantidos, mas **o Pavor bruto não anulado provoca intervenção do Narrador** e passa **1 Pressão ao inimigo mais próximo**, que pode gastar esse ponto para agir. Depois, Neris falha com **1P**, **perde 1 Coragem e passa o protagonismo ao Narrador**. O P vai ao inimigo mais próximo, não à reserva geral; se não houvesse inimigo, alimentaria a reserva coletiva e causaria um revés. **O próximo jogador não assume enquanto a intervenção não for resolvida.** Quando o inimigo falha com **2P**, gera **2 pontos de Coragem para distribuição entre os jogadores**, respeitando os limites.
+Maela, Corven e Neris exploram ruínas e estão agindo **sem gerar Pavor**. O grupo pode continuar tentando, escolhendo caminhos e passando a oportunidade entre seus integrantes. O Narrador decide usar parte da reserva acumulada para **INICIAR UM CONFLITO**: um grupo de saqueadores bloqueia a saída. **Objetivo principal:** atravessar ou negociar uma rota segura. **Objetivo secundário possível:** conservar os suprimentos. O custo exato dessa introdução precisa estar definido antes do gasto; o livro ainda não estabelece um preço fixo.
+
+**Só depois do início do conflito**, se Corven rolar e deixar **1P não anulado**, a ameaça elegível mais próxima recebe **1 Pressão local**. O Narrador pode gastar esse ponto para **ativar o turno dela**. A reserva de sessões anteriores continua sendo recurso para **introduzir conflitos posteriores**, não para comprar ataques isolados desse saqueador.
 
 ### Regra básica — Dois símbolos de Antecipar geram um Êxito
 
@@ -600,7 +606,7 @@ Quando **há Pavor não anulado**, **gastar 1A permite passar o protagonismo a u
 
 ### Quando o Narrador age?
 
-O fluxo pode alternar **jogador → jogador** numa falha sem Pavor ou por decisão voluntária; **jogador → Narrador** sempre que aparecer Pavor não anulado; e **Narrador → jogador** após a intervenção ser resolvida. Não existe fila fixa de turnos nem inimigo com ação gratuita por falha. **Toda ativação de inimigo custa 1 Pressão**, sendo possível gastar até **4 Pressões nessa ativação**, contando a primeira. O Narrador pode descrever um revés mesmo sem ameaça próxima e, se a ficção permitir, gastar a reserva coletiva para introduzir evento ou ameaça.
+O fluxo pode alternar **jogador → jogador** numa falha sem Pavor ou por decisão voluntária; **jogador → Narrador** quando houver Pavor não anulado; e **Narrador → jogador** após a intervenção. **Sem Pavor, os jogadores podem continuar agindo livremente.** O Narrador pode, contudo, gastar **Pressão acumulada de sessões anteriores para INICIAR UM CONFLITO**, colocando inimigos na mesa ou criando uma situação com objetivo claro. Isso **não é um turno de inimigo**. Dentro do conflito, cada inimigo precisa de **1 Pressão local** para ser ativado e pode gastar até **4 Pressões na ativação**.
 
 **Exemplo — Com inimigo presente:** Corven tira **1E + 1P** contra DT 2. Ele atravessa, mas **o Narrador intervém** e transfere o P ao vigia mais próximo. O vigia pode gastar **1 Pressão para ter seu turno**. Mais tarde Neris tira **1P** contra DT 2: **falha, perde 1 Coragem e passa o protagonismo ao Narrador**, não a Maela.
 
@@ -614,9 +620,9 @@ O fluxo pode alternar **jogador → jogador** numa falha sem Pavor ou por decis�
 
 ### Reserva coletiva e liderança
 
-A **Reserva de Pressão Acumulada** começa em **2** e tem teto **2 + número de jogadores** (3 PJs → **5**; 4 PJs → **6**). Quando não houver inimigo elegível próximo, Pavor não anulado alimenta essa reserva e produz consequência narrativa. O Narrador pode também gastar a reserva durante uma sequência de acertos limpos ou falhas sem Pavor, trazendo uma ameaça ou um evento justificado.
+A **Reserva de Pressão Acumulada do Narrador** começa a campanha com **2** e tem teto de **2 + número de jogadores** (3 PJs → **5**; 4 PJs → **6**). **O saldo não gasto passa de uma sessão para a próxima**, sem repor os 2 pontos iniciais a cada sessão. Pavor não anulado, quando não há inimigo próximo, aumenta esse saldo até o teto. **O único gasto dessa reserva é INICIAR UM CONFLITO**: colocar inimigos em cena ou apresentar uma situação com **objetivo específico**. Não compra turnos de inimigos já no confronto.
 
-**Comandantes, Minichefes e Chefes** podem ser ativados diretamente com a reserva. **Mobs comuns** só podem ser ativados por ela quando um desses líderes estiver **presente e apto a transmitir ordens**. A existência de Pavor sempre dá ao Narrador uma intervenção, mas não permite ignorar a regra de comando nem o custo de 1 Pressão para ativar um inimigo.
+**Introduzir um conflito e comandar mobs são coisas diferentes.** Um conflito pode começar com mobs comuns em cena; para que recebam **ordens coordenadas**, é necessário um **Comandante, Minichefe ou Chefe** presente e apto a transmiti-las. Dentro do conflito, um inimigo deve pagar **1 Pressão local** para seu turno. **A reserva acumulada entre sessões não paga turnos isolados nem cria ações extras gratuitas.**
 
 ### Coragem e reciprocidade entre os lados
 
