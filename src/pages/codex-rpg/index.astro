@@ -30,7 +30,12 @@ const base = import.meta.env.BASE_URL;
       <div class="codex-rpg-card">
         <div class="codex-rpg-card__label">PLAYTEST · HUMANOS</div>
         <h3>Comece como Aprendiz</h3>
-        <p>Crie personagens Humanos com Atributos que começam em zero, compre Conhecimentos e Práticas com XP e avance pelos Marcos de progressão. Explore dados de Presença, Desespero e Improviso, incluindo o d4 básico para tentativas sem treinamento, testes por DT, armaduras, ações em equipe e iniciativa fluida.</p>
+        <p>Crie personagens Humanos com Atributos que começam em zero, compre Conhecimentos e Práticas com XP e avance pelos Marcos de progressão. Explore dados de Êxito, Pavor e Antecipar, incluindo o d4 básico para tentativas sem treinamento, testes por DT, armaduras, ações em equipe e iniciativa fluida.</p>
+        <div class="codex-rpg-rune-legend" aria-label="Cores e símbolos do Codex RPG">
+          <span class="codex-rpg-rune codex-rpg-rune--exito"><strong>ᛋ E</strong> Êxito</span>
+          <span class="codex-rpg-rune codex-rpg-rune--antecipar"><strong>ᚨ A</strong> Antecipar</span>
+          <span class="codex-rpg-rune codex-rpg-rune--pavor"><strong>ᛈ P</strong> Pavor</span>
+        </div>
         <div class="codex-rpg-meta">
           <span>Criação inicial: 14 XP (7 Base + 7 Formação)</span>
           <span>Marco II: 3 dados mantidos</span>
@@ -43,7 +48,7 @@ const base = import.meta.env.BASE_URL;
     <section class="codex-rpg-section" aria-labelledby="estado-titulo">
       <div class="section-heading"><div><p class="eyebrow">Transparência de regras</p><h2 id="estado-titulo">O que está em desenvolvimento</h2></div></div>
       <div class="codex-rpg-mini-grid">
-        <article><h3>Regras de base</h3><p>Criação de Aprendizes, Atributos, retenção de dados, DTs e o balanço entre Presença, Improviso e Desespero estão descritos no livro.</p></article>
+        <article><h3>Regras de base</h3><p>Criação de Aprendizes, Atributos, retenção de dados, DTs e o balanço entre Êxito, Antecipar e Pavor estão descritos no livro.</p></article>
         <article><h3>Regras em teste</h3><p>Custos especiais de Coragem, Maestrias, armaduras, críticos, ferimentos e o d20 extraordinário ainda exigem sessões de validação.</p></article>
         <article><h3>Próximas linhagens</h3><p>Luckers, Luckers de Sangue e Runa-Espinhos fazem parte do universo, mas não são opções jogáveis nesta edição.</p></article>
       </div>
@@ -67,6 +72,12 @@ const base = import.meta.env.BASE_URL;
   .codex-rpg-card__label{color:#9c5146;font-weight:800;font-size:.7rem;letter-spacing:.11em}
   .codex-rpg-card h3{margin:.55rem 0 .7rem;color:var(--forest-950);font:600 1.6rem Georgia,serif}
   .codex-rpg-card p{max-width:78ch;color:var(--muted)}
+  .codex-rpg-rune-legend{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.15rem 0}
+  .codex-rpg-rune{display:inline-flex;align-items:center;gap:.5rem;padding:.43rem .8rem;border-radius:8px;color:#fff;font:700 .88rem/1.3 ui-sans-serif,system-ui}
+  .codex-rpg-rune strong{font-size:1.1rem;letter-spacing:.03em}
+  .codex-rpg-rune--exito{background:#267A45}
+  .codex-rpg-rune--antecipar{background:#2369BB}
+  .codex-rpg-rune--pavor{background:#542176}
   .codex-rpg-meta{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.25rem 0}
   .codex-rpg-meta span{padding:.35rem .65rem;border-radius:20px;background:#e9e2d8;font-size:.73rem;font-weight:650;color:#755349}
   .codex-rpg-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
