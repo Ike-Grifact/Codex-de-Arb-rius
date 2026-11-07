@@ -38,11 +38,15 @@ A **Dificuldade de Teste (DT)** mostra quanto progresso a situação exige. **Ê
 
 **Exemplo:** numa tarefa de **DT 2**, **2E** cumprem o objetivo como planejado; **1E + 1P** cumprem a DT, mas deixam uma abertura tática; **2P** também cumprem a DT, porém com o Pavor dominando a execução. **A soma decide se a ação acontece; a composição dos símbolos decide como e com que consequências.**
 
-### Combate tático com iniciativa fluida
+### Protagonismo e economia de iniciativa
 
-Os jogadores **não ficam presos a uma fila rígida de turnos**. Eles podem agir, encadear iniciativas e passar oportunidades uns aos outros. **Antecipar** é parte dessa coordenação. **Qualquer Pavor que permaneça num acerto ou numa falha, mesmo apenas 1P, cria uma oportunidade de intervenção da oposição**; não é preciso que P seja maior que E para abrir essa janela. A relação **E > P, E = P ou P > E** determina **quanto controle** a personagem preserva, e não se a oposição pode reagir. A oposição só efetua uma ativação mediante as fontes e custos previstos para a cena, sem ganhar ataques gratuitos ilimitados.
+O combate do Codex RPG usa **protagonismo fluido**. O jogador que alcança um **Êxito sem Pavor** continua realizando ações até decidir ceder a oportunidade ou ocorrer uma intervenção válida do Mestre. **Se falhar, o protagonismo passa ao próximo jogador**, quer haja Pavor ou não. O Mestre não recebe um ataque gratuito só porque alguém falhou: ativar um inimigo exige **Pressão disponível e seu custo de ativação**.
 
-Quando um jogador **acerta com Pavor**, o objetivo acontece, mas o Pavor restante pode alimentar a **Pressão da ameaça mais próxima**; sem ameaça, resulta em uma complicação coerente com a ficção. Quando **falha com Pavor**, a personagem **perde 1 Coragem**, o Pavor restante alimenta a **Reserva de Pressão Acumulada** e a iniciativa vai à oposição. **Falhas sem Pavor** não causam penalidade automática e passam a oportunidade a outro jogador. O princípio de medo e reação deve valer também para criaturas e NPCs, mas **os números e a forma exata de transferência de Coragem entre os lados ainda precisam ser definidos**; não confunda Coragem com Pressão antes dessa definição.
+O **Pavor de uma rolagem alimenta a oposição**. Registre **todos os símbolos P efetivamente rolados**, inclusive nos dados que não forem mantidos; Antecipar pode neutralizar P antes da destinação. **O total de P não anulado vai para a ameaça elegível mais próxima**, independentemente de a ação ter alcançado a DT. Se **ainda não há inimigo em cena**, esse P alimenta a **Reserva de Pressão Acumulada** do Mestre, respeitando seu limite. Assim, dados extras dão opções de Êxito, mas também podem aumentar o risco de gerar Pressão.
+
+A reserva do Mestre começa com **2 Pressões** e tem teto **2 + 1 por jogador**. Ela permite chamar uma ameaça, iniciar um combate ou disparar um evento quando a ficção permitir, inclusive se o grupo estiver numa sequência de falhas sem Pavor ou de Êxitos limpos. **Mobs comuns precisam de um Comandante, Minichefe ou Chefe presente e apto a transmitir ordens para serem ativados pela reserva coletiva**.
+
+Ao chegar a vez de um inimigo, ele gasta **1 Pressão para ativar seu turno**. Pode gastar **até 4 Pressões no total por ativação**, incluindo essa primeira, em poderes próprios, ajustes de dados e outros efeitos habilitados. **Quando um inimigo falha com Pavor, gera Coragem para os jogadores proporcionalmente ao Pavor obtido**; essa Coragem pode melhorar dados, permitir retenção extra e pagar habilidades especiais. O procedimento exato de distribuição dos pontos entre diferentes jogadores e os preços das habilidades precisam constar nas regras correspondentes.
 
 ### Origens orientam builds, não proíbem profissões
 
@@ -402,42 +406,58 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 **Regra de leitura:** **Êxito (E)** indica o quanto a personagem executa a ação como queria; **Pavor (P)** indica o quanto o medo e o impulso tomam conta; **Antecipar (A)** indica sua capacidade de se adaptar. **Antes de comparar com a DT, qualquer personagem pode converter 2A em 1E, sem Perícia ou Maestria**, ou gastar 1A para anular 1P. Depois dessas escolhas, conte **E + P restante**. A rolagem revela tanto *se* a personagem agiu quanto *como*.
 
-### Ordem de resolução: objetivo, controle e oportunidade
+### Ordem de resolução: objetivo, controle e Pressão
 
-1. **Role a pilha e escolha os dados mantidos**, conforme o Marco. Mantenha pelo menos um dado de Atributo.
-2. **Decida como usar Antecipar (A) antes da DT**: cada **1A pode anular 1P**, reduzindo também o progresso em 1; cada **2A podem criar 1E**. Um símbolo gasto não pode ser usado novamente.
-3. **Some E + P restante e compare com a DT**. Assim se sabe se o objetivo foi alcançado.
-4. **Leia o balanço E versus P** para narrar o grau de controle e determinar a abertura tática.
+1. **Role todos os dados** das fontes do teste. Registre os símbolos de **Pavor (P) de toda a pilha rolada**, inclusive os dados que não forem mantidos. Esse é o **Pavor bruto**, usado para determinar a Pressão gerada.
+2. **Escolha os dados mantidos** conforme o Marco, incluindo ao menos um dado de Atributo. Apenas os símbolos de Êxito e Pavor **dos dados mantidos** contam para a DT e o dano.
+3. **Use Antecipar (A)** dos resultados mantidos e dos bônus pertinentes antes da DT. **1A anula 1P** de sua escolha, e **2A criam 1E**. Se o P anulado estiver nos dados mantidos, ele deixa de contar tanto para a DT quanto para a Pressão; se estiver apenas num dado descartado, a DT não muda, mas a Pressão diminui. Nenhum A pode ser gasto mais de uma vez.
+4. **Compare E + P mantido e não anulado com a DT** para saber se o objetivo aconteceu. Use **E versus P mantido** para narrar o grau de controle da ação.
+5. **Transfira todo o Pavor bruto não anulado**, sem reduzir pela metade, à **ameaça elegível mais próxima**, ganhando ela essa quantidade de **Pressão local**. Se ainda não existir inimigo, encaminhe o P para a **Reserva de Pressão Acumulada** até o teto. **O mesmo P não entra nas duas fontes.**
+6. **Passe ou preserve o protagonismo:** em Êxito sem Pavor, a personagem pode continuar agindo; em qualquer falha, o próximo jogador assume. Um acerto com Pavor abre oportunidade de intervenção, mas o inimigo deve pagar sua ativação.
 
-| Balanço após os gastos de Antecipar | Como a personagem age |
+**Êxito, Antecipar e Pavor continuam contando histórias diferentes.** O resultado de DT depende do que foi mantido; a Pressão depende do Pavor que surgiu em toda a rolagem. Isso faz a decisão de rolar mais dados oferecer **mais opções e mais exposição ao risco**.
+
+| Balanço dos símbolos mantidos | Como interpretar a ação |
 |---|---|
-| **E > P** | **Êxito predominante:** executa a maior parte da ação como imaginou. Se houver algum P restante, ainda há uma brecha para oposição, mas a ação não perde o controle por completo. |
-| **E = P** | **Equilíbrio tenso:** adapta o plano sob pressão; mesmo assim, um P restante pode permitir reação da oposição. |
-| **P > E** | **Pavor predominante:** realiza movimentos ou escolhas impulsivas e corre riscos mais intensos de sair do planejado. |
+| **E > P** | A intenção prevalece; Pavor residual ainda pode alimentar oposição. |
+| **E = P** | Equilíbrio tenso entre planejamento e medo. |
+| **P > E** | Ação impulsiva e maior risco de sair do planejado. |
 
-### O que acontece ao acertar ou falhar?
+### Acerto e falha: qual é o próximo protagonista?
 
-**Acerto sem Pavor (E + P ≥ DT e P = 0):** a ação acontece como a personagem pretendeu, respeitadas as adaptações escolhidas. **A oportunidade continua entre os jogadores**, a menos que já exista outra ativação pertinente prevista na cena.
+**Acerto sem Pavor:** a DT é alcançada e **não resta nenhum P na pilha inteira após os cancelamentos**. O jogador **pode continuar agindo**, encadeando novas ações enquanto não houver intervenção válida. Não precisa passar o turno por ter sido bem-sucedido.
 
-**Acerto com Pavor (E + P ≥ DT e P ≥ 1):** o objetivo acontece, mas **cada P restante pode ser direcionado como Pressão local à ameaça elegível mais próxima**. Mesmo quando **E > P**, a oposição ganha **uma janela de intervenção**, respeitando os custos e as ativações estabelecidas. **P > E** indica uma execução especialmente descontrolada, não o requisito mínimo para o Pavor ter consequência. Sem ameaça elegível, o Mestre descreve uma complicação narrativa proporcional à quantidade de P e à situação, como perder posição, fazer barulho ou danificar proteção.
+**Acerto com Pavor:** a DT é alcançada, mas sobra P em algum dado da rolagem. **Todos esses P alimentam a Pressão do inimigo mais próximo**. O personagem cumpre o objetivo, porém um inimigo pode gastar Pressão para intervir. **Mesmo 1P importa; não é necessário que P > E**.
 
-**Falha com Pavor (E + P < DT e P ≥ 1):** a ação não alcança o objetivo, o personagem **perde exatamente 1 Coragem**, e os **P restantes entram na Reserva de Pressão Acumulada** até seu teto. **A iniciativa passa à oposição**, que poderá agir conforme suas ativações. Ferimentos acidentais em si ou em aliados, dano a equipamentos e outros efeitos adicionais exigem coerência com a cena; não acontecem todos automaticamente. **Mesmo que E seja maior que P, a presença de um P não anulado torna a falha uma falha com Pavor.**
+**Falha sem Pavor:** a DT não é alcançada e não resta P. **O próximo jogador assume o protagonismo**; não ocorre dano nem perda automática de Coragem por essa falha. Se todos falharem sem gerar P, o Mestre poderá ainda usar a reserva que já tinha para acionar ameaça ou evento.
 
-**Falha sem Pavor (E + P < DT e P = 0):** o objetivo não é alcançado. Não perde Coragem nem alimenta Pressão automaticamente. **A oportunidade passa a outro jogador**, tanto quando houve algum E insuficiente quanto numa rolagem vazia. Os símbolos A não gastos só têm efeitos se aplicados conforme suas regras.
+**Falha com Pavor:** a DT não é alcançada e resta P na rolagem. **O próximo jogador assume o protagonismo**; a personagem **perde 1 Coragem**, e **todo o P não anulado vai ao inimigo mais próximo**. Na ausência de inimigo, o P aumenta a reserva coletiva. O Mestre pode intervir pagando uma ativação, mas a falha não transfere um turno gratuito nem dispara automaticamente todos os efeitos de acidente ou dano.
 
-**Pavor e Pressão são coisas distintas:** **P** é o símbolo da rolagem; **Pressão** é o recurso registrado para a cena ou para uma ameaça. **Não credite o mesmo P duas vezes.** A troca de iniciativa e a ativação não são sinônimos de ataque gratuito: devem respeitar a economia do conflito.
+### Reserva do Mestre, Pressão dos inimigos e regra de liderança
 
-### Reserva de Pressão Acumulada — capacidade por número de jogadores
+| Recurso | Origem | Utilização |
+|---|---|---|
+| **Reserva de Pressão Acumulada** | Começa em **2**, com teto de **2 + número de jogadores**. Recebe P de ações sem ameaça elegível. | O Mestre pode criar uma intervenção, chamar um inimigo ou evento, e pagar ativações com esse saldo conforme os custos aplicáveis. |
+| **Pressão local do inimigo** | **Todo P não anulado** da rolagem que tiver esse inimigo como ameaça elegível mais próxima. | Paga **1 Pressão para ativar o turno do inimigo** e seus efeitos, dentro do limite de gasto. |
+| **Coragem dos jogadores** | Reserva individual, ganhos por críticos e **Pavor gerado por falhas de inimigos**. | Melhora dados, pode manter mais dados e ativa habilidades conforme seus custos. |
 
-**A reserva coletiva começa com 2 Pressões e comporta até 2 + 1 por jogador.** Com 2 PJs o limite é **4**; com 3 é **5**; com 4 é **6**. Cinco não é teto universal. Cada falha com Pavor acrescenta seus P restantes **até o teto**; o excedente não fica armazenado.
+**Limite da reserva coletiva:** 2 PJs → teto **4**; 3 PJs → **5**; 4 PJs → **6**. Ela **começa com 2**, independentemente do tamanho do grupo; o excedente de P não é armazenado. A reserva não recebe automaticamente o mesmo P encaminhado a um inimigo.
 
-**O Mestre pode gastar essa reserva durante sequências de acertos dos jogadores**, permitindo ativações mesmo sem uma falha recente. O gasto segue os custos das fichas das ameaças: **não há custo universal presumido**.
+**Regra de liderança:** para **gastar a reserva coletiva ativando mobs comuns**, é necessário haver **Comandante, Minichefe ou Chefe presente e apto a transmitir instruções** aos mobs. Esses líderes podem ser ativados diretamente com a reserva. Sem líder, o Mestre pode usar a reserva em eventos, ameaças elegíveis ou na introdução de um líder, se a situação permitir, **mas não pode comandar mobs comuns diretamente com ela**.
 
-**Comando dos mobs:** Comandantes, Minichefes e Chefes podem ser ativados diretamente usando a reserva coletiva. Para usar essa reserva para ativar um **mob comum**, deve haver **ao menos um Comandante, Minichefe ou Chefe presente e capaz de transmitir ordens** àquele mob. Sem liderança, não é permitido gastar Pressão coletiva para ativar mobs comuns. Essa restrição não cancela as fontes de Pressão locais ou ativação própria, quando descritas na ficha.
+**Custo e limite de ativação inimiga — [DEFINIDO]:** o inimigo gasta **1 Pressão para ganhar seu turno**. O máximo é de **4 Pressões gastas na mesma ativação**, incluindo a unidade necessária para agir. As restantes podem pagar habilidades, retenção de resultados extras ou mudança de um passo de dado, quando o efeito for permitido. **Não ultrapasse quatro dados mantidos**. Custos de habilidades especiais e preços exatos de efeitos adicionais devem constar de suas fichas; não pressuponha que qualquer efeito amplo custe apenas 1 Pressão.
 
-**Não duplique símbolos:** P de acerto com Pavor → Pressão local da ameaça próxima; P de falha com Pavor → reserva coletiva. Não credite o mesmo P às duas fontes. As condições de permanência da reserva entre cenas e os custos de ativação continuam em playtest.
+### Ameaças também podem falhar com Pavor
 
-**O d4 básico** tem faces ○, ○, P e A+P, sem Êxito puro. Ele permite tentar ações sem treinamento, mas tende a produzir resultados dominados pelo Pavor, especialmente quando usado em duas fontes não compradas.
+**Se um inimigo falha com Pavor, o resultado gera Coragem aos jogadores, em proporção ao Pavor produzido: 1P → 1 ponto de Coragem a distribuir.** A Coragem serve a recursos equivalentes aos da oposição: **elevar o passo de um dado, manter mais resultados ou pagar habilidades especiais**. O limite de cada reserva individual continua sendo **10 Coragens**, salvo efeito específico.
+
+A **distribuição dessa Coragem entre vários jogadores**, o custo de manter dados adicionais e os custos de habilidades específicas ainda precisam ser fechados para cada tipo de efeito. **A proporcionalidade 1P = 1 Coragem gerada** já orienta o recurso, mas **não significa conceder a todos os jogadores o total de P separadamente**.
+
+### Exemplo — Turnos e Pressão numa cena
+
+Com três jogadores, o Mestre começa com **2 Pressões**, podendo acumular até **5**. Os Aprendizes investigam uma mina antes de encontrar ameaças: se falharem sem gerar P, o protagonismo segue entre eles, enquanto o Mestre ainda pode gastar parte da reserva inicial para introduzir um Comandante ou iniciar um evento coerente com a cena.
+
+Quando surge um inimigo, Maela consegue **2E e 0P** na pilha toda: **pode continuar agindo**. Corven rola três dados e mantém dois para alcançar uma DT; um dado descartado mostra **1P**. O objetivo pode ser cumprido limpo pelos dados mantidos, mas **esse 1P bruto vai ao inimigo mais próximo**. Com pelo menos **1 Pressão**, ele poderá pagar sua ativação. Depois, Neris falha com **1P**, perde **1 Coragem** e passa o protagonismo ao próximo jogador; **o P também alimenta o inimigo mais próximo**, não a reserva geral. Se esse inimigo falhar com **2P**, gera **2 pontos de Coragem para distribuição entre os jogadores**, respeitando os limites individuais.
 
 ### Regra básica — Dois símbolos de Antecipar geram um Êxito
 
