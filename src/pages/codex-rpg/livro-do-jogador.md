@@ -319,16 +319,16 @@ Codex RPG utiliza dados simbólicos especiais. Você pode consultar a tabela aba
 
 ## Símbolos rúnicos temporários
 
-Os resultados são representados por **glifos rúnicos provisórios**. Os nomes e abreviações atuais são **Êxito (E, verde)**, **Antecipar (A, azul)** e **Pavor (P, roxo-escuro)**. Os glifos são inspirados em runas históricas, mas **não constituem um alfabeto oficial do cenário** nesta edição. **P representa Pavor nas rolagens; Pressão é o recurso acumulado, não outro símbolo.**
+Os resultados são representados por **glifos rúnicos provisórios**: **Sowilo (ᛋ)** para **Êxito (E, verde)**, **Ansuz (ᚨ)** para **Antecipar (A, azul)** e **Perthro (ᛈ)** para **Pavor (P, roxo-escuro)**. Os glifos são inspirados em runas históricas, mas **não constituem um alfabeto oficial do cenário** nesta edição. **P representa Pavor nas rolagens; Pressão é o recurso acumulado, não outro símbolo.**
 
 | Resultado | Runa | Sigla | Cor oficial | Função |
 |---|:---:|:---:|:---:|---|
-| **Êxito** | **ᛏ** | **E** | <span class="codex-symbol codex-symbol--exito">Verde · #267A45</span> | Representa execução e controle: a personagem age como pretendeu. Conta integralmente para a DT e para o dano calculado. |
-| **Antecipar** | **ᛃ** | **A** | <span class="codex-symbol codex-symbol--antecipar">Azul · #2369BB</span> | Representa adaptação diante do medo: **1A pode anular 1P** ou **2A podem criar 1E** antes de comparar a DT. Um símbolo A isolado não soma diretamente. |
-| **Pavor** | **ᚦ** | **P** | <span class="codex-symbol codex-symbol--pavor">Roxo-escuro · #542176</span> | Representa impulso e perda de controle. Se **P > E**, o acerto passa P como Pressão à ameaça próxima (ou gera complicação narrativa sem ameaça); uma falha acumula P na reserva de Pressão e retira **1 Coragem**. Conta pela metade para dano, arredondando para baixo. |
+| **Êxito** | **ᛋ** | **E** | <span class="codex-symbol codex-symbol--exito">Verde · #267A45</span> | Representa execução e controle: a personagem age como pretendeu. Conta integralmente para a DT e para o dano calculado. |
+| **Antecipar** | **ᚨ** | **A** | <span class="codex-symbol codex-symbol--antecipar">Azul · #2369BB</span> | Representa adaptação diante do medo: **1A pode anular 1P** ou **2A podem criar 1E** antes de comparar a DT. Um símbolo A isolado não soma diretamente. |
+| **Pavor** | **ᛈ** | **P** | <span class="codex-symbol codex-symbol--pavor">Roxo-escuro · #542176</span> | Representa impulso e perda de controle. Se **P > E**, o acerto passa P como Pressão à ameaça próxima (ou gera complicação narrativa sem ameaça); uma falha acumula P na reserva de Pressão e retira **1 Coragem**. Conta pela metade para dano, arredondando para baixo. |
 | **Face vazia** | **○** | — | Sem cor | Nenhum símbolo: não acrescenta pontos ao teste. |
 
-**Leitura rápida:** **ᛏᛃᚦ** corresponde a **1E + 1A + 1P**. Várias runas na mesma face se acumulam; por exemplo, **ᛏᛏᚦ** corresponde a **2E + 1P**.
+**Leitura rápida:** **ᛋᚨᛈ** corresponde a **1E + 1A + 1P**. Várias runas na mesma face se acumulam; por exemplo, **ᛋᛋᛈ** corresponde a **2E + 1P**.
 
 ### Tabela de conversão dos dados numéricos
 
@@ -336,18 +336,18 @@ Os resultados são representados por **glifos rúnicos provisórios**. Os nomes 
 |---|---|---|---|---|
 | 1 | ○ | ○ | ○ | ○ |
 | 2 | ○ | ○ | ○ | ○ |
-| 3 | ᚦ | ᚦ | ᚦ | ᚦ |
-| 4 | ᛃᚦ | ᚦ | ᚦ | ᚦ |
-| 5 | — | ᛃᚦ | ᛃᚦ | ᛃᚦ |
-| 6 | — | ᛏ | ᛏ | ᛏ |
-| 7 | — | — | ᛏᛏ | ᛏᛏ |
-| 8 | — | — | ᛏᛃ | ᛏᛃ |
-| 9 | — | — | ᛏᛃᚦ | ᛏᛃᚦ |
-| 10 | — | — | ᛏᛏᚦ | ᛏᛏᚦ |
-| 11 | — | — | — | ᛏᛃᛃᚦ |
-| 12 | — | — | — | ᚦᚦ |
+| 3 | ᛈ | ᛈ | ᛈ | ᛈ |
+| 4 | ᚨᛈ | ᛈ | ᛈ | ᛈ |
+| 5 | — | ᚨᛈ | ᚨᛈ | ᚨᛈ |
+| 6 | — | ᛋ | ᛋ | ᛋ |
+| 7 | — | — | ᛋᛋ | ᛋᛋ |
+| 8 | — | — | ᛋᚨ | ᛋᚨ |
+| 9 | — | — | ᛋᚨᛈ | ᛋᚨᛈ |
+| 10 | — | — | ᛋᛋᛈ | ᛋᛋᛈ |
+| 11 | — | — | — | ᛋᚨᚨᛈ |
+| 12 | — | — | — | ᛈᛈ |
 
-**Atenção:** o travessão **—** nas linhas acima indica que o dado não possui aquela face; já o círculo **○** indica uma face existente sem símbolos. O d4 tem **○, ○, ᚦ, ᛃᚦ**: não possui Êxito puro.
+**Atenção:** o travessão **—** nas linhas acima indica que o dado não possui aquela face; já o círculo **○** indica uma face existente sem símbolos. O d4 tem **○, ○, ᛈ, ᚨᛈ**: não possui Êxito puro.
 
 ### Como ler os símbolos em dados comuns
 
@@ -355,14 +355,14 @@ A tabela mostra **todas as faces dos dados d4, d6, d10 e d12** usadas nesta edi�
 
 | Exemplo de face | Leitura rúnica | Pontos para a DT antes de anular P | Outros efeitos |
 |---|---|---:|---|
-| **d4, face 3** | **ᚦ = 1P** | **1** | Êxito incerto possível numa DT 1. |
-| **d4, face 4** | **ᛃᚦ = 1A + 1P** | **1 se o P for mantido; 0 se anulado** | Gastar o Antecipar para anular o Pavor elimina também o ponto que ele daria à DT. |
-| **d6, face 6** | **ᛏ = 1E** | **1** | Um Êxito. |
-| **d10, face 7** | **ᛏᛏ = 2E** | **2** | Dois Êxitos sem Pavor. |
-| **d10, face 9** | **ᛏᛃᚦ = 1E + 1A + 1P** | **2** | O símbolo Antecipar é um símbolo separado; o Pavor só permanece se não for anulado antes da DT. |
-| **d10, face 10** | **ᛏᛏᚦ = 2E + 1P** | **3** | Atinge DT mais alta e mantém Êxito dominante (E > P). |
-| **d12, face 11** | **ᛏᛃᛃᚦ = 1E + 2A + 1P** | **2 (ou 3 se converter 2A → 1E)** | A conversão dá **2E + 1P**, mas os símbolos de Antecipar gastos não podem anular o P. |
-| **d12, face 12** | **ᚦᚦ = 2P** | **2** | Nenhum Êxito puro e dois símbolos de Pavor. |
+| **d4, face 3** | **ᛈ = 1P** | **1** | Êxito incerto possível numa DT 1. |
+| **d4, face 4** | **ᚨᛈ = 1A + 1P** | **1 se o P for mantido; 0 se anulado** | Gastar o Antecipar para anular o Pavor elimina também o ponto que ele daria à DT. |
+| **d6, face 6** | **ᛋ = 1E** | **1** | Um Êxito. |
+| **d10, face 7** | **ᛋᛋ = 2E** | **2** | Dois Êxitos sem Pavor. |
+| **d10, face 9** | **ᛋᚨᛈ = 1E + 1A + 1P** | **2** | O símbolo Antecipar é um símbolo separado; o Pavor só permanece se não for anulado antes da DT. |
+| **d10, face 10** | **ᛋᛋᛈ = 2E + 1P** | **3** | Atinge DT mais alta e mantém Êxito dominante (E > P). |
+| **d12, face 11** | **ᛋᚨᚨᛈ = 1E + 2A + 1P** | **2 (ou 3 se converter 2A → 1E)** | A conversão dá **2E + 1P**, mas os símbolos de Antecipar gastos não podem anular o P. |
+| **d12, face 12** | **ᛈᛈ = 2P** | **2** | Nenhum Êxito puro e dois símbolos de Pavor. |
 
 **Regra de leitura:** **Êxito (E)** indica o quanto a personagem executa a ação como queria; **Pavor (P)** indica o quanto o medo e o impulso tomam conta; **Antecipar (A)** indica sua capacidade de se adaptar. **Antes de comparar com a DT, qualquer personagem pode converter 2A em 1E, sem Perícia ou Maestria**, ou gastar 1A para anular 1P. Depois dessas escolhas, conte **E + P restante**. A rolagem revela tanto *se* a personagem agiu quanto *como*.
 
@@ -417,7 +417,7 @@ A **Êxito criada conta para a DT, para o balanço E versus P e para o dano calc
 
 ### Exemplo — Dado mais pesado nem sempre é mais seguro
 
-Um d10 pode mostrar **ᛏᛏ** na face 7, enquanto o d12 pode mostrar **ᚦᚦ** na face 12. Ambos contribuem com **2 para DT**, mas só o primeiro tem **2 Êxitos puros**. D12 não significa «dano maior por padrão»: ele tem uma distribuição de resultados diferente, com mais oportunidades e riscos.
+Um d10 pode mostrar **ᛋᛋ** na face 7, enquanto o d12 pode mostrar **ᛈᛈ** na face 12. Ambos contribuem com **2 para DT**, mas só o primeiro tem **2 Êxitos puros**. D12 não significa «dano maior por padrão»: ele tem uma distribuição de resultados diferente, com mais oportunidades e riscos.
 
 A progressão de passos considerada é **d4 → d6 → d10 → d12 → d20**, mas a passagem para **d20** permanece excepcional e não participa destes exemplos de playtest.
 
@@ -440,7 +440,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de �
 1. **Ação:** Maela tenta consertar uma engrenagem antes de a oficina inundar.
 2. **DT:** o mestre define **DT 2** para o reparo arriscado.
 3. **Fontes:** **Inteligência 1 (1d6)** + **Manufaturas 1 (1d10)**. O Conhecimento ou a Prática só entra porque é pertinente ao reparo.
-4. **Rolagem:** o d6 cai na **face 6 = ᛏ (E)**; o d10 cai na **face 9 = ᛏᛃᚦ (E + A + P)**.
+4. **Rolagem:** o d6 cai na **face 6 = ᛋ (E)**; o d10 cai na **face 9 = ᛋᚨᛈ (E + A + P)**.
 5. **Resultados mantidos:** no Marco I ela pode manter até **dois dados** e precisa incluir um de **Atributo**. Mantém ambos.
 6. **Antecipar, DT e controle:** antes de calcular a DT, Maela pode gastar **1A para anular P**: a soma cai de **2E + 1P = 3** para **2E = 2**, suficiente para o reparo. Se não gastar o A, **2E + 1P** também funciona e **E > P**, portanto ela mantém controle. O P isolado não concede vantagem automática à oposição.
 
@@ -452,9 +452,9 @@ Mais tarde, Maela tem **Força 2 (2d6)** e usa uma alavanca experimental que **f
 
 | Fonte | Face | Símbolos |
 |---|---:|---|
-| Força — primeiro d6 | 6 | **ᛏ (E)** |
-| Força — segundo d6 | 5 | **ᛃᚦ (A + P)** |
-| Alavanca — d10 | 7 | **ᛏᛏ (2E)** |
+| Força — primeiro d6 | 6 | **ᛋ (E)** |
+| Força — segundo d6 | 5 | **ᚨᛈ (A + P)** |
+| Alavanca — d10 | 7 | **ᛋᛋ (2E)** |
 
 No Marco I, ela **mantém o primeiro d6 e o d10**, totalizando **3E sem Pavor**. O segundo d6 foi rolado, mas descartado; seus símbolos não entram na resolução. Ela não pode escolher somente o dado de equipamento quando a rolagem exige o Atributo obrigatório.
 
@@ -462,7 +462,7 @@ No Marco I, ela **mantém o primeiro d6 e o d10**, totalizando **3E sem Pavor**.
 
 Corven tem **Agilidade 1 (1d6)**, mas **Infiltração 0 (1d4)**. Ele tenta atravessar uma passagem com guarda distraído, de **DT 1**. A rolagem usa duas fontes: **1d6 de Agilidade + 1d4 de Infiltração**.
 
-Se o d6 cair em **1 (○)** e o d4 cair em **3 (ᚦ)**, o total é **1P**, suficiente para uma **DT 1**, com risco. Se o d4 cair em **4 (ᛃᚦ)**, o resultado é **1A + 1P**: Corven pode **conservar P** para alcançar DT 1 e aceitar Pavor, ou **gastar A para anular P antes da comparação**, ficando com **0 para a DT** e falhando. **Um A isolado não gera Êxito; 2A geram 1E pela regra básica.**
+Se o d6 cair em **1 (○)** e o d4 cair em **3 (ᛈ)**, o total é **1P**, suficiente para uma **DT 1**, com risco. Se o d4 cair em **4 (ᚨᛈ)**, o resultado é **1A + 1P**: Corven pode **conservar P** para alcançar DT 1 e aceitar Pavor, ou **gastar A para anular P antes da comparação**, ficando com **0 para a DT** e falhando. **Um A isolado não gera Êxito; 2A geram 1E pela regra básica.**
 
 Sem Agilidade comprada, Corven poderia tentar **1d4 de Agilidade + 1d4 de Infiltração**, se ambas as fontes forem pertinentes. Os dois dados só alcançam DT 2 caso ambos forneçam Pavor: o improviso continua arriscado. **O d4 não fornece um terceiro dado extra a quem já comprou uma fonte.**
 
@@ -472,7 +472,7 @@ Neris não comprou **Medicina**, mas precisa socorrer alguém. Pode tentar usand
 
 ### Exemplo de falha mesmo com Antecipar
 
-Corven, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᛃᚦ = A + P)**. A soma para a DT é **1**, portanto **ele falha**. O símbolo Antecipar não conta como Êxito e não transforma o resultado em êxito.
+Corven, Aprendiz que comprou **Agilidade 1 (1d6)** e **Infiltração 1 (1d10)**, tenta se esconder de uma sentinela de **DT 2**. Seu d6 mostra **1 (○)** e seu d10 mostra **5 (ᚨᛈ = A + P)**. A soma para a DT é **1**, portanto **ele falha**. O símbolo Antecipar não conta como Êxito e não transforma o resultado em êxito.
 
 ## DTs para iniciar os testes
 
@@ -655,8 +655,8 @@ Corven tenta atravessar uma passagem de **DT 2** usando **Agilidade 1 (1d6)** e 
 
 | Dado mantido | Face máxima | Símbolos |
 |---|---:|---|
-| **d4 básico de Infiltração** | **4** | **ᛃᚦ = 1 Antecipar + 1 Pavor (A + P)** |
-| **d6 de Agilidade** | **6** | **ᛏ = 1 Êxito (E)** |
+| **d4 básico de Infiltração** | **4** | **ᚨᛈ = 1 Antecipar + 1 Pavor (A + P)** |
+| **d6 de Agilidade** | **6** | **ᛋ = 1 Êxito (E)** |
 
 Corven tem **1E + 1P = 2** para a DT, além de **1A**. Ele precisa escolher:
 
