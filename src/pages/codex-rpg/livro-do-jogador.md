@@ -126,13 +126,20 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **Aptidão** é um **Atributo, Conhecimento ou Prática que forneça dados na ação**. **Armas 1 não é fonte de dados:** é uma habilitação. Uma arma ou ferramenta só é fonte de equipamento quando sua ficha fornece dados expressamente. **Punhos** é uma fonte de Prática comprável depois de adquirir sua Perícia. Nenhuma Perícia acrescenta automaticamente dados de armas.
 
-| Tipo de Perícia | Custo | Benefício |
-|---|---:|---|
-| **Improviso** | **1 XP** | Adiciona **+1 Improviso (I)** num teste que cumpra a condição da Perícia. |
-| **Combinação** | **2 XP** | Permite usar **uma Aptidão central + outras duas Aptidões pertinentes** na mesma rolagem. |
-| **Presença** | **3 XP** | Custo para Perícias específicas que concedam **+1 Presença (P)** quando sua condição for satisfeita. |
+**Não há uma tabela universal que transforme XP em efeitos.** Uma Perícia de **1 XP não concede necessariamente +1 Improviso**, nem uma de **2 XP autoriza automaticamente combinar Aptidões**, e o preço não revela se ela adiciona símbolos, habilita um treinamento, amplia a aplicação de um equipamento ou desbloqueia uma nova técnica. **Cada Perícia tem seu próprio custo, efeito, condição de uso e possíveis pré-requisitos ou graus.** Somente uma Perícia explicitamente descrita na ficha concede seu benefício.
 
-**Os nomes e condições de Perícias de +1P ainda não foram definidos.** O valor de 3 XP estabelece a categoria de custo, mas **não autoriza comprar um +1 Presença genérico sem uma Perícia concreta**.
+| Exemplo já definido | Custo específico | O que realmente compra |
+|---|---:|---|
+| **Montaria I — Cavalos** | **1 XP** | +1 Improviso nas situações montadas indicadas. |
+| **Combate** | **1 XP** | +1 Improviso nos testes de combate pertinentes. |
+| **Artes Marciais** *(provisório)* | **1 XP** | Uma terceira fonte na combinação com Punhos, após cumprir o requisito. **Não acrescenta +1I por custar 1 XP.** |
+| **Armas 1** | **2 XP** | Habilitação marcial sem dados, com a primeira especialização incluída. **Não compra uma combinação de três fontes automaticamente.** |
+| **Furto, Acrobata, Alquimia e Comércio** | **2 XP cada**, nesta versão | Autorizam combinações descritas individualmente, se seus contextos e requisitos forem atendidos. |
+| **Técnica Marcial** *(provisório)* | **2 XP** | Combinação adicional com uma categoria de arma já habilitada. |
+
+**Uma futura Perícia que conceda +1 Presença (P)** poderá ter condições, limitações e custo próprios. O valor de **3 XP** discutido para esse tipo de benefício é uma **referência inicial de design**, não uma regra que permita comprar +1P genérico nem uma equivalência obrigatória de 3 XP para todo benefício dessa natureza. Seus nomes e fichas ainda não estão fechados.
+
+**Preço e efeito não devem ser inferidos pela categoria da tabela.** Perícias também podem representar habilitação, domínio gradual, montaria de animais diferentes, interação com equipamentos, pré-requisitos de outras técnicas ou efeitos narrativos que não sejam somar símbolos nem incluir fontes. Os valores acima pertencem **apenas às Perícias mencionadas**, até que outras sejam aprovadas.
 
 ### Habilitação de Armas, Punhos e especialização inicial
 
@@ -148,7 +155,7 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 **[DIREÇÃO DE DESIGN]** Outras Perícias poderão exigir graus mínimos de Atributos, Conhecimentos, Práticas e Perícias anteriores. Sugestões ainda não aprovadas incluem Furtividade para Furto, Atletismo para Acrobata, Biologia para Alquimia, Comércio para a Perícia Comércio e acesso a Armas para Montaria Armada. **O desconto de Artes Marciais vale para o desarmado; descontos para outras armas usadas com uma mão não estão definidos.**
 
-### Perícias que concedem Improviso — 1 XP
+### Perícias de Montaria e Combate — valores e efeitos individuais
 
 | Perícia | Efeito |
 |---|---|
@@ -159,22 +166,24 @@ A criação inicial de um Humano começa com **3 pontos de Vida**, **10 pontos d
 
 O **Improviso adicional não soma diretamente à DT**, mas pode ser usado nas **regras básicas de todos os personagens**: **1I anula 1 Desespero (D)** antes da DT (retirando também o ponto que D daria), **2I viram 1 Presença (P)** ou Improvisos podem apoiar um aliado. **Improvisos concedidos por Perícias contam normalmente para 2I → 1P, sem precisar comprar outra Perícia ou Maestria.** Cada símbolo só pode ser gasto uma vez. **Cada Perícia contribui com seu bônus uma vez por teste pertinente.** Se Montaria e Combate se aplicarem ao mesmo teste de combate montado, cada uma pode acrescentar seu próprio Improviso, sem alterar os dados rolados ou o limite dos dados mantidos.
 
-### Perícias de combinação — 2 XP, exceto Artes Marciais (1 XP)
+### Perícias marciais e técnicas de combinação — preços individuais
 
-| Perícia | Referência central | Permite combinar |
+As **especializações de Armas** não são, por si só, Perícias de combinação: habilitam o uso de dados do equipamento nas condições previstas, dispensam requisitos mínimos de Atributo para seu manejo e concedem +1I ao usar a categoria correta. **Para acrescentar uma terceira fonte com uma arma, é necessária a Técnica Marcial correspondente.** Já outras Perícias abaixo habilitam combinações de três fontes; os custos indicados pertencem à ficha de cada uma.
+
+| Perícia | Aquisição e requisitos | Benefício específico |
 |---|---|---|
-| **Armas Leves** | Arma leve equipada | **Ignora os mínimos de Atributo de manejo**, usa os dados declarados da arma e concede **+1I**; terceira fonte exige Técnica Marcial. |
-| **Armas Médias** | Arma média equipada | **Ignora os mínimos de Atributo de manejo**, usa os dados declarados da arma e concede **+1I**; terceira fonte exige Técnica Marcial. |
-| **Armas Pesadas** | Arma pesada equipada | **Ignora os mínimos de Atributo de manejo**, usa os dados declarados da arma e concede **+1I**; terceira fonte exige Técnica Marcial. |
-| **Armas à Distância** | Arma à distância equipada | **Ignora os mínimos de Atributo de manejo**, usa os dados declarados da arma e concede **+1I**; terceira fonte exige Técnica Marcial. |
-| **Furto** | **Furtividade** | Furtividade **+ duas outras Aptidões** para subtrair ou ocultar algo sem ser percebido. |
-| **Acrobata** | **Atletismo** | Atletismo **+ duas outras Aptidões** em saltos, escaladas, quedas e manobras físicas. |
-| **Alquimia** | **Biologia** (Conhecimento) | Biologia **+ duas outras Aptidões** para identificar, preparar ou manipular misturas e substâncias. |
-| **Comércio** | **Comércio** (Prática) | Comércio **+ duas outras Aptidões** para compra, venda, avaliação e negociação. |
-| **Artes Marciais** *(nome provisório; **1 XP**)* | **Punhos** (Prática habilitada) | **Requer Perícia Punhos**; permite **Atributo + Punhos + outra Aptidão pertinente**, como Atletismo. **Custo reduzido para 1 XP.** |
-| **Técnica Marcial** *(nome provisório; **2 XP**)* | Categoria de arma equipada já habilitada | **Requer a Perícia da categoria armada**; permite **Atributo + arma com dados declarados + terceira Aptidão pertinente**. Deve ser adquirida para a categoria de arma usada. |
+| **Armas Leves** | Primeira especialização incluída em **Armas 1 (2 XP)**, ou **2 XP** em compra adicional | Usa corretamente a categoria leve, dispensa mínimos de Atributo para manejo e concede **+1I**. Não autoriza a terceira fonte sozinha. |
+| **Armas Médias** | Mesma regra de aquisição de especialização | Habilitação da categoria média e **+1I** ao usá-la corretamente. |
+| **Armas Pesadas** | Mesma regra de aquisição de especialização | Habilitação da categoria pesada e **+1I** ao usá-la corretamente. |
+| **Armas à Distância** | Mesma regra de aquisição de especialização | Habilitação da categoria à distância e **+1I** ao usá-la corretamente. |
+| **Furto** | **2 XP**, nesta versão | Permite **Furtividade + duas outras fontes pertinentes**, para subtrair ou ocultar algo sem ser percebido. |
+| **Acrobata** | **2 XP**, nesta versão | Permite **Atletismo + duas outras fontes pertinentes**, em manobras acrobáticas. |
+| **Alquimia** | **2 XP**, nesta versão | Permite **Biologia + duas outras fontes pertinentes**, para misturas e substâncias. |
+| **Comércio** | **2 XP**, nesta versão | Permite **Comércio + duas outras fontes pertinentes**, em compras, vendas e negociações. |
+| **Artes Marciais** *(nome provisório)* | **1 XP**, exige a especialização Punhos | Permite **Atributo + Punhos + outra fonte pertinente**, como Atletismo. É uma exceção com preço próprio. |
+| **Técnica Marcial** *(nome provisório)* | **2 XP** para a categoria; exige a especialização armada correspondente | Permite **Atributo + arma com dados declarados + terceira fonte pertinente**. |
 
-**Armas 1 não oferece dados.** A primeira especialização está incluída na habilitação por **2 XP**; as categorias adicionais custam **2 XP cada**. **Qualquer personagem que cumpra os requisitos mínimos de Atributo da arma pode usar os dados dela, mesmo sem Perícia.** A Perícia correta **dispensa esses mínimos de manejo e concede +1I**, sem dar dados extras nem autorizar uma terceira fonte. **Técnica Marcial (2 XP)** habilita a combinação adicional. **Punhos** não depende de arma ou de requisitos de manejo de equipamento: destrava uma Prática própria, cujos dados de d10 a d12 são comprados separadamente. **Artes Marciais (1 XP)** permite a combinação corporal. Alquimia usa Biologia.
+**Armas 1 não oferece dados.** A primeira especialização está incluída na habilitação por **2 XP**; categorias adicionais custam **2 XP cada**. **Qualquer personagem que cumpra os requisitos mínimos de Atributo da arma pode usar os dados dela, mesmo sem Perícia.** A Perícia correta dispensa esses mínimos de manejo e concede +1I, sem dar dados extras nem autorizar terceira fonte. **Punhos** não depende de arma: desbloqueia uma Prática própria com dados adquiridos separadamente. **Artes Marciais (1 XP)** permite combinações corporais. Nenhum desses custos cria uma regra geral que se aplique a todas as Perícias futuras.
 
 ### Como combinar três Aptidões
 
@@ -208,7 +217,7 @@ Na mina, Maela pode usar **Inteligência + Engenharia** para entender a sustenta
 
 **Normalmente, todo teste combina exatamente duas partes:** um Atributo pertinente e uma segunda fonte (Conhecimento, Prática ou equipamento com dados próprios). Cada fonte fornece dados comprados ou **1d4 de improviso** no grau 0. Duas capacidades não adquiridas podem formar **2d4**.
 
-**Perícias de combinação normalmente custam 2 XP; Artes Marciais custa 1 XP, como exceção específica para Punhos.** Permitem até três fontes pertinentes, incluindo um Atributo. **Especializações armadas permitem ignorar os requisitos mínimos de Atributo para manejar a arma e acrescentam +1I; sem Perícia, os dados da arma também podem ser usados se os requisitos forem atendidos.** Para combiná-lo com outra Aptidão além do Atributo, exige-se **Técnica Marcial (2 XP)** na categoria. A **Perícia Punhos** também não autoriza terceira fonte: para combinar Punhos com Atletismo ou outra Aptidão, é necessário comprar **Artes Marciais (1 XP)**. O limite de dados mantidos segue o Marco.
+**As Perícias de combinação atualmente listadas possuem preços específicos — várias custam 2 XP, enquanto Artes Marciais custa 1 XP.** Isso não define o preço de futuras Perícias. Quando uma Perícia habilita uma combinação, são até três fontes pertinentes, incluindo um Atributo. **Especializações armadas permitem ignorar os requisitos mínimos de Atributo para manejar a arma e acrescentam +1I; sem Perícia, os dados da arma também podem ser usados se os requisitos forem atendidos.** Para combiná-lo com outra Aptidão além do Atributo, exige-se **Técnica Marcial (2 XP)** na categoria. A **Perícia Punhos** também não autoriza terceira fonte: para combinar Punhos com Atletismo ou outra Aptidão, é necessário comprar **Artes Marciais (1 XP)**. O limite de dados mantidos segue o Marco.
 
 Em um salto, **Agilidade + Atletismo** é a combinação comum. Com a Perícia **Acrobata**, uma preparação especial com bastão pode justificar **Agilidade + Atletismo + Engenharia**, desde que o planejamento técnico seja realmente relevante. Sempre mantenha ao menos um dado de Atributo.
 
@@ -419,7 +428,7 @@ Os símbolos podem surgir juntos na mesma face. O d10 é uma fonte estável de P
 
 1. **Declare a ação e o objetivo.** O mestre apresenta a DT quando ela é relevante.
 2. **Escolha um Atributo apropriado.** Ele é a fonte obrigatória de dados, com **1d4 básico quando o grau for zero**.
-3. **Escolha as partes da rolagem.** Por padrão, combine **Atributo + Conhecimento, Prática ou equipamento** pertinentes; no grau 0, cada fonte de Aptidão oferece **1d4 de improviso**. Com uma **Perícia de combinação aplicável (2 XP)**, use **até três fontes pertinentes**, que podem incluir equipamento **apenas com dados declarados**. **Armas 1 nunca fornece um dado** e **Punhos exige a Perícia separada Artes Marciais para combinar três fontes**.
+3. **Escolha as partes da rolagem.** Por padrão, combine **Atributo + Conhecimento, Prática ou equipamento** pertinentes; no grau 0, cada fonte de Aptidão oferece **1d4 de improviso**. Com uma **Perícia que efetivamente autorize a combinação, adquirida por seu custo individual**, use **até três fontes pertinentes**, que podem incluir equipamento **apenas com dados declarados**. **Armas 1 nunca fornece um dado** e **Punhos exige a Perícia separada Artes Marciais para combinar três fontes**.
 4. **Role a pilha.** Cada fonte pode contribuir com até três dados comprados **ou um único d4 básico**, nunca ambos. A Perícia pode autorizar a terceira Aptidão, mas não adiciona dados próprios.
 5. **Mantenha os resultados permitidos pelo nível.** No começo, mantenha até dois dados, incluindo pelo menos um do Atributo utilizado.
 6. **Gaste Improvisos e confira a DT.** Antes da comparação, escolha entre **anular 1D com 1I**, **converter 2I em 1P** ou destinar I a outros efeitos. Some **Presença final + Desespero restante (P + D)**. Se alcançar a DT, a ação acontece; depois resolva controle, risco e dano. **A conversão é regra básica, sem depender de Perícia ou Maestria.**
@@ -733,7 +742,7 @@ Para o teste inicial, prepare **DT 2** para o portão parcialmente danificado; *
 
 # XI. O que ainda está em teste
 
-Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos dos **outros usos** de Coragem (aumento de um passo já custa **1 ponto**); tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; futuras Perícias de +1 Presença (3 XP), seus nomes e condições; **preços e benefícios de Montaria II/III, requisitos exatos de outras Perícias, nome e eventuais condições adicionais de Técnica Marcial, pontuação do d12, requisitos mínimos de Atributo por arma, tetos de composição por categoria e nomes finais de Aptidões/Atributos/Instintos**; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos, **mapa de Aptidões favorecidas e desfavorecidas por povo e respectivas alterações de custo de XP**; progressão de níveis e XP após o primeiro playtest.
+Este livro **não** pretende fingir que todas as regras estão completas. A edição seguinte precisa fechar: custos dos **outros usos** de Coragem (aumento de um passo já custa **1 ponto**); tabela de ferimentos e efeitos adicionais de Vigor (a fórmula de Vida máxima já está definida); fórmulas definitivas das DTs Geral, Não Letal e Letal, e consequências da incapacitação; cobertura e resistências das armaduras; critérios de críticos; futuras Perícias que concedam Presença e seus preços, nomes, condições e requisitos; **preços e benefícios de Montaria II/III, requisitos exatos de outras Perícias, nome e eventuais condições adicionais de Técnica Marcial, pontuação do d12, requisitos mínimos de Atributo por arma, tetos de composição por categoria e nomes finais de Aptidões/Atributos/Instintos**; regras de cooperação com oposição ativa; conjuração e resistência à interrupção; distribuição final do d20; habilidades dos Luckers e Runa-Espinhos, **mapa de Aptidões favorecidas e desfavorecidas por povo e respectivas alterações de custo de XP**; progressão de níveis e XP após o primeiro playtest.
 
 O mestre e os jogadores devem decidir qualquer regra ainda pendente antes da sessão e registrar o procedimento utilizado. **Não é necessário inventar estatísticas para as linhagens não-humanas:** elas não são personagens de jogador nesta primeira edição.
 
