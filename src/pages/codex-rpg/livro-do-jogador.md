@@ -103,7 +103,7 @@ Maela possui **Agilidade 0**. Caminhar em segurança não exige teste, mas salta
 
 **Atletismo** é uma Prática sugerida para o playtest. Engenharia só entra se o uso técnico do bastão fizer parte da ação; a ferramenta não concede outro dado gratuitamente.
 
-Se os **2d4** mostrarem **3 e 4**, Maela mantém **2P + 1A, sem Êxito (E = 0)**. Se conservar **2P**, alcança **DT 2** sob Pavor. **Havendo uma ameaça próxima, passa 2P como Pressão a ela**; sem ameaça, pode tropeçar, perder posição ou danificar um item. Se gastar **1A para anular 1P**, sua soma cai a **1**: **falha sob Pavor**, portanto **perde 1 Coragem**, **1P alimenta a Reserva de Pressão Acumulada** (até o teto) e a iniciativa passa à oposição; outros riscos dependem da cena.
+Se os **2d4** mostrarem **3 e 4**, Maela mantém **2P + 1A, sem Êxito (E = 0)**. Se conservar **2P**, alcança **DT 2 com Pavor**, passando os **2P como Pressão à ameaça elegível mais próxima**; sem ameaça, pode tropeçar, perder posição ou danificar um item. Se gastar **1A para anular 1P**, sua soma cai a **1**: **falha com Pavor**, portanto **perde 1 Coragem**, **1P alimenta a Reserva de Pressão Acumulada** (até o teto) e a iniciativa passa à oposição; outros riscos dependem da cena.
 
 Se ambos os d4 saírem na **face 4**, podem formar um **crítico**, recuperando **1 Coragem**. Isso não elimina Pavor nem cria Êxito automaticamente. **Pelo menos um dado mantido precisa vir do Atributo**.
 
