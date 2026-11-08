@@ -150,6 +150,18 @@ Cada célula mostra **acerto limpo / acerto total possível**, em porcentagem. S
 
 A presença de d20 permite alguns resultados limpos maiores, mas não elimina o problema: com 3d20+6d12/4 contra DE 11, **53,7%** das rolagens poderiam acertar; apenas **0,9%** apresentam opção de acerto limpo. Habilidades que deem Êxitos sem Pavor mudariam o quadro e devem ser testadas separadamente.
 
+#### A.1. Quatro desfechos para um monstro que prioriza acertar sem Pavor, quando possível
+
+A política computacional deste exemplo prefere **acerto limpo**, depois **acerto com Pavor**; se nenhum acerto for possível, prefere **falha limpa** à falha com Pavor. O Narrador pode racionalmente preferir **falha limpa até mesmo quando existe um acerto arriscado**, a depender do custo de conceder Coragem.
+
+| Pilha contra DE 10 | Acerto limpo | Acerto com Pavor | Falha limpa | Falha com Pavor inevitável |
+|---|---:|---:|---:|---:|
+| Monstro 9d12, 4 mantidos | **0%** | **47,6%** | **51,8%** | **0,6%** |
+| Monstro 1d20+8d12, 4 mantidos | **0,1%** | **55,9%** | **43,6%** | **0,4%** |
+| Monstro 3d20+6d12, 4 mantidos | **2,2%** | **66,9%** | **30,7%** | **0,2%** |
+
+**Limitação decisiva:** estes números **não** dizem a decisão real do Narrador em cada rolagem; mostram o que seria alcançável seguindo a prioridade indicada. O custo de gerar Coragem e a necessidade de causar dano precisam definir uma política de seleção mais realista em playtest. Falhar sem Pavor não equivale a perder Vida ou conceder ação extra por si só, mas consome a oportunidade do inimigo.
+
 #### B. Saúde e custo da quarta retenção
 
 Com 3d10+6d12, quatro dados mantidos e DE 10, a chance máxima de acerto (incluindo Pavor) é **38,4% quando Saudável**, **17,6% quando Machucado (−1E)** e **5,2% quando Incapacitado (−2E)**. Trata-se de deslocamento na DE efetiva, **10 → 11 → 12**, sob essa hipótese de efeitos sem modificadores adicionais. Portanto, investir Coragem no quarto dado pode ser racional para evitar dano e penalidades futuras. Não presumir Coragem inesgotável; acompanhar sua geração por Pavor dos inimigos e o limite individual.
