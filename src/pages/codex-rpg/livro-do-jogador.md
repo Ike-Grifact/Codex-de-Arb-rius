@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/CodexRpgLayout.astro
-title: Codex RPG — Livro do Jogador v0.3
+title: Codex RPG — Livro do Jogador v0.4
 description: Livro de consulta do Codex RPG, com regras definidas, exemplos e pontos de playtest identificados.
 ---
 
 # Codex RPG
 
-## Livro do Jogador — edição de continuidade v0.3
+## Livro do Jogador — edição de continuidade v0.4
 
-*8 de novembro de 2026 · atualização normativa v0.18; regras definidas, playtest e pendências identificados.*
+*8 de novembro de 2026 · atualização normativa v0.19; regras definidas, playtest e pendências identificados.*
 
 > **Como ler esta edição:** **DEFINIDO** significa decisão autoral confirmada. **EXPERIMENTAL** significa regra numérica em teste. **PROPOSTO** não é regra vigente. **PENDENTE** indica que ainda não há procedimento aprovado. Esta é a edição de leitura atual; o [Livro do Jogador v0.1](../arquivo/livro-do-jogador-v01/) permanece arquivado para comparação histórica. Em caso de divergência, a decisão mais recente prevalece.
 
@@ -40,7 +40,7 @@ Os seis Atributos são **Força, Agilidade, Destreza, Inteligência, Influência
 
 **XP é livre depois da criação.** Você compra quaisquer graus ou Perícias cujos requisitos cumprir. Não existem cotas obrigatórias de XP reservadas a Atributos, Conhecimentos ou Práticas. Um personagem pode investir cedo em grau 6, mas isso **não** aumenta automaticamente seus dados mantidos.
 
-O histórico de criação humana usa **14 XP iniciais** (7 de Base e 7 de Formação). A distribuição final e a possibilidade de 3 XP iniciais adicionais para Perícias estão **PENDENTES**; não somar benefícios não confirmados.
+**DEFINIDO:** o Aprendiz dispõe de **5 XP iniciais destinados às Perícias**, em vez da antiga referência de 3 XP. A estrutura histórica da criação conserva **14 XP de Base e Formação** (7 + 7). Para o playtest, o orçamento **14 + 5 = 19 XP** é uma hipótese de contabilização, pois a relação final entre esses orçamentos ainda precisa de validação explícita. Os 5 XP para Perícias não alteram automaticamente os dados mantidos.
 
 ### Tabela de Atributos
 
@@ -348,6 +348,26 @@ Os elementos de referência incluem **Fogo, Água, Raio, Vento, Terra, Sagrado, 
 
 **EXPERIMENTAL:** pagar **1P por Atributo adicional pertinente** além das duas fontes básicas. Os custos de terceiro e quarto dados mantidos são separados da combinação das fontes. A pilha total **nunca** passa de nove dados, ainda que quatro Atributos no grau máximo ofereçam teoricamente doze.
 
+### Progressão de Atributos monstruosos — DEFINIDO
+
+**Monstros não humanoides compram d10 diretamente no grau 1 de seus Atributos.** Usam **a mesma tabela de dados e XP dos Conhecimentos e Práticas**, e não a tabela de Atributos de jogadores. O grau da ameaça continua separado do grau de seus Atributos.
+
+| Grau do Atributo monstruoso | Dados | XP acumulado |
+|---:|---|---:|
+| 0 | 1d4 | 0 |
+| 1 | **1d10** | **2** |
+| 2 | **2d10** | **8** |
+| 3 | **3d10** | **20** |
+| 4 | **2d10 + 1d12** | **38** |
+| 5 | **1d10 + 2d12** | **66** |
+| 6 | **3d12** | **102** |
+
+O teto da pilha continua sendo **nove dados rolados**, e a quantidade mantida depende do grau da criatura e do Pavor aplicável. **Quatro Atributos grau 6 custam 408 XP**, antes da compra permanente de um d20 por 100 XP. O orçamento total de XP autorizado para cada grau de monstro ainda está **PENDENTE**.
+
+**A proteção natural dos monstros é parte de sua resistência [DEFINIDO como existência]**, mas a quantidade de integridade, os multiplicadores por grau e sua interação com Vida estão **PENDENTES**. Para criar um monstro mais difícil de acertar, invista XP em Agilidade e Destreza, em vez de conceder DE arbitrária.
+
+**Exemplo de playtest nível 1:** monstro com Força 2 (8 XP; 2d10), Agilidade 2 (8 XP; 2d10) e Vigor 1 (2 XP; 1d10), total de **18 XP**. Tem Vida 5, DE 2 sem bônus naturais e pode rolar **4d10** com uma combinação pertinente de Força e Agilidade. Mantendo dois dados, consegue atingir DE 4 em **56,95%** das rolagens, mas só **5,23%** dos acertos possíveis são limpos. Isso pressupõe que tenha oportunidade de atacar; não inclui proteção natural ou gasto de Pavor. O grau da criatura e o seu orçamento de XP ainda devem ser validados nos encontros.
+
 ### D20 permanente de monstros — regra definida
 
 Um monstro **de grau 6**, com **ao menos um Atributo já no grau 6**, pode pagar **100 XP** para **substituir um dos d12 daquele Atributo por um d20 permanente**.
@@ -358,7 +378,7 @@ Um monstro **de grau 6**, com **ao menos um Atributo já no grau 6**, pode pagar
 - O dado permanente não elimina custos de ativação, combinação, movimentação ou retenção.
 - **PENDENTE:** orçamento total de XP permitido a cada grau; comprar o d20 consome 100 XP da ficha e não é um bônus gratuito.
 
-**Exemplo:** um grau 6 desenvolveu um Atributo até receber 3d12 pela progressão monstruosa experimental. Depois de pagar 100 XP, essa fonte oferece **1d20 + 2d12**. Para obter outros d20, precisará das capacidades extraordinárias e do Pavor apropriado.
+**Exemplo:** um grau 6 desenvolveu um Atributo até receber 3d12 pela tabela de Conhecimentos e Práticas (102 XP). Depois de pagar 100 XP, essa fonte oferece **1d20 + 2d12**. Para obter outros d20, precisará das capacidades extraordinárias e do Pavor apropriado.
 
 ### Reservas locais de Pavor
 
@@ -398,7 +418,7 @@ A dificuldade **efetiva** considera precisão, dano que atravessa armadura, Vida
 
 ## 13. Consulta rápida e limites ainda em elaboração
 
-- **DEFINIDO:** Êxito, Antecipar, Pavor; até 9 dados rolados; até 4 mantidos; 1 Coragem para um dado mantido extra desde Marco I; Marco II mantém três naturalmente; dados descartados sem efeitos; três participantes por ação conjunta; **Líder + 3P públicos imediatos** para inimigos; foco mágico sem dados; dano = E + ⌊P/2⌋; d20 de peso 6; d20 monstruoso permanente por 100 XP; ranks Aprendiz/Perito/Elite/Divino.
+- **DEFINIDO:** 5 XP iniciais de Perícias; monstro compra d10/d12 por tabela de Conhecimentos e Práticas; proteção natural monstruosa existente com valores ainda pendentes; Êxito, Antecipar, Pavor; até 9 dados rolados; até 4 mantidos; 1 Coragem para um dado mantido extra desde Marco I; Marco II mantém três naturalmente; dados descartados sem efeitos; três participantes por ação conjunta; **Líder + 3P públicos imediatos** para inimigos; foco mágico sem dados; dano = E + ⌊P/2⌋; d20 de peso 6; d20 monstruoso permanente por 100 XP; ranks Aprendiz/Perito/Elite/Divino.
 - **EXPERIMENTAL:** limiares intermediários de perda de Vida; proporção e bônus de armaduras; Resistência maior; custo do Atributo adicional de monstro; meta de precisão dos chefes.
 - **PROPOSTO:** aumentar bônus de esquiva da armadura leve; adicionar esquiva à média em graus superiores; remover uma resistência da média; finalizações com bônus fixos.
 - **PENDENTE:** XP e ouro por rank; requisitos completos de Maestrias; orçamento de XP por grau de monstro; distribuição de Coragem em empates; procedimentos individuais e símbolos da ação conjunta; acesso completo a 2d20 por conjurador no ritual; valores de integridade das armaduras.
@@ -407,4 +427,4 @@ Não use uma proposta como se fosse uma opção já disponível para compra.
 
 ---
 
-**Edição atual:** Livro do Jogador v0.3 (SRD de Continuidade v0.18). As edições [v0.1](../arquivo/livro-do-jogador-v01/) e [v0.2](../arquivo/livro-do-jogador-v02/) permanecem arquivadas e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
+**Edição atual:** Livro do Jogador v0.4 (SRD de Continuidade v0.19). As edições [v0.1](../arquivo/livro-do-jogador-v01/) e [v0.2](../arquivo/livro-do-jogador-v02/) e [v0.3](../arquivo/livro-do-jogador-v03/) permanecem arquivadas e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
