@@ -100,6 +100,18 @@ A reserva pública com três jogadores chega a **5P**; pagar 3P representa **60%
 
 As pilhas de 9d12 e de d20 são **condicionais**: pressupõem XP, fontes, manutenção dos quatro dados e custos de Pavor já disponíveis. A compra permanente de **um d20 por 100 XP** não torna gratuitos os outros dois.
 
+### Quatro desfechos — seleção tática do inimigo
+
+Um inimigo pode priorizar **acerto limpo**, depois **acerto com Pavor**, depois **falha limpa** e só por último **falha com Pavor inevitável**. Para DE 10, esse procedimento produz:
+
+| Monstro | Acerto limpo | Acerto com Pavor | Falha limpa | Falha com Pavor inevitável |
+|---|---:|---:|---:|---:|
+| 9d12, mantém 4 | **0%** | **47,6%** | **51,8%** | **0,6%** |
+| 1d20+8d12, mantém 4 | **0,1%** | **55,9%** | **43,6%** | **0,4%** |
+| 3d20+6d12, mantém 4 | **2,2%** | **66,9%** | **30,7%** | **0,2%** |
+
+São resultados **possíveis** sob essa prioridade, não decisões obrigatórias. Um inimigo cauteloso pode inclusive preferir **falhar sem Pavor** a executar um **acerto com Pavor**, evitando dar Coragem ao alvo ou ao aliado próximo. Um inimigo desesperado pode escolher o oposto para causar dano antes de cair. Esse dilema deve entrar no balanceamento de chefes e lacaios.
+
 ### Gastar Coragem agora ou sofrer penalidades depois
 
 Para o humano híbrido **3d10+6d12**, mantendo quatro dados e tentando alcançar DE 10:
