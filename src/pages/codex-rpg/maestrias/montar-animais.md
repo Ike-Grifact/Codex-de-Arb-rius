@@ -32,4 +32,4 @@ A montaria não concede dados de Atributos ao cavaleiro automaticamente. Retenç
 
 **Fonte e estado:** SRD v0.17; preços e pré-requisitos identificados **DEFINIDOS**.
 
-[Voltar ao catálogo](./) · [Livro do Jogador](../../livro-do-jogador/#9-animais-e-montarias)
+[Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/#9-animais-e-montarias)
