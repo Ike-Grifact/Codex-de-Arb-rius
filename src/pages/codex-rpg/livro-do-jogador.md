@@ -397,4 +397,4 @@ Não use uma proposta como se fosse uma opção já disponível para compra.
 
 ---
 
-**Edição atual:** Livro do Jogador v0.3 (SRD de Continuidade v0.18). A [edição v0.1 está preservada](../arquivo/livro-do-jogador-v01/) e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
+**Edição atual:** Livro do Jogador v0.3 (SRD de Continuidade v0.18). As edições [v0.1](../arquivo/livro-do-jogador-v01/) e [v0.2](../arquivo/livro-do-jogador-v02/) permanecem arquivadas e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
