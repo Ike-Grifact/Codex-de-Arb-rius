@@ -164,7 +164,7 @@ A escolha de arredondar Pavor antes ou depois de reunir o dano da ação conjunt
 
 ### Comparação das fichas de referência
 
-**Monstro [EXPERIMENTAL]:** Força 2 (8 XP), Agilidade 2 (8 XP), Vigor 1 (2 XP) = **18 XP** investidos em Atributos, Vida 5 e DE 2 antes de eventuais modificadores naturais. Com duas fontes pertinentes de Atributo, pode rolar **4d10**; mantendo dois dados, não gasta Pavor apenas para selecionar o terceiro, que não está habilitado.
+**Monstro [EXPERIMENTAL]:** Força 2 (8 XP), Agilidade 2 (8 XP), Vigor 1 (2 XP) = **18 XP** investidos em Atributos, Vida 5 e DE natural 2, sem armadura equipada. Com duas fontes pertinentes de Atributo, pode rolar **4d10**; mantendo dois dados, não gasta Pavor apenas para selecionar o terceiro, que não está habilitado.
 
 **Aprendiz [EXEMPLO DE BUILD]:** 7 XP de Base em Força 3 (3d6); duas fontes de Formação grau 1 (1d10 cada), habilitadas por Perícia de combinação pertinente. Essa pilha **3d6+2d10** exige fontes válidas e é **um personagem ofensivo**, não o esquivador de DE 4. Um personagem defensivo com Agilidade 2, Destreza 2 e armadura leve +1 DE [EXPERIMENTAL] pode chegar a **DE 4**, mas distribui os 7 XP de Base diferentemente.
 
@@ -179,13 +179,15 @@ Os percentuais são **exatos**, por enumeração completa das faces, com crític
 
 **Interpretação:** o monstro com d10 consegue ameaçar DE 4, mas a maioria dos acertos conserva Pavor e gera Coragem ao grupo. O grau do monstro impõe teto local de Pavor, e um grau 1 só consegue guardar **1P**, o que limita aprimoramentos. Não assumir que uma ativação paga e o terceiro dado podem custar o mesmo 1P sem regra específica.
 
-### A armadura natural altera a durabilidade
+### Vida natural, DE por Atributos e d20 em Vigor
 
-**DEFINIDO como característica:** monstros têm armadura natural. **PENDENTE:** fórmula e se integridade natural é reserva integrada ou separada. **Vida 5 não significa obrigatoriamente cinco acertos para matar**; golpes fracos podem retirar um ponto de Vida, mas golpes com dano corporal maior podem retirar mais, até o teto comum de três, e a armadura natural pode absorver dano antes. Precisamos medir **acertos efetivos e dano corporal**, não somente a quantidade de vezes em que a DE foi superada.
+**DEFINIDO:** monstros não recebem barra de armadura natural adicional. Exceto criaturas pequenas, a Vida usa **3 + Vigor + ⌊Força/2⌋**. Com Vigor e Força 6: **12 Vida**; se o grau 6 comprar o d20 permanente de **100 XP em Vigor**, ganha **+1 Vida**, totalizando **13**. O limiar de morte colossal sobe de **36** para **39 de dano corporal em um único ataque**.
+
+**DEFINIDO:** a DE natural cresce por **Agilidade + ⌊Destreza/2⌋**: Agilidade 4 e Destreza 2 produzem DE 5; valores 6 e 6 produzem DE 9. Investir em agilidade, vitalidade ou ofensiva consome o mesmo XP, criando especializações distintas. **ANÁLISE:** Vida 5 não significa cinco ataques para morrer; golpes podem retirar até três Vida em um ataque não colossal. A escala intermediária de perda de Vida segue experimental. Arma ou armadura *equipada*, se existir, mantém as regras próprias.
 
 ### Consequência para a XP dos encontros
 
-**Hipótese:** se o Aprendiz começa com 14 XP de Base/Formação + 5 XP de Perícias, três, quatro e cinco personagens somam respectivamente **57, 76 e 95 XP**. Grupos do mesmo tamanho formados por monstros de 18 XP somam **54, 72 e 90 XP**, inferiores ao orçamento dos jogadores. Pela regra atual, esse enfrentamento não renderia XP — embora possa ser perigoso. Com este modelo de inimigo, quatro, cinco e seis monstros respectivamente superam a soma do grupo. **Não converter esse limiar em rank Perito** sem simular a economia de oportunidades, a armadura natural e o dano.
+**Hipótese:** se o Aprendiz começa com 14 XP de Base/Formação + 5 XP de Perícias, três, quatro e cinco personagens somam respectivamente **57, 76 e 95 XP**. Grupos do mesmo tamanho formados por monstros de 18 XP somam **54, 72 e 90 XP**, inferiores ao orçamento dos jogadores. Pela regra atual, esse enfrentamento não renderia XP — embora possa ser perigoso. Com este modelo de inimigo, quatro, cinco e seis monstros respectivamente superam a soma do grupo. **Não converter esse limiar em rank Perito** sem simular a economia de oportunidades, a Vida natural e o dano.
 
 **Próxima validação para 3/4/5 jogadores:** confrontos pareados de 3×3, 4×4 e 5×5 (sem concessão automática de XP) e, separadamente, desafios de 3×4, 4×5 e 5×6 para investigar a relação entre superioridade numérica, Coragem e Pavor. As faixas Aprendiz, Perito, Elite e Divino permanecem **EXPERIMENTAIS** para o nível 1.
 
