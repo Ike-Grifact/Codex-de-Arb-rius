@@ -30,12 +30,12 @@ Identifique a fonte real: água, terreno, sangue válido, artefato ou outro comp
 
 ### Limites
 
-Um item usado como foco **não concede dados extras**. O sangue de um inimigo só pode ser usado quando esse inimigo já perdeu **Vida diretamente**, não apenas integridade da armadura. Na ausência de água num vulcão, Água sofre **Desvantagem Absoluta**.
+Um item usado como foco **não concede dados extras**; os dados de uma magia provêm da **composição por peso** (d20 = 6), sempre respeitando nove dados rolados. O sangue de um inimigo só pode ser usado quando esse inimigo já perdeu **Vida diretamente**, não apenas integridade da armadura. Na ausência de água num vulcão, Água sofre **Desvantagem Absoluta**.
 
 ### Exemplo
 
 Um conjurador combina seu conhecimento psíquico com água de um riacho presente. Não recebe dados adicionais do riacho; ele fornece a condição para o elemento.
 
-**Fonte e estado:** SRD de Continuidade v0.17; custo de 1 XP e uso de elemento da cena **DEFINIDOS**. Tipos de composição e condições não detalhados mantêm o estado **PENDENTE**.
+**Fonte e estado:** SRD de Continuidade v0.18; custo de 1 XP e uso de elemento da cena **DEFINIDOS**. Tipos de composição e condições não detalhados mantêm o estado **PENDENTE**.
 
 [Voltar ao catálogo](../) · [Conjuração no Livro](../../livro-do-jogador/#10-conjuracao-e-fontes-magicas)
