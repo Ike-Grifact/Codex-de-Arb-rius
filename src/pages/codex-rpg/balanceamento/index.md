@@ -1,10 +1,10 @@
 ---
 layout: ../../../layouts/CodexRpgLayout.astro
-title: Codex RPG — Estudo de balanceamento v0.18
+title: Codex RPG — Estudo de balanceamento v0.19
 description: "Retenção por Coragem e curvas de DE 3 a DE 30: acertos limpos, Pavor, monstros e cooperação."
 ---
 
-# Balanceamento v0.18 — Retenção, peso e Líder
+# Balanceamento v0.19 — DE, Pavor e playtest de nível 1
 
 **ESTUDO EXPERIMENTAL.** Este capítulo apresenta hipóteses de simulação e **não cria regras novas**. Consulte o [Livro do Jogador v0.4](../livro-do-jogador/) e o [SRD v0.19](../srd/) para as regras definidas.
 
