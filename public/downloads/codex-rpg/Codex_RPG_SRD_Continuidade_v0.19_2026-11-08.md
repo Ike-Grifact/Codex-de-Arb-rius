@@ -7,7 +7,7 @@ updated: "2026-11-08"
 
 # CODEX RPG — SRD DE CONTINUIDADE
 
-**Versão:** 0.19 — progressão monstruosa, XP inicial de Perícias e armadura natural  
+**Versão:** 0.19 — progressão monstruosa, XP inicial de Perícias, Vida e DE naturais  
 **Data:** 8 de novembro de 2026  
 **Precedência:** decisões autorais recentes > seção normativa v0.19 > seção normativa v0.18 > versões anteriores.  
 **Estados:** DEFINIDO / EXPERIMENTAL / PROPOSTO / PENDENTE.
@@ -43,16 +43,25 @@ updated: "2026-11-08"
 
 **Consequência em graus altos:** quatro Atributos monstruosos no grau 6 custam **408 XP**, e não os 220 XP calculados pela antiga tabela humana. A compra única de um d20 permanente por **100 XP**, condicionada a grau 6 e Atributo grau 6, exige pelo menos **202 XP** no Atributo relevante e no d20, ou **508 XP** no exemplo com quatro Atributos grau 6 e um d20. A disponibilidade desse orçamento por grau de monstro permanece **PENDENTE**.
 
-### 0-C.3. Armadura natural [DEFINIDO como presença; valores PENDENTES]
+### 0-C.3. Vida e DE como proteção natural dos monstros [DEFINIDO]
 
-- **[DEFINIDO]** Monstros possuem **proteção natural**, cuja estrutura e valores devem ser levados em conta na durabilidade do encontro; não simular todo monstro como se estivesse desprotegido.
-- **[DEFINIDO]** Uma criatura que queira priorizar **DE defensiva** em vez da proteção/robustez natural precisa investir XP em **Agilidade e, quando pertinente, Destreza**. O grau do monstro limita também a **reserva local de Pavor** (1 a 6P), e não é sinônimo de XP ou nível.
-- **[PENDENTE]** Integridade natural por grau, multiplicadores, se a proteção é barra integrada ao corpo ou separada da Vida, transbordamento e interação com colossal. A hipótese histórica de integridade corporal `Vida × multiplicador do grau`, com grau 1 ×1, **não é uma tabela aprovada para todos os monstros**.
-- **[EXPERIMENTAL]** A tradução de dano corporal em Vida ainda precisa ser concluída. **Cinco pontos de Vida não garantem exatamente cinco acertos para matar:** a quantidade varia com dano corporal, armadura natural, perda de 1–3 Vida por ataque e acertos efetivos.
+- **[DEFINIDO]** Todas as criaturas começam com **Vida-base 3**, **exceto criaturas pequenas**, que seguem a exceção própria. **[PENDENTE]** Publicar o valor específico da exceção para criaturas pequenas, se ainda não estiver definido na respectiva ficha.
+- **[DEFINIDO]** A robustez natural dos monstros já é representada pela **Vida máxima = 3 + Vigor + ⌊Força/2⌋**. Não criar uma barra separada de armadura natural, integridade natural extra ou multiplicador de Vida por grau. **A armadura efetivamente equipada**, quando houver, segue separadamente as regras de equipamentos.
+- **[DEFINIDO]** Um monstro com **Vigor 6 e Força 6** tem **12 Vida**. Se for **grau 6** e comprar seu **único d20 permanente de 100 XP em Vigor**, obtém **+1 Vida máxima**, chegando a **13 Vida**. Comprar esse d20 em outro Atributo não concede o bônus de Vigor. O bônus é uma exceção específica ao máximo ordinário de 12.
+- **[DEFINIDO]** O limiar de dano colossal num único ataque é **3 × Vida máxima do alvo**. Assim, **12 Vida → 36 de dano corporal**; **13 Vida → 39 de dano corporal**, ambos após eventuais armaduras efetivamente equipadas. O limiar não impede dano cumulativo por ataques comuns.
+- **[DEFINIDO]** Monstros elevam naturalmente a **DE defensiva = Agilidade + ⌊Destreza/2⌋** ao investir XP nesses Atributos, em vez de ganhar um bônus gratuito de esquiva por grau. Exemplos: Agilidade 2 + Destreza 0 → **DE 2**; Agilidade 4 + Destreza 2 → **DE 5**; Agilidade 6 + Destreza 6 → **DE 9**, antes de equipamento.
+- **[DEFINIDO]** A melhoria de Vida, DE e capacidade ofensiva compete pelo mesmo orçamento de XP monstruoso. O grau do monstro também limita sua reserva local de Pavor.
+- **[EXPERIMENTAL]** A escala intermediária que converte dano corporal em 1, 2 ou 3 pontos de Vida continua em teste. **Cinco pontos de Vida não garantem cinco ataques necessários para matar**: um golpe comum pode retirar até três pontos de Vida.
+
+| Exemplo | Vida máxima | Limiar de colossal | DE natural, se Atributos indicados |
+|---|---:|---:|---:|
+| Força 2, Vigor 1, Agilidade 2, Destreza 0 | 5 | 15 | 2 |
+| Força 6, Vigor 6, Agilidade 4, Destreza 2 | 12 | 36 | 5 |
+| Mesmo monstro, com d20 permanente comprado em Vigor | **13** | **39** | 5 |
 
 ### 0-C.4. Comparação exata para o playtest de nível 1 [ANÁLISE; não é regra]
 
-**Hipóteses:** faces atuais de d6 e d10; seleção ótima de até dois ou três dados mantidos, exigindo pelo menos um dado de Atributo; 2A→1E; anulação própria de Pavor para acertos limpos; crítico +1E em dois dados de face máxima. Percentuais **exatos**, enumerando todas as combinações equiprováveis. Os percentuais de acerto total incluem decisões que conservam Pavor e concedem Coragem ao outro lado. Não consideram custo de ativação nem proteção natural no cálculo de dano.
+**Hipóteses:** faces atuais de d6 e d10; seleção ótima de até dois ou três dados mantidos, exigindo pelo menos um dado de Atributo; 2A→1E; anulação própria de Pavor para acertos limpos; crítico +1E em dois dados de face máxima. Percentuais **exatos**, enumerando todas as combinações equiprováveis. Os percentuais de acerto total incluem decisões que conservam Pavor e concedem Coragem ao outro lado. Não consideram custo de ativação nem armadura eventualmente equipada no cálculo de dano.
 
 **Monstro de referência com 18 XP:** Força 2, Agilidade 2 e Vigor 1, atacando de modo pertinente com **4d10** e mantendo **dois dados**. Para uma criatura de grau 1, a reserva local tem teto **1P**. O acesso prático ao terceiro dado mantido depende de como o custo de ativar e aprimorar é pago; **não presumir retenção de três gratuita**.
 
@@ -65,13 +74,13 @@ updated: "2026-11-08"
 
 **Importante:** a pilha humana `3d6+2d10` representa um Aprendiz que investiu em Atributo e em fontes de Formação e adquiriu a Perícia que habilita uma terceira fonte pertinente; não equivale a conceder essa pilha a todos os Aprendizes. O exemplo de defesa **DE 4** presume um **outro personagem defensivo**, com Agilidade 2, Destreza 2 e armadura leve +1 DE [EXPERIMENTAL], não o mesmo personagem que investiu todo seu XP de Base em Força 3.
 
-**Interpretação:** o monstro com 4d10 não é incapaz de acertar um esquivador inicial de DE 4: acerta potencialmente em **56,95%** dos ataques com dois mantidos. Mas quase todos esses acertos conservam Pavor, gerando **Coragem aos jogadores**. A criatura pode escolher uma ação menos arriscada. A mesma ameaça tem **Vida 5 e proteção natural**, então sua duração depende de acertos *efetivos* e não de um número fixo de turnos.
+**Interpretação:** o monstro com 4d10 não é incapaz de acertar um esquivador inicial de DE 4: acerta potencialmente em **56,95%** dos ataques com dois mantidos. Mas quase todos esses acertos conservam Pavor, gerando **Coragem aos jogadores**. A criatura pode escolher uma ação menos arriscada. A mesma ameaça tem **Vida 5, sem segunda barra de armadura natural**, então sua duração depende de acertos *efetivos* e não de um número fixo de turnos.
 
 ### 0-C.5. XP total e matriz de encontros [ANÁLISE; parâmetros PENDENTES]
 
 Se, **somente como hipótese de playtest**, cada Aprendiz tiver **19 XP** (14 + 5 de Perícias), então três, quatro e cinco jogadores somam, respectivamente, **57, 76 e 95 XP**. Três, quatro e cinco monstros de **18 XP** somam **54, 72 e 90 XP**: **ficam abaixo do grupo** e, pela regra atual de recompensa, não dão XP pelo enfrentamento. Para alcançar ou superar o XP total do grupo com monstros deste modelo, seriam necessários **4, 5 ou 6 monstros**, respectivamente. Isso **não os torna automaticamente encontros Perito**: a quantidade de ativações e a economia de Pavor devem ser simuladas.
 
-**PENDENTE:** orçamento de XP de cada grau de monstro, tabela de integridade natural, custo completo das ativações grau 1, frequência real de Coragem e fórmula de recompensa/ranqueamento Aprendiz–Perito–Elite–Divino. Não publicar uma matriz definitiva de quantidades antes desses parâmetros.
+**PENDENTE:** orçamento de XP de cada grau de monstro, exceção da Vida-base de criaturas pequenas, custo completo das ativações grau 1, frequência real de Coragem e fórmula de recompensa/ranqueamento Aprendiz–Perito–Elite–Divino. Não publicar uma matriz definitiva de quantidades antes desses parâmetros.
 
 ---
 
