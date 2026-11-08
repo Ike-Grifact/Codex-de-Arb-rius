@@ -1,3 +1,10 @@
+---
+title: "Codex RPG — SRD de Continuidade v0.17"
+version: "0.17"
+system: "Codex RPG"
+updated: "2026-11-08"
+---
+
 # CODEX RPG — SRD DE CONTINUIDADE
 
 **Versão:** 0.17 — consolidação editorial das decisões de 8 de novembro de 2026  
