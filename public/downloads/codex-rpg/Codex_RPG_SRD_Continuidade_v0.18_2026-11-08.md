@@ -126,6 +126,76 @@ As habilitações de **Montar Animais** continuam separadas e não mudam com a r
 
 **Recomendação para o próximo playtest:** medir frequência de Coragem suficiente para a quarta retenção; chance de atingir a DE com e sem Pavor; ganho de Pavor local e Coragem da seleção; vantagem real de armas de muitos d4 versus poucos dados grandes; tempo necessário para o Narrador reunir 3P públicos; efeito de eliminar o Líder. **Não** reforçar a esquiva/armaduras novamente sem observar essas interações.
 
+### 0-B.8. Revisão multiescala de balanceamento: DE 3 até DE 30 [ANÁLISE / EXPERIMENTAL]
+
+**Motivação:** não avaliar precisão apenas na DE 7. O Codex possui dificuldades de escala baixa, defesa individual e desafios coletivos extraordinários. Os números desta seção **não modificam regras** nem autorizam bônus de equipamentos.
+
+**Método:** Monte Carlo com **100.000 rolagens por pilha**, respeitando as faces da seção normativa, crítico por duas faces máximas, conversão 2A → 1E, no máximo nove dados rolados e quatro mantidos, sendo ao menos um dado de Atributo. Um personagem pode manter menos dados para evitar Pavor. Para cada rolagem, foram examinadas todas as escolhas válidas de dados mantidos. Tabela de **acerto máximo** = possibilidade de escolher um resultado que alcance a DE, mesmo conservando Pavor; tabela **acerto limpo** = possibilidade de atingir a DE após anular todo o próprio Pavor com Antecipar. Não pressupõe bônus de Perícias, armas, Coragem gratuita ou custos de Pavor já disponíveis. Erro estatístico máximo aproximadamente ±0,31 ponto percentual a 95%.
+
+#### A. Acerto individual, considerado o risco
+
+Cada célula mostra **acerto limpo / acerto total possível**, em porcentagem. Se o acerto total supera o limpo, a diferença é a frequência em que só se acerta **conservando Pavor**.
+
+| Pilha / retenção | DE 3 | DE 5 | DE 7 | DE 9 | DE 10 | DE 11 | DE 12 | DE 15 | DE 20 | DE 30 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Aprendiz 6d6 / 2 | 22,1/41,3 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 |
+| Aprendiz 6d6 / 3 (Coragem) | 25,9/90,4 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 |
+| Híbrido 3d10+6d12 / 3 | 89,2/100 | 35,0/97,2 | 0/68,0 | 0/13,2 | 0/1,9 | 0/0 | 0/0 | 0/0 | 0/0 | 0/0 |
+| Híbrido 3d10+6d12 / 4 (Coragem) | 90,5/100 | 65,4/99,6 | 11,4/92,4 | 0/62,2 | 0/38,4 | 0/17,6 | 0/5,2 | 0/0 | 0/0 | 0/0 |
+| Monstro 9d12 / 4 | 91,0/100 | 67,1/99,8 | 10,1/95,0 | 0/70,7 | 0/47,6 | 0/22,7 | 0/4,3 | 0/0 | 0/0 | 0/0 |
+| Monstro 1d20+8d12 / 4 | 92,4/100 | 70,6/99,8 | 17,7/95,6 | 1,8/75,2 | 0,1/56,0 | ~0/34,8 | ~0/17,1 | 0/0,7 | 0/0 | 0/0 |
+| Monstro 3d20+6d12 / 4 | 94,4/100 | 76,8/99,8 | 31,4/96,7 | 7,3/82,4 | 2,2/69,1 | 0,9/53,7 | 0,6/38,0 | 0/7,5 | 0/0 | 0/0 |
+
+**Interpretação-chave:** monstro 9d12/4 pode alcançar DE 10 em **47,6%**, porém **0% desses acertos é limpo sem bônus externos**. Para acertar, ele necessariamente deixa Pavor não anulado e concede Coragem, embora esse mesmo Pavor também ajude na DE e no dano. Um inimigo inteligente pode preferir outro alvo, outra ação ou até uma falha limpa, em vez de insistir em alimentar a Coragem dos defensores. Não equiparar 47,6% de acertos possíveis a 47,6% de ataques que o Narrador racionalmente escolheria fazer.
+
+A presença de d20 permite alguns resultados limpos maiores, mas não elimina o problema: com 3d20+6d12/4 contra DE 11, **53,7%** das rolagens poderiam acertar; apenas **0,9%** apresentam opção de acerto limpo. Habilidades que deem Êxitos sem Pavor mudariam o quadro e devem ser testadas separadamente.
+
+#### A.1. Quatro desfechos para um monstro que prioriza acertar sem Pavor, quando possível
+
+A política computacional deste exemplo prefere **acerto limpo**, depois **acerto com Pavor**; se nenhum acerto for possível, prefere **falha limpa** à falha com Pavor. O Narrador pode racionalmente preferir **falha limpa até mesmo quando existe um acerto arriscado**, a depender do custo de conceder Coragem.
+
+| Pilha contra DE 10 | Acerto limpo | Acerto com Pavor | Falha limpa | Falha com Pavor inevitável |
+|---|---:|---:|---:|---:|
+| Monstro 9d12, 4 mantidos | **0%** | **47,6%** | **51,8%** | **0,6%** |
+| Monstro 1d20+8d12, 4 mantidos | **0,1%** | **55,9%** | **43,6%** | **0,4%** |
+| Monstro 3d20+6d12, 4 mantidos | **2,2%** | **66,9%** | **30,7%** | **0,2%** |
+
+**Limitação decisiva:** estes números **não** dizem a decisão real do Narrador em cada rolagem; mostram o que seria alcançável seguindo a prioridade indicada. O custo de gerar Coragem e a necessidade de causar dano precisam definir uma política de seleção mais realista em playtest. Falhar sem Pavor não equivale a perder Vida ou conceder ação extra por si só, mas consome a oportunidade do inimigo.
+
+#### B. Saúde e custo da quarta retenção
+
+Com 3d10+6d12, quatro dados mantidos e DE 10, a chance máxima de acerto (incluindo Pavor) é **38,4% quando Saudável**, **17,6% quando Machucado (−1E)** e **5,2% quando Incapacitado (−2E)**. Trata-se de deslocamento na DE efetiva, **10 → 11 → 12**, sob essa hipótese de efeitos sem modificadores adicionais. Portanto, investir Coragem no quarto dado pode ser racional para evitar dano e penalidades futuras. Não presumir Coragem inesgotável; acompanhar sua geração por Pavor dos inimigos e o limite individual.
+
+#### C. Comparação de armas por peso em várias DE
+
+Hipótese: mesma base **3d10** de Atributo; comparar arma pesada grau 2 com **6d4 (peso 3)** ou **1d12 (peso 3)**; quatro dados mantidos. **Acerto máximo**, incluindo Pavor:
+
+| Pilha | DE 5 | DE 7 | DE 9 | DE 10 | DE 11 | DE 12 |
+|---|---:|---:|---:|---:|---:|---:|
+| 3d10+6d4 | 87,8% | **51,4%** | **10,8%** | 2,6% | 0,3% | 0% |
+| 3d10+1d12 | 67,0% | 27,7% | 6,0% | 2,2% | **0,7%** | **0,2%** |
+
+**Conclusão:** dados pequenos numerosos favorecem consistência em dificuldades acessíveis; um dado grande preserva maior teto em dificuldades altas. A análise com DE 7 isolada favorecia indevidamente a primeira composição. Comparar também integridade, dano, crítico, Pavor e espaço na pilha antes de alterar custos.
+
+#### D. DE 30 coletiva, sem confundir com dano colossal
+
+Sob a hipótese **EXPERIMENTAL** de três participantes, cada um com sua própria pilha de nove dados e até quatro mantidos, os resultados individuais máximos da DE são somados **após conversão de seus próprios A**. Os resultados abaixo são **probabilidades condicionais de completar a rolagem**, **não** chances de reunir os recursos, sobreviver ou habilitar a ação conjunta. Para inimigos, somam-se o custo de **3P públicos**, a característica **Líder**, oportunidades de ativação e demais custos.
+
+| Três participantes idênticos | Atingir DE 20 | Atingir DE 30 | Atingir DE 30 sem Pavor |
+|---|---:|---:|---:|
+| Cada um 9d10, mantém 4 | 96,1% | **9,6%** | ~0% |
+| Cada um 9d12, mantém 4 | 99,8% | **26,8%** | **0%** |
+| Cada um 1d20+8d12, mantém 4 | 99,9% | **47,7%** | **0%** |
+| Cada um 3d20+6d12, mantém 4 | 99,9% | **75,3%** | ~0,04% |
+
+**Teto individual:** um personagem sem bônus externos, mantendo quatro dados da tabela de faces oficial, atinge no máximo **DE 24** (quatro d20 na face 19, convertendo Antecipar). DE 30 exige **ação conjunta ou modificadores especiais**; não é uma DE defensiva cotidiana. Com 4d20 fixos, a chance **exata** de atingir DE 10 é **32,87%**, incluindo Pavor e crítico.
+
+**Dano NÃO é DE.** Com três monstros e dano definido `E+⌊P/2⌋`, selecionando dados para **maximizar dano**, em **120.000 ofensivas conjuntas simuladas** após habilitação, a chance ilustrativa de alcançar pelo menos **36 de dano bruto** foi **0% observado** para 9d12 por monstro, **0% observado** para 1d20+8d12 por monstro e aproximadamente **0,60%** para 3d20+6d12 por monstro. O máximo teórico de um monstro de **9d12 mantendo quatro é 10 de dano**; assim três desses não alcançam 36. Já três com mais d20 podem, mas ainda precisam atravessar a armadura. O resultado **0% observado** de uma simulação **não** significa impossibilidade matemática para 1d20+8d12; tampouco constitui chance incondicional de morte colossal.
+
+**Limites desta avaliação:** a conversão individual de A e o arredondamento de P são feitos por participante na simulação de dano; a regra de arredondamento após agregar Pavor de diferentes participantes ainda está **PENDENTE** e pode alterar o dano final em até 1 ponto numa equipe de três, conforme os restos. Especializações, proteção, redução de dano, equipamentos, custos de Coragem/Pavor, escolha de ação do Narrador, queda de participantes, ataques em área e a dinâmica da reserva não foram modelados.
+
+**Recomendação experimental:** usar DE 3–6 para a faixa de Aprendiz, DE 7–12 ao avaliar ataques contra proteções relevantes, DE 15–20 para testes individuais excepcionais com habilitações e DE 20–30 para cenários cooperativos. São **faixas de análise, não nova tabela oficial de dificuldades**; os patamares definitivos dependem da calibração das capacidades. Medir quatro desfechos (acerto limpo, acerto arriscado, falha limpa, falha com Pavor) e acompanhar Coragem, Pavor e penalidades de Saúde durante encontros completos.
+
 ## REFERÊNCIA HERDADA — SRD v0.17 (histórico integral)
 
 **Atenção:** as seções abaixo são transcrições da versão anterior. Referências à espera até Marco IV para reter o quarto dado, d20 com peso 5, limitação de 1P público por oportunidade, exigência de preparação do ataque conjunto ou requisitos pendentes de Domar estão **revogadas pela v0.18**. Em conflito, prevalece sempre a seção **0-B** acima.

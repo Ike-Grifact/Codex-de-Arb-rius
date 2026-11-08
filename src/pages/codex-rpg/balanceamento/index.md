@@ -1,7 +1,7 @@
 ---
 layout: ../../../layouts/CodexRpgLayout.astro
 title: Codex RPG — Estudo de balanceamento v0.18
-description: Retenção por Coragem, dados de armas e eficácia de monstros e ações conjuntas.
+description: "Retenção por Coragem e curvas de DE 3 a DE 30: acertos limpos, Pavor, monstros e cooperação."
 ---
 
 # Balanceamento v0.18 — Retenção, peso e Líder
@@ -81,7 +81,84 @@ Em **250.000 ações conjuntas simuladas** com três chefes, nove dados disponí
 
 A reserva pública com três jogadores chega a **5P**; pagar 3P representa **60% da reserva cheia**. Não é possível inferir a frequência da ação conjunta sem simular o fluxo de Pavor público e local.
 
-## 6. Parecer e próximos testes
+## 6. Análise multiescala: DE 3 até DE 30
+
+**Extensão EXPERIMENTAL da simulação:** o cenário de DE 7 era insuficiente para calibrar o Codex, porque personagens e monstros enfrentam DE muito distintas. Recalculamos **100.000 rolagens por pilha** nas DE 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 20, 25 e 30. A seleção considera de 1 até o máximo de dados mantidos, ao menos um de Atributo, crítico +1E e conversão de 2A em 1E. As porcentagens abaixo são **limites de possibilidade após observar os dados**, não decisões obrigatórias dos jogadores nem de um Narrador inteligente.
+
+### Acertos limpos e arriscados são resultados diferentes
+
+**Acerto limpo** é possível quando existe uma seleção que cumpre a DE e termina com **zero Pavor não anulado**, podendo gastar Antecipar próprio para anulá-lo. **Acerto possível** considera também seleções que conservam Pavor; não é necessariamente a escolha que a criatura fará.
+
+| Pilha (quatro mantidos) | DE 5: limpo/total | DE 7: limpo/total | DE 9: limpo/total | DE 10: limpo/total | DE 11: limpo/total | DE 12: limpo/total |
+|---|---:|---:|---:|---:|---:|---:|
+| Humano híbrido 3d10+6d12 | 65,4/99,6% | 11,4/92,4% | 0/62,2% | **0/38,4%** | 0/17,6% | 0/5,2% |
+| Monstro 9d12 | 67,1/99,8% | 10,1/95,0% | 0/70,7% | **0/47,6%** | 0/22,7% | 0/4,3% |
+| Monstro 1d20+8d12 | 70,6/99,8% | 17,7/95,6% | 1,8/75,2% | **0,1/56,0%** | ~0/34,8% | ~0/17,1% |
+| Monstro 3d20+6d12 | 76,8/99,8% | 31,4/96,7% | 7,3/82,4% | **2,2/69,1%** | 0,9/53,7% | 0,6/38,0% |
+
+**Interpretação:** um monstro 9d12 pode alcançar DE 10 em **47,6%** das rolagens, mas esses acertos **exigem conservar Pavor** na hipótese simulada. Esse Pavor ajuda a atingir a DE e a causar dano, mas gera Coragem aos jogadores. Assim, uma criatura que evita Pavor pode procurar outro alvo, agir de outra maneira ou aceitar uma falha limpa em vez de sempre tentar acertar.
+
+As pilhas de 9d12 e de d20 são **condicionais**: pressupõem XP, fontes, manutenção dos quatro dados e custos de Pavor já disponíveis. A compra permanente de **um d20 por 100 XP** não torna gratuitos os outros dois.
+
+### Quatro desfechos — seleção tática do inimigo
+
+Um inimigo pode priorizar **acerto limpo**, depois **acerto com Pavor**, depois **falha limpa** e só por último **falha com Pavor inevitável**. Para DE 10, esse procedimento produz:
+
+| Monstro | Acerto limpo | Acerto com Pavor | Falha limpa | Falha com Pavor inevitável |
+|---|---:|---:|---:|---:|
+| 9d12, mantém 4 | **0%** | **47,6%** | **51,8%** | **0,6%** |
+| 1d20+8d12, mantém 4 | **0,1%** | **55,9%** | **43,6%** | **0,4%** |
+| 3d20+6d12, mantém 4 | **2,2%** | **66,9%** | **30,7%** | **0,2%** |
+
+São resultados **possíveis** sob essa prioridade, não decisões obrigatórias. Um inimigo cauteloso pode inclusive preferir **falhar sem Pavor** a executar um **acerto com Pavor**, evitando dar Coragem ao alvo ou ao aliado próximo. Um inimigo desesperado pode escolher o oposto para causar dano antes de cair. Esse dilema deve entrar no balanceamento de chefes e lacaios.
+
+### Gastar Coragem agora ou sofrer penalidades depois
+
+Para o humano híbrido **3d10+6d12**, mantendo quatro dados e tentando alcançar DE 10:
+
+| Estado de Saúde | Penalidade | Acerto possível |
+|---|---:|---:|
+| Saudável | 0E | **38,4%** |
+| Machucado | −1E | **17,6%** |
+| Incapacitado | −2E | **5,2%** |
+
+O gasto de Coragem para manter o quarto dado pode evitar dano e a perda futura de eficiência. Não é necessário enfraquecer esse gasto antes de medir a taxa real de recuperação de Coragem e a frequência de ferimentos; o sistema incentiva uma decisão tática relevante.
+
+### Composição de peso igual: a vantagem muda conforme a DE
+
+Comparação de **arma pesada grau 2**, ambas de **peso 3**, com base igual de Atributo **3d10** e quatro dados mantidos:
+
+| Composição total | DE 5 | DE 7 | DE 9 | DE 10 | DE 11 | DE 12 |
+|---|---:|---:|---:|---:|---:|---:|
+| **3d10+6d4** | 87,8% | **51,4%** | **10,8%** | 2,6% | 0,3% | 0% |
+| **3d10+1d12** | 67,0% | 27,7% | 6,0% | 2,2% | **0,7%** | **0,2%** |
+
+Muitos d4 melhoram a seleção em dificuldades acessíveis. Um d12 oferece maior potencial no extremo alto; a curva se inverte em **DE 11–12**. A análise de DE 7 isolada fazia parecer que a arma de seis d4 era simplesmente melhor. Ainda é preciso medir dano, Pavor mantido e a ocupação de espaço na pilha.
+
+### DE 30 em ações conjuntas — não equivale a dano colossal
+
+Com **três participantes** e até **quatro dados mantidos por integrante**, somando os resultados de DE de cada participante depois de suas próprias conversões de Antecipar:
+
+| Cada integrante da ação conjunta | Atinge DE 20 | Atinge DE 30 | DE 30 sem Pavor |
+|---|---:|---:|---:|
+| 9d10 | 96,1% | **9,6%** | Próximo de 0% |
+| 9d12 | 99,8% | **26,8%** | 0% |
+| 1d20+8d12 | 99,9% | **47,7%** | 0% |
+| 3d20+6d12 | 99,9% | **75,3%** | ~0,04% |
+
+Os percentuais são **condicionais à execução da ação conjunta**. Para monstros, ainda exigem um **Líder**, pagamento de **3P públicos**, custos locais e participação efetiva; esses custos e a frequência das oportunidades não foram simulados.
+
+No modelo puramente simbólico, **quatro d20 mantidos chegam no máximo a DE 24 sem bônus externos** (quatro resultados 19, somando a conversão de Antecipar); portanto, DE 30 é uma dificuldade de ação conjunta ou efeito extraordinário, não uma DE defensiva normal. A probabilidade **exata** de quatro d20 alcançarem DE 10, com crítico, é **32,87%**.
+
+**DE 30 não é dano 30.** Dano usa **E + piso(P/2)**. Mesmo quando três monstros 9d12 somam DE 30, cada um possui no máximo **10 de dano individual** com quatro dados mantidos, e os três juntos não alcançam 36 de dano corporal num único ataque pela soma dos danos individuais. Já três monstros com 3d20+6d12 cada superaram **36 de dano bruto em aproximadamente 0,60% de 120 mil ofensivas simuladas** que maximizam dano; o resultado ainda precisa atravessar a armadura e pressupõe a cooperação autorizada.
+
+A escolha de arredondar Pavor antes ou depois de reunir o dano da ação conjunta continua **PENDENTE** e pode alterar em até **1 ponto** o total com três participantes. Não transformar a porcentagem condicional de dano em probabilidade de morte instantânea no encontro.
+
+**Conclusão do balanceamento:** avaliar pelo menos quatro desfechos — acerto limpo, acerto com Pavor, falha limpa e falha com Pavor — em várias DE. Acrescentar distribuição de Coragem, dano corporal, integridade, penalidades de Saúde e custo real da ação conjunta. Ações que alcançam a DE com Pavor não devem ser consideradas equivalentes a acertos limpos. Os intervalos de DE apresentados aqui são **instrumentos de estudo**, não uma nova tabela oficial.
+
+---
+
+## 7. Parecer e próximos testes
 
 **Retenção e Coragem:** mecânica coerente, com aumento grande de eficácia. Monitorar a frequência real do quarto dado e sua recuperação de Coragem.
 

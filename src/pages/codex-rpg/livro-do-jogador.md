@@ -142,6 +142,16 @@ O **d20 é extraordinário**. Os Atributos comuns dos jogadores chegam a 3d10 no
 
 **DEFINIDO:** quando **ao menos dois dados mantidos mostram suas faces numéricas máximas**, a ação recebe **+1E e +1 Coragem**, respeitando o limite da reserva. O crítico pode ocorrer mesmo que a ação falhe. Efeitos específicos de crítico de armas ainda precisam de catálogo aprovado.
 
+### Dificuldades altas e o preço do Pavor
+
+No Codex, **a DE pode chegar a 30**, mas isso não significa que toda rolagem individual precisa alcançá-la. Um único participante que mantenha quatro dados d20 e não tenha bônus especiais atinge no máximo **DE 24** apenas com as faces e conversões normais. Desafios de DE 30 dependem de **ação conjunta ou de recursos extraordinários**.
+
+**Acerto limpo e acerto arriscado não são equivalentes.** Um monstro pode conseguir ultrapassar uma DE alta **somente mantendo Pavor**, o que simultaneamente pode gerar Coragem para os jogadores. O Narrador pode preferir uma seleção sem Pavor, mesmo que falhe, ou escolher outra estratégia. Por sua vez, o jogador pode gastar Coragem para manter um dado extra e evitar perder Vida, pois as penalidades de Saúde reduzirão os Êxitos das próximas ações.
+
+**Exemplo experimental:** uma criatura com 9d12 rolados e quatro mantidos pode atingir DE 10 em aproximadamente **48%** das rolagens que priorizam acerto, mas **nenhum desses acertos é limpo** sem bônus externos. O resultado não prevê quantas vezes o Narrador realmente escolherá conservar Pavor.
+
+O [estudo de balanceamento de DE 3 a DE 30](../balanceamento/) compara acerto limpo, acerto com Pavor, tipos de armas, Coragem, Saúde e ações conjuntas. **Os números do estudo não constituem novas regras nem faixas oficiais de DE.**
+
 ## 5. Protagonismo, Pavor e Coragem
 
 Enquanto não houver Pavor não anulado que permita intervenção, os jogadores conservam o fluxo das ações entre si.
