@@ -1,7 +1,7 @@
 ---
 layout: ../../../layouts/CodexRpgLayout.astro
 title: Codex RPG — Estudo de balanceamento v0.18
-description: Retenção por Coragem e curvas de DE 3 a DE 30: acertos limpos, Pavor, monstros e cooperação.
+description: "Retenção por Coragem e curvas de DE 3 a DE 30: acertos limpos, Pavor, monstros e cooperação."
 ---
 
 # Balanceamento v0.18 — Retenção, peso e Líder
