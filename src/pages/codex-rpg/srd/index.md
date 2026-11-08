@@ -1,18 +1,18 @@
 ---
 layout: ../../../layouts/CodexRpgLayout.astro
-title: Codex RPG — SRD de Continuidade v0.18
+title: Codex RPG — SRD de Continuidade v0.19
 description: Resumo normativo das decisões atuais, divergências históricas e pontos pendentes.
 ---
 
-# SRD de Continuidade v0.18 — resumo normativo
+# SRD de Continuidade v0.19 — resumo normativo
 
-*8 de novembro de 2026 · referência para o Livro do Jogador v0.3.*
+*8 de novembro de 2026 · referência para o Livro do Jogador v0.4.*
 
-[**Baixar o SRD v0.18 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.18_2026-11-08.md) — inclui as decisões atuais e o histórico técnico preservado.
+[**Baixar o SRD v0.19 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.19_2026-11-08.md) — inclui as decisões atuais e o histórico técnico preservado.
 
-Este resumo serve para consultar **as mudanças aprovadas em relação às versões antigas**. A compilação técnica integral v0.18 preserva as versões v0.17 e v0.16 como histórico, sem torná-las novamente vigentes.
+Este resumo serve para consultar **as mudanças aprovadas em relação às versões antigas**. A compilação técnica integral v0.19 preserva a v0.18 e as versões anteriores como histórico, sem torná-las novamente vigentes.
 
-**Precedência:** decisão autoral mais recente → seção **0-B da v0.18** → atualização da v0.17 → histórico anterior.
+**Precedência:** decisão autoral mais recente → seção **0-C da v0.19** → seção 0-B da v0.18 → atualização da v0.17 → histórico anterior.
 
 | Estado | Significado |
 |---|---|
@@ -20,6 +20,21 @@ Este resumo serve para consultar **as mudanças aprovadas em relação às vers�
 | **EXPERIMENTAL** | Valor ou procedimento adotado para playtest |
 | **PROPOSTO** | Hipótese sob discussão |
 | **PENDENTE** | Lacuna sem decisão autoral |
+
+## Atualização de criação e monstros [DEFINIDO]
+
+**XP inicial de Perícias:** **5 XP**, substituindo a antiga referência de 3 XP. O exemplo de comparação com **14 XP de Base/Formação + 5 XP de Perícias = 19 XP por Aprendiz** é uma hipótese de orçamento para o playtest, ainda sujeita a validação quanto à adição ou redistribuição.
+
+**Monstros não humanoides compram d10 diretamente nos seus Atributos** e seguem a tabela de Conhecimentos e Práticas:
+
+| Grau | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|---|
+| Dados | 1d4 | 1d10 | 2d10 | 3d10 | 2d10+1d12 | 1d10+2d12 | 3d12 |
+| XP acumulado | 0 | 2 | 8 | 20 | 38 | 66 | **102** |
+
+Quatro Atributos monstruosos no grau 6 custam **408 XP**; com o d20 comprado por 100 XP, **508 XP**. **A resistência natural dos monstros já está na Vida máxima [DEFINIDO]**, sem segunda barra de armadura ou multiplicador por grau. Criaturas não pequenas têm Vida-base 3, com `Vida = 3 + Vigor + ⌊Força/2⌋`. Com Vigor 6 e Força 6, são **12 Vida**; com a compra única de d20 permanente em Vigor, **13 Vida**. Os limiares de colossal são respectivamente **36** e **39 de dano corporal**. A Vida-base das criaturas pequenas permanece **PENDENTE**. **A DE natural também cresce com Agilidade e Destreza**, pela fórmula `Agilidade + ⌊Destreza/2⌋`. A faixa de XP por grau de ameaça também está pendente.
+
+**Playtest inicial [ANÁLISE]:** um monstro de 18 XP (Força 2, Agilidade 2, Vigor 1) oferece **4d10**, Vida 5, DE natural 2. Mantendo dois dados, tem **56,95%** de acerto possível contra DE 4, mas só **5,23%** de acerto limpo. Isso não contabiliza oportunidades de ativação, Pavor local nem eventual armadura equipada.
 
 ## 1. Resolução e protagonistas
 
@@ -69,4 +84,4 @@ Não há magia comum de cura de Vida. Ressurreição exige **até 7 dias**, corp
 
 ---
 
-Este resumo **não substitui o Livro do Jogador como guia didático**. Consulte também o [estudo experimental de balanceamento](../balanceamento/). Consulte [Livro do Jogador v0.3](../livro-do-jogador/), [fichas de Perícias e Maestrias](../maestrias/) e [guia de monstros](../bestiario/).
+Este resumo **não substitui o Livro do Jogador como guia didático**. Consulte também o [estudo experimental de balanceamento](../balanceamento/). Consulte [Livro do Jogador v0.4](../livro-do-jogador/), [fichas de Perícias e Maestrias](../maestrias/) e [guia de monstros](../bestiario/).
