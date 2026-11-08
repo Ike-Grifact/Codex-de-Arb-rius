@@ -36,6 +36,6 @@ Dois elementos não tornam a magia imune a Desvantagem Absoluta causada pela aus
 
 Uma conjuração mistura um componente de Terra encontrado no terreno com outro elemento habilitado. O segundo elemento depende da Perícia, não de um d20 gratuito.
 
-**Fonte e estado:** SRD de Continuidade v0.17; custo, habilitação e +1A **DEFINIDOS**.
+**Fonte e estado:** SRD de Continuidade v0.18; custo, habilitação e +1A **DEFINIDOS**.
 
 [Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/)
