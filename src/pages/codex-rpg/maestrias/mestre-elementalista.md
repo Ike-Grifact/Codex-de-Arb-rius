@@ -38,4 +38,4 @@ Uma conjuração mistura um componente de Terra encontrado no terreno com outro 
 
 **Fonte e estado:** SRD de Continuidade v0.17; custo, habilitação e +1A **DEFINIDOS**.
 
-[Voltar ao catálogo](./) · [Livro do Jogador](../../livro-do-jogador/)
+[Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/)
