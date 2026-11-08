@@ -1,0 +1,58 @@
+---
+import PortalLayout from "../../../layouts/PortalLayout.astro";
+import { withBase } from "../../../lib/paths";
+const base = import.meta.env.BASE_URL;
+const fichas = [
+ {titulo:"Combinação de Fontes",tipo:"Construção híbrida",custo:"2 XP",estado:"DEFINIDO",slug:"combinacao-de-fontes",descricao:"Terceira fonte pertinente sem dados mantidos extras."},
+ {titulo:"Improviso Mágico",tipo:"Conjuração",custo:"1 XP",estado:"DEFINIDO",slug:"improviso-magico",descricao:"Utilizar componentes elementais presentes na cena."},
+ {titulo:"Mestre Elementalista",tipo:"Conjuração",custo:"5 XP",estado:"DEFINIDO",slug:"mestre-elementalista",descricao:"Combinar dois elementos e acrescentar +1 Antecipar."},
+ {titulo:"Conjurador Extraordinário",tipo:"Conjuração extraordinária",custo:"5 XP",estado:"PARCIAL",slug:"conjurador-extraordinario",descricao:"Inteligência 6 e Conjuração 6; requisitos adicionais pendentes."},
+ {titulo:"Domar Animais",tipo:"Companheiros",custo:"2–5 XP",estado:"DEFINIDO",slug:"domar-animais",descricao:"Companheiros de diversos portes, custos e limites de XP."},
+ {titulo:"Montar Animais",tipo:"Cavalaria",custo:"2–5 XP",estado:"DEFINIDO",slug:"montar-animais",descricao:"Montaria comum, exótica e voadora com requisitos."}
+];
+---
+<PortalLayout title="Perícias e Maestrias | Codex RPG" description="Catálogo de habilidades e requisitos já confirmados para o Codex RPG.">
+  <div class="page-container codex-abilities">
+    <nav aria-label="Caminho" class="codex-breadcrumb"><a href={withBase("codex-rpg/",base)}>Codex RPG</a><span>/</span> Perícias e Maestrias</nav>
+    <header class="codex-abilities-intro">
+      <p class="kicker">LIVRO DE CONSULTA · CODEX RPG</p>
+      <h1>Perícias e <em>Maestrias</em></h1>
+      <p>Construa sua profissão escolhendo especializações, não uma classe obrigatória. Cada ficha contém custo, requisitos, momento de uso, efeito, exemplos e limites — para que a regra seja consultada diretamente na mesa.</p>
+      <div class="guide-links"><a href={withBase("codex-rpg/livro-do-jogador/",base)}>Livro do Jogador v0.2</a><a href={withBase("codex-rpg/bestiario/",base)}>Regras de monstros</a></div>
+    </header>
+    <section aria-label="Fichas de Perícias" class="codex-section">
+      <div class="codex-section-head"><h2>Capacidades descritas</h2><p>Somente regras definidas ou com pendências expressas.</p></div>
+      <div class="codex-grid">
+        {fichas.map(item => <a class="codex-rule-card" href={withBase('codex-rpg/maestrias/'+item.slug+'/',base)}>
+          <div class="tag-line"><span class="type">{item.tipo}</span><span class="state">{item.estado}</span></div>
+          <h3>{item.titulo}</h3><p>{item.descricao}</p>
+          <div class="cost"><strong>{item.custo}</strong><span>Ler regra integral →</span></div>
+        </a>)}
+      </div>
+    </section>
+    <section class="codex-section codex-note">
+      <h2>Onde estão as Maestrias?</h2>
+      <p>As Maestrias avançadas do Codex ainda precisam de definições completas de desbloqueio, XP, ativação e limites. <strong>Não criamos Maestrias fictícias para preencher o catálogo.</strong> As capacidades acima são Perícias e caminhos confirmados que futuramente podem fundamentar profissões e Maestrias próprias.</p>
+      <p>As Maestrias de jogadores existentes em outras páginas do portal pertencem a <em>Assimilação RPG</em>. Reutilizamos apenas seu método editorial: índice navegável, fichas individuais, custos, requisitos, efeitos, condições e contrajogo. As economias dos dois sistemas não se misturam.</p>
+    </section>
+  </div>
+</PortalLayout>
+<style>
+.codex-abilities{max-width:1160px}
+.codex-breadcrumb{display:flex;gap:.6rem;margin-bottom:1.2rem;font-size:.83rem;color:var(--muted)}.codex-breadcrumb a{color:var(--forest-700);font-weight:700}
+.codex-abilities-intro{padding:clamp(1.5rem,4vw,3rem);background:linear-gradient(125deg,#231f22,#3b282c 60%,#69483a);color:#fbf3ea;border-radius:13px}
+.kicker{font-size:.72rem;letter-spacing:.14em;font-weight:800;color:#dfb18d}
+.codex-abilities-intro h1{font:500 clamp(2.4rem,5vw,4.2rem)/1.1 Georgia,serif;letter-spacing:-.03em;margin:.4rem 0 1rem}
+.codex-abilities-intro h1 em{color:#eab6a0}
+.codex-abilities-intro p{max-width:78ch;line-height:1.7;color:#f0e5db}
+.guide-links{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.3rem}.guide-links a{padding:.6rem .9rem;border-radius:7px;color:#fff7ee;border:1px solid #d9a992;text-decoration:none;font-weight:700}
+.codex-section{margin-top:2.2rem}.codex-section-head{display:flex;gap:1rem;align-items:end;justify-content:space-between;flex-wrap:wrap}.codex-section-head h2{font:600 1.75rem Georgia,serif;margin:0;color:var(--forest-950)}.codex-section-head p{color:var(--muted);margin:0}
+.codex-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.2rem}
+.codex-rule-card{display:flex;flex-direction:column;gap:.7rem;padding:1.35rem;background:var(--paper);border:1px solid var(--line);border-radius:11px;text-decoration:none;box-shadow:0 7px 22px rgba(30,25,22,.035);transition:transform .15s,border-color .15s}
+.codex-rule-card:hover,.codex-rule-card:focus-visible{transform:translateY(-2px);border-color:#b88773}
+.tag-line{display:flex;justify-content:space-between;align-items:center;gap:.5rem;flex-wrap:wrap;font-size:.7rem;font-weight:800;letter-spacing:.04em}.type{color:#805846}.state{color:#276b4f;border-radius:50px;background:#e2f0e7;padding:.25rem .45rem}
+.codex-rule-card h3{font:600 1.3rem Georgia,serif;color:#57332e;margin:0}.codex-rule-card p{flex:1;color:var(--muted);margin:0;font-size:.91rem;line-height:1.65}
+.cost{margin-top:.6rem;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:.9rem;font-size:.82rem;color:#704e42}.cost strong{font-size:1rem}
+.codex-note{background:var(--paper);border-left:4px solid #b37b5a;padding:1.4rem;border-radius:7px}.codex-note h2{font:600 1.4rem Georgia,serif;color:#57332e;margin:0}.codex-note p{line-height:1.7;color:var(--muted)}
+@media(max-width:850px){.codex-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){.codex-grid{grid-template-columns:1fr}}
+</style>
