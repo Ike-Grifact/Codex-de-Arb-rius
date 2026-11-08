@@ -6,7 +6,7 @@ description: Guia de consulta dos graus, Pavor, dados, XP e ranks de desafio.
 
 # Bestiário — construção de monstros e encontros
 
-**Guia do Narrador · continuidade v0.18.** As regras definidas são apresentadas separadamente dos custos de teste e dos orçamentos ainda pendentes.
+**Guia do Narrador · continuidade v0.19.** As regras definidas são apresentadas separadamente dos custos de teste e dos orçamentos ainda pendentes.
 
 ## Identidade das ameaças
 
@@ -23,7 +23,35 @@ Um humanoide adversário pode usar XP, Atributos, Conhecimentos, Práticas, Per�
 | **5** | **3** | **9** | **4** | **5P** |
 | **6** | **4** | **9** | **4** | **6P** |
 
-A progressão de **dados dos Atributos monstruosos até d12** está em **playtest**. A tabela de custo em XP para desenvolver os Atributos segue os graus usados para animais: até 55 XP acumulados por Atributo no grau 6. O **orçamento total de XP por grau de monstro** continua **PENDENTE**.
+**DEFINIDO:** monstros compram **d10 diretamente** nos Atributos a partir do grau 1 e seguem a **tabela de XP de Conhecimentos e Práticas**, sem usar a progressão humana de d6. O grau da ameaça não determina automaticamente seu XP.
+
+| Grau do Atributo | Dados | XP acumulado |
+|---:|---|---:|
+| 0 | 1d4 | 0 |
+| 1 | **1d10** | **2** |
+| 2 | **2d10** | **8** |
+| 3 | **3d10** | **20** |
+| 4 | **2d10 + 1d12** | **38** |
+| 5 | **1d10 + 2d12** | **66** |
+| 6 | **3d12** | **102** |
+
+Quatro Atributos grau 6 custam **408 XP**, antes do d20 permanente de **100 XP**; juntos, **508 XP**. **PENDENTE:** orçamento de XP total por grau da ameaça.
+
+**DEFINIDO:** monstros têm **armadura natural**. **PENDENTE:** valores de integridade, multiplicadores por grau e se ela forma uma reserva corporal integrada ou separada. Não atribuir automaticamente uma barra de Vida extra de valor arbitrário. Para uma criatura que priorize esquiva, investir em Agilidade e Destreza.
+
+## Exemplo de monstro para playtest nível 1 [EXPERIMENTAL]
+
+**18 XP investidos em Atributos:** Força 2 (2d10; 8 XP), Agilidade 2 (2d10; 8 XP), Vigor 1 (1d10; 2 XP). Tem **Vida 5**, **DE 2** antes de modificadores e, numa investida pertinente de Força + Agilidade, pode **rolar 4d10 e manter dois dados naturalmente**.
+
+| Defesa do jogador | Chance de acerto com Pavor permitido | Chance de acerto limpo |
+|---|---:|---:|
+| DE 3 | **83,11%** | **36,68%** |
+| DE 4 | **56,95%** | **5,23%** |
+| DE 5 | **24,84%** | **0%** |
+
+Os valores são exatos para 4d10 com dois mantidos, crítico e uso de Antecipar. **A criatura precisa receber uma oportunidade de ataque**, e o Narrador pode escolher não manter Pavor para evitar conceder Coragem. O terceiro dado exige gasto e habilitação que podem não caber no teto local de **1P de um monstro grau 1**: não considerá-lo automático.
+
+**Vida 5 não garante cinco ataques para morrer:** a integridade natural e a quantidade de Vida perdida por golpe ainda precisam de uma ficha fechada. Uma criatura pode sobreviver a muitos golpes fracos ou sucumbir antes sob danos corporais altos.
 
 ## D20 de monstruosidade permanente
 
@@ -40,7 +68,7 @@ A progressão de **dados dos Atributos monstruosos até d12** está em **playtes
 
 Os outros dois d20 possíveis na ativação dependem de elevações pagas com Pavor e de capacidades extraordinárias. A compra permanente **não** dispensa custos de ativação, dados mantidos, novos Atributos ou movimento.
 
-**Exemplo:** um grau 6 desenvolve um Atributo com 3d12 pela progressão monstruosa experimental. Após a compra de 100 XP, a fonte oferece 1d20 + 2d12. O monstro forma uma pilha de até nove dados com os Atributos relevantes à ação, seleciona até quatro para manter e resolve somente esses símbolos.
+**Exemplo:** um grau 6 desenvolve um Atributo com 3d12 pela tabela monstruosa definida (102 XP). Após a compra de 100 XP, a fonte oferece 1d20 + 2d12. O monstro forma uma pilha de até nove dados com os Atributos relevantes à ação, seleciona até quatro para manter e resolve somente esses símbolos.
 
 ## Pavor de ativação
 
@@ -87,4 +115,4 @@ Os ranks **não são calculados por XP isoladamente**. A classificação definit
 
 ---
 
-[Livro do Jogador](../livro-do-jogador/) · [SRD v0.18](../srd/) · [Análise de balanceamento](../balanceamento/) · [Perícias e Maestrias](../maestrias/)
+[Livro do Jogador](../livro-do-jogador/) · [SRD v0.19](../srd/) · [Análise de balanceamento](../balanceamento/) · [Perícias e Maestrias](../maestrias/)
