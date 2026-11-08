@@ -32,7 +32,7 @@ Os dados descartados **não produzem qualquer símbolo ou efeito**. Um resultado
 
 A mesma rolagem pode cumprir o objetivo e ainda trazer Pavor. Um acerto arriscado é diferente de um acerto limpo.
 
-## 2. Criação e progressão
+<h2 id="2-criacao-e-progressao">2. Criação e progressão</h2>
 
 ### Seu personagem começa como Aprendiz
 
@@ -85,7 +85,7 @@ Uma Perícia de combinação pertinente custa **2 XP** e permite acrescentar uma
 
 O [catálogo navegável de Perícias e Maestrias](../maestrias/) traz custos, requisitos, texto integral e limites das capacidades já descritas. Maestrias ainda não aprovadas não aparecem como compras disponíveis.
 
-## 3. Os dados e seus símbolos
+<h2 id="3-os-dados-e-seus-simbolos">3. Os dados e seus símbolos</h2>
 
 Os dados têm **faces simbólicas**. O número da face identifica um resultado, mas não se soma diretamente à dificuldade.
 
@@ -113,7 +113,7 @@ Os dados têm **faces simbólicas**. O número da face identifica um resultado, 
 
 O **d20 é extraordinário**. Os Atributos comuns dos jogadores chegam a 3d10 no grau 6; acesso ao d20 depende de capacidades específicas.
 
-## 4. Como fazer um teste
+<h2 id="4-como-fazer-um-teste">4. Como fazer um teste</h2>
 
 1. **Declare o objetivo e a abordagem.** Determine as fontes pertinentes e a **Dificuldade de Êxito (DE)**.
 2. **Monte a pilha.** Normalmente duas fontes; uma terceira pode ser habilitada por Perícia. Role **até nove dados**.
@@ -153,7 +153,7 @@ Enquanto não houver Pavor não anulado que permita intervenção, os jogadores 
 
 O Narrador possui uma **reserva pública de Pavor**, distinta das reservas locais das ameaças. O teto histórico é 2 + número de jogadores, começando a campanha em 2P e conservando saldo entre sessões. **O Narrador gasta no máximo 1P público por oportunidade**, respeitando os gatilhos de intervenção; Pavor não transforma automaticamente uma oportunidade em várias ações seguidas.
 
-## 6. Ações conjuntas
+<h2 id="6-acoes-conjuntas">6. Ações conjuntas</h2>
 
 Até **três participantes** podem realizar uma ação conjunta, seja do lado dos jogadores, seja do lado inimigo. **Os resultados e o dano se combinam num único impacto**, sujeito a uma só resolução coletiva apropriada. A soma pode falhar.
 
@@ -163,7 +163,7 @@ Até **três participantes** podem realizar uma ação conjunta, seja do lado do
 
 **Exemplo de dano colossal em equipe:** três chefes que consigam reunir 36 de dano após atravessar toda a armadura de um alvo com 12 de Vida máxima podem provocar dano colossal. Isso **não** equivale a três golpes separados de 12; a cooperação precisa existir, ser paga e acertar.
 
-## 7. Corpo, dano e Saúde
+<h2 id="7-corpo-dano-e-saude">7. Corpo, dano e Saúde</h2>
 
 ### Vida e defesa
 
@@ -214,7 +214,7 @@ Armadura não aumenta a Vida máxima; oferece **integridade própria**, resistê
 
 **Animais e montarias com ficha própria [DEFINIDO]** podem usar armaduras sob essas mesmas regras. A proteção do animal não se transfere automaticamente ao cavaleiro.
 
-## 9. Animais e montarias
+<h2 id="9-animais-e-montarias">9. Animais e montarias</h2>
 
 Animais pequenos ajudam conforme Perícias, mas não têm ficha de combate ou ataque próprio. **Animais médios ou maiores** possuem Atributos, Vida, XP e ações próprias; podem se ferir ou morrer. O nível inicial de um animal domado **não supera o nível do dono**.
 
@@ -238,7 +238,7 @@ Esses são orçamentos de XP, não limites rígidos de quantidade de Atributos n
 
 Um animal grande domesticado pode ser uma montaria se o personagem cumprir os requisitos de montaria. Uma Perícia pertinente pode acrescentar **1A para passar a oportunidade ao animal**, sem conceder turno extra automático.
 
-## 10. Conjuração e fontes mágicas
+<h2 id="10-conjuracao-e-fontes-magicas">10. Conjuração e fontes mágicas</h2>
 
 O conjurador precisa da **presença do elemento ou foco mágico** que empregará. **O foco não acrescenta dados.** Pode ser água presente na cena, terreno apropriado, item sagrado, item amaldiçoado, sangue ou a própria mente, com os custos de Coragem ou outros requisitos que a magia exigir.
 
