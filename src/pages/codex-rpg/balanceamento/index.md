@@ -6,7 +6,7 @@ description: "Retenção por Coragem e curvas de DE 3 a DE 30: acertos limpos, P
 
 # Balanceamento v0.18 — Retenção, peso e Líder
 
-**ESTUDO EXPERIMENTAL.** Este capítulo apresenta hipóteses de simulação e **não cria regras novas**. Consulte o [Livro do Jogador v0.3](../livro-do-jogador/) e o [SRD v0.18](../srd/) para as regras definidas.
+**ESTUDO EXPERIMENTAL.** Este capítulo apresenta hipóteses de simulação e **não cria regras novas**. Consulte o [Livro do Jogador v0.4](../livro-do-jogador/) e o [SRD v0.19](../srd/) para as regras definidas.
 
 ## 1. Metodologia
 
@@ -53,7 +53,7 @@ Um monstro de grau 6 com um Atributo no grau 6 pode pagar **100 XP** uma única 
 | 9d12 | 4 | 47,55% | 4,43% |
 | **1d20 + 8d12** | 4 | **56,26%** | **17,15%** |
 
-O impacto em DE 12 é bem maior do que em DE 10. Pela tabela de custo de Atributos, **quatro Atributos grau 6 = 220 XP** e a compra do d20 exigiria **mais 100 XP**, totalizando pelo menos **320 XP** em capacidades, antes de outras compras. O orçamento por grau de monstro ainda é **PENDENTE**.
+O impacto em DE 12 é bem maior do que em DE 10. Pela tabela de custo de Atributos, **quatro Atributos monstruosos grau 6 = 408 XP** pela tabela de Conhecimentos e Práticas, e a compra do d20 exigiria **mais 100 XP**, totalizando pelo menos **508 XP** em capacidades, antes de outras compras. O orçamento por grau de monstro ainda é **PENDENTE**.
 
 ## 5. Ação conjunta de três chefes e dano colossal
 
@@ -158,7 +158,40 @@ A escolha de arredondar Pavor antes ou depois de reunir o dano da ação conjunt
 
 ---
 
-## 7. Parecer e próximos testes
+## 8. Playtest de nível 1 — monstro com d10 e 5 XP de Perícias
+
+**Retificação DEFINIDA:** Atributos de monstros compram **d10 diretamente**, seguindo os dados e custos de Conhecimentos/Práticas (grau 1: 1d10 por 2 XP; grau 2: 2d10 por 8 XP; grau 6: 3d12 por 102 XP). A reserva inicial de Perícias dos Aprendizes passa a **5 XP**. Não utilizar fichas de monstros que compram d6 na tabela de Atributos de jogadores.
+
+### Comparação das fichas de referência
+
+**Monstro [EXPERIMENTAL]:** Força 2 (8 XP), Agilidade 2 (8 XP), Vigor 1 (2 XP) = **18 XP** investidos em Atributos, Vida 5 e DE 2 antes de eventuais modificadores naturais. Com duas fontes pertinentes de Atributo, pode rolar **4d10**; mantendo dois dados, não gasta Pavor apenas para selecionar o terceiro, que não está habilitado.
+
+**Aprendiz [EXEMPLO DE BUILD]:** 7 XP de Base em Força 3 (3d6); duas fontes de Formação grau 1 (1d10 cada), habilitadas por Perícia de combinação pertinente. Essa pilha **3d6+2d10** exige fontes válidas e é **um personagem ofensivo**, não o esquivador de DE 4. Um personagem defensivo com Agilidade 2, Destreza 2 e armadura leve +1 DE [EXPERIMENTAL] pode chegar a **DE 4**, mas distribui os 7 XP de Base diferentemente.
+
+| Atacante | Mantidos | DE 2 total / limpo | DE 3 total / limpo | DE 4 total / limpo | DE 5 total / limpo |
+|---|---:|---:|---:|---:|---:|
+| Monstro 4d10 | 2 | **98,24% / 64,76%** | **83,11% / 36,68%** | **56,95% / 5,23%** | **24,84% / 0%** |
+| Monstro 4d10 | 3 *se puder pagar* | 98,24% / 64,76% | 92,56% / 41,48% | **77,99% / 19,90%** | 55,59% / 5,87% |
+| Aprendiz 3d6+2d10 | 2 | **97,30% / 39,92%** | **65,07% / 14,01%** | **25,46% / 0%** | 8,00% / 0% |
+| Aprendiz 3d6+2d10 | 3 *com Coragem* | 98,22% / 46,14% | 91,59% / 23,32% | **64,93% / 8,92%** | 33,56% / 2,60% |
+
+Os percentuais são **exatos**, por enumeração completa das faces, com crítico e conversão de 2A em 1E, exigindo pelo menos um dado de Atributo entre os mantidos. Cada par representa **acerto possível** (inclusive com Pavor) e **acerto limpo possível**; não mede o que uma criatura cautelosa escolherá fazer.
+
+**Interpretação:** o monstro com d10 consegue ameaçar DE 4, mas a maioria dos acertos conserva Pavor e gera Coragem ao grupo. O grau do monstro impõe teto local de Pavor, e um grau 1 só consegue guardar **1P**, o que limita aprimoramentos. Não assumir que uma ativação paga e o terceiro dado podem custar o mesmo 1P sem regra específica.
+
+### A armadura natural altera a durabilidade
+
+**DEFINIDO como característica:** monstros têm armadura natural. **PENDENTE:** fórmula e se integridade natural é reserva integrada ou separada. **Vida 5 não significa obrigatoriamente cinco acertos para matar**; golpes fracos podem retirar um ponto de Vida, mas golpes com dano corporal maior podem retirar mais, até o teto comum de três, e a armadura natural pode absorver dano antes. Precisamos medir **acertos efetivos e dano corporal**, não somente a quantidade de vezes em que a DE foi superada.
+
+### Consequência para a XP dos encontros
+
+**Hipótese:** se o Aprendiz começa com 14 XP de Base/Formação + 5 XP de Perícias, três, quatro e cinco personagens somam respectivamente **57, 76 e 95 XP**. Grupos do mesmo tamanho formados por monstros de 18 XP somam **54, 72 e 90 XP**, inferiores ao orçamento dos jogadores. Pela regra atual, esse enfrentamento não renderia XP — embora possa ser perigoso. Com este modelo de inimigo, quatro, cinco e seis monstros respectivamente superam a soma do grupo. **Não converter esse limiar em rank Perito** sem simular a economia de oportunidades, a armadura natural e o dano.
+
+**Próxima validação para 3/4/5 jogadores:** confrontos pareados de 3×3, 4×4 e 5×5 (sem concessão automática de XP) e, separadamente, desafios de 3×4, 4×5 e 5×6 para investigar a relação entre superioridade numérica, Coragem e Pavor. As faixas Aprendiz, Perito, Elite e Divino permanecem **EXPERIMENTAIS** para o nível 1.
+
+---
+
+## 9. Parecer e próximos testes
 
 **Retenção e Coragem:** mecânica coerente, com aumento grande de eficácia. Monitorar a frequência real do quarto dado e sua recuperação de Coragem.
 
