@@ -10,11 +10,11 @@ description: Livro de consulta do Codex RPG, com regras definidas, exemplos e po
 
 *8 de novembro de 2026 · atualização normativa v0.18; regras definidas, playtest e pendências identificados.*
 
-> **Como ler esta edição:** **DEFINIDO** significa decisão autoral confirmada. **EXPERIMENTAL** significa regra numérica em teste. **PROPOSTO** não é regra vigente. **PENDENTE** indica que ainda não há procedimento aprovado. Esta é a edição de leitura atual; o [Livro do Jogador v0.1](../arquivo/livro-do-jogador-v01/) permanece arquivado para comparação histórica. Em caso de divergência, a decisão mais recente prevalece.
+> **Como ler esta edição:** **DEFINIDO** significa decisão autoral confirmada. **EXPERIMENTAL** significa regra numérica em teste. **PROPOSTO** não é regra vigente. **PENDENTE** indica que ainda não há procedimento aprovado. Esta é a edição de leitura atual; o [Livro do Jogador v0.1](../livro-do-jogador-v01/) permanece arquivado para comparação histórica. Em caso de divergência, a decisão mais recente prevalece.
 
 Codex RPG é um sistema independente de fantasia, narrativa e combate tático. Todos começam como **Aprendizes**. Você não precisa escolher uma classe obrigatória: sua profissão surge de Atributos, Conhecimentos, Práticas, Perícias, equipamentos, técnicas e decisões de jogo. Uma construção híbrida precisa ser viável sem perder as vantagens e os custos de se especializar.
 
-**Acesso rápido:** [Criar personagem](#2-criacao-e-progressao) · [Dados e símbolos](#3-os-dados-e-seus-simbolos) · [Realizar testes](#4-como-fazer-um-teste) · [Combate e dano](#7-corpo-dano-e-saude) · [Conjuração](#10-conjuracao-e-fontes-magicas) · [Ações conjuntas](#6-acoes-conjuntas) · [Perícias e Maestrias](../maestrias/) · [Ameaças](../bestiario/).
+**Acesso rápido:** [Criar personagem](#2-criacao-e-progressao) · [Dados e símbolos](#3-os-dados-e-seus-simbolos) · [Realizar testes](#4-como-fazer-um-teste) · [Combate e dano](#7-corpo-dano-e-saude) · [Conjuração](#10-conjuracao-e-fontes-magicas) · [Ações conjuntas](#6-acoes-conjuntas) · [Perícias e Maestrias](../../maestrias/) · [Ameaças](../../bestiario/).
 
 ---
 
@@ -87,7 +87,7 @@ Os Marcos III e IV representam principalmente **crescimento em poder, repertóri
 
 Uma Perícia de combinação pertinente custa **2 XP** e permite acrescentar uma terceira fonte, sem conceder automaticamente mais um dado mantido. A **fonte principal** determina o que a ação pode fazer: usar Armas com apoio alquímico é diferente de preparar um veneno usando Alquimia como fonte principal.
 
-O [catálogo navegável de Perícias e Maestrias](../maestrias/) traz custos, requisitos, texto integral e limites das capacidades já descritas. Maestrias ainda não aprovadas não aparecem como compras disponíveis.
+O [catálogo navegável de Perícias e Maestrias](../../maestrias/) traz custos, requisitos, texto integral e limites das capacidades já descritas. Maestrias ainda não aprovadas não aparecem como compras disponíveis.
 
 <h2 id="3-os-dados-e-seus-simbolos">3. Os dados e seus símbolos</h2>
 
@@ -150,7 +150,7 @@ No Codex, **a DE pode chegar a 30**, mas isso não significa que toda rolagem in
 
 **Exemplo experimental:** uma criatura com 9d12 rolados e quatro mantidos pode atingir DE 10 em aproximadamente **48%** das rolagens que priorizam acerto, mas **nenhum desses acertos é limpo** sem bônus externos. O resultado não prevê quantas vezes o Narrador realmente escolherá conservar Pavor.
 
-O [estudo de balanceamento de DE 3 a DE 30](../balanceamento/) compara acerto limpo, acerto com Pavor, tipos de armas, Coragem, Saúde e ações conjuntas. **Os números do estudo não constituem novas regras nem faixas oficiais de DE.**
+O [estudo de balanceamento de DE 3 a DE 30](../../balanceamento/) compara acerto limpo, acerto com Pavor, tipos de armas, Coragem, Saúde e ações conjuntas. **Os números do estudo não constituem novas regras nem faixas oficiais de DE.**
 
 ## 5. Protagonismo, Pavor e Coragem
 
@@ -314,7 +314,7 @@ Os elementos de referência incluem **Fogo, Água, Raio, Vento, Terra, Sagrado, 
 
 **Mestre Elementalista — 5 XP:** pode compor conscientemente um segundo elemento e recebe **+1A** nos testes de conjuração pertinentes.
 
-**Perícia extraordinária de Conjurador — 5 XP:** requer **Inteligência 6, Conjuração 6** e especializações adicionais de dano/área ainda pendentes. Não concede um d20 sem os demais requisitos e custos. Consulte [fichas de consulta de Perícias](../maestrias/).
+**Perícia extraordinária de Conjurador — 5 XP:** requer **Inteligência 6, Conjuração 6** e especializações adicionais de dano/área ainda pendentes. Não concede um d20 sem os demais requisitos e custos. Consulte [fichas de consulta de Perícias](../../maestrias/).
 
 ### Limite da cura e ritual de ressurreição
 
@@ -371,7 +371,7 @@ Um monstro **de grau 6**, com **ao menos um Atributo já no grau 6**, pode pagar
 | 5 | 5P |
 | 6 | 6P |
 
-Custos de referência: **1P para ativação aprimorada**, **1P para manter cada dado além dos dois básicos**, **1P por elevação de passo de dado**; movimento, distância e área têm custos próprios ou capacidades naturais. Um inimigo não recebe mais ações simplesmente por conservar Pavor. Consulte o [guia de ameaças e criação de encontros](../bestiario/).
+Custos de referência: **1P para ativação aprimorada**, **1P para manter cada dado além dos dois básicos**, **1P por elevação de passo de dado**; movimento, distância e área têm custos próprios ou capacidades naturais. Um inimigo não recebe mais ações simplesmente por conservar Pavor. Consulte o [guia de ameaças e criação de encontros](../../bestiario/).
 
 ## 12. Experiência, missões e ranks
 
@@ -407,4 +407,4 @@ Não use uma proposta como se fosse uma opção já disponível para compra.
 
 ---
 
-**Edição atual:** Livro do Jogador v0.3 (SRD de Continuidade v0.18). As edições [v0.1](../arquivo/livro-do-jogador-v01/) e [v0.2](../arquivo/livro-do-jogador-v02/) permanecem arquivadas e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
+**Edição atual:** Livro do Jogador v0.3 (SRD de Continuidade v0.18). As edições [v0.1](../livro-do-jogador-v01/) e [v0.2](../livro-do-jogador-v02/) permanecem arquivadas e o [catálogo de Perícias e Maestrias do Codex](../../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
