@@ -35,4 +35,4 @@ O d20 não permite rolar mais de nove dados, manter mais de quatro nem ignorar a
 
 **Fonte e estado:** SRD de Continuidade v0.17; 5 XP, Inteligência 6, Conjuração 6 e origem do segundo d20 **DEFINIDOS**. Habilitação integral **PENDENTE**.
 
-[Voltar ao catálogo](./) · [Livro do Jogador](../../livro-do-jogador/)
+[Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/)
