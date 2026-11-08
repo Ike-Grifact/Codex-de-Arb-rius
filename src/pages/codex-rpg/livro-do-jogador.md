@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/CodexRpgLayout.astro
-title: Codex RPG — Livro do Jogador v0.2
+title: Codex RPG — Livro do Jogador v0.3
 description: Livro de consulta do Codex RPG, com regras definidas, exemplos e pontos de playtest identificados.
 ---
 
 # Codex RPG
 
-## Livro do Jogador — edição de continuidade v0.2
+## Livro do Jogador — edição de continuidade v0.3
 
-*8 de novembro de 2026 · regras definidas, playtest identificado e pendências visíveis.*
+*8 de novembro de 2026 · atualização normativa v0.18; regras definidas, playtest e pendências identificados.*
 
 > **Como ler esta edição:** **DEFINIDO** significa decisão autoral confirmada. **EXPERIMENTAL** significa regra numérica em teste. **PROPOSTO** não é regra vigente. **PENDENTE** indica que ainda não há procedimento aprovado. Esta é a edição de leitura atual; o [Livro do Jogador v0.1](../arquivo/livro-do-jogador-v01/) permanece arquivado para comparação histórica. Em caso de divergência, a decisão mais recente prevalece.
 
@@ -68,16 +68,20 @@ O histórico de criação humana usa **14 XP iniciais** (7 de Base e 7 de Forma�
 
 **Exemplo:** desenvolver Força até grau 6 custa 55 XP, não 55 XP por dado. A fonte passa a oferecer 3d10, mas o Marco ainda controla quantos dados você pode manter na ação.
 
-### Marcos e dados mantidos
+### Marcos, retenção e Coragem
 
-| Marco | Níveis | Retenção normal |
-|---|---|---|
-| I | 1–5 | 2 dados |
-| II | 6–10 | 3 dados |
-| III | 11–15 | 3 dados |
-| IV | 16–20 | 3 dados; o quarto exige capacidade e custo aplicáveis |
+| Marco | Níveis | Mantidos naturalmente | Mantidos gastando **1 Coragem** |
+|---|---:|---:|---:|
+| I | 1–5 | **2** | **3** |
+| II | 6–10 | **3** | **4** |
+| III | 11–15 | **3** | **4** |
+| IV | 16–20 | **3** | **4** |
 
-**DEFINIDO:** quatro dados mantidos é o teto absoluto. **PENDENTE:** catálogo exato de capacidades que liberam o quarto dado e todos os custos especiais por Marco.
+**DEFINIDO:** o quarto dado mantido está disponível desde o **nível 6** mediante **1 Coragem**, sem aguardar o Marco IV nem exigir uma Perícia exclusiva. O personagem de nível 1–5 pode gastar **1 Coragem para manter o terceiro dado**. A Coragem habilita **um dado adicional por rolagem**, não a manutenção permanente.
+
+Os Marcos III e IV representam principalmente **crescimento em poder, repertório e habilidades acumuladas**, não aumentos automáticos posteriores de retenção. O teto absoluto continua em **quatro mantidos e nove rolados por ação**.
+
+**Exemplo:** um personagem nível 5 rola seis dados, mantém dois naturalmente ou três pagando 1 Coragem. Ao chegar ao nível 6, mantém três normalmente e pode selecionar quatro pagando 1 Coragem.
 
 ### Perícias fazem a profissão emergir
 
@@ -149,17 +153,21 @@ Enquanto não houver Pavor não anulado que permita intervenção, os jogadores 
 | Acerto com Pavor | O Narrador normalmente recebe uma oportunidade de intervenção; 1A pode passá-la antes a um aliado |
 | Falha com Pavor | O Narrador normalmente intervém, e o jogador perde **1 Coragem**; 1A pode adiar a intervenção |
 
-**Pavor não anulado do jogador** pode ajudar a atingir a DE e ainda é enviado à reserva adversária; aproveitar o símbolo não o consome. O inimigo que mantém Pavor não anulado gera **1 Coragem para os jogadores por P**, tenha acertado ou falhado. A distribuição da Coragem entre participantes permanece **PENDENTE**.
+**Pavor não anulado do jogador** pode ajudar a atingir a DE e ainda é enviado à reserva adversária; aproveitar o símbolo não o consome. O inimigo que mantém Pavor não anulado gera **1 Coragem para os jogadores por P**, tenha acertado ou falhado. **DEFINIDO:** a Coragem vai para o **personagem atacado** ou para os **aliados mais próximos do inimigo** que a gerou, seguindo quem assumiu o risco da ação. **PENDENTE:** prioridade nos empates, divisão de vários pontos e demais casos de proximidade.
 
-O Narrador possui uma **reserva pública de Pavor**, distinta das reservas locais das ameaças. O teto histórico é 2 + número de jogadores, começando a campanha em 2P e conservando saldo entre sessões. **O Narrador gasta no máximo 1P público por oportunidade**, respeitando os gatilhos de intervenção; Pavor não transforma automaticamente uma oportunidade em várias ações seguidas.
+O Narrador possui uma **reserva pública de Pavor**, distinta das reservas locais das ameaças, com teto de **2 + número de jogadores**. A campanha começa com 2P públicos, cujo saldo permanece entre sessões.
+
+**DEFINIDO:** o antigo limite de **1P público por oportunidade foi removido**. O Narrador pode pagar **integralmente e de uma só vez** o custo de uma capacidade válida. Os usos definidos da reserva pública são **iniciar conflitos após sucessivas falhas dos jogadores** e **habilitar ações conjuntas de inimigos quando houver um Líder**. O gasto não cria por si só oportunidades extras de atuação nem altera o teto da reserva. O preço exato de iniciar cada conflito permanece **PENDENTE**.
 
 <h2 id="6-acoes-conjuntas">6. Ações conjuntas</h2>
 
 Até **três participantes** podem realizar uma ação conjunta, seja do lado dos jogadores, seja do lado inimigo. **Os resultados e o dano se combinam num único impacto**, sujeito a uma só resolução coletiva apropriada. A soma pode falhar.
 
-**Jogadores não pagam Pavor para cooperar.** Uma montaria ou companheiro com ficha pode ocupar uma das três participações. **Monstros e chefes precisam de 3P da reserva pública do Narrador** para habilitar a cooperação, além de cumprir os demais custos e condições de suas ativações.
+**Jogadores não pagam Pavor para cooperar.** Uma montaria ou companheiro com ficha pode ocupar uma das três participações.
 
-**PENDENTE:** como financiar precisamente esse custo de 3P sem violar o limite geral de **1P público por oportunidade**. Não assumir pagamento instantâneo de 3P como regra automática.
+**DEFINIDO:** monstros e chefes podem executar uma ação conjunta **somente quando ao menos um dos participantes possui a característica Líder**. O Narrador gasta **3P de sua reserva pública imediatamente** para habilitar a coordenação, respeitando a oportunidade existente. Esse custo não substitui os custos particulares das ativações e não garante acerto.
+
+**PENDENTE:** a composição detalhada dos símbolos entre participantes, os custos individuais exatos quando compartilham uma ativação e o arredondamento de Pavor entre danos individuais antes de unificá-los. O limite antigo de gastar apenas 1P público por oportunidade está revogado.
 
 **Exemplo de dano colossal em equipe:** três chefes que consigam reunir 36 de dano após atravessar toda a armadura de um alvo com 12 de Vida máxima podem provocar dano colossal. Isso **não** equivale a três golpes separados de 12; a cooperação precisa existir, ser paga e acertar.
 
@@ -175,7 +183,7 @@ Uma pessoa com Força 6 e Vigor 6 possui **12 de Vida máxima**. Com Agilidade 6
 
 ### Dano depois do acerto
 
-**EXPERIMENTAL:** dano calculado = **Êxitos + arredondamento para baixo de Pavor ÷ 2**, após conversões e modificadores. O P não anulado continua alimentando a reserva adversária mesmo que tenha participado da DE ou do dano.
+**DEFINIDO:** dano calculado = **Êxitos + ⌊Pavor não anulado ÷ 2⌋**, com arredondamento para baixo, após conversões e modificadores. O P não anulado continua alimentando a reserva adversária mesmo que tenha participado da DE ou do dano.
 
 **DEFINIDO:** a integridade restante da armadura absorve o dano primeiro. **Apenas o excedente atinge o corpo.** Um golpe de 12 contra uma armadura com 7 de integridade restante destrói essa integridade e deixa **5 de dano corporal**.
 
@@ -196,7 +204,17 @@ O dano corporal de um **ataque não colossal** retira **no máximo 3 pontos de V
 | **Incapacitado** | −2E e gasto de Coragem para conseguir agir |
 | **Vida 0** | Morte |
 
-As três faixas ocupam aproximadamente terços da Vida máxima. Para Vida 12, um exemplo é **12–9 Saudável**, **8–5 Machucado** e **4–1 Incapacitado**. **PENDENTE:** arredondamento para valores não múltiplos de três e interação do efeito devastador com o teto de 3 Vida.
+**DEFINIDO:** a Vida máxima se distribui entre as três faixas inteiras de Saúde. Divida-a em três partes; as **sobras ficam primeiro nas faixas mais saudáveis**, sem arredondar para cima a faixa mais grave.
+
+| Vida máxima | Pontos Saudável / Machucado / Incapacitado |
+|---:|---|
+| 3 | **1 / 1 / 1** |
+| 4 | **2 / 1 / 1** |
+| 5 | **2 / 2 / 1** |
+| 7 | **3 / 2 / 2** |
+| 12 | **4 / 4 / 4** |
+
+Para Vida 12, os intervalos são **12–9 Saudável**, **8–5 Machucado** e **4–1 Incapacitado**. **PENDENTE:** detalhes dos efeitos devastadores e sua interação com o teto comum de 3 Vida por ataque.
 
 ## 8. Armaduras e resistências
 
@@ -214,6 +232,28 @@ Armadura não aumenta a Vida máxima; oferece **integridade própria**, resistê
 
 **Animais e montarias com ficha própria [DEFINIDO]** podem usar armaduras sob essas mesmas regras. A proteção do animal não se transfere automaticamente ao cavaleiro.
 
+### Armas, ferramentas e composição de dados
+
+**DEFINIDO:** o orçamento de **peso** determina quantos e quais dados uma arma, ferramenta especial ou conjuração pode oferecer à pilha. Armas podem ter **vários d4** ou **menos dados maiores**. Esses dados são **rolados**, não automaticamente mantidos, e a pilha completa da ação continua limitada a **nove dados**.
+
+| Dado | Peso |
+|---|---:|
+| d4 | **0,5** |
+| d6 | **1** |
+| d10 | **2** |
+| d12 | **3** |
+| d20 | **6** |
+
+| Arma pesada | Peso disponível | Exemplo de composição |
+|---|---:|---|
+| Grau 2 | **3** | **6d4** ou **1d12** |
+| Grau 3 | **5** | **2d10 + 1d6** |
+| Grau 4 | **7** | **2d12 + 1d6**, ou **1d20 + 1d6** quando habilitado |
+
+**Exemplo:** Força 6 fornece 3d10. Uma arma de grau 2 composta por 6d4 aumenta a pilha para **nove dados rolados**, mas o usuário mantém apenas os dois, três ou quatro dados permitidos pelo Marco e pela Coragem.
+
+**PENDENTE:** pesos de outros tipos de armas, ferramentas específicas e requisitos especiais de acesso a d20. Ter orçamento para um d20 **não** cria uma habilitação extraordinária automaticamente.
+
 <h2 id="9-animais-e-montarias">9. Animais e montarias</h2>
 
 Animais pequenos ajudam conforme Perícias, mas não têm ficha de combate ou ataque próprio. **Animais médios ou maiores** possuem Atributos, Vida, XP e ações próprias; podem se ferir ou morrer. O nível inicial de um animal domado **não supera o nível do dono**.
@@ -228,10 +268,10 @@ Esses são orçamentos de XP, não limites rígidos de quantidade de Atributos n
 
 | Perícia | Custo | Requisito confirmado |
 |---|---:|---|
-| Domar Animal Pequeno | 2 XP | Específico **PENDENTE** |
+| Domar Animal Pequeno | 2 XP | **Influência 1** |
 | Domar Animal Médio | 3 XP | Influência 2 |
 | Domar Animal Grande | 4 XP | Influência 3 |
-| Domar Animal Exótico, Gigante ou Alado | 5 XP | Específico **PENDENTE** |
+| Domar Animal Exótico, Gigante ou Alado | 5 XP | **Influência 6 e Inteligência 3** |
 | Montar Animal | 2 XP | Influência 2 |
 | Montar Animal Exótico | 4 XP | Influência 4 |
 | Montar Animal Voador | 5 XP | Influência 4 e Destreza 4 |
@@ -240,7 +280,7 @@ Um animal grande domesticado pode ser uma montaria se o personagem cumprir os re
 
 <h2 id="10-conjuracao-e-fontes-magicas">10. Conjuração e fontes mágicas</h2>
 
-O conjurador precisa da **presença do elemento ou foco mágico** que empregará. **O foco não acrescenta dados.** Pode ser água presente na cena, terreno apropriado, item sagrado, item amaldiçoado, sangue ou a própria mente, com os custos de Coragem ou outros requisitos que a magia exigir.
+O conjurador precisa da **presença do elemento ou foco mágico** que empregará. **O foco não acrescenta dados.** A magia, entretanto, **pode acrescentar dados rolados por meio de sua composição comprada**, submetida ao orçamento de peso e ao teto global de nove dados. Pode ser água presente na cena, terreno apropriado, item sagrado, item amaldiçoado, sangue ou a própria mente, com os custos de Coragem ou outros requisitos que a magia exigir.
 
 **Exemplo:** se não houver água num vulcão, a magia de Água sofre **Desvantagem Absoluta** pela falta do componente necessário. Ter um cajado decorativo não cria uma fonte de Água nem fornece uma terceira fonte de dados.
 
@@ -254,9 +294,9 @@ Os elementos de referência incluem **Fogo, Água, Raio, Vento, Terra, Sagrado, 
 | d6 | 1 |
 | d10 | 2 |
 | d12 | 3 |
-| d20 | 5 |
+| d20 | **6** |
 
-**Pontos de composição não são XP.** Magias de graus 1 a 4 usam como referência **2, 4, 6 e 8 pontos**; requisitos completos ainda precisam de publicação definitiva.
+**Pontos de composição não são XP.** Magias de graus 1 a 4 usam como referência **2, 4, 6 e 8 pontos**; o dado d20 agora custa **6 pontos de composição**. Exemplo: uma magia com orçamento de 8 pontos pode reservar **6 para 1d20 e 2 para 1d10**, desde que a capacidade correspondente esteja habilitada. O **foco ambiental não fornece esses dados gratuitamente**. Requisitos completos permanecem pendentes.
 
 ### Perícias mágicas já descritas
 
@@ -348,13 +388,13 @@ A dificuldade **efetiva** considera precisão, dano que atravessa armadura, Vida
 
 ## 13. Consulta rápida e limites ainda em elaboração
 
-- **DEFINIDO:** Êxito, Antecipar, Pavor; até 9 dados rolados; até 4 mantidos; dados descartados sem efeitos; XP livre depois da criação; três participantes por ação conjunta; dano combinado; foco mágico sem dados; 100 XP para d20 permanente monstruoso; ranks Aprendiz/Perito/Elite/Divino.
+- **DEFINIDO:** Êxito, Antecipar, Pavor; até 9 dados rolados; até 4 mantidos; 1 Coragem para um dado mantido extra desde Marco I; Marco II mantém três naturalmente; dados descartados sem efeitos; três participantes por ação conjunta; **Líder + 3P públicos imediatos** para inimigos; foco mágico sem dados; dano = E + ⌊P/2⌋; d20 de peso 6; d20 monstruoso permanente por 100 XP; ranks Aprendiz/Perito/Elite/Divino.
 - **EXPERIMENTAL:** limiares intermediários de perda de Vida; proporção e bônus de armaduras; Resistência maior; custo do Atributo adicional de monstro; meta de precisão dos chefes.
 - **PROPOSTO:** aumentar bônus de esquiva da armadura leve; adicionar esquiva à média em graus superiores; remover uma resistência da média; finalizações com bônus fixos.
-- **PENDENTE:** XP e ouro por rank; requisitos completos de Maestrias; orçamento de XP por grau de monstro; preparo do custo público de 3P para ações conjuntas inimigas; acesso completo a 2d20 por conjurador no ritual; tabela de integridade e arredondamento de Saúde.
+- **PENDENTE:** XP e ouro por rank; requisitos completos de Maestrias; orçamento de XP por grau de monstro; distribuição de Coragem em empates; procedimentos individuais e símbolos da ação conjunta; acesso completo a 2d20 por conjurador no ritual; valores de integridade das armaduras.
 
 Não use uma proposta como se fosse uma opção já disponível para compra.
 
 ---
 
-**Edição atual:** Livro do Jogador v0.2. A [edição v0.1 está preservada](../arquivo/livro-do-jogador-v01/) e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
+**Edição atual:** Livro do Jogador v0.3 (SRD de Continuidade v0.18). As edições [v0.1](../arquivo/livro-do-jogador-v01/) e [v0.2](../arquivo/livro-do-jogador-v02/) permanecem arquivadas e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.

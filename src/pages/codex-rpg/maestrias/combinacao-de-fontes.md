@@ -37,6 +37,6 @@ A Perícia não oferece um novo dado mantido automaticamente, não dispensa a re
 
 Uma espadachim usa seu Atributo, a Prática Armas e uma terceira fonte de Alquimia para uma técnica de combate habilitada. Pode rolar até nove dados e mantém somente os permitidos pelo Marco.
 
-**Fonte e estado:** SRD de Continuidade v0.17; habilitação e custo 2 XP **DEFINIDOS**. Custos de técnicas específicas dependem da respectiva ficha.
+**Fonte e estado:** SRD de Continuidade v0.18; habilitação e custo 2 XP **DEFINIDOS**. Custos de técnicas específicas dependem da respectiva ficha.
 
 [Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/)

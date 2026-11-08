@@ -31,8 +31,8 @@ Um d20 da magia pode provir da composição extraordinária. O **segundo d20**, 
 
 ### Limites
 
-O d20 não permite rolar mais de nove dados, manter mais de quatro nem ignorar a obrigação de manter ao menos um dado de Atributo. **Esta ficha ainda não é uma compra plenamente operacional**, porque faltam os pré-requisitos adicionais e a especificação de ativação por situação.
+O d20 possui **peso de composição 6** e exige habilitação extraordinária para integrar uma magia. O d20 não permite rolar mais de nove dados, manter mais de quatro nem ignorar a obrigação de manter ao menos um dado de Atributo. **Esta ficha ainda não é uma compra plenamente operacional**, porque faltam os pré-requisitos adicionais e a especificação de ativação por situação.
 
-**Fonte e estado:** SRD de Continuidade v0.17; 5 XP, Inteligência 6, Conjuração 6 e origem do segundo d20 **DEFINIDOS**. Habilitação integral **PENDENTE**.
+**Fonte e estado:** SRD de Continuidade v0.18; 5 XP, Inteligência 6, Conjuração 6 e origem do segundo d20 **DEFINIDOS**. Habilitação integral **PENDENTE**.
 
 [Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/)

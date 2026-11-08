@@ -14,10 +14,10 @@ Uma criatura domesticada com ficha não é um bônus gratuito: ela possui Atribu
 
 | Capacidade | Custo | Requisito |
 |---|---:|---|
-| Domar animal pequeno | **2 XP** | **PENDENTE** |
+| Domar animal pequeno | **2 XP** | **Influência 1** |
 | Domar animal médio | **3 XP** | **Influência 2** |
 | Domar animal grande | **4 XP** | **Influência 3** |
-| Domar exótico, gigante ou alado | **5 XP** | Requisito de domar **PENDENTE** |
+| Domar exótico, gigante ou alado | **5 XP** | **Influência 6 e Inteligência 3** |
 
 ### Animais pequenos
 
@@ -41,6 +41,6 @@ A criatura com ficha pode integrar uma ação conjunta, **ocupando uma das três
 
 A taxa de XP recebida por animais, quantidade simultânea de companheiros e detalhes de ordens estão **PENDENTES**.
 
-**Fonte e estado:** SRD v0.17; custos, tetos por porte, nível inicial e armadura animal **DEFINIDOS**.
+**Fonte e estado:** SRD v0.18; custos, tetos por porte, nível inicial e armadura animal **DEFINIDOS**.
 
 [Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/#9-animais-e-montarias)

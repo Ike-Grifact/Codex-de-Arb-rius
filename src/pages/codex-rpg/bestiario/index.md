@@ -6,7 +6,7 @@ description: Guia de consulta dos graus, Pavor, dados, XP e ranks de desafio.
 
 # Bestiário — construção de monstros e encontros
 
-**Guia do Narrador · continuidade v0.17.** As regras definidas são apresentadas separadamente dos custos de teste e dos orçamentos ainda pendentes.
+**Guia do Narrador · continuidade v0.18.** As regras definidas são apresentadas separadamente dos custos de teste e dos orçamentos ainda pendentes.
 
 ## Identidade das ameaças
 
@@ -54,13 +54,13 @@ Os outros dois d20 possíveis na ativação dependem de elevações pagas com Pa
 
 **Não cobrar duas vezes pela mesma finalidade:** custos de ataque à distância, movimento e área podem integrar o custo de ativação apropriado. Em caso de dúvida, as características da ameaça e as regras de cenário definidas pelo SRD prevalecem; tabelas completas de poderes ainda são **PENDENTES**.
 
-**A reserva do Narrador é pública.** O Narrador pode gastar **até 1P público por oportunidade**. Um monstro não recebe imediatamente o excedente de qualquer reserva local: a elegibilidade e o destino do Pavor são condicionados pelo fluxo e pela capacidade de intervir.
+**A reserva do Narrador é pública.** O limite anterior de gastar apenas 1P público por oportunidade foi **REVOGADO**. A reserva pública continua com teto de **2 + número de jogadores** e serve para iniciar conflitos após falhas sucessivas, além de custear ações conjuntas com um **Líder**. Pagar Pavor não concede oportunidades extras por si só.
 
 ## Ações conjuntas de monstros
 
-**DEFINIDO:** no máximo **três monstros ou chefes** podem participar. Somam seus resultados pertinentes **e o dano num único ataque**. A coordenação custa **3P da reserva do Narrador**, em vez de usar gratuitamente o Pavor dos chefes. O ataque ainda pode falhar.
+**DEFINIDO:** no máximo **três monstros ou chefes** podem participar, e pelo menos um deve possuir a característica **Líder**. Somam os resultados pertinentes **e o dano num único ataque**. O Narrador paga **3P de sua reserva pública instantaneamente**, sem substituir os custos individuais aplicáveis. O ataque ainda pode falhar.
 
-**PENDENTE:** o procedimento que prepara ou desembolsa esses 3P respeitando o limite geral de 1P da reserva pública por oportunidade. Não descrever ataques conjuntos como sempre disponíveis nem como morte garantida.
+**PENDENTE:** detalhamento de compartilhamento de símbolos e custos individuais quando a ativação é coordenada. O pagamento público de 3P agora pode acontecer numa oportunidade só; não descreva ações conjuntas como sempre disponíveis ou morte garantida.
 
 Dano colossal exige, num **único ataque que atravesse toda a armadura**, pelo menos **3 × a Vida máxima** do alvo, podendo provocar morte instantânea. Não é o mesmo que somar ataques separados ao longo de turnos.
 
@@ -87,4 +87,4 @@ Os ranks **não são calculados por XP isoladamente**. A classificação definit
 
 ---
 
-[Livro do Jogador](../livro-do-jogador/) · [SRD — revisão de continuidade](../srd/) · [Perícias e Maestrias](../maestrias/)
+[Livro do Jogador](../livro-do-jogador/) · [SRD v0.18](../srd/) · [Análise de balanceamento](../balanceamento/) · [Perícias e Maestrias](../maestrias/)

@@ -1,18 +1,18 @@
 ---
 layout: ../../../layouts/CodexRpgLayout.astro
-title: Codex RPG — SRD de Continuidade v0.17
+title: Codex RPG — SRD de Continuidade v0.18
 description: Resumo normativo das decisões atuais, divergências históricas e pontos pendentes.
 ---
 
-# SRD de Continuidade v0.17 — resumo normativo
+# SRD de Continuidade v0.18 — resumo normativo
 
-*8 de novembro de 2026 · referência para o Livro do Jogador v0.2.*
+*8 de novembro de 2026 · referência para o Livro do Jogador v0.3.*
 
-[**Baixar o SRD v0.17 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.17_2026-11-08.md) — inclui as decisões atuais e o histórico técnico preservado.
+[**Baixar o SRD v0.18 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.18_2026-11-08.md) — inclui as decisões atuais e o histórico técnico preservado.
 
-Este resumo serve para consultar **as mudanças aprovadas em relação às versões antigas**. A compilação técnica integral v0.17 também preserva o conteúdo da v0.16 como histórico, sem torná-lo novamente vigente.
+Este resumo serve para consultar **as mudanças aprovadas em relação às versões antigas**. A compilação técnica integral v0.18 preserva as versões v0.17 e v0.16 como histórico, sem torná-las novamente vigentes.
 
-**Precedência:** decisão autoral mais recente → atualização normativa v0.17 → seções herdadas do SRD anterior → Livro do Jogador v0.1.
+**Precedência:** decisão autoral mais recente → seção **0-B da v0.18** → atualização da v0.17 → histórico anterior.
 
 | Estado | Significado |
 |---|---|
@@ -25,15 +25,29 @@ Este resumo serve para consultar **as mudanças aprovadas em relação às vers�
 
 **DEFINIDO:** as runas representam **Êxito (E), Antecipar (A) e Pavor (P)**. Nenhum dado descartado gera símbolos ou consequências. Até nove dados podem ser rolados, e o limite absoluto de retenção é quatro. Antecipar: 1A anula 1P; 1A passa oportunidade ao aliado sem anular P; 2A viram 1E.
 
-Pavor mantido não anulado pode integrar DE e dano **e ainda alimentar a reserva adversária**. Inimigos que mantêm Pavor geram Coragem para jogadores, inclusive quando acertam. A reserva do Narrador é pública e gasta **no máximo 1P por oportunidade**.
+Pavor mantido não anulado pode integrar DE e dano **e ainda alimentar a reserva adversária**. Inimigos que mantêm Pavor geram Coragem **para o alvo atacado ou os aliados mais próximos**, inclusive quando acertam. A reserva do Narrador é pública e **não possui mais limite geral de 1P por oportunidade**.
+
+### Marcos, Coragem e retenção [DEFINIDO]
+
+Níveis 1–5 mantêm **2 dados naturalmente**, ou **3 pagando 1 Coragem**. A partir do nível 6, mantêm **3 naturalmente**, ou **4 pagando 1 Coragem**. Marcos III e IV representam avanço de poder e repertório, sem nova ampliação automática de retenção.
 
 ## 2. Equipes e combate
 
-**DEFINIDO:** até três participantes por ação conjunta **dos dois lados**; símbolos pertinentes e **dano** compõem um único ataque. Jogadores cooperam sem pagar Pavor. Monstros precisam de **3P públicos do Narrador** para habilitar a combinação. **PENDENTE:** a forma de pagar/preparar os 3P sem contrariar o limite de 1P por oportunidade.
+**DEFINIDO:** até três participantes por ação conjunta **dos dois lados**; símbolos pertinentes e **dano** compõem um único ataque. Jogadores cooperam sem pagar Pavor. A ação conjunta inimiga exige **ao menos um Líder participante** e o pagamento **instantâneo de 3P públicos do Narrador**. **PENDENTE:** detalhes de compartilhamento de símbolos e ativação.
 
 **DEFINIDO:** Vida máxima = 3 + Vigor + piso(Força ÷ 2). DE defensiva = Agilidade + piso(Destreza ÷ 2). Armadura absorve sua integridade antes de qualquer dano corporal. Ataque não colossal retira **até 3 Vida**; **9 de dano corporal retiram 3 Vida**. Um único ataque com dano corporal **≥ 3 × Vida máxima** provoca **morte colossal instantânea**, mesmo existindo teto geral de 3 Vida.
 
-**EXPERIMENTAL:** dano calculado = E + piso(P ÷ 2); escala intermediária de Vida; armaduras leve +1DE, média +0DE, pesada +0DE com Força+Vigor≥9 ou −2DE abaixo; proporção de integridade 1:2:4; Resistência maior. **PROPOSTO:** reforçar esquiva leve, adicionar esquiva a médias superiores e remover uma resistência média.
+**DEFINIDO:** dano calculado = **E + piso(P não anulado ÷ 2)**, e a distribuição das faixas de Saúde coloca sobras primeiro nas faixas mais saudáveis (**4 → 2/1/1**, **5 → 2/2/1**). **EXPERIMENTAL:** escala intermediária de perda de Vida; armaduras leve +1DE, média +0DE, pesada +0DE com Força+Vigor≥9 ou −2DE abaixo; proporção de integridade 1:2:4; Resistência maior. **PROPOSTO:** reforçar esquiva leve, adicionar esquiva a médias superiores e remover uma resistência média.
+
+### Composição de dados [DEFINIDO]
+
+Armas, ferramentas especiais e magias podem acrescentar dados rolados conforme seus tetos de **peso** (foco elemental não é dado). Toda a pilha continua limitada a **nove rolados**.
+
+| Dado | d4 | d6 | d10 | d12 | d20 |
+|---|---:|---:|---:|---:|---:|
+| Peso | 0,5 | 1 | 2 | 3 | **6** |
+
+**Armas pesadas:** grau 2 = **peso 3**, grau 3 = **5**, grau 4 = **7**. Para incluir d20 é necessário também estar habilitado a usá-lo.
 
 ## 3. Monstros, XP e equipamentos
 
@@ -55,4 +69,4 @@ Não há magia comum de cura de Vida. Ressurreição exige **até 7 dias**, corp
 
 ---
 
-Este resumo **não substitui o Livro do Jogador como guia didático**. Consulte [Livro do Jogador v0.2](../livro-do-jogador/), [fichas de Perícias e Maestrias](../maestrias/) e [guia de monstros](../bestiario/).
+Este resumo **não substitui o Livro do Jogador como guia didático**. Consulte também o [estudo experimental de balanceamento](../balanceamento/). Consulte [Livro do Jogador v0.3](../livro-do-jogador/), [fichas de Perícias e Maestrias](../maestrias/) e [guia de monstros](../bestiario/).
