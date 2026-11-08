@@ -19,14 +19,14 @@ const base = import.meta.env.BASE_URL;
       <span>Livro do Jogador</span>
     </nav>
     <div class="codex-rpg-notice">
-      <strong>PLAYTEST HUMANO · VERSÃO 0.1</strong>
+      <strong>PLAYTEST · CONFIRA A EDIÇÃO INDICADA NO LIVRO</strong>
       <span>Sistema próprio em desenvolvimento. Não confundir com Assimilação RPG ou o SRD privado de Árborius.</span>
     </div>
     <article class="codex-rpg-reader">
       <slot />
     </article>
     <div class="codex-rpg-reader-footer">
-      <p>Uma edição em desenvolvimento: custos e parâmetros marcados como experimentais podem mudar.</p>
+      <p>Livro em desenvolvimento: respeite os estados DEFINIDO, EXPERIMENTAL, PROPOSTO e PENDENTE indicados em cada regra.</p>
       <button type="button" onclick="window.print()">Imprimir / salvar em PDF</button>
       <a href={withBase("codex-rpg/", base)}>Voltar para Codex RPG</a>
     </div>
