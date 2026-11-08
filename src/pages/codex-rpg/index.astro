@@ -5,12 +5,12 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <PortalLayout
-  title="Codex RPG · Livro do Jogador v0.2"
+  title="Codex RPG · Livro do Jogador v0.3"
   description="Codex RPG: narrativa, combate tático, roll and keep e builds híbridas. Comece como Aprendiz e construa sua própria profissão."
 >
   <div class="page-container codex-rpg-home">
     <header class="codex-rpg-hero">
-      <p class="eyebrow">Sistema original · 08/11/2026 · continuidade v0.2</p>
+      <p class="eyebrow">Sistema original · 08/11/2026 · continuidade v0.3</p>
       <h1>Codex <em>RPG</em></h1>
       <p class="codex-rpg-intro">Um mundo desfeito por uma entidade cósmica. Espinhas do Mundo vermelhas suspensas, arcas humanas caídas, cidades de pedra e metal, povos sobreviventes e expedições cujo custo não se mede apenas em ferimentos.</p>
       <div class="codex-rpg-hero-actions">
@@ -24,13 +24,13 @@ const base = import.meta.env.BASE_URL;
       <div class="section-heading">
         <div>
           <p class="eyebrow">Edição de continuidade</p>
-          <h2 id="livro-titulo">Livro do Jogador · v0.2</h2>
+          <h2 id="livro-titulo">Livro do Jogador · v0.3</h2>
         </div>
       </div>
       <div class="codex-rpg-card">
         <div class="codex-rpg-card__label">PLAYTEST · HUMANOS</div>
         <h3>Comece como Aprendiz</h3>
-        <p>Codex RPG combina <strong>narrativa, combate tático e construção aberta</strong>. Comece como Aprendiz e desenvolva sua profissão com Atributos, Conhecimentos, Práticas e Perícias. O sistema usa <strong>roll and keep</strong>: até <strong>9 dados rolados</strong>, até <strong>4 mantidos</strong> quando habilitado. Êxito, Antecipar e Pavor resolvem ações, riscos e o protagonismo. O novo livro também documenta <strong>Vida, armaduras, ações conjuntas, magia, monstros e ranks de missão</strong>, distinguindo regras definidas de números em teste.</p>
+        <p>Codex RPG combina <strong>narrativa, combate tático e construção aberta</strong>. Comece como Aprendiz e desenvolva sua profissão com Atributos, Conhecimentos, Práticas e Perícias. O sistema usa <strong>roll and keep</strong>: até <strong>9 dados rolados</strong>, <strong>2 ou 3 mantidos naturalmente</strong> e até <strong>4 com Coragem</strong>. Armas e magias usam composição de dados por peso. Êxito, Antecipar e Pavor resolvem ações, riscos e o protagonismo. O novo livro também documenta <strong>Vida, armaduras, ações conjuntas, magia, monstros e ranks de missão</strong>, distinguindo regras definidas de números em teste.</p>
         <div class="codex-rpg-rune-legend" aria-label="Cores e símbolos do Codex RPG">
           <span class="codex-rpg-rune codex-rpg-rune--exito"><strong>ᛋ E</strong> Êxito</span>
           <span class="codex-rpg-rune codex-rpg-rune--antecipar"><strong>ᚨ A</strong> Antecipar</span>
@@ -38,7 +38,7 @@ const base = import.meta.env.BASE_URL;
         </div>
         <div class="codex-rpg-meta">
           <span>XP livre após criação · orçamento inicial em revisão</span>
-          <span>Até 9 dados rolados · até 4 mantidos</span>
+          <span>Nível 6: 3 dados naturais · 4 com 1 Coragem</span>
           <span>Três participantes por ação conjunta</span>
         </div>
         <a href={withBase("codex-rpg/livro-do-jogador/",base)} class="button button--primary">Abrir livro completo</a>
@@ -50,7 +50,7 @@ const base = import.meta.env.BASE_URL;
       <div class="codex-rpg-mini-grid codex-rpg-resource-grid">
         <article><h3>Perícias e Maestrias</h3><p>Fichas individuais com custo, requisitos, momento, efeito, exemplo e limites, no estilo de consulta das Maestrias do portal.</p><a href={withBase("codex-rpg/maestrias/",base)}>Abrir catálogo de habilidades</a></article>
         <article><h3>Bestiário e encontros</h3><p>Graus, Pavor, nove dados rolados e a conversão permanente de um d20 por 100 XP para monstros de grau 6.</p><a href={withBase("codex-rpg/bestiario/",base)}>Consultar monstros e conflitos</a></article>
-        <article><h3>SRD de Continuidade v0.17</h3><p>Resumo das decisões atuais, rastreabilidade e estados de definição — independente da edição antiga do Livro.</p><a href={withBase("codex-rpg/srd/",base)}>Ler o SRD atualizado</a></article>
+        <article><h3>SRD de Continuidade v0.18</h3><p>Resumo das decisões atuais, rastreabilidade e estados de definição — independente da edição antiga do Livro.</p><a href={withBase("codex-rpg/srd/",base)}>Ler o SRD atualizado</a></article>
       </div>
       <p class="codex-rpg-archive"><a href={withBase("codex-rpg/arquivo/livro-do-jogador-v01/",base)}>Arquivo histórico: Livro do Jogador v0.1</a></p>
     </section>
@@ -58,8 +58,8 @@ const base = import.meta.env.BASE_URL;
     <section class="codex-rpg-section" aria-labelledby="estado-titulo">
       <div class="section-heading"><div><p class="eyebrow">Transparência de regras</p><h2 id="estado-titulo">O que está em desenvolvimento</h2></div></div>
       <div class="codex-rpg-mini-grid">
-        <article><h3>Regras definidas</h3><p>Criação aberta, DE, símbolos E/A/P, fontes combinadas, protagonismo, dano conjunto, nove dados rolados e d20 monstruoso adquirido por 100 XP.</p></article>
-        <article><h3>Regras em teste</h3><p>Esquiva e integridade das armaduras, dano intermediário, orçamento de monstros, economia de Pavor e probabilidade de encontros continuam em balanceamento.</p></article>
+        <article><h3>Regras definidas</h3><p>Retenção por Coragem, dado d20 de peso 6, armas pesadas de pesos 3/5/7, dano por Pavor e ações conjuntas com Líder.</p></article>
+        <article><h3>Regras em teste</h3><p>Esquiva e integridade das armaduras, dano intermediário, orçamento de monstros e probabilidades das pilhas continuam em playtest.</p><a href={withBase("codex-rpg/balanceamento/",base)}>Ler estudo matemático</a></article>
         <article><h3>Pendências identificadas</h3><p>Valores de Origem, Maestrias avançadas, XP e ouro por rank, integridade por grau e condições finais dos rituais estão destacados, sem regras inventadas.</p></article>
       </div>
     </section>
