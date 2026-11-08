@@ -43,4 +43,4 @@ A taxa de XP recebida por animais, quantidade simultânea de companheiros e deta
 
 **Fonte e estado:** SRD v0.17; custos, tetos por porte, nível inicial e armadura animal **DEFINIDOS**.
 
-[Voltar ao catálogo](./) · [Livro do Jogador](../../livro-do-jogador/#9-animais-e-montarias)
+[Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/#9-animais-e-montarias)
