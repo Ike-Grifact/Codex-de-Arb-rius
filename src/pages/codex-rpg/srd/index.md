@@ -8,6 +8,8 @@ description: Resumo normativo das decisões atuais, divergências históricas e 
 
 *8 de novembro de 2026 · referência para o Livro do Jogador v0.2.*
 
+[**Baixar o SRD v0.17 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.17_2026-11-08.md) — inclui as decisões atuais e o histórico técnico preservado.
+
 Este resumo serve para consultar **as mudanças aprovadas em relação às versões antigas**. A compilação técnica integral v0.17 também preserva o conteúdo da v0.16 como histórico, sem torná-lo novamente vigente.
 
 **Precedência:** decisão autoral mais recente → atualização normativa v0.17 → seções herdadas do SRD anterior → Livro do Jogador v0.1.
