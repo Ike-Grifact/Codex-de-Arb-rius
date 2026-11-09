@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/CodexRpgLayout.astro
-title: Codex RPG — Livro do Jogador v0.4
+title: Codex RPG — Livro do Jogador v0.5
 description: Livro de consulta do Codex RPG, com regras definidas, exemplos e pontos de playtest identificados.
 ---
 
 # Codex RPG
 
-## Livro do Jogador — edição de continuidade v0.4
+## Livro do Jogador — edição de continuidade v0.5
 
-*8 de novembro de 2026 · atualização normativa v0.19; regras definidas, playtest e pendências identificados.*
+*8 de novembro de 2026 · atualização normativa v0.20; regras definidas, playtest e pendências identificados.*
 
 > **Como ler esta edição:** **DEFINIDO** significa decisão autoral confirmada. **EXPERIMENTAL** significa regra numérica em teste. **PROPOSTO** não é regra vigente. **PENDENTE** indica que ainda não há procedimento aprovado. Esta é a edição de leitura atual; o [Livro do Jogador v0.1](../arquivo/livro-do-jogador-v01/) permanece arquivado para comparação histórica. Em caso de divergência, a decisão mais recente prevalece.
 
@@ -89,6 +89,10 @@ Uma Perícia de combinação pertinente custa **2 XP** e permite acrescentar uma
 
 O [catálogo navegável de Perícias e Maestrias](../maestrias/) traz custos, requisitos, texto integral e limites das capacidades já descritas. Maestrias ainda não aprovadas não aparecem como compras disponíveis.
 
+### Pontos de Perícia (PP) — DEFINIDO
+
+**Uma reserva única** para todas as Perícias: **0 PP** nos níveis 1–4; **1 PP** no nível 5; **2 PP** no nível 10; **3 PP** no nível 20 (teto). Comprar mais Perícias amplia possibilidades, **não o teto**. PP só se recuperam **fora de combate, a cada troca de cena**. Ativações especiais custam **1 PP**, exceto a conversão extraordinária de dado de Inteligência em **d20 (2 PP)**. Coragem continua independente, permitindo seus aprimoramentos normais.
+
 <h2 id="3-os-dados-e-seus-simbolos">3. Os dados e seus símbolos</h2>
 
 Os dados têm **faces simbólicas**. O número da face identifica um resultado, mas não se soma diretamente à dificuldade.
@@ -138,9 +142,11 @@ O **d20 é extraordinário**. Os Atributos comuns dos jogadores chegam a 3d10 no
 
 **Exemplo:** uma ação mantém 2E + 1P + 2A. Se transformar 2A em 1E, o resultado alcança **DE 4** (3E + 1P), mas conserva o Pavor. Se gastar 1A para anular 1P, o outro A não pode ser convertido sozinho: permanece **2E**, mas o Pavor deixa de existir para a resolução.
 
+**DEFINIDO:** Antecipar permite reorganizar a ordem, mas **cada personagem pode ter seu turno antecipado no máximo uma vez por rodada**; não é um turno extra e não impede a intervenção inimiga gerada por Pavor.
+
 ### Crítico
 
-**DEFINIDO:** quando **ao menos dois dados mantidos mostram suas faces numéricas máximas**, a ação recebe **+1E e +1 Coragem**, respeitando o limite da reserva. O crítico pode ocorrer mesmo que a ação falhe. Efeitos específicos de crítico de armas ainda precisam de catálogo aprovado.
+**DEFINIDO — novo crítico:** todos os dados efetivamente mantidos (no mínimo dois, com ao menos um dado de Atributo) devem mostrar suas respectivas **faces numéricas máximas**. Pode-se manter menos dados do que o limite. **Todos os símbolos dessas faces viram Êxitos**, um por símbolo. Efeito de arma só ocorre **se o ataque acertar**. **PENDENTE:** se o antigo bônus de +1E e +1 Coragem ainda existirá na nova versão. **DEFINIDO:** Pavor gerado pelo gasto do Cavaleiro do Terror entra **após a rolagem e o crítico**, sem conversão.
 
 ### Dificuldades altas e o preço do Pavor
 
@@ -163,11 +169,19 @@ Enquanto não houver Pavor não anulado que permita intervenção, os jogadores 
 | Acerto com Pavor | O Narrador normalmente recebe uma oportunidade de intervenção; 1A pode passá-la antes a um aliado |
 | Falha com Pavor | O Narrador normalmente intervém, e o jogador perde **1 Coragem**; 1A pode adiar a intervenção |
 
-**Pavor não anulado do jogador** pode ajudar a atingir a DE e ainda é enviado à reserva adversária; aproveitar o símbolo não o consome. O inimigo que mantém Pavor não anulado gera **1 Coragem para os jogadores por P**, tenha acertado ou falhado. **DEFINIDO:** a Coragem vai para o **personagem atacado** ou para os **aliados mais próximos do inimigo** que a gerou, seguindo quem assumiu o risco da ação. **PENDENTE:** prioridade nos empates, divisão de vários pontos e demais casos de proximidade.
+**Pavor não anulado do jogador** pode ajudar a atingir a DE e ainda é enviado à reserva adversária; aproveitar o símbolo não o consome. O inimigo que mantém Pavor não anulado gera **1 Coragem para os jogadores por P**, tenha acertado ou falhado. **DEFINIDO:** na neutralização proporcional de Hemomancia, **todo Pavor mantido, inclusive aquele usado para anular símbolos de Pavor do ataque, continua sendo transferido ao lado inimigo**. Isso é diferente de anular o próprio Pavor com Antecipar. **DEFINIDO:** a Coragem vai para o **personagem atacado** ou para os **aliados mais próximos do inimigo** que a gerou, seguindo quem assumiu o risco da ação. **PENDENTE:** prioridade nos empates, divisão de vários pontos e demais casos de proximidade.
 
 O Narrador possui uma **reserva pública de Pavor**, distinta das reservas locais das ameaças, com teto de **2 + número de jogadores**. A campanha começa com 2P públicos, cujo saldo permanece entre sessões.
 
 **DEFINIDO:** o antigo limite de **1P público por oportunidade foi removido**. O Narrador pode pagar **integralmente e de uma só vez** o custo de uma capacidade válida. Os usos definidos da reserva pública são **iniciar conflitos após sucessivas falhas dos jogadores** e **habilitar ações conjuntas de inimigos quando houver um Líder**. O gasto não cria por si só oportunidades extras de atuação nem altera o teto da reserva. O preço exato de iniciar cada conflito permanece **PENDENTE**.
+
+### Cavaleiro do Terror e Clérigo Acalmador
+
+**Cavaleiro do Terror [DEFINIDO]:** a profissão emergente vinculada a **Trevas** pode interceptar Pavor dos aliados. Sua reserva tem teto de **10P**; a Coragem própria é limitada a **1**. Usa Pavor pelos **mesmos custos e regras de Coragem** para manter dados, elevar passos e ativar capacidades. **Cada 1P gasto acrescenta +1P após sua rolagem e seu crítico**, podendo provocar reação inimiga. É imune a **Apavorado**. Não ganha turnos extras automáticos.
+
+**Clérigo Acalmador [DEFINIDO]:** vinculado a **Sagrado**, age antes dos aliados, usa Coragem para preparar uma rolagem de suporte, recebe **1A** para passar a oportunidade e não ataca. **Cada Êxito reservado neutraliza a consequência de 1P de um aliado próximo**, mantendo o Pavor como Pavor e sua **contribuição à DE**. Pode distribuir os Êxitos de proteção entre vários aliados **até o fim da rodada**, quando qualquer saldo expira. O Pavor protegido não chega aos inimigos nem ao Cavaleiro. Pode agir mesmo com medo e recuperar Coragem quando protege; **quantidade e custo exato em Coragem PENDENTES**.
+
+O Cavaleiro pode usar Pavor dos aliados que o Clérigo não protegeu e gerar **novo Pavor** com seus próprios gastos. O Clérigo só pode contê-lo se ainda possuir Êxitos reservados. As compras de elementos não concedem essas Perícias automaticamente.
 
 <h2 id="6-acoes-conjuntas">6. Ações conjuntas</h2>
 
@@ -264,6 +278,20 @@ Armadura não aumenta a Vida máxima; oferece **integridade própria**, resistê
 
 **PENDENTE:** pesos de outros tipos de armas, ferramentas específicas e requisitos especiais de acesso a d20. Ter orçamento para um d20 **não** cria uma habilitação extraordinária automaticamente.
 
+### Efeitos e combinações de propriedades das armas
+
+**DEFINIDO como princípio:** críticos com acerto e Perícias específicas podem aplicar efeitos adicionais. **Cortantes** provocam **Sangramento (estado, sem dano por tempo)**; **perfurantes** podem atingir **Vida diretamente sem gastar integridade da armadura equipada**, respeitando o limite de **3 Vida por ataque não colossal**; **pesadas** podem **derrubar**; **longas** podem gerar **Antecipar especial** no crítico para desengajar, empurrar ou intensificar dano (**valores específicos PENDENTES**). Manobras podem exigir teste contra a **DE do alvo** e respeitam imunidades.
+
+**PROPOSTO/EM CONCEPÇÃO:** armas podem mesclar propriedades: machado cortante-pesado, faca perfurante, e **lança pesada de duas mãos** que impede escudo e poderá escolher **empurrar ou perfurar** no crítico. Não são ainda fichas finais. Uma Perícia pode ativar efeito de arma sem crítico por **1 PP**, salvo alternativas com Coragem expressamente previstas. **Armas de fogo** seguem em desenvolvimento; neutralidade de afinidade, consumo de dados por tiro e recarga não são regras finais nesta edição.
+
+### Fuga e ocultação do Ladino
+
+**DEFINIDO:** com Perícia adequada, **1E de uma falha permite fugir**; cada E adicional favorece distância ou ocultação conforme dificuldade. **1A** permite desvencilhar-se e **1E** correr. Fazer uma nova ocultação na sequência mediante **1 PP** continua **PROPOSTO**.
+
+O resultado de **Furtividade** é comparado à **DE defensiva** de cada inimigo (Agilidade e Destreza): DE superior conhece a localização; inferior não; igual pode buscar ativamente. Na busca ativa, é obrigatório **reproduzir todas as faces numéricas mantidas pelo Ladino, incluindo repetições**; ambos os lados podem conferir. Para atacar um alvo efetivamente oculto, usa-se sua **Furtividade** como referência, não a DE defensiva comum. Busca e ataque à distância sofrem desvantagens, até **Desvantagem Absoluta**. Conhecer posição não obriga a perseguir.
+
+Fuga física não garante ocultação mágica. Técnicas de ocultação com elementos exigem **Inteligência, Conjuração e presença elemental pertinente**, com detalhes de cenário e aquisição ainda PENDENTES.
+
 <h2 id="9-animais-e-montarias">9. Animais e montarias</h2>
 
 Animais pequenos ajudam conforme Perícias, mas não têm ficha de combate ou ataque próprio. **Animais médios ou maiores** possuem Atributos, Vida, XP e ações próprias; podem se ferir ou morrer. O nível inicial de um animal domado **não supera o nível do dono**.
@@ -294,9 +322,20 @@ O conjurador precisa da **presença do elemento ou foco mágico** que empregará
 
 **Exemplo:** se não houver água num vulcão, a magia de Água sofre **Desvantagem Absoluta** pela falta do componente necessário. Ter um cajado decorativo não cria uma fonte de Água nem fornece uma terceira fonte de dados.
 
-**Sangue de inimigo:** só está disponível como componente depois que esse inimigo tiver sofrido **dano diretamente na Vida**. Danificar a integridade da armadura não é suficiente.
+**DEFINIDO — Sangramento:** é uma **abertura por onde o sangue pode fluir**, e não hemorragia ou dano contínuo. Pode disponibilizar o elemento Sangue **sem perda prévia de Vida**. Hemomante pode autoaplicar esse estado sem lesar a própria Vida. Assim, atingir Vida não é mais a única forma de disponibilizar sangue.
 
-Os elementos de referência incluem **Fogo, Água, Raio, Vento, Terra, Sagrado, Sangue, Trevas, Psíquico e Veneno**; o Conjurador Aprendiz inicia pelo Psíquico. Requisitos de graus, peso mágico, slots e composições extraordinárias mantêm itens **PENDENTES** indicados no SRD.
+Os elementos de referência incluem Fogo, Água, Raio, Vento, Terra, Sagrado, Sangue, Trevas, **Psique (Psíquico)** e Veneno. **Comprar um elemento não compra sua técnica, Perícia ou acesso a graus proibidos.**
+
+| Habilitação elemental | Custo em XP [DEFINIDO] |
+|---|---:|
+| **Sagrado** | **6** |
+| **Trevas** | **5** |
+| **Sangue** | **4** |
+| **Psique** | **3** |
+
+Trevas e Sangue mantêm seus **graus mínimos** de acesso. As técnicas avançadas visam personagens próximos ao nível 10, sem criar aqui nível mínimo universal. **PENDENTE:** compatibilizar a antiga disponibilidade inicial de Psíquico para o Aprendiz com o novo preço de habilitação especializada de Psique.
+
+**DEFINIDO como princípio:** magias mais graduadas ocupam mais espaço mágico **proporcional ao grau**, sem confundir slots com pontos de composição. **PROPOSTO para playtest:** graus 1, 2, 3 e 4 ocuparem respectivamente 1, 2, 3 e 4 slots; essa tabela ainda não foi aprovada.
 
 | Dado na composição mágica | Pontos de composição |
 |---|---:|
@@ -314,11 +353,19 @@ Os elementos de referência incluem **Fogo, Água, Raio, Vento, Terra, Sagrado, 
 
 **Mestre Elementalista — 5 XP:** pode compor conscientemente um segundo elemento e recebe **+1A** nos testes de conjuração pertinentes.
 
-**Perícia extraordinária de Conjurador — 5 XP:** requer **Inteligência 6, Conjuração 6** e especializações adicionais de dano/área ainda pendentes. Não concede um d20 sem os demais requisitos e custos. Consulte [fichas de consulta de Perícias](../maestrias/).
+**Perícia extraordinária de Conjurador — 5 XP:** requer **Inteligência 6, Conjuração 6** e especializações adicionais de dano/área ainda pendentes. Converter um dado de Inteligência em **d20 exige 2 PP**; Coragem continua disponível separadamente para aprimoramentos normais. A Perícia não dispensa os outros requisitos. Consulte [fichas de consulta de Perícias](../maestrias/).
+
+### Hemomancia — duas técnicas diferentes
+
+**DEFINIDO:** apenas técnicas de Hemomante podem aqui **conter perda de Vida** ou **curar Vida**. Cada técnica consome **1 PP**, e a especialização depende de **Inteligência, Destreza e Agilidade**. O Hemomante pode receber ajuda por **ação conjunta**, com os riscos normais de Pavor.
+
+**Contenção reativa:** depois de conhecido o dano inimigo, mas antes de consolidar a perda de Vida, utiliza **sangue do próprio aliado sem gastar Vida do Hemomante**. Na rolagem, **1E neutraliza 1E** ofensivo, **1P neutraliza 1P** e **1E convertido de 2A neutraliza 1E**. Recalcule o dano pelos símbolos restantes e só então a perda de Vida. Exemplo: aliado com **2 Vida** sofreria **9 de dano**, perdendo **3 Vida**; se a contenção reduzir o dano para **5**, perde só **1 Vida** e pode sobreviver. **Todo Pavor mantido na contenção é transferido aos inimigos, inclusive o P usado para neutralizar P ofensivo**, respeitando tetos locais por grau e o teto público de **2 + jogadores**.
+
+**Cura especial:** outra magia de **1 PP** testa a **DE normal equivalente ao dano inimigo** (exemplo, DE 9 diante de dano 9), em vez da neutralização parcial de símbolos. **PENDENTE:** quantidade de Vida recuperada e limites extremos. A contenção não garante salvar alguém de golpes letais ou colossais. Aliados podem carregar o ferido, proteger seu corpo ou cooperar, mas Pavor da ação conjunta ainda pode permitir reação inimiga.
 
 ### Limite da cura e ritual de ressurreição
 
-**DEFINIDO:** não existe magia comum para restaurar pontos de Vida. Uma **Ressurreição** é possível apenas por ritual excepcional.
+**DEFINIDO:** não existe magia **comum** para restaurar pontos de Vida; as técnicas **específicas do Hemomante** constituem a exceção descrita acima. Uma **Ressurreição** é possível apenas por ritual excepcional.
 
 | Condição | Exigência |
 |---|---|
@@ -423,10 +470,10 @@ A dificuldade **efetiva** considera precisão, dano que atravessa armadura, Vida
 - **DEFINIDO:** 5 XP iniciais de Perícias; monstros compram d10/d12 pela tabela de Conhecimentos e Práticas; Vida-base 3 (exceto pequenos), sem barra de armadura natural adicional; d20 permanente em Vigor concede +1 Vida; Agilidade e Destreza aumentam a DE natural; Êxito, Antecipar, Pavor; até 9 dados rolados; até 4 mantidos; 1 Coragem para um dado mantido extra desde Marco I; Marco II mantém três naturalmente; dados descartados sem efeitos; três participantes por ação conjunta; **Líder + 3P públicos imediatos** para inimigos; foco mágico sem dados; dano = E + ⌊P/2⌋; d20 de peso 6; d20 monstruoso permanente por 100 XP; ranks Aprendiz/Perito/Elite/Divino.
 - **EXPERIMENTAL:** limiares intermediários de perda de Vida; proporção e bônus de armaduras; Resistência maior; custo do Atributo adicional de monstro; meta de precisão dos chefes.
 - **PROPOSTO:** aumentar bônus de esquiva da armadura leve; adicionar esquiva à média em graus superiores; remover uma resistência da média; finalizações com bônus fixos.
-- **PENDENTE:** XP e ouro por rank; requisitos completos de Maestrias; orçamento de XP por grau de monstro; distribuição de Coragem em empates; procedimentos individuais e símbolos da ação conjunta; acesso completo a 2d20 por conjurador no ritual; valores de integridade das armaduras.
+- **PENDENTE:** XP e ouro por rank; requisitos completos de Maestrias; orçamento de XP por grau de monstro; distribuição de Coragem em empates; procedimentos individuais e símbolos da ação conjunta; acesso a 2d20 por conjurador no ritual; valores de integridade das armaduras; XP acumulado por Marco; bônus herdado do crítico; custo e catálogo final de armas mistas e de fogo; detalhes da cura hemomântica, da ocultação e dos slots.
 
 Não use uma proposta como se fosse uma opção já disponível para compra.
 
 ---
 
-**Edição atual:** Livro do Jogador v0.4 (SRD de Continuidade v0.19). As edições [v0.1](../arquivo/livro-do-jogador-v01/) [v0.2](../arquivo/livro-do-jogador-v02/) e [v0.3](../arquivo/livro-do-jogador-v03/) permanecem arquivadas e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
+**Edição atual:** Livro do Jogador v0.5 (SRD de Continuidade v0.20). As edições [v0.1](../arquivo/livro-do-jogador-v01/) [v0.2](../arquivo/livro-do-jogador-v02/) e [v0.3](../arquivo/livro-do-jogador-v03/) permanecem arquivadas e o [catálogo de Perícias e Maestrias do Codex](../maestrias/) segue o mesmo método editorial de fichas individuais, sem importar regras de Assimilação RPG.
