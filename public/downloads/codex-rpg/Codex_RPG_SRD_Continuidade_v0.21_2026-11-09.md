@@ -145,6 +145,43 @@ Com o protótipo, três participantes **mantendo quatro d20 cada** alcançam **D
 
 **PENDENTE:** decisão autoral sobre a nova face 20, a distribuição das demais faces, a eventual redução da DE máxima, DE 30 histórica de Ressurreição e integração com a curva de XP por nível. Enquanto isso, a **tabela d20 publicada v0.20 e DE máxima 30 permanecem vigentes**.
 
+
+**Alternativa G — manter a DE máxima 30 e reforçar mais o d20 [PROPOSTO, não aprovado].** Em vez de reduzir imediatamente o teto para 24, outra hipótese é deslocar resultados úteis para faces mais baixas e aumentar o potencial do extraordinário. As **faces 1 e 2 continuam vazias** e a face **16 conserva 4P**; os demais dados não mudam.
+
+| Face | d20 atual | Candidato G — PROPOSTO |
+|---:|---|---|
+| 1–2 | vazio | vazio |
+| 3–4 | P | P |
+| 5 | A+P | A+P |
+| 6 | E | E |
+| 7 | 2E | 2E+A |
+| 8 | E+A | 2E+A |
+| 9 | E+A+P | 2E+A+P |
+| 10 | 2E+P | 2E+2A+P |
+| 11 | E+2A+P | 2E+2A+P |
+| 12 | 2P | 2P |
+| 13 | vazio | 2E+2A |
+| 14 | vazio | 3E+2A |
+| 15 | 2A | 4E+2A |
+| **16** | **4P** | **4P** |
+| 17 | E+2A+P | 4E+2A |
+| 18 | 2E+2A+2P | 5E+2A+P |
+| 19 | 3E+2A+2P | 6E+2A+P |
+| 20 | 4E | 8E |
+
+**Comparação exata dos dois caminhos**, com três participantes, cada um mantendo exatamente três d20, convertendo 2A em 1E dentro de sua própria rolagem, sem escolher entre dados rolados adicionais:
+
+| Cenário [PROPOSTO] | DE de referência | Chance total de atingir | Acerto Puro após anular P com A | Trio mantendo 4d20 cada |
+|---|---:|---:|---:|---:|
+| Protótipo anterior + teto 24 | 24 | **49,15%** | **3,47%** | **89,61%** |
+| Candidato G + teto 30 | 30 | **49,07%** | **9,26%** | **89,34%** |
+
+A taxa **0,013%** citada acima para o protótipo anterior significa **não rolar Pavor algum em nenhum dado** no cenário de DE24, e não o verdadeiro **Acerto Puro após anulações por Antecipar**, que é aproximadamente **3,47%**. É essencial separar ausência bruta de P da ausência de P **residual**. Para a alternativa G, o resultado sem qualquer P nas faces é cerca de **0,073%**, mas o Acerto Puro após anulação é **9,26%**.
+
+Com o candidato G, um único participante mantendo 4d20 tem máximo teórico **DE32** pelos símbolos (face 19 ou 20, ambos 8 pontos), mas **apenas 0,045%** de chance de atingir DE30 sem outros recursos. A meta de 50% é, portanto, **uma referência coletiva de três participantes com três dados mantidos cada**, não a probabilidade de um único chefe ou personagem. Se os três mantêm quatro d20, ambas as propostas aproximam 90%, mostrando que custos de Coragem, Pavor, PP e acesso efetivo a d20 precisam ser incluídos na decisão final.
+
+**Recomendação de teste, não decisão autoral:** comparar o par **protótipo anterior + DE24** com o par **candidato G + DE30** em builds reais dos Marcos III e IV, observando também Pavor residual, acerto puro, dano e defesa. **Nenhuma das duas distribuições substitui o d20 oficial** e o teto **30 continua DEFINIDO** até aprovação expressa.
+
 ### 0-E.12. Prioridades de próximo balanceamento [PENDENTE]
 
 1. Curva de XP total por nível/Marco e correspondência entre Grau humanoide e acesso a PP.
