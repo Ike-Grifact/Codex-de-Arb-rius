@@ -1,18 +1,18 @@
 ---
 layout: ../../../layouts/CodexRpgLayout.astro
-title: Codex RPG — SRD de Continuidade v0.19
+title: Codex RPG — SRD de Continuidade v0.20
 description: Resumo normativo das decisões atuais, divergências históricas e pontos pendentes.
 ---
 
-# SRD de Continuidade v0.19 — resumo normativo
+# SRD de Continuidade v0.20 — resumo normativo
 
-*8 de novembro de 2026 · referência para o Livro do Jogador v0.4.*
+*8 de novembro de 2026 · referência para o Livro do Jogador v0.5.*
 
-[**Baixar o SRD v0.19 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.19_2026-11-08.md) — inclui as decisões atuais e o histórico técnico preservado.
+[**Baixar o SRD v0.20 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.20_2026-11-08.md) — inclui as decisões atuais e o histórico técnico preservado.
 
-Este resumo serve para consultar **as mudanças aprovadas em relação às versões antigas**. A compilação técnica integral v0.19 preserva a v0.18 e as versões anteriores como histórico, sem torná-las novamente vigentes.
+Este resumo serve para consultar **as mudanças aprovadas em relação às versões antigas**. A compilação técnica integral v0.20 preserva a v0.18 e as versões anteriores como histórico, sem torná-las novamente vigentes.
 
-**Precedência:** decisão autoral mais recente → seção **0-C da v0.19** → seção 0-B da v0.18 → atualização da v0.17 → histórico anterior.
+**Precedência:** decisão autoral mais recente → seção **0-D da v0.20** → seção **0-C da v0.19** → seção 0-B da v0.18 → atualização da v0.17 → histórico anterior.
 
 | Estado | Significado |
 |---|---|
@@ -20,6 +20,24 @@ Este resumo serve para consultar **as mudanças aprovadas em relação às vers�
 | **EXPERIMENTAL** | Valor ou procedimento adotado para playtest |
 | **PROPOSTO** | Hipótese sob discussão |
 | **PENDENTE** | Lacuna sem decisão autoral |
+
+## Atualização de profissões e equipamentos [v0.20]
+
+**DEFINIDO:** PP globais **0/1/2/3** nos níveis **1/5/10/20**; recuperam-se fora de combate na troca de cena. Ativações comuns **1 PP**, conversão extraordinária de Inteligência em d20 **2 PP**. Coragem não é substituída.
+
+**DEFINIDO:** crítico exige **todas as faces máximas dos dados efetivamente mantidos**, convertendo seus símbolos em E. Efeitos de arma exigem acerto. Bônus antigo +1E/+1Coragem **PENDENTE**. Antecipar não concede turnos repetidos por rodada.
+
+**DEFINIDO:** Cavaleiro do Terror absorve Pavor dos aliados (teto **10P**, Coragem própria **1**), gasta como Coragem e gera **+1P por ponto gasto após a rolagem**, sem conversão pelo crítico. Clérigo Acalmador reserva Êxitos para neutralizar consequências de Pavor de aliados próximos (**1E para 1P**, preservando P para DE); a proteção expira **ao fim da rodada**.
+
+**DEFINIDO:** Ladino pode usar **1E de falha para fugir**; mais E melhoram fuga/ocultação. Busca ativa de oculto exige **todas as faces numéricas mantidas, inclusive repetições**; distância impõe desvantagem até **Absoluta**. Ocultação mágica depende de Inteligência, Conjuração e elemento disponível; nova ocultação por 1 PP na sequência **PROPOSTA**.
+
+**DEFINIDO:** Sangramento é abertura para acesso ao sangue, **não dano por tempo**. Contenção Hemomântica **1 PP**, usa sangue do aliado e neutraliza **E/E, P/P, E convertido de 2A/E**, reduzindo o dano; cura especial **1 PP** testa DE correspondente ao dano. **Todo Pavor mantido em contenção, inclusive o gasto neutralizando, é transferido aos inimigos**, com tetos normais.
+
+**DEFINIDO:** habilitações elementais **Sagrado 6 XP, Trevas 5 XP, Sangue 4 XP, Psique 3 XP**, separadas das Perícias e dos requisitos de grau. Magias maiores ocupam espaço proporcional ao grau; escala exata de slots **PROPOSTA**.
+
+**DEFINIDO como direção:** cortantes causam Sangramento, perfurantes podem ignorar armadura atingindo até **3 Vida** em ataque não colossal, pesadas derrubam e longas oferecem Antecipar no crítico; dependem de acerto, Perícias e imunidades. **PROPOSTAS:** misturas de propriedades (machado, faca, lança pesada de duas mãos sem escudo com opção de empurrar/perfurar); armas de fogo ainda em concepção. Armaduras e XP por Marco **não foram recalculados**.
+
+Consulte a **seção 0-D do SRD integral** e o Livro do Jogador v0.5 para procedimentos, limites e pendências.
 
 ## Atualização de criação e monstros [DEFINIDO]
 
@@ -72,9 +90,9 @@ Armas, ferramentas especiais e magias podem acrescentar dados rolados conforme s
 
 ## 4. Magia e ritual
 
-**DEFINIDO:** focos fornecem **elementos disponíveis, não dados extras**. Água ausente num vulcão impõe **Desvantagem Absoluta** à magia de Água; sangue de inimigo só é elemento disponível após atingir a **Vida** do alvo.
+**DEFINIDO:** focos fornecem **elementos disponíveis, não dados extras**. Água ausente num vulcão impõe **Desvantagem Absoluta** à magia de Água; Sangramento disponibiliza sangue mesmo sem dano prévio à Vida.
 
-Não há magia comum de cura de Vida. Ressurreição exige **até 7 dias**, corpo vitalmente íntegro, **Trevas + Sagrado + Psíquico + Sangue**, três conjuradores, **2d20 por conjurador**, **4 dados mantidos por conjurador (12 no total)**, **DE 30** e **Êxitos maiores que Pavor**; Antecipar pode anular Pavor. **PENDENTE:** obtenção completa dos d20 e resolução de falhas repetidas.
+Não há magia comum de cura de Vida; Hemomante é exceção especializada. Ressurreição exige **até 7 dias**, corpo vitalmente íntegro, **Trevas + Sagrado + Psíquico + Sangue**, três conjuradores, **2d20 por conjurador**, **4 dados mantidos por conjurador (12 no total)**, **DE 30** e **Êxitos maiores que Pavor**; Antecipar pode anular Pavor. **PENDENTE:** obtenção completa dos d20 e resolução de falhas repetidas.
 
 ## 5. Missões e recompensa
 
