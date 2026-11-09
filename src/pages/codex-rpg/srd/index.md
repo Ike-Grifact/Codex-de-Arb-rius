@@ -1,105 +1,132 @@
 ---
 layout: ../../../layouts/CodexRpgLayout.astro
-title: Codex RPG — SRD de Continuidade v0.20
-description: Resumo normativo das decisões atuais, divergências históricas e pontos pendentes.
+title: Codex RPG — SRD de Continuidade v0.21
+description: Resumo normativo atualizado de combate, conjuração, equipamentos, chefes compostos e estudos de DE/d20.
 ---
 
-# SRD de Continuidade v0.20 — resumo normativo
+# SRD de Continuidade v0.21 — resumo normativo
 
-*8 de novembro de 2026 · referência para o Livro do Jogador v0.5.*
+*9 de novembro de 2026 · decisões do autor consolidadas, com propostas de balanceamento separadas.*
 
-[**Baixar o SRD v0.20 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.20_2026-11-08.md) — inclui as decisões atuais e o histórico técnico preservado.
+[**Baixar o SRD v0.21 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.21_2026-11-09.md) — inclui as novas decisões, cálculos de playtest e o histórico integral v0.20.
 
-Este resumo serve para consultar **as mudanças aprovadas em relação às versões antigas**. A compilação técnica integral v0.20 preserva a v0.18 e as versões anteriores como histórico, sem torná-las novamente vigentes.
+[Abrir a versão anterior v0.20](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.20_2026-11-08.md).
 
-**Precedência:** decisão autoral mais recente → seção **0-D da v0.20** → seção **0-C da v0.19** → seção 0-B da v0.18 → atualização da v0.17 → histórico anterior.
+**Precedência:** decisão mais recente do autor → **seção 0-E da v0.21** → seção 0-D da v0.20 → histórico anterior. O [Livro do Jogador v0.5](../livro-do-jogador/) ainda reflete regras antigas em vários pontos, **não foi reescrito nesta publicação do SRD**.
 
 | Estado | Significado |
 |---|---|
-| **DEFINIDO** | Regra explicitamente aprovada |
-| **EXPERIMENTAL** | Valor ou procedimento adotado para playtest |
-| **PROPOSTO** | Hipótese sob discussão |
-| **PENDENTE** | Lacuna sem decisão autoral |
+| **DEFINIDO** | Regra expressamente confirmada |
+| **EXPERIMENTAL** | Valor numérico usado em playtest |
+| **PROPOSTO** | Alternativa sob avaliação, **não oficial** |
+| **PENDENTE** | Decisão ou procedimento ainda aberto |
 
-## Atualização de profissões e equipamentos [v0.20]
+## 1. Resultados, Pavor e oportunidades [DEFINIDO]
 
-**DEFINIDO:** PP globais **0/1/2/3** nos níveis **1/5/10/20**; recuperam-se fora de combate na troca de cena. Ativações comuns **1 PP**, conversão extraordinária de Inteligência em d20 **2 PP**. Coragem não é substituída.
+**Apenas dados mantidos geram símbolos**, até quatro mantidos e nove rolados, observados os Marcos. A DE efetiva soma Êxitos, Pavor mantido não anulado e conversões pertinentes; dano básico é **E + piso(P/2)**, salvo efeito especial.
 
-**DEFINIDO:** crítico exige **todas as faces máximas dos dados efetivamente mantidos**, convertendo seus símbolos em E. Efeitos de arma exigem acerto. Bônus antigo +1E/+1Coragem **PENDENTE**. Antecipar não concede turnos repetidos por rodada.
+| Resultado | Procedimento |
+|---|---|
+| **Acerto Puro** | Atinge a DE **sem Pavor restante**; não transfere P nem provoca reação por essa ação |
+| **Acerto Normal** | Atinge a DE com algum P residual, mas **P ≤ E**; transfere P e pode permitir intervenção |
+| **Acerto com Pavor** | Atinge a DE com **P > E**; transfere P e sofre complicações proporcionais ao contexto |
+| **Falha sem Pavor** | Falha sem consequência negativa automática, passando oportunidade aos aliados |
+| **Falha com P residual** | Falha, transfere P e pode permitir reação mesmo sem predominância |
+| **Falha com Pavor predominante** | Falha com **P > E**, transferência e consequências adicionais |
 
-**DEFINIDO:** Cavaleiro do Terror absorve Pavor dos aliados (teto **10P**, Coragem própria **1**), gasta como Coragem e gera **+1P por ponto gasto após a rolagem**, sem conversão pelo crítico. Clérigo Acalmador reserva Êxitos para neutralizar consequências de Pavor de aliados próximos (**1E para 1P**, preservando P para DE); a proteção expira **ao fim da rodada**.
+Complicações possíveis incluem atingir aliados, danificar ou soltar equipamento, cair, travar arma e matar acidentalmente alvo que se pretendia poupar. **Inimigos sofrem o mesmo princípio**, gerando Coragem para jogadores por Pavor mantido. O Pavor vai ao **inimigo mais próximo**, empatando pelo **maior Grau**, depois **menor Vida/integridade**; sem destinatário, vai à reserva pública do Narrador (**teto 2 + jogadores**). **Não existe recurso separado chamado Pressão.**
 
-**DEFINIDO:** Ladino pode usar **1E de falha para fugir**; mais E melhoram fuga/ocultação. Busca ativa de oculto exige **todas as faces numéricas mantidas, inclusive repetições**; distância impõe desvantagem até **Absoluta**. Ocultação mágica depende de Inteligência, Conjuração e elemento disponível; nova ocultação por 1 PP na sequência **PROPOSTA**.
+Líder pode gastar **1P público** para comandar inimigo mais distante, distinguindo esse comando da ação conjunta inimiga historicamente habilitada por Líder + 3P públicos (interação de custos ainda PENDENTE).
 
-**DEFINIDO:** Sangramento é abertura para acesso ao sangue, **não dano por tempo**. Contenção Hemomântica **1 PP**, usa sangue do aliado e neutraliza **E/E, P/P, E convertido de 2A/E**, reduzindo o dano; cura especial **1 PP** testa DE correspondente ao dano. **Todo Pavor mantido em contenção, inclusive o gasto neutralizando, é transferido aos inimigos**, com tetos normais.
+## 2. Antecipar e movimentação [DEFINIDO]
 
-**DEFINIDO:** habilitações elementais **Sagrado 6 XP, Trevas 5 XP, Sangue 4 XP, Psique 3 XP**, separadas das Perícias e dos requisitos de grau. Magias maiores ocupam espaço proporcional ao grau; escala exata de slots **PROPOSTA**.
+**1A** anula 1P próprio, **1A** passa oportunidade ao aliado sem anular P e **2A** viram 1E. Perícia apropriada permite gastar **1A para adaptar uma ação que falhou**, reposicionando, fugindo ou ajudando aliado; com A restantes pode anular P e antecipar um aliado. P não anulado que não tenha sido antecipado pode dar oportunidade inimiga.
 
-**DEFINIDO como direção:** cortantes causam Sangramento, perfurantes podem ignorar armadura atingindo até **3 Vida** em ataque não colossal, pesadas derrubam e longas oferecem Antecipar no crítico; dependem de acerto, Perícias e imunidades. **PROPOSTAS:** misturas de propriedades (machado, faca, lança pesada de duas mãos sem escudo com opção de empurrar/perfurar); armas de fogo ainda em concepção. Armaduras e XP por Marco **não foram recalculados**.
+Um aliado que ainda não agiu pode ser chamado com **1A**; para chamar novamente alguém que **já atuou**, são **2A**, exceção à regra anterior. Cadeias sucessivas precisam de procedimento final.
 
-Consulte a **seção 0-D do SRD integral** e o Livro do Jogador v0.5 para procedimentos, limites e pendências.
+**Ataque de oportunidade:** ao passar a **até 1 metro** de inimigo **desocupado**, se a **DE do inimigo excede a do personagem em movimento**, o inimigo pode executar **um ataque simples** antes do deslocamento, **mantendo exatamente 2 dados sem modificações**. Não é acerto automático e Pavor inimigo pode gerar Coragem.
 
-## Atualização de criação e monstros [DEFINIDO]
+## 3. Chefes compostos, grupos e DE conjunta [DEFINIDO]
 
-**XP inicial de Perícias:** **5 XP**, substituindo a antiga referência de 3 XP. O exemplo de comparação com **14 XP de Base/Formação + 5 XP de Perícias = 19 XP por Aprendiz** é uma hipótese de orçamento para o playtest, ainda sujeita a validação quanto à adição ou redistribuição.
+- **DE defensiva conjunta:** somar **DE iniciais** de participantes próximos que cooperam; bônus defensivos entram depois. **Teto absoluto 30**, inclusive após bônus.
+- **Ataques conjuntos:** até **3 participantes por ataque**, dos dois lados. Os demais podem ajudar na defesa ou atuar por Antecipar; nova ação pode convocar participante já utilizado mediante 2A.
+- **Área contra criaturas separadas:** aplica dano a **cada ficha atingida** após acertar a DE conjunta, observadas suas proteções; eliminar um inimigo reduz a DE da formação. Ataque de alvo único escolhe um dos componentes.
+- **Área contra chefe de ficha única:** causa dano **uma vez**; não multiplica por cabeças ou partes. A criatura mantém sua estrutura defensiva até efeitos específicos ou derrota.
+- **Chefe composto:** ativa um turno por **3P** e pode somar teto local de Pavor e XP dos componentes. Excepcionalmente, pode chegar a **4d20 mantidos**, se habilitado; mantém teto de nove rolados/quatro mantidos.
+- **Vida de monstros** continua **3 + Vigor + piso(Força/2)**, sem multiplicador automático. **DE natural = Agilidade + piso(Destreza/2)**. Cada d20 monstruoso permanente custa **100 XP**, e agora admite **compras repetidas**; 3d20 em Vigor concedem +3 Vida, em Força +1 Vida, em Agilidade +3 DE, em Destreza +1 DE.
+- **Monstros puros:** não têm PP. **Humanoides monstruosos:** combinam XP humanoide e monstruoso e habilidades compradas. Uma criatura composta de **3 humanoides com 3 PP cada** pode ter **9 PP de reserva, com gasto máximo de 3 PP por turno**; três humanoides independentes gastam seus PP em ativações distintas. Correspondência Grau humanoide/XP/PP PENDENTE.
 
-**Monstros não humanoides compram d10 diretamente nos seus Atributos** e seguem a tabela de Conhecimentos e Práticas:
+A distinção entre criatura única e formação torna as magias de área e o foco de ataques relevantes sem bônus artificiais de Vida.
 
-| Grau | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
-|---|---|---|---|---|---|---|---|
-| Dados | 1d4 | 1d10 | 2d10 | 3d10 | 2d10+1d12 | 1d10+2d12 | 3d12 |
-| XP acumulado | 0 | 2 | 8 | 20 | 38 | 66 | **102** |
+## 4. PP, Perícias e Maestrias [DEFINIDO]
 
-Quatro Atributos monstruosos no grau 6 custam **408 XP**; com o d20 comprado por 100 XP, **508 XP**. **A resistência natural dos monstros já está na Vida máxima [DEFINIDO]**, sem segunda barra de armadura ou multiplicador por grau. Criaturas não pequenas têm Vida-base 3, com `Vida = 3 + Vigor + ⌊Força/2⌋`. Com Vigor 6 e Força 6, são **12 Vida**; com a compra única de d20 permanente em Vigor, **13 Vida**. Os limiares de colossal são respectivamente **36** e **39 de dano corporal**. A Vida-base das criaturas pequenas permanece **PENDENTE**. **A DE natural também cresce com Agilidade e Destreza**, pela fórmula `Agilidade + ⌊Destreza/2⌋`. A faixa de XP por grau de ameaça também está pendente.
+Teto global simultâneo de PP: **0** (níveis 1–4), **1** (5–9), **2** (10–19), **3** (20). Recuperação normal entre cenas; existem exceções compradas:
 
-**Playtest inicial [ANÁLISE]:** um monstro de 18 XP (Força 2, Agilidade 2, Vigor 1) oferece **4d10**, Vida 5, DE natural 2. Mantendo dois dados, tem **56,95%** de acerto possível contra DE 4, mas só **5,23%** de acerto limpo. Isso não contabiliza oportunidades de ativação, Pavor local nem eventual armadura equipada.
+- **Troca de armas de tipos diferentes**, inclusive armas de fogo: Perícia específica permite recuperar **1 PP por troca válida**, até **3 recuperações por combate**, respeitando o teto simultâneo. Alternância repetida entre dois tipos PENDENTE.
+- **Conjurador Versátil:** Maestria final de jogo; **três magias diferentes bem-sucedidas** recuperam **1 PP**.
+- **Sorte Mágica:** Maestria final de jogo; crítico de magia **que também alcance a DE** recupera **1 PP**.
 
-## 1. Resolução e protagonistas
+## 5. Peso, armaduras, escudos e armas [DEFINIDO / valores PENDENTES]
 
-**DEFINIDO:** as runas representam **Êxito (E), Antecipar (A) e Pavor (P)**. Nenhum dado descartado gera símbolos ou consequências. Até nove dados podem ser rolados, e o limite absoluto de retenção é quatro. Antecipar: 1A anula 1P; 1A passa oportunidade ao aliado sem anular P; 2A viram 1E.
+**Inventário:** 10 Muito Leves = 1 Leve; 4 Leves = 1 Médio; 2 Médios = 1 Alto; 2 Altos = 1 Extremo. Capacidade gratuita **1 Alto + piso(Força/3) + piso(Vigor/3)**. Focos mágicos e munições contam como peso real.
 
-Pavor mantido não anulado pode integrar DE e dano **e ainda alimentar a reserva adversária**. Inimigos que mantêm Pavor geram Coragem **para o alvo atacado ou os aliados mais próximos**, inclusive quando acertam. A reserva do Narrador é pública e **não possui mais limite geral de 1P por oportunidade**.
+**Dados:** d4 passa a ser Muito Leve; d20, Extremo; correspondências de d6/d10/d12 com Leve/Médio/Alto são **PROPOSTAS**. O peso real do inventário é distinto da escala antiga de composição dos dados.
 
-### Marcos, Coragem e retenção [DEFINIDO]
+| Armadura | Defesa especial |
+|---|---|
+| Muito Leve | **Sem integridade**, aumenta DE |
+| Leve | Proteção menor, bônus de DE em avaliação |
+| Média | **1 resistência** |
+| Pesada | **2 resistências** |
+| Extrema | Integridade máxima e **imunidade pertinente** |
 
-Níveis 1–5 mantêm **2 dados naturalmente**, ou **3 pagando 1 Coragem**. A partir do nível 6, mantêm **3 naturalmente**, ou **4 pagando 1 Coragem**. Marcos III e IV representam avanço de poder e repertório, sem nova ampliação automática de retenção.
+**Escudo Grau 4:** Extremo, **2d12**, não utiliza d20, exige **Força 6 e Vigor 6**. Escudo físico usado como arma causa **metade do dano por Êxitos**, Pavor não soma dano, mas pode ajudar na DE e ser transferido; também pode empurrar/derrubar.
 
-## 2. Equipes e combate
+**Perfuração habilitada:** ao acertar a DE, ignora **toda integridade de proteção, inclusive Escudo Mágico**, causando dano direto à Vida (máximo geral 3 Vida não colossal). **Ataques que erram não reduzem nenhuma integridade.**
 
-**DEFINIDO:** até três participantes por ação conjunta **dos dois lados**; símbolos pertinentes e **dano** compõem um único ataque. Jogadores cooperam sem pagar Pavor. A ação conjunta inimiga exige **ao menos um Líder participante** e o pagamento **instantâneo de 3P públicos do Narrador**. **PENDENTE:** detalhes de compartilhamento de símbolos e ativação.
+**Armas de fogo:** pistola G3, revólver G2 (sem travamento), metralhadora G3, Doze G3, rifle G4 e lança-granadas G5, com Perícias, recuo, munição em dados, alcance e possíveis travamentos diferenciados. Travamento depende de **Pavor predominante**, não de qualquer P residual. Catálogo e custos finais ainda precisam de uniformização.
 
-**DEFINIDO:** Vida máxima = 3 + Vigor + piso(Força ÷ 2). DE defensiva = Agilidade + piso(Destreza ÷ 2). Armadura absorve sua integridade antes de qualquer dano corporal. Ataque não colossal retira **até 3 Vida**; **9 de dano corporal retiram 3 Vida**. Um único ataque com dano corporal **≥ 3 × Vida máxima** provoca **morte colossal instantânea**, mesmo existindo teto geral de 3 Vida.
+## 6. Escudo Mágico e conjuração [DEFINIDO]
 
-**DEFINIDO:** dano calculado = **E + piso(P não anulado ÷ 2)**, e a distribuição das faixas de Saúde coloca sobras primeiro nas faixas mais saudáveis (**4 → 2/1/1**, **5 → 2/2/1**). **EXPERIMENTAL:** escala intermediária de perda de Vida; armaduras leve +1DE, média +0DE, pesada +0DE com Força+Vigor≥9 ou −2DE abaixo; proporção de integridade 1:2:4; Resistência maior. **PROPOSTO:** reforçar esquiva leve, adicionar esquiva a médias superiores e remover uma resistência média.
+**Escudo Mágico:** custa **ação + 1 PP**, gera **integridade temporária E + piso(P/2)** dos dados de magia mantidos e conserva transferência de Pavor. Dá **+1 DE por elemento** incorporado, removido no **primeiro acerto** contra a DE melhorada ou ao término da rodada, quando o mago volta a atuar. Integridade persiste até destruição. Por **+1 PP**, Especialidades apropriadas ativam **efeitos dos elementos do escudo**, inclusive dois efeitos num escudo de dois elementos, com intensidades dependentes do Grau. Ataques que erram **não desgastam nem cancelam** a proteção.
 
-### Composição de dados [DEFINIDO]
+**Slots:** máximo **9**; magias de Graus **1, 2, 3, 4 ocupam 1, 2, 3, 4 slots**. Cada magia mantém seu elemento. Misturar magias com Perícia permite dano e efeitos básicos; **Especialidade Elemental + PP** habilitam efeitos avançados. Magias superiores **herdam propriedades inferiores**; efeitos de imobilização e enredamento elevam a dificuldade em **1 por bloco completo de 3 em Força e Vigor do alvo**. Acertar sem superar a dificuldade da condição ainda permite dano normal pertinente.
 
-Armas, ferramentas especiais e magias podem acrescentar dados rolados conforme seus tetos de **peso** (foco elemental não é dado). Toda a pilha continua limitada a **nove rolados**.
+**Focos:** exigem peso no inventário, são fontes de elementos e recarregam em **1/2/3/4 rodadas para G1/G2/G3/G4**. Elementos podem vir da cena: pedra/natureza como Terra, luz solar acessível como Sagrado, escuridão como Trevas. Ar e Psique normalmente acessíveis; Sagrado e Trevas podem neutralizar condições ambientais.
 
-| Dado | d4 | d6 | d10 | d12 | d20 |
-|---|---:|---:|---:|---:|---:|
-| Peso | 0,5 | 1 | 2 | 3 | **6** |
+**Especialidades:** Água (congelamento, perfuração, empurrar), Fogo (disparo, área, dano à armadura/Vida), Terra (desvantagem, enredar, derrubar), Ar (movimentação, sufocar, deslocamento coletivo); Sangue (Vida e armas de sangue), Sagrado (Coragem, acalmar, purificar e cura com Sangue), Trevas (Pavor e maldições), Psique (neutralizar elemento contra imunidade) e Veneno (penalidades prolongadas). Misturas também permitem cultivo, iluminação, terreno moldado e transformação animal via Terra + Domar Feras, mediante Perícias apropriadas. Detalhes de grau, custo XP e efeitos simultâneos no **SRD integral**.
 
-**Armas pesadas:** grau 2 = **peso 3**, grau 3 = **5**, grau 4 = **7**. Para incluir d20 é necessário também estar habilitado a usá-lo.
+## 7. Revisão do d20 e DE máxima — PROPOSTO, NÃO OFICIAL
 
-## 3. Monstros, XP e equipamentos
+As **faces 13 e 14 atuais do d20 estão vazias**; foram identificadas como um obstáculo à progressão do dado extraordinário. Uma distribuição em estudo mantém as faces 1–12 da versão atual e preserva **face 16 = 4P**:
 
-**DEFINIDO:** grau 5 usa até **3 Atributos** na ativação, grau 6 até **4**, mas ninguém rola mais de **9 dados**. Graus 5/6 podem manter até quatro dados pagando os custos apropriados. Animal ou montaria com ficha pode equipar armadura.
+| Face | d20 atual | d20 PROPOSTO |
+|---:|---|---|
+| 13 | vazio | 2E |
+| 14 | vazio | 2E + A |
+| 15 | 2A | 3E + 2A |
+| 16 | **4P** | **4P** |
+| 17 | E + 2A + P | 3E + A + P |
+| 18 | 2E + 2A + 2P | 4E + A + P |
+| 19 | 3E + 2A + 2P | 5E + 2A + P |
+| 20 | 4E | 6E |
 
-**DEFINIDO:** monstro grau 6, com ao menos um Atributo no grau 6, pode gastar **100 XP** para converter permanentemente **1d12 desse Atributo em 1d20**. **Uma compra por criatura.** Até **3d20 por ativação**, dos quais no máximo um é comprado; demais exigem elevação e Pavor. **PENDENTE:** orçamento total por grau de monstro.
+**DE máxima 24 — PROPOSTA**, em vez dos **30 ainda DEFINIDOS**. Cálculo exato para trio de personagens rolando e mantendo 3d20 cada, com conversão de Antecipar em Êxito, sem itens ou outras melhorias:
 
-## 4. Magia e ritual
+| Dificuldade | Tabela atual | Protótipo |
+|---:|---:|---:|
+| DE 24 | 14,97% | **49,15%** |
+| DE 26 | 8,07% | 35,78% |
+| DE 30 | 1,73% | 15,17% |
 
-**DEFINIDO:** focos fornecem **elementos disponíveis, não dados extras**. Água ausente num vulcão impõe **Desvantagem Absoluta** à magia de Água; Sangramento disponibiliza sangue mesmo sem dano prévio à Vida.
+Mesmo no protótipo, **acertar DE 24 sem Pavor é extremamente raro (aproximadamente 0,013%)** nesse teste. Com quatro d20 por participante, a chance de alcançar DE 24 sobe a **89,61%**. Portanto, o alvo de 50% não resolve sozinho a economia de Pavor, a eficiência do d20 ou a progressão de Marcos.
 
-Não há magia comum de cura de Vida; Hemomante é exceção especializada. Ressurreição exige **até 7 dias**, corpo vitalmente íntegro, **Trevas + Sagrado + Psíquico + Sangue**, três conjuradores, **2d20 por conjurador**, **4 dados mantidos por conjurador (12 no total)**, **DE 30** e **Êxitos maiores que Pavor**; Antecipar pode anular Pavor. **PENDENTE:** obtenção completa dos d20 e resolução de falhas repetidas.
+**Até aprovação expressa, o d20 atual e o teto DE 30 continuam vigentes.**
 
-## 5. Missões e recompensa
+## 8. Próximos cálculos [PENDENTE]
 
-**DEFINIDO:** comparar **a soma de XP de todos os inimigos** à **soma de XP dos jogadores**. Se inimigos tiverem XP inferior, o enfrentamento não rende XP; igualdade dá elegibilidade à base; XP superior permite recompensa maior. **PENDENTE:** fórmulas de distribuição.
-
-**DEFINIDO:** os ranks agora são **Aprendiz, Perito, Elite, Divino**; a missão Divina costuma colocar o grupo em clara desvantagem e admite recompensa extraordinária em ouro e XP. **PENDENTE:** limiares, multiplicadores e cálculo de risco real.
+O próximo estudo precisa consolidar **XP por nível/Marco**, atributos d10/d12/d20, probabilidade de acerto puro/normal/com Pavor, dano após integridade, composição de equipamentos e magias, limites das Perícias e custo real de chefes. Integridades numéricas, tabelas de tempo de conjuração, catálogo de munições e custos das Especialidades não foram inventados.
 
 ---
 
-Este resumo **não substitui o Livro do Jogador como guia didático**. Consulte também o [estudo experimental de balanceamento](../balanceamento/). Consulte [Livro do Jogador v0.4](../livro-do-jogador/), [fichas de Perícias e Maestrias](../maestrias/) e [guia de monstros](../bestiario/).
+**Esta página resume a seção 0-E do SRD v0.21.** O histórico v0.20 permanece no arquivo integral, mas a norma mais recente sempre prevalece sobre trechos antigos contraditórios.
