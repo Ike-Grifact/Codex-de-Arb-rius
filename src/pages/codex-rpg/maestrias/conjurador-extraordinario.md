@@ -18,7 +18,7 @@ Esta especialização é um caminho para conjurações de área extraordinárias
 | Pré-requisito obrigatório | **Inteligência 6** |
 | Pré-requisito obrigatório | **Conjuração 6** |
 | Outros requisitos | Especializações de dano e área — **PENDENTES** |
-| Segundo d20 | Deriva de **dado de Inteligência convertido** |
+| Segundo d20 | Converte dado de **Inteligência por 2 PP** |
 | Retenção | Até **quatro dados mantidos**, se habilitado |
 
 ### Quando usar
@@ -27,12 +27,12 @@ Somente depois de cumprir todos os requisitos extraordinários, inclusive os de 
 
 ### Efeito e composição
 
-Um d20 da magia pode provir da composição extraordinária. O **segundo d20**, quando habilitado, resulta de converter um dado de Inteligência, pagando os passos e recursos aplicáveis; ele não é um segundo d20 comprado com pontos da magia.
+Um d20 da magia pode provir da composição extraordinária. O **segundo d20**, quando habilitado, resulta de converter um dado de Inteligência, pagando **2 PP** por ativação, enquanto Coragem continua disponível para outros aprimoramentos; ele não é um segundo d20 comprado com pontos da magia.
 
 ### Limites
 
 O d20 possui **peso de composição 6** e exige habilitação extraordinária para integrar uma magia. O d20 não permite rolar mais de nove dados, manter mais de quatro nem ignorar a obrigação de manter ao menos um dado de Atributo. **Esta ficha ainda não é uma compra plenamente operacional**, porque faltam os pré-requisitos adicionais e a especificação de ativação por situação.
 
-**Fonte e estado:** SRD de Continuidade v0.18; 5 XP, Inteligência 6, Conjuração 6 e origem do segundo d20 **DEFINIDOS**. Habilitação integral **PENDENTE**.
+**Fonte e estado:** SRD de Continuidade v0.20; 5 XP, Inteligência 6, Conjuração 6, origem do segundo d20 e custo de **2 PP** **DEFINIDOS**. Habilitação integral **PENDENTE**.
 
 [Voltar ao catálogo](../) · [Livro do Jogador](../../livro-do-jogador/)
