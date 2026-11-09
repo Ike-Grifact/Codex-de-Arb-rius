@@ -119,7 +119,12 @@ As **faces 13 e 14 atuais do d20 estão vazias**; foram identificadas como um ob
 | DE 26 | 8,07% | 35,78% |
 | DE 30 | 1,73% | 15,17% |
 
-Mesmo no protótipo, **acertar DE 24 sem Pavor é extremamente raro (aproximadamente 0,013%)** nesse teste. Com quatro d20 por participante, a chance de alcançar DE 24 sobe a **89,61%**. Portanto, o alvo de 50% não resolve sozinho a economia de Pavor, a eficiência do d20 ou a progressão de Marcos.
+No protótipo, a probabilidade de atingir DE 24 **sem rolar Pavor algum** é **0,013%**; considerando **Acerto Puro após anular P com Antecipar**, é **3,47%**. Com quatro d20 por participante, a chance de alcançar DE 24 sobe a **89,61%**. Portanto, o alvo de 50% não resolve sozinho a economia de Pavor, a eficiência do d20 ou a progressão de Marcos.
+
+
+**Segunda alternativa, também PROPOSTA:** manter a **DE máxima 30** e reforçar mais as faces do d20, inclusive deslocando efeitos favoráveis para faces 7–11 e 13–20 (preservadas 1–2 vazias e 16 = 4P). Na **alternativa G**, três participantes mantendo 3d20 cada atingem **DE 30 em 49,07%** das ações, com **9,26% de Acerto Puro após anulações**. Se os três mantêm 4d20, a chance cresce para **89,34%**. O [SRD integral](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.21_2026-11-09.md) apresenta todas as faces e a comparação com a alternativa de DE24.
+
+**As duas alternativas são apenas estudos:** tanto a tabela do d20 atual quanto o teto **DE30** continuam DEFINIDOS.
 
 **Até aprovação expressa, o d20 atual e o teto DE 30 continuam vigentes.**
 
