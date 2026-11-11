@@ -1,37 +1,25 @@
 ---
 layout: ../../../layouts/CodexRpgLayout.astro
-title: Codex RPG — SRD de Continuidade v0.23
-description: Continuidade de Provocação, Liderança, coordenação de inimigos e decisões recentes do Codex RPG.
+title: Codex RPG — SRD de Continuidade v0.22
+description: Regras recentes de d20, sete graus, Coragem e PP, dano elemental, XP e estudos de armaduras e conflitos.
 ---
 
-# SRD de Continuidade v0.23 — resumo normativo
+# SRD de Continuidade v0.22 — resumo normativo
 
-*11 de novembro de 2026 · decisões autorais de Provocação e Liderança acrescentadas à v0.22.*
+*9 de novembro de 2026 · decisões confirmadas e parâmetros experimentais separados.*
 
-[**Baixar o SRD v0.23 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.23_2026-11-11.md) — seção 0-G atual, preservando integralmente a consolidação anterior v0.22.
+[**Baixar o SRD v0.22 integral em Markdown**](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.22_2026-11-09.md) — seção 0-F atual com as decisões recentes, estudos de integridade/XP e o histórico integral das versões anteriores.
 
-[Consultar a versão anterior v0.22](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.22_2026-11-09.md) · [Ler o Livro do Mestre](../livro-do-mestre/).
+[Consultar a versão anterior v0.21](../../downloads/codex-rpg/Codex_RPG_SRD_Continuidade_v0.21_2026-11-09.md).
 
-**Precedência:** decisão autoral mais recente → seção **0-G** nas matérias novas → seção **0-F** (09/11) → histórico. **O Livro do Jogador não foi alterado.**
+**Precedência:** decisão recente do autor → **seção 0-F da v0.22** → seção 0-E histórica → histórico anterior. O Livro do Jogador v0.5 ainda possui trechos desatualizados; **não foi alterado nesta publicação**.
 
-## 0. Provocação, Liderança e disputa de influência — 11/11
-
-| Estado | Regra vigente |
+| Estado | Significado |
 |---|---|
-| **DEFINIDO** | Provocação por **Influência + arma** exige atingir a DE; foco dura **1 rodada** e a última provocação válida prevalece. |
-| **DEFINIDO** | **Provocação Planejada** substitui o nome *Provocação Sofisticada*: elimina a vantagem da provocação simples para o inimigo e dá **+1A** ao provocador contra seu alvo. |
-| **DEFINIDO** | Provocação em Área: **Influência + Apresentação**, **1 rolagem** contra a DE de cada inimigo; **8×8 normal**, **16×16 com Desvantagem**, **32×32 com Desvantagem Absoluta**. |
-| **DEFINIDO** | **Antecipar (1A)** passa um turno **individual** entre inimigos; não cria golpe conjunto. |
-| **DEFINIDO** | Um **Líder** incorpora aliados a um golpe conjunto focado por **1P público por aliado**, substituindo o preço fixo histórico de 3P; até três participantes conforme regra atual. |
-| **DEFINIDO** | Todos os conflitos têm Líder (criatura solitária lidera a si mesma); sem Líder, sobreviventes ficam desorganizados e concedem Vantagem aos jogadores. |
-| **DEFINIDO** | Sucessão exige **Influência contra a DE dos aliados**, não Inteligência 2. Na disputa, prevalece **a última convicção bem-sucedida**; Pavor dá oportunidade de resposta sem anular o resultado. |
-| **PENDENTE** | Custo geral para iniciativa pública da oposição; destino do Pavor local com múltiplos alvos; unidade espacial da área; divisão de custos locais nos golpes conjuntos. |
-
-Os procedimentos completos, exemplos e desfechos sem extermínio estão no [**Livro do Mestre**](../livro-do-mestre/) e na seção **0-G** do SRD integral.
-
----
-
-## Referência histórica v0.22 — progressão, dano, magia e recursos
+| **DEFINIDO** | Decisão expressa do autor |
+| **EXPERIMENTAL** | Número, composição ou procedimento em playtest |
+| **PROPOSTO** | Alternativa apresentada, ainda não aprovada |
+| **PENDENTE** | Requisito ou interpretação a finalizar |
 
 ## 1. Progressão, Graus e acesso aos d20
 
