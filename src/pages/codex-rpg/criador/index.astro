@@ -1,0 +1,408 @@
+---
+import PortalLayout from "../../../layouts/PortalLayout.astro";
+import { withBase } from "../../../lib/paths";
+const base = import.meta.env.BASE_URL;
+---
+
+<PortalLayout title="Criador de personagem · Codex Genético" description="Crie um Aprendiz com orientação para iniciantes, um mapa genético interativo e uma visualização clássica.">
+  <div class="page-container cg" id="codex-builder">
+    <header class="cg-hero">
+      <p class="cg-overline">Codex RPG · Criador experimental</p>
+      <h1>Seu personagem, <em>seu caminho.</em></h1>
+      <p>Comece com uma ideia. Escolha o que deseja desenvolver e explore o Codex Genético para descobrir suas possibilidades, sem escolher uma classe fixa.</p>
+      <a href={withBase("codex-rpg/", base)} class="cg-back">← Voltar ao Codex RPG</a>
+    </header>
+
+    <nav class="cg-steps" aria-label="Etapas da criação">
+      <span data-step="1" class="is-active"><b>01</b> Personagem</span>
+      <span data-step="2"><b>02</b> Escolha</span>
+      <span data-step="3"><b>03</b> Codex Genético</span>
+    </nav>
+
+    <section class="cg-panel" data-panel="1">
+      <p class="cg-kicker">Etapa 1 de 3</p>
+      <h2>Quem é seu Aprendiz?</h2>
+      <p>Você não precisa escolher uma profissão pronta. Descreva alguém que gostaria de interpretar; as capacidades adquiridas vão formar seu estilo de jogo.</p>
+      <div class="cg-fields">
+        <label>Nome do personagem <input id="cg-name" maxlength="70" autocomplete="off" placeholder="Ex.: Maela" /></label>
+        <label>Ideia do personagem <textarea id="cg-concept" rows="3" maxlength="320" placeholder="Ex.: uma exploradora que fabrica ferramentas e protege sua comunidade"></textarea></label>
+      </div>
+      <div class="cg-note"><strong>Início:</strong> Aprendiz humano no playtest. Nenhuma classe é obrigatória; uma combinação de capacidades pode dar origem à profissão que você imaginou.</div>
+      <div class="cg-actions"><button type="button" id="cg-to-2" class="cg-primary">Escolher o que desenvolver →</button></div>
+    </section>
+
+    <section class="cg-panel" data-panel="2" hidden>
+      <p class="cg-kicker">Etapa 2 de 3</p>
+      <h2>O que você quer comprar primeiro?</h2>
+      <p>Escolha uma família de capacidades. No próximo passo, o Codex Genético mostrará o mapa com os caminhos relacionados. Você poderá alternar de família quando quiser.</p>
+      <div class="cg-families" role="group" aria-label="Tipo de capacidade">
+        <button type="button" data-family="atributo" aria-pressed="false">
+          <span class="cg-family-icon">◆</span><strong>Atributos</strong>
+          <span>Seu potencial básico: Força, Agilidade, Destreza, Inteligência, Influência e Vigor.</span>
+          <small>Ex.: erguer uma porta, reagir a um perigo ou interpretar sinais.</small>
+          <em>Primeiro avanço: 1 XP · dado d6</em>
+        </button>
+        <button type="button" data-family="conhecimento" aria-pressed="false">
+          <span class="cg-family-icon">✦</span><strong>Conhecimentos</strong>
+          <span>O que o personagem estudou e compreende: Medicina, Erudição, Engenharia e outros saberes.</span>
+          <small>Ex.: reconhecer uma doença, projetar uma ponte ou decifrar um registro.</small>
+          <em>Primeiro avanço: 2 XP · dado d10</em>
+        </button>
+        <button type="button" data-family="pratica" aria-pressed="false">
+          <span class="cg-family-icon">✧</span><strong>Práticas</strong>
+          <span>O que o personagem aprendeu fazendo: Atletismo, Furtividade, fabricação e outras atividades.</span>
+          <small>Ex.: escalar, caminhar sem fazer barulho ou coletar recursos.</small>
+          <em>Primeiro avanço: 2 XP · dado d10</em>
+        </button>
+      </div>
+      <div class="cg-note"><strong>Como funciona um teste?</strong> Em geral, você combina duas fontes pertinentes, como Destreza + Medicina ou Força + Atletismo. O Narrador determina o que faz sentido na situação. As linhas no mapa são sugestões temáticas, <strong>não benefícios ou combinações automáticas</strong>.</div>
+      <div class="cg-actions"><button type="button" class="cg-secondary" id="cg-back-1">← Personagem</button><button type="button" class="cg-primary" id="cg-to-3" disabled>Abrir Codex Genético →</button></div>
+    </section>
+
+    <section class="cg-panel cg-workspace" data-panel="3" hidden>
+      <div class="cg-workspace-head">
+        <div><p class="cg-kicker">Etapa 3 de 3</p><h2>Codex Genético</h2><p>Selecione uma capacidade e compre seus graus. As conexões mostram afinidades, não caminhos obrigatórios.</p></div>
+        <button type="button" class="cg-secondary" id="cg-rechoose">← Mudar tipo</button>
+      </div>
+      <div class="cg-budget" aria-label="Orçamento de experiência">
+        <div><small>Personagem</small><strong id="cg-character">Aprendiz</strong></div>
+        <div><small>XP de Base</small><strong id="cg-base">7 / 7</strong></div>
+        <div><small>XP de Formação</small><strong id="cg-training">7 / 7</strong></div>
+        <div><small>XP de Perícias</small><strong>5 <span class="cg-quiet">reservados</span></strong></div>
+      </div>
+      <div class="cg-toolbar">
+        <div class="cg-toggle" role="group" aria-label="Visualizador">
+          <button type="button" data-view="map" aria-pressed="true">Mapa genético</button>
+          <button type="button" data-view="classic" aria-pressed="false">Visualizador clássico</button>
+        </div>
+        <label class="cg-search-label">Buscar capacidade <input type="search" id="cg-search" placeholder="Ex.: Medicina" /></label>
+      </div>
+      <div class="cg-layout">
+        <div class="cg-maincol">
+          <div id="cg-map-view">
+            <div class="cg-map-scroll" role="region" tabindex="0" aria-label="Mapa do Codex Genético, rolável horizontalmente">
+              <div id="cg-map-board" class="cg-map-board">
+                <svg id="cg-map-lines" viewBox="0 0 1200 760" preserveAspectRatio="none" aria-hidden="true"></svg>
+                <div id="cg-map-nodes"></div>
+              </div>
+            </div>
+            <p class="cg-caption">Linhas = relação temática. Selecione os nós para conhecer seus efeitos narrativos. Em telas pequenas, deslize o mapa horizontalmente.</p>
+            <div class="cg-extras"><h3>Outras capacidades</h3><p>Disponíveis na lista, sem sobrecarregar o mapa principal.</p><div id="cg-other-nodes" class="cg-pills"></div></div>
+          </div>
+          <div id="cg-classic-view" hidden><p class="cg-caption">A mesma ficha em uma visualização direta, organizada por família.</p><div id="cg-classic-list"></div></div>
+        </div>
+        <aside class="cg-detail" aria-label="Detalhes da capacidade selecionada">
+          <p class="cg-kicker">Capacidade selecionada</p>
+          <div id="cg-detail-body"><h3>Escolha uma capacidade</h3><p>Toque em um nó do mapa ou em um item da lista para ver explicações, dados e custos.</p></div>
+          <div class="cg-purchase">
+            <button type="button" id="cg-buy" class="cg-primary" disabled>Selecionar capacidade</button>
+            <button type="button" id="cg-undo" class="cg-secondary" disabled>Desfazer último grau</button>
+          </div>
+          <div class="cg-sheet"><h3>Minha construção</h3><ul id="cg-build-list"><li>Você ainda não comprou graus.</li></ul><p id="cg-health"></p></div>
+        </aside>
+      </div>
+      <div class="cg-actions cg-last-actions"><button type="button" class="cg-secondary" id="cg-export">Exportar ficha em JSON</button><button type="button" class="cg-secondary" id="cg-reset">Recomeçar construção</button></div>
+      <p class="cg-disclaimer"><strong>Playtest:</strong> os 7 XP de Base + 7 XP de Formação e os 5 XP iniciais de Perícias compõem uma hipótese de orçamento de 19 XP; a confirmação do total está pendente no SRD v0.22. A compra de Perícias não integra esta tela. Astronomia, Proteção, Artesão, Apresentação e Coleta foram incluídos para explorar o mapa; sua classificação ainda não está homologada. As escolhas ficam neste navegador; nenhuma compra gera bônus de afinidade.</p>
+    </section>
+  </div>
+</PortalLayout>
+
+<style is:global>
+  .cg{--ink:#262823;--muted:#666b62;--earth:#925f45;--green:#397462;--blue:#4f6f9a;--line:#d8d5cb;--paper:#faf8f1;--alt:#f0eee6;max-width:1440px;padding-bottom:4rem;color:var(--ink)}
+  .cg *{box-sizing:border-box}.cg button,.cg input,.cg textarea{font:inherit}
+  .cg button{cursor:pointer}.cg button:disabled{cursor:not-allowed;opacity:.45}
+  .cg button:focus-visible,.cg input:focus-visible,.cg textarea:focus-visible{outline:3px solid #537eaa;outline-offset:3px}
+  .cg [hidden]{display:none!important}
+  .cg-hero{background:linear-gradient(115deg,#1b2a29,#30372e 65%,#554235);border-radius:16px;padding:clamp(1.6rem,4vw,3.3rem);color:#f8f3e9}
+  .cg-overline,.cg-kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800}
+  .cg-overline{color:#d9ad85}.cg-kicker{color:var(--earth)}
+  .cg-hero h1{font:600 clamp(2rem,4vw,3.8rem)/1.1 Georgia,serif;letter-spacing:-.025em;margin:.4rem 0 1rem}
+  .cg-hero h1 em{color:#ddb28e;font-weight:400}.cg-hero p:not(.cg-overline){color:#e1e0d5;max-width:68ch;line-height:1.65}
+  .cg-back{display:inline-block;color:#ead8bd;margin-top:1rem;text-underline-offset:.25rem}
+  .cg-steps{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.3rem 0}
+  .cg-steps span{display:flex;align-items:center;gap:.5rem;padding:.6rem .85rem;color:#737b70;border-radius:10px;background:#edeee8;font-size:.85rem;font-weight:700}
+  .cg-steps span b{font-size:.75rem;opacity:.75}.cg-steps span.is-active{background:#305548;color:#fff}
+  .cg-panel{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:clamp(1.15rem,3vw,2.1rem);box-shadow:0 7px 25px #2e35220d}
+  .cg-panel h2{font:600 clamp(1.6rem,3vw,2.3rem) Georgia,serif;color:#293c33;margin:.15rem 0 .55rem}.cg-panel p{line-height:1.6}
+  .cg-fields{display:grid;grid-template-columns:1fr 1.6fr;gap:1rem;margin:1.7rem 0}
+  .cg-fields label,.cg-search-label{display:grid;gap:.4rem;font-weight:750;font-size:.85rem}
+  .cg input,.cg textarea{border:1px solid #bbbeb1;background:#fff;border-radius:9px;padding:.8rem;color:#222;width:100%;min-width:0}
+  .cg textarea{resize:vertical}.cg-note{padding:1rem 1.1rem;border-left:3px solid #567e69;background:#edf3ec;border-radius:8px;font-size:.9rem;line-height:1.65}
+  .cg-actions{display:flex;flex-wrap:wrap;gap:.65rem;justify-content:flex-end;margin-top:1.5rem}
+  .cg-primary,.cg-secondary{padding:.75rem 1.05rem;border-radius:9px;font-weight:800!important;border:1px solid #b9c3b7}
+  .cg-primary{background:#315d4c;color:#fff;border-color:#315d4c}.cg-primary:not(:disabled):hover{background:#224434}
+  .cg-secondary{color:#334e41;background:#fff}.cg-secondary:not(:disabled):hover{background:#e8eee7}
+  .cg-families{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem;margin:1.45rem 0}
+  .cg-families button{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem;text-align:left;min-height:255px;border:2px solid var(--line);background:#fff;border-radius:14px;padding:1.25rem;transition:border-color .15s,background .15s}
+  .cg-families button:hover,.cg-families button[aria-pressed=true]{border-color:#467861;background:#eef5ef}
+  .cg-families strong{font:600 1.45rem Georgia,serif;color:#244a38}.cg-families span:not(.cg-family-icon){font-size:.95rem;line-height:1.45}.cg-families small{color:#686c61;line-height:1.4}
+  .cg-families em{margin-top:auto;color:#42705a;font-size:.78rem;font-style:normal;font-weight:800}
+  .cg-family-icon{color:#a2734e;font-size:1.8rem}
+  .cg-workspace-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+  .cg-workspace-head p{margin:.4rem 0}.cg-workspace-head .cg-secondary{flex-shrink:0}
+  .cg-budget{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:.7rem;margin:1.2rem 0}
+  .cg-budget>div{display:grid;gap:.25rem;min-width:0;border:1px solid var(--line);background:#fff;padding:.8rem 1rem;border-radius:11px}
+  .cg-budget small{font-size:.7rem;color:#767568}.cg-budget strong{font-size:1.1rem;word-break:break-word}.cg-quiet{font-size:.7rem;font-weight:500;color:#757568}
+  .cg-toolbar{display:flex;align-items:end;flex-wrap:wrap;justify-content:space-between;gap:1rem;margin:1rem 0}
+  .cg-toggle{display:inline-flex;padding:.2rem;background:#ebece5;border:1px solid var(--line);border-radius:10px}
+  .cg-toggle button{padding:.56rem .8rem;border:0;background:transparent;border-radius:7px;font-size:.85rem;font-weight:750}
+  .cg-toggle button[aria-pressed=true]{background:#fff;color:#2c604c;box-shadow:0 1px 6px #0001}
+  .cg-search-label{min-width:220px}.cg-search-label input{padding:.55rem .75rem}
+  .cg-layout{display:grid;grid-template-columns:minmax(0,1fr) 315px;gap:1rem;align-items:start}
+  .cg-maincol{min-width:0}.cg-map-scroll{max-width:100%;overflow-x:auto;background:radial-gradient(ellipse at 40% 40%,#f9f7ee,#eaece5);border:1px solid #d6dacd;border-radius:12px}
+  .cg-map-board{position:relative;width:100%;min-width:900px;aspect-ratio:1200/760;background-image:linear-gradient(#6d826a10 1px,transparent 1px),linear-gradient(90deg,#6d826a10 1px,transparent 1px);background-size:45px 45px}
+  #cg-map-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  #cg-map-lines line{stroke:#96a99c;stroke-width:2;opacity:.65;stroke-linecap:round}
+  #cg-map-lines line.is-focused{stroke:#40775c;stroke-width:3;opacity:1}
+  .cg-node{position:absolute;transform:translate(-50%,-50%);width:12.2%;min-height:49px;padding:.35rem .5rem;border:2px solid #7c907e;background:#fffdf6;color:#274335;border-radius:12px;text-align:center;font-size:clamp(.65rem,1vw,.82rem)!important;font-weight:800!important;line-height:1.2;box-shadow:0 4px 11px #23322620;z-index:1;white-space:normal;overflow-wrap:anywhere}
+  .cg-node small{display:block;font-size:.65rem;color:#727568;font-weight:650;margin-top:.12rem}
+  .cg-node.is-attribute{border-color:#487a66;background:#e0eee4}.cg-node.is-knowledge{border-color:#6e8bac;background:#eaf0f8}
+  .cg-node.is-practice{border-color:#ac7e60;background:#f6ede3}.cg-node.is-dim{opacity:.39}.cg-node.is-selected{outline:4px solid #274e40;outline-offset:2px;z-index:2;opacity:1}
+  .cg-caption{font-size:.78rem;color:#646b60;margin:.6rem .15rem 1rem}
+  .cg-extras{background:#f3f2e9;border:1px solid var(--line);border-radius:12px;padding:1rem}.cg-extras h3{font-size:1rem;margin:.1rem 0}.cg-extras p{font-size:.78rem;margin:.2rem 0 .7rem;color:#60695d}
+  .cg-pills{display:flex;flex-wrap:wrap;gap:.5rem}.cg-pills button{border:1px solid #bbbfb2;background:#fff;border-radius:30px;padding:.47rem .75rem;font-weight:700;font-size:.78rem}.cg-pills button.is-selected{background:#2e5747;color:white;border-color:#2e5747}
+  .cg-detail{background:#fff;border:1px solid var(--line);border-radius:13px;padding:1.1rem;position:sticky;top:1rem}
+  .cg-detail h3{font:600 1.3rem Georgia,serif;color:#2a4b39;margin:.6rem 0}
+  .cg-detail p{font-size:.88rem;line-height:1.55;color:#50574e;margin:.55rem 0}
+  .cg-detail .cg-meta{font-size:.75rem;font-weight:750;text-transform:uppercase;letter-spacing:.06em;color:#8a634c}
+  .cg-detail .cg-badge{display:inline-block;background:#f4eadd;border-radius:6px;padding:.2rem .4rem;color:#8b5e45;font-size:.7rem;font-weight:750}
+  .cg-purchase{display:grid;gap:.5rem;margin:1rem 0 1.2rem}
+  .cg-sheet{border-top:1px solid #ddd;padding-top:.8rem}.cg-sheet h3{font-size:1.05rem}
+  .cg-sheet ul{padding-left:1.1rem;line-height:1.5;font-size:.83rem;color:#50594e;max-height:270px;overflow-y:auto}
+  #cg-classic-list{display:grid;gap:1.2rem}.cg-classic-group{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem}
+  .cg-classic-group h3{font:600 1.2rem Georgia,serif;margin:0 0 .6rem;color:#315c47}
+  .cg-classic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.5rem}
+  .cg-classic-grid button{border:1px solid #d2d5ce;border-radius:9px;background:#f8f8f4;text-align:left;padding:.65rem;display:grid;gap:.2rem;font-size:.82rem}
+  .cg-classic-grid button small{color:#72776c}.cg-classic-grid button.is-selected{border:2px solid #326447;background:#e5f2e8}
+  .cg-disclaimer{margin:1.2rem 0 0;font-size:.78rem;color:#646a61;background:#f0f0e9;border-radius:9px;padding:1rem;line-height:1.6}
+  @media(max-width:980px){.cg-layout{grid-template-columns:1fr}.cg-detail{position:static}.cg-budget{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:680px){.cg-fields,.cg-families{grid-template-columns:1fr}.cg-families button{min-height:auto}.cg-workspace-head{flex-direction:column}.cg-toolbar{align-items:stretch}.cg-search-label{width:100%}.cg-map-board{min-width:840px}.cg-node{font-size:.8rem!important}.cg-budget{gap:.45rem}.cg-budget>div{padding:.6rem}}
+</style>
+
+<script is:inline>
+(function(){
+  'use strict';
+  const root=document.getElementById('codex-builder');
+  if(!root)return;
+  const $=(q)=>root.querySelector(q);
+  const $$=(q)=>Array.from(root.querySelectorAll(q));
+  const attrDice=['1d4','1d6','2d6','3d6','2d6 + 1d10','1d6 + 2d10','3d10'];
+  const skillDice=['1d4','1d10','2d10','3d10','2d10 + 1d12','1d10 + 2d12','3d12'];
+  const attrCosts=[1,2,4,8,16,24];
+  const skillCosts=[2,6,12,18,28,36];
+  const DATA=[
+    {id:'forca',name:'Força',type:'atributo',x:145,y:190,desc:'Potência física para erguer, empurrar, golpear e vencer resistência por esforço.'},
+    {id:'agilidade',name:'Agilidade',type:'atributo',x:530,y:125,desc:'Mobilidade, equilíbrio e velocidade de reação em situações dinâmicas.'},
+    {id:'destreza',name:'Destreza',type:'atributo',x:475,y:358,desc:'Precisão e coordenação fina para manusear objetos e executar movimentos delicados.'},
+    {id:'inteligencia',name:'Inteligência',type:'atributo',x:755,y:535,desc:'Análise, memória, raciocínio e capacidade de resolver problemas.'},
+    {id:'influencia',name:'Influência',type:'atributo',x:1060,y:443,desc:'Presença social, comunicação, persuasão e liderança.'},
+    {id:'vigor',name:'Vigor',type:'atributo',x:160,y:600,desc:'Resistência do corpo, fôlego e capacidade de suportar esforços prolongados.'},
+    {id:'atletismo',name:'Atletismo',type:'pratica',x:320,y:112,links:['forca','agilidade','destreza'],desc:'Treinamento de corrida, saltos, escaladas e deslocamentos físicos.'},
+    {id:'artesao',name:'Artesão',type:'pratica',x:270,y:310,links:['destreza','forca'],desc:'Ofício manual, montagem, reparos e confecção de peças. Nome e categoria ainda em revisão.',draft:true},
+    {id:'furtividade',name:'Furtividade',type:'pratica',x:684,y:249,links:['destreza','agilidade'],desc:'Deslocar-se ou agir discretamente, reduzindo a chance de ser percebido.'},
+    {id:'protecao',name:'Proteção',type:'pratica',x:595,y:463,links:['destreza','inteligencia'],desc:'Conhecer e aplicar formas de proteger alguém ou algo. Sua classificação como Prática ainda está em revisão.',draft:true},
+    {id:'erudicao',name:'Erudição',type:'conhecimento',x:930,y:527,links:['inteligencia','influencia'],desc:'Repertório cultural, história, tradições e interpretação de registros.'},
+    {id:'astronomia',name:'Astronomia',type:'conhecimento',x:926,y:662,links:['inteligencia'],desc:'Observar e interpretar astros, fenômenos celestes e seus padrões. Classificação em revisão.',draft:true},
+    {id:'medicina',name:'Medicina',type:'conhecimento',x:802,y:339,links:['inteligencia','destreza'],desc:'Conhecimentos sobre condições de saúde, diagnósticos e cuidados.'},
+    {id:'engenharia',name:'Engenharia',type:'conhecimento',x:731,y:676,links:['inteligencia'],desc:'Planejamento e compreensão de mecanismos, estruturas e sistemas.'},
+    {id:'coleta',name:'Coleta',type:'pratica',x:383,y:505,links:['destreza','forca','inteligencia'],desc:'Encontrar, selecionar e extrair recursos de ambientes diferentes. Classificação em revisão.',draft:true},
+    {id:'apresentacao',name:'Apresentação',type:'pratica',x:1060,y:615,links:['influencia'],desc:'Expressar-se diante de um público, conduzir performances e apresentações. Classificação em revisão.',draft:true},
+    {id:'ciencias',name:'Ciências',type:'conhecimento',desc:'Estudar fenômenos por observação, hipóteses e experimentação.'},
+    {id:'biologia',name:'Biologia',type:'conhecimento',desc:'Estudar formas de vida, ambientes naturais e seus processos.'},
+    {id:'geografia',name:'Geografia',type:'conhecimento',desc:'Compreender territórios, relevo, climas, rotas e regiões.'},
+    {id:'infiltracao',name:'Infiltração',type:'pratica',desc:'Aplicar métodos de entrada e atuação discreta em espaços protegidos.'},
+    {id:'manufaturas',name:'Manufaturas',type:'pratica',desc:'Fabricar e modificar objetos por processos produtivos.'},
+    {id:'mineracao',name:'Mineração',type:'pratica',desc:'Extrair e trabalhar recursos minerais.'},
+    {id:'herborismo',name:'Herborismo',type:'pratica',desc:'Identificar e utilizar recursos vegetais em atividades pertinentes.'},
+    {id:'expressao',name:'Expressão',type:'pratica',desc:'Exercitar comunicação criativa e expressão artística.'},
+    {id:'comercio',name:'Comércio',type:'pratica',desc:'Negociar, avaliar trocas e lidar com relações comerciais.'},
+    {id:'sobrevivencia',name:'Sobrevivência',type:'pratica',desc:'Praticar orientação, abrigo e obtenção de recursos no ambiente.'}
+  ];
+  const byId=Object.fromEntries(DATA.map(n=>[n.id,n]));
+  const mapped=DATA.filter(n=>Number.isFinite(n.x));
+  const extra=DATA.filter(n=>!Number.isFinite(n.x));
+  const typeLabel={atributo:'Atributo',conhecimento:'Conhecimento',pratica:'Prática'};
+  const levels={};
+  let stage=1,category=null,view='map',selected=null,search='';
+  const norm=(s)=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  const dice=(n)=>((n.type==='atributo')?attrDice:skillDice)[levels[n.id]||0];
+  const nextCost=(n)=>((n.type==='atributo')?attrCosts:skillCosts)[levels[n.id]||0];
+  const spent=(kind)=>DATA.filter(n=>(n.type==='atributo'?'base':'formacao')===kind).reduce((acc,n)=>{
+    const table=n.type==='atributo'?attrCosts:skillCosts;
+    return acc+table.slice(0,levels[n.id]||0).reduce((a,b)=>a+b,0);
+  },0);
+  const remaining=(kind)=>7-spent(kind);
+  function persist(){
+    try{localStorage.setItem('codex-genetico-criador-v1',JSON.stringify({
+      name:$('#cg-name').value,concept:$('#cg-concept').value,levels,category,stage,view,selected
+    }));}catch(e){}
+  }
+  function restore(){
+    try{
+      const s=JSON.parse(localStorage.getItem('codex-genetico-criador-v1')||'null');
+      if(!s)return;
+      $('#cg-name').value=String(s.name||'').slice(0,70);
+      $('#cg-concept').value=String(s.concept||'').slice(0,320);
+      for(const [key,val] of Object.entries(s.levels||{})){
+        if(byId[key]&&Number.isInteger(val)&&val>=0&&val<=6)levels[key]=val;
+      }
+      if(['atributo','conhecimento','pratica'].includes(s.category))category=s.category;
+      if([1,2,3].includes(s.stage))stage=s.stage;
+      if(s.view==='classic')view='classic';
+      if(byId[s.selected])selected=s.selected;
+      // Restore only purchases that fit the experimental creation budgets.
+      for(const kind of ['base','formacao']){
+        if(spent(kind)>7){DATA.filter(n=>(n.type==='atributo'?'base':'formacao')===kind).forEach(n=>{levels[n.id]=0;});}
+      }
+    }catch(e){}
+  }
+  function setStage(n){
+    stage=n;
+    $$('[data-panel]').forEach(p=>{p.hidden=Number(p.dataset.panel)!==n;});
+    $$('[data-step]').forEach(p=>p.classList.toggle('is-active',Number(p.dataset.step)===n));
+    $('#cg-to-3').disabled=!category;
+    $$('[data-family]').forEach(p=>p.setAttribute('aria-pressed',String(p.dataset.family===category)));
+    if(n===3)renderAll();
+    persist();
+  }
+  function chooseCategory(cat){
+    category=cat;
+    $$('[data-family]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.family===cat)));
+    $('#cg-to-3').disabled=false;
+    selected=null;
+    persist();
+  }
+  function visible(n){
+    return !search||norm(n.name).includes(norm(search))||n.type==='atributo';
+  }
+  function choose(id){
+    selected=id;
+    renderAll();
+    persist();
+  }
+  function renderMap(){
+    const lines=$('#cg-map-lines'),nodes=$('#cg-map-nodes');
+    lines.replaceChildren();nodes.replaceChildren();
+    for(const n of mapped){
+      if(!visible(n))continue;
+      if(n.links)for(const parentId of n.links){
+        const parent=byId[parentId],line=document.createElementNS('http://www.w3.org/2000/svg','line');
+        line.setAttribute('x1',String(n.x));line.setAttribute('y1',String(n.y));
+        line.setAttribute('x2',String(parent.x));line.setAttribute('y2',String(parent.y));
+        if(selected===n.id||selected===parentId)line.classList.add('is-focused');
+        lines.appendChild(line);
+      }
+    }
+    for(const n of mapped){
+      if(!visible(n))continue;
+      const b=document.createElement('button');
+      b.type='button';b.className='cg-node '+(n.type==='atributo'?'is-attribute':n.type==='conhecimento'?'is-knowledge':'is-practice');
+      if(category!==n.type&&n.type!=='atributo')b.classList.add('is-dim');
+      if(selected===n.id)b.classList.add('is-selected');
+      b.style.left=(100*n.x/1200)+'%';b.style.top=(100*n.y/760)+'%';
+      b.setAttribute('aria-label',n.name+', grau '+(levels[n.id]||0));
+      b.setAttribute('aria-pressed',String(selected===n.id));
+      b.textContent=n.name;
+      const small=document.createElement('small');small.textContent='Grau '+(levels[n.id]||0);b.appendChild(small);
+      b.addEventListener('click',()=>choose(n.id));nodes.appendChild(b);
+    }
+    const shelf=$('#cg-other-nodes');shelf.replaceChildren();
+    for(const n of extra.filter(n=>n.type===category||!category).filter(n=>visible(n))){
+      const b=document.createElement('button');b.type='button';b.textContent=n.name+' · '+(levels[n.id]||0);
+      if(selected===n.id)b.classList.add('is-selected');
+      b.addEventListener('click',()=>choose(n.id));shelf.appendChild(b);
+    }
+    if(!shelf.children.length){const p=document.createElement('span');p.textContent='Nenhum outro item nesta seleção.';shelf.appendChild(p);}
+  }
+  function renderClassic(){
+    const box=$('#cg-classic-list');box.replaceChildren();
+    const order=[category,...['atributo','conhecimento','pratica'].filter(t=>t!==category)].filter(Boolean);
+    for(const cat of order){
+      const sect=document.createElement('section');sect.className='cg-classic-group';
+      const title=document.createElement('h3');title.textContent=typeLabel[cat]+'s';sect.appendChild(title);
+      const grid=document.createElement('div');grid.className='cg-classic-grid';
+      for(const n of DATA.filter(n=>n.type===cat&&(!search||norm(n.name).includes(norm(search))))){
+        const b=document.createElement('button');b.type='button';
+        if(selected===n.id)b.classList.add('is-selected');
+        const strong=document.createElement('strong');strong.textContent=n.name;const small=document.createElement('small');
+        small.textContent='Grau '+(levels[n.id]||0)+' · '+dice(n);
+        b.append(strong,small);b.addEventListener('click',()=>choose(n.id));grid.appendChild(b);
+      }
+      if(!grid.children.length){const empty=document.createElement('p');empty.textContent='Nenhum resultado.';grid.appendChild(empty);}
+      sect.appendChild(grid);box.appendChild(sect);
+    }
+  }
+  function renderDetail(){
+    const box=$('#cg-detail-body'),buy=$('#cg-buy'),undo=$('#cg-undo');
+    box.replaceChildren();buy.disabled=true;undo.disabled=true;
+    if(!selected){box.innerHTML='<h3>Escolha uma capacidade</h3><p>Selecione um nó do mapa ou um item da lista para ver como ele funciona.</p>';buy.textContent='Selecionar capacidade';return;}
+    const n=byId[selected];const lvl=levels[n.id]||0;
+    const meta=document.createElement('p');meta.className='cg-meta';meta.textContent=typeLabel[n.type];
+    const title=document.createElement('h3');title.textContent=n.name;
+    const desc=document.createElement('p');desc.textContent=n.desc;
+    const stats=document.createElement('p');stats.textContent='Grau '+lvl+' · Dados atuais: '+dice(n)+'.';
+    box.append(meta,title,desc,stats);
+    if(n.links&&n.links.length){const affin=document.createElement('p');affin.textContent='Próximo de: '+n.links.map(id=>byId[id].name).join(', ')+'.';box.appendChild(affin);}
+    if(n.draft){const warn=document.createElement('p');warn.className='cg-badge';warn.textContent='Categoria em revisão · uso experimental';box.appendChild(warn);}
+    const cost=nextCost(n),wallet=n.type==='atributo'?'base':'formacao',left=remaining(wallet);
+    if(lvl>=6){buy.textContent='Grau máximo atingido';}
+    else{buy.textContent='Comprar grau '+(lvl+1)+' · '+cost+' XP';buy.disabled=cost>left;
+      if(cost>left){const hint=document.createElement('p');hint.textContent='XP insuficiente na reserva de '+(wallet==='base'?'Base':'Formação')+'.';box.appendChild(hint);}
+    }
+    undo.disabled=lvl===0;
+    undo.textContent=lvl===0?'Nenhum grau para desfazer':'Desfazer grau '+lvl;
+  }
+  function renderBudget(){
+    const name=$('#cg-name').value.trim()||'Aprendiz sem nome';
+    $('#cg-character').textContent=name;
+    $('#cg-base').textContent=remaining('base')+' / 7';
+    $('#cg-training').textContent=remaining('formacao')+' / 7';
+    const list=$('#cg-build-list');list.replaceChildren();
+    const bought=DATA.filter(n=>(levels[n.id]||0)>0).sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'));
+    if(!bought.length){const li=document.createElement('li');li.textContent='Você ainda não comprou graus.';list.appendChild(li);}
+    for(const n of bought){const li=document.createElement('li');li.textContent=n.name+' — grau '+levels[n.id]+' ('+dice(n)+')';list.appendChild(li);}
+    $('#cg-health').textContent='Vida inicial de referência: '+(3+(levels.vigor||0))+' · Coragem inicial: 10.';
+  }
+  function renderAll(){
+    $('#cg-map-view').hidden=view!=='map';
+    $('#cg-classic-view').hidden=view!=='classic';
+    $$('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));
+    renderMap();renderClassic();renderDetail();renderBudget();
+  }
+  function buySelected(){
+    if(!selected)return;
+    const n=byId[selected],lvl=levels[n.id]||0,cost=nextCost(n);
+    if(lvl>=6||!cost||cost>remaining(n.type==='atributo'?'base':'formacao'))return;
+    levels[n.id]=lvl+1;renderAll();persist();
+  }
+  function undoSelected(){
+    if(!selected||!(levels[selected]>0))return;
+    levels[selected]-=1;renderAll();persist();
+  }
+  $('#cg-to-2').addEventListener('click',()=>setStage(2));
+  $('#cg-back-1').addEventListener('click',()=>setStage(1));
+  $('#cg-to-3').addEventListener('click',()=>{if(category)setStage(3);});
+  $('#cg-rechoose').addEventListener('click',()=>setStage(2));
+  $$('[data-family]').forEach(b=>b.addEventListener('click',()=>chooseCategory(b.dataset.family)));
+  $$('[data-view]').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.view;renderAll();persist();}));
+  $('#cg-search').addEventListener('input',e=>{search=e.target.value;renderAll();});
+  $('#cg-buy').addEventListener('click',buySelected);
+  $('#cg-undo').addEventListener('click',undoSelected);
+  $('#cg-name').addEventListener('input',()=>{renderBudget();persist();});
+  $('#cg-concept').addEventListener('input',persist);
+  $('#cg-reset').addEventListener('click',()=>{
+    if(!confirm('Recomeçar a construção? As compras atuais serão apagadas.'))return;
+    for(const key of Object.keys(levels))delete levels[key];
+    $('#cg-name').value='';$('#cg-concept').value='';$('#cg-search').value='';
+    search='';selected=null;category=null;view='map';setStage(1);renderAll();
+  });
+  $('#cg-export').addEventListener('click',()=>{
+    const clean=DATA.filter(n=>levels[n.id]>0).map(n=>({nome:n.name,tipo:n.type,grau:levels[n.id],dados:dice(n),classificacao:n.draft?'experimental':'referencia'}));
+    const payload={sistema:'Codex RPG',versao_referencia:'SRD v0.22',tipo:'criador experimental',personagem:$('#cg-name').value.trim()||'Aprendiz',conceito:$('#cg-concept').value.trim(),origem:'Humano (playtest)',nivel:1,compras:clean,xp:{base_gasto:spent('base'),formacao_gasto:spent('formacao'),pericias_reservados:5},vida:3+(levels.vigor||0),coragem:10};
+    const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json;charset=utf-8'});
+    const url=URL.createObjectURL(blob),a=document.createElement('a');
+    a.href=url;a.download='codex-rpg-personagem.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  });
+  restore();setStage(stage);renderAll();
+})();
+</script>
